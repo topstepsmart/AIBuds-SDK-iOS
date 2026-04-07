@@ -1,0 +1,501 @@
+/* 
+  Localizable.strings
+  AIBuds
+
+  Created by pcjbird on 2026-02-13.
+  Copyright © 2026 Zero Status. All rights reserved.
+*/
+"MyDevicesLocKey" = "My Devices";
+"AddDeviceMenuTitleLocKey" = "Add Device";
+"ScanDeviceMenuTitleLocKey" = "Scan";
+"AddDeviceLocKey" = "Add Device";
+"NoDeviceAddedYetLocKey" = "No device added yet";
+
+"ScanningLocKey" = "Scanning...";
+"ScanStoppedLocKey" = "Scan stopped";
+"UnknownDeviceNameLocKey" = "Unknown";
+"MacAddressLocKey" = "MAC Address";
+"RSSILocKey" = "RSSI";
+"AddToMyDevicesLocKey" = "Add to My Devices";
+
+"ConfirmLocKey" = "Confirm";
+"CancelLocKey" = "Cancel";
+"LocKey.Save" = "Save";
+
+"AddToMyDevicesFailedLocKey" = "Failed to Add to My Devices";
+"AddToMyDevicesFailedMsgLocKey" = "Failed to add to My Devices, please try again later.";
+"OKLocKey" = "OK";
+
+"LocKey.BasicFeaturesGroupTitle" = "Basic Features";
+"LocKey.FactoryResetFeatureTitle" = "Factory Reset";
+"LocKey.PowerOffFeatureTitle" = "Power Off";
+"LocKey.DeviceInfoGroupTitle" = "Device Info";
+"LocKey.DeviceInfoDetailsTitle" = "Device Info Details";
+"LocKey.SyncDeviceTimeFeatureTitle" = "Sync Device Time";
+"LocKey.SetDeviceTimeFeatureTitle" = "Set Device Time";
+"LocKey.SetDeviceLanguageFeatureTitle" = "Set Device Language";
+"LocKey.QueryStorageInfoFeatureTitle" = "Query Storage Info";
+"LocKey.QueryMediaCountInfoFeatureTitle" = "Query Media Count";
+"LocKey.FindFeatureGroupTitle" = "Find Device";
+"LocKey.FindDeviceFeatureTitle" = "Find Device";
+"LocKey.StopFindDeviceFeatureTitle" = "Stop Find Device";
+"LocKey.FirmwareGroupTitle" = "Firmware";
+"LocKey.FirmwareVersionFeatureTitle" = "Firmware Version";
+"LocKey.PhysicalOperationsGroupTitle" = "Physical Operations";
+"LocKey.PhysicalOperationsMappingFeatureTitle" = "Physical Operations Mapping";
+"LocKey.AssignPhysicalOperationsFeatureTitle" = "Assign Physical Operations";
+"LocKey.ServiceAuthGroupTitle" = "Service Auth";
+"LocKey.AuthorizedServicesFeatureTitle" = "Authorized Services";
+"LocKey.RetryServiceAuthFeatureTitle" = "Retry Service Auth";
+"LocKey.ReportSelfAiServiceAuthResultFeatureTitle" = "Report Self-AI Service Auth Result";
+"LocKey.VoiceAssistantGroupTitle" = "Voice Assistant";
+"LocKey.OnDeviceVoiceAssistantCapabilityFeatureTitle" = "On-Device Voice Assistant Capability";
+"LocKey.OnDeviceVoiceAssistantModeFeatureTitle" = "On-Device Voice Assistant Mode"; 
+"LocKey.SetOnDeviceVoiceAssistantModeFeatureTitle" = "Set On-Device Voice Assistant Mode";
+"LocKey.WorkModeGroupTitle" = "Work Mode";
+"LocKey.WorkModeFeatureTitle" = "Work Mode";
+"LocKey.SetWorkModeFeatureTitle" = "Set Work Mode";
+"LocKey.WorkStateGroupTitle" = "Work State";
+"LocKey.WorkStateFeatureTitle" = "Work State";
+"LocKey.WearDetectionGroupTitle" = "Wear Detection";
+"LocKey.WearDetectionCapabilityFeatureTitle" = "Wear Detection Capability";
+"LocKey.WearDetectionEnabledFeatureTitle" = "Wear Detection Switch State";
+"LocKey.SetWearDetectionEnabledFeatureTitle" = "Set Wear Detection Switch State";
+"LocKey.VolumeControlGroupTitle" = "Volume Control";
+"LocKey.MusicControlGroupTitle" = "Music Control";
+"LocKey.TWSGroupTitle" = "TWS";
+"LocKey.EqualizerGroupTitle" = "Equalizer";
+"LocKey.ANCGroupTitle" = "ANC";
+"LocKey.AudioRecordingGroupTitle" = "Audio Recording";
+"LocKey.CameraGroupTitle" = "Camera";
+"LocKey.RemoteShutterGroupTitle" = "Remote Shutter";
+"LocKey.AITranslationGroupTitle" = "AI Translation";
+"LocKey.AIChatGroupTitle" = "AI Chat";
+"LocKey.HotspotGroupTitle" = "Hotspot";
+"LocKey.OtaGroupTitle" = "OTA";
+"LocKey.OtaFeatureTitle" = "Firmware Update (OTA)";
+"LocKey.OtaDemoTitle" = "OTA Demonstration";
+"LocKey.OtaStartButtonTitle" = "Start Upgrade";
+"LocKey.OtaCancelButtonTitle" = "Cancel Upgrade";
+"LocKey.OtaSelectFileButtonTitle" = "Select File";
+"LocKey.OtaStatusSelectFile" = "Please select a firmware file first.";
+"LocKey.OtaStatusReady" = "Ready to upgrade.";
+"LocKey.OtaStatusWaiting" = "Waiting to start upgrade.";
+"LocKey.OtaStatusUpgrading" = "Upgrading...";
+"LocKey.OtaStatusCanceled" = "Upgrade canceled.";
+"LocKey.OtaStatusSuccess" = "Upgrade succeeded.";
+"LocKey.OtaResultTitle" = "Upgrade Result";
+"LocKey.FileSizeLabelFormat" = "File Size: %@";
+"LocKey.TransferredBytesLabelFormat" = "Transferred Bytes: %@";
+"LocKey.TotalTimeLabelFormat" = "Total Time: %.2f seconds";
+"LocKey.PausedTimeLabelFormat" = "Paused Time: %.2f seconds";
+"LocKey.ActualTimeLabelFormat" = "Actual Time: %.2f seconds";
+"LocKey.AvgSpeedLabelFormat" = "Average Speed (kB/s): %.2f";
+"LocKey.OtaStatusUnknownError" = "Unknown Error";
+"LocKey.OtaStatusFailedFormat" = "Upgrade Failed: %@";
+"LocKey.OtaStatusCopyFailed" = "File Copy Failed";
+"LocKey.OtaStatusNoFirmwareSelected" = "No firmware file selected.";
+"LocKey.CameraOtaGroupTitle" = "Camera OTA";
+"LocKey.CameraOtaFeatureTitle" = "Camera Firmware Update (OTA)";
+"LocKey.CameraOtaDemoTitle" = "Camera OTA Upgrade Demo";
+"LocKey.StartUpgradeButtonTitle" = "Start Upgrade";
+"LocKey.UpgradingButtonTitle" = "Upgrading...";
+"LocKey.UpgradeSuccessButtonTitle" = "Upgrade Successful";
+"LocKey.UpgradeFailedButtonTitle" = "Upgrade Failed";
+"LocKey.SelectedFileInfoFormat" = "Selected: %@\nSize: %@";
+"LocKey.LogInfoStartingOtaUpgrade" = "Starting OTA upgrade...";
+"LocKey.LogInfoSelectedFileInfoFormat" = "Firmware file selected: %@ (%@)";
+"LocKey.LogInfoOtaUpgradeStarted" = "OTA upgrade started";
+"LocKey.LogInfoOtaUpgradeStartFailedFormat" = "OTA upgrade start failed: %@";
+"LocKey.LogInfoFileTransferredInfoFormat" = "File Transfer: %@%%";
+"LocKey.LogInfoFileTransferStarted" = "File transfer started";
+"LocKey.LogInfoFileTransferCompleted" = "File transfer completed";
+"LocKey.LogInfoWaitingForFlashing" = "Waiting for flashing...";
+"LocKey.LogInfoFlashingProgressInfoFormat" = "Flashing: %@%%";
+"LocKey.LogInfoFlashingStarted" = "Flashing started";
+"LocKey.LogInfoFlashingCompleted" = "Flashing completed";
+"LocKey.LogInfoOtaUpgradeSucceeded" = "OTA upgrade succeeded";
+"LocKey.LogInfoOtaUpgradeFailed" = "OTA upgrade failed";
+"LocKey.LogInfoStartingToConfigureDeviceHotspot" = "Starting to configure device hotspot...";
+"LocKey.LogInfoConfigureDeviceHotspotSuccess" = "Device hotspot configured successfully";
+"LocKey.LogInfoConfigureDeviceHotspotFailedFormat" = "Failed to configure device hotspot: %@";
+"LocKey.LogInfoStartingToEnterCameraOtaMode" = "Starting to enter camera OTA mode...";
+"LocKey.LogInfoEnterCameraOtaModeSuccess" = "Entered camera OTA mode";
+"LocKey.LogInfoStartingToWaitForHotspotOpen" = "Waiting for hotspot open...";
+"LocKey.LogInfoEnterCameraOtaModeFailedFormat" = "Failed to enter camera OTA mode: %@";
+"LocKey.LogInfoStartingToConnectDeviceHotspotFormat" = "Starting to connect to device hotspot: %@";
+"LocKey.LogInfoConnectDeviceHotspotSuccess" = "Connected to device hotspot";
+"LocKey.LogInfoConnectDeviceHotspotFailedFormat" = "Failed to connect to device hotspot: %@";
+"LocKey.LogInfoStartingHttpServer" = "Starting HTTP server...";
+"LocKey.LogInfoHttpServerStarted" = "HTTP server started";
+"LocKey.LogInfoHttpServerStartFailedFormat" = "Failed to start HTTP server: %@";
+"LocKey.LogInfoSendingFirmwareUrlFormat" = "Sending firmware URL: %@";
+"LocKey.LogInfoFirmwareUrlSent" = "Firmware URL sent";
+"LocKey.LogInfoFirmwareUrlSendFailedFormat" = "Failed to send firmware URL: %@";
+"LocKey.LogInfoLatestCameraFirmwareVersionFormat" = "Camera firmware version: %@";
+
+"LocKey.AiGroupTitle" = "AI Features";
+"LocKey.AiAudioRecordingFeatureTitle" = "AI Audio Recording";
+"LocKey.StreamingASRFeatureTitle" = "Streaming ASR";
+"LocKey.TTSFeatureTitle" = "Text-to-Speech";
+"LocKey.AiSummaryFeatureTitle" = "AI Summary";
+"LocKey.AiTextTranslationFeatureTitle" = "AI Text Translation";
+"LocKey.SimultaneousInterpretationFeatureTitle" = "Simultaneous Interpretation";
+"LocKey.AiChatFeatureTitle" = "AI Chat";
+
+"LocKey.AiChatDemoTitle" = "AI Chat Demonstration";
+"LocKey.Settings" = "Settings";
+
+"LocKey.ChatSettingsTitle" = "Chat Settings";
+
+"LocKey.StarBurstAI" = "StarBurst AI (ByteDance)";
+"LocKey.MLTCloudAI" = "MLTCloud AI (MLTCloud)";
+
+"LocKey.ServiceVendor" = "Service Vendor";
+"LocKey.SelectServiceVendor" = "Select Service Vendor";
+"LocKey.GeneralSettings" = "General Settings";
+"LocKey.StarBurstSettings" = "StarBurst AI Settings";
+"LocKey.MLTCloudSettings" = "MLTCloud AI Settings";
+
+"LocKey.AiAudioChannel" = "Audio Channel";
+"LocKey.AiAudioChannelSco" = "SCO";
+"LocKey.AiAudioChannelOpusInA2dpOut" = "Opus In";
+"LocKey.AiAudioChannelOpusInOpusOut" = "Opus InOut";
+
+"LocKey.AllowInterruptAiAnswer" = "Allow Interrupt AI Answer";
+"LocKey.MaxPauseDuration" = "Max Pause Duration";
+"LocKey.AutoEndSessionDuration" = "Auto End Session Duration";
+"LocKey.VoiceBroadcast" = "Voice Broadcast";
+"LocKey.SaveInputVoiceForDebugging" = "Save Input Voice for Debugging";
+
+"LocKey.StarBurstUsagePlan" = "Usage Plan";
+"LocKey.StarBurstLitePlan" = "Lite";
+"LocKey.StarBurstProPlan" = "Pro";
+"LocKey.StarBurstAgentId" = "Agent ID";
+"LocKey.StarBurstSpeakerId" = "Speaker ID";
+
+"LocKey.FactoryResetSuccessMessage" = "Factory reset successful";
+"LocKey.FactoryResetFailedMessage" = "Factory reset failed";
+"LocKey.PowerOffSuccessMessage" = "Power off successful";
+"LocKey.PowerOffFailedMessage" = "Power off failed";
+"LocKey.SyncDeviceTimeSuccessMessage" = "Sync device time successful";
+"LocKey.SyncDeviceTimeFailedMessage" = "Sync device time failed";
+"LocKey.SetDeviceTimeSuccessMessage" = "Set device time successful";
+"LocKey.SetDeviceTimeFailedMessage" = "Set device time failed";
+"LocKey.SetDeviceLanguageSuccessMessage" = "Set device language successful";
+"LocKey.SetDeviceLanguageFailedMessage" = "Set device language failed";
+"LocKey.RequestQueryStorageInfoSuccessMessage" = "Request query storage info successful";
+"LocKey.RequestQueryStorageInfoFailedMessage" = "Request query storage info failed";
+"LocKey.RequestQueryMediaCountInfoSuccessMessage" = "Request query media count info successful";
+"LocKey.RequestQueryMediaCountInfoFailedMessage" = "Request query media count info failed";
+"LocKey.FindDeviceSuccessMessage" = "Find device successful";
+"LocKey.FindDeviceFailedMessage" = "Find device failed";
+"LocKey.StopFindDeviceSuccessMessage" = "Stop find device successful";
+"LocKey.StopFindDeviceFailedMessage" = "Stop find device failed";
+
+
+
+"LocKey.EnterValue" = "Enter value";
+"LocKey.EnterTextValue" = "Enter text value";
+
+"LocKey.NotSet" = "Not Set";
+"LocKey.LanguageForSpeechInput" = "Language for Speech Input";
+"LocKey.SelectLanguage" = "Select Language";
+
+"LocKey.Speaking" = "Speaking";
+"LocKey.NotSpeaking" = "Not Speaking";
+
+"LocKey.AIChatErrorMessage" = "AI Chat Session Error";
+
+"LocKey.AiAudioRecordingDemoTitle" = "AI Audio Recording Demonstration";
+
+"LocKey.StartRecording" = "Start Recording";
+"LocKey.StopRecording" = "Stop Recording";
+
+"LocKey.TranscriptWillAppearHereTips" = "Transcript will appear here";
+
+"LocKey.AutoDetect" = "Auto Detect";
+"LocKey.Chinese" = "Chinese";
+"LocKey.English" = "English";
+"LocKey.Japanese" = "Japanese";
+"LocKey.Korean" = "Korean";
+"LocKey.French" = "French";
+"LocKey.German" = "German";
+"LocKey.SimplifiedChinese" = "Simplified Chinese";
+"LocKey.TraditionalChineseHK" = "Traditional Chinese (Hong Kong)";
+"LocKey.Russian" = "Russian";
+"LocKey.Spanish" = "Spanish";
+"LocKey.Portuguese" = "Portuguese";
+"LocKey.Arabic" = "Arabic";
+"LocKey.Dutch" = "Dutch";
+"LocKey.Italian" = "Italian";
+"LocKey.Czech" = "Czech";
+"LocKey.Danish" = "Danish";
+"LocKey.Greek" = "Greek";
+"LocKey.Hebrew" = "Hebrew";
+"LocKey.Hindi" = "Hindi";
+"LocKey.Hungarian" = "Hungarian";
+"LocKey.Indonesian" = "Indonesian";
+"LocKey.Malay" = "Malay";
+"LocKey.Polish" = "Polish";
+"LocKey.Persian" = "Persian";
+"LocKey.Swedish" = "Swedish";
+"LocKey.Thai" = "Thai";
+"LocKey.Vietnamese" = "Vietnamese";
+"LocKey.Slovak" = "Slovak";
+"LocKey.Finnish" = "Finnish";
+"LocKey.Irish" = "Irish";
+"LocKey.Romanian" = "Romanian";
+"LocKey.Turkish" = "Turkish";
+"LocKey.Croatian" = "Croatian";
+"LocKey.Albanian" = "Albanian";
+"LocKey.Ukrainian" = "Ukrainian";
+"LocKey.Bulgarian" = "Bulgarian";
+"LocKey.Slovenian" = "Slovenian";
+
+
+"LocKey.StreamingASRDemoTitle" = "Streaming ASR Demonstration";
+
+"LocKey.SelectAudioFile" = "Select Audio File";
+"LocKey.NoFileSelected" = "No file selected";
+"LocKey.StartRecognition" = "Start Recognition";
+"LocKey.StopRecognition" = "Stop Recognition";
+"LocKey.RecognitionResultWillAppearHereTips" = "Recognition result will appear here";
+"LocKey.PleaseSelectAnAudioFile" = "Please select an audio file";
+"LocKey.Processing" = "Processing...";
+
+"LocKey.TTSDemoTitle" = "Text-to-Speech Demonstration";
+
+"LocKey.TTSDemoText" = "This is a sample text for text-to-speech demonstration. It contains approximately one hundred words to test the synthesis capabilities. You can replace this text with your own content to hear how it sounds when converted to speech. The system will synthesize this text into audio and play it back for you.";
+
+"LocKey.StartToSynthesize" = "Start to Synthesize";
+"LocKey.Replay" = "Replay";
+
+"LocKey.SynthesisResultWillAppearHereTips" = "Synthesis result will appear here";
+"LocKey.PleaseEnterTextToSynthesize" = "Please enter text to synthesize";
+
+"LocKey.AudioFile" = "Audio File";
+"LocKey.AudioFormat" = "Audio Format";
+"LocKey.SynthesisFailed" = "Synthesis failed";
+
+"LocKey.AISummaryDemoTitle" = "AI Summary Demonstration";
+"LocKey.TextToSummarizeTitle" = "Text to Summarize";
+"LocKey.AISummaryDemoText" = "Artificial intelligence (AI) is intelligence demonstrated by machines, as opposed to intelligence displayed by humans or animals. AI research has been defined as the field of study of intelligent agents, which refers to any system that perceives its environment and takes actions that maximize its chance of achieving its goals. The term \"artificial intelligence\" had previously been used to describe machines that mimic and display \"human\" cognitive skills that are associated with the human mind, such as \"learning\" and \"problem-solving\". This definition has since been rejected by major AI researchers who now describe AI in terms of rationality and acting rationally, which does not limit how intelligence can be articulated.";
+"LocKey.GenerateSummaryButtonTitle" = "Generate Summary";
+"LocKey.SummaryResultTitle" = "Summary Result";
+"LocKey.SummaryResultWillAppearHereTips" = "Summary result will appear here";
+"LocKey.PleaseEnterTextToSummarizeTips" = "Please enter text to summarize";
+"LocKey.SummaryFailed" = "Summary failed";
+
+"LocKey.AiTextTranslationDemoTitle" = "AI Text Translation Demonstration";
+"LocKey.SourceLanguage" = "Source Language";
+"LocKey.TargetLanguage" = "Target Language";
+"LocKey.AiTextTranslationDemoText" = "Hello, how are you? I hope you're doing well. This is a sample text for translation demonstration.";
+"LocKey.TranslateButtonTitle" = "Translate";
+"LocKey.TranslateResultWillAppearHereTips" = "Translation result will appear here";
+"LocKey.PleaseEnterTextToTranslate" = "Please enter text to translate";
+"LocKey.SourceAndTargetLanguagesCannotBeTheSame" = "Source and target languages cannot be the same";
+"LocKey.TranslationFailed" = "Translation failed";
+
+"LocKey.SimultaneousInterpretationDemoTitle" = "Simultaneous Interpretation Demonstration";
+"LocKey.StartInterpretationButtonTitle" = "Start Interpretation";
+"LocKey.StopInterpretationButtonTitle" = "Stop Interpretation";
+
+"LocKey.SourceContent" = "Source Content";
+"LocKey.SourceContentWillAppearHereTips" = "Source content will appear here";
+"LocKey.TranslationResult" = "Translation Result";
+"LocKey.TranslationResultWillAppearHereTips" = "Translation result will appear here";
+"LocKey.CannotSwapLanguagesDuringInterpretationTips" = "Cannot swap languages during interpretation";
+"LocKey.ListeningTips" = "Listening...";
+
+"LocKey.SelectAiServiceVendorFeatureTitle" = "Select AI Service Vendor";
+"LocKey.SelectAiServiceVendorAlertTitle" = "Select AI Service Vendor";
+
+"LocKey.DeviceDetails" = "Device Details";
+"LocKey.DeviceThumbnail" = "Device Thumbnail";
+"LocKey.DeviceName" = "Device Name";
+"LocKey.UUID" = "UUID";
+"LocKey.BluetoothName" = "Bluetooth Name";
+"LocKey.MACAddress" = "MAC Address";
+"LocKey.NA" = "N/A";
+"LocKey.ProductType" = "Product Type";
+"LocKey.DeviceModel" = "Device Model";
+"LocKey.SerialNumber" = "Serial Number";
+"LocKey.FirmwareVersion" = "Firmware Version";
+"LocKey.CoProcessorFirmwareVersion" = "Co-processor Firmware Version";
+"LocKey.ProjectNumber" = "Project Number";
+"LocKey.LastConnectTime" = "Last Connect Time";
+"LocKey.BindUserID" = "Bind User ID";
+"LocKey.UserBindTime" = "User Bind Time";
+"LocKey.AutoReconnect" = "Auto Reconnect On App Launch";
+"LocKey.Yes" = "Yes";
+"LocKey.No" = "No";
+"LocKey.AdvertisementData" = "Advertisement Data";
+"LocKey.ManufacturerData" = "Manufacturer Data";
+"LocKey.AdvertisementTimestamp" = "Advertisement Timestamp";
+"LocKey.ScreenName" = "Screen Name";
+"LocKey.CustomContent" = "Custom Content";
+
+"LocKey.Unknown" = "Unknown";
+"LocKey.SmartWatch" = "Smart Watch";
+"LocKey.SmartRing" = "Smart Ring";
+"LocKey.SmartGlasses" = "Smart Glasses";
+"LocKey.ChargingCase" = "Charging Case";
+"LocKey.Earbuds" = "Earbuds";
+"LocKey.SmartSpeaker" = "Smart Speaker";
+
+"LocKey.TapToViewDetails" = "Tap to view details";
+
+
+"LocKey.NotInCall" = "Not in call";
+"LocKey.Ringing" = "Ringing";
+"LocKey.InCall" = "In call";
+"LocKey.ThreeWayRinging" = "Three way ringing";
+"LocKey.AIChat" = "AI Chat";
+
+"LocKey.BatteryStatus" = "Battery Status";
+"LocKey.LanguageSetting" = "Language Setting";
+"LocKey.SupportedLanguages" = "Supported Languages";
+"LocKey.CallStatus" = "Call Status";
+"LocKey.StorageInfo" = "Storage Info";
+"LocKey.MediaCount" = "Media Count";
+"LocKey.SupportAdjustRecordDuration" = "Support Adjust Record Duration";
+
+"LocKey.PhysicalOperationsMapping" = "Physical Operations Mapping";
+
+"LocKey.OperationUnknown" = "Unknown";
+"LocKey.OperationLeftSingleClick" = "Left Single Click";
+"LocKey.OperationRightSingleClick" = "Right Single Click";
+"LocKey.OperationLeftDoubleClick" = "Left Double Click";
+"LocKey.OperationRightDoubleClick" = "Right Double Click";
+"LocKey.OperationLeftTripleClick" = "Left Triple Click";
+"LocKey.OperationRightTripleClick" = "Right Triple Click";
+"LocKey.OperationLeftLongPress" = "Left Long Press";
+"LocKey.OperationRightLongPress" = "Right Long Press";
+"LocKey.OperationLeftTouchSingleClick" = "Left Touch Single Click";
+"LocKey.OperationRightTouchSingleClick" = "Right Touch Single Click";
+"LocKey.OperationLeftTouchDoubleClick" = "Left Touch Double Click";
+"LocKey.OperationRightTouchDoubleClick" = "Right Touch Double Click";
+"LocKey.OperationLeftTouchLongPress" = "Left Touch Long Press";
+"LocKey.OperationRightTouchLongPress" = "Right Touch Long Press";
+"LocKey.OperationLeftButton1SingleClick" = "Left Button 1 Single Click";
+"LocKey.OperationRightButton1SingleClick" = "Right Button 1 Single Click";
+"LocKey.OperationLeftButton1DoubleClick" = "Left Button 1 Double Click";
+"LocKey.OperationRightButton1DoubleClick" = "Right Button 1 Double Click";
+"LocKey.OperationLeftButton1LongPress" = "Left Button 1 Long Press";
+"LocKey.OperationRightButton1LongPress" = "Right Button 1 Long Press";
+"LocKey.OperationLeftButton2SingleClick" = "Left Button 2 Single Click";
+"LocKey.OperationRightButton2SingleClick" = "Right Button 2 Single Click";
+"LocKey.OperationLeftButton2DoubleClick" = "Left Button 2 Double Click";
+"LocKey.OperationRightButton2DoubleClick" = "Right Button 2 Double Click";
+"LocKey.OperationLeftButton2LongPress" = "Left Button 2 Long Press";
+"LocKey.OperationRightButton2LongPress" = "Right Button 2 Long Press";
+"LocKey.OperationTouchSlideBackwardToForward" = "Touch Slide Backward To Forward";
+"LocKey.OperationTouchSlideForwardToBackward" = "Touch Slide Forward To Backward";
+
+"LocKey.FunctionNone" = "None";
+"LocKey.FunctionRedial" = "Redial";
+"LocKey.FunctionVoiceAssistant" = "Voice Assistant";
+"LocKey.FunctionPreviousTrack" = "Previous Track";
+"LocKey.FunctionNextTrack" = "Next Track";
+"LocKey.FunctionVolumeUp" = "Volume Up";
+"LocKey.FunctionVolumeDown" = "Volume Down";
+"LocKey.FunctionPlayPause" = "Play / Pause";
+"LocKey.FunctionGameMode" = "Game Mode";
+"LocKey.FunctionNoiseReduction" = "Noise Reduction";
+"LocKey.FunctionTakePhoto" = "Take Photo";
+"LocKey.FunctionContinuousShooting" = "Continuous Shooting";
+"LocKey.FunctionVideoRecordToggle" = "Video Record Toggle";
+"LocKey.FunctionAudioRecordToggle" = "Audio Record Toggle";
+"LocKey.FunctionLocalBluetoothToggle" = "Local / Bluetooth Toggle";
+"LocKey.FunctionUnknown" = "Unknown";
+
+"LocKey.AssignPhysicalOperations" = "Assign Physical Operations";
+
+"LocKey.AuthorizedServices" = "Authorized Services";
+"LocKey.OnDeviceVoiceAssistant" = "On-device Voice Assistant";
+"LocKey.Authorized" = "Authorized";
+"LocKey.AuthorizedServicesList" = "Authorized Services List";
+"LocKey.NoServicesAuthorizedYet" = "No services authorized yet";
+"LocKey.TheseServicesHaveBeenAuthorizedForYourDevice" = "These services have been authorized for your device";
+
+"LocKey.RetryServiceAuthSuccessMessage" = "Retry service authorization success";
+"LocKey.RetryServiceAuthFailedMessage" = "Retry service authorization failed";
+
+"LocKey.ReportSelfAiServiceAuthResultSuccessMessage" = "Report self AI service auth result success";
+"LocKey.ReportSelfAiServiceAuthResultFailedMessage" = "Report self AI service auth result failed";
+
+"LocKey.OnDeviceVoiceAssistantCapabilityNone" = "None";
+"LocKey.OnDeviceVoiceAssistantCapabilityKeywordWakeup" = "Keyword Wakeup";
+"LocKey.OnDeviceVoiceAssistantCapabilityCommon" = "Common";
+
+"LocKey.OnDeviceVoiceAssistantModeUnknown" = "Unknown";
+"LocKey.OnDeviceVoiceAssistantModeDisabled" = "Disabled";
+"LocKey.OnDeviceVoiceAssistantModeBasic" = "Basic";
+"LocKey.OnDeviceVoiceAssistantModeAdvanced" = "Advanced";
+
+"LocKey.SelectOnDeviceVoiceAssistantModeAlertTitle" = "Select On-device Voice Assistant Mode";
+"LocKey.OnDeviceVoiceAssistantModeSuccessMessage" = "On-device Voice Assistant mode set successfully";
+"LocKey.OnDeviceVoiceAssistantModeFailedMessage" = "Failed to set On-device Voice Assistant mode";
+
+"LocKey.UnpairDeviceFeatureTitle" = "Unpair Device";
+"LocKey.UnpairSuccessMessage" = "Unpair success";
+
+"LocKey.WorkModeUnknown" = "Unknown";
+"LocKey.WorkModeNormal" = "Normal";
+"LocKey.WorkModeGame" = "Game";
+
+"LocKey.SelectWorkModeAlertTitle" = "Select Work Mode";
+"LocKey.WorkModeSuccessMessage" = "Work mode set successfully";
+"LocKey.WorkModeFailedMessage" = "Failed to set work mode";
+
+"LocKey.WorkStateUnknown" = "Unknown";
+"LocKey.WorkStateReserved" = "Reserved";
+"LocKey.WorkStateInitializing" = "Initializing";
+"LocKey.WorkStateBtOrBleWaitingForConnection" = "Waiting for Connection";
+"LocKey.WorkStateBtOrBleConnectedIdle" = "Connected (Idle)";
+"LocKey.WorkStateBtOrBleDisconnectedIdle" = "Disconnected (Idle)";
+"LocKey.WorkStateCalling" = "Calling";
+"LocKey.WorkStatePlayingLocalMusic" = "Playing Local Music";
+"LocKey.WorkStateAiConversing" = "AI Conversing";
+"LocKey.WorkStateRestoringFactorySettings" = "Restoring Factory Settings";
+"LocKey.WorkStateTakingPhoto" = "Taking Photo";
+"LocKey.WorkStateAiTakingPhoto" = "AI Taking Photo";
+"LocKey.WorkStateRecordingVideo" = "Recording Video";
+"LocKey.WorkStateRecordingAudio" = "Recording Audio";
+"LocKey.WorkStateFileTransferring" = "File Transferring";
+"LocKey.WorkStateStreaming" = "Streaming";
+"LocKey.WorkStateOta" = "OTA";
+"LocKey.WorkStateShuttingDown" = "Shutting Down";
+"LocKey.WorkStateFactoryTesting" = "Factory Testing";
+"LocKey.WorkStateLedTesting" = "LED Testing";
+"LocKey.WorkStateButtonTesting" = "Button Testing";
+"LocKey.WorkStateEchoTesting" = "Echo Testing";
+
+"LocKey.WearDetectionCapabilityNone" = "None";
+"LocKey.WearDetectionCapabilitySupportedNotConfigurable" = "Supported (Not Configurable)";
+"LocKey.WearDetectionCapabilitySupportedAndConfigurable" = "Supported (Configurable)";
+"LocKey.WearDetectionEnabled" = "Enabled";
+"LocKey.WearDetectionDisabled" = "Disabled";
+
+"LocKey.WearDetectionNotConfigurableMessage" = "Wear detection is not configurable";
+"LocKey.ToggleWearDetectionEnableStatusAlertTitle" = "Toggle Wear Detection Enable Status";
+"LocKey.EnableLocKey" = "Enable";
+"LocKey.DisableLocKey" = "Disable";
+"LocKey.WearDetectionAlreadyEnabledMessage" = "Wear detection is already enabled";
+"LocKey.WearDetectionAlreadyDisabledMessage" = "Wear detection is already disabled";
+"LocKey.SetWearDetectionEnabledSuccessMessage" = "Wear detection enabled successfully";
+"LocKey.SetWearDetectionEnabledFailedMessage" = "Failed to enable wear detection";
+"LocKey.SetWearDetectionDisabledSuccessMessage" = "Wear detection disabled successfully";
+"LocKey.SetWearDetectionDisabledFailedMessage" = "Failed to disable wear detection";
+
+"LocKey.VolumeSetCapabilityFeatureTitle" = "Volume Set Capability";
+
+"LocKey.VolumeSetCapabilityNone" = "None";
+"LocKey.VolumeSetCapabilityCommon" = "Common";
+"LocKey.VolumeSetCapabilityAdvanced" = "Advanced";
+
+"LocKey.VolumeSetFeatureTitle" = "Volume Set";
+
+"LocKey.NoVolumeSetCapabilityMessage" = "No volume set capability";
+

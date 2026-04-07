@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "icon_volume_set_capability.pdf",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

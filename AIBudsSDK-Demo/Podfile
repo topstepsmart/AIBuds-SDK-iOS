@@ -1,0 +1,58 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '13.0'
+ENV['COCOAPODS_SKIP_BUNDLE_INSTALL'] = '1'
+
+platform :ios, '13.0'
+
+source 'https://github.com/CocoaPods/Specs.git'
+source 'https://github.com/aliyun/aliyun-specs.git'
+
+# Define a reusable method to include shared pods across targets
+def commonPods
+  
+end
+
+workspace 'AIBuds.xcworkspace'
+
+
+
+target 'AIBudsSDK-Demo' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  #use_frameworks!
+  project 'AIBuds.xcodeproj'
+
+  # Include common pods
+  commonPods
+  
+  pod 'XLFacility', git: 'https://github.com/pcjbird/XLFacility.git', :modular_headers => true
+  pod 'iOSLogBrowserSDK'
+  pod 'Reachability'
+  pod 'Popover.OC'
+  pod 'DZNEmptyDataSet'
+  pod 'Toast'
+  pod 'AIBudsSDK/AllInOne', :path => '../'
+  
+end
+
+dynamic_frameworks = ['AFNetworking', 'WCDB.swift', 'WCDBOptimizedSQLCipher']
+pre_install do |installer|
+  installer.pod_targets.each do |pod|
+    if dynamic_frameworks.include?(pod.name)
+      def pod.static_framework?;
+        false
+      end
+      def pod.build_type;
+        Pod::BuildType.dynamic_framework
+      end
+    end
+  end
+end
+
+
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    target.build_configurations.each do |config|
+      config.build_settings['BUILD_LIBRARY_FOR_DISTRIBUTION'] = 'YES'
+    end
+  end
+end

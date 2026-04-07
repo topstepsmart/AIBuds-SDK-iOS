@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "icon_voice_assistant_mode_set.pdf",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

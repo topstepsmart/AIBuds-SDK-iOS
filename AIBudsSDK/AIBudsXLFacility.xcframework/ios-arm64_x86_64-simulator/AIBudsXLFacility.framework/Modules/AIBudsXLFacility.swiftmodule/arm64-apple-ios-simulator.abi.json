@@ -1,0 +1,520 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "AIBudsXLFacility",
+    "printedName": "AIBudsXLFacility",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AIBudsXLFacility",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "XLFacility",
+        "printedName": "XLFacility",
+        "declKind": "Import",
+        "moduleName": "AIBudsXLFacility"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AIBudsXLFacility",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "iOSLogBrowserSDK",
+        "printedName": "iOSLogBrowserSDK",
+        "declKind": "Import",
+        "moduleName": "AIBudsXLFacility"
+      },
+      {
+        "kind": "Import",
+        "name": "XLFacility",
+        "printedName": "XLFacility",
+        "declKind": "Import",
+        "moduleName": "AIBudsXLFacility"
+      },
+      {
+        "kind": "Import",
+        "name": "AIBudsLog",
+        "printedName": "AIBudsLog",
+        "declKind": "Import",
+        "moduleName": "AIBudsXLFacility"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "XLFacilitySDK",
+        "printedName": "XLFacilitySDK",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "isLoaded",
+            "printedName": "isLoaded",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBudsXLFacility@objc(cs)AIBudsXLFacilitySDK(py)isLoaded",
+            "mangledName": "$s16AIBudsXLFacility0B3SDKC8isLoadedSbvp",
+            "moduleName": "AIBudsXLFacility",
+            "objc_name": "isLoaded",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsXLFacility@objc(cs)AIBudsXLFacilitySDK(im)isLoaded",
+                "mangledName": "$s16AIBudsXLFacility0B3SDKC8isLoadedSbvg",
+                "moduleName": "AIBudsXLFacility",
+                "objc_name": "isLoaded",
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "XLFacilitySDK",
+                "printedName": "AIBudsXLFacility.XLFacilitySDK",
+                "usr": "c:@M@AIBudsXLFacility@objc(cs)AIBudsXLFacilitySDK"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBudsXLFacility@objc(cs)AIBudsXLFacilitySDK(cpy)shared",
+            "mangledName": "$s16AIBudsXLFacility0B3SDKC6sharedACvpZ",
+            "moduleName": "AIBudsXLFacility",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "XLFacilitySDK",
+                    "printedName": "AIBudsXLFacility.XLFacilitySDK",
+                    "usr": "c:@M@AIBudsXLFacility@objc(cs)AIBudsXLFacilitySDK"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsXLFacility@objc(cs)AIBudsXLFacilitySDK(cm)shared",
+                "mangledName": "$s16AIBudsXLFacility0B3SDKC6sharedACvgZ",
+                "moduleName": "AIBudsXLFacility",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "load",
+            "printedName": "load()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AIBudsXLFacility@objc(cs)AIBudsXLFacilitySDK(im)load",
+            "mangledName": "$s16AIBudsXLFacility0B3SDKC4loadyyF",
+            "moduleName": "AIBudsXLFacility",
+            "objc_name": "load",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "purgeOldLogsWithMaxAge",
+            "printedName": "purgeOldLogsWithMaxAge(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AIBudsXLFacility@objc(cs)AIBudsXLFacilitySDK(im)purgeOldLogsWithMaxAge:",
+            "mangledName": "$s16AIBudsXLFacility0B3SDKC22purgeOldLogsWithMaxAgeyySiF",
+            "moduleName": "AIBudsXLFacility",
+            "objc_name": "purgeOldLogsWithMaxAge:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "log",
+            "printedName": "log(_:level:subsystem:category:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "LogLevel",
+                "printedName": "AIBudsLog.LogLevel",
+                "usr": "c:@M@AIBudsLog@E@AIBudsLogLevel"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AIBudsXLFacility@objc(cs)AIBudsXLFacilitySDK(im)logMessage:level:subsystem:category:",
+            "mangledName": "$s16AIBudsXLFacility0B3SDKC3log_5level9subsystem8categoryySS_0A3Log0H5LevelOSSSgAKtF",
+            "moduleName": "AIBudsXLFacility",
+            "objc_name": "logMessage:level:subsystem:category:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@AIBudsXLFacility@objc(cs)AIBudsXLFacilitySDK",
+        "mangledName": "$s16AIBudsXLFacility0B3SDKC",
+        "moduleName": "AIBudsXLFacility",
+        "objc_name": "AIBudsXLFacilitySDK",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "XLFacilityPlugin",
+            "printedName": "XLFacilityPlugin",
+            "usr": "c:@M@AIBudsLog@objc(pl)AIBudsXLFacilityPlugin",
+            "mangledName": "$s9AIBudsLog16XLFacilityPluginP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AIBudsXLFacility",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "XLFacility",
+        "printedName": "XLFacility",
+        "declKind": "Import",
+        "moduleName": "AIBudsXLFacility"
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsXLFacility\/AIBudsXLFacility.swift",
+      "kind": "StringLiteral",
+      "offset": 306,
+      "length": 21,
+      "value": "\"CFBundleDisplayName\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsXLFacility\/AIBudsXLFacility.swift",
+      "kind": "StringLiteral",
+      "offset": 383,
+      "length": 14,
+      "value": "\"CFBundleName\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsXLFacility\/AIBudsXLFacility.swift",
+      "kind": "StringLiteral",
+      "offset": 413,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsXLFacility\/AIBudsXLFacility.swift",
+      "kind": "StringLiteral",
+      "offset": 504,
+      "length": 28,
+      "value": "\"CFBundleShortVersionString\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsXLFacility\/AIBudsXLFacility.swift",
+      "kind": "StringLiteral",
+      "offset": 548,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsXLFacility\/AIBudsXLFacility.swift",
+      "kind": "StringLiteral",
+      "offset": 636,
+      "length": 17,
+      "value": "\"CFBundleVersion\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsXLFacility\/AIBudsXLFacility.swift",
+      "kind": "StringLiteral",
+      "offset": 669,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsXLFacility\/AIBudsXLFacilitySDK.swift",
+      "kind": "BooleanLiteral",
+      "offset": 466,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsXLFacility\/XLFacilityDBLogger.swift",
+      "kind": "BooleanLiteral",
+      "offset": 478,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsXLFacility\/XLFacilityDBLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 493,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsXLFacility\/XLFacilityDBLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 576,
+      "length": 9,
+      "value": "\".aibuds\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsXLFacility\/XLFacilityDBLogger.swift",
+      "kind": "BooleanLiteral",
+      "offset": 780,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsXLFacility\/XLFacilityDBLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 869,
+      "length": 70,
+      "value": "\"Failed to create directory at path \""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsXLFacility\/XLFacilityDBLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 921,
+      "length": 1,
+      "value": "\", error: \""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsXLFacility\/XLFacilityDBLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 938,
+      "length": 13,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsXLFacility\/XLFacilityDBLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 950,
+      "length": 19,
+      "value": "\"AIBuds.XLFacility\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsXLFacility\/XLFacilityDBLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 1086,
+      "length": 28,
+      "value": "\".aibuds\/\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsXLFacility\/XLFacilityDBLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 1106,
+      "length": 1,
+      "value": "\"-log.db\""
+    }
+  ]
+}

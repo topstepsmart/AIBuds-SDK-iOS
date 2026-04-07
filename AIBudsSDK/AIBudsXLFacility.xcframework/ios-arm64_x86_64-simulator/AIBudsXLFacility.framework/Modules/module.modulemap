@@ -1,0 +1,4 @@
+framework module AIBudsXLFacility {
+  header "AIBudsXLFacility-Swift.h"
+  requires objc
+}

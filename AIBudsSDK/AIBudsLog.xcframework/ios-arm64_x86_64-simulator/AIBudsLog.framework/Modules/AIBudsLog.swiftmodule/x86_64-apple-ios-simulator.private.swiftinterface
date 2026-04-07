@@ -1,0 +1,159 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.2.4 effective-5.10 (swiftlang-6.2.4.1.4 clang-1700.6.4.2)
+// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature GlobalActorIsolatedTypesUsability -enable-upcoming-feature MemberImportVisibility -enable-upcoming-feature InferIsolatedConformances -enable-upcoming-feature NonisolatedNonsendingByDefault -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name AIBudsLog
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.4
+@_exported import AIBudsLog
+import Dispatch
+import Foundation
+import Swift
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+import os.log
+import os
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class AIBudsLogSDK : ObjectiveC.NSObject {
+  @objc public static var sdkVersion: Swift.String {
+    @objc get
+  }
+  @objc public static var sdkBuild: Swift.String {
+    @objc get
+  }
+  @objc public static var sdkReleaseDate: Swift.String {
+    @objc get
+  }
+  @objc public static var sdkVersionDescription: Swift.String {
+    @objc get
+  }
+  @objc public static var logService: any AIBudsLog.LogService {
+    @objc get
+  }
+  @objc public static var logConfiguration: AIBudsLog.LogConfiguration {
+    @objc get
+  }
+  @objc public static func setLogService(_ logService: any AIBudsLog.LogService)
+  @objc public static func setXLFacilityPlugin(_ plugin: any AIBudsLog.XLFacilityPlugin)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(AIBudsDefaultLogger) final public class DefaultLogger : ObjectiveC.NSObject, AIBudsLog.LogService {
+  @objc public static let shared: AIBudsLog.DefaultLogger
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc(logMessage:level:subsystem:category:) final public func log(_ message: Swift.String, level: AIBudsLog.LogLevel, subsystem: Swift.String? = nil, category: Swift.String? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc(verbose:subsystem:category:) final public func verbose(_ message: Swift.String, subsystem: Swift.String? = nil, category: Swift.String? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc(debug:subsystem:category:) final public func debug(_ message: Swift.String, subsystem: Swift.String? = nil, category: Swift.String? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc(info:subsystem:category:) final public func info(_ message: Swift.String, subsystem: Swift.String? = nil, category: Swift.String? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc(warn:subsystem:category:) final public func warn(_ message: Swift.String, subsystem: Swift.String? = nil, category: Swift.String? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc(error:subsystem:category:) final public func error(_ message: Swift.String, subsystem: Swift.String? = nil, category: Swift.String? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc(fatal:subsystem:category:) final public func fatal(_ message: Swift.String, subsystem: Swift.String? = nil, category: Swift.String? = nil)
+  #endif
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(AIBudsLogConfiguration) final public class LogConfiguration : ObjectiveC.NSObject {
+  @objc final public var logsDirectory: Swift.String {
+    @objc get
+    @objc set
+  }
+  @objc final public var maxFileSize: Swift.UInt64 {
+    @objc get
+    @objc set
+  }
+  @objc final public var logFileMaxAge: Swift.Int {
+    @objc get
+    @objc set
+  }
+  @objc final public var level: AIBudsLog.LogLevel
+  @objc final public var destination: AIBudsLog.LogDestination
+  @objc public static let shared: AIBudsLog.LogConfiguration
+  @objc deinit
+}
+@objc(AIBudsLogDestination) public enum LogDestination : Swift.Int {
+  case console = 0
+  case oslogger = 1
+  case file = 2
+  case xlfacility = 3
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.Int)
+  #endif
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc(AIBudsLogLevel) public enum LogLevel : Swift.Int {
+  case verbose = 0
+  case debug = 1
+  case info = 2
+  case warn = 3
+  case error = 4
+  case fatal = 5
+  case mute = 2147483647
+  public static let min: AIBudsLog.LogLevel
+  public static let max: AIBudsLog.LogLevel
+  public var abbreviation: Swift.String {
+    get
+  }
+  public var osLogType: os.OSLogType {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.Int)
+  #endif
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+extension AIBudsLog.LogLevel : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
+@objc(AIBudsLogService) public protocol LogService : ObjectiveC.NSObjectProtocol {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc(logMessage:level:subsystem:category:) func log(_ message: Swift.String, level: AIBudsLog.LogLevel, subsystem: Swift.String?, category: Swift.String?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc(verbose:subsystem:category:) func verbose(_ message: Swift.String, subsystem: Swift.String?, category: Swift.String?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc(debug:subsystem:category:) func debug(_ message: Swift.String, subsystem: Swift.String?, category: Swift.String?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc(info:subsystem:category:) func info(_ message: Swift.String, subsystem: Swift.String?, category: Swift.String?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc(warn:subsystem:category:) func warn(_ message: Swift.String, subsystem: Swift.String?, category: Swift.String?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc(error:subsystem:category:) func error(_ message: Swift.String, subsystem: Swift.String?, category: Swift.String?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc(fatal:subsystem:category:) func fatal(_ message: Swift.String, subsystem: Swift.String?, category: Swift.String?)
+  #endif
+}
+@objc(AIBudsXLFacilityPlugin) public protocol XLFacilityPlugin : ObjectiveC.NSObjectProtocol {
+  @objc var isLoaded: Swift.Bool { get }
+  @objc func load()
+  @objc func purgeOldLogsWithMaxAge(_ maxAge: Swift.Int)
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc(logMessage:level:subsystem:category:) func log(_ message: Swift.String, level: AIBudsLog.LogLevel, subsystem: Swift.String?, category: Swift.String?)
+  #endif
+}
+extension AIBudsLog.LogDestination : Swift.Equatable {}
+extension AIBudsLog.LogDestination : Swift.Hashable {}
+extension AIBudsLog.LogDestination : Swift.RawRepresentable {}
+extension AIBudsLog.LogLevel : Swift.Equatable {}
+extension AIBudsLog.LogLevel : Swift.Hashable {}
+extension AIBudsLog.LogLevel : Swift.RawRepresentable {}

@@ -1,0 +1,3667 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "AIBudsLog",
+    "printedName": "AIBudsLog",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AIBudsLog",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AIBudsLog",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AIBudsLogSDK",
+        "printedName": "AIBudsLogSDK",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "sdkVersion",
+            "printedName": "sdkVersion",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBudsLog@objc(cs)AIBudsLogSDK(cpy)sdkVersion",
+            "mangledName": "$s9AIBudsLog0aB3SDKC10sdkVersionSSvpZ",
+            "moduleName": "AIBudsLog",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsLog@objc(cs)AIBudsLogSDK(cm)sdkVersion",
+                "mangledName": "$s9AIBudsLog0aB3SDKC10sdkVersionSSvgZ",
+                "moduleName": "AIBudsLog",
+                "static": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "sdkBuild",
+            "printedName": "sdkBuild",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBudsLog@objc(cs)AIBudsLogSDK(cpy)sdkBuild",
+            "mangledName": "$s9AIBudsLog0aB3SDKC8sdkBuildSSvpZ",
+            "moduleName": "AIBudsLog",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsLog@objc(cs)AIBudsLogSDK(cm)sdkBuild",
+                "mangledName": "$s9AIBudsLog0aB3SDKC8sdkBuildSSvgZ",
+                "moduleName": "AIBudsLog",
+                "static": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "sdkReleaseDate",
+            "printedName": "sdkReleaseDate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBudsLog@objc(cs)AIBudsLogSDK(cpy)sdkReleaseDate",
+            "mangledName": "$s9AIBudsLog0aB3SDKC14sdkReleaseDateSSvpZ",
+            "moduleName": "AIBudsLog",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsLog@objc(cs)AIBudsLogSDK(cm)sdkReleaseDate",
+                "mangledName": "$s9AIBudsLog0aB3SDKC14sdkReleaseDateSSvgZ",
+                "moduleName": "AIBudsLog",
+                "static": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "sdkVersionDescription",
+            "printedName": "sdkVersionDescription",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBudsLog@objc(cs)AIBudsLogSDK(cpy)sdkVersionDescription",
+            "mangledName": "$s9AIBudsLog0aB3SDKC21sdkVersionDescriptionSSvpZ",
+            "moduleName": "AIBudsLog",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsLog@objc(cs)AIBudsLogSDK(cm)sdkVersionDescription",
+                "mangledName": "$s9AIBudsLog0aB3SDKC21sdkVersionDescriptionSSvgZ",
+                "moduleName": "AIBudsLog",
+                "static": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "logService",
+            "printedName": "logService",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "LogService",
+                "printedName": "any AIBudsLog.LogService",
+                "usr": "c:@M@AIBudsLog@objc(pl)AIBudsLogService"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBudsLog@objc(cs)AIBudsLogSDK(cpy)logService",
+            "mangledName": "$s9AIBudsLog0aB3SDKC10logServiceAA0bE0_pvpZ",
+            "moduleName": "AIBudsLog",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LogService",
+                    "printedName": "any AIBudsLog.LogService",
+                    "usr": "c:@M@AIBudsLog@objc(pl)AIBudsLogService"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsLog@objc(cs)AIBudsLogSDK(cm)logService",
+                "mangledName": "$s9AIBudsLog0aB3SDKC10logServiceAA0bE0_pvgZ",
+                "moduleName": "AIBudsLog",
+                "static": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "logConfiguration",
+            "printedName": "logConfiguration",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "LogConfiguration",
+                "printedName": "AIBudsLog.LogConfiguration",
+                "usr": "c:@M@AIBudsLog@objc(cs)AIBudsLogConfiguration"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBudsLog@objc(cs)AIBudsLogSDK(cpy)logConfiguration",
+            "mangledName": "$s9AIBudsLog0aB3SDKC16logConfigurationAA0bE0CvpZ",
+            "moduleName": "AIBudsLog",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LogConfiguration",
+                    "printedName": "AIBudsLog.LogConfiguration",
+                    "usr": "c:@M@AIBudsLog@objc(cs)AIBudsLogConfiguration"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsLog@objc(cs)AIBudsLogSDK(cm)logConfiguration",
+                "mangledName": "$s9AIBudsLog0aB3SDKC16logConfigurationAA0bE0CvgZ",
+                "moduleName": "AIBudsLog",
+                "static": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "setLogService",
+            "printedName": "setLogService(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "LogService",
+                "printedName": "any AIBudsLog.LogService",
+                "usr": "c:@M@AIBudsLog@objc(pl)AIBudsLogService"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AIBudsLog@objc(cs)AIBudsLogSDK(cm)setLogService:",
+            "mangledName": "$s9AIBudsLog0aB3SDKC03setB7ServiceyyAA0bE0_pFZ",
+            "moduleName": "AIBudsLog",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setXLFacilityPlugin",
+            "printedName": "setXLFacilityPlugin(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "XLFacilityPlugin",
+                "printedName": "any AIBudsLog.XLFacilityPlugin",
+                "usr": "c:@M@AIBudsLog@objc(pl)AIBudsXLFacilityPlugin"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AIBudsLog@objc(cs)AIBudsLogSDK(cm)setXLFacilityPlugin:",
+            "mangledName": "$s9AIBudsLog0aB3SDKC19setXLFacilityPluginyyAA0eF0_pFZ",
+            "moduleName": "AIBudsLog",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@AIBudsLog@objc(cs)AIBudsLogSDK",
+        "mangledName": "$s9AIBudsLog0aB3SDKC",
+        "moduleName": "AIBudsLog",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AIBudsLog",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "os.log",
+        "printedName": "os.log",
+        "declKind": "Import",
+        "moduleName": "AIBudsLog"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "DefaultLogger",
+        "printedName": "DefaultLogger",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DefaultLogger",
+                "printedName": "AIBudsLog.DefaultLogger",
+                "usr": "c:@M@AIBudsLog@objc(cs)AIBudsDefaultLogger"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBudsLog@objc(cs)AIBudsDefaultLogger(cpy)shared",
+            "mangledName": "$s9AIBudsLog13DefaultLoggerC6sharedACvpZ",
+            "moduleName": "AIBudsLog",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DefaultLogger",
+                    "printedName": "AIBudsLog.DefaultLogger",
+                    "usr": "c:@M@AIBudsLog@objc(cs)AIBudsDefaultLogger"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsLog@objc(cs)AIBudsDefaultLogger(cm)shared",
+                "mangledName": "$s9AIBudsLog13DefaultLoggerC6sharedACvgZ",
+                "moduleName": "AIBudsLog",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "log",
+            "printedName": "log(_:level:subsystem:category:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "LogLevel",
+                "printedName": "AIBudsLog.LogLevel",
+                "usr": "c:@M@AIBudsLog@E@AIBudsLogLevel"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AIBudsLog@objc(cs)AIBudsDefaultLogger(im)logMessage:level:subsystem:category:",
+            "mangledName": "$s9AIBudsLog13DefaultLoggerC3log_5level9subsystem8categoryySS_AA0B5LevelOSSSgAJtF",
+            "moduleName": "AIBudsLog",
+            "objc_name": "logMessage:level:subsystem:category:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "verbose",
+            "printedName": "verbose(_:subsystem:category:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AIBudsLog@objc(cs)AIBudsDefaultLogger(im)verbose:subsystem:category:",
+            "mangledName": "$s9AIBudsLog13DefaultLoggerC7verbose_9subsystem8categoryySS_SSSgAGtF",
+            "moduleName": "AIBudsLog",
+            "objc_name": "verbose:subsystem:category:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "debug",
+            "printedName": "debug(_:subsystem:category:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AIBudsLog@objc(cs)AIBudsDefaultLogger(im)debug:subsystem:category:",
+            "mangledName": "$s9AIBudsLog13DefaultLoggerC5debug_9subsystem8categoryySS_SSSgAGtF",
+            "moduleName": "AIBudsLog",
+            "objc_name": "debug:subsystem:category:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "info",
+            "printedName": "info(_:subsystem:category:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AIBudsLog@objc(cs)AIBudsDefaultLogger(im)info:subsystem:category:",
+            "mangledName": "$s9AIBudsLog13DefaultLoggerC4info_9subsystem8categoryySS_SSSgAGtF",
+            "moduleName": "AIBudsLog",
+            "objc_name": "info:subsystem:category:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "warn",
+            "printedName": "warn(_:subsystem:category:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AIBudsLog@objc(cs)AIBudsDefaultLogger(im)warn:subsystem:category:",
+            "mangledName": "$s9AIBudsLog13DefaultLoggerC4warn_9subsystem8categoryySS_SSSgAGtF",
+            "moduleName": "AIBudsLog",
+            "objc_name": "warn:subsystem:category:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "error",
+            "printedName": "error(_:subsystem:category:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AIBudsLog@objc(cs)AIBudsDefaultLogger(im)error:subsystem:category:",
+            "mangledName": "$s9AIBudsLog13DefaultLoggerC5error_9subsystem8categoryySS_SSSgAGtF",
+            "moduleName": "AIBudsLog",
+            "objc_name": "error:subsystem:category:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "fatal",
+            "printedName": "fatal(_:subsystem:category:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AIBudsLog@objc(cs)AIBudsDefaultLogger(im)fatal:subsystem:category:",
+            "mangledName": "$s9AIBudsLog13DefaultLoggerC5fatal_9subsystem8categoryySS_SSSgAGtF",
+            "moduleName": "AIBudsLog",
+            "objc_name": "fatal:subsystem:category:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@AIBudsLog@objc(cs)AIBudsDefaultLogger",
+        "mangledName": "$s9AIBudsLog13DefaultLoggerC",
+        "moduleName": "AIBudsLog",
+        "objc_name": "AIBudsDefaultLogger",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "LogService",
+            "printedName": "LogService",
+            "usr": "c:@M@AIBudsLog@objc(pl)AIBudsLogService",
+            "mangledName": "$s9AIBudsLog0B7ServiceP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AIBudsLog",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Dispatch",
+        "printedName": "Dispatch",
+        "declKind": "Import",
+        "moduleName": "AIBudsLog"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "AIBudsLog"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AIBudsLog",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "LogConfiguration",
+        "printedName": "LogConfiguration",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "logsDirectory",
+            "printedName": "logsDirectory",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBudsLog@objc(cs)AIBudsLogConfiguration(py)logsDirectory",
+            "mangledName": "$s9AIBudsLog0B13ConfigurationC13logsDirectorySSvp",
+            "moduleName": "AIBudsLog",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsLog@objc(cs)AIBudsLogConfiguration(im)logsDirectory",
+                "mangledName": "$s9AIBudsLog0B13ConfigurationC13logsDirectorySSvg",
+                "moduleName": "AIBudsLog",
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsLog@objc(cs)AIBudsLogConfiguration(im)setLogsDirectory:",
+                "mangledName": "$s9AIBudsLog0B13ConfigurationC13logsDirectorySSvs",
+                "moduleName": "AIBudsLog",
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9AIBudsLog0B13ConfigurationC13logsDirectorySSvM",
+                "mangledName": "$s9AIBudsLog0B13ConfigurationC13logsDirectorySSvM",
+                "moduleName": "AIBudsLog",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "maxFileSize",
+            "printedName": "maxFileSize",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UInt64",
+                "printedName": "Swift.UInt64",
+                "usr": "s:s6UInt64V"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBudsLog@objc(cs)AIBudsLogConfiguration(py)maxFileSize",
+            "mangledName": "$s9AIBudsLog0B13ConfigurationC11maxFileSizes6UInt64Vvp",
+            "moduleName": "AIBudsLog",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UInt64",
+                    "printedName": "Swift.UInt64",
+                    "usr": "s:s6UInt64V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsLog@objc(cs)AIBudsLogConfiguration(im)maxFileSize",
+                "mangledName": "$s9AIBudsLog0B13ConfigurationC11maxFileSizes6UInt64Vvg",
+                "moduleName": "AIBudsLog",
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UInt64",
+                    "printedName": "Swift.UInt64",
+                    "usr": "s:s6UInt64V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsLog@objc(cs)AIBudsLogConfiguration(im)setMaxFileSize:",
+                "mangledName": "$s9AIBudsLog0B13ConfigurationC11maxFileSizes6UInt64Vvs",
+                "moduleName": "AIBudsLog",
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9AIBudsLog0B13ConfigurationC11maxFileSizes6UInt64VvM",
+                "mangledName": "$s9AIBudsLog0B13ConfigurationC11maxFileSizes6UInt64VvM",
+                "moduleName": "AIBudsLog",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "logFileMaxAge",
+            "printedName": "logFileMaxAge",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBudsLog@objc(cs)AIBudsLogConfiguration(py)logFileMaxAge",
+            "mangledName": "$s9AIBudsLog0B13ConfigurationC13logFileMaxAgeSivp",
+            "moduleName": "AIBudsLog",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsLog@objc(cs)AIBudsLogConfiguration(im)logFileMaxAge",
+                "mangledName": "$s9AIBudsLog0B13ConfigurationC13logFileMaxAgeSivg",
+                "moduleName": "AIBudsLog",
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsLog@objc(cs)AIBudsLogConfiguration(im)setLogFileMaxAge:",
+                "mangledName": "$s9AIBudsLog0B13ConfigurationC13logFileMaxAgeSivs",
+                "moduleName": "AIBudsLog",
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9AIBudsLog0B13ConfigurationC13logFileMaxAgeSivM",
+                "mangledName": "$s9AIBudsLog0B13ConfigurationC13logFileMaxAgeSivM",
+                "moduleName": "AIBudsLog",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "level",
+            "printedName": "level",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "LogLevel",
+                "printedName": "AIBudsLog.LogLevel",
+                "usr": "c:@M@AIBudsLog@E@AIBudsLogLevel"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBudsLog@objc(cs)AIBudsLogConfiguration(py)level",
+            "mangledName": "$s9AIBudsLog0B13ConfigurationC5levelAA0B5LevelOvp",
+            "moduleName": "AIBudsLog",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LogLevel",
+                    "printedName": "AIBudsLog.LogLevel",
+                    "usr": "c:@M@AIBudsLog@E@AIBudsLogLevel"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsLog@objc(cs)AIBudsLogConfiguration(im)level",
+                "mangledName": "$s9AIBudsLog0B13ConfigurationC5levelAA0B5LevelOvg",
+                "moduleName": "AIBudsLog",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LogLevel",
+                    "printedName": "AIBudsLog.LogLevel",
+                    "usr": "c:@M@AIBudsLog@E@AIBudsLogLevel"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsLog@objc(cs)AIBudsLogConfiguration(im)setLevel:",
+                "mangledName": "$s9AIBudsLog0B13ConfigurationC5levelAA0B5LevelOvs",
+                "moduleName": "AIBudsLog",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9AIBudsLog0B13ConfigurationC5levelAA0B5LevelOvM",
+                "mangledName": "$s9AIBudsLog0B13ConfigurationC5levelAA0B5LevelOvM",
+                "moduleName": "AIBudsLog",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "destination",
+            "printedName": "destination",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "LogDestination",
+                "printedName": "AIBudsLog.LogDestination",
+                "usr": "c:@M@AIBudsLog@E@AIBudsLogDestination"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBudsLog@objc(cs)AIBudsLogConfiguration(py)destination",
+            "mangledName": "$s9AIBudsLog0B13ConfigurationC11destinationAA0B11DestinationOvp",
+            "moduleName": "AIBudsLog",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LogDestination",
+                    "printedName": "AIBudsLog.LogDestination",
+                    "usr": "c:@M@AIBudsLog@E@AIBudsLogDestination"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsLog@objc(cs)AIBudsLogConfiguration(im)destination",
+                "mangledName": "$s9AIBudsLog0B13ConfigurationC11destinationAA0B11DestinationOvg",
+                "moduleName": "AIBudsLog",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LogDestination",
+                    "printedName": "AIBudsLog.LogDestination",
+                    "usr": "c:@M@AIBudsLog@E@AIBudsLogDestination"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsLog@objc(cs)AIBudsLogConfiguration(im)setDestination:",
+                "mangledName": "$s9AIBudsLog0B13ConfigurationC11destinationAA0B11DestinationOvs",
+                "moduleName": "AIBudsLog",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9AIBudsLog0B13ConfigurationC11destinationAA0B11DestinationOvM",
+                "mangledName": "$s9AIBudsLog0B13ConfigurationC11destinationAA0B11DestinationOvM",
+                "moduleName": "AIBudsLog",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "LogConfiguration",
+                "printedName": "AIBudsLog.LogConfiguration",
+                "usr": "c:@M@AIBudsLog@objc(cs)AIBudsLogConfiguration"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBudsLog@objc(cs)AIBudsLogConfiguration(cpy)shared",
+            "mangledName": "$s9AIBudsLog0B13ConfigurationC6sharedACvpZ",
+            "moduleName": "AIBudsLog",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LogConfiguration",
+                    "printedName": "AIBudsLog.LogConfiguration",
+                    "usr": "c:@M@AIBudsLog@objc(cs)AIBudsLogConfiguration"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsLog@objc(cs)AIBudsLogConfiguration(cm)shared",
+                "mangledName": "$s9AIBudsLog0B13ConfigurationC6sharedACvgZ",
+                "moduleName": "AIBudsLog",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@AIBudsLog@objc(cs)AIBudsLogConfiguration",
+        "mangledName": "$s9AIBudsLog0B13ConfigurationC",
+        "moduleName": "AIBudsLog",
+        "objc_name": "AIBudsLogConfiguration",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AIBudsLog",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "LogDestination",
+        "printedName": "LogDestination",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "console",
+            "printedName": "console",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AIBudsLog.LogDestination.Type) -> AIBudsLog.LogDestination",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LogDestination",
+                    "printedName": "AIBudsLog.LogDestination",
+                    "usr": "c:@M@AIBudsLog@E@AIBudsLogDestination"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AIBudsLog.LogDestination.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LogDestination",
+                        "printedName": "AIBudsLog.LogDestination",
+                        "usr": "c:@M@AIBudsLog@E@AIBudsLogDestination"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AIBudsLog@E@AIBudsLogDestination@AIBudsLogDestinationConsole",
+            "mangledName": "$s9AIBudsLog0B11DestinationO7consoleyA2CmF",
+            "moduleName": "AIBudsLog",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "oslogger",
+            "printedName": "oslogger",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AIBudsLog.LogDestination.Type) -> AIBudsLog.LogDestination",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LogDestination",
+                    "printedName": "AIBudsLog.LogDestination",
+                    "usr": "c:@M@AIBudsLog@E@AIBudsLogDestination"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AIBudsLog.LogDestination.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LogDestination",
+                        "printedName": "AIBudsLog.LogDestination",
+                        "usr": "c:@M@AIBudsLog@E@AIBudsLogDestination"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AIBudsLog@E@AIBudsLogDestination@AIBudsLogDestinationOslogger",
+            "mangledName": "$s9AIBudsLog0B11DestinationO8osloggeryA2CmF",
+            "moduleName": "AIBudsLog",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Var",
+            "name": "file",
+            "printedName": "file",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AIBudsLog.LogDestination.Type) -> AIBudsLog.LogDestination",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LogDestination",
+                    "printedName": "AIBudsLog.LogDestination",
+                    "usr": "c:@M@AIBudsLog@E@AIBudsLogDestination"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AIBudsLog.LogDestination.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LogDestination",
+                        "printedName": "AIBudsLog.LogDestination",
+                        "usr": "c:@M@AIBudsLog@E@AIBudsLogDestination"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AIBudsLog@E@AIBudsLogDestination@AIBudsLogDestinationFile",
+            "mangledName": "$s9AIBudsLog0B11DestinationO4fileyA2CmF",
+            "moduleName": "AIBudsLog",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 2
+          },
+          {
+            "kind": "Var",
+            "name": "xlfacility",
+            "printedName": "xlfacility",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AIBudsLog.LogDestination.Type) -> AIBudsLog.LogDestination",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LogDestination",
+                    "printedName": "AIBudsLog.LogDestination",
+                    "usr": "c:@M@AIBudsLog@E@AIBudsLogDestination"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AIBudsLog.LogDestination.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LogDestination",
+                        "printedName": "AIBudsLog.LogDestination",
+                        "usr": "c:@M@AIBudsLog@E@AIBudsLogDestination"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AIBudsLog@E@AIBudsLogDestination@AIBudsLogDestinationXlfacility",
+            "mangledName": "$s9AIBudsLog0B11DestinationO10xlfacilityyA2CmF",
+            "moduleName": "AIBudsLog",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 3
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "AIBudsLog.LogDestination?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LogDestination",
+                    "printedName": "AIBudsLog.LogDestination",
+                    "usr": "c:@M@AIBudsLog@E@AIBudsLogDestination"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:9AIBudsLog0B11DestinationO8rawValueACSgSi_tcfc",
+            "mangledName": "$s9AIBudsLog0B11DestinationO8rawValueACSgSi_tcfc",
+            "moduleName": "AIBudsLog",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9AIBudsLog0B11DestinationO8rawValueSivp",
+            "mangledName": "$s9AIBudsLog0B11DestinationO8rawValueSivp",
+            "moduleName": "AIBudsLog",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9AIBudsLog0B11DestinationO8rawValueSivg",
+                "mangledName": "$s9AIBudsLog0B11DestinationO8rawValueSivg",
+                "moduleName": "AIBudsLog",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "c:@M@AIBudsLog@E@AIBudsLogDestination",
+        "mangledName": "$s9AIBudsLog0B11DestinationO",
+        "moduleName": "AIBudsLog",
+        "objc_name": "AIBudsLogDestination",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AIBudsLog",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "os.log",
+        "printedName": "os.log",
+        "declKind": "Import",
+        "moduleName": "AIBudsLog"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "LogLevel",
+        "printedName": "LogLevel",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "verbose",
+            "printedName": "verbose",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AIBudsLog.LogLevel.Type) -> AIBudsLog.LogLevel",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LogLevel",
+                    "printedName": "AIBudsLog.LogLevel",
+                    "usr": "c:@M@AIBudsLog@E@AIBudsLogLevel"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AIBudsLog.LogLevel.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LogLevel",
+                        "printedName": "AIBudsLog.LogLevel",
+                        "usr": "c:@M@AIBudsLog@E@AIBudsLogLevel"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AIBudsLog@E@AIBudsLogLevel@AIBudsLogLevelVerbose",
+            "mangledName": "$s9AIBudsLog0B5LevelO7verboseyA2CmF",
+            "moduleName": "AIBudsLog",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "debug",
+            "printedName": "debug",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AIBudsLog.LogLevel.Type) -> AIBudsLog.LogLevel",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LogLevel",
+                    "printedName": "AIBudsLog.LogLevel",
+                    "usr": "c:@M@AIBudsLog@E@AIBudsLogLevel"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AIBudsLog.LogLevel.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LogLevel",
+                        "printedName": "AIBudsLog.LogLevel",
+                        "usr": "c:@M@AIBudsLog@E@AIBudsLogLevel"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AIBudsLog@E@AIBudsLogLevel@AIBudsLogLevelDebug",
+            "mangledName": "$s9AIBudsLog0B5LevelO5debugyA2CmF",
+            "moduleName": "AIBudsLog",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Var",
+            "name": "info",
+            "printedName": "info",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AIBudsLog.LogLevel.Type) -> AIBudsLog.LogLevel",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LogLevel",
+                    "printedName": "AIBudsLog.LogLevel",
+                    "usr": "c:@M@AIBudsLog@E@AIBudsLogLevel"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AIBudsLog.LogLevel.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LogLevel",
+                        "printedName": "AIBudsLog.LogLevel",
+                        "usr": "c:@M@AIBudsLog@E@AIBudsLogLevel"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AIBudsLog@E@AIBudsLogLevel@AIBudsLogLevelInfo",
+            "mangledName": "$s9AIBudsLog0B5LevelO4infoyA2CmF",
+            "moduleName": "AIBudsLog",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 2
+          },
+          {
+            "kind": "Var",
+            "name": "warn",
+            "printedName": "warn",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AIBudsLog.LogLevel.Type) -> AIBudsLog.LogLevel",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LogLevel",
+                    "printedName": "AIBudsLog.LogLevel",
+                    "usr": "c:@M@AIBudsLog@E@AIBudsLogLevel"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AIBudsLog.LogLevel.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LogLevel",
+                        "printedName": "AIBudsLog.LogLevel",
+                        "usr": "c:@M@AIBudsLog@E@AIBudsLogLevel"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AIBudsLog@E@AIBudsLogLevel@AIBudsLogLevelWarn",
+            "mangledName": "$s9AIBudsLog0B5LevelO4warnyA2CmF",
+            "moduleName": "AIBudsLog",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 3
+          },
+          {
+            "kind": "Var",
+            "name": "error",
+            "printedName": "error",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AIBudsLog.LogLevel.Type) -> AIBudsLog.LogLevel",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LogLevel",
+                    "printedName": "AIBudsLog.LogLevel",
+                    "usr": "c:@M@AIBudsLog@E@AIBudsLogLevel"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AIBudsLog.LogLevel.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LogLevel",
+                        "printedName": "AIBudsLog.LogLevel",
+                        "usr": "c:@M@AIBudsLog@E@AIBudsLogLevel"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AIBudsLog@E@AIBudsLogLevel@AIBudsLogLevelError",
+            "mangledName": "$s9AIBudsLog0B5LevelO5erroryA2CmF",
+            "moduleName": "AIBudsLog",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 4
+          },
+          {
+            "kind": "Var",
+            "name": "fatal",
+            "printedName": "fatal",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AIBudsLog.LogLevel.Type) -> AIBudsLog.LogLevel",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LogLevel",
+                    "printedName": "AIBudsLog.LogLevel",
+                    "usr": "c:@M@AIBudsLog@E@AIBudsLogLevel"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AIBudsLog.LogLevel.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LogLevel",
+                        "printedName": "AIBudsLog.LogLevel",
+                        "usr": "c:@M@AIBudsLog@E@AIBudsLogLevel"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AIBudsLog@E@AIBudsLogLevel@AIBudsLogLevelFatal",
+            "mangledName": "$s9AIBudsLog0B5LevelO5fatalyA2CmF",
+            "moduleName": "AIBudsLog",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 5
+          },
+          {
+            "kind": "Var",
+            "name": "mute",
+            "printedName": "mute",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AIBudsLog.LogLevel.Type) -> AIBudsLog.LogLevel",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LogLevel",
+                    "printedName": "AIBudsLog.LogLevel",
+                    "usr": "c:@M@AIBudsLog@E@AIBudsLogLevel"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AIBudsLog.LogLevel.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LogLevel",
+                        "printedName": "AIBudsLog.LogLevel",
+                        "usr": "c:@M@AIBudsLog@E@AIBudsLogLevel"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AIBudsLog@E@AIBudsLogLevel@AIBudsLogLevelMute",
+            "mangledName": "$s9AIBudsLog0B5LevelO4muteyA2CmF",
+            "moduleName": "AIBudsLog",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 6
+          },
+          {
+            "kind": "Var",
+            "name": "min",
+            "printedName": "min",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "LogLevel",
+                "printedName": "AIBudsLog.LogLevel",
+                "usr": "c:@M@AIBudsLog@E@AIBudsLogLevel"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9AIBudsLog0B5LevelO3minACvpZ",
+            "mangledName": "$s9AIBudsLog0B5LevelO3minACvpZ",
+            "moduleName": "AIBudsLog",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LogLevel",
+                    "printedName": "AIBudsLog.LogLevel",
+                    "usr": "c:@M@AIBudsLog@E@AIBudsLogLevel"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9AIBudsLog0B5LevelO3minACvgZ",
+                "mangledName": "$s9AIBudsLog0B5LevelO3minACvgZ",
+                "moduleName": "AIBudsLog",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "max",
+            "printedName": "max",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "LogLevel",
+                "printedName": "AIBudsLog.LogLevel",
+                "usr": "c:@M@AIBudsLog@E@AIBudsLogLevel"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9AIBudsLog0B5LevelO3maxACvpZ",
+            "mangledName": "$s9AIBudsLog0B5LevelO3maxACvpZ",
+            "moduleName": "AIBudsLog",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LogLevel",
+                    "printedName": "AIBudsLog.LogLevel",
+                    "usr": "c:@M@AIBudsLog@E@AIBudsLogLevel"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9AIBudsLog0B5LevelO3maxACvgZ",
+                "mangledName": "$s9AIBudsLog0B5LevelO3maxACvgZ",
+                "moduleName": "AIBudsLog",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "abbreviation",
+            "printedName": "abbreviation",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9AIBudsLog0B5LevelO12abbreviationSSvp",
+            "mangledName": "$s9AIBudsLog0B5LevelO12abbreviationSSvp",
+            "moduleName": "AIBudsLog",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9AIBudsLog0B5LevelO12abbreviationSSvg",
+                "mangledName": "$s9AIBudsLog0B5LevelO12abbreviationSSvg",
+                "moduleName": "AIBudsLog",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "osLogType",
+            "printedName": "osLogType",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OSLogType",
+                "printedName": "os.OSLogType",
+                "usr": "c:@EA@os_log_type_t"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9AIBudsLog0B5LevelO02osB4TypeSo0D11_log_type_tavp",
+            "mangledName": "$s9AIBudsLog0B5LevelO02osB4TypeSo0D11_log_type_tavp",
+            "moduleName": "AIBudsLog",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OSLogType",
+                    "printedName": "os.OSLogType",
+                    "usr": "c:@EA@os_log_type_t"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9AIBudsLog0B5LevelO02osB4TypeSo0D11_log_type_tavg",
+                "mangledName": "$s9AIBudsLog0B5LevelO02osB4TypeSo0D11_log_type_tavg",
+                "moduleName": "AIBudsLog",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "AIBudsLog.LogLevel?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LogLevel",
+                    "printedName": "AIBudsLog.LogLevel",
+                    "usr": "c:@M@AIBudsLog@E@AIBudsLogLevel"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:9AIBudsLog0B5LevelO8rawValueACSgSi_tcfc",
+            "mangledName": "$s9AIBudsLog0B5LevelO8rawValueACSgSi_tcfc",
+            "moduleName": "AIBudsLog",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9AIBudsLog0B5LevelO8rawValueSivp",
+            "mangledName": "$s9AIBudsLog0B5LevelO8rawValueSivp",
+            "moduleName": "AIBudsLog",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9AIBudsLog0B5LevelO8rawValueSivg",
+                "mangledName": "$s9AIBudsLog0B5LevelO8rawValueSivg",
+                "moduleName": "AIBudsLog",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "description",
+            "printedName": "description",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9AIBudsLog0B5LevelO11descriptionSSvp",
+            "mangledName": "$s9AIBudsLog0B5LevelO11descriptionSSvp",
+            "moduleName": "AIBudsLog",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9AIBudsLog0B5LevelO11descriptionSSvg",
+                "mangledName": "$s9AIBudsLog0B5LevelO11descriptionSSvg",
+                "moduleName": "AIBudsLog",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "c:@M@AIBudsLog@E@AIBudsLogLevel",
+        "mangledName": "$s9AIBudsLog0B5LevelO",
+        "moduleName": "AIBudsLog",
+        "objc_name": "AIBudsLogLevel",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AIBudsLog",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "LogService",
+        "printedName": "LogService",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "log",
+            "printedName": "log(_:level:subsystem:category:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "LogLevel",
+                "printedName": "AIBudsLog.LogLevel",
+                "usr": "c:@M@AIBudsLog@E@AIBudsLogLevel"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AIBudsLog@objc(pl)AIBudsLogService(im)logMessage:level:subsystem:category:",
+            "mangledName": "$s9AIBudsLog0B7ServiceP3log_5level9subsystem8categoryySS_AA0B5LevelOSSSgAJtF",
+            "moduleName": "AIBudsLog",
+            "genericSig": "<τ_0_0 where τ_0_0 : AIBudsLog.LogService>",
+            "sugared_genericSig": "<Self where Self : AIBudsLog.LogService>",
+            "protocolReq": true,
+            "objc_name": "logMessage:level:subsystem:category:",
+            "declAttributes": [
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "verbose",
+            "printedName": "verbose(_:subsystem:category:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AIBudsLog@objc(pl)AIBudsLogService(im)verbose:subsystem:category:",
+            "mangledName": "$s9AIBudsLog0B7ServiceP7verbose_9subsystem8categoryySS_SSSgAGtF",
+            "moduleName": "AIBudsLog",
+            "genericSig": "<τ_0_0 where τ_0_0 : AIBudsLog.LogService>",
+            "sugared_genericSig": "<Self where Self : AIBudsLog.LogService>",
+            "protocolReq": true,
+            "objc_name": "verbose:subsystem:category:",
+            "declAttributes": [
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "debug",
+            "printedName": "debug(_:subsystem:category:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AIBudsLog@objc(pl)AIBudsLogService(im)debug:subsystem:category:",
+            "mangledName": "$s9AIBudsLog0B7ServiceP5debug_9subsystem8categoryySS_SSSgAGtF",
+            "moduleName": "AIBudsLog",
+            "genericSig": "<τ_0_0 where τ_0_0 : AIBudsLog.LogService>",
+            "sugared_genericSig": "<Self where Self : AIBudsLog.LogService>",
+            "protocolReq": true,
+            "objc_name": "debug:subsystem:category:",
+            "declAttributes": [
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "info",
+            "printedName": "info(_:subsystem:category:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AIBudsLog@objc(pl)AIBudsLogService(im)info:subsystem:category:",
+            "mangledName": "$s9AIBudsLog0B7ServiceP4info_9subsystem8categoryySS_SSSgAGtF",
+            "moduleName": "AIBudsLog",
+            "genericSig": "<τ_0_0 where τ_0_0 : AIBudsLog.LogService>",
+            "sugared_genericSig": "<Self where Self : AIBudsLog.LogService>",
+            "protocolReq": true,
+            "objc_name": "info:subsystem:category:",
+            "declAttributes": [
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "warn",
+            "printedName": "warn(_:subsystem:category:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AIBudsLog@objc(pl)AIBudsLogService(im)warn:subsystem:category:",
+            "mangledName": "$s9AIBudsLog0B7ServiceP4warn_9subsystem8categoryySS_SSSgAGtF",
+            "moduleName": "AIBudsLog",
+            "genericSig": "<τ_0_0 where τ_0_0 : AIBudsLog.LogService>",
+            "sugared_genericSig": "<Self where Self : AIBudsLog.LogService>",
+            "protocolReq": true,
+            "objc_name": "warn:subsystem:category:",
+            "declAttributes": [
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "error",
+            "printedName": "error(_:subsystem:category:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AIBudsLog@objc(pl)AIBudsLogService(im)error:subsystem:category:",
+            "mangledName": "$s9AIBudsLog0B7ServiceP5error_9subsystem8categoryySS_SSSgAGtF",
+            "moduleName": "AIBudsLog",
+            "genericSig": "<τ_0_0 where τ_0_0 : AIBudsLog.LogService>",
+            "sugared_genericSig": "<Self where Self : AIBudsLog.LogService>",
+            "protocolReq": true,
+            "objc_name": "error:subsystem:category:",
+            "declAttributes": [
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "fatal",
+            "printedName": "fatal(_:subsystem:category:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AIBudsLog@objc(pl)AIBudsLogService(im)fatal:subsystem:category:",
+            "mangledName": "$s9AIBudsLog0B7ServiceP5fatal_9subsystem8categoryySS_SSSgAGtF",
+            "moduleName": "AIBudsLog",
+            "genericSig": "<τ_0_0 where τ_0_0 : AIBudsLog.LogService>",
+            "sugared_genericSig": "<Self where Self : AIBudsLog.LogService>",
+            "protocolReq": true,
+            "objc_name": "fatal:subsystem:category:",
+            "declAttributes": [
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "c:@M@AIBudsLog@objc(pl)AIBudsLogService",
+        "mangledName": "$s9AIBudsLog0B7ServiceP",
+        "moduleName": "AIBudsLog",
+        "genericSig": "<τ_0_0 : ObjectiveC.NSObjectProtocol>",
+        "sugared_genericSig": "<Self : ObjectiveC.NSObjectProtocol>",
+        "objc_name": "AIBudsLogService",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AIBudsLog",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "XLFacilityPlugin",
+        "printedName": "XLFacilityPlugin",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "isLoaded",
+            "printedName": "isLoaded",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBudsLog@objc(pl)AIBudsXLFacilityPlugin(py)isLoaded",
+            "mangledName": "$s9AIBudsLog16XLFacilityPluginP8isLoadedSbvp",
+            "moduleName": "AIBudsLog",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsLog@objc(pl)AIBudsXLFacilityPlugin(im)isLoaded",
+                "mangledName": "$s9AIBudsLog16XLFacilityPluginP8isLoadedSbvg",
+                "moduleName": "AIBudsLog",
+                "genericSig": "<τ_0_0 where τ_0_0 : AIBudsLog.XLFacilityPlugin>",
+                "sugared_genericSig": "<Self where Self : AIBudsLog.XLFacilityPlugin>",
+                "protocolReq": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "load",
+            "printedName": "load()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AIBudsLog@objc(pl)AIBudsXLFacilityPlugin(im)load",
+            "mangledName": "$s9AIBudsLog16XLFacilityPluginP4loadyyF",
+            "moduleName": "AIBudsLog",
+            "genericSig": "<τ_0_0 where τ_0_0 : AIBudsLog.XLFacilityPlugin>",
+            "sugared_genericSig": "<Self where Self : AIBudsLog.XLFacilityPlugin>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "purgeOldLogsWithMaxAge",
+            "printedName": "purgeOldLogsWithMaxAge(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AIBudsLog@objc(pl)AIBudsXLFacilityPlugin(im)purgeOldLogsWithMaxAge:",
+            "mangledName": "$s9AIBudsLog16XLFacilityPluginP22purgeOldLogsWithMaxAgeyySiF",
+            "moduleName": "AIBudsLog",
+            "genericSig": "<τ_0_0 where τ_0_0 : AIBudsLog.XLFacilityPlugin>",
+            "sugared_genericSig": "<Self where Self : AIBudsLog.XLFacilityPlugin>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "log",
+            "printedName": "log(_:level:subsystem:category:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "LogLevel",
+                "printedName": "AIBudsLog.LogLevel",
+                "usr": "c:@M@AIBudsLog@E@AIBudsLogLevel"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AIBudsLog@objc(pl)AIBudsXLFacilityPlugin(im)logMessage:level:subsystem:category:",
+            "mangledName": "$s9AIBudsLog16XLFacilityPluginP3log_5level9subsystem8categoryySS_AA0B5LevelOSSSgAJtF",
+            "moduleName": "AIBudsLog",
+            "genericSig": "<τ_0_0 where τ_0_0 : AIBudsLog.XLFacilityPlugin>",
+            "sugared_genericSig": "<Self where Self : AIBudsLog.XLFacilityPlugin>",
+            "protocolReq": true,
+            "objc_name": "logMessage:level:subsystem:category:",
+            "declAttributes": [
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "c:@M@AIBudsLog@objc(pl)AIBudsXLFacilityPlugin",
+        "mangledName": "$s9AIBudsLog16XLFacilityPluginP",
+        "moduleName": "AIBudsLog",
+        "genericSig": "<τ_0_0 : ObjectiveC.NSObjectProtocol>",
+        "sugared_genericSig": "<Self : ObjectiveC.NSObjectProtocol>",
+        "objc_name": "AIBudsXLFacilityPlugin",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLog\/AIBudsLog.swift",
+      "kind": "StringLiteral",
+      "offset": 251,
+      "length": 6,
+      "value": "\"👮\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLog\/AIBudsLog.swift",
+      "kind": "StringLiteral",
+      "offset": 343,
+      "length": 14,
+      "value": "\"AIBudsLogSDK\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLog\/AIBudsLog.swift",
+      "kind": "StringLiteral",
+      "offset": 457,
+      "length": 14,
+      "value": "\"1.0.0-beta.1\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLog\/AIBudsLog.swift",
+      "kind": "StringLiteral",
+      "offset": 587,
+      "length": 13,
+      "value": "\"20260408001\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLog\/AIBudsLog.swift",
+      "kind": "StringLiteral",
+      "offset": 702,
+      "length": 12,
+      "value": "\"2026-04-08\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLog\/AIBudsLog.swift",
+      "kind": "StringLiteral",
+      "offset": 795,
+      "length": 29,
+      "value": "\"com.topstep.sdks.aibuds.log\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLog\/AIBudsLogSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 1898,
+      "length": 100,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLog\/AIBudsLogSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 1916,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLog\/AIBudsLogSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 1927,
+      "length": 1,
+      "value": "\" V\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLog\/AIBudsLogSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 1943,
+      "length": 1,
+      "value": "\" (Build\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLog\/AIBudsLogSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 1962,
+      "length": 1,
+      "value": "\") Release Date: \""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLog\/AIBudsLogSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 1997,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLog\/DefaultLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 657,
+      "length": 25,
+      "value": "\"yyyy-MM-dd HH:mm:ss.SSS\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLog\/DefaultLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 729,
+      "length": 13,
+      "value": "\"en_US_POSIX\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLog\/DefaultLogger.swift",
+      "kind": "Dictionary",
+      "offset": 930,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLog\/FileLogger.swift",
+      "kind": "IntegerLiteral",
+      "offset": 977,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLog\/FileLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 1357,
+      "length": 39,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLog\/FileLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 1382,
+      "length": 1,
+      "value": "\".queue.fileio\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLog\/FileLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 1606,
+      "length": 13,
+      "value": "\"en_US_POSIX\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLog\/FileLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 1644,
+      "length": 12,
+      "value": "\"yyyy-MM-dd\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLog\/FileLogger.swift",
+      "kind": "Array",
+      "offset": 1741,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLog\/LogConfiguration.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1573,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLog\/LogConfiguration.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1578,
+      "length": 4,
+      "value": "1024"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLog\/LogConfiguration.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1585,
+      "length": 4,
+      "value": "1024"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLog\/LogConfiguration.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1969,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLog\/LogDestination.swift",
+      "kind": "IntegerLiteral",
+      "offset": 649,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLog\/LogDestination.swift",
+      "kind": "IntegerLiteral",
+      "offset": 745,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLog\/LogDestination.swift",
+      "kind": "IntegerLiteral",
+      "offset": 822,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLog\/LogDestination.swift",
+      "kind": "IntegerLiteral",
+      "offset": 897,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLog\/LogLevel.swift",
+      "kind": "IntegerLiteral",
+      "offset": 349,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLog\/LogLevel.swift",
+      "kind": "IntegerLiteral",
+      "offset": 441,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLog\/LogLevel.swift",
+      "kind": "IntegerLiteral",
+      "offset": 528,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLog\/LogLevel.swift",
+      "kind": "IntegerLiteral",
+      "offset": 618,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLog\/LogLevel.swift",
+      "kind": "IntegerLiteral",
+      "offset": 715,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLog\/LogLevel.swift",
+      "kind": "IntegerLiteral",
+      "offset": 808,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLog\/LogLevel.swift",
+      "kind": "IntegerLiteral",
+      "offset": 885,
+      "length": 10,
+      "value": "2147483647"
+    }
+  ]
+}

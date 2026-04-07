@@ -1,0 +1,498 @@
+/* 
+  Localizable.strings
+  AIBuds
+
+  Created by pcjbird on 2026-02-13.
+  Copyright © 2026 Zero Status. All rights reserved.
+*/
+"MyDevicesLocKey" = "我的设备";
+"AddDeviceMenuTitleLocKey" = "添加设备";
+"ScanDeviceMenuTitleLocKey" = "扫一扫";
+"AddDeviceLocKey" = "添加设备";
+"NoDeviceAddedYetLocKey" = "暂无添加的设备";
+
+"ScanningLocKey" = "扫描中...";
+"ScanStoppedLocKey" = "扫描已停止";
+"UnknownDeviceNameLocKey" = "未知设备";
+"MacAddressLocKey" = "MAC 地址";
+"RSSILocKey" = "RSSI";
+"AddToMyDevicesLocKey" = "添加到我的设备";
+
+"ConfirmLocKey" = "确认";
+"CancelLocKey" = "取消";
+"LocKey.Save" = "保存";
+
+"AddToMyDevicesFailedLocKey" = "添加到我的设备失败";
+"AddToMyDevicesFailedMsgLocKey" = "添加到我的设备失败，请稍后重试";
+"OKLocKey" = "确定";
+
+
+
+"LocKey.BasicFeaturesGroupTitle" = "基本功能";
+"LocKey.FactoryResetFeatureTitle" = "恢复出厂设置";
+"LocKey.PowerOffFeatureTitle" = "关机";
+"LocKey.DeviceInfoGroupTitle" = "设备信息";
+"LocKey.DeviceInfoDetailsTitle" = "设备信息详情";
+"LocKey.SyncDeviceTimeFeatureTitle" = "同步设备时间";
+"LocKey.SetDeviceTimeFeatureTitle" = "设置设备时间";
+"LocKey.SetDeviceLanguageFeatureTitle" = "设置设备语言";
+"LocKey.QueryStorageInfoFeatureTitle" = "查询存储信息";
+"LocKey.QueryMediaCountInfoFeatureTitle" = "查询媒体文件数量";
+"LocKey.FindFeatureGroupTitle" = "查找设备";
+"LocKey.FindDeviceFeatureTitle" = "查找设备";
+"LocKey.StopFindDeviceFeatureTitle" = "停止查找设备";
+"LocKey.FirmwareGroupTitle" = "固件";
+"LocKey.FirmwareVersionFeatureTitle" = "固件版本信息";
+"LocKey.PhysicalOperationsGroupTitle" = "设备操作";
+"LocKey.PhysicalOperationsMappingFeatureTitle" = "按键功能映射";
+"LocKey.AssignPhysicalOperationsFeatureTitle" = "自定义按键功能";
+"LocKey.ServiceAuthGroupTitle" = "服务授权";
+"LocKey.AuthorizedServicesFeatureTitle" = "已授权服务";
+"LocKey.RetryServiceAuthFeatureTitle" = "重试授权服务";
+"LocKey.ReportSelfAiServiceAuthResultFeatureTitle" = "上报自行接入的 AI 授权结果";
+"LocKey.VoiceAssistantGroupTitle" = "语音助手";
+"LocKey.OnDeviceVoiceAssistantCapabilityFeatureTitle" = "离线语音助手能力信息";
+"LocKey.OnDeviceVoiceAssistantModeFeatureTitle" = "离线语音助手模式";
+"LocKey.SetOnDeviceVoiceAssistantModeFeatureTitle" = "设置离线语音助手模式";
+"LocKey.WorkModeGroupTitle" = "工作模式";
+"LocKey.WorkModeFeatureTitle" = "工作模式";
+"LocKey.SetWorkModeFeatureTitle" = "设置工作模式";
+"LocKey.WorkStateGroupTitle" = "工作状态";
+"LocKey.WorkStateFeatureTitle" = "工作状态";
+"LocKey.WearDetectionGroupTitle" = "佩戴检测";
+"LocKey.WearDetectionCapabilityFeatureTitle" = "佩戴检测功能";
+"LocKey.WearDetectionEnabledFeatureTitle" = "佩戴检测开关状态";
+"LocKey.SetWearDetectionEnabledFeatureTitle" = "设置佩戴检测开关状态";
+"LocKey.VolumeControlGroupTitle" = "音量控制";
+"LocKey.MusicControlGroupTitle" = "音乐控制";
+"LocKey.TWSGroupTitle" = "TWS";
+"LocKey.EqualizerGroupTitle" = "均衡器";
+"LocKey.ANCGroupTitle" = "ANC";
+"LocKey.AudioRecordingGroupTitle" = "音频录制";
+"LocKey.CameraGroupTitle" = "相机";
+"LocKey.RemoteShutterGroupTitle" = "遥控拍照";
+"LocKey.AITranslationGroupTitle" = "AI 翻译";
+"LocKey.AIChatGroupTitle" = "AI 聊天";
+"LocKey.HotspotGroupTitle" = "热点";
+"LocKey.OtaGroupTitle" = "OTA";
+"LocKey.OtaFeatureTitle" = "固件更新（OTA）";
+"LocKey.OtaDemoTitle" = "OTA 升级演示";
+"LocKey.OtaStartButtonTitle" = "开始升级";
+"LocKey.OtaCancelButtonTitle" = "取消升级";
+"LocKey.OtaSelectFileButtonTitle" = "选择文件";
+"LocKey.OtaStatusSelectFile" = "请先选择固件文件";
+"LocKey.OtaStatusReady" = "已选择固件文件，可开始升级";
+"LocKey.OtaStatusWaiting" = "等待开始升级";
+"LocKey.OtaStatusUpgrading" = "正在升级...";
+"LocKey.OtaStatusCanceled" = "升级已取消";
+"LocKey.OtaStatusSuccess" = "升级完成";
+"LocKey.OtaResultTitle" = "升级结果";
+"LocKey.FileSizeLabelFormat" = "文件大小：%@";
+"LocKey.TransferredBytesLabelFormat" = "本次传输字节数：%@";
+"LocKey.TotalTimeLabelFormat" = "总耗时：%.2f 秒";
+"LocKey.PausedTimeLabelFormat" = "暂停时间：%.2f 秒";
+"LocKey.ActualTimeLabelFormat" = "实际用时：%.2f 秒";
+"LocKey.AvgSpeedLabelFormat" = "平均速度 (kB/s): %.2f";
+"LocKey.OtaStatusUnknownError" = "未知错误";
+"LocKey.OtaStatusFailedFormat" = "升级失败：%@";
+"LocKey.OtaStatusCopyFailed" = "文件复制失败";
+"LocKey.OtaStatusNoFirmwareSelected" = "未选择文件";
+"LocKey.CameraOtaGroupTitle" = "Camera OTA";
+"LocKey.CameraOtaFeatureTitle" = "摄像头固件更新（OTA）";
+"LocKey.CameraOtaDemoTitle" = "摄像头 OTA 升级演示";
+"LocKey.StartUpgradeButtonTitle" = "开始升级";
+"LocKey.UpgradingButtonTitle" = "升级中...";
+"LocKey.UpgradeSuccessButtonTitle" = "升级成功";
+"LocKey.UpgradeFailedButtonTitle" = "升级失败";
+"LocKey.SelectedFileInfoFormat" = "已选择：%@\n大小：%@";
+"LocKey.LogInfoStartingOtaUpgrade" = "开始 OTA 升级...";
+"LocKey.LogInfoSelectedFileInfoFormat" = "已选择固件文件：%@ (%@)";
+"LocKey.LogInfoOtaUpgradeStarted" = "OTA 升级已开始";
+"LocKey.LogInfoOtaUpgradeStartFailedFormat" = "OTA 升级启动失败：%@";
+"LocKey.LogInfoFileTransferredInfoFormat" = "文件传输中：%@%%";
+"LocKey.LogInfoFileTransferStarted" = "文件传输已开始";
+"LocKey.LogInfoFileTransferCompleted" = "文件传输已完成";
+"LocKey.LogInfoWaitingForFlashing" = "等待固件更新...";
+"LocKey.LogInfoFlashingProgressInfoFormat" = "固件更新中：%@%%";
+"LocKey.LogInfoFlashingStarted" = "已开始更新固件";
+"LocKey.LogInfoFlashingCompleted" = "固件更新已完成";
+"LocKey.LogInfoOtaUpgradeSucceeded" = "OTA 升级成功";
+"LocKey.LogInfoOtaUpgradeFailed" = "OTA 升级失败";
+"LocKey.LogInfoStartingToConfigureDeviceHotspot" = "正在配置设备热点...";
+"LocKey.LogInfoConfigureDeviceHotspotSuccess" = "设备热点配置成功";
+"LocKey.LogInfoConfigureDeviceHotspotFailedFormat" = "设备热点配置失败：%@";
+"LocKey.LogInfoStartingToEnterCameraOtaMode" = "正在进入摄像头 OTA 模式...";
+"LocKey.LogInfoEnterCameraOtaModeSuccess" = "已进入摄像头 OTA 模式";
+"LocKey.LogInfoStartingToWaitForHotspotOpen" = "等待设备热点开启...";
+"LocKey.LogInfoEnterCameraOtaModeFailedFormat" = "进入摄像头 OTA 模式失败：%@";
+"LocKey.LogInfoStartingToConnectDeviceHotspotFormat" = "开始连接设备热点：%@";
+"LocKey.LogInfoConnectDeviceHotspotSuccess" = "已连接设备热点";
+"LocKey.LogInfoConnectDeviceHotspotFailedFormat" = "连接设备热点失败：%@";
+"LocKey.LogInfoStartingHttpServer" = "正在启动 HTTP 服务器...";
+"LocKey.LogInfoHttpServerStarted" = "HTTP 服务器已启动";
+"LocKey.LogInfoHttpServerStartFailedFormat" = "HTTP 服务器启动失败：%@";
+"LocKey.LogInfoSendingFirmwareUrlFormat" = "正在发送固件 URL: %@";
+"LocKey.LogInfoFirmwareUrlSent" = "固件 URL 已发送";
+"LocKey.LogInfoFirmwareUrlSendFailedFormat" = "固件 URL 发送失败：%@";
+"LocKey.LogInfoLatestCameraFirmwareVersionFormat" = "摄像头固件版本：%@";
+
+"LocKey.AiGroupTitle" = "AI 功能";
+"LocKey.AiAudioRecordingFeatureTitle" = "AI 录音";
+"LocKey.StreamingASRFeatureTitle" = "流式语音识别";
+"LocKey.TTSFeatureTitle" = "文本转语音";
+"LocKey.AiSummaryFeatureTitle" = "AI 总结";
+"LocKey.AiTextTranslationFeatureTitle" = "AI 文本翻译";
+"LocKey.SimultaneousInterpretationFeatureTitle" = "同声传译";
+"LocKey.AiChatFeatureTitle" = "AI 聊天";
+
+"LocKey.AiChatDemoTitle" = "AI 聊天演示";
+"LocKey.Settings" = "设置";
+
+"LocKey.ChatSettingsTitle" = "聊天设置";
+
+"LocKey.StarBurstAI" = "星芒 AI (火山)";
+"LocKey.MLTCloudAI" = "美乐创 AI (骆方案)";
+
+"LocKey.ServiceVendor" = "服务商";
+"LocKey.SelectServiceVendor" = "选择服务商";
+"LocKey.GeneralSettings" = "通用设置";
+"LocKey.StarBurstSettings" = "星芒 AI 设置";
+"LocKey.MLTCloudSettings" = "MLTCloud AI 设置";
+
+"LocKey.AiAudioChannel" = "AI 语音通道";
+"LocKey.AiAudioChannelSco" = "SCO";
+"LocKey.AiAudioChannelOpusInA2dpOut" = "Opus In";
+"LocKey.AiAudioChannelOpusInOpusOut" = "Opus InOut";
+
+"LocKey.StarBurstUsagePlan" = "使用计划";
+"LocKey.StarBurstLitePlan" = "精简版";
+"LocKey.StarBurstProPlan" = "专业版";
+"LocKey.StarBurstAgentId" = "智能体 ID";
+"LocKey.StarBurstSpeakerId" = "音色 ID";
+
+
+"LocKey.AllowInterruptAiAnswer" = "允许打断 AI 应答";
+"LocKey.MaxPauseDuration" = "最大停顿时长";
+"LocKey.AutoEndSessionDuration" = "自动结束对话时长";
+"LocKey.VoiceBroadcast" = "语音播报";
+"LocKey.SaveInputVoiceForDebugging" = "保存语音用于调试";
+
+"LocKey.FactoryResetSuccessMessage" = "重置出厂设置成功";
+"LocKey.FactoryResetFailedMessage" = "重置出厂设置失败";
+"LocKey.PowerOffSuccessMessage" = "关机成功";
+"LocKey.PowerOffFailedMessage" = "关机失败";
+"LocKey.SyncDeviceTimeSuccessMessage" = "同步设备时间成功";
+"LocKey.SyncDeviceTimeFailedMessage" = "同步设备时间失败";
+"LocKey.SetDeviceTimeSuccessMessage" = "设置设备时间成功";
+"LocKey.SetDeviceTimeFailedMessage" = "设置设备时间失败";
+"LocKey.SetDeviceLanguageSuccessMessage" = "设置设备语言成功";
+"LocKey.SetDeviceLanguageFailedMessage" = "设置设备语言失败";
+"LocKey.RequestQueryStorageInfoSuccessMessage" = "请求查询存储信息成功";
+"LocKey.RequestQueryStorageInfoFailedMessage" = "请求查询存储信息失败";
+"LocKey.RequestQueryMediaCountInfoSuccessMessage" = "请求查询媒体数量信息成功";
+"LocKey.RequestQueryMediaCountInfoFailedMessage" = "请求查询媒体数量信息失败";
+"LocKey.FindDeviceSuccessMessage" = "查找设备成功";
+"LocKey.FindDeviceFailedMessage" = "查找设备失败";
+"LocKey.StopFindDeviceSuccessMessage" = "停止查找设备成功";
+"LocKey.StopFindDeviceFailedMessage" = "停止查找设备失败";
+
+
+"LocKey.EnterValue" = "请输入数值";
+"LocKey.EnterTextValue" = "请输入文本";
+
+
+"LocKey.NotSet" = "未设置";
+"LocKey.LanguageForSpeechInput" = "语音输入语言";
+"LocKey.SelectLanguage" = "选择语言";
+
+"LocKey.Speaking" = "正在讲话";
+"LocKey.NotSpeaking" = "已停止讲话";
+
+"LocKey.AIChatErrorMessage" = "AI 会话发生错误";
+
+"LocKey.AiAudioRecordingDemoTitle" = "AI 录音演示";
+
+"LocKey.StartRecording" = "开始录音";
+"LocKey.StopRecording" = "停止录音";
+
+"LocKey.TranscriptWillAppearHereTips" = "转录将显示在这里";
+
+"LocKey.AutoDetect" = "自动检测语言";
+"LocKey.Chinese" = "中文";
+"LocKey.English" = "英文";
+"LocKey.Japanese" = "日文";
+"LocKey.Korean" = "韩文";
+"LocKey.French" = "法文";
+"LocKey.German" = "德文";
+"LocKey.SimplifiedChinese" = "简化中文";
+"LocKey.TraditionalChineseHK" = "传统中文 (香港)";
+"LocKey.Russian" = "俄文";
+"LocKey.Spanish" = "西班牙文";
+"LocKey.Portuguese" = "葡萄牙文";
+"LocKey.Arabic" = "阿拉伯文";
+"LocKey.Dutch" = "荷兰文";
+"LocKey.Italian" = "意大利文";
+"LocKey.Czech" = "捷克文";
+"LocKey.Danish" = "丹麦文";
+"LocKey.Greek" = "希腊文";
+"LocKey.Hebrew" = "希伯来文";
+"LocKey.Hindi" = "印地文";
+"LocKey.Hungarian" = "匈牙利文";
+"LocKey.Indonesian" = "印尼文";
+"LocKey.Malay" = "马来文";
+"LocKey.Polish" = "波兰文";
+"LocKey.Persian" = "波斯文";
+"LocKey.Swedish" = "瑞典文";
+"LocKey.Thai" = "泰文";
+"LocKey.Vietnamese" = "越南文";
+"LocKey.Slovak" = "斯洛伐克文";
+"LocKey.Finnish" = "芬兰文";
+"LocKey.Irish" = "爱尔兰文";
+"LocKey.Romanian" = "罗马尼亚文";
+"LocKey.Turkish" = "土耳其文";
+"LocKey.Croatian" = "克罗地亚文";
+"LocKey.Albanian" = "阿尔巴尼亚文";
+"LocKey.Ukrainian" = "乌克兰文";
+"LocKey.Bulgarian" = "保加利亚文";
+"LocKey.Slovenian" = "斯文尼亚文";
+
+"LocKey.StreamingASRDemoTitle" = "流式语音识别演示";
+"LocKey.SelectAudioFile" = "选择音频文件";
+"LocKey.NoFileSelected" = "未选择文件";
+"LocKey.StartRecognition" = "开始识别";
+"LocKey.StopRecognition" = "停止识别";
+"LocKey.RecognitionResultWillAppearHereTips" = "识别结果将显示在这里";
+"LocKey.PleaseSelectAnAudioFile" = "请选择音频文件";
+"LocKey.Processing" = "正在处理...";
+
+"LocKey.TTSDemoTitle" = "文本转语音演示";
+"LocKey.TTSDemoText" = "这是一个示例文本，用于演示文本转语音功能。它包含大约一百个单词，用于测试合成能力。您可以替换此文本，以听它转换为语音时的声音。系统将将此文本转换为音频并播放它。";
+
+"LocKey.StartToSynthesize" = "开始合成语音";
+"LocKey.Replay" = "重新播放";
+
+"LocKey.SynthesisResultWillAppearHereTips" = "合成结果将显示在这里";
+"LocKey.PleaseEnterTextToSynthesize" = "请输入要合成的文本";
+
+"LocKey.AudioFile" = "音频文件";
+"LocKey.AudioFormat" = "音频格式";
+"LocKey.SynthesisFailed" = "合成失败";
+
+"LocKey.AISummaryDemoTitle" = "AI 总结演示";
+"LocKey.TextToSummarizeTitle" = "要总结的文本";
+"LocKey.AISummaryDemoText" = "人工智能（AI）是由机器展示的智能，与人类或动物展示的智能相对。人工智能研究被定义为智能体研究的领域，智能体是指任何感知其环境并采取行动以最大化其实现目标机会的系统。\"人工智能\"一词此前曾被用于描述模仿和展示与人类思维相关的\"人类\"认知技能的机器，例如\"学习\"和\"问题解决\"。这一定义随后被主要的人工智能研究人员所否定，他们现在从理性和理性行为的角度来描述人工智能，这并不限制智能如何被表达。";
+"LocKey.GenerateSummaryButtonTitle" = "生成总结";
+"LocKey.SummaryResultTitle" = "总结结果";
+"LocKey.SummaryResultWillAppearHereTips" = "总结结果将显示在这里";
+"LocKey.PleaseEnterTextToSummarizeTips" = "请输入要总结的文本";
+"LocKey.SummaryFailed" = "总结失败";
+
+"LocKey.AiTextTranslationDemoTitle" = "AI 文本翻译演示";
+"LocKey.SourceLanguage" = "源语言";
+"LocKey.TargetLanguage" = "目标语言";
+"LocKey.AiTextTranslationDemoText" = "你好，你如何？我希望你做得很好。这是一个翻译演示文本。";
+"LocKey.TranslateButtonTitle" = "翻译";
+"LocKey.TranslateResultWillAppearHereTips" = "翻译结果将显示在这里";
+"LocKey.PleaseEnterTextToTranslate" = "请输入要翻译的文本";
+"LocKey.SourceAndTargetLanguagesCannotBeTheSame" = "源语言和目标语言不能相同";
+"LocKey.TranslationFailed" = "翻译失败";
+
+"LocKey.SimultaneousInterpretationDemoTitle" = "同声传译演示";
+"LocKey.StartInterpretationButtonTitle" = "开始同声传译";
+"LocKey.StopInterpretationButtonTitle" = "停止同声传译";
+
+"LocKey.SourceContent" = "源内容";
+"LocKey.SourceContentWillAppearHereTips" = "源内容将显示在这里";
+"LocKey.TranslationResult" = "翻译结果";
+"LocKey.TranslationResultWillAppearHereTips" = "翻译结果将显示在这里";
+"LocKey.CannotSwapLanguagesDuringInterpretationTips" = "不能在同声传译过程中交换语言";
+"LocKey.ListeningTips" = "正在监听...";
+
+"LocKey.SelectAiServiceVendorFeatureTitle" = "选择 AI 服务商";
+"LocKey.SelectAiServiceVendorAlertTitle" = "选择 AI 服务商";
+
+"LocKey.DeviceDetails" = "设备详情";
+"LocKey.DeviceThumbnail" = "设备缩略图";
+"LocKey.DeviceName" = "设备名称";
+"LocKey.UUID" = "UUID";
+"LocKey.BluetoothName" = "蓝牙名称";
+"LocKey.MACAddress" = "MAC 地址";
+"LocKey.NA" = "N/A";
+"LocKey.ProductType" = "产品类型";
+"LocKey.DeviceModel" = "设备型号";
+"LocKey.SerialNumber" = "序列号";
+"LocKey.FirmwareVersion" = "固件版本";
+"LocKey.CoProcessorFirmwareVersion" = "协处理器固件版本";
+"LocKey.ProjectNumber" = "项目号";
+"LocKey.LastConnectTime" = "最后连接时间";
+"LocKey.BindUserID" = "绑定用户 ID";
+"LocKey.UserBindTime" = "绑定时间";
+"LocKey.AutoReconnect" = "App 启动时是否自动回连";
+"LocKey.Yes" = "是";
+"LocKey.No" = "否";
+"LocKey.AdvertisementData" = "广播数据";
+"LocKey.ManufacturerData" = "厂商数据";
+"LocKey.AdvertisementTimestamp" = "广播数据时间戳";
+"LocKey.ScreenName" = "备注名称";
+"LocKey.CustomContent" = "备注信息";
+
+"LocKey.Unknown" = "未知";
+"LocKey.SmartWatch" = "智能手表";
+"LocKey.SmartRing" = "智能戒指";
+"LocKey.SmartGlasses" = "智能眼镜";
+"LocKey.ChargingCase" = "耳机仓";
+"LocKey.Earbuds" = "耳机";
+"LocKey.SmartSpeaker" = "智能音箱";
+
+"LocKey.TapToViewDetails" = "点击查看详情";
+
+"LocKey.NotInCall" = "未通话";
+"LocKey.Ringing" = "铃铃";
+"LocKey.InCall" = "通话";
+"LocKey.ThreeWayRinging" = "三路铃铃中";
+"LocKey.AIChat" = "AI 聊天";
+
+"LocKey.BatteryStatus" = "电池状态";
+"LocKey.LanguageSetting" = "当前语言";
+"LocKey.SupportedLanguages" = "支持的语言";
+"LocKey.CallStatus" = "通话状态";
+"LocKey.StorageInfo" = "存储信息";
+"LocKey.MediaCount" = "媒体文件计数";
+"LocKey.SupportAdjustRecordDuration" = "是否支持调整录音录像时长";
+
+"LocKey.PhysicalOperationsMapping" = "按键功能映射";
+
+"LocKey.OperationUnknown" = "未知";
+"LocKey.OperationLeftSingleClick" = "左耳单击";
+"LocKey.OperationRightSingleClick" = "右耳单击";
+"LocKey.OperationLeftDoubleClick" = "左耳双击";
+"LocKey.OperationRightDoubleClick" = "右耳双击";
+"LocKey.OperationLeftTripleClick" = "左耳三击";
+"LocKey.OperationRightTripleClick" = "右耳三击";
+"LocKey.OperationLeftLongPress" = "左耳长按";
+"LocKey.OperationRightLongPress" = "右耳长按";
+"LocKey.OperationLeftTouchSingleClick" = "左耳触摸单击";
+"LocKey.OperationRightTouchSingleClick" = "右耳触摸单击";
+"LocKey.OperationLeftTouchDoubleClick" = "左耳触摸双击";
+"LocKey.OperationRightTouchDoubleClick" = "右耳触摸双击";
+"LocKey.OperationLeftTouchLongPress" = "左耳触摸长按";
+"LocKey.OperationRightTouchLongPress" = "右耳触摸长按";
+"LocKey.OperationLeftButton1SingleClick" = "左耳按键 1 单击";
+"LocKey.OperationRightButton1SingleClick" = "右耳按键 1 单击";
+"LocKey.OperationLeftButton1DoubleClick" = "左耳按键 1 双击";
+"LocKey.OperationRightButton1DoubleClick" = "右耳按键 1 双击";
+"LocKey.OperationLeftButton1LongPress" = "左耳按键 1 长按";
+"LocKey.OperationRightButton1LongPress" = "右耳按键 1 长按";
+"LocKey.OperationLeftButton2SingleClick" = "左耳按键 2 单击";
+"LocKey.OperationRightButton2SingleClick" = "右耳按键 2 单击";
+"LocKey.OperationLeftButton2DoubleClick" = "左耳按键 2 双击";
+"LocKey.OperationRightButton2DoubleClick" = "右耳按键 2 双击";
+"LocKey.OperationLeftButton2LongPress" = "左耳按键 2 长按";
+"LocKey.OperationRightButton2LongPress" = "右耳按键 2 长按";
+"LocKey.OperationTouchSlideBackwardToForward" = "触摸滑动 后往前";
+"LocKey.OperationTouchSlideForwardToBackward" = "触摸滑动 前往后";
+
+"LocKey.FunctionNone" = "无";
+"LocKey.FunctionRedial" = "重拨";
+"LocKey.FunctionVoiceAssistant" = "语音助手";
+"LocKey.FunctionPreviousTrack" = "上一曲";
+"LocKey.FunctionNextTrack" = "下一曲";
+"LocKey.FunctionVolumeUp" = "音量加";
+"LocKey.FunctionVolumeDown" = "音量减";
+"LocKey.FunctionPlayPause" = "播放/暂停";
+"LocKey.FunctionGameMode" = "游戏模式";
+"LocKey.FunctionNoiseReduction" = "降噪";
+"LocKey.FunctionTakePhoto" = "拍照";
+"LocKey.FunctionContinuousShooting" = "连拍";
+"LocKey.FunctionVideoRecordToggle" = "视频录制切换";
+"LocKey.FunctionAudioRecordToggle" = "音频录制切换";
+"LocKey.FunctionLocalBluetoothToggle" = "本地/蓝牙切换";
+"LocKey.FunctionUnknown" = "未知";
+
+"LocKey.AssignPhysicalOperations" = "自定义按键功能";
+
+"LocKey.AuthorizedServices" = "已授权服务";
+"LocKey.OnDeviceVoiceAssistant" = "离线语音助手";
+"LocKey.Authorized" = "已授权";
+"LocKey.AuthorizedServicesList" = "已授权服务列表";
+"LocKey.NoServicesAuthorizedYet" = "暂无已授权服务";
+"LocKey.TheseServicesHaveBeenAuthorizedForYourDevice" = "这些服务已授权您的设备";
+
+"LocKey.RetryServiceAuthSuccessMessage" = "重试服务授权成功";
+"LocKey.RetryServiceAuthFailedMessage" = "重试服务授权失败";
+
+"LocKey.ReportSelfAiServiceAuthResultSuccessMessage" = "上报自行接入的 AI 授权结果成功";
+"LocKey.ReportSelfAiServiceAuthResultFailedMessage" = "上报自行接入的 AI 授权结果失败";
+
+"LocKey.OnDeviceVoiceAssistantCapabilityNone" = "无";
+"LocKey.OnDeviceVoiceAssistantCapabilityKeywordWakeup" = "关键词唤醒";
+"LocKey.OnDeviceVoiceAssistantCapabilityCommon" = "通用";
+
+"LocKey.OnDeviceVoiceAssistantModeUnknown" = "未知";
+"LocKey.OnDeviceVoiceAssistantModeDisabled" = "禁用";
+"LocKey.OnDeviceVoiceAssistantModeBasic" = "基础";
+"LocKey.OnDeviceVoiceAssistantModeAdvanced" = "高级";
+
+"LocKey.SelectOnDeviceVoiceAssistantModeAlertTitle" = "选择离线语音助手模式";
+"LocKey.OnDeviceVoiceAssistantModeSuccessMessage" = "设置离线语音助手模式成功";
+"LocKey.OnDeviceVoiceAssistantModeFailedMessage" = "设置离线语音助手模式失败";
+
+"LocKey.UnpairDeviceFeatureTitle" = "解绑设备";
+"LocKey.UnpairSuccessMessage" = "解绑成功";
+
+"LocKey.WorkModeUnknown" = "未知模式";
+"LocKey.WorkModeNormal" = "正常模式";
+"LocKey.WorkModeGame" = "游戏模式";
+
+"LocKey.SelectWorkModeAlertTitle" = "选择工作模式";
+"LocKey.WorkModeSuccessMessage" = "设置工作模式成功";
+"LocKey.WorkModeFailedMessage" = "设置工作模式失败";
+
+"LocKey.WorkStateUnknown" = "未知状态";
+"LocKey.WorkStateReserved" = "保留";
+"LocKey.WorkStateInitializing" = "初始化中";
+"LocKey.WorkStateBtOrBleWaitingForConnection" = "等待连接";
+"LocKey.WorkStateBtOrBleConnectedIdle" = "已连接（空闲）";
+"LocKey.WorkStateBtOrBleDisconnectedIdle" = "已断开（空闲）";
+"LocKey.WorkStateCalling" = "通话中";
+"LocKey.WorkStatePlayingLocalMusic" = "播放本地音乐";
+"LocKey.WorkStateAiConversing" = "AI 对话中";
+"LocKey.WorkStateRestoringFactorySettings" = "恢复出厂设置中";
+"LocKey.WorkStateTakingPhoto" = "拍照中";
+"LocKey.WorkStateAiTakingPhoto" = "AI 拍照中";
+"LocKey.WorkStateRecordingVideo" = "录制视频中";
+"LocKey.WorkStateRecordingAudio" = "录制音频中";
+"LocKey.WorkStateFileTransferring" = "文件传输中";
+"LocKey.WorkStateStreaming" = "流媒体中";
+"LocKey.WorkStateOta" = "OTA 升级中";
+"LocKey.WorkStateShuttingDown" = "关机中";
+"LocKey.WorkStateFactoryTesting" = "工厂测试中";
+"LocKey.WorkStateLedTesting" = "LED 测试中";
+"LocKey.WorkStateButtonTesting" = "按键测试中";
+"LocKey.WorkStateEchoTesting" = "回声中";
+
+"LocKey.WearDetectionCapabilityNone" = "无";
+"LocKey.WearDetectionCapabilitySupportedNotConfigurable" = "支持（不可配置）";
+"LocKey.WearDetectionCapabilitySupportedAndConfigurable" = "支持（可配置）";
+"LocKey.WearDetectionEnabled" = "已启用";
+"LocKey.WearDetectionDisabled" = "已禁用";
+
+"LocKey.WearDetectionNotConfigurableMessage" = "佩戴检测不可配置";
+"LocKey.ToggleWearDetectionEnableStatusAlertTitle" = "切换佩戴检测状态";
+"LocKey.EnableLocKey" = "启用";
+"LocKey.DisableLocKey" = "禁用";
+"LocKey.WearDetectionAlreadyEnabledMessage" = "佩戴检测已经是启用状态";
+"LocKey.WearDetectionAlreadyDisabledMessage" = "佩戴检测已经是禁用状态";
+"LocKey.SetWearDetectionEnabledSuccessMessage" = "设置佩戴检测成功";
+"LocKey.SetWearDetectionEnabledFailedMessage" = "设置佩戴检测失败";
+"LocKey.SetWearDetectionDisabledSuccessMessage" = "设置佩戴检测成功";
+"LocKey.SetWearDetectionDisabledFailedMessage" = "设置佩戴检测失败";
+
+"LocKey.VolumeSetCapabilityFeatureTitle" = "音量设置能力";
+
+"LocKey.VolumeSetCapabilityNone" = "无";
+"LocKey.VolumeSetCapabilityCommon" = "通用";
+"LocKey.VolumeSetCapabilityAdvanced" = "高级";
+
+"LocKey.VolumeSetFeatureTitle" = "音量设置";
+"LocKey.NoVolumeSetCapabilityMessage" = "设备不支持音量设置";

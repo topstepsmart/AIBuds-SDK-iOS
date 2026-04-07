@@ -1,0 +1,473 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.2.4 effective-5.10 (swiftlang-6.2.4.1.4 clang-1700.6.4.2)
+// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature GlobalActorIsolatedTypesUsability -enable-upcoming-feature MemberImportVisibility -enable-upcoming-feature InferIsolatedConformances -enable-upcoming-feature NonisolatedNonsendingByDefault -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name ABMate
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.4
+import AIBuds
+import AIBudsFoundation
+import AIBudsLog
+import SystemConfiguration.CaptiveNetwork
+import CoreBluetooth
+import CoreImage
+import Darwin
+import Dispatch
+import Foundation
+import GCDWebServer
+import NetworkExtension
+import Swift
+import SystemConfiguration
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@objc(ABMateCommandType) public enum CommandType : Swift.UInt8 {
+  case request = 0x01
+  case response = 0x02
+  case notify = 0x03
+  case invalid = 0xff
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.UInt8)
+  #endif
+  public typealias RawValue = Swift.UInt8
+  public var rawValue: Swift.UInt8 {
+    get
+  }
+}
+extension ABMate.CommandType : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
+extension ABMate.CommandType : Swift.CustomDebugStringConvertible {
+  public var debugDescription: Swift.String {
+    get
+  }
+}
+public typealias RequestCompletion = (_ isSuccess: Swift.Bool, _ result: Any?, _ retryCount: Swift.Int, _ startTime: Foundation.Date, _ cost: Foundation.TimeInterval, _ isTimeout: Swift.Bool, _ error: Foundation.NSError?) -> Swift.Void
+public typealias NotificationCallback = (_ notification: Any) -> Swift.Void
+public typealias NotificationHandler = (callableType: Any, callback: ABMate.NotificationCallback)
+public typealias DeviceInfoCallback = (_ deviceInfo: Any) -> Swift.Void
+public typealias DeviceInfoHandler = (callableType: Any, callback: ABMate.DeviceInfoCallback)
+@objc(ABMateDeviceBeaconModel) public class DeviceBeaconModel : ObjectiveC.NSObject, Foundation.NSSecureCoding, AIBuds.DeviceBeaconConvertible {
+  @objc public var protocolVersion: Swift.UInt8 {
+    get
+  }
+  @objc public var product: AIBudsFoundation.DeviceProduct {
+    get
+  }
+  @objc public var productId: Swift.UInt16 {
+    get
+  }
+  @objc public var macAddress: Swift.String? {
+    get
+  }
+  @objc public var requiresSecureAuthentication: Swift.Bool {
+    get
+  }
+  @objc public var supportCTKD: Swift.Bool {
+    get
+  }
+  @objc public var isConnectedToClassicBluetooth: Swift.Bool {
+    get
+  }
+  @objc public var sppUUID: Foundation.UUID? {
+    get
+  }
+  @objc public var connectionChannel: ABMate.ConnectionChannel {
+    get
+  }
+  @objc public var mainProjNo: Swift.String? {
+    get
+  }
+  @objc public var subProjNo: Swift.String? {
+    get
+  }
+  @objc public var data: Foundation.Data? {
+    get
+  }
+  @objc public static var supportsSecureCoding: Swift.Bool {
+    @objc get
+  }
+  public static var supportedClasses: [Swift.AnyClass] {
+    get
+  }
+  @objc public func encode(with coder: Foundation.NSCoder)
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc required public init?(coder: Foundation.NSCoder)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public init?(data: Foundation.Data)
+  #endif
+  @objc deinit
+}
+extension ABMate.DeviceBeaconModel {
+  @objc override dynamic public var description: Swift.String {
+    @objc get
+  }
+}
+@objc(ABMateFoundDeviceModel) public class FoundDeviceModel : ObjectiveC.NSObject, AIBuds.FoundDeviceConvertible {
+  @objc weak public var central: CoreBluetooth.CBCentralManager? {
+    get
+  }
+  @objc public var peripheral: CoreBluetooth.CBPeripheral {
+    get
+  }
+  @objc public var advertisementData: [Swift.String : Any]?
+  @objc public var RSSI: Foundation.NSNumber?
+  @objc public var protocolKind: AIBudsFoundation.BleProtocolKind {
+    @objc get
+  }
+  @objc public var product: AIBudsFoundation.DeviceProduct {
+    @objc get
+  }
+  @objc public var protocolVersion: Swift.UInt8 {
+    @objc get
+  }
+  @objc public var productId: Swift.UInt16 {
+    @objc get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public var macAddress: Swift.String? {
+    @objc get
+  }
+  #endif
+  @objc public var requiresSecureAuthentication: Swift.Bool {
+    @objc get
+  }
+  @objc public var supportCTKD: Swift.Bool {
+    @objc get
+  }
+  @objc public var isConnectedToClassicBluetooth: Swift.Bool {
+    @objc get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public var sppUUID: Foundation.UUID? {
+    @objc get
+  }
+  #endif
+  @objc public var connectionChannel: ABMate.ConnectionChannel {
+    @objc get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public var mainProjNo: Swift.String? {
+    @objc get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public var subProjNo: Swift.String? {
+    @objc get
+  }
+  #endif
+  @objc public var alreadyPaired: Swift.Bool {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public init(peripheral: CoreBluetooth.CBPeripheral, central: CoreBluetooth.CBCentralManager?, advertisementData: [Swift.String : Any]?, rssi: Foundation.NSNumber?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public static func create(central: CoreBluetooth.CBCentralManager, peripheral: CoreBluetooth.CBPeripheral, advertisementData: [Swift.String : Any]?, rssi: Foundation.NSNumber?) -> (any AIBuds.FoundDeviceConvertible)?
+  #endif
+  @objc deinit
+}
+extension ABMate.FoundDeviceModel {
+  @objc override dynamic public var description: Swift.String {
+    @objc get
+  }
+}
+extension ABMate.ABMateSDK {
+  @objc public static let DataPacketErrorDomain: Swift.String
+  @objc public static let DataPacketErrorKey: Swift.String
+}
+@objc(ABMateDataPacketError) public enum DataPacketError : Swift.Int, Swift.Error {
+  case unknown = 0
+  case invalidDataLength = 1
+  case badPacketType = 2
+  case badPacket = 3
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.Int)
+  #endif
+  public typealias RawValue = Swift.Int
+  public static var _nsErrorDomain: Swift.String {
+    get
+  }
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+extension ABMate.DataPacketError : Foundation.LocalizedError {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public var errorDescription: Swift.String? {
+    get
+  }
+  #endif
+}
+extension ABMate.DataPacketError : Foundation.CustomNSError {
+  public static var errorDomain: Swift.String {
+    get
+  }
+}
+extension ABMate.DataPacketError : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
+@objc(ABMateConnectionChannel) public enum ConnectionChannel : Swift.Int, Swift.CaseIterable {
+  case undefined = -1
+  case sppOrGatt = 0
+  case ble = 1
+  public static var allCases: [ABMate.ConnectionChannel] {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.Int)
+  #endif
+  public typealias AllCases = [ABMate.ConnectionChannel]
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+extension ABMate.ConnectionChannel : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
+@objc(ABMateDebugLogCategory) public enum DebugLogCategory : Swift.UInt32 {
+  case reserved = 0
+  case systemEvent = 1
+  case userEvent = 2
+  case factoryTest = 3
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.UInt32)
+  #endif
+  public typealias RawValue = Swift.UInt32
+  public var rawValue: Swift.UInt32 {
+    get
+  }
+}
+extension ABMate.DebugLogCategory : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
+extension ABMate.DebugLogCategory : Swift.CustomDebugStringConvertible {
+  public var debugDescription: Swift.String {
+    get
+  }
+}
+@objc(ABMateEventLogSignature) public enum EventLogSignature : Swift.UInt32 {
+  case logi = 0x49474F4C
+  case batt = 0x54544142
+  case awnr = 0x524E5741
+  case chat = 0x54414843
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.UInt32)
+  #endif
+  public typealias RawValue = Swift.UInt32
+  public var rawValue: Swift.UInt32 {
+    get
+  }
+}
+extension ABMate.EventLogSignature : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
+extension ABMate.EventLogSignature : Swift.CustomDebugStringConvertible {
+  public var debugDescription: Swift.String {
+    get
+  }
+}
+extension ABMate.ABMateSDK {
+  @objc public static let CameraOtaErrorDomain: Swift.String
+}
+@objc(ABMateSdkCameraOtaErrorCode) public enum SdkCameraOtaErrorCode : Swift.Int {
+  case unknown = -1
+  case networkRequestFailed = 0
+  case cameraOtaFileNotFound = 1
+  case invalidCameraOtaFile = 2
+  case hotspotDisconnectedDuringTransfer = 3
+  case stageTwoTimeout = 4
+  case invalidHotspotConfig = 5
+  case interruptedByShutdownOrLowBattery = 6
+  case networkTimeout = 7
+  case cameraOtaTaskAlreadyRunning = 4001
+  case cameraOtaTaskCreateFailedDueToFileNotFound = 4002
+  case cameraOtaTaskFailedDueToDeviceDisconnect = 4003
+  case cameraOtaTaskFailedDueToTimeout = 4004
+  case cameraOtaTaskStartFailedDueToHotspotConfigureError = 4005
+  case cameraOtaTaskStartFailedDueToEnterCameraOtaModeFailed = 4006
+  case cameraOtaTaskStartFailedDueToHotspotConnectionFailure = 4007
+  case cameraOtaTaskStartFailedDueToHttpServerStartFailed = 4008
+  case cameraOtaTaskFailedDueToSendFileUrlInfoFailed = 4009
+  case enterCameraOtaModeFailedDueToBadCommand = 5001
+  case enterCameraOtaModeFailedDueToStorageFull = 5002
+  case enterCameraOtaModeFailedDueToNotAllow = 5003
+  case enterCameraOtaModeFailedDueToNoDataTransferChannel = 5004
+  case enterCameraOtaModeFailedDueToStatusConflict = 5005
+  case sendCameraOtaFileUrlInfoFailedDueToBadCommand = 5006
+  case sendCameraOtaFileUrlInfoFailedDueToStorageFull = 5007
+  case sendCameraOtaFileUrlInfoFailedDueToNotAllow = 5008
+  case sendCameraOtaFileUrlInfoFailedDueToNoDataTransferChannel = 5009
+  case sendCameraOtaFileUrlInfoFailedDueToStatusConflict = 5010
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.Int)
+  #endif
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+extension ABMate.SdkCameraOtaErrorCode : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
+extension ABMate.SdkCameraOtaErrorCode : Swift.CustomDebugStringConvertible {
+  public var debugDescription: Swift.String {
+    get
+  }
+}
+extension ABMate.ABMateSDK {
+  @objc public static let ErrorDomain: Swift.String
+  @objc public static let ErrorKey: Swift.String
+}
+@objc(ABMateSdkErrorCode) public enum SdkErrorCode : Swift.Int {
+  case unknown = -1
+  case scanningStartFailedDueToBluetoothNotPoweredOn = 1001
+  case scanningStartFailedDueToBluetoothAuthorizationDeniedOrRestricted = 1002
+  case scanningStartFailedDueToBluetoothUnsupported = 1003
+  case scanningStartFailedDueToScanningAlreadyRunning = 1004
+  case scanningCanceledDueToBluetoothNotPoweredOn = 1005
+  case requestSendFailedDueToPeripheralUnavailable = 2001
+  case requestSendFailedDueToPeripheralNotConnected = 2002
+  case blePacketSendFailedDueToPeripheralUnavailable = 2003
+  case blePacketSendFailedDueToTimeout = 2004
+  case blePacketSendFailedDueToWriteError = 2005
+  case bleCommandExecFailedDueToTimeout = 2006
+  case bleDataHandleFailedDueToUnexpectedFrameSeqNum = 2007
+  case bleDataHandleFailedDueToPacketInfoCorruption = 2008
+  case bleDataHandleFailedDueToPacketFramesNotMatching = 2009
+  case operationFailedDueToWrongParameters = 3001
+  case operationFailedDueToDeviceReturnNonSuccessStatusCode = 3002
+  case operationFailedDueToDeviceResponseDataParsingFailed = 3003
+  case aiChatHangupOrFailedToStartDueToDeviceException = 3004
+  case hotspotConnectionFailed = 4001
+  case photoDataForSceneRecognitionHandleFailedDueToBadCommand = 5001
+  case photoDataForSceneRecognitionHandleFailedDueToInvalidStatusCode = 5002
+  case photoDataForSceneRecognitionTransferCanceledDueToSystemCaptureFailed = 5003
+  case photoDataForSceneRecognitionTransferCanceledDueToBluetoothCommunicationError = 5004
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.Int)
+  #endif
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+extension ABMate.ABMateSDK {
+  @objc public static let OtaErrorDomain: Swift.String
+}
+@objc(ABMateSdkOtaErrorCode) public enum SdkOtaErrorCode : Swift.Int {
+  case unknown = -1
+  case otaTaskAlreadyRunning = 4001
+  case otaTaskCreateFailedDueToFileNotFound = 4002
+  case otaTaskStartFailedDueToFileReadError = 4003
+  case otaTaskStartFailedDueToFileHandleCreateError = 4004
+  case otaTaskStartFailedDueToInvalidFileHashData = 4005
+  case otaTaskStartFailedDueToGetOtaInfoError = 4006
+  case otaTaskStartFailedDueToInvalidOffsetAddress = 4007
+  case otaTaskStartFailedDueToInvalidBlockSize = 4008
+  case otaTaskStartFailedDueToNotAllowUpdate = 4009
+  case otaTaskSendDataFailedDueToFileHandleIsNil = 4010
+  case otaTaskSendDataFailedDueToSeekFileHandleFailed = 4011
+  case otaTaskSendDataFailedDueToReadFileDataFailed = 4012
+  case otaTaskSendDataFailedDueToOtaInfoIsNil = 4013
+  case otaTaskFailedDueToDeviceReportKeyMismatch = 4014
+  case otaTaskFailedDueToDeviceReportCrcError = 4015
+  case otaTaskFailedDueToDeviceReportSeqError = 4016
+  case otaTaskFailedDueToDeviceReportDataLengthError = 4017
+  case otaTaskFailedDueToDeviceDisconnect = 4018
+  case otaTaskFailedDueToTimeout = 4019
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.Int)
+  #endif
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc(ABMateCustomCommandConvertiable) public protocol CustomCommandConvertiable : ObjectiveC.NSObjectProtocol {
+  @objc var cmdKey: Swift.UInt8 { get }
+  @objc var cmdType: ABMate.CommandType { get }
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc var payload: Foundation.Data? { get }
+  #endif
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class ABMateSDK : ObjectiveC.NSObject {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc final public var delegate: (any AIBuds.SDKDelegate)? {
+    @objc get
+    @objc set
+  }
+  #endif
+  @objc public static let shared: ABMate.ABMateSDK
+  @objc deinit
+}
+extension ABMate.ABMateSDK : AIBuds.BleConnectSDK {
+  @objc final public var sdkVersion: Swift.String {
+    @objc get
+  }
+  @objc final public var sdkBuild: Swift.String {
+    @objc get
+  }
+  @objc final public var sdkReleaseDate: Swift.String {
+    @objc get
+  }
+  @objc final public var sdkVersionDescription: Swift.String {
+    @objc get
+  }
+  @objc final public var sdkName: Swift.String {
+    @objc get
+  }
+  @objc final public var providerName: Swift.String {
+    @objc get
+  }
+  @objc final public var protocolKind: AIBudsFoundation.BleProtocolKind {
+    @objc get
+  }
+  @objc final public var classForDeviceModel: any AIBuds.DeviceConvertible.Type {
+    @objc get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc final public func setSDKDelegate(_ delegate: (any AIBuds.SDKDelegate)?)
+  #endif
+  @objc final public func isKnownDevice(_ peripheral: CoreBluetooth.CBPeripheral, advertisementData: [Swift.String : Any], rssi: Foundation.NSNumber) -> Swift.Bool
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc final public func create(central: CoreBluetooth.CBCentralManager, peripheral: CoreBluetooth.CBPeripheral, advertisementData: [Swift.String : Any]?, rssi: Foundation.NSNumber?) -> (any AIBuds.FoundDeviceConvertible)?
+  #endif
+  @objc final public func knownDevicesConnectedToiOS() -> [CoreBluetooth.CBPeripheral]
+}
+extension ABMate.CommandType : Swift.Equatable {}
+extension ABMate.CommandType : Swift.Hashable {}
+extension ABMate.CommandType : Swift.RawRepresentable {}
+extension ABMate.DataPacketError : Swift.Equatable {}
+extension ABMate.DataPacketError : Swift.Hashable {}
+extension ABMate.DataPacketError : Swift.RawRepresentable {}
+extension ABMate.ConnectionChannel : Swift.Equatable {}
+extension ABMate.ConnectionChannel : Swift.Hashable {}
+extension ABMate.ConnectionChannel : Swift.RawRepresentable {}
+extension ABMate.DebugLogCategory : Swift.Equatable {}
+extension ABMate.DebugLogCategory : Swift.Hashable {}
+extension ABMate.DebugLogCategory : Swift.RawRepresentable {}
+extension ABMate.EventLogSignature : Swift.Equatable {}
+extension ABMate.EventLogSignature : Swift.Hashable {}
+extension ABMate.EventLogSignature : Swift.RawRepresentable {}
+extension ABMate.SdkCameraOtaErrorCode : Swift.Equatable {}
+extension ABMate.SdkCameraOtaErrorCode : Swift.Hashable {}
+extension ABMate.SdkCameraOtaErrorCode : Swift.RawRepresentable {}
+extension ABMate.SdkErrorCode : Swift.Equatable {}
+extension ABMate.SdkErrorCode : Swift.Hashable {}
+extension ABMate.SdkErrorCode : Swift.RawRepresentable {}
+extension ABMate.SdkOtaErrorCode : Swift.Equatable {}
+extension ABMate.SdkOtaErrorCode : Swift.Hashable {}
+extension ABMate.SdkOtaErrorCode : Swift.RawRepresentable {}

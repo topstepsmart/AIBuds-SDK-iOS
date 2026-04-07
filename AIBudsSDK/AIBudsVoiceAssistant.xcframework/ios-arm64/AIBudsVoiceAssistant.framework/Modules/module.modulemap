@@ -1,0 +1,4 @@
+framework module AIBudsVoiceAssistant {
+  header "AIBudsVoiceAssistant-Swift.h"
+  requires objc
+}

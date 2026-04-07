@@ -1,0 +1,24 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.2.4 effective-5.10 (swiftlang-6.2.4.1.4 clang-1700.6.4.2)
+// swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature GlobalActorIsolatedTypesUsability -enable-upcoming-feature MemberImportVisibility -enable-upcoming-feature InferIsolatedConformances -enable-upcoming-feature NonisolatedNonsendingByDefault -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name AIBudsXLFacility
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.4
+import AIBudsLog
+import Foundation
+import Swift
+import XLFacility
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+import iOSLogBrowserSDK
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(AIBudsXLFacilitySDK) final public class XLFacilitySDK : ObjectiveC.NSObject, AIBudsLog.XLFacilityPlugin {
+  @objc final public var isLoaded: Swift.Bool {
+    @objc get
+  }
+  @objc public static let shared: AIBudsXLFacility.XLFacilitySDK
+  @objc final public func load()
+  @objc final public func purgeOldLogsWithMaxAge(_ maxAge: Swift.Int)
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc(logMessage:level:subsystem:category:) final public func log(_ message: Swift.String, level: AIBudsLog.LogLevel, subsystem: Swift.String?, category: Swift.String?)
+  #endif
+  @objc deinit
+}

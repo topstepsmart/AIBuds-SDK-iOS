@@ -1,0 +1,4 @@
+framework module AIBudsMagicHelper {
+  header "AIBudsMagicHelper-Swift.h"
+  requires objc
+}
