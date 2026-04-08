@@ -70,11 +70,6 @@ Pod::Spec.new do |s|
     end
   end
 
-  s.subspec 'AIFoundation' do |aifoundation|
-    aifoundation.vendored_frameworks = 'AIBudsSDK/AIBudsAIFoundation.xcframework'
-    aifoundation.dependency 'AIBudsSDK/Core'
-  end
-
   s.subspec 'Audio' do |audio|
     audio.vendored_frameworks = 'AIBudsSDK/AIBudsAudio.xcframework'
     audio.dependency 'AIBudsSDK/Core'
@@ -82,16 +77,25 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'AI' do |ai|
-    ai.vendored_frameworks = 'AIBudsSDK/AIBudsAI.xcframework'
-    ai.dependency 'WCDB.swift', '2.1.15'
-    ai.dependency 'AIBudsSDK/Core'
-    ai.dependency 'AIBudsSDK/AIFoundation'
 
+    ai.subspec 'Foundation' do |ai_foundation|
+      ai_foundation.vendored_frameworks = 'AIBudsSDK/AIBudsAIFoundation.xcframework'
+      ai_foundation.dependency 'AIBudsSDK/Core'
+    end
+
+    ai.subspec 'Core' do |ai_core|
+      ai_core.vendored_frameworks = 'AIBudsSDK/AIBudsAI.xcframework'
+      ai_core.dependency 'AIBudsSDK/Core'
+      ai_core.dependency 'AIBudsSDK/AI/Foundation'
+      ai_core.dependency 'WCDB.swift', '2.1.15'
+    end
+    
     ai.subspec 'Starburst' do |starburst|
       starburst.vendored_frameworks = 'AIBudsSDK/AIBudsStarBurst.xcframework'
       starburst.dependency 'AIBudsSDK/Audio'
       starburst.dependency 'AIBudsSDK/ThirdParty/Lame'
       starburst.dependency 'AIBudsSDK/ThirdParty/StarburstSdk'
+      starburst.dependency 'AIBudsSDK/AI/Core'
     end
 
     ai.subspec 'MltCloud' do |mltcloud|
@@ -99,10 +103,11 @@ Pod::Spec.new do |s|
       mltcloud.dependency 'AIBudsSDK/Audio'
       mltcloud.dependency 'AIBudsSDK/ThirdParty/Lame'
       mltcloud.dependency 'AIBudsSDK/ThirdParty/MagicHelper'
+      mltcloud.dependency 'AIBudsSDK/AI/Core'
     end
 
     ai.subspec 'Dashboard' do |dashboard|
-      
+      dashboard.dependency 'AIBudsSDK/AI/Core'
     end
   end
 
@@ -113,7 +118,6 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'AllInOne' do |allinone|
-    allinone.dependency 'AIBudsSDK/Log'
     allinone.dependency 'AIBudsSDK/ABMate'
     allinone.dependency 'AIBudsSDK/AI'
     allinone.dependency 'AIBudsSDK/VoiceAssistant'

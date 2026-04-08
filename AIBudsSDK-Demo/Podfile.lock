@@ -19,36 +19,32 @@ PODS:
     - GCDWebServer
     - libopus (= 1.1)
   - AIBudsSDK/AI (1.0.0-beta.1):
+    - AIBudsSDK/AI/Core (= 1.0.0-beta.1)
     - AIBudsSDK/AI/Dashboard (= 1.0.0-beta.1)
+    - AIBudsSDK/AI/Foundation (= 1.0.0-beta.1)
     - AIBudsSDK/AI/MltCloud (= 1.0.0-beta.1)
     - AIBudsSDK/AI/Starburst (= 1.0.0-beta.1)
-    - AIBudsSDK/AIFoundation
+  - AIBudsSDK/AI/Core (1.0.0-beta.1):
+    - AIBudsSDK/AI/Foundation
     - AIBudsSDK/Core
     - WCDB.swift (= 2.1.15)
   - AIBudsSDK/AI/Dashboard (1.0.0-beta.1):
-    - AIBudsSDK/AIFoundation
+    - AIBudsSDK/AI/Core
+  - AIBudsSDK/AI/Foundation (1.0.0-beta.1):
     - AIBudsSDK/Core
-    - WCDB.swift (= 2.1.15)
   - AIBudsSDK/AI/MltCloud (1.0.0-beta.1):
-    - AIBudsSDK/AIFoundation
+    - AIBudsSDK/AI/Core
     - AIBudsSDK/Audio
-    - AIBudsSDK/Core
     - AIBudsSDK/ThirdParty/Lame
     - AIBudsSDK/ThirdParty/MagicHelper
-    - WCDB.swift (= 2.1.15)
   - AIBudsSDK/AI/Starburst (1.0.0-beta.1):
-    - AIBudsSDK/AIFoundation
+    - AIBudsSDK/AI/Core
     - AIBudsSDK/Audio
-    - AIBudsSDK/Core
     - AIBudsSDK/ThirdParty/Lame
     - AIBudsSDK/ThirdParty/StarburstSdk
-    - WCDB.swift (= 2.1.15)
-  - AIBudsSDK/AIFoundation (1.0.0-beta.1):
-    - AIBudsSDK/Core
   - AIBudsSDK/AllInOne (1.0.0-beta.1):
     - AIBudsSDK/ABMate
     - AIBudsSDK/AI
-    - AIBudsSDK/Log
     - AIBudsSDK/VoiceAssistant
   - AIBudsSDK/Audio (1.0.0-beta.1):
     - AIBudsSDK/Core
@@ -163,7 +159,7 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   AFNetworking: 3bd23d814e976cd148d7d44c3ab78017b744cd58
-  AIBudsSDK: 320768069a95a482abce389d5a12cb174e5499b9
+  AIBudsSDK: b1fd3881329156839165a63f4fc4bfe1319537ea
   DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
   GCDWebServer: 2c156a56c8226e2d5c0c3f208a3621ccffbe3ce4
   iOSLogBrowserSDK: 7d833da43df9490ef3eb66b9d332ed02aaeab51b
