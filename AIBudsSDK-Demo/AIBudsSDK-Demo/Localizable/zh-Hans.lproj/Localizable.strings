@@ -447,6 +447,10 @@
 "LocKey.SelectWorkModeAlertTitle" = "选择工作模式";
 "LocKey.WorkModeSuccessMessage" = "设置工作模式成功";
 "LocKey.WorkModeFailedMessage" = "设置工作模式失败";
+"LocKey.Warning" = "警告";
+"LocKey.GameModeBrickRiskMessage" = "游戏模式固件存在问题，可能导致设备变砖，是否继续？";
+"LocKey.Cancel" = "取消";
+"LocKey.Continue" = "继续";
 
 "LocKey.WorkStateUnknown" = "未知状态";
 "LocKey.WorkStateReserved" = "保留";
@@ -496,3 +500,20 @@
 
 "LocKey.VolumeSetFeatureTitle" = "音量设置";
 "LocKey.NoVolumeSetCapabilityMessage" = "设备不支持音量设置";
+
+"LocKey.VolumeControlFeatureTitle" = "音量控制";
+"LocKey.ResetAllVolumes" = "重置所有音量";
+"LocKey.SystemPromptVolume" = "系统提示音量";
+"LocKey.MediaVolume" = "媒体音量";
+"LocKey.CallVolume" = "通话音量";
+"LocKey.LocalPlaybackVolume" = "本地播放音量";
+"LocKey.NoDeviceConnected" = "未连接设备";
+"LocKey.VolumeControlNotSupportedTips" = "不支持音量控制";
+"LocKey.SupportsSettingSystemMediaAndCallVolumesSeparatelyTips" = "支持分别设置系统、媒体和通话音量";
+"LocKey.SupportsSettingSystemMediaCallAndLocalPlaybackVolumesSeparatelyTips" = "支持分别设置系统、媒体、通话和本地播放音量";
+"LocKey.UnknownVolumeControlCapabilityTips" = "未知音量控制能力";
+"LocKey.SystemPromptVolumeUpdatedSuccessfullyTips" = "系统提示音量更新成功";
+"LocKey.MediaVolumeUpdatedSuccessfullyTips" = "媒体音量更新成功";
+"LocKey.CallVolumeUpdatedSuccessfullyTips" = "通话音量更新成功";
+"LocKey.LocalPlaybackVolumeUpdatedSuccessfullyTips" = "本地播放音量更新成功";
+"LocKey.AllVolumesResetTo50Tips" = "所有音量重置为 50%";

@@ -449,6 +449,11 @@
 "LocKey.WorkModeSuccessMessage" = "Work mode set successfully";
 "LocKey.WorkModeFailedMessage" = "Failed to set work mode";
 
+"LocKey.Warning" = "Warning";
+"LocKey.GameModeBrickRiskMessage" = "Game mode firmware may cause device to brick, do you continue?";
+"LocKey.Cancel" = "Cancel";
+"LocKey.Continue" = "Continue";
+
 "LocKey.WorkStateUnknown" = "Unknown";
 "LocKey.WorkStateReserved" = "Reserved";
 "LocKey.WorkStateInitializing" = "Initializing";
@@ -499,3 +504,20 @@
 
 "LocKey.NoVolumeSetCapabilityMessage" = "No volume set capability";
 
+
+"LocKey.VolumeControlFeatureTitle" = "Volume Control";
+"LocKey.ResetAllVolumes" = "Reset All Volumes";
+"LocKey.SystemPromptVolume" = "System Prompt Volume";
+"LocKey.MediaVolume" = "Media Volume";
+"LocKey.CallVolume" = "Call Volume";
+"LocKey.LocalPlaybackVolume" = "Local Playback Volume";
+"LocKey.NoDeviceConnected" = "No device connected";
+"LocKey.VolumeControlNotSupportedTips" = "Volume control not supported";
+"LocKey.SupportsSettingSystemMediaAndCallVolumesSeparatelyTips" = "Supports setting system, media, and call volumes separately";
+"LocKey.SupportsSettingSystemMediaCallAndLocalPlaybackVolumesSeparatelyTips" = "Supports setting system, media, call, and local playback volumes separately";
+"LocKey.UnknownVolumeControlCapabilityTips" = "Unknown volume control capability";
+"LocKey.SystemPromptVolumeUpdatedSuccessfullyTips" = "System prompt volume updated successfully";
+"LocKey.MediaVolumeUpdatedSuccessfullyTips" = "Media volume updated successfully";
+"LocKey.CallVolumeUpdatedSuccessfullyTips" = "Call volume updated successfully";
+"LocKey.LocalPlaybackVolumeUpdatedSuccessfullyTips" = "Local playback volume updated successfully";
+"LocKey.AllVolumesResetTo50Tips" = "All volumes reset to 50%";

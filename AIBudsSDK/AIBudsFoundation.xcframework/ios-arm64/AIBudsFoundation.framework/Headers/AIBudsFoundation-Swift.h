@@ -1268,6 +1268,14 @@ typedef SWIFT_ENUM_NAMED(NSInteger, AIBudsVolumeSetCapability, "VolumeSetCapabil
 /// for system, media, call, and local-playback audio streams.
 SWIFT_CLASS_NAMED("VolumesInfoModel")
 @interface AIBudsVolumesInfoModel : NSObject
+/// The current system prompt volume, if available. （0~100）
+@property (nonatomic, readonly, strong) NSNumber * _Nullable systemPromptVolume;
+/// The current media-playback volume, if available. （0~100）
+@property (nonatomic, readonly, strong) NSNumber * _Nullable mediaVolume;
+/// The current in-call volume, if available. （0~100）
+@property (nonatomic, readonly, strong) NSNumber * _Nullable callVolume;
+/// The current local-playback volume, if available. （0~100）
+@property (nonatomic, readonly, strong) NSNumber * _Nullable localPlaybackVolume;
 /// Creates a new volume-info model with the specified levels.
 /// \param systemPromptVolume The system-level volume. （0~100）
 ///

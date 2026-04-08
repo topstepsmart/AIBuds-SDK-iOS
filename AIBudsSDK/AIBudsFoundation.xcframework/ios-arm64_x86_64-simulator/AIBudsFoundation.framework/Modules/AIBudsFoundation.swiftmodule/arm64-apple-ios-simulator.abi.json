@@ -7279,13 +7279,14 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:16AIBudsFoundation16VolumesInfoModelC18systemPromptVolumeSo8NSNumberCSgvp",
+            "usr": "c:@M@AIBudsFoundation@objc(cs)AIBudsVolumesInfoModel(py)systemPromptVolume",
             "mangledName": "$s16AIBudsFoundation16VolumesInfoModelC18systemPromptVolumeSo8NSNumberCSgvp",
             "moduleName": "AIBudsFoundation",
             "declAttributes": [
               "Final",
               "HasStorage",
               "AccessControl",
+              "ObjC",
               "RawDocComment"
             ],
             "isLet": true,
@@ -7312,12 +7313,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:16AIBudsFoundation16VolumesInfoModelC18systemPromptVolumeSo8NSNumberCSgvg",
+                "usr": "c:@M@AIBudsFoundation@objc(cs)AIBudsVolumesInfoModel(im)systemPromptVolume",
                 "mangledName": "$s16AIBudsFoundation16VolumesInfoModelC18systemPromptVolumeSo8NSNumberCSgvg",
                 "moduleName": "AIBudsFoundation",
                 "implicit": true,
                 "declAttributes": [
-                  "Final"
+                  "Final",
+                  "ObjC"
                 ],
                 "accessorKind": "get"
               }
@@ -7344,13 +7346,14 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:16AIBudsFoundation16VolumesInfoModelC11mediaVolumeSo8NSNumberCSgvp",
+            "usr": "c:@M@AIBudsFoundation@objc(cs)AIBudsVolumesInfoModel(py)mediaVolume",
             "mangledName": "$s16AIBudsFoundation16VolumesInfoModelC11mediaVolumeSo8NSNumberCSgvp",
             "moduleName": "AIBudsFoundation",
             "declAttributes": [
               "Final",
               "HasStorage",
               "AccessControl",
+              "ObjC",
               "RawDocComment"
             ],
             "isLet": true,
@@ -7377,12 +7380,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:16AIBudsFoundation16VolumesInfoModelC11mediaVolumeSo8NSNumberCSgvg",
+                "usr": "c:@M@AIBudsFoundation@objc(cs)AIBudsVolumesInfoModel(im)mediaVolume",
                 "mangledName": "$s16AIBudsFoundation16VolumesInfoModelC11mediaVolumeSo8NSNumberCSgvg",
                 "moduleName": "AIBudsFoundation",
                 "implicit": true,
                 "declAttributes": [
-                  "Final"
+                  "Final",
+                  "ObjC"
                 ],
                 "accessorKind": "get"
               }
@@ -7409,13 +7413,14 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:16AIBudsFoundation16VolumesInfoModelC10callVolumeSo8NSNumberCSgvp",
+            "usr": "c:@M@AIBudsFoundation@objc(cs)AIBudsVolumesInfoModel(py)callVolume",
             "mangledName": "$s16AIBudsFoundation16VolumesInfoModelC10callVolumeSo8NSNumberCSgvp",
             "moduleName": "AIBudsFoundation",
             "declAttributes": [
               "Final",
               "HasStorage",
               "AccessControl",
+              "ObjC",
               "RawDocComment"
             ],
             "isLet": true,
@@ -7442,12 +7447,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:16AIBudsFoundation16VolumesInfoModelC10callVolumeSo8NSNumberCSgvg",
+                "usr": "c:@M@AIBudsFoundation@objc(cs)AIBudsVolumesInfoModel(im)callVolume",
                 "mangledName": "$s16AIBudsFoundation16VolumesInfoModelC10callVolumeSo8NSNumberCSgvg",
                 "moduleName": "AIBudsFoundation",
                 "implicit": true,
                 "declAttributes": [
-                  "Final"
+                  "Final",
+                  "ObjC"
                 ],
                 "accessorKind": "get"
               }
@@ -7474,13 +7480,14 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:16AIBudsFoundation16VolumesInfoModelC19localPlaybackVolumeSo8NSNumberCSgvp",
+            "usr": "c:@M@AIBudsFoundation@objc(cs)AIBudsVolumesInfoModel(py)localPlaybackVolume",
             "mangledName": "$s16AIBudsFoundation16VolumesInfoModelC19localPlaybackVolumeSo8NSNumberCSgvp",
             "moduleName": "AIBudsFoundation",
             "declAttributes": [
               "Final",
               "HasStorage",
               "AccessControl",
+              "ObjC",
               "RawDocComment"
             ],
             "isLet": true,
@@ -7507,12 +7514,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:16AIBudsFoundation16VolumesInfoModelC19localPlaybackVolumeSo8NSNumberCSgvg",
+                "usr": "c:@M@AIBudsFoundation@objc(cs)AIBudsVolumesInfoModel(im)localPlaybackVolume",
                 "mangledName": "$s16AIBudsFoundation16VolumesInfoModelC19localPlaybackVolumeSo8NSNumberCSgvg",
                 "moduleName": "AIBudsFoundation",
                 "implicit": true,
                 "declAttributes": [
-                  "Final"
+                  "Final",
+                  "ObjC"
                 ],
                 "accessorKind": "get"
               }
@@ -60421,63 +60429,63 @@
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/DataModels(数据模型)\/Volume(音量)\/VolumesInfoModel.swift",
       "kind": "StringLiteral",
-      "offset": 1787,
+      "offset": 1811,
       "length": 334,
       "value": "\"Device volumes info:\n    - System prompt volume: \""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/DataModels(数据模型)\/Volume(音量)\/VolumesInfoModel.swift",
       "kind": "StringLiteral",
-      "offset": 1893,
+      "offset": 1917,
       "length": 5,
       "value": "\"nil\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/DataModels(数据模型)\/Volume(音量)\/VolumesInfoModel.swift",
       "kind": "StringLiteral",
-      "offset": 1899,
+      "offset": 1923,
       "length": 1,
       "value": "\"\n    - Media volume: \""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/DataModels(数据模型)\/Volume(音量)\/VolumesInfoModel.swift",
       "kind": "StringLiteral",
-      "offset": 1958,
+      "offset": 1982,
       "length": 5,
       "value": "\"nil\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/DataModels(数据模型)\/Volume(音量)\/VolumesInfoModel.swift",
       "kind": "StringLiteral",
-      "offset": 1964,
+      "offset": 1988,
       "length": 1,
       "value": "\"\n    - Call volume: \""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/DataModels(数据模型)\/Volume(音量)\/VolumesInfoModel.swift",
       "kind": "StringLiteral",
-      "offset": 2021,
+      "offset": 2045,
       "length": 5,
       "value": "\"nil\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/DataModels(数据模型)\/Volume(音量)\/VolumesInfoModel.swift",
       "kind": "StringLiteral",
-      "offset": 2027,
+      "offset": 2051,
       "length": 1,
       "value": "\"\n    - Local playback volume: \""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/DataModels(数据模型)\/Volume(音量)\/VolumesInfoModel.swift",
       "kind": "StringLiteral",
-      "offset": 2103,
+      "offset": 2127,
       "length": 5,
       "value": "\"nil\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/DataModels(数据模型)\/Volume(音量)\/VolumesInfoModel.swift",
       "kind": "StringLiteral",
-      "offset": 2109,
+      "offset": 2133,
       "length": 12,
       "value": "\"\""
     },

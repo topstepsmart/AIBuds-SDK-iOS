@@ -230,10 +230,10 @@ extension AIBudsFoundation.EQSettingModel {
   @objc deinit
 }
 @objc(AIBudsVolumesInfoModel) final public class VolumesInfoModel : ObjectiveC.NSObject {
-  final public let systemPromptVolume: Foundation.NSNumber?
-  final public let mediaVolume: Foundation.NSNumber?
-  final public let callVolume: Foundation.NSNumber?
-  final public let localPlaybackVolume: Foundation.NSNumber?
+  @objc final public let systemPromptVolume: Foundation.NSNumber?
+  @objc final public let mediaVolume: Foundation.NSNumber?
+  @objc final public let callVolume: Foundation.NSNumber?
+  @objc final public let localPlaybackVolume: Foundation.NSNumber?
   #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(systemPromptVolume: Foundation.NSNumber? = nil, mediaVolume: Foundation.NSNumber? = nil, callVolume: Foundation.NSNumber? = nil, localPlaybackVolume: Foundation.NSNumber? = nil)
   #endif

@@ -668,15 +668,44 @@
         [alertController addAction:[UIAlertAction actionWithTitle:workModeNameDictionary[key] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
             id<AIBudsDeviceWorkModeAPI> device = (id<AIBudsDeviceWorkModeAPI>)self.device;
             if([device conformsToProtocol:@protocol(AIBudsDeviceWorkModeAPI)]) {
-                [device setWorkMode:(AIBudsWorkMode)[key integerValue] completion:^(BOOL success, NSError * _Nullable error) {
-                    __strong typeof(self) strongSelf = weakSelf;
-                    if(!strongSelf) return;
-                    NSString* message = success? NSLocalizedString(@"LocKey.WorkModeSuccessMessage", nil) : [NSString stringWithFormat:@"%@\n%@", NSLocalizedString(@"LocKey.WorkModeFailedMessage", nil), error.localizedDescription];
-                    dispatch_async(dispatch_get_main_queue(), ^{
-                        [strongSelf.view makeToast:message duration:3.0 position:CSToastPositionTop];
-                        [strongSelf.tableView reloadData];
-                    });
-                }];
+                /// 当前游戏模式固件存在问题，可能导致设备变砖，需要确认是否继续
+                AIBudsWorkMode workMode = (AIBudsWorkMode)[key integerValue];
+                if (workMode == AIBudsWorkModeGame) {
+                    UIAlertController *confirmAlert = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"LocKey.Warning", nil) message:NSLocalizedString(@"LocKey.GameModeBrickRiskMessage", nil) preferredStyle:UIAlertControllerStyleAlert];
+                    
+                    [confirmAlert addAction:[UIAlertAction actionWithTitle:NSLocalizedString(@"LocKey.Cancel", nil) style:UIAlertActionStyleCancel handler:nil]];
+                    
+                    [confirmAlert addAction:[UIAlertAction actionWithTitle:NSLocalizedString(@"LocKey.Continue", nil) style:UIAlertActionStyleDestructive handler:^(UIAlertAction * _Nonnull action) {
+                        [device setWorkMode:workMode completion:^(BOOL success, NSError * _Nullable error) {
+                            __strong typeof(self) strongSelf = weakSelf;
+                            if(!strongSelf) return;
+                            NSString* message = success? NSLocalizedString(@"LocKey.WorkModeSuccessMessage", nil) : [NSString stringWithFormat:@"%@\n%@", NSLocalizedString(@"LocKey.WorkModeFailedMessage", nil), error.localizedDescription];
+                            dispatch_async(dispatch_get_main_queue(), ^{
+                                [strongSelf.view makeToast:message duration:3.0 position:CSToastPositionTop];
+                                [strongSelf.tableView reloadData];
+                            });
+                        }];
+                    }]];
+                    
+                    // iPad 适配
+                    if (UIDevice.currentDevice.userInterfaceIdiom == UIUserInterfaceIdiomPad) {
+                        confirmAlert.popoverPresentationController.sourceView = self.view;
+                        confirmAlert.popoverPresentationController.sourceRect = CGRectMake(CGRectGetMidX(self.view.bounds), CGRectGetMidY(self.view.bounds), 0, 0);
+                        confirmAlert.popoverPresentationController.permittedArrowDirections = 0;
+                    }
+                    
+                    [self presentViewController:confirmAlert animated:YES completion:nil];
+                } else {
+                    [device setWorkMode:workMode completion:^(BOOL success, NSError * _Nullable error) {
+                        __strong typeof(self) strongSelf = weakSelf;
+                        if(!strongSelf) return;
+                        NSString* message = success? NSLocalizedString(@"LocKey.WorkModeSuccessMessage", nil) : [NSString stringWithFormat:@"%@\n%@", NSLocalizedString(@"LocKey.WorkModeFailedMessage", nil), error.localizedDescription];
+                        dispatch_async(dispatch_get_main_queue(), ^{
+                            [strongSelf.view makeToast:message duration:3.0 position:CSToastPositionTop];
+                            [strongSelf.tableView reloadData];
+                        });
+                    }];
+                }
             }
         }]];
     }
