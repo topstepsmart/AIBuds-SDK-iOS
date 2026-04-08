@@ -23,7 +23,7 @@ PODS:
     - AIBudsSDK/AI/Dashboard (= 1.0.0-beta.1)
     - AIBudsSDK/AI/Foundation (= 1.0.0-beta.1)
     - AIBudsSDK/AI/MltCloud (= 1.0.0-beta.1)
-    - AIBudsSDK/AI/Starburst (= 1.0.0-beta.1)
+    - AIBudsSDK/AI/StarBurst (= 1.0.0-beta.1)
   - AIBudsSDK/AI/Core (1.0.0-beta.1):
     - AIBudsSDK/AI/Foundation
     - AIBudsSDK/Core
@@ -37,7 +37,7 @@ PODS:
     - AIBudsSDK/Audio
     - AIBudsSDK/ThirdParty/Lame
     - AIBudsSDK/ThirdParty/MagicHelper
-  - AIBudsSDK/AI/Starburst (1.0.0-beta.1):
+  - AIBudsSDK/AI/StarBurst (1.0.0-beta.1):
     - AIBudsSDK/AI/Core
     - AIBudsSDK/Audio
     - AIBudsSDK/ThirdParty/Lame
@@ -159,7 +159,7 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   AFNetworking: 3bd23d814e976cd148d7d44c3ab78017b744cd58
-  AIBudsSDK: b1fd3881329156839165a63f4fc4bfe1319537ea
+  AIBudsSDK: a0ac9b35170f33e11cebe383f27b88bb09822486
   DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
   GCDWebServer: 2c156a56c8226e2d5c0c3f208a3621ccffbe3ce4
   iOSLogBrowserSDK: 7d833da43df9490ef3eb66b9d332ed02aaeab51b
