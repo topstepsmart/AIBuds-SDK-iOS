@@ -356,6 +356,24 @@ extension ABMate.ABMateSDK {
   case photoDataForSceneRecognitionHandleFailedDueToInvalidStatusCode = 5002
   case photoDataForSceneRecognitionTransferCanceledDueToSystemCaptureFailed = 5003
   case photoDataForSceneRecognitionTransferCanceledDueToBluetoothCommunicationError = 5004
+  case fetchMediaFilesInfoFailedDueToLocalNetworkUsageDescMissing = 6000
+  case fileImportNotReady = 6001
+  case fileImportAlreadyInProgress = 6002
+  case fileImportNotInProgress = 6003
+  case fetchMediaFileInfosFailedDueToHotspotConfigureError = 6004
+  case fileImportTaskPrepareFailedDueToEnterFileTransferModeFailed = 6005
+  case fetchMediaFileInfosFailedDueToHotspotConnectionFailure = 6006
+  case fetchMediaFileInfosFailedDueToEmptyBaseUrl = 6007
+  case fetchMediaFileInfosFailedDueToInvalidConfigUrl = 6008
+  case fetchMediaFileInfosFailedDueToConfigFileError = 6009
+  case fetchMediaFileInfosFailedDueToNetworkError = 6010
+  case fetchMediaFileInfosFailedDueToInvalidResponse = 6011
+  case fetchMediaFileInfosFailedDueToHttpError = 6012
+  case importFilesFailedDueToDeviceHotspotConnectionLost = 6013
+  case importFilesFailedDueToInvalidUrl = 6014
+  case importFilesFailedDueToHttpError = 6015
+  case importFilesFailedDueToNetworkError = 6016
+  case fetchMediaFilesInfoFailedDueToAllowLocalNetworkingMissing = 6017
   #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
   #endif

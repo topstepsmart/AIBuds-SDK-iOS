@@ -9047,6 +9047,762 @@
             "fixedbinaryorder": 23
           },
           {
+            "kind": "Var",
+            "name": "fetchMediaFilesInfoFailedDueToLocalNetworkUsageDescMissing",
+            "printedName": "fetchMediaFilesInfoFailedDueToLocalNetworkUsageDescMissing",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ABMate.SdkErrorCode.Type) -> ABMate.SdkErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SdkErrorCode",
+                    "printedName": "ABMate.SdkErrorCode",
+                    "usr": "c:@M@ABMate@E@ABMateSdkErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ABMate.SdkErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SdkErrorCode",
+                        "printedName": "ABMate.SdkErrorCode",
+                        "usr": "c:@M@ABMate@E@ABMateSdkErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@ABMate@E@ABMateSdkErrorCode@ABMateSdkErrorCodeFetchMediaFilesInfoFailedDueToLocalNetworkUsageDescMissing",
+            "mangledName": "$s6ABMate12SdkErrorCodeO58fetchMediaFilesInfoFailedDueToLocalNetworkUsageDescMissingyA2CmF",
+            "moduleName": "ABMate",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 24
+          },
+          {
+            "kind": "Var",
+            "name": "fileImportNotReady",
+            "printedName": "fileImportNotReady",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ABMate.SdkErrorCode.Type) -> ABMate.SdkErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SdkErrorCode",
+                    "printedName": "ABMate.SdkErrorCode",
+                    "usr": "c:@M@ABMate@E@ABMateSdkErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ABMate.SdkErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SdkErrorCode",
+                        "printedName": "ABMate.SdkErrorCode",
+                        "usr": "c:@M@ABMate@E@ABMateSdkErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@ABMate@E@ABMateSdkErrorCode@ABMateSdkErrorCodeFileImportNotReady",
+            "mangledName": "$s6ABMate12SdkErrorCodeO18fileImportNotReadyyA2CmF",
+            "moduleName": "ABMate",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 25
+          },
+          {
+            "kind": "Var",
+            "name": "fileImportAlreadyInProgress",
+            "printedName": "fileImportAlreadyInProgress",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ABMate.SdkErrorCode.Type) -> ABMate.SdkErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SdkErrorCode",
+                    "printedName": "ABMate.SdkErrorCode",
+                    "usr": "c:@M@ABMate@E@ABMateSdkErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ABMate.SdkErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SdkErrorCode",
+                        "printedName": "ABMate.SdkErrorCode",
+                        "usr": "c:@M@ABMate@E@ABMateSdkErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@ABMate@E@ABMateSdkErrorCode@ABMateSdkErrorCodeFileImportAlreadyInProgress",
+            "mangledName": "$s6ABMate12SdkErrorCodeO27fileImportAlreadyInProgressyA2CmF",
+            "moduleName": "ABMate",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 26
+          },
+          {
+            "kind": "Var",
+            "name": "fileImportNotInProgress",
+            "printedName": "fileImportNotInProgress",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ABMate.SdkErrorCode.Type) -> ABMate.SdkErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SdkErrorCode",
+                    "printedName": "ABMate.SdkErrorCode",
+                    "usr": "c:@M@ABMate@E@ABMateSdkErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ABMate.SdkErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SdkErrorCode",
+                        "printedName": "ABMate.SdkErrorCode",
+                        "usr": "c:@M@ABMate@E@ABMateSdkErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@ABMate@E@ABMateSdkErrorCode@ABMateSdkErrorCodeFileImportNotInProgress",
+            "mangledName": "$s6ABMate12SdkErrorCodeO23fileImportNotInProgressyA2CmF",
+            "moduleName": "ABMate",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 27
+          },
+          {
+            "kind": "Var",
+            "name": "fetchMediaFileInfosFailedDueToHotspotConfigureError",
+            "printedName": "fetchMediaFileInfosFailedDueToHotspotConfigureError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ABMate.SdkErrorCode.Type) -> ABMate.SdkErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SdkErrorCode",
+                    "printedName": "ABMate.SdkErrorCode",
+                    "usr": "c:@M@ABMate@E@ABMateSdkErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ABMate.SdkErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SdkErrorCode",
+                        "printedName": "ABMate.SdkErrorCode",
+                        "usr": "c:@M@ABMate@E@ABMateSdkErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@ABMate@E@ABMateSdkErrorCode@ABMateSdkErrorCodeFetchMediaFileInfosFailedDueToHotspotConfigureError",
+            "mangledName": "$s6ABMate12SdkErrorCodeO046fetchMediaFileInfosFailedDueToHotspotConfigureC0yA2CmF",
+            "moduleName": "ABMate",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 28
+          },
+          {
+            "kind": "Var",
+            "name": "fileImportTaskPrepareFailedDueToEnterFileTransferModeFailed",
+            "printedName": "fileImportTaskPrepareFailedDueToEnterFileTransferModeFailed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ABMate.SdkErrorCode.Type) -> ABMate.SdkErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SdkErrorCode",
+                    "printedName": "ABMate.SdkErrorCode",
+                    "usr": "c:@M@ABMate@E@ABMateSdkErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ABMate.SdkErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SdkErrorCode",
+                        "printedName": "ABMate.SdkErrorCode",
+                        "usr": "c:@M@ABMate@E@ABMateSdkErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@ABMate@E@ABMateSdkErrorCode@ABMateSdkErrorCodeFileImportTaskPrepareFailedDueToEnterFileTransferModeFailed",
+            "mangledName": "$s6ABMate12SdkErrorCodeO053fileImportTaskPrepareFailedDueToEnterFileTransferModeI0yA2CmF",
+            "moduleName": "ABMate",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 29
+          },
+          {
+            "kind": "Var",
+            "name": "fetchMediaFileInfosFailedDueToHotspotConnectionFailure",
+            "printedName": "fetchMediaFileInfosFailedDueToHotspotConnectionFailure",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ABMate.SdkErrorCode.Type) -> ABMate.SdkErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SdkErrorCode",
+                    "printedName": "ABMate.SdkErrorCode",
+                    "usr": "c:@M@ABMate@E@ABMateSdkErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ABMate.SdkErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SdkErrorCode",
+                        "printedName": "ABMate.SdkErrorCode",
+                        "usr": "c:@M@ABMate@E@ABMateSdkErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@ABMate@E@ABMateSdkErrorCode@ABMateSdkErrorCodeFetchMediaFileInfosFailedDueToHotspotConnectionFailure",
+            "mangledName": "$s6ABMate12SdkErrorCodeO54fetchMediaFileInfosFailedDueToHotspotConnectionFailureyA2CmF",
+            "moduleName": "ABMate",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 30
+          },
+          {
+            "kind": "Var",
+            "name": "fetchMediaFileInfosFailedDueToEmptyBaseUrl",
+            "printedName": "fetchMediaFileInfosFailedDueToEmptyBaseUrl",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ABMate.SdkErrorCode.Type) -> ABMate.SdkErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SdkErrorCode",
+                    "printedName": "ABMate.SdkErrorCode",
+                    "usr": "c:@M@ABMate@E@ABMateSdkErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ABMate.SdkErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SdkErrorCode",
+                        "printedName": "ABMate.SdkErrorCode",
+                        "usr": "c:@M@ABMate@E@ABMateSdkErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@ABMate@E@ABMateSdkErrorCode@ABMateSdkErrorCodeFetchMediaFileInfosFailedDueToEmptyBaseUrl",
+            "mangledName": "$s6ABMate12SdkErrorCodeO42fetchMediaFileInfosFailedDueToEmptyBaseUrlyA2CmF",
+            "moduleName": "ABMate",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 31
+          },
+          {
+            "kind": "Var",
+            "name": "fetchMediaFileInfosFailedDueToInvalidConfigUrl",
+            "printedName": "fetchMediaFileInfosFailedDueToInvalidConfigUrl",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ABMate.SdkErrorCode.Type) -> ABMate.SdkErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SdkErrorCode",
+                    "printedName": "ABMate.SdkErrorCode",
+                    "usr": "c:@M@ABMate@E@ABMateSdkErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ABMate.SdkErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SdkErrorCode",
+                        "printedName": "ABMate.SdkErrorCode",
+                        "usr": "c:@M@ABMate@E@ABMateSdkErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@ABMate@E@ABMateSdkErrorCode@ABMateSdkErrorCodeFetchMediaFileInfosFailedDueToInvalidConfigUrl",
+            "mangledName": "$s6ABMate12SdkErrorCodeO46fetchMediaFileInfosFailedDueToInvalidConfigUrlyA2CmF",
+            "moduleName": "ABMate",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 32
+          },
+          {
+            "kind": "Var",
+            "name": "fetchMediaFileInfosFailedDueToConfigFileError",
+            "printedName": "fetchMediaFileInfosFailedDueToConfigFileError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ABMate.SdkErrorCode.Type) -> ABMate.SdkErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SdkErrorCode",
+                    "printedName": "ABMate.SdkErrorCode",
+                    "usr": "c:@M@ABMate@E@ABMateSdkErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ABMate.SdkErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SdkErrorCode",
+                        "printedName": "ABMate.SdkErrorCode",
+                        "usr": "c:@M@ABMate@E@ABMateSdkErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@ABMate@E@ABMateSdkErrorCode@ABMateSdkErrorCodeFetchMediaFileInfosFailedDueToConfigFileError",
+            "mangledName": "$s6ABMate12SdkErrorCodeO036fetchMediaFileInfosFailedDueToConfiggC0yA2CmF",
+            "moduleName": "ABMate",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 33
+          },
+          {
+            "kind": "Var",
+            "name": "fetchMediaFileInfosFailedDueToNetworkError",
+            "printedName": "fetchMediaFileInfosFailedDueToNetworkError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ABMate.SdkErrorCode.Type) -> ABMate.SdkErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SdkErrorCode",
+                    "printedName": "ABMate.SdkErrorCode",
+                    "usr": "c:@M@ABMate@E@ABMateSdkErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ABMate.SdkErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SdkErrorCode",
+                        "printedName": "ABMate.SdkErrorCode",
+                        "usr": "c:@M@ABMate@E@ABMateSdkErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@ABMate@E@ABMateSdkErrorCode@ABMateSdkErrorCodeFetchMediaFileInfosFailedDueToNetworkError",
+            "mangledName": "$s6ABMate12SdkErrorCodeO037fetchMediaFileInfosFailedDueToNetworkC0yA2CmF",
+            "moduleName": "ABMate",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 34
+          },
+          {
+            "kind": "Var",
+            "name": "fetchMediaFileInfosFailedDueToInvalidResponse",
+            "printedName": "fetchMediaFileInfosFailedDueToInvalidResponse",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ABMate.SdkErrorCode.Type) -> ABMate.SdkErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SdkErrorCode",
+                    "printedName": "ABMate.SdkErrorCode",
+                    "usr": "c:@M@ABMate@E@ABMateSdkErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ABMate.SdkErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SdkErrorCode",
+                        "printedName": "ABMate.SdkErrorCode",
+                        "usr": "c:@M@ABMate@E@ABMateSdkErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@ABMate@E@ABMateSdkErrorCode@ABMateSdkErrorCodeFetchMediaFileInfosFailedDueToInvalidResponse",
+            "mangledName": "$s6ABMate12SdkErrorCodeO45fetchMediaFileInfosFailedDueToInvalidResponseyA2CmF",
+            "moduleName": "ABMate",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 35
+          },
+          {
+            "kind": "Var",
+            "name": "fetchMediaFileInfosFailedDueToHttpError",
+            "printedName": "fetchMediaFileInfosFailedDueToHttpError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ABMate.SdkErrorCode.Type) -> ABMate.SdkErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SdkErrorCode",
+                    "printedName": "ABMate.SdkErrorCode",
+                    "usr": "c:@M@ABMate@E@ABMateSdkErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ABMate.SdkErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SdkErrorCode",
+                        "printedName": "ABMate.SdkErrorCode",
+                        "usr": "c:@M@ABMate@E@ABMateSdkErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@ABMate@E@ABMateSdkErrorCode@ABMateSdkErrorCodeFetchMediaFileInfosFailedDueToHttpError",
+            "mangledName": "$s6ABMate12SdkErrorCodeO034fetchMediaFileInfosFailedDueToHttpC0yA2CmF",
+            "moduleName": "ABMate",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 36
+          },
+          {
+            "kind": "Var",
+            "name": "importFilesFailedDueToDeviceHotspotConnectionLost",
+            "printedName": "importFilesFailedDueToDeviceHotspotConnectionLost",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ABMate.SdkErrorCode.Type) -> ABMate.SdkErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SdkErrorCode",
+                    "printedName": "ABMate.SdkErrorCode",
+                    "usr": "c:@M@ABMate@E@ABMateSdkErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ABMate.SdkErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SdkErrorCode",
+                        "printedName": "ABMate.SdkErrorCode",
+                        "usr": "c:@M@ABMate@E@ABMateSdkErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@ABMate@E@ABMateSdkErrorCode@ABMateSdkErrorCodeImportFilesFailedDueToDeviceHotspotConnectionLost",
+            "mangledName": "$s6ABMate12SdkErrorCodeO49importFilesFailedDueToDeviceHotspotConnectionLostyA2CmF",
+            "moduleName": "ABMate",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 37
+          },
+          {
+            "kind": "Var",
+            "name": "importFilesFailedDueToInvalidUrl",
+            "printedName": "importFilesFailedDueToInvalidUrl",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ABMate.SdkErrorCode.Type) -> ABMate.SdkErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SdkErrorCode",
+                    "printedName": "ABMate.SdkErrorCode",
+                    "usr": "c:@M@ABMate@E@ABMateSdkErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ABMate.SdkErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SdkErrorCode",
+                        "printedName": "ABMate.SdkErrorCode",
+                        "usr": "c:@M@ABMate@E@ABMateSdkErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@ABMate@E@ABMateSdkErrorCode@ABMateSdkErrorCodeImportFilesFailedDueToInvalidUrl",
+            "mangledName": "$s6ABMate12SdkErrorCodeO32importFilesFailedDueToInvalidUrlyA2CmF",
+            "moduleName": "ABMate",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 38
+          },
+          {
+            "kind": "Var",
+            "name": "importFilesFailedDueToHttpError",
+            "printedName": "importFilesFailedDueToHttpError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ABMate.SdkErrorCode.Type) -> ABMate.SdkErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SdkErrorCode",
+                    "printedName": "ABMate.SdkErrorCode",
+                    "usr": "c:@M@ABMate@E@ABMateSdkErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ABMate.SdkErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SdkErrorCode",
+                        "printedName": "ABMate.SdkErrorCode",
+                        "usr": "c:@M@ABMate@E@ABMateSdkErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@ABMate@E@ABMateSdkErrorCode@ABMateSdkErrorCodeImportFilesFailedDueToHttpError",
+            "mangledName": "$s6ABMate12SdkErrorCodeO026importFilesFailedDueToHttpC0yA2CmF",
+            "moduleName": "ABMate",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 39
+          },
+          {
+            "kind": "Var",
+            "name": "importFilesFailedDueToNetworkError",
+            "printedName": "importFilesFailedDueToNetworkError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ABMate.SdkErrorCode.Type) -> ABMate.SdkErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SdkErrorCode",
+                    "printedName": "ABMate.SdkErrorCode",
+                    "usr": "c:@M@ABMate@E@ABMateSdkErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ABMate.SdkErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SdkErrorCode",
+                        "printedName": "ABMate.SdkErrorCode",
+                        "usr": "c:@M@ABMate@E@ABMateSdkErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@ABMate@E@ABMateSdkErrorCode@ABMateSdkErrorCodeImportFilesFailedDueToNetworkError",
+            "mangledName": "$s6ABMate12SdkErrorCodeO029importFilesFailedDueToNetworkC0yA2CmF",
+            "moduleName": "ABMate",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 40
+          },
+          {
+            "kind": "Var",
+            "name": "fetchMediaFilesInfoFailedDueToAllowLocalNetworkingMissing",
+            "printedName": "fetchMediaFilesInfoFailedDueToAllowLocalNetworkingMissing",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ABMate.SdkErrorCode.Type) -> ABMate.SdkErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SdkErrorCode",
+                    "printedName": "ABMate.SdkErrorCode",
+                    "usr": "c:@M@ABMate@E@ABMateSdkErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ABMate.SdkErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SdkErrorCode",
+                        "printedName": "ABMate.SdkErrorCode",
+                        "usr": "c:@M@ABMate@E@ABMateSdkErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@ABMate@E@ABMateSdkErrorCode@ABMateSdkErrorCodeFetchMediaFilesInfoFailedDueToAllowLocalNetworkingMissing",
+            "mangledName": "$s6ABMate12SdkErrorCodeO57fetchMediaFilesInfoFailedDueToAllowLocalNetworkingMissingyA2CmF",
+            "moduleName": "ABMate",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 41
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(rawValue:)",
@@ -10292,6 +11048,51 @@
         "kind": "Import",
         "name": "AIBudsFoundation",
         "printedName": "AIBudsFoundation",
+        "declKind": "Import",
+        "moduleName": "ABMate"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ABMate",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AIBudsLog",
+        "printedName": "AIBudsLog",
+        "declKind": "Import",
+        "moduleName": "ABMate"
+      },
+      {
+        "kind": "Import",
+        "name": "AIBuds",
+        "printedName": "AIBuds",
+        "declKind": "Import",
+        "moduleName": "ABMate"
+      },
+      {
+        "kind": "Import",
+        "name": "AIBudsFoundation",
+        "printedName": "AIBudsFoundation",
+        "declKind": "Import",
+        "moduleName": "ABMate"
+      },
+      {
+        "kind": "Import",
+        "name": "Dispatch",
+        "printedName": "Dispatch",
+        "declKind": "Import",
+        "moduleName": "ABMate"
+      },
+      {
+        "kind": "Import",
+        "name": "Darwin",
+        "printedName": "Darwin",
         "declKind": "Import",
         "moduleName": "ABMate"
       },
@@ -14908,6 +15709,132 @@
       "value": "5004"
     },
     {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Defines(定义)\/SDKError(错误)\/Errors.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3817,
+      "length": 4,
+      "value": "6000"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Defines(定义)\/SDKError(错误)\/Errors.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3883,
+      "length": 4,
+      "value": "6001"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Defines(定义)\/SDKError(错误)\/Errors.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3968,
+      "length": 4,
+      "value": "6002"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Defines(定义)\/SDKError(错误)\/Errors.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4045,
+      "length": 4,
+      "value": "6003"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Defines(定义)\/SDKError(错误)\/Errors.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4183,
+      "length": 4,
+      "value": "6004"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Defines(定义)\/SDKError(错误)\/Errors.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4339,
+      "length": 4,
+      "value": "6005"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Defines(定义)\/SDKError(错误)\/Errors.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4483,
+      "length": 4,
+      "value": "6006"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Defines(定义)\/SDKError(错误)\/Errors.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4603,
+      "length": 4,
+      "value": "6007"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Defines(定义)\/SDKError(错误)\/Errors.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4736,
+      "length": 4,
+      "value": "6008"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Defines(定义)\/SDKError(错误)\/Errors.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4866,
+      "length": 4,
+      "value": "6009"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Defines(定义)\/SDKError(错误)\/Errors.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4985,
+      "length": 4,
+      "value": "6010"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Defines(定义)\/SDKError(错误)\/Errors.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5114,
+      "length": 4,
+      "value": "6011"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Defines(定义)\/SDKError(错误)\/Errors.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5254,
+      "length": 4,
+      "value": "6012"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Defines(定义)\/SDKError(错误)\/Errors.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5379,
+      "length": 4,
+      "value": "6013"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Defines(定义)\/SDKError(错误)\/Errors.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5480,
+      "length": 4,
+      "value": "6014"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Defines(定义)\/SDKError(错误)\/Errors.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5602,
+      "length": 4,
+      "value": "6015"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Defines(定义)\/SDKError(错误)\/Errors.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5703,
+      "length": 4,
+      "value": "6016"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Defines(定义)\/SDKError(错误)\/Errors.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5854,
+      "length": 4,
+      "value": "6017"
+    },
+    {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Defines(定义)\/SDKError(错误)\/OtaErrors.swift",
       "kind": "StringLiteral",
       "offset": 284,
@@ -15078,385 +16005,385 @@
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "BooleanLiteral",
-      "offset": 2684,
+      "offset": 2756,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "BooleanLiteral",
-      "offset": 3267,
+      "offset": 3339,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "BooleanLiteral",
-      "offset": 9707,
+      "offset": 9779,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 13085,
+      "offset": 13157,
       "length": 6,
       "value": "\"name\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 13112,
+      "offset": 13184,
       "length": 6,
       "value": "\"uuid\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 13147,
+      "offset": 13219,
       "length": 14,
       "value": "\"ctkdDeviceId\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 13193,
+      "offset": 13265,
       "length": 17,
       "value": "\"lastConnectTime\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 13237,
+      "offset": 13309,
       "length": 12,
       "value": "\"bindUserId\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 13278,
+      "offset": 13350,
       "length": 14,
       "value": "\"userBindTime\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 13324,
+      "offset": 13396,
       "length": 17,
       "value": "\"isAlreadyUnbind\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 13365,
+      "offset": 13437,
       "length": 9,
       "value": "\"advData\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 13401,
+      "offset": 13473,
       "length": 12,
       "value": "\"screenName\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 13439,
+      "offset": 13511,
       "length": 11,
       "value": "\"thumbnail\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 13480,
+      "offset": 13552,
       "length": 15,
       "value": "\"customContent\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 13522,
+      "offset": 13594,
       "length": 12,
       "value": "\"beaconData\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 13565,
+      "offset": 13637,
       "length": 16,
       "value": "\"connectContext\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 13630,
+      "offset": 13702,
       "length": 34,
       "value": "\"shouldAutoReconnectWhenAppLaunch\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "BooleanLiteral",
-      "offset": 13742,
+      "offset": 13814,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 17032,
+      "offset": 17104,
       "length": 1631,
       "value": "\"\n┌─────────── Device ─────────────────────┐\n│ Name: \""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 17189,
+      "offset": 17261,
       "length": 3,
       "value": "\"\n│ UUID: \""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 17226,
+      "offset": 17298,
       "length": 1,
       "value": "\"\n| Device ID for CTKD: \""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 17280,
+      "offset": 17352,
       "length": 5,
       "value": "\"nil\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 17286,
+      "offset": 17358,
       "length": 3,
       "value": "\"\n│ MAC Address: \""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 17328,
+      "offset": 17400,
       "length": 5,
       "value": "\"nil\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 17334,
+      "offset": 17406,
       "length": 36,
       "value": "\"\n├─────────── Device Info ─────────────────────────┤\n│ Product: \""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 17502,
+      "offset": 17574,
       "length": 3,
       "value": "\"\n│ Manufacturer Data: \""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 17563,
+      "offset": 17635,
       "length": 6,
       "value": "\"None\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 17570,
+      "offset": 17642,
       "length": 3,
       "value": "\"\n│ Advertisement Data: \""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 17639,
+      "offset": 17711,
       "length": 4,
       "value": "\"\n\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 17651,
+      "offset": 17723,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 17658,
+      "offset": 17730,
       "length": 6,
       "value": "\"None\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 17665,
+      "offset": 17737,
       "length": 36,
       "value": "\" \n├─────────── Connect & Binding Info ──────────────┤\n│ Last Connect: \""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 17841,
+      "offset": 17913,
       "length": 7,
       "value": "\"Never\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 17849,
+      "offset": 17921,
       "length": 3,
       "value": "\"\n│ Bind User ID: \""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 17892,
+      "offset": 17964,
       "length": 6,
       "value": "\"None\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 17899,
+      "offset": 17971,
       "length": 3,
       "value": "\"\n│ Bind Time: \""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 17954,
+      "offset": 18026,
       "length": 7,
       "value": "\"Never\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 17962,
+      "offset": 18034,
       "length": 3,
       "value": "\"\n│ Is Unbound: \""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 18007,
+      "offset": 18079,
       "length": 5,
       "value": "\"Yes\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 18015,
+      "offset": 18087,
       "length": 4,
       "value": "\"No\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 18020,
+      "offset": 18092,
       "length": 3,
       "value": "\"\n│ Should Auto Reconnect On App Launch: \""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 18107,
+      "offset": 18179,
       "length": 5,
       "value": "\"Yes\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 18115,
+      "offset": 18187,
       "length": 4,
       "value": "\"No\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 18120,
+      "offset": 18192,
       "length": 36,
       "value": "\"\n├─────────── Display Info ────────────────────────┤\n│ Screen Name: \""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 18296,
+      "offset": 18368,
       "length": 6,
       "value": "\"None\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 18303,
+      "offset": 18375,
       "length": 3,
       "value": "\"\n│ Has Thumbnail: \""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 18352,
+      "offset": 18424,
       "length": 5,
       "value": "\"Yes\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 18360,
+      "offset": 18432,
       "length": 4,
       "value": "\"No\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 18365,
+      "offset": 18437,
       "length": 3,
       "value": "\"\n│ Custom Content: \""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 18413,
+      "offset": 18485,
       "length": 6,
       "value": "\"None\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 18420,
+      "offset": 18492,
       "length": 153,
       "value": "\"\n└─────────────────────────────────────────────────┘\n\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 18613,
+      "offset": 18685,
       "length": 32,
       "value": "\"\n\n\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 18644,
+      "offset": 18716,
       "length": 5,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 18648,
+      "offset": 18720,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 18651,
+      "offset": 18723,
       "length": 27520,
       "value": "\"\""
     },
@@ -15529,6 +16456,62 @@
       "offset": 1015,
       "length": 6,
       "value": "0xFFFF"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/FileImport(文件导入)\/FileImportTask.swift",
+      "kind": "StringLiteral",
+      "offset": 465,
+      "length": 13,
+      "value": "\"k9#mY2@pL7!\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/FileImport(文件导入)\/FileImportTask.swift",
+      "kind": "StringLiteral",
+      "offset": 584,
+      "length": 60,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/FileImport(文件导入)\/FileImportTask.swift",
+      "kind": "StringLiteral",
+      "offset": 609,
+      "length": 1,
+      "value": "\".file_import.timer.scheduler.queue\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/FileImport(文件导入)\/FileImportTask.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1149,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/FileImport(文件导入)\/FileImportTask.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1268,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/FileImport(文件导入)\/FileImportTask.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1327,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/FileImport(文件导入)\/FileImportTask.swift",
+      "kind": "IntegerLiteral",
+      "offset": 16873,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/FileImport(文件导入)\/FileImportTask.swift",
+      "kind": "IntegerLiteral",
+      "offset": 16896,
+      "length": 2,
+      "value": "10"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/HotspotConnect(连接热点)\/HotspotConnector.swift",
@@ -15766,21 +16749,21 @@
       "kind": "StringLiteral",
       "offset": 505,
       "length": 14,
-      "value": "\"1.0.0-beta.1\""
+      "value": "\"1.0.0-beta.2\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/ABMate.swift",
       "kind": "StringLiteral",
       "offset": 635,
       "length": 13,
-      "value": "\"20260408001\""
+      "value": "\"20260412001\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/ABMate.swift",
       "kind": "StringLiteral",
       "offset": 750,
       "length": 12,
-      "value": "\"2026-04-08\""
+      "value": "\"2026-04-12\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/ABMate.swift",

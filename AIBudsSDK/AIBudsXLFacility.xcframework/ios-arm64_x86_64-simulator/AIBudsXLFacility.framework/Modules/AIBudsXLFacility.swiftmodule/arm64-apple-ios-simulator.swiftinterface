@@ -10,15 +10,47 @@ import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
 import iOSLogBrowserSDK
+import zipzap
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(AIBudsXLFacilitySDK) final public class XLFacilitySDK : ObjectiveC.NSObject, AIBudsLog.XLFacilityPlugin {
   @objc final public var isLoaded: Swift.Bool {
     @objc get
   }
   @objc public static let shared: AIBudsXLFacility.XLFacilitySDK
   @objc final public func load()
-  @objc final public func purgeOldLogsWithMaxAge(_ maxAge: Swift.Int)
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc(exportLogsWithCompletion:) final public func exportLogs(_ completion: ((_ filePath: Swift.String?, _ logStartFrom: Foundation.Date?, _ logEndAt: Foundation.Date?, _ error: Foundation.NSError?) -> Swift.Void)? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc(exportLogsWithMaxFileSize:completion:) final public func exportLogs(_ maxFileSize: Swift.UInt64, completion: ((_ filePaths: [Swift.String]?, _ logStartFrom: Foundation.Date?, _ logEndAt: Foundation.Date?, _ error: Foundation.NSError?) -> Swift.Void)? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc(purgeOldLogsWithMaxAge:completion:) final public func purgeOldLogsWithMaxAge(_ maxAge: Swift.Int, completion: ((_ error: Foundation.NSError?) -> Swift.Void)? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc(purgeOldLogsBefore:completion:) final public func purgeOldLogsBefore(_ timestamp: Foundation.Date, completion: ((_ error: Foundation.NSError?) -> Swift.Void)? = nil)
+  #endif
   #if compiler(>=5.3) && $NonescapableTypes
   @objc(logMessage:level:subsystem:category:) final public func log(_ message: Swift.String, level: AIBudsLog.LogLevel, subsystem: Swift.String?, category: Swift.String?)
   #endif
   @objc deinit
 }
+extension AIBudsXLFacility.XLFacilitySDK {
+  @objc public static let ErrorDomain: Swift.String
+  @objc public static let ErrorKey: Swift.String
+}
+@objc(AIBudsXLFacilitySdkErrorCode) public enum SdkErrorCode : Swift.Int {
+  case unknown = -1
+  case enumerateRecordsFailed = 1001
+  case failedToCalculateCutOffTime = 1002
+  case failedToPurgeOldLogs = 1003
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.Int)
+  #endif
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+extension AIBudsXLFacility.SdkErrorCode : Swift.Equatable {}
+extension AIBudsXLFacility.SdkErrorCode : Swift.Hashable {}
+extension AIBudsXLFacility.SdkErrorCode : Swift.RawRepresentable {}

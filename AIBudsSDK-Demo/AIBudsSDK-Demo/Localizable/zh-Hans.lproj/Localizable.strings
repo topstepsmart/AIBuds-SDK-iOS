@@ -68,12 +68,13 @@
 "LocKey.TWSGroupTitle" = "TWS";
 "LocKey.EqualizerGroupTitle" = "均衡器";
 "LocKey.ANCGroupTitle" = "ANC";
-"LocKey.AudioRecordingGroupTitle" = "音频录制";
-"LocKey.CameraGroupTitle" = "相机";
+"LocKey.AudioRecordingGroupTitle" = "音频";
+"LocKey.CameraGroupTitle" = "视频";
 "LocKey.RemoteShutterGroupTitle" = "遥控拍照";
 "LocKey.AITranslationGroupTitle" = "AI 翻译";
 "LocKey.AIChatGroupTitle" = "AI 聊天";
 "LocKey.HotspotGroupTitle" = "热点";
+"LocKey.FileImportGroupTitle" = "文件导入";
 "LocKey.OtaGroupTitle" = "OTA";
 "LocKey.OtaFeatureTitle" = "固件更新（OTA）";
 "LocKey.OtaDemoTitle" = "OTA 升级演示";
@@ -357,7 +358,7 @@
 "LocKey.SupportedLanguages" = "支持的语言";
 "LocKey.CallStatus" = "通话状态";
 "LocKey.StorageInfo" = "存储信息";
-"LocKey.MediaCount" = "媒体文件计数";
+"LocKey.MediaCount" = "媒体文件数量";
 "LocKey.SupportAdjustRecordDuration" = "是否支持调整录音录像时长";
 
 "LocKey.PhysicalOperationsMapping" = "按键功能映射";
@@ -517,3 +518,206 @@
 "LocKey.CallVolumeUpdatedSuccessfullyTips" = "通话音量更新成功";
 "LocKey.LocalPlaybackVolumeUpdatedSuccessfullyTips" = "本地播放音量更新成功";
 "LocKey.AllVolumesResetTo50Tips" = "所有音量重置为 50%";
+
+"LocKey.MusicControlFeatureTitle" = "音乐控制";
+
+"LocKey.MusicControlFeatureTitle" = "音乐控制";
+"LocKey.MusicControlDemoTitle" = "音乐控制演示";
+"LocKey.NoDeviceConnected" = "未连接设备";
+"LocKey.DeviceConnected" = "设备已连接";
+"LocKey.PlaybackControlTitle" = "播放控制";
+"LocKey.PreviousTrackButton" = "上一曲";
+"LocKey.NextTrackButton" = "下一曲";
+"LocKey.PauseButton" = "暂停";
+"LocKey.PlayButton" = "播放";
+"LocKey.VolumeControlTitle" = "音量控制";
+"LocKey.VolumeDownButton" = "音量减";
+"LocKey.VolumeUpButton" = "音量加";
+"LocKey.MuteButton" = "静音";
+"LocKey.UnmuteButton" = "取消静音";
+"LocKey.VolumeUpButton" = "音量加";
+"LocKey.MusicPlaybackStarted" = "音乐播放已开始";
+"LocKey.MusicPlaybackPaused" = "音乐播放已暂停";
+"LocKey.SkippedToNextTrack" = "已切换到下一曲";
+"LocKey.SkippedToPreviousTrack" = "已切换到上一曲";
+"LocKey.VolumeIncreased" = "音量已增加";
+"LocKey.VolumeDecreased" = "音量已减小";
+"LocKey.VolumeMuted" = "音量已静音";
+"LocKey.VolumeUnmuted" = "音量已取消静音";
+"LocKey.VolumeSetTo" = "音量已设置为 %ld%%";
+
+"LocKey.TWSupportedFeatureTitle" = "是否支持 TWS";
+"LocKey.TWSupported" = "支持";
+"LocKey.TWSNotSupported" = "不支持";
+"LocKey.TWSConnectionFeatureTitle" = "TWS 连接状态";
+"LocKey.TWSNotConnected" = "未连接";
+"LocKey.TWSConnected" = "已连接";
+
+"LocKey.NotSupported" = "设备不支持";
+
+"LocKey.EqualizerFeatureTitle" = "均衡器";
+
+"LocKey.EqualizerDemoTitle" = "均衡器演示";
+"LocKey.CurrentEQSetting" = "当前均衡器设置";
+"LocKey.NoEQSettingActive" = "当前无均衡器设置";
+"LocKey.EqualizerPresetsTitle" = "均衡器预设";
+"LocKey.EQTypeCustom" = "自定义均衡器";
+"LocKey.EQTypePreset" = "预设均衡器";
+"LocKey.CurrentEQSettingNameFormat" = "当前均衡器设置：%@";
+"LocKey.DeviceNotSupportEQ" = "设备不支持均衡器";
+"LocKey.EQSettingAppliedFormat" = "已应用 EQ 设置：%@";
+"LocKey.EQSettingUpdatedSuccess" = "EQ 设置更新成功";
+
+"LocKey.EQName.Default" = "默认";
+"LocKey.EQName.Pop" = "流行";
+"LocKey.EQName.Rock" = "摇滚";
+"LocKey.EQName.Jazz" = "爵士";
+"LocKey.EQName.Classic" = "古典";
+"LocKey.EQName.Country" = "乡村";
+"LocKey.EQName.Custom" = "自定义";
+
+"LocKey.ANCFeatureTitle" = "主动噪声抑制";
+
+"LocKey.ANCDemoTitle" = "ANC 演示";
+"LocKey.ANCModeTitle" = "ANC 模式";
+"LocKey.ANCModeNormal" = "正常";
+"LocKey.ANCModeANC" = "主动降噪";
+"LocKey.ANCModeTransparency" = "通透";
+"LocKey.ANCGainTitle" = "ANC 增益";
+"LocKey.TransparencyGainTitle" = "通透增益";
+"LocKey.ANCFadeTitle" = "ANC 淡入淡出";
+"LocKey.ANCFadeDescription" = "启用 ANC 模式之间的平滑过渡";
+"LocKey.ANCSettingsLoaded" = "ANC 设置已加载";
+"LocKey.DeviceNotSupportANC" = "设备不支持 ANC";
+"LocKey.ANCModeSetSuccess" = "ANC 模式设置成功";
+"LocKey.ANCModeSetFailed" = "ANC 模式设置失败";
+"LocKey.ANCGainSetSuccess" = "ANC 增益设置成功";
+"LocKey.ANCGainSetFailed" = "ANC 增益设置失败";
+"LocKey.TransparencyGainSetSuccess" = "通透增益设置成功";
+"LocKey.TransparencyGainSetFailed" = "通透增益设置失败";
+"LocKey.ANCFadeSetSuccess" = "ANC 淡入淡出设置成功";
+"LocKey.ANCFadeSetFailed" = "ANC 淡入淡出设置失败";
+
+"LocKey.AudioRecordingFeatureTitle" = "录音";
+"LocKey.AudioRecordingDemoTitle" = "录音演示";
+"LocKey.NormalRecordingTitle" = "普通录音";
+"LocKey.RecordingStatusReady" = "准备就绪";
+"LocKey.AIRecordingTitle" = "AI 录音";
+"LocKey.SceneOnSite" = "现场录音";
+"LocKey.SceneCall" = "通话录音";
+"LocKey.StartAIRecording" = "开始 AI 录音";
+"LocKey.StopAIRecording" = "停止 AI 录音";
+
+"LocKey.MaxRecordingDurationTitle" = "最大录音时长";
+"LocKey.Minutes" = "分钟";
+"LocKey.AudioRecordingSettingsLoaded" = "录音设置已加载";
+"LocKey.DeviceNotSupportAudioRecording" = "设备不支持录音功能";
+
+"LocKey.RecordingStarted" = "录音已开始";
+"LocKey.RecordingInProgress" = "录音进行中";
+"LocKey.RecordingStartFailed" = "录音开始失败";
+"LocKey.RecordingStopped" = "录音已停止";
+"LocKey.RecordingStopFailed" = "录音停止失败";
+"LocKey.AIRecordingStarted" = "AI 录音已开始";
+"LocKey.AIRecordingStartFailed" = "开始 AI 录音失败";
+"LocKey.AIRecordingStopped" = "AI 录音已停止";
+"LocKey.AIRecordingStopFailed" = "停止 AI 录音失败";
+"LocKey.MaxDurationSetSuccess" = "最大录音时长设置成功";
+
+"LocKey.VideoRecordingFeatureTitle" = "录像";
+"LocKey.VideoRecordingDemoTitle" = "录像演示";
+"LocKey.CameraInfoTitle" = "摄像头信息";
+"LocKey.MaxVideoRecordingDurationTitle" = "最大录像时长";
+"LocKey.PhotoTakingTitle" = "拍照";
+"LocKey.CaptureModeCamera" = "相机";
+"LocKey.CaptureModeAI" = "AI";
+"LocKey.ReadyToCapture" = "准备拍摄";
+"LocKey.TakePhoto" = "拍照";
+"LocKey.StopPhoto" = "停止拍照";
+"LocKey.VideoRecordingTitle" = "录像";
+"LocKey.ReadyToRecord" = "准备录制";
+"LocKey.StartVideoRecording" = "开始录像";
+"LocKey.StopVideoRecording" = "停止录像";
+"LocKey.VideoRecordingSettingsLoaded" = "录像设置已加载";
+"LocKey.DeviceNotSupportVideoRecording" = "设备不支持录像";
+"LocKey.MaxVideoRecordingDurationSetSuccess" = "最大录像时长设置成功";
+"LocKey.MaxVideoRecordingDurationSetFailed" = "最大录像时长设置失败";
+"LocKey.PhotoTakingStarted" = "拍照已开始";
+"LocKey.PhotoTakingInProgress" = "拍照进行中";
+"LocKey.PhotoTakingStartFailed" = "拍照开始失败";
+"LocKey.PhotoTakingStopped" = "拍照已停止";
+"LocKey.PhotoTakingStopFailed" = "拍照停止失败";
+"LocKey.VideoRecordingStarted" = "视频录制已开始";
+"LocKey.VideoRecordingInProgress" = "视频录制进行中";
+"LocKey.VideoRecordingStartFailed" = "视频录制开始失败";
+"LocKey.VideoRecordingStopped" = "视频录制已停止";
+"LocKey.VideoRecordingStopFailed" = "视频录制停止失败";
+
+"LocKey.RemoteShutterFeatureTitle" = "遥控拍照";
+"LocKey.PhotoTakingTitle" = "拍照";
+"LocKey.CameraPermissionDenied" = "相机权限被拒绝";
+"LocKey.CameraError" = "相机错误";
+"LocKey.CameraReady" = "相机已就绪";
+"LocKey.RemoteShutterReady" = "遥控拍照已就绪";
+"LocKey.RemoteShutterCapturing" = "拍照中...";
+"LocKey.RemoteShutterCaptureFailed" = "拍照失败";
+"LocKey.RemoteShutterCaptureSuccess" = "拍照成功";
+
+"LocKey.FileImportFeatureTitle" = "文件导入";
+"LocKey.FileImportDemoTitle" = "文件导入演示";
+"LocKey.DeviceMediaFiles" = "设备媒体文件";
+"LocKey.LoadingMediaFiles" = "加载媒体文件...";
+"LocKey.ImportButton" = "导入文件";
+"LocKey.ImportStatus" = "导入状态";
+"LocKey.FileImportSpeedFormat" = "速度：%@ %@";
+"LocKey.ReadyToImport" = "文件导入已准备就绪";
+"LocKey.ImportedFiles" = "已导入文件";
+"LocKey.NoFilesToImport" = "没有文件可导入";
+"LocKey.ImportingBatchProgressFormat" = "导入 %d/%ld";
+"LocKey.TotalMediaCountFormat" = "总媒体文件数：%ld";
+"LocKey.FileImportAllSuccess" = "所有文件导入成功";
+"LocKey.FileImportFailedFormat" = "文件导入失败：%@";
+
+
+
+"LocKey.ConfiguringHotspot" = "配置热点中";
+"LocKey.HotspotConfigured" = "热点已配置";
+"LocKey.HotspotConfigurationFailedFormat" = "热点配置失败：%@";
+"LocKey.AboutToEnterFileTransferMode" = "准备进入文件传输模式...";
+"LocKey.FileTransferModeEntered" = "文件传输模式已进入";
+"LocKey.FileTransferModeEnterFailedFormat" = "文件传输模式进入失败：%@";
+"LocKey.WaitingForHotspotOpen" = "等待热点打开...";
+"LocKey.ConnectingToHotspot" = "连接热点...";
+"LocKey.HotspotConnected" = "热点已连接";
+"LocKey.HotspotConnectionFailedFormat" = "热点连接失败：%@";
+
+"LocKey.LogGroupTitle" = "日志";
+"LocKey.LogFeatureTitle" = "日志";
+"LocKey.LogDemoTitle" = "日志";
+"LocKey.LogDemoSingleExportDescription" = "导出所有日志到单个文件并分享";
+"LocKey.LogDemoSingleExportButton" = "导出日志";
+"LocKey.LogDemoMultiExportDescription" = "导出日志到多个文件并设置大小限制并分享";
+"LocKey.FileSizeLimitFormat" = "文件大小限制：%@ MB";
+"LocKey.LogDemoMultiExportButton" = "导出日志";
+"LocKey.LogDemoPurgeDescription" = "删除指定天数前的日志";
+"LocKey.LogDemoDaysFormat" = "删除 %@ 天前的日志";
+"LocKey.LogDemoPurgeButton" = "删除旧日志数据";
+"LocKey.LogDemoExportingLogs" = "导出日志中...";
+"LocKey.LogDemoExportFailedFormat" = "导出失败：%@";
+"LocKey.LogDemoExportSuccess" = "导出成功";
+"LocKey.LogDemoExportFailedNoFile" = "导出失败：没有文件可导出";
+"LocKey.LogDemoExportSuccessMultiple" = "导出成功：%@ 个文件";
+"LocKey.LogDemoDeletingLogs" = "删除日志中...";
+"LocKey.LogDemoDeleteSuccessTipFormat" = "删除成功删除了 %@ 天前的日志";
+
+"LocKey.LogDemoTimeRangeFormat" = "时间范围：%@ - %@";
+"LocKey.LogDemoTimeRangeStartFormat" = "开始时间：%@";
+"LocKey.LogDemoTimeRangeEndFormat" = "结束时间：%@";
+
+"LocKey.LogDemoDestinationDescription" = "选择日志输出方式";
+"LocKey.LogDemoCurrentDestination" = "当前输出方式：";
+"LocKey.LogDemoDestinationConsole" = "控制台";
+"LocKey.LogDemoDestinationOSLogger" = "OS Logger";
+"LocKey.LogDemoDestinationFile" = "文件";
+"LocKey.LogDemoDestinationXLFacility" = "XLFacility";
+"LocKey.LogDemoDestinationChangedToFormat" = "输出方式已切换为：%@";

@@ -821,6 +821,12 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) AIBudsEQSett
 @property (nonatomic, copy) NSString * _Nullable name;
 /// The Chinese name of the preset equalizer.
 @property (nonatomic, copy) NSString * _Nullable chineseName;
+/// Whether the equalizer is a preset equalizer.
+@property (nonatomic, readonly) BOOL isPreset;
+/// Whether the equalizer is a custom equalizer.
+@property (nonatomic, readonly) BOOL isCustom;
+/// The index of the custom equalizer mode.
+@property (nonatomic, readonly) NSInteger customIndex;
 /// Initializes an <code>EQSettingModel</code> with the specified mode and gains.
 /// \param mode The type of the preset equalizer.
 ///
@@ -1019,6 +1025,58 @@ SWIFT_CLASS_NAMED("MediaCountInfoModel")
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
+
+enum AIBudsMediaFileType : NSInteger;
+/// Media file info model
+SWIFT_CLASS_NAMED("MediaFileInfoModel")
+@interface AIBudsMediaFileInfoModel : NSObject <AIBudsCustomDebugJsonStringConvertible>
+/// Media file type
+@property (nonatomic, readonly) enum AIBudsMediaFileType fileType;
+/// Media file name
+@property (nonatomic, readonly, copy) NSString * _Nonnull fileName;
+/// Media file base URL
+@property (nonatomic, readonly, copy) NSString * _Nonnull baseUrl;
+/// Whether the media file contains six-axis debounce information
+@property (nonatomic, readonly) BOOL containsSixAxisDebounceInfo;
+/// Media file full URL
+@property (nonatomic, readonly, copy) NSString * _Nonnull fileUrl;
+/// Initialize media file info
+/// <ul>
+///   <li>
+///     Parameters fileType: Media file type
+///   </li>
+///   <li>
+///     fileName: Media file name
+///   </li>
+///   <li>
+///     baseUrl: Media file base URL
+///   </li>
+///   <li>
+///     containsSixAxisDebounceInfo: Whether the media file contains six-axis debounce information
+///   </li>
+/// </ul>
+///
+/// returns:
+/// Media file info model
+- (nonnull instancetype)initWithFileType:(enum AIBudsMediaFileType)fileType fileName:(NSString * _Nonnull)fileName baseUrl:(NSString * _Nonnull)baseUrl containsSixAxisDebounceInfo:(BOOL)containsSixAxisDebounceInfo OBJC_DESIGNATED_INITIALIZER;
+/// Description of media file info model
+@property (nonatomic, readonly, copy) NSString * _Nonnull description;
+/// Debug JSON string of media file info model
+@property (nonatomic, readonly, copy) NSString * _Nonnull debugJsonString;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+typedef SWIFT_ENUM_NAMED(NSInteger, AIBudsMediaFileType, "MediaFileType", open) {
+/// Unknown file type
+  AIBudsMediaFileTypeUnknown = -1,
+/// Image file type
+  AIBudsMediaFileTypeImage = 1,
+/// Audio file type
+  AIBudsMediaFileTypeAudio = 2,
+/// Video file type
+  AIBudsMediaFileTypeVideo = 3,
+};
 
 /// Parameters required to authenticate a device with the MltCloud AI
 SWIFT_CLASS_NAMED("MltCloudAIAuthParams")

@@ -10,11 +10,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		86UY/Ms21eRWQ/sitqj1PdPeTVU=
+		yt+qiMnUW9n7tBga9WFypQxYMrQ=
 		</data>
 		<key>Modules/AIBudsAI.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		G4g12ekqeBArwFybPh7KESnxArM=
+		/wEZy4tezqfuiTqVBjRX2kYajRs=
 		</data>
 		<key>Modules/AIBudsAI.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/AIBudsAI.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		AgqLYyTWiBuf2Doo1krH5Djh2Po=
+		peoepzgewgkkQdE0P9M8zF1/zhQ=
 		</data>
 		<key>Modules/AIBudsAI.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		G4g12ekqeBArwFybPh7KESnxArM=
+		/wEZy4tezqfuiTqVBjRX2kYajRs=
 		</data>
 		<key>Modules/AIBudsAI.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Modules/AIBudsAI.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		NTlw+jRg28XNOyaUytIIISTaU4k=
+		spoEETYVQPqWOGckNf9h7dBLX40=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -70,7 +70,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			q0SP1llfQAZPOHnN9G5LDt97R8tRhEVviQJxoAGqmE4=
+			k4QlKqXq8pWSRnsgafIOLVTJBQ4yP09X3MRjpP1EDXM=
 			</data>
 		</dict>
 		<key>Modules/AIBudsAI.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -98,14 +98,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			IedqeVgSsEpHXF7bLyju4rCZhxrA4NLs8Sh5P8Qmiqk=
+			hJipRCPCmvy+xcRsvB85PO79MmcezN6ohlg+Yb+CA5c=
 			</data>
 		</dict>
 		<key>Modules/AIBudsAI.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			q0SP1llfQAZPOHnN9G5LDt97R8tRhEVviQJxoAGqmE4=
+			k4QlKqXq8pWSRnsgafIOLVTJBQ4yP09X3MRjpP1EDXM=
 			</data>
 		</dict>
 		<key>Modules/AIBudsAI.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -133,7 +133,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			IXbhW/vK9YQvlWnIxo/fZho94T9O5tSiJAkMh9vTCJk=
+			GhABkygqzIwy1uwlf4fJ1u0W9ryBgMTzZCgj/NAz2as=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

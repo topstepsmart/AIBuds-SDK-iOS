@@ -28,6 +28,8 @@
 @property (nonatomic, strong) DeviceFeatureModel* wearDetectionCapabilityFeature;
 @property (nonatomic, strong) DeviceFeatureModel* wearDetectionEnabledFeature;
 @property (nonatomic, strong) DeviceFeatureModel* volumeSetCapabilityFeature;
+@property (nonatomic, strong) DeviceFeatureModel* twsSupportedFeature;
+@property (nonatomic, strong) DeviceFeatureModel* twsConnectionFeature;
 @end
 
 @implementation DeviceHomeViewController
@@ -290,6 +292,18 @@
     }
 }
 
+-(NSString*)twsSupportedStringOf:(BOOL)supported
+{
+    return supported ? NSLocalizedString(@"LocKey.TWSupported", nil) : NSLocalizedString(@"LocKey.TWSNotSupported", nil);
+}
+
+-(NSString*)twsConnectionStringOf:(BOOL)connected
+{
+    return connected ? NSLocalizedString(@"LocKey.TWSConnected", nil) : NSLocalizedString(@"LocKey.TWSNotConnected", nil);
+}
+
+
+
 - (NSArray<DeviceFeatureGroupModel*>*)featureGroups
 {
     __weak typeof(self) weakSelf = self;
@@ -307,40 +321,93 @@
         
     }];
 
-    self.onDeviceVoiceAssistantCapabilityFeature.valueText = [self onDeviceVoiceAssistantCapabilityStringOf:((id<AIBudsOnDeviceVoiceAssistantAPI>)self.device).onDeviceVoiceAssistantCapability];
+    id<AIBudsOnDeviceVoiceAssistantAPI> voiceAssistantDevice = (id<AIBudsOnDeviceVoiceAssistantAPI>)self.device;
+    if ([voiceAssistantDevice conformsToProtocol:@protocol(AIBudsOnDeviceVoiceAssistantAPI)]) {
+        self.onDeviceVoiceAssistantCapabilityFeature.valueText = [self onDeviceVoiceAssistantCapabilityStringOf:voiceAssistantDevice.onDeviceVoiceAssistantCapability];
+    } else {
+        self.onDeviceVoiceAssistantCapabilityFeature.valueText = NSLocalizedString(@"LocKey.NotSupported", nil);
+    }
 
     self.onDeviceVoiceAssistantModeFeature = [DeviceFeatureModel modelWithIcon:@"icon_voice_assistant_mode" name:NSLocalizedString(@"LocKey.OnDeviceVoiceAssistantModeFeatureTitle", nil) handler:^{
         [self selectOnDeviceVoiceAssistantMode];
     }];
-    self.onDeviceVoiceAssistantModeFeature.valueText = [self onDeviceVoiceAssistantModeStringOf:((id<AIBudsOnDeviceVoiceAssistantAPI>)self.device).onDeviceVoiceAssistantMode];
+    if ([voiceAssistantDevice conformsToProtocol:@protocol(AIBudsOnDeviceVoiceAssistantAPI)]) {
+        self.onDeviceVoiceAssistantModeFeature.valueText = [self onDeviceVoiceAssistantModeStringOf:voiceAssistantDevice.onDeviceVoiceAssistantMode];
+    } else {
+        self.onDeviceVoiceAssistantModeFeature.valueText = NSLocalizedString(@"LocKey.NotSupported", nil);
+    }
 
     self.workModeFeature = [DeviceFeatureModel modelWithIcon:@"icon_work_mode" name:NSLocalizedString(@"LocKey.WorkModeFeatureTitle", nil) handler:^{
         [self selectWorkMode];
     }];
-    self.workModeFeature.valueText = [self workModeStringOf:((id<AIBudsDeviceWorkModeAPI>)self.device).workMode];
+    id<AIBudsDeviceWorkModeAPI> workModeDevice = (id<AIBudsDeviceWorkModeAPI>)self.device;
+    if ([workModeDevice conformsToProtocol:@protocol(AIBudsDeviceWorkModeAPI)]) {
+        self.workModeFeature.valueText = [self workModeStringOf:workModeDevice.workMode];
+    } else {
+        self.workModeFeature.valueText = NSLocalizedString(@"LocKey.NotSupported", nil);
+    }
     
     self.workStateFeature = [DeviceFeatureModel modelWithIcon:@"icon_work_state" name:NSLocalizedString(@"LocKey.WorkStateFeatureTitle", nil) handler:^{
         
     }];
-    self.workStateFeature.valueText = [self workStateStringOf:((id<AIBudsDeviceWorkStateAPI>)self.device).workState];
+    id<AIBudsDeviceWorkStateAPI> workStateDevice = (id<AIBudsDeviceWorkStateAPI>)self.device;
+    if ([workStateDevice conformsToProtocol:@protocol(AIBudsDeviceWorkStateAPI)]) {
+        self.workStateFeature.valueText = [self workStateStringOf:workStateDevice.workState];
+    } else {
+        self.workStateFeature.valueText = NSLocalizedString(@"LocKey.NotSupported", nil);
+    }
     
     
     self.wearDetectionCapabilityFeature = [DeviceFeatureModel modelWithIcon:@"icon_wear_detection" name:NSLocalizedString(@"LocKey.WearDetectionCapabilityFeatureTitle", nil) handler:^{
         
     }];
 
-    self.wearDetectionCapabilityFeature.valueText = [self wearDetectionCapabilityStringOf:((id<AIBudsDeviceWearDetectionAPI>)self.device).wearDetectionCapability];
+    id<AIBudsDeviceWearDetectionAPI> wearDetectionDevice = (id<AIBudsDeviceWearDetectionAPI>)self.device;
+    if ([wearDetectionDevice conformsToProtocol:@protocol(AIBudsDeviceWearDetectionAPI)]) {
+        self.wearDetectionCapabilityFeature.valueText = [self wearDetectionCapabilityStringOf:wearDetectionDevice.wearDetectionCapability];
+    } else {
+        self.wearDetectionCapabilityFeature.valueText = NSLocalizedString(@"LocKey.NotSupported", nil);
+    }
 
     self.wearDetectionEnabledFeature = [DeviceFeatureModel modelWithIcon:@"icon_wear_detection_status" name:NSLocalizedString(@"LocKey.WearDetectionEnabledFeatureTitle", nil) handler:^{
         [self toggleWearDetectionEnabled];
     }];
-    self.wearDetectionEnabledFeature.valueText = [self wearDetectionEnabledStringOf:((id<AIBudsDeviceWearDetectionAPI>)self.device).isWearDetectionEnabled];
+    if ([wearDetectionDevice conformsToProtocol:@protocol(AIBudsDeviceWearDetectionAPI)]) {
+        self.wearDetectionEnabledFeature.valueText = [self wearDetectionEnabledStringOf:wearDetectionDevice.isWearDetectionEnabled];
+    } else {
+        self.wearDetectionEnabledFeature.valueText = NSLocalizedString(@"LocKey.NotSupported", nil);
+    }
 
     self.volumeSetCapabilityFeature = [DeviceFeatureModel modelWithIcon:@"icon_volume_set_capability" name:NSLocalizedString(@"LocKey.VolumeSetCapabilityFeatureTitle", nil) handler:^{
         
     }];
 
-    self.volumeSetCapabilityFeature.valueText = [self volumeSetCapabilityStringOf:((id<AIBudsDeviceVolumeControlAPI>)self.device).volumeSetCapability];
+    id<AIBudsDeviceVolumeControlAPI> volumeControlDevice = (id<AIBudsDeviceVolumeControlAPI>)self.device;
+    if ([volumeControlDevice conformsToProtocol:@protocol(AIBudsDeviceVolumeControlAPI)]) {
+        self.volumeSetCapabilityFeature.valueText = [self volumeSetCapabilityStringOf:volumeControlDevice.volumeSetCapability];
+    } else {
+        self.volumeSetCapabilityFeature.valueText = NSLocalizedString(@"LocKey.NotSupported", nil);
+    }
+
+    self.twsSupportedFeature = [DeviceFeatureModel modelWithIcon:@"icon_tws_supported" name:NSLocalizedString(@"LocKey.TWSupportedFeatureTitle", nil) handler:^{
+        
+    }];
+    id<AIBudsDeviceTWSAPI> twsDevice = (id<AIBudsDeviceTWSAPI>)self.device;
+    if ([twsDevice conformsToProtocol:@protocol(AIBudsDeviceTWSAPI)]) {
+        self.twsSupportedFeature.valueText = [self twsSupportedStringOf:twsDevice.isTws];
+    } else {
+        self.twsSupportedFeature.valueText = NSLocalizedString(@"LocKey.NotSupported", nil);
+    }
+
+    self.twsConnectionFeature = [DeviceFeatureModel modelWithIcon:@"icon_tws_connection" name:NSLocalizedString(@"LocKey.TWSConnectionFeatureTitle", nil) handler:^{
+        
+    }];
+    if ([twsDevice conformsToProtocol:@protocol(AIBudsDeviceTWSAPI)]) {
+        self.twsConnectionFeature.valueText = [self twsConnectionStringOf:twsDevice.isTwsConnected];
+    } else {
+        self.twsConnectionFeature.valueText = NSLocalizedString(@"LocKey.NotSupported", nil);
+    }
+
 
     
     return @[
@@ -534,36 +601,31 @@
             [self goVolumeSetDemo];
         }],
         ]],
-        /*[DeviceFeatureGroupModel modelWithIcon:@"icon_music_control" name:NSLocalizedString(@"LocKey.MusicControlGroupTitle", nil) features:@[
-            
+        [DeviceFeatureGroupModel modelWithIcon:@"icon_music_control" name:NSLocalizedString(@"LocKey.MusicControlGroupTitle", nil) features:@[
+            [DeviceFeatureModel modelWithIcon:@"icon_music_control" name:NSLocalizedString(@"LocKey.MusicControlFeatureTitle", nil) classNameOfDemoVC:@"MusicControlDemoController"],
         ]],
         [DeviceFeatureGroupModel modelWithIcon:@"icon_tws" name:NSLocalizedString(@"LocKey.TWSGroupTitle", nil) features:@[
-            
+            self.twsSupportedFeature,
+            self.twsConnectionFeature,
         ]],
         [DeviceFeatureGroupModel modelWithIcon:@"icon_equalizer" name:NSLocalizedString(@"LocKey.EqualizerGroupTitle", nil) features:@[
-            
+            [DeviceFeatureModel modelWithIcon:@"icon_equalizer" name:NSLocalizedString(@"LocKey.EqualizerFeatureTitle", nil) classNameOfDemoVC:@"EqualizerDemoController"],
         ]],
         [DeviceFeatureGroupModel modelWithIcon:@"icon_anc" name:NSLocalizedString(@"LocKey.ANCGroupTitle", nil) features:@[
-            
+            [DeviceFeatureModel modelWithIcon:@"icon_anc" name:NSLocalizedString(@"LocKey.ANCFeatureTitle", nil) classNameOfDemoVC:@"ANCDemoController"],
         ]],
         [DeviceFeatureGroupModel modelWithIcon:@"icon_audio_recording" name:NSLocalizedString(@"LocKey.AudioRecordingGroupTitle", nil) features:@[
-            
+            [DeviceFeatureModel modelWithIcon:@"icon_audio_recording" name:NSLocalizedString(@"LocKey.AudioRecordingFeatureTitle", nil) classNameOfDemoVC:@"AudioRecordingDemoController"],
         ]],
         [DeviceFeatureGroupModel modelWithIcon:@"icon_camera" name:NSLocalizedString(@"LocKey.CameraGroupTitle", nil) features:@[
-            
+            [DeviceFeatureModel modelWithIcon:@"icon_video_recording" name:NSLocalizedString(@"LocKey.VideoRecordingFeatureTitle", nil) classNameOfDemoVC:@"VideoRecordingDemoController"],
         ]],
         [DeviceFeatureGroupModel modelWithIcon:@"icon_remote_shutter" name:NSLocalizedString(@"LocKey.RemoteShutterGroupTitle", nil) features:@[
-            
+            [DeviceFeatureModel modelWithIcon:@"icon_remote_shutter" name:NSLocalizedString(@"LocKey.RemoteShutterFeatureTitle", nil) classNameOfDemoVC:@"RemoteShutterDemoController"],
         ]],
-        [DeviceFeatureGroupModel modelWithIcon:@"icon_translation" name:NSLocalizedString(@"LocKey.AITranslationGroupTitle", nil) features:@[
-            
+        [DeviceFeatureGroupModel modelWithIcon:@"icon_file_import" name:NSLocalizedString(@"LocKey.FileImportGroupTitle", nil) features:@[
+            [DeviceFeatureModel modelWithIcon:@"icon_file_import" name:NSLocalizedString(@"LocKey.FileImportFeatureTitle", nil) classNameOfDemoVC:@"FileImportDemoController"],
         ]],
-        [DeviceFeatureGroupModel modelWithIcon:@"icon_ai_chat" name:NSLocalizedString(@"LocKey.AIChatGroupTitle", nil) features:@[
-            
-        ]],
-        [DeviceFeatureGroupModel modelWithIcon:@"icon_hotspot" name:NSLocalizedString(@"LocKey.HotspotGroupTitle", nil) features:@[
-            
-        ]],*/
         [DeviceFeatureGroupModel modelWithIcon:@"icon_ota" name:NSLocalizedString(@"LocKey.OtaGroupTitle", nil) features:@[
             [DeviceFeatureModel modelWithIcon:@"icon_device_ota" name:NSLocalizedString(@"LocKey.OtaFeatureTitle", nil) classNameOfDemoVC:@"OTADemoController"],
         ]],
@@ -580,6 +642,10 @@
             [DeviceFeatureModel modelWithIcon:@"icon_simultaneous_interpretation" name:NSLocalizedString(@"LocKey.SimultaneousInterpretationFeatureTitle", nil) classNameOfDemoVC:@"SimultaneousInterpretationDemoController"],
             [DeviceFeatureModel modelWithIcon:@"icon_ai_chat" name:NSLocalizedString(@"LocKey.AiChatFeatureTitle", nil) classNameOfDemoVC:@"AIChatDemoController"],
             
+        ]],
+
+        [DeviceFeatureGroupModel modelWithIcon:@"icon_log" name:NSLocalizedString(@"LocKey.LogGroupTitle", nil) features:@[
+            [DeviceFeatureModel modelWithIcon:@"icon_log" name:NSLocalizedString(@"LocKey.LogFeatureTitle", nil) classNameOfDemoVC:@"LogDemoController"],
         ]],
     ];
 }
@@ -842,6 +908,10 @@
 
 - (void)device:(id<AIBudsDeviceConvertible>)device didCoProcessorFirmwareVersionChanged:(NSString *)firmwareVersion {
     [[NSNotificationCenter defaultCenter] postNotificationName:@"CameraFirmwareVersionChangedNotification" object:firmwareVersion];
+}
+
+- (void)device:(id<AIBudsDeviceConvertible>)device didVolumesChanged:(AIBudsVolumesInfoModel *)volumes reason:(enum AIBudsVolumeChangedReason)reason {
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"VolumesChangedNotification" object:volumes];
 }
 
 - (void)deviceDidReady:(id<AIBudsDeviceConvertible>)device {
@@ -1183,7 +1253,7 @@
             id<AIBudsDeviceInfoAPI> aiDevice = (id<AIBudsDeviceInfoAPI>)self.device;
             if([aiDevice conformsToProtocol:@protocol(AIBudsDeviceInfoAPI)]) {
                 
-                AIBudsBatteryStatusModel* batteryStatusInfo = aiDevice.batteryStatusInfo;
+                //AIBudsBatteryStatusModel* batteryStatusInfo = aiDevice.batteryStatusInfo;
                 
                 /// do something
             }
@@ -1203,6 +1273,62 @@
     {
         [session sendImageForPhotoUnderstanding:[UIImage imageWithData:photoData]];
     }
+}
+
+- (void)device:(id<AIBudsDeviceConvertible>)device didEQSettingChanged:(AIBudsEQSettingModel *)eqSetting {
+    NSNotificationCenter *center = [NSNotificationCenter defaultCenter];
+    [center postNotificationName:@"EQSettingChanged" object:nil userInfo:nil];
+}
+
+- (void)device:(id<AIBudsDeviceConvertible>)device didReceiveRemoteShutterEvent:(AIBudsRemoteShutterEvent)event {
+    switch (event) {
+        case AIBudsRemoteShutterEventExit:
+        {
+            // 退出相机
+            XLOG_INFO(@"退出相机");
+            NSNotificationCenter *notification = [NSNotificationCenter defaultCenter];
+            [notification postNotificationName:@"RemoteShutterExit" object:nil userInfo:nil];
+        }
+            break;
+        case AIBudsRemoteShutterEventEnter:
+        {
+            // 进入相机
+            XLOG_INFO(@"进入相机");
+            
+            UINavigationController *navController = self.navigationController;
+            UIViewController *topViewController = navController.topViewController;
+            if (![NSStringFromClass([topViewController class]) isEqualToString:@"RemoteShutterDemoController"]) {
+                // 使用 Runtime 打开 RemoteShutterDemoController
+                Class remoteShutterClass = NSClassFromString(@"RemoteShutterDemoController");
+                if (remoteShutterClass) {
+                    FeatureDemoBaseController *remoteShutterVC = [[remoteShutterClass alloc] initWithDevice:self.device];
+                    if (remoteShutterVC) {
+                        [navController pushViewController:remoteShutterVC animated:YES];
+                    }
+                }
+            }
+        }
+            break;
+        case AIBudsRemoteShutterEventCapture:
+        {
+            // 拍照
+            XLOG_INFO(@"拍照");
+            NSNotificationCenter *notification = [NSNotificationCenter defaultCenter];
+            [notification postNotificationName:@"RemoteShutterCapture" object:nil userInfo:nil];
+        }
+            break;
+        case AIBudsRemoteShutterEventUnknown:
+        default:
+        {
+            XLOG_ERROR(@"未知事件");
+        }
+            break;
+    }
+}
+
+-(void)device:(id<AIBudsDeviceConvertible>)device didMediaCountInfoChanged:(AIBudsMediaCountInfoModel *)mediaCountInfo {
+    NSNotificationCenter *notification = [NSNotificationCenter defaultCenter];
+    [notification postNotificationName:@"MediaCountChanged" object:nil userInfo:nil];
 }
 
 @end

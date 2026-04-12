@@ -276,17 +276,26 @@
 
 #pragma mark - UICollectionViewDelegate
 
+- (NSDictionary *)loadConfigs {
+    NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"configs" ofType:@"plist"];
+    return [NSDictionary dictionaryWithContentsOfFile:plistPath];
+}
+
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
     id<AIBudsDeviceConvertible> device = self.devices[indexPath.item];
     AIBudsConnectParams *param = [AIBudsConnectParams new];
     AIBudsAIAuthParams* aiAuthParams = [AIBudsAIAuthParams new];
     AIBudsStarBurstAIAuthParams* starBurstAuthParams = [AIBudsStarBurstAIAuthParams new];
-    starBurstAuthParams.productId = @"---------------";
+    
+    NSDictionary *configs = [self loadConfigs];
+    starBurstAuthParams.productId = configs[@"STARBURST_PRODUCTID"];
     aiAuthParams.starburst = starBurstAuthParams;
+    
     AIBudsMltCloudAIAuthParams* mltCloudAuthParams = [AIBudsMltCloudAIAuthParams new];
-    mltCloudAuthParams.channelId = @"----------------";
+    mltCloudAuthParams.channelId = configs[@"MLTCLOUD_CHANNELID"];
     aiAuthParams.mltcloud = mltCloudAuthParams;
+    
     param.aiAuthParams = aiAuthParams;
     param.userId = @"199";
     [device connectWithParams:param];

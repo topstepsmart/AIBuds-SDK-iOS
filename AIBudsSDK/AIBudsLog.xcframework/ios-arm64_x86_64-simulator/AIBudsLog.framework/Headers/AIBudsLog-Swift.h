@@ -281,6 +281,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
+@import Foundation;
 @import ObjectiveC;
 #endif
 
@@ -371,7 +372,18 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) AIBudsLogCon
 + (void)setXLFacilityPlugin:(id <AIBudsXLFacilityPlugin> _Nonnull)plugin;
 @end
 
+@interface AIBudsLogSDK (SWIFT_EXTENSION(AIBudsLog))
+/// The error domain used for AIBudsLogSDK errors
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull ErrorDomain;)
++ (NSString * _Nonnull)ErrorDomain SWIFT_WARN_UNUSED_RESULT;
+/// The error key used for AIBudsLogSDK errors
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull ErrorKey;)
++ (NSString * _Nonnull)ErrorKey SWIFT_WARN_UNUSED_RESULT;
+@end
+
 enum AIBudsLogLevel : NSInteger;
+@class NSDate;
+@class NSError;
 /// Protocol that provides unified logging capabilities.
 /// Implementers are responsible for outputting log messages by the specified level, subsystem, and category.
 SWIFT_PROTOCOL_NAMED("LogService")
@@ -434,6 +446,78 @@ SWIFT_PROTOCOL_NAMED("LogService")
 /// \param category Optional, identifies the category to which the fatal log belongs.
 ///
 - (void)fatal:(NSString * _Nonnull)message subsystem:(NSString * _Nullable)subsystem category:(NSString * _Nullable)category;
+/// Exports all log messages to a file.
+/// \param completion The completion handler that is called when the export operation is completed.
+///
+/// \a completion parameters:
+/// <ul>
+/// <li>
+/// filePath: The path to the exported log file, or nil if the export failed.
+/// </li>
+/// <li>
+/// logStartFrom: The start timestamp of the export range.
+/// </li>
+/// <li>
+/// logEndAt: The end timestamp of the export range.
+/// </li>
+/// <li>
+/// error: The error object, or nil if the export operation was successful.
+/// </li>
+/// </ul>
+///
+///
+- (void)exportLogsWithCompletion:(void (^ _Nullable)(NSString * _Nullable, NSDate * _Nullable, NSDate * _Nullable, NSError * _Nullable))completion;
+/// Exports log messages to multiple files with size limit.
+/// \param maxFileSize The maximum size of each log file in bytes.
+///
+/// \param completion The completion handler that is called when the export operation is completed.
+///
+/// \a completion parameters:
+/// <ul>
+/// <li>
+/// filePaths: An array of paths to the exported log files, or nil if the export failed.
+/// </li>
+/// <li>
+/// logStartFrom: The start timestamp of the export range.
+/// </li>
+/// <li>
+/// logEndAt: The end timestamp of the export range.
+/// </li>
+/// <li>
+/// error: The error object, or nil if the export operation was successful.
+/// </li>
+/// </ul>
+///
+///
+- (void)exportLogsWithMaxFileSize:(uint64_t)maxFileSize completion:(void (^ _Nullable)(NSArray<NSString *> * _Nullable, NSDate * _Nullable, NSDate * _Nullable, NSError * _Nullable))completion;
+/// Purges old log messages from the database that are older than the specified max age.
+/// \param maxAge The maximum age in days for log messages to be retained.
+///
+/// \param completion The completion handler that is called when the purge operation is completed.
+///
+/// \a completion parameters:
+/// <ul>
+/// <li>
+/// error: The error object, or nil if the purge operation was successful.
+/// </li>
+/// </ul>
+///
+///
+- (void)purgeOldLogsWithMaxAge:(NSInteger)maxAge completion:(void (^ _Nullable)(NSError * _Nullable))completion;
+/// Purges old log messages from the database that are older than the specified date.
+/// \param timestamp The timestamp before which log messages should be purged.
+///
+/// \param completion The completion handler that is called when the purge operation is completed.
+///
+/// \a completion parameters:
+/// <ul>
+/// <li>
+/// error: The error object, or nil if the purge operation was successful.
+/// </li>
+/// </ul>
+///
+///
+- (void)purgeOldLogsBefore:(NSDate * _Nonnull)timestamp completion:(void (^ _Nullable)(NSError * _Nullable))completion;
 @end
 
 /// The default logger implementation for the AIBudsLog SDK.
@@ -507,6 +591,108 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) AIBudsDefaul
 /// \param category Optional, identifies the category to which the fatal log belongs.
 ///
 - (void)fatal:(NSString * _Nonnull)message subsystem:(NSString * _Nullable)subsystem category:(NSString * _Nullable)category;
+/// Exports all log messages to a file.
+/// \param completion The completion handler that is called when the export operation is completed.
+///
+/// \a completion parameters:
+/// <ul>
+/// <li>
+/// filePath: The path to the exported log file, or nil if the export failed.
+/// </li>
+/// <li>
+/// logStartFrom: The start timestamp of the export range.
+/// </li>
+/// <li>
+/// logEndAt: The end timestamp of the export range.
+/// </li>
+/// <li>
+/// error: The error object, or nil if the export operation was successful.
+/// </li>
+/// </ul>
+///
+///
+/// \a completion returns: 
+/// Void
+///
+- (void)exportLogsWithCompletion:(void (^ _Nullable)(NSString * _Nullable, NSDate * _Nullable, NSDate * _Nullable, NSError * _Nullable))completion;
+/// Exports log messages to multiple files with size limit.
+/// \param maxFileSize The maximum size of each log file in bytes.
+///
+/// \param completion The completion handler that is called when the export operation is completed.
+///
+/// \a completion parameters:
+/// <ul>
+/// <li>
+/// filePaths: An array of paths to the exported log files, or nil if the export failed.
+/// </li>
+/// <li>
+/// logStartFrom: The start timestamp of the export range.
+/// </li>
+/// <li>
+/// logEndAt: The end timestamp of the export range.
+/// </li>
+/// <li>
+/// error: The error object, or nil if the export operation was successful.
+/// </li>
+/// </ul>
+///
+///
+/// \a completion returns: 
+/// Void
+///
+- (void)exportLogsWithMaxFileSize:(uint64_t)maxFileSize completion:(void (^ _Nullable)(NSArray<NSString *> * _Nullable, NSDate * _Nullable, NSDate * _Nullable, NSError * _Nullable))completion;
+/// Purges old log messages from the database that are older than the specified max age.
+/// \param maxAge The maximum age in days for log messages to be retained.
+///
+/// \param completion The completion handler that is called when the purge operation is completed.
+/// <ul>
+///   <li>
+///     error: The error object, or nil if the purge operation was successful.
+///   </li>
+/// </ul>
+///
+- (void)purgeOldLogsWithMaxAge:(NSInteger)maxAge completion:(void (^ _Nullable)(NSError * _Nullable))completion;
+/// Purges old log messages from the database that are older than the specified date.
+/// \param timestamp The timestamp before which log messages should be purged.
+///
+/// \param completion The completion handler that is called when the purge operation is completed.
+///
+/// \a completion parameters:
+/// <ul>
+/// <li>
+/// error: The error object, or nil if the purge operation was successful.
+/// </li>
+/// </ul>
+///
+///
+- (void)purgeOldLogsBefore:(NSDate * _Nonnull)timestamp completion:(void (^ _Nullable)(NSError * _Nullable))completion;
+@end
+
+@class NSURL;
+@class NSProgress;
+@interface NSFileManager (SWIFT_EXTENSION(AIBudsLog))
+/// Extracts the tar at <code>tarURL</code> to <code>dirURL</code>.
+/// \param at The path of the Tar file to extract.
+///
+/// \param to The path to which to extract the Tar file. A directory will be created at this path containing the extracted files.
+///
+/// \param restoreAttributes If <code>false</code>, file attributes stored in the archive such as modification dates and file
+/// permissions be ignored. This can significantly speed up the extraction process.
+///
+/// \param progressBody A closure with a <code>Double</code> parameter representing the current progress (from 0.0 to 1.0).
+///
+- (BOOL)extractTarAtURL:(NSURL * _Nonnull)tarURL toDirectoryAtURL:(NSURL * _Nonnull)dirURL restoreAttributes:(BOOL)restoreAttributes progressBlock:(NSProgress * _Nullable)progress error:(NSError * _Nullable * _Nullable)error;
+/// Creates a Tar file at <code>tarURL</code>.
+/// \param at The path at which the Tar file should be created.
+///
+/// \param from A directory containing the files that that should be archived.
+///
+/// \param convertAliasFiles The Tar format doesn’t support alias files by default, only symbolic links. If this
+/// is set to <code>true</code>, archiving will check for alias files and store them as symbolic links. This can take longer.
+///
+/// \param progressBody A closure with a <code>Double</code> parameter representing the current progress (from 0.0 to 1.0).
+///
+- (BOOL)createTarAtURL:(NSURL * _Nonnull)tarURL fromDirectoryAtURL:(NSURL * _Nonnull)dirURL convertAliasFiles:(BOOL)convertAliasFiles progressBlock:(NSProgress * _Nullable)progress error:(NSError * _Nullable * _Nullable)error;
 @end
 
 enum AIBudsLogDestination : NSInteger;
@@ -578,6 +764,26 @@ typedef SWIFT_ENUM_NAMED(NSInteger, AIBudsLogLevel, "LogLevel", open) {
   AIBudsLogLevelMute = 2147483647,
 };
 
+/// The error codes used for AIBudsLogSDK errors
+typedef SWIFT_ENUM_NAMED(NSInteger, AIBudsLogSdkErrorCode, "SdkErrorCode", open) {
+/// Unknown error
+  AIBudsLogSdkErrorCodeUnknown = -1,
+/// Invalid parameter
+  AIBudsLogSdkErrorCodeInvalidParameter = 1,
+/// The current log destination does not support log export.
+  AIBudsLogSdkErrorCodeDestinationNotSupportExport = 1001,
+/// The current log destination plugin is not configured.
+  AIBudsLogSdkErrorCodeDestinationPluginNotConfigured = 1002,
+/// The current log destination does not support log purge.
+  AIBudsLogSdkErrorCodeDestinationNotSupportPurge = 1003,
+/// The log root URL is not configured.
+  AIBudsLogSdkErrorCodeLogRootUnavailable = 1004,
+/// Failed to calculate cut-off time.
+  AIBudsLogSdkErrorCodeFailedToCalculateCutOffTime = 1005,
+/// Failed to enumerate log directories.
+  AIBudsLogSdkErrorCodeFailedToEnumerateLogDirectories = 1006,
+};
+
 /// The protocol for plugins that record log messages to XLFacility.
 SWIFT_PROTOCOL_NAMED("XLFacilityPlugin")
 @protocol AIBudsXLFacilityPlugin <NSObject>
@@ -585,10 +791,78 @@ SWIFT_PROTOCOL_NAMED("XLFacilityPlugin")
 @property (nonatomic, readonly) BOOL isLoaded;
 /// Loads the plugin, initializing any necessary resources.
 - (void)load;
+/// Exports all log messages to a file.
+/// \param completion The completion handler that is called when the export operation is completed.
+///
+/// \a completion parameters:
+/// <ul>
+/// <li>
+/// filePath: The path to the exported log file, or nil if the export failed.
+/// </li>
+/// <li>
+/// logStartFrom: The start timestamp of the export range.
+/// </li>
+/// <li>
+/// logEndAt: The end timestamp of the export range.
+/// </li>
+/// <li>
+/// error: The error object, or nil if the export operation was successful.
+/// </li>
+/// </ul>
+///
+///
+- (void)exportLogsWithCompletion:(void (^ _Nullable)(NSString * _Nullable, NSDate * _Nullable, NSDate * _Nullable, NSError * _Nullable))completion;
+/// Exports log messages to multiple files with size limit.
+/// \param maxFileSize The maximum size of each log file in bytes.
+///
+/// \param completion The completion handler that is called when the export operation is completed.
+///
+/// \a completion parameters:
+/// <ul>
+/// <li>
+/// filePaths: An array of paths to the exported log files, or nil if the export failed.
+/// </li>
+/// <li>
+/// logStartFrom: The start timestamp of the export range.
+/// </li>
+/// <li>
+/// logEndAt: The end timestamp of the export range.
+/// </li>
+/// <li>
+/// error: The error object, or nil if the export operation was successful.
+/// </li>
+/// </ul>
+///
+///
+- (void)exportLogsWithMaxFileSize:(uint64_t)maxFileSize completion:(void (^ _Nullable)(NSArray<NSString *> * _Nullable, NSDate * _Nullable, NSDate * _Nullable, NSError * _Nullable))completion;
 /// Purges old log messages from the database that are older than the specified max age.
 /// \param maxAge The maximum age in days for log messages to be retained.
 ///
-- (void)purgeOldLogsWithMaxAge:(NSInteger)maxAge;
+/// \param completion The completion handler that is called when the purge operation is completed.
+///
+/// \a completion parameters:
+/// <ul>
+/// <li>
+/// error: The error object, or nil if the purge operation was successful.
+/// </li>
+/// </ul>
+///
+///
+- (void)purgeOldLogsWithMaxAge:(NSInteger)maxAge completion:(void (^ _Nullable)(NSError * _Nullable))completion;
+/// Purges old log messages from the database that are older than the specified date.
+/// \param timestamp The timestamp before which log messages should be purged.
+///
+/// \param completion The completion handler that is called when the purge operation is completed.
+///
+/// \a completion parameters:
+/// <ul>
+/// <li>
+/// error: The error object, or nil if the purge operation was successful.
+/// </li>
+/// </ul>
+///
+///
+- (void)purgeOldLogsBefore:(NSDate * _Nonnull)timestamp completion:(void (^ _Nullable)(NSError * _Nullable))completion;
 /// Records a log message.
 /// \param message The content of the log to be recorded.
 ///
@@ -892,6 +1166,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
+@import Foundation;
 @import ObjectiveC;
 #endif
 
@@ -982,7 +1257,18 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) AIBudsLogCon
 + (void)setXLFacilityPlugin:(id <AIBudsXLFacilityPlugin> _Nonnull)plugin;
 @end
 
+@interface AIBudsLogSDK (SWIFT_EXTENSION(AIBudsLog))
+/// The error domain used for AIBudsLogSDK errors
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull ErrorDomain;)
++ (NSString * _Nonnull)ErrorDomain SWIFT_WARN_UNUSED_RESULT;
+/// The error key used for AIBudsLogSDK errors
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull ErrorKey;)
++ (NSString * _Nonnull)ErrorKey SWIFT_WARN_UNUSED_RESULT;
+@end
+
 enum AIBudsLogLevel : NSInteger;
+@class NSDate;
+@class NSError;
 /// Protocol that provides unified logging capabilities.
 /// Implementers are responsible for outputting log messages by the specified level, subsystem, and category.
 SWIFT_PROTOCOL_NAMED("LogService")
@@ -1045,6 +1331,78 @@ SWIFT_PROTOCOL_NAMED("LogService")
 /// \param category Optional, identifies the category to which the fatal log belongs.
 ///
 - (void)fatal:(NSString * _Nonnull)message subsystem:(NSString * _Nullable)subsystem category:(NSString * _Nullable)category;
+/// Exports all log messages to a file.
+/// \param completion The completion handler that is called when the export operation is completed.
+///
+/// \a completion parameters:
+/// <ul>
+/// <li>
+/// filePath: The path to the exported log file, or nil if the export failed.
+/// </li>
+/// <li>
+/// logStartFrom: The start timestamp of the export range.
+/// </li>
+/// <li>
+/// logEndAt: The end timestamp of the export range.
+/// </li>
+/// <li>
+/// error: The error object, or nil if the export operation was successful.
+/// </li>
+/// </ul>
+///
+///
+- (void)exportLogsWithCompletion:(void (^ _Nullable)(NSString * _Nullable, NSDate * _Nullable, NSDate * _Nullable, NSError * _Nullable))completion;
+/// Exports log messages to multiple files with size limit.
+/// \param maxFileSize The maximum size of each log file in bytes.
+///
+/// \param completion The completion handler that is called when the export operation is completed.
+///
+/// \a completion parameters:
+/// <ul>
+/// <li>
+/// filePaths: An array of paths to the exported log files, or nil if the export failed.
+/// </li>
+/// <li>
+/// logStartFrom: The start timestamp of the export range.
+/// </li>
+/// <li>
+/// logEndAt: The end timestamp of the export range.
+/// </li>
+/// <li>
+/// error: The error object, or nil if the export operation was successful.
+/// </li>
+/// </ul>
+///
+///
+- (void)exportLogsWithMaxFileSize:(uint64_t)maxFileSize completion:(void (^ _Nullable)(NSArray<NSString *> * _Nullable, NSDate * _Nullable, NSDate * _Nullable, NSError * _Nullable))completion;
+/// Purges old log messages from the database that are older than the specified max age.
+/// \param maxAge The maximum age in days for log messages to be retained.
+///
+/// \param completion The completion handler that is called when the purge operation is completed.
+///
+/// \a completion parameters:
+/// <ul>
+/// <li>
+/// error: The error object, or nil if the purge operation was successful.
+/// </li>
+/// </ul>
+///
+///
+- (void)purgeOldLogsWithMaxAge:(NSInteger)maxAge completion:(void (^ _Nullable)(NSError * _Nullable))completion;
+/// Purges old log messages from the database that are older than the specified date.
+/// \param timestamp The timestamp before which log messages should be purged.
+///
+/// \param completion The completion handler that is called when the purge operation is completed.
+///
+/// \a completion parameters:
+/// <ul>
+/// <li>
+/// error: The error object, or nil if the purge operation was successful.
+/// </li>
+/// </ul>
+///
+///
+- (void)purgeOldLogsBefore:(NSDate * _Nonnull)timestamp completion:(void (^ _Nullable)(NSError * _Nullable))completion;
 @end
 
 /// The default logger implementation for the AIBudsLog SDK.
@@ -1118,6 +1476,108 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) AIBudsDefaul
 /// \param category Optional, identifies the category to which the fatal log belongs.
 ///
 - (void)fatal:(NSString * _Nonnull)message subsystem:(NSString * _Nullable)subsystem category:(NSString * _Nullable)category;
+/// Exports all log messages to a file.
+/// \param completion The completion handler that is called when the export operation is completed.
+///
+/// \a completion parameters:
+/// <ul>
+/// <li>
+/// filePath: The path to the exported log file, or nil if the export failed.
+/// </li>
+/// <li>
+/// logStartFrom: The start timestamp of the export range.
+/// </li>
+/// <li>
+/// logEndAt: The end timestamp of the export range.
+/// </li>
+/// <li>
+/// error: The error object, or nil if the export operation was successful.
+/// </li>
+/// </ul>
+///
+///
+/// \a completion returns: 
+/// Void
+///
+- (void)exportLogsWithCompletion:(void (^ _Nullable)(NSString * _Nullable, NSDate * _Nullable, NSDate * _Nullable, NSError * _Nullable))completion;
+/// Exports log messages to multiple files with size limit.
+/// \param maxFileSize The maximum size of each log file in bytes.
+///
+/// \param completion The completion handler that is called when the export operation is completed.
+///
+/// \a completion parameters:
+/// <ul>
+/// <li>
+/// filePaths: An array of paths to the exported log files, or nil if the export failed.
+/// </li>
+/// <li>
+/// logStartFrom: The start timestamp of the export range.
+/// </li>
+/// <li>
+/// logEndAt: The end timestamp of the export range.
+/// </li>
+/// <li>
+/// error: The error object, or nil if the export operation was successful.
+/// </li>
+/// </ul>
+///
+///
+/// \a completion returns: 
+/// Void
+///
+- (void)exportLogsWithMaxFileSize:(uint64_t)maxFileSize completion:(void (^ _Nullable)(NSArray<NSString *> * _Nullable, NSDate * _Nullable, NSDate * _Nullable, NSError * _Nullable))completion;
+/// Purges old log messages from the database that are older than the specified max age.
+/// \param maxAge The maximum age in days for log messages to be retained.
+///
+/// \param completion The completion handler that is called when the purge operation is completed.
+/// <ul>
+///   <li>
+///     error: The error object, or nil if the purge operation was successful.
+///   </li>
+/// </ul>
+///
+- (void)purgeOldLogsWithMaxAge:(NSInteger)maxAge completion:(void (^ _Nullable)(NSError * _Nullable))completion;
+/// Purges old log messages from the database that are older than the specified date.
+/// \param timestamp The timestamp before which log messages should be purged.
+///
+/// \param completion The completion handler that is called when the purge operation is completed.
+///
+/// \a completion parameters:
+/// <ul>
+/// <li>
+/// error: The error object, or nil if the purge operation was successful.
+/// </li>
+/// </ul>
+///
+///
+- (void)purgeOldLogsBefore:(NSDate * _Nonnull)timestamp completion:(void (^ _Nullable)(NSError * _Nullable))completion;
+@end
+
+@class NSURL;
+@class NSProgress;
+@interface NSFileManager (SWIFT_EXTENSION(AIBudsLog))
+/// Extracts the tar at <code>tarURL</code> to <code>dirURL</code>.
+/// \param at The path of the Tar file to extract.
+///
+/// \param to The path to which to extract the Tar file. A directory will be created at this path containing the extracted files.
+///
+/// \param restoreAttributes If <code>false</code>, file attributes stored in the archive such as modification dates and file
+/// permissions be ignored. This can significantly speed up the extraction process.
+///
+/// \param progressBody A closure with a <code>Double</code> parameter representing the current progress (from 0.0 to 1.0).
+///
+- (BOOL)extractTarAtURL:(NSURL * _Nonnull)tarURL toDirectoryAtURL:(NSURL * _Nonnull)dirURL restoreAttributes:(BOOL)restoreAttributes progressBlock:(NSProgress * _Nullable)progress error:(NSError * _Nullable * _Nullable)error;
+/// Creates a Tar file at <code>tarURL</code>.
+/// \param at The path at which the Tar file should be created.
+///
+/// \param from A directory containing the files that that should be archived.
+///
+/// \param convertAliasFiles The Tar format doesn’t support alias files by default, only symbolic links. If this
+/// is set to <code>true</code>, archiving will check for alias files and store them as symbolic links. This can take longer.
+///
+/// \param progressBody A closure with a <code>Double</code> parameter representing the current progress (from 0.0 to 1.0).
+///
+- (BOOL)createTarAtURL:(NSURL * _Nonnull)tarURL fromDirectoryAtURL:(NSURL * _Nonnull)dirURL convertAliasFiles:(BOOL)convertAliasFiles progressBlock:(NSProgress * _Nullable)progress error:(NSError * _Nullable * _Nullable)error;
 @end
 
 enum AIBudsLogDestination : NSInteger;
@@ -1189,6 +1649,26 @@ typedef SWIFT_ENUM_NAMED(NSInteger, AIBudsLogLevel, "LogLevel", open) {
   AIBudsLogLevelMute = 2147483647,
 };
 
+/// The error codes used for AIBudsLogSDK errors
+typedef SWIFT_ENUM_NAMED(NSInteger, AIBudsLogSdkErrorCode, "SdkErrorCode", open) {
+/// Unknown error
+  AIBudsLogSdkErrorCodeUnknown = -1,
+/// Invalid parameter
+  AIBudsLogSdkErrorCodeInvalidParameter = 1,
+/// The current log destination does not support log export.
+  AIBudsLogSdkErrorCodeDestinationNotSupportExport = 1001,
+/// The current log destination plugin is not configured.
+  AIBudsLogSdkErrorCodeDestinationPluginNotConfigured = 1002,
+/// The current log destination does not support log purge.
+  AIBudsLogSdkErrorCodeDestinationNotSupportPurge = 1003,
+/// The log root URL is not configured.
+  AIBudsLogSdkErrorCodeLogRootUnavailable = 1004,
+/// Failed to calculate cut-off time.
+  AIBudsLogSdkErrorCodeFailedToCalculateCutOffTime = 1005,
+/// Failed to enumerate log directories.
+  AIBudsLogSdkErrorCodeFailedToEnumerateLogDirectories = 1006,
+};
+
 /// The protocol for plugins that record log messages to XLFacility.
 SWIFT_PROTOCOL_NAMED("XLFacilityPlugin")
 @protocol AIBudsXLFacilityPlugin <NSObject>
@@ -1196,10 +1676,78 @@ SWIFT_PROTOCOL_NAMED("XLFacilityPlugin")
 @property (nonatomic, readonly) BOOL isLoaded;
 /// Loads the plugin, initializing any necessary resources.
 - (void)load;
+/// Exports all log messages to a file.
+/// \param completion The completion handler that is called when the export operation is completed.
+///
+/// \a completion parameters:
+/// <ul>
+/// <li>
+/// filePath: The path to the exported log file, or nil if the export failed.
+/// </li>
+/// <li>
+/// logStartFrom: The start timestamp of the export range.
+/// </li>
+/// <li>
+/// logEndAt: The end timestamp of the export range.
+/// </li>
+/// <li>
+/// error: The error object, or nil if the export operation was successful.
+/// </li>
+/// </ul>
+///
+///
+- (void)exportLogsWithCompletion:(void (^ _Nullable)(NSString * _Nullable, NSDate * _Nullable, NSDate * _Nullable, NSError * _Nullable))completion;
+/// Exports log messages to multiple files with size limit.
+/// \param maxFileSize The maximum size of each log file in bytes.
+///
+/// \param completion The completion handler that is called when the export operation is completed.
+///
+/// \a completion parameters:
+/// <ul>
+/// <li>
+/// filePaths: An array of paths to the exported log files, or nil if the export failed.
+/// </li>
+/// <li>
+/// logStartFrom: The start timestamp of the export range.
+/// </li>
+/// <li>
+/// logEndAt: The end timestamp of the export range.
+/// </li>
+/// <li>
+/// error: The error object, or nil if the export operation was successful.
+/// </li>
+/// </ul>
+///
+///
+- (void)exportLogsWithMaxFileSize:(uint64_t)maxFileSize completion:(void (^ _Nullable)(NSArray<NSString *> * _Nullable, NSDate * _Nullable, NSDate * _Nullable, NSError * _Nullable))completion;
 /// Purges old log messages from the database that are older than the specified max age.
 /// \param maxAge The maximum age in days for log messages to be retained.
 ///
-- (void)purgeOldLogsWithMaxAge:(NSInteger)maxAge;
+/// \param completion The completion handler that is called when the purge operation is completed.
+///
+/// \a completion parameters:
+/// <ul>
+/// <li>
+/// error: The error object, or nil if the purge operation was successful.
+/// </li>
+/// </ul>
+///
+///
+- (void)purgeOldLogsWithMaxAge:(NSInteger)maxAge completion:(void (^ _Nullable)(NSError * _Nullable))completion;
+/// Purges old log messages from the database that are older than the specified date.
+/// \param timestamp The timestamp before which log messages should be purged.
+///
+/// \param completion The completion handler that is called when the purge operation is completed.
+///
+/// \a completion parameters:
+/// <ul>
+/// <li>
+/// error: The error object, or nil if the purge operation was successful.
+/// </li>
+/// </ul>
+///
+///
+- (void)purgeOldLogsBefore:(NSDate * _Nonnull)timestamp completion:(void (^ _Nullable)(NSError * _Nullable))completion;
 /// Records a log message.
 /// \param message The content of the log to be recorded.
 ///

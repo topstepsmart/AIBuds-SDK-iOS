@@ -394,7 +394,7 @@ extension Foundation.NSNotification.Name {
   #endif
   @objc var isAncFadeOn: Swift.Bool { get }
   #if compiler(>=5.3) && $NonescapableTypes
-  @objc(setAncMode:withCompletion:) func setAncMode(_ mode: AIBudsFoundation.ANCMode, completion: AIBuds.AIBudsCompletionHandler?)
+  @objc(setAncMode:completion:) func setAncMode(_ mode: AIBudsFoundation.ANCMode, completion: AIBuds.AIBudsCompletionHandler?)
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
   @objc(setAncGain:completion:) func setAncGain(_ ancGain: Swift.Int, completion: AIBuds.AIBudsCompletionHandler?)
@@ -473,6 +473,23 @@ extension Foundation.NSNotification.Name {
   @objc(setEqualizer:withCompletion:) func setEqualizer(_ equalizerSetting: AIBudsFoundation.EQSettingModel, completion: AIBuds.AIBudsCompletionHandler?)
   #endif
 }
+@objc(AIBudsDeviceFileImportAPI) public protocol DeviceFileImportAPI : AIBuds.DeviceAPI {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc(fetchMediaFilesInfoWithConfigureHotspotStartingHandler:hotspotConfigureCompletionHandler:enterFileTransferModeStartingHandler:enterFileTransferModeCompletedHandler:waitingForHotspotOpenHandler:connectDeviceHotspotStartingHandler:deviceHotspotConnectCompletionHandler:completionHandler:) func fetchMediaFilesInfo(configureHotspotStartingHandler: AIBuds.AIBudsFileImportConfigureHotspotStartingHandler?, hotspotConfigureCompletionHandler: AIBuds.AIBudsFileImportHotspotConfigureCompletionHandler?, enterFileTransferModeStartingHandler: AIBuds.AIBudsEnterFileTransferModeStartingHandler?, enterFileTransferModeCompletedHandler: AIBuds.AIBudsEnterFileTransferModeCompletionHandler?, waitingForHotspotOpenHandler: AIBuds.AIBudsFileImportStartingToWaitForHotspotOpenHandler?, connectDeviceHotspotStartingHandler: AIBuds.AIBudsFileImportConnectDeviceHotspotStartingHandler?, deviceHotspotConnectCompletionHandler: AIBuds.AIBudsFileImportDeviceHotspotConnectCompletionHandler?, completionHandler: AIBuds.AIBudsFileImportFetchMediaFilesInfoCompletionHandler?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc(importFileWithUrls:dataChunkHandler:singleTransferStartingHandler:singleTransferCompletionHandler:speedHandler:batchProgressHandler:completionHandler:) func importFiles(_ fileUrls: [Swift.String], dataChunkHandler: AIBuds.AIBudsFileImportDataChunkHandler?, singleTransferStartingHandler: AIBuds.AIBudsFileImportSingleTransferStartingHandler?, singleTransferCompletionHandler: AIBuds.AIBudsFileImportSingleTransferCompletionHandler?, speedHandler: AIBuds.AIBudsFileImportSpeedHandler?, batchProgressHandler: AIBuds.AIBudsFileImportBatchProgressHandler?, completionHandler: AIBuds.AIBudsStatusCodeCompletionHandler?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc(cancelFileImportWithCompletion:) func cancelFileImport(_ completion: AIBuds.AIBudsStatusCodeCompletionHandler?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc(deleteFile:completion:) func deleteFile(_ fileName: Swift.String, completion: AIBuds.AIBudsStatusCodeCompletionHandler?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc(deleteAllFilesWithCompletion:) func deleteAllFiles(_ completion: AIBuds.AIBudsStatusCodeCompletionHandler?)
+  #endif
+}
 @objc(AIBudsDeviceFindAPI) public protocol DeviceFindAPI : AIBuds.DeviceAPI {
   #if compiler(>=5.3) && $NonescapableTypes
   @objc(findDeviceWithCompletion:) func findDevice(_ completion: AIBuds.AIBudsCompletionHandler?)
@@ -489,15 +506,6 @@ extension Foundation.NSNotification.Name {
 @objc(AIBudsDeviceHotspotAPI) public protocol DeviceHotspotAPI : AIBuds.DeviceAPI {
   #if compiler(>=5.3) && $NonescapableTypes
   @objc(configureHotspotWithMode:channel:ssid:password:completion:) func configureHotspot(withMode mode: AIBudsFoundation.HotspotMode, channel: Swift.Int, ssid: Swift.String, password: Swift.String, completion: AIBuds.AIBudsStatusCodeCompletionHandler?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  @objc(startFileTransferWithCompletion:) func startFileTransfer(_ completion: AIBuds.AIBudsStatusCodeCompletionHandler?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  @objc(deleteFile:completion:) func deleteFile(_ fileName: Swift.String, completion: AIBuds.AIBudsStatusCodeCompletionHandler?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  @objc(deleteAllFilesWithCompletion:) func deleteAllFiles(_ completion: AIBuds.AIBudsStatusCodeCompletionHandler?)
   #endif
 }
 @objc(AIBudsDeviceInfoAPI) public protocol DeviceInfoAPI : AIBuds.DeviceAPI {

@@ -27,6 +27,8 @@
       NSLog(@"%@", @"网络不可用");
     };
     [reachability startNotifier];
+    //AIBudsLogConfiguration* sdkLogConfiguration = [AIBudsLogConfiguration shared];
+    //sdkLogConfiguration.destination = AIBudsLogDestinationFile;
     [AIBudsLogSDK setXLFacilityPlugin:[AIBudsXLFacilitySDK shared]];
     /*iOSLogBrowserOption* option = [iOSLogBrowserOption defaultOption];
     option.minLogLevel = SDKLOGLEVEL_VERBOSE;

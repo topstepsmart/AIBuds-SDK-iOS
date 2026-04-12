@@ -775,7 +775,7 @@ SWIFT_PROTOCOL_NAMED("DeviceANCAPI")
 ///   </li>
 /// </ul>
 ///
-- (void)setAncMode:(enum AIBudsANCMode)mode withCompletion:(AIBudsCompletionHandler _Nullable)completion;
+- (void)setAncMode:(enum AIBudsANCMode)mode completion:(AIBudsCompletionHandler _Nullable)completion;
 /// Sets the ANC gain value for the device.
 /// \param ancGain The desired ANC gain value to apply.
 ///
@@ -1570,6 +1570,163 @@ SWIFT_PROTOCOL_NAMED("DeviceEqualizerAPI")
 - (void)setEqualizer:(AIBudsEQSettingModel * _Nonnull)equalizerSetting withCompletion:(AIBudsCompletionHandler _Nullable)completion;
 @end
 
+/// File import API
+SWIFT_PROTOCOL_NAMED("DeviceFileImportAPI")
+@protocol AIBudsDeviceFileImportAPI <AIBudsDeviceAPI>
+/// Fetch media files info from the device.
+/// \param configureHotspotStartingHandler A closure that is called when the hotspot configuration starts.
+///
+/// \param hotspotConfigureCompletionHandler A closure that is called when the hotspot configuration completes.
+///
+/// \param enterFileTransferModeStartingHandler A closure that is called when the file transfer mode entry starts.
+///
+/// \param enterFileTransferModeCompletedHandler A closure that is called when the file transfer mode entry completes.
+///
+/// \param waitingForHotspotOpenHandler A closure that is called when the device is waiting for the hotspot to open.
+///
+/// \param connectDeviceHotspotStartingHandler A closure that is called when the device hotspot connection starts.
+///
+/// \param deviceHotspotConnectCompletionHandler A closure that is called when the device hotspot connection completes.
+///
+/// \param completionHandler A closure that is called when the fetch media files info operation completes.
+/// <ul>
+///   <li>
+///     success: <code>true</code> if the operation was successful; otherwise <code>false</code>.
+///   </li>
+///   <li>
+///     mediaFiles: The media file info models to be imported.
+///   </li>
+///   <li>
+///     error: An <code>NSError</code> object that describes the error that occurred, or <code>nil</code> if the operation was successful.
+///   </li>
+/// </ul>
+///
+- (void)fetchMediaFilesInfoWithConfigureHotspotStartingHandler:(AIBudsFileImportConfigureHotspotStartingHandler _Nullable)configureHotspotStartingHandler hotspotConfigureCompletionHandler:(AIBudsFileImportHotspotConfigureCompletionHandler _Nullable)hotspotConfigureCompletionHandler enterFileTransferModeStartingHandler:(AIBudsEnterFileTransferModeStartingHandler _Nullable)enterFileTransferModeStartingHandler enterFileTransferModeCompletedHandler:(AIBudsEnterFileTransferModeCompletionHandler _Nullable)enterFileTransferModeCompletedHandler waitingForHotspotOpenHandler:(AIBudsFileImportStartingToWaitForHotspotOpenHandler _Nullable)waitingForHotspotOpenHandler connectDeviceHotspotStartingHandler:(AIBudsFileImportConnectDeviceHotspotStartingHandler _Nullable)connectDeviceHotspotStartingHandler deviceHotspotConnectCompletionHandler:(AIBudsFileImportDeviceHotspotConnectCompletionHandler _Nullable)deviceHotspotConnectCompletionHandler completionHandler:(AIBudsFileImportFetchMediaFilesInfoCompletionHandler _Nullable)completionHandler;
+/// Import files from the device.
+/// \param fileUrls The file URLs to be imported.
+///
+/// \param dataChunkHandler A closure that is called when the file data is available.
+/// <ul>
+///   <li>
+///     taskId: the task ID
+///   </li>
+///   <li>
+///     fileUrl: the URL of the file
+///   </li>
+///   <li>
+///     fileSize: the total size of the file
+///   </li>
+///   <li>
+///     transferredSize: the size of the data already transferred
+///   </li>
+///   <li>
+///     error: error information if failed
+///   </li>
+/// </ul>
+///
+/// \param singleTransferStartingHandler A closure that is called when the file import transfer starts.
+/// <ul>
+///   <li>
+///     fileUrl: the URL of the file that is being imported
+///   </li>
+/// </ul>
+///
+/// \param singleTransferCompletionHandler A closure that is called when the file import transfer completion.
+/// <ul>
+///   <li>
+///     fileUrl: the URL of the file that was imported
+///   </li>
+///   <li>
+///     success: whether the file import succeeded
+///   </li>
+/// </ul>
+///
+/// \param speedHandler A closure that is called when the file import speed changes.
+/// <ul>
+///   <li>
+///     speed: the current speed in bytes per second
+///   </li>
+/// </ul>
+///
+/// \param batchProgressHandler A closure that is called when the file import batch progress changes.
+/// <ul>
+///   <li>
+///     fileIndex: The index of the current file in the batch.
+///   </li>
+///   <li>
+///     totalFiles: The total number of files in the batch.
+///   </li>
+///   <li>
+///     transferredSize: The total size of the data already transferred.
+///   </li>
+///   <li>
+///     error: error information if failed
+///   </li>
+/// </ul>
+///
+/// \param completionHandler A closure that is called when the import files operation completes.
+/// <ul>
+///   <li>
+///     success: <code>true</code> if the operation was successful; otherwise <code>false</code>.
+///   </li>
+///   <li>
+///     statusCode: The status code returned by the device. <code>nil</code> if the operation failed.
+///   </li>
+///   <li>
+///     error: An <code>NSError</code> object that describes the error that occurred, or <code>nil</code> if the operation was successful.
+///   </li>
+/// </ul>
+///
+- (void)importFileWithUrls:(NSArray<NSString *> * _Nonnull)fileUrls dataChunkHandler:(AIBudsFileImportDataChunkHandler _Nullable)dataChunkHandler singleTransferStartingHandler:(AIBudsFileImportSingleTransferStartingHandler _Nullable)singleTransferStartingHandler singleTransferCompletionHandler:(AIBudsFileImportSingleTransferCompletionHandler _Nullable)singleTransferCompletionHandler speedHandler:(AIBudsFileImportSpeedHandler _Nullable)speedHandler batchProgressHandler:(AIBudsFileImportBatchProgressHandler _Nullable)batchProgressHandler completionHandler:(AIBudsStatusCodeCompletionHandler _Nullable)completionHandler;
+/// Cancel file import from the device.
+/// \param completion A closure that is called when the operation completes.
+/// <ul>
+///   <li>
+///     success: <code>true</code> if the operation was successful; otherwise <code>false</code>.
+///   </li>
+///   <li>
+///     statusCode: The status code returned by the device. <code>nil</code> if the operation failed.
+///   </li>
+///   <li>
+///     error: An <code>NSError</code> object that describes the error that occurred, or <code>nil</code> if the operation was successful.
+///   </li>
+/// </ul>
+///
+- (void)cancelFileImportWithCompletion:(AIBudsStatusCodeCompletionHandler _Nullable)completion;
+/// Requests the device to delete a specific file.
+/// \param fileName The name of the file to delete.
+///
+/// \param completion A closure that is called when the operation completes.
+/// <ul>
+///   <li>
+///     success: <code>true</code> if the operation was successful; otherwise <code>false</code>.
+///   </li>
+///   <li>
+///     statusCode: The status code returned by the device. <code>nil</code> if the operation failed.
+///   </li>
+///   <li>
+///     error: An <code>NSError</code> object that describes the error that occurred, or <code>nil</code> if the operation was successful.
+///   </li>
+/// </ul>
+///
+- (void)deleteFile:(NSString * _Nonnull)fileName completion:(AIBudsStatusCodeCompletionHandler _Nullable)completion;
+/// Requests the device to delete all files.
+/// \param completion A closure that is called when the operation completes.
+/// <ul>
+///   <li>
+///     success: <code>true</code> if the operation was successful; otherwise <code>false</code>.
+///   </li>
+///   <li>
+///     statusCode: The status code returned by the device. <code>nil</code> if the operation failed.
+///   </li>
+///   <li>
+///     error: An <code>NSError</code> object that describes the error that occurred, or <code>nil</code> if the operation was successful.
+///   </li>
+/// </ul>
+///
+- (void)deleteAllFilesWithCompletion:(AIBudsStatusCodeCompletionHandler _Nullable)completion;
+@end
+
 SWIFT_PROTOCOL_NAMED("DeviceFindAPI")
 @protocol AIBudsDeviceFindAPI <AIBudsDeviceAPI>
 /// Start finding devices
@@ -1629,53 +1786,6 @@ SWIFT_PROTOCOL_NAMED("DeviceHotspotAPI")
 /// </ul>
 ///
 - (void)configureHotspotWithMode:(enum AIBudsHotspotMode)mode channel:(NSInteger)channel ssid:(NSString * _Nonnull)ssid password:(NSString * _Nonnull)password completion:(AIBudsStatusCodeCompletionHandler _Nullable)completion;
-/// Requests the device to start a file transfer.
-/// \param completion A closure that is called when the operation completes.
-/// <ul>
-///   <li>
-///     success: <code>true</code> if the operation was successful; otherwise <code>false</code>.
-///   </li>
-///   <li>
-///     statusCode: The status code returned by the device. <code>nil</code> if the operation failed.
-///   </li>
-///   <li>
-///     error: An <code>NSError</code> object that describes the error that occurred, or <code>nil</code> if the operation was successful.
-///   </li>
-/// </ul>
-///
-- (void)startFileTransferWithCompletion:(AIBudsStatusCodeCompletionHandler _Nullable)completion;
-/// Requests the device to delete a specific file.
-/// \param fileName The name of the file to delete.
-///
-/// \param completion A closure that is called when the operation completes.
-/// <ul>
-///   <li>
-///     success: <code>true</code> if the operation was successful; otherwise <code>false</code>.
-///   </li>
-///   <li>
-///     statusCode: The status code returned by the device. <code>nil</code> if the operation failed.
-///   </li>
-///   <li>
-///     error: An <code>NSError</code> object that describes the error that occurred, or <code>nil</code> if the operation was successful.
-///   </li>
-/// </ul>
-///
-- (void)deleteFile:(NSString * _Nonnull)fileName completion:(AIBudsStatusCodeCompletionHandler _Nullable)completion;
-/// Requests the device to delete all files.
-/// \param completion A closure that is called when the operation completes.
-/// <ul>
-///   <li>
-///     success: <code>true</code> if the operation was successful; otherwise <code>false</code>.
-///   </li>
-///   <li>
-///     statusCode: The status code returned by the device. <code>nil</code> if the operation failed.
-///   </li>
-///   <li>
-///     error: An <code>NSError</code> object that describes the error that occurred, or <code>nil</code> if the operation was successful.
-///   </li>
-/// </ul>
-///
-- (void)deleteAllFilesWithCompletion:(AIBudsStatusCodeCompletionHandler _Nullable)completion;
 @end
 
 SWIFT_PROTOCOL_NAMED("DeviceInfoAPI")

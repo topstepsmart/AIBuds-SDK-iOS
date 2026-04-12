@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
   # ==================== Basic Information ====================
   # SDK name and version
   s.name         = "AIBudsSDK"
-  s.version      = "1.0.0-beta.1"
+  s.version      = "1.0.0-beta.2"
   s.summary      = "AIBuds SDK - Comprehensive AI-powered device development framework for iOS"
   s.description  = <<-DESC
                     AIBuds SDK is a powerful and comprehensive development framework designed to simplify the integration of AI-powered device functionalities into iOS applications. It provides modular components including core connectivity, Bluetooth management, audio processing, AI capabilities, logging utilities, and foundation services. The SDK supports seamless communication with AIBuds devices, enabling developers to build intelligent audio experiences with features like real-time audio streaming, voice recognition, and smart device management. With its flexible subspec architecture, developers can easily include only the components they need, from basic logging to full AI integration.
@@ -20,26 +20,33 @@ Pod::Spec.new do |s|
 
   # Logging module - Provides logging capabilities
   s.subspec 'Log' do |log|
-    log.vendored_frameworks = 'AIBudsSDK/AIBudsLog.xcframework'
+    log.subspec 'Core' do |logCore|
+      logCore.vendored_frameworks = 'AIBudsSDK/AIBudsLog.xcframework'
+      logCore.dependency 'zipzap'
+      logCore.frameworks = 'Foundation'
+    end
 
     # XLFacility subspec - Extended logging with browser support
     log.subspec 'XLFacility' do |xlfacility|
       xlfacility.vendored_frameworks = 'AIBudsSDK/AIBudsXLFacility.xcframework'
       xlfacility.dependency 'iOSLogBrowserSDK'
+      xlfacility.dependency 'AIBudsSDK/Log/Core'
     end
   end
 
   # Foundation module - Base utilities, depends on Log
   s.subspec 'Foundation' do |foundation|
     foundation.vendored_frameworks = 'AIBudsSDK/AIBudsFoundation.xcframework'
-    foundation.dependency 'AIBudsSDK/Log'
+    foundation.dependency 'AIBudsSDK/Log/Core'
+    foundation.frameworks = 'Foundation', 'CoreGraphics'
   end
 
   # Core module - Main SDK functionality, depends on Foundation and Log
   s.subspec 'Core' do |core|
     core.vendored_frameworks = 'AIBudsSDK/AIBuds.xcframework'
-    core.dependency 'AIBudsSDK/Log'
+    core.dependency 'AIBudsSDK/Log/Core'
     core.dependency 'AIBudsSDK/Foundation'
+    core.frameworks = 'Foundation', 'CoreBluetooth', 'CoreGraphics'
   end
 
   # ABMate module - Device connectivity and management, required when the device uses the ABMate BLE protocol
@@ -96,6 +103,7 @@ Pod::Spec.new do |s|
     audio.vendored_frameworks = 'AIBudsSDK/AIBudsAudio.xcframework'
     audio.dependency 'AIBudsSDK/Core'
     audio.dependency 'AIBudsSDK/ThirdParty/tenVad'
+    audio.frameworks = 'Foundation', 'CoreAudio', 'CoreMedia', 'AVFoundation'
   end
 
   # AI module collection - Artificial intelligence features
@@ -147,6 +155,7 @@ Pod::Spec.new do |s|
 
   # AllInOne module - Includes all features for convenience
   s.subspec 'AllInOne' do |allinone|
+    allinone.dependency 'AIBudsSDK/Log'
     allinone.dependency 'AIBudsSDK/ABMate'
     allinone.dependency 'AIBudsSDK/AI'
     allinone.dependency 'AIBudsSDK/VoiceAssistant'

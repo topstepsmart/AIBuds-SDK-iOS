@@ -14,63 +14,68 @@ PODS:
   - AFNetworking/Serialization (4.0.1)
   - AFNetworking/UIKit (4.0.1):
     - AFNetworking/NSURLSession
-  - AIBudsSDK/ABMate (1.0.0-beta.1):
+  - AIBudsSDK/ABMate (1.0.0-beta.2):
     - AIBudsSDK/Core
     - GCDWebServer
     - libopus (= 1.1)
-  - AIBudsSDK/AI (1.0.0-beta.1):
-    - AIBudsSDK/AI/Core (= 1.0.0-beta.1)
-    - AIBudsSDK/AI/Dashboard (= 1.0.0-beta.1)
-    - AIBudsSDK/AI/Foundation (= 1.0.0-beta.1)
-    - AIBudsSDK/AI/MltCloud (= 1.0.0-beta.1)
-    - AIBudsSDK/AI/StarBurst (= 1.0.0-beta.1)
-  - AIBudsSDK/AI/Core (1.0.0-beta.1):
+  - AIBudsSDK/AI (1.0.0-beta.2):
+    - AIBudsSDK/AI/Core (= 1.0.0-beta.2)
+    - AIBudsSDK/AI/Dashboard (= 1.0.0-beta.2)
+    - AIBudsSDK/AI/Foundation (= 1.0.0-beta.2)
+    - AIBudsSDK/AI/MltCloud (= 1.0.0-beta.2)
+    - AIBudsSDK/AI/StarBurst (= 1.0.0-beta.2)
+  - AIBudsSDK/AI/Core (1.0.0-beta.2):
     - AIBudsSDK/AI/Foundation
     - AIBudsSDK/Core
     - WCDB.swift (= 2.1.15)
-  - AIBudsSDK/AI/Dashboard (1.0.0-beta.1):
+  - AIBudsSDK/AI/Dashboard (1.0.0-beta.2):
     - AIBudsSDK/AI/Core
-  - AIBudsSDK/AI/Foundation (1.0.0-beta.1):
+  - AIBudsSDK/AI/Foundation (1.0.0-beta.2):
     - AIBudsSDK/Core
-  - AIBudsSDK/AI/MltCloud (1.0.0-beta.1):
+  - AIBudsSDK/AI/MltCloud (1.0.0-beta.2):
     - AIBudsSDK/AI/Core
     - AIBudsSDK/Audio
     - AIBudsSDK/ThirdParty/Lame
     - AIBudsSDK/ThirdParty/MagicHelper
-  - AIBudsSDK/AI/StarBurst (1.0.0-beta.1):
+  - AIBudsSDK/AI/StarBurst (1.0.0-beta.2):
     - AIBudsSDK/AI/Core
     - AIBudsSDK/Audio
     - AIBudsSDK/ThirdParty/Lame
     - AIBudsSDK/ThirdParty/StarburstSdk
-  - AIBudsSDK/AllInOne (1.0.0-beta.1):
+  - AIBudsSDK/AllInOne (1.0.0-beta.2):
     - AIBudsSDK/ABMate
     - AIBudsSDK/AI
+    - AIBudsSDK/Log
     - AIBudsSDK/VoiceAssistant
-  - AIBudsSDK/Audio (1.0.0-beta.1):
+  - AIBudsSDK/Audio (1.0.0-beta.2):
     - AIBudsSDK/Core
     - AIBudsSDK/ThirdParty/tenVad
-  - AIBudsSDK/Core (1.0.0-beta.1):
+  - AIBudsSDK/Core (1.0.0-beta.2):
     - AIBudsSDK/Foundation
-    - AIBudsSDK/Log
-  - AIBudsSDK/Foundation (1.0.0-beta.1):
-    - AIBudsSDK/Log
-  - AIBudsSDK/Log (1.0.0-beta.1):
-    - AIBudsSDK/Log/XLFacility (= 1.0.0-beta.1)
-  - AIBudsSDK/Log/XLFacility (1.0.0-beta.1):
+    - AIBudsSDK/Log/Core
+  - AIBudsSDK/Foundation (1.0.0-beta.2):
+    - AIBudsSDK/Log/Core
+  - AIBudsSDK/Log (1.0.0-beta.2):
+    - AIBudsSDK/Log/Core (= 1.0.0-beta.2)
+    - AIBudsSDK/Log/XLFacility (= 1.0.0-beta.2)
+  - AIBudsSDK/Log/Core (1.0.0-beta.2):
+    - zipzap
+  - AIBudsSDK/Log/XLFacility (1.0.0-beta.2):
+    - AIBudsSDK/Log/Core
     - iOSLogBrowserSDK
-  - AIBudsSDK/ThirdParty/Lame (1.0.0-beta.1)
-  - AIBudsSDK/ThirdParty/MagicHelper (1.0.0-beta.1):
+  - AIBudsSDK/ThirdParty/Lame (1.0.0-beta.2)
+  - AIBudsSDK/ThirdParty/MagicHelper (1.0.0-beta.2):
     - AFNetworking (~> 4.0)
     - onnxruntime-objc (= 1.18.0)
     - SocketRocket
-  - AIBudsSDK/ThirdParty/MZEncryptSDK (1.0.0-beta.1):
+  - AIBudsSDK/ThirdParty/MZEncryptSDK (1.0.0-beta.2):
     - AIBudsSDK/ThirdParty/openssl
-  - AIBudsSDK/ThirdParty/openssl (1.0.0-beta.1)
-  - AIBudsSDK/ThirdParty/StarburstSdk (1.0.0-beta.1):
+  - AIBudsSDK/ThirdParty/openssl (1.0.0-beta.2)
+  - AIBudsSDK/ThirdParty/StarburstSdk (1.0.0-beta.2):
     - AFNetworking (~> 4.0)
     - SocketRocket
-  - AIBudsSDK/ThirdParty/tenVad (1.0.0-beta.1)
-  - AIBudsSDK/VoiceAssistant (1.0.0-beta.1):
+  - AIBudsSDK/ThirdParty/tenVad (1.0.0-beta.2)
+  - AIBudsSDK/VoiceAssistant (1.0.0-beta.2):
     - AIBudsSDK/Core
     - AIBudsSDK/ThirdParty/MZEncryptSDK
   - DZNEmptyDataSet (1.8.1)
@@ -117,6 +122,7 @@ PODS:
   - YYWebImage (1.0.5):
     - YYCache
     - YYImage
+  - zipzap (8.1.1)
 
 DEPENDENCIES:
   - AIBudsSDK/AllInOne (from `../`)
@@ -145,6 +151,7 @@ SPEC REPOS:
     - YYCache
     - YYImage
     - YYWebImage
+    - zipzap
 
 EXTERNAL SOURCES:
   AIBudsSDK:
@@ -159,7 +166,7 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   AFNetworking: 3bd23d814e976cd148d7d44c3ab78017b744cd58
-  AIBudsSDK: a0ac9b35170f33e11cebe383f27b88bb09822486
+  AIBudsSDK: 43b44678af1aea06ed9b35b12e64a06de7c5bb74
   DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
   GCDWebServer: 2c156a56c8226e2d5c0c3f208a3621ccffbe3ce4
   iOSLogBrowserSDK: 7d833da43df9490ef3eb66b9d332ed02aaeab51b
@@ -176,6 +183,7 @@ SPEC CHECKSUMS:
   YYCache: 8105b6638f5e849296c71f331ff83891a4942952
   YYImage: 1e1b62a9997399593e4b9c4ecfbbabbf1d3f3b54
   YYWebImage: 5f7f36aee2ae293f016d418c7d6ba05c4863e928
+  zipzap: 940162d9c9c60472c2eab341385e4214da0fdf1c
 
 PODFILE CHECKSUM: 202162c613fd50d3edfab4bcaf0bf3f3404d501f
 

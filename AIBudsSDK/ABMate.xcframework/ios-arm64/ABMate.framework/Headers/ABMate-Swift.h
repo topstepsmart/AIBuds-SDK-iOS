@@ -766,6 +766,42 @@ typedef SWIFT_ENUM_NAMED(NSInteger, ABMateSdkErrorCode, "SdkErrorCode", open) {
   ABMateSdkErrorCodePhotoDataForSceneRecognitionTransferCanceledDueToSystemCaptureFailed = 5003,
 /// Photo data for scene recognition transfer canceled due to Bluetooth communication error
   ABMateSdkErrorCodePhotoDataForSceneRecognitionTransferCanceledDueToBluetoothCommunicationError = 5004,
+/// Fetch media files info failed due to local network usage description missing
+  ABMateSdkErrorCodeFetchMediaFilesInfoFailedDueToLocalNetworkUsageDescMissing = 6000,
+/// File import not ready
+  ABMateSdkErrorCodeFileImportNotReady = 6001,
+/// File import already in progress
+  ABMateSdkErrorCodeFileImportAlreadyInProgress = 6002,
+/// File import not in progress
+  ABMateSdkErrorCodeFileImportNotInProgress = 6003,
+/// Fetch media file infos failed due to hotspot configure error
+  ABMateSdkErrorCodeFetchMediaFileInfosFailedDueToHotspotConfigureError = 6004,
+/// File import task prepare failed due to enter file transfer mode failed
+  ABMateSdkErrorCodeFileImportTaskPrepareFailedDueToEnterFileTransferModeFailed = 6005,
+/// Fetch media file infos failed due to hotspot connection failure
+  ABMateSdkErrorCodeFetchMediaFileInfosFailedDueToHotspotConnectionFailure = 6006,
+/// Fetch media file infos failed due to empty base url
+  ABMateSdkErrorCodeFetchMediaFileInfosFailedDueToEmptyBaseUrl = 6007,
+/// Fetch media file infos failed due to invalid config file url
+  ABMateSdkErrorCodeFetchMediaFileInfosFailedDueToInvalidConfigUrl = 6008,
+/// Fetch media file infos failed due to config file error
+  ABMateSdkErrorCodeFetchMediaFileInfosFailedDueToConfigFileError = 6009,
+/// Fetch media file infos failed due to network error
+  ABMateSdkErrorCodeFetchMediaFileInfosFailedDueToNetworkError = 6010,
+/// Fetch media file infos failed due to invalid response
+  ABMateSdkErrorCodeFetchMediaFileInfosFailedDueToInvalidResponse = 6011,
+/// Fetch media file infos failed due to HTTP error code not success range
+  ABMateSdkErrorCodeFetchMediaFileInfosFailedDueToHttpError = 6012,
+/// Import files failed due to device connection lost
+  ABMateSdkErrorCodeImportFilesFailedDueToDeviceHotspotConnectionLost = 6013,
+/// Import files failed due to invalid url
+  ABMateSdkErrorCodeImportFilesFailedDueToInvalidUrl = 6014,
+/// Import files failed due to HTTP error code not success range
+  ABMateSdkErrorCodeImportFilesFailedDueToHttpError = 6015,
+/// Import files failed due to network error
+  ABMateSdkErrorCodeImportFilesFailedDueToNetworkError = 6016,
+/// Fetch media files info failed due to allow local networking missing
+  ABMateSdkErrorCodeFetchMediaFilesInfoFailedDueToAllowLocalNetworkingMissing = 6017,
 };
 
 /// The error codes used for ABMateSDK ota errors

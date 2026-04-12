@@ -186,8 +186,238 @@
           },
           {
             "kind": "Function",
+            "name": "exportLogs",
+            "printedName": "exportLogs(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Swift.String?, Foundation.Date?, Foundation.Date?, Foundation.NSError?) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String?, Foundation.Date?, Foundation.Date?, Foundation.NSError?) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(Swift.String?, Foundation.Date?, Foundation.Date?, Foundation.NSError?)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "Swift.String?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "Foundation.Date?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Date",
+                                "printedName": "Foundation.Date",
+                                "usr": "s:10Foundation4DateV"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "Foundation.Date?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Date",
+                                "printedName": "Foundation.Date",
+                                "usr": "s:10Foundation4DateV"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "Foundation.NSError?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "NSError",
+                                "printedName": "Foundation.NSError",
+                                "usr": "c:objc(cs)NSError"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AIBudsXLFacility@objc(cs)AIBudsXLFacilitySDK(im)exportLogsWithCompletion:",
+            "mangledName": "$s16AIBudsXLFacility0B3SDKC10exportLogsyyySSSg_10Foundation4DateVSgAISo7NSErrorCSgtcSgF",
+            "moduleName": "AIBudsXLFacility",
+            "objc_name": "exportLogsWithCompletion:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "exportLogs",
+            "printedName": "exportLogs(_:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UInt64",
+                "printedName": "Swift.UInt64",
+                "usr": "s:s6UInt64V"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(([Swift.String]?, Foundation.Date?, Foundation.Date?, Foundation.NSError?) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "([Swift.String]?, Foundation.Date?, Foundation.Date?, Foundation.NSError?) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "([Swift.String]?, Foundation.Date?, Foundation.Date?, Foundation.NSError?)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "[Swift.String]?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Array",
+                                "printedName": "[Swift.String]",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "String",
+                                    "printedName": "Swift.String",
+                                    "usr": "s:SS"
+                                  }
+                                ],
+                                "usr": "s:Sa"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "Foundation.Date?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Date",
+                                "printedName": "Foundation.Date",
+                                "usr": "s:10Foundation4DateV"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "Foundation.Date?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Date",
+                                "printedName": "Foundation.Date",
+                                "usr": "s:10Foundation4DateV"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "Foundation.NSError?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "NSError",
+                                "printedName": "Foundation.NSError",
+                                "usr": "c:objc(cs)NSError"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AIBudsXLFacility@objc(cs)AIBudsXLFacilitySDK(im)exportLogsWithMaxFileSize:completion:",
+            "mangledName": "$s16AIBudsXLFacility0B3SDKC10exportLogs_10completionys6UInt64V_ySaySSGSg_10Foundation4DateVSgAMSo7NSErrorCSgtcSgtF",
+            "moduleName": "AIBudsXLFacility",
+            "objc_name": "exportLogsWithMaxFileSize:completion:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "purgeOldLogsWithMaxAge",
-            "printedName": "purgeOldLogsWithMaxAge(_:)",
+            "printedName": "purgeOldLogsWithMaxAge(_:completion:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -199,17 +429,117 @@
                 "name": "Int",
                 "printedName": "Swift.Int",
                 "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Foundation.NSError?) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Foundation.NSError?) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.NSError?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "NSError",
+                            "printedName": "Foundation.NSError",
+                            "usr": "c:objc(cs)NSError"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@AIBudsXLFacility@objc(cs)AIBudsXLFacilitySDK(im)purgeOldLogsWithMaxAge:",
-            "mangledName": "$s16AIBudsXLFacility0B3SDKC22purgeOldLogsWithMaxAgeyySiF",
+            "usr": "c:@M@AIBudsXLFacility@objc(cs)AIBudsXLFacilitySDK(im)purgeOldLogsWithMaxAge:completion:",
+            "mangledName": "$s16AIBudsXLFacility0B3SDKC22purgeOldLogsWithMaxAge_10completionySi_ySo7NSErrorCSgcSgtF",
             "moduleName": "AIBudsXLFacility",
-            "objc_name": "purgeOldLogsWithMaxAge:",
+            "objc_name": "purgeOldLogsWithMaxAge:completion:",
             "declAttributes": [
               "Final",
-              "ObjC",
               "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "purgeOldLogsBefore",
+            "printedName": "purgeOldLogsBefore(_:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Date",
+                "printedName": "Foundation.Date",
+                "usr": "s:10Foundation4DateV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Foundation.NSError?) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Foundation.NSError?) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.NSError?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "NSError",
+                            "printedName": "Foundation.NSError",
+                            "usr": "c:objc(cs)NSError"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AIBudsXLFacility@objc(cs)AIBudsXLFacilitySDK(im)purgeOldLogsBefore:completion:",
+            "mangledName": "$s16AIBudsXLFacility0B3SDKC18purgeOldLogsBefore_10completiony10Foundation4DateV_ySo7NSErrorCSgcSgtF",
+            "moduleName": "AIBudsXLFacility",
+            "objc_name": "purgeOldLogsBefore:completion:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
               "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
@@ -277,6 +607,118 @@
               "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "ErrorDomain",
+            "printedName": "ErrorDomain",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@AIBudsXLFacility@objc(cs)AIBudsXLFacilitySDK(cpy)ErrorDomain",
+            "mangledName": "$s16AIBudsXLFacility0B3SDKC11ErrorDomainSSvpZ",
+            "moduleName": "AIBudsXLFacility",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@AIBudsXLFacility@objc(cs)AIBudsXLFacilitySDK(cm)ErrorDomain",
+                "mangledName": "$s16AIBudsXLFacility0B3SDKC11ErrorDomainSSvgZ",
+                "moduleName": "AIBudsXLFacility",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC",
+                  "Final"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "ErrorKey",
+            "printedName": "ErrorKey",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@AIBudsXLFacility@objc(cs)AIBudsXLFacilitySDK(cpy)ErrorKey",
+            "mangledName": "$s16AIBudsXLFacility0B3SDKC8ErrorKeySSvpZ",
+            "moduleName": "AIBudsXLFacility",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@AIBudsXLFacility@objc(cs)AIBudsXLFacilitySDK(cm)ErrorKey",
+                "mangledName": "$s16AIBudsXLFacility0B3SDKC8ErrorKeySSvgZ",
+                "moduleName": "AIBudsXLFacility",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC",
+                  "Final"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
           }
         ],
         "declKind": "Class",
@@ -380,9 +822,343 @@
         ]
       },
       {
+        "kind": "TypeDecl",
+        "name": "SdkErrorCode",
+        "printedName": "SdkErrorCode",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "unknown",
+            "printedName": "unknown",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AIBudsXLFacility.SdkErrorCode.Type) -> AIBudsXLFacility.SdkErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SdkErrorCode",
+                    "printedName": "AIBudsXLFacility.SdkErrorCode",
+                    "usr": "c:@M@AIBudsXLFacility@E@AIBudsXLFacilitySdkErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AIBudsXLFacility.SdkErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SdkErrorCode",
+                        "printedName": "AIBudsXLFacility.SdkErrorCode",
+                        "usr": "c:@M@AIBudsXLFacility@E@AIBudsXLFacilitySdkErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AIBudsXLFacility@E@AIBudsXLFacilitySdkErrorCode@AIBudsXLFacilitySdkErrorCodeUnknown",
+            "mangledName": "$s16AIBudsXLFacility12SdkErrorCodeO7unknownyA2CmF",
+            "moduleName": "AIBudsXLFacility",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "enumerateRecordsFailed",
+            "printedName": "enumerateRecordsFailed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AIBudsXLFacility.SdkErrorCode.Type) -> AIBudsXLFacility.SdkErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SdkErrorCode",
+                    "printedName": "AIBudsXLFacility.SdkErrorCode",
+                    "usr": "c:@M@AIBudsXLFacility@E@AIBudsXLFacilitySdkErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AIBudsXLFacility.SdkErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SdkErrorCode",
+                        "printedName": "AIBudsXLFacility.SdkErrorCode",
+                        "usr": "c:@M@AIBudsXLFacility@E@AIBudsXLFacilitySdkErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AIBudsXLFacility@E@AIBudsXLFacilitySdkErrorCode@AIBudsXLFacilitySdkErrorCodeEnumerateRecordsFailed",
+            "mangledName": "$s16AIBudsXLFacility12SdkErrorCodeO22enumerateRecordsFailedyA2CmF",
+            "moduleName": "AIBudsXLFacility",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Var",
+            "name": "failedToCalculateCutOffTime",
+            "printedName": "failedToCalculateCutOffTime",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AIBudsXLFacility.SdkErrorCode.Type) -> AIBudsXLFacility.SdkErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SdkErrorCode",
+                    "printedName": "AIBudsXLFacility.SdkErrorCode",
+                    "usr": "c:@M@AIBudsXLFacility@E@AIBudsXLFacilitySdkErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AIBudsXLFacility.SdkErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SdkErrorCode",
+                        "printedName": "AIBudsXLFacility.SdkErrorCode",
+                        "usr": "c:@M@AIBudsXLFacility@E@AIBudsXLFacilitySdkErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AIBudsXLFacility@E@AIBudsXLFacilitySdkErrorCode@AIBudsXLFacilitySdkErrorCodeFailedToCalculateCutOffTime",
+            "mangledName": "$s16AIBudsXLFacility12SdkErrorCodeO27failedToCalculateCutOffTimeyA2CmF",
+            "moduleName": "AIBudsXLFacility",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 2
+          },
+          {
+            "kind": "Var",
+            "name": "failedToPurgeOldLogs",
+            "printedName": "failedToPurgeOldLogs",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AIBudsXLFacility.SdkErrorCode.Type) -> AIBudsXLFacility.SdkErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SdkErrorCode",
+                    "printedName": "AIBudsXLFacility.SdkErrorCode",
+                    "usr": "c:@M@AIBudsXLFacility@E@AIBudsXLFacilitySdkErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AIBudsXLFacility.SdkErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SdkErrorCode",
+                        "printedName": "AIBudsXLFacility.SdkErrorCode",
+                        "usr": "c:@M@AIBudsXLFacility@E@AIBudsXLFacilitySdkErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AIBudsXLFacility@E@AIBudsXLFacilitySdkErrorCode@AIBudsXLFacilitySdkErrorCodeFailedToPurgeOldLogs",
+            "mangledName": "$s16AIBudsXLFacility12SdkErrorCodeO20failedToPurgeOldLogsyA2CmF",
+            "moduleName": "AIBudsXLFacility",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 3
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "AIBudsXLFacility.SdkErrorCode?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SdkErrorCode",
+                    "printedName": "AIBudsXLFacility.SdkErrorCode",
+                    "usr": "c:@M@AIBudsXLFacility@E@AIBudsXLFacilitySdkErrorCode"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:16AIBudsXLFacility12SdkErrorCodeO8rawValueACSgSi_tcfc",
+            "mangledName": "$s16AIBudsXLFacility12SdkErrorCodeO8rawValueACSgSi_tcfc",
+            "moduleName": "AIBudsXLFacility",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16AIBudsXLFacility12SdkErrorCodeO8rawValueSivp",
+            "mangledName": "$s16AIBudsXLFacility12SdkErrorCodeO8rawValueSivp",
+            "moduleName": "AIBudsXLFacility",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16AIBudsXLFacility12SdkErrorCodeO8rawValueSivg",
+                "mangledName": "$s16AIBudsXLFacility12SdkErrorCodeO8rawValueSivg",
+                "moduleName": "AIBudsXLFacility",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "c:@M@AIBudsXLFacility@E@AIBudsXLFacilitySdkErrorCode",
+        "mangledName": "$s16AIBudsXLFacility12SdkErrorCodeO",
+        "moduleName": "AIBudsXLFacility",
+        "objc_name": "AIBudsXLFacilitySdkErrorCode",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AIBudsXLFacility",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "Import",
         "name": "XLFacility",
         "printedName": "XLFacility",
+        "declKind": "Import",
+        "moduleName": "AIBudsXLFacility"
+      },
+      {
+        "kind": "Import",
+        "name": "AIBudsLog",
+        "printedName": "AIBudsLog",
+        "declKind": "Import",
+        "moduleName": "AIBudsXLFacility"
+      },
+      {
+        "kind": "Import",
+        "name": "zipzap",
+        "printedName": "zipzap",
         "declKind": "Import",
         "moduleName": "AIBudsXLFacility"
       }
@@ -393,51 +1169,58 @@
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsXLFacility\/AIBudsXLFacility.swift",
       "kind": "StringLiteral",
-      "offset": 306,
+      "offset": 308,
       "length": 21,
       "value": "\"CFBundleDisplayName\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsXLFacility\/AIBudsXLFacility.swift",
       "kind": "StringLiteral",
-      "offset": 383,
+      "offset": 385,
       "length": 14,
       "value": "\"CFBundleName\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsXLFacility\/AIBudsXLFacility.swift",
       "kind": "StringLiteral",
-      "offset": 413,
+      "offset": 415,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsXLFacility\/AIBudsXLFacility.swift",
       "kind": "StringLiteral",
-      "offset": 504,
+      "offset": 507,
       "length": 28,
       "value": "\"CFBundleShortVersionString\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsXLFacility\/AIBudsXLFacility.swift",
       "kind": "StringLiteral",
-      "offset": 548,
+      "offset": 551,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsXLFacility\/AIBudsXLFacility.swift",
       "kind": "StringLiteral",
-      "offset": 636,
+      "offset": 640,
       "length": 17,
       "value": "\"CFBundleVersion\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsXLFacility\/AIBudsXLFacility.swift",
       "kind": "StringLiteral",
-      "offset": 669,
+      "offset": 673,
       "length": 2,
       "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsXLFacility\/AIBudsXLFacility.swift",
+      "kind": "StringLiteral",
+      "offset": 748,
+      "length": 48,
+      "value": "\"com.topstep.sdks.aibuds.log.plugins.xlfacility\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsXLFacility\/AIBudsXLFacilitySDK.swift",
@@ -447,72 +1230,149 @@
       "value": "false"
     },
     {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsXLFacility\/Errors.swift",
+      "kind": "StringLiteral",
+      "offset": 291,
+      "length": 38,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsXLFacility\/Errors.swift",
+      "kind": "StringLiteral",
+      "offset": 316,
+      "length": 1,
+      "value": "\".errordomain\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsXLFacility\/Errors.swift",
+      "kind": "StringLiteral",
+      "offset": 434,
+      "length": 29,
+      "value": "\"AIBudsXLFacilitySdkErrorKey\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsXLFacility\/Errors.swift",
+      "kind": "IntegerLiteral",
+      "offset": 638,
+      "length": 2,
+      "value": "-1"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsXLFacility\/Errors.swift",
+      "kind": "IntegerLiteral",
+      "offset": 709,
+      "length": 4,
+      "value": "1001"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsXLFacility\/Errors.swift",
+      "kind": "IntegerLiteral",
+      "offset": 800,
+      "length": 4,
+      "value": "1002"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsXLFacility\/Errors.swift",
+      "kind": "IntegerLiteral",
+      "offset": 871,
+      "length": 4,
+      "value": "1003"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsXLFacility\/XLFacilityDBLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 415,
+      "length": 43,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsXLFacility\/XLFacilityDBLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 440,
+      "length": 1,
+      "value": "\".log_export.queue\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsXLFacility\/XLFacilityDBLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 590,
+      "length": 42,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsXLFacility\/XLFacilityDBLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 615,
+      "length": 1,
+      "value": "\".log_purge.queue\""
+    },
+    {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsXLFacility\/XLFacilityDBLogger.swift",
       "kind": "BooleanLiteral",
-      "offset": 478,
+      "offset": 856,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsXLFacility\/XLFacilityDBLogger.swift",
       "kind": "StringLiteral",
-      "offset": 493,
+      "offset": 871,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsXLFacility\/XLFacilityDBLogger.swift",
       "kind": "StringLiteral",
-      "offset": 576,
+      "offset": 954,
       "length": 9,
       "value": "\".aibuds\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsXLFacility\/XLFacilityDBLogger.swift",
       "kind": "BooleanLiteral",
-      "offset": 780,
+      "offset": 1158,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsXLFacility\/XLFacilityDBLogger.swift",
       "kind": "StringLiteral",
-      "offset": 869,
+      "offset": 1247,
       "length": 70,
       "value": "\"Failed to create directory at path \""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsXLFacility\/XLFacilityDBLogger.swift",
       "kind": "StringLiteral",
-      "offset": 921,
+      "offset": 1299,
       "length": 1,
       "value": "\", error: \""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsXLFacility\/XLFacilityDBLogger.swift",
       "kind": "StringLiteral",
-      "offset": 938,
+      "offset": 1316,
       "length": 13,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsXLFacility\/XLFacilityDBLogger.swift",
       "kind": "StringLiteral",
-      "offset": 950,
+      "offset": 1328,
       "length": 19,
       "value": "\"AIBuds.XLFacility\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsXLFacility\/XLFacilityDBLogger.swift",
       "kind": "StringLiteral",
-      "offset": 1086,
+      "offset": 1464,
       "length": 28,
       "value": "\".aibuds\/\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsXLFacility\/XLFacilityDBLogger.swift",
       "kind": "StringLiteral",
-      "offset": 1106,
+      "offset": 1484,
       "length": 1,
       "value": "\"-log.db\""
     }

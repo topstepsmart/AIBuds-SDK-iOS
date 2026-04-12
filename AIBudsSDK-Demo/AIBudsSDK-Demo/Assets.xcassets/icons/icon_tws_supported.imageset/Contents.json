@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "icon_tws_supported.pdf",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

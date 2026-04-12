@@ -282,6 +282,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
 @import AIBudsLog;
+@import Foundation;
 @import ObjectiveC;
 #endif
 
@@ -305,7 +306,21 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 #if defined(__OBJC__)
 
+/// The error codes used for AIBudsXLFacilitySDK errors
+typedef SWIFT_ENUM_NAMED(NSInteger, AIBudsXLFacilitySdkErrorCode, "SdkErrorCode", open) {
+/// Unknown error
+  AIBudsXLFacilitySdkErrorCodeUnknown = -1,
+/// Enumerate records failed
+  AIBudsXLFacilitySdkErrorCodeEnumerateRecordsFailed = 1001,
+/// Failed to calculate logs cut off time
+  AIBudsXLFacilitySdkErrorCodeFailedToCalculateCutOffTime = 1002,
+/// Failed to purge old logs
+  AIBudsXLFacilitySdkErrorCodeFailedToPurgeOldLogs = 1003,
+};
+
 @class NSString;
+@class NSDate;
+@class NSError;
 /// The AIBuds XLFacility log plugin.
 SWIFT_CLASS_NAMED("XLFacilitySDK")
 @interface AIBudsXLFacilitySDK : NSObject <AIBudsXLFacilityPlugin>
@@ -321,10 +336,78 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) AIBudsXLFaci
 + (AIBudsXLFacilitySDK * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
 /// Loads the plugin, initializing any necessary resources.
 - (void)load;
+/// Exports all log messages to a file.
+/// \param completion The completion handler that is called when the export operation is completed.
+///
+/// \a completion parameters:
+/// <ul>
+/// <li>
+/// filePath: The path to the exported log file, or nil if the export failed.
+/// </li>
+/// <li>
+/// logStartFrom: The start timestamp of the export range.
+/// </li>
+/// <li>
+/// logEndAt: The end timestamp of the export range.
+/// </li>
+/// <li>
+/// error: The error object, or nil if the export operation was successful.
+/// </li>
+/// </ul>
+///
+///
+- (void)exportLogsWithCompletion:(void (^ _Nullable)(NSString * _Nullable, NSDate * _Nullable, NSDate * _Nullable, NSError * _Nullable))completion;
+/// Exports log messages to multiple files with size limit.
+/// \param maxFileSize The maximum size of each log file in bytes.
+///
+/// \param completion The completion handler that is called when the export operation is completed.
+///
+/// \a completion parameters:
+/// <ul>
+/// <li>
+/// filePaths: An array of paths to the exported log files, or nil if the export failed.
+/// </li>
+/// <li>
+/// logStartFrom: The start timestamp of the export range.
+/// </li>
+/// <li>
+/// logEndAt: The end timestamp of the export range.
+/// </li>
+/// <li>
+/// error: The error object, or nil if the export operation was successful.
+/// </li>
+/// </ul>
+///
+///
+- (void)exportLogsWithMaxFileSize:(uint64_t)maxFileSize completion:(void (^ _Nullable)(NSArray<NSString *> * _Nullable, NSDate * _Nullable, NSDate * _Nullable, NSError * _Nullable))completion;
 /// Purges old log messages from the database that are older than the specified max age.
 /// \param maxAge The maximum age in days for log messages to be retained.
 ///
-- (void)purgeOldLogsWithMaxAge:(NSInteger)maxAge;
+/// \param completion The completion handler that is called when the purge operation is completed.
+///
+/// \a completion parameters:
+/// <ul>
+/// <li>
+/// error: The error object, or nil if the purge operation was successful.
+/// </li>
+/// </ul>
+///
+///
+- (void)purgeOldLogsWithMaxAge:(NSInteger)maxAge completion:(void (^ _Nullable)(NSError * _Nullable))completion;
+/// Purges old log messages from the database that are older than the specified date.
+/// \param timestamp The timestamp before which log messages should be purged.
+///
+/// \param completion The completion handler that is called when the purge operation is completed.
+///
+/// \a completion parameters:
+/// <ul>
+/// <li>
+/// error: The error object, or nil if the purge operation was successful.
+/// </li>
+/// </ul>
+///
+///
+- (void)purgeOldLogsBefore:(NSDate * _Nonnull)timestamp completion:(void (^ _Nullable)(NSError * _Nullable))completion;
 /// Records a log message.
 /// \param message The content of the log to be recorded.
 ///
@@ -335,6 +418,15 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) AIBudsXLFaci
 /// \param category Optional, identifies the category to which the log belongs.
 ///
 - (void)logMessage:(NSString * _Nonnull)message level:(enum AIBudsLogLevel)level subsystem:(NSString * _Nullable)subsystem category:(NSString * _Nullable)category;
+@end
+
+@interface AIBudsXLFacilitySDK (SWIFT_EXTENSION(AIBudsXLFacility))
+/// The error domain used for AIBudsLogSDK errors
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull ErrorDomain;)
++ (NSString * _Nonnull)ErrorDomain SWIFT_WARN_UNUSED_RESULT;
+/// The error key used for XLFacilitySDK errors
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull ErrorKey;)
++ (NSString * _Nonnull)ErrorKey SWIFT_WARN_UNUSED_RESULT;
 @end
 
 #endif
@@ -629,6 +721,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
 @import AIBudsLog;
+@import Foundation;
 @import ObjectiveC;
 #endif
 
@@ -652,7 +745,21 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 #if defined(__OBJC__)
 
+/// The error codes used for AIBudsXLFacilitySDK errors
+typedef SWIFT_ENUM_NAMED(NSInteger, AIBudsXLFacilitySdkErrorCode, "SdkErrorCode", open) {
+/// Unknown error
+  AIBudsXLFacilitySdkErrorCodeUnknown = -1,
+/// Enumerate records failed
+  AIBudsXLFacilitySdkErrorCodeEnumerateRecordsFailed = 1001,
+/// Failed to calculate logs cut off time
+  AIBudsXLFacilitySdkErrorCodeFailedToCalculateCutOffTime = 1002,
+/// Failed to purge old logs
+  AIBudsXLFacilitySdkErrorCodeFailedToPurgeOldLogs = 1003,
+};
+
 @class NSString;
+@class NSDate;
+@class NSError;
 /// The AIBuds XLFacility log plugin.
 SWIFT_CLASS_NAMED("XLFacilitySDK")
 @interface AIBudsXLFacilitySDK : NSObject <AIBudsXLFacilityPlugin>
@@ -668,10 +775,78 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) AIBudsXLFaci
 + (AIBudsXLFacilitySDK * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
 /// Loads the plugin, initializing any necessary resources.
 - (void)load;
+/// Exports all log messages to a file.
+/// \param completion The completion handler that is called when the export operation is completed.
+///
+/// \a completion parameters:
+/// <ul>
+/// <li>
+/// filePath: The path to the exported log file, or nil if the export failed.
+/// </li>
+/// <li>
+/// logStartFrom: The start timestamp of the export range.
+/// </li>
+/// <li>
+/// logEndAt: The end timestamp of the export range.
+/// </li>
+/// <li>
+/// error: The error object, or nil if the export operation was successful.
+/// </li>
+/// </ul>
+///
+///
+- (void)exportLogsWithCompletion:(void (^ _Nullable)(NSString * _Nullable, NSDate * _Nullable, NSDate * _Nullable, NSError * _Nullable))completion;
+/// Exports log messages to multiple files with size limit.
+/// \param maxFileSize The maximum size of each log file in bytes.
+///
+/// \param completion The completion handler that is called when the export operation is completed.
+///
+/// \a completion parameters:
+/// <ul>
+/// <li>
+/// filePaths: An array of paths to the exported log files, or nil if the export failed.
+/// </li>
+/// <li>
+/// logStartFrom: The start timestamp of the export range.
+/// </li>
+/// <li>
+/// logEndAt: The end timestamp of the export range.
+/// </li>
+/// <li>
+/// error: The error object, or nil if the export operation was successful.
+/// </li>
+/// </ul>
+///
+///
+- (void)exportLogsWithMaxFileSize:(uint64_t)maxFileSize completion:(void (^ _Nullable)(NSArray<NSString *> * _Nullable, NSDate * _Nullable, NSDate * _Nullable, NSError * _Nullable))completion;
 /// Purges old log messages from the database that are older than the specified max age.
 /// \param maxAge The maximum age in days for log messages to be retained.
 ///
-- (void)purgeOldLogsWithMaxAge:(NSInteger)maxAge;
+/// \param completion The completion handler that is called when the purge operation is completed.
+///
+/// \a completion parameters:
+/// <ul>
+/// <li>
+/// error: The error object, or nil if the purge operation was successful.
+/// </li>
+/// </ul>
+///
+///
+- (void)purgeOldLogsWithMaxAge:(NSInteger)maxAge completion:(void (^ _Nullable)(NSError * _Nullable))completion;
+/// Purges old log messages from the database that are older than the specified date.
+/// \param timestamp The timestamp before which log messages should be purged.
+///
+/// \param completion The completion handler that is called when the purge operation is completed.
+///
+/// \a completion parameters:
+/// <ul>
+/// <li>
+/// error: The error object, or nil if the purge operation was successful.
+/// </li>
+/// </ul>
+///
+///
+- (void)purgeOldLogsBefore:(NSDate * _Nonnull)timestamp completion:(void (^ _Nullable)(NSError * _Nullable))completion;
 /// Records a log message.
 /// \param message The content of the log to be recorded.
 ///
@@ -682,6 +857,15 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) AIBudsXLFaci
 /// \param category Optional, identifies the category to which the log belongs.
 ///
 - (void)logMessage:(NSString * _Nonnull)message level:(enum AIBudsLogLevel)level subsystem:(NSString * _Nullable)subsystem category:(NSString * _Nullable)category;
+@end
+
+@interface AIBudsXLFacilitySDK (SWIFT_EXTENSION(AIBudsXLFacility))
+/// The error domain used for AIBudsLogSDK errors
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull ErrorDomain;)
++ (NSString * _Nonnull)ErrorDomain SWIFT_WARN_UNUSED_RESULT;
+/// The error key used for XLFacilitySDK errors
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull ErrorKey;)
++ (NSString * _Nonnull)ErrorKey SWIFT_WARN_UNUSED_RESULT;
 @end
 
 #endif

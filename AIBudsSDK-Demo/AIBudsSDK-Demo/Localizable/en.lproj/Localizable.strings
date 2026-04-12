@@ -72,6 +72,7 @@
 "LocKey.AITranslationGroupTitle" = "AI Translation";
 "LocKey.AIChatGroupTitle" = "AI Chat";
 "LocKey.HotspotGroupTitle" = "Hotspot";
+"LocKey.FileImportGroupTitle" = "File Import";
 "LocKey.OtaGroupTitle" = "OTA";
 "LocKey.OtaFeatureTitle" = "Firmware Update (OTA)";
 "LocKey.OtaDemoTitle" = "OTA Demonstration";
@@ -521,3 +522,206 @@
 "LocKey.CallVolumeUpdatedSuccessfullyTips" = "Call volume updated successfully";
 "LocKey.LocalPlaybackVolumeUpdatedSuccessfullyTips" = "Local playback volume updated successfully";
 "LocKey.AllVolumesResetTo50Tips" = "All volumes reset to 50%";
+
+"LocKey.MusicControlFeatureTitle" = "Music Control";
+"LocKey.MusicControlDemoTitle" = "Music Control Demonstration";
+"LocKey.NoDeviceConnected" = "No device connected";
+"LocKey.DeviceConnected" = "Device connected";
+"LocKey.PlaybackControlTitle" = "Playback Control";
+"LocKey.PreviousTrackButton" = "Previous Track";
+"LocKey.NextTrackButton" = "Next Track";
+"LocKey.PauseButton" = "Pause";
+"LocKey.PlayButton" = "Play";
+"LocKey.VolumeControlTitle" = "Volume Control";
+"LocKey.VolumeDownButton" = "Volume Down";
+"LocKey.VolumeUpButton" = "Volume Up";
+"LocKey.MuteButton" = "Mute";
+"LocKey.UnmuteButton" = "Unmute";
+"LocKey.VolumeUpButton" = "Volume Up";
+"LocKey.MusicPlaybackStarted" = "Music playback started";
+"LocKey.MusicPlaybackPaused" = "Music playback paused";
+"LocKey.SkippedToNextTrack" = "Skipped to next track";
+"LocKey.SkippedToPreviousTrack" = "Skipped to previous track";
+"LocKey.VolumeIncreased" = "Volume increased";
+"LocKey.VolumeDecreased" = "Volume decreased";
+"LocKey.VolumeMuted" = "Volume muted";
+"LocKey.VolumeUnmuted" = "Volume unmuted";
+"LocKey.VolumeSetTo" = "Volume set to %ld%%";
+
+"LocKey.TWSupportedFeatureTitle" = "True Wireless Stereo";
+"LocKey.TWSupported" = "Supported";
+"LocKey.TWSNotSupported" = "Not supported";
+"LocKey.TWSConnectionFeatureTitle" = "True Wireless Stereo Connection";
+"LocKey.TWSNotConnected" = "Not connected";
+"LocKey.TWSConnected" = "Connected";
+
+"LocKey.NotSupported" = "Device not supported";
+
+"LocKey.EqualizerFeatureTitle" = "Equalizer";
+
+"LocKey.EqualizerDemoTitle" = "Equalizer Demonstration";
+"LocKey.CurrentEQSetting" = "Current EQ Setting";
+"LocKey.NoEQSettingActive" = "No EQ setting active";
+"LocKey.EqualizerPresetsTitle" = "Equalizer Presets";
+"LocKey.EQTypeCustom" = "Custom";
+"LocKey.EQTypePreset" = "Preset";
+"LocKey.CurrentEQSettingNameFormat" = "Current EQ Setting: %@";
+"LocKey.DeviceNotSupportEQ" = "Device does not support EQ";
+"LocKey.EQSettingAppliedFormat" = "EQ setting applied: %@";
+"LocKey.EQSettingUpdatedSuccess" = "EQ setting updated successfully";
+
+
+"LocKey.EQName.Default" = "Default";
+"LocKey.EQName.Pop" = "Pop";
+"LocKey.EQName.Rock" = "Rock";
+"LocKey.EQName.Jazz" = "Jazz";
+"LocKey.EQName.Classic" = "Classic";
+"LocKey.EQName.Country" = "Country";
+"LocKey.EQName.Custom" = "Custom";
+
+"LocKey.ANCFeatureTitle" = "ANC";
+
+"LocKey.ANCDemoTitle" = "ANC Demonstration";
+"LocKey.ANCModeTitle" = "ANC Mode";
+"LocKey.ANCModeNormal" = "Normal";
+"LocKey.ANCModeANC" = "ANC";
+"LocKey.ANCModeTransparency" = "Transparency";
+"LocKey.ANCGainTitle" = "ANC Gain";
+"LocKey.TransparencyGainTitle" = "Transparency Gain";
+"LocKey.ANCFadeTitle" = "ANC Fade";
+"LocKey.ANCFadeDescription" = "Enable smooth transition between ANC modes";
+"LocKey.ANCSettingsLoaded" = "ANC settings loaded";
+"LocKey.DeviceNotSupportANC" = "Device does not support ANC";
+"LocKey.ANCModeSetSuccess" = "ANC mode set successfully";
+"LocKey.ANCModeSetFailed" = "Failed to set ANC mode";
+"LocKey.ANCGainSetSuccess" = "ANC gain set successfully";
+"LocKey.ANCGainSetFailed" = "Failed to set ANC gain";
+"LocKey.TransparencyGainSetSuccess" = "Transparency gain set successfully";
+"LocKey.TransparencyGainSetFailed" = "Failed to set transparency gain";
+"LocKey.ANCFadeSetSuccess" = "ANC fade set successfully";
+"LocKey.ANCFadeSetFailed" = "Failed to set ANC fade";
+
+"LocKey.AudioRecordingFeatureTitle" = "Audio Recording";
+"LocKey.AudioRecordingDemoTitle" = "Audio Recording Demonstration";
+"LocKey.NormalRecordingTitle" = "Normal Recording";
+"LocKey.RecordingStatusReady" = "Ready";
+"LocKey.AIRecordingTitle" = "AI Recording";
+"LocKey.SceneOnSite" = "On-site Recording";
+"LocKey.SceneCall" = "Call Recording";
+"LocKey.StartAIRecording" = "Start AI Recording";
+"LocKey.StopAIRecording" = "Stop AI Recording";
+
+"LocKey.MaxRecordingDurationTitle" = "Max Recording Duration";
+"LocKey.Minutes" = "Minutes";
+"LocKey.AudioRecordingSettingsLoaded" = "Audio recording settings loaded";
+"LocKey.DeviceNotSupportAudioRecording" = "Device does not support audio recording";
+
+"LocKey.RecordingStarted" = "Recording started";
+"LocKey.RecordingInProgress" = "Recording in progress";
+"LocKey.RecordingStartFailed" = "Failed to start recording";
+"LocKey.RecordingStopped" = "Recording stopped";
+"LocKey.RecordingStopFailed" = "Failed to stop recording";
+"LocKey.AIRecordingStarted" = "AI Recording started";
+"LocKey.AIRecordingStartFailed" = "Failed to start AI recording";
+"LocKey.AIRecordingStopped" = "AI Recording stopped";
+"LocKey.AIRecordingStopFailed" = "Failed to stop AI recording";
+"LocKey.MaxDurationSetSuccess" = "Max recording duration set successfully";
+
+"LocKey.VideoRecordingFeatureTitle" = "Video Recording";
+"LocKey.VideoRecordingDemoTitle" = "Video Recording Demonstration";
+"LocKey.CameraInfoTitle" = "Camera Information";
+"LocKey.MaxVideoRecordingDurationTitle" = "Max Video Recording Duration";
+"LocKey.PhotoTakingTitle" = "Photo Taking";
+"LocKey.CaptureModeCamera" = "Camera";
+"LocKey.CaptureModeAI" = "AI";
+"LocKey.ReadyToCapture" = "Ready to Capture";
+"LocKey.TakePhoto" = "Take Photo";
+"LocKey.StopPhoto" = "Stop Photo";
+"LocKey.VideoRecordingTitle" = "Video Recording";
+"LocKey.ReadyToRecord" = "Ready to Record";
+"LocKey.StartVideoRecording" = "Start Video Recording";
+"LocKey.StopVideoRecording" = "Stop Video Recording";
+"LocKey.VideoRecordingSettingsLoaded" = "Video recording settings loaded";
+"LocKey.DeviceNotSupportVideoRecording" = "Device does not support video recording";
+"LocKey.MaxVideoRecordingDurationSetSuccess" = "Max video recording duration set successfully";
+"LocKey.MaxVideoRecordingDurationSetFailed" = "Failed to set max video recording duration";
+"LocKey.PhotoTakingStarted" = "Photo taking started";
+"LocKey.PhotoTakingInProgress" = "Photo taking in progress";
+"LocKey.PhotoTakingStartFailed" = "Failed to start photo taking";
+"LocKey.PhotoTakingStopped" = "Photo taking stopped";
+"LocKey.PhotoTakingStopFailed" = "Failed to stop photo taking";
+"LocKey.VideoRecordingStarted" = "Video recording started";
+"LocKey.VideoRecordingInProgress" = "Video recording in progress";
+"LocKey.VideoRecordingStartFailed" = "Failed to start video recording";
+"LocKey.VideoRecordingStopped" = "Video recording stopped";
+"LocKey.VideoRecordingStopFailed" = "Failed to stop video recording";
+
+"LocKey.RemoteShutterFeatureTitle" = "Remote Shutter";
+"LocKey.PhotoTakingTitle" = "Photo Taking";
+"LocKey.CameraPermissionDenied" = "Camera permission denied";
+"LocKey.CameraError" = "Camera error";
+"LocKey.CameraReady" = "Camera ready";
+"LocKey.RemoteShutterReady" = "Remote Shutter ready";
+"LocKey.RemoteShutterCapturing" = "Capturing...";
+"LocKey.RemoteShutterCaptureFailed" = "Capture failed";
+"LocKey.RemoteShutterCaptureSuccess" = "Capture success";
+
+"LocKey.FileImportFeatureTitle" = "File Import";
+"LocKey.FileImportDemoTitle" = "File Import Demonstration";
+"LocKey.DeviceMediaFiles" = "Device Media Files";
+"LocKey.LoadingMediaFiles" = "Loading media files...";
+"LocKey.ImportButton" = "Import Files";
+"LocKey.ImportStatus" = "Import Status";
+"LocKey.FileImportSpeedFormat" = "Import Speed: %@ %@";
+"LocKey.ReadyToImport" = "Ready to import";
+"LocKey.ImportedFiles" = "Imported Files";
+"LocKey.NoFilesToImport" = "No files to import";
+"LocKey.ImportingBatchProgressFormat" = "Importing %d/%ld";
+"LocKey.TotalMediaCountFormat" = "Total media files: %ld";
+"LocKey.FileImportAllSuccess" = "All files import success";
+"LocKey.FileImportFailedFormat" = "File import failed: %@";
+
+
+
+"LocKey.ConfiguringHotspot" = "Configuring Hotspot";
+"LocKey.HotspotConfigured" = "Hotspot configured";
+"LocKey.HotspotConfigurationFailedFormat" = "Failed to configure hotspot: %@";
+"LocKey.AboutToEnterFileTransferMode" = "About to enter file transfer mode...";
+"LocKey.FileTransferModeEntered" = "File transfer mode entered";
+"LocKey.FileTransferModeEnterFailedFormat" = "File transfer mode enter failed: %@";
+"LocKey.WaitingForHotspotOpen" = "Waiting for hotspot to open...";
+"LocKey.ConnectingToHotspot" = "Connecting to hotspot...";
+"LocKey.HotspotConnected" = "Hotspot connected";
+"LocKey.HotspotConnectionFailedFormat" = "Hotspot connection failed: %@";
+
+
+"LocKey.LogGroupTitle" = "Log";
+"LocKey.LogFeatureTitle" = "Log";
+"LocKey.LogDemoTitle" = "Log Demonstration";
+"LocKey.LogDemoSingleExportDescription" = "Export all logs to a single file and share it";
+"LocKey.LogDemoSingleExportButton" = "Export Logs";
+"LocKey.LogDemoMultiExportDescription" = "Export logs to multiple files with size limit and share them";
+"LocKey.FileSizeLimitFormat" = "File Size Limit: %@ MB";
+"LocKey.LogDemoMultiExportButton" = "Export Logs";
+"LocKey.LogDemoPurgeDescription" = "Delete logs older than specified days";
+"LocKey.LogDemoDaysFormat" = "Delete logs older than %@ days";
+"LocKey.LogDemoPurgeButton" = "Delete Old Logs";
+"LocKey.LogDemoExportingLogs" = "Exporting Logs...";
+"LocKey.LogDemoExportFailedFormat" = "Export failed: %@";
+"LocKey.LogDemoExportSuccess" = "Export success";
+"LocKey.LogDemoExportFailedNoFile" = "Export failed: No file to export";
+"LocKey.LogDemoExportSuccessMultiple" = "Export successful: %@ files";
+"LocKey.LogDemoDeletingLogs" = "Deleting Logs...";
+"LocKey.LogDemoDeleteSuccessTipFormat" = "Successfully deleted logs older than %@ days";
+
+"LocKey.LogDemoTimeRangeFormat" = "Time Range: %@ - %@";
+"LocKey.LogDemoTimeRangeStartFormat" = "Start Time: %@";
+"LocKey.LogDemoTimeRangeEndFormat" = "End Time: %@";
+
+"LocKey.LogDemoDestinationDescription" = "Select log output destination";
+"LocKey.LogDemoCurrentDestination" = "Current Destination: ";
+"LocKey.LogDemoDestinationConsole" = "Console";
+"LocKey.LogDemoDestinationOSLogger" = "OS Logger";
+"LocKey.LogDemoDestinationFile" = "File";
+"LocKey.LogDemoDestinationXLFacility" = "XLFacility";
+"LocKey.LogDemoDestinationChangedToFormat" = "Log destination changed to: %@";
