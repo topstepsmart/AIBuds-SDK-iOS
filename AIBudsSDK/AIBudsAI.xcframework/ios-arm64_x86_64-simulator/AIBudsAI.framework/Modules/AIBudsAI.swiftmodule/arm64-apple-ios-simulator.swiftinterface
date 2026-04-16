@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.2.4 effective-5.10 (swiftlang-6.2.4.1.4 clang-1700.6.4.2)
-// swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature GlobalActorIsolatedTypesUsability -enable-upcoming-feature MemberImportVisibility -enable-upcoming-feature InferIsolatedConformances -enable-upcoming-feature NonisolatedNonsendingByDefault -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name AIBudsAI
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.4
+// swift-compiler-version: Apple Swift version 6.3 effective-5.10 (swiftlang-6.3.0.123.5 clang-2100.0.123.102)
+// swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature GlobalActorIsolatedTypesUsability -enable-upcoming-feature MemberImportVisibility -enable-upcoming-feature InferIsolatedConformances -enable-upcoming-feature NonisolatedNonsendingByDefault -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name AIBudsAI
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3
 import AIBudsAIFoundation
 import AIBudsFoundation
 import AVFoundation
@@ -33,9 +33,7 @@ extension AIBudsAI.AIBudsAISDK {
   case aiServiceNotProperlyInstalled = 1002
   case notSupportedByServiceVendor = 1003
   case authenticationModeNotMatch = 1004
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -45,62 +43,48 @@ extension AIBudsAIFoundation.AIAudioFormat : @retroactive WCDBSwift.ColumnCodabl
   public static var columnType: WCDBSwift.ColumnType {
     get
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(with value: WCDBSwift.Value)
-  #endif
   public func archivedValue() -> WCDBSwift.Value
 }
 extension AIBudsFoundation.AIChatAudioChannel : @retroactive WCDBSwift.ColumnCodable {
   public static var columnType: WCDBSwift.ColumnType {
     get
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(with value: WCDBSwift.Value)
-  #endif
   public func archivedValue() -> WCDBSwift.Value
 }
 extension AIBudsAIFoundation.AIChatEventType : @retroactive WCDBSwift.ColumnCodable {
   public static var columnType: WCDBSwift.ColumnType {
     get
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(with value: WCDBSwift.Value)
-  #endif
   public func archivedValue() -> WCDBSwift.Value
 }
 extension AIBudsAIFoundation.AIServiceVendor : @retroactive WCDBSwift.ColumnCodable {
   public static var columnType: WCDBSwift.ColumnType {
     get
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(with value: WCDBSwift.Value)
-  #endif
   public func archivedValue() -> WCDBSwift.Value
 }
 extension AIBudsFoundation.DeviceProduct : @retroactive WCDBSwift.ColumnCodable {
   public static var columnType: WCDBSwift.ColumnType {
     get
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(with value: WCDBSwift.Value)
-  #endif
   public func archivedValue() -> WCDBSwift.Value
 }
 extension AIBudsFoundation.RecordingScene : @retroactive WCDBSwift.ColumnCodable {
   public static var columnType: WCDBSwift.ColumnType {
     get
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(with value: WCDBSwift.Value)
-  #endif
   public func archivedValue() -> WCDBSwift.Value
 }
 @objc(AIBudsAIAudioRecordingSessionConvertible) public protocol AIAudioRecordingSessionConvertible : ObjectiveC.NSObjectProtocol {
   @objc var serviceVendor: AIBudsAIFoundation.AIServiceVendor { get }
   @objc var sessionStartTime: Foundation.Date { get }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc var sessionEndTime: Foundation.Date? { get }
-  #endif
   @objc optional func appendInt16PCM(_ pcmData: Foundation.Data)
   @objc optional func appendAudioPCMBuffer(_ buffer: AVFAudio.AVAudioPCMBuffer)
 }
@@ -108,12 +92,10 @@ extension AIBudsFoundation.RecordingScene : @retroactive WCDBSwift.ColumnCodable
   @objc var serviceVendor: AIBudsAIFoundation.AIServiceVendor { get }
   @objc var sessionCfg: AIBudsAIFoundation.AIChatSessionConfig { get }
   @objc var sessionStartTime: Foundation.Date { get }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc var sessionEndTime: Foundation.Date? { get }
-  #endif
   @objc optional func appendInt16PCM(_ pcmData: Foundation.Data)
   @objc optional func appendAudioPCMBuffer(_ buffer: AVFAudio.AVAudioPCMBuffer)
-  @objc optional func sendImageForPhotoUnderstanding(_ image: UIKit.UIImage)
+  @objc optional func sendImageForPhotoUnderstanding(_ image: UIKit.UIImage, prompt: Swift.String?)
   @objc optional func sendImage(_ image: UIKit.UIImage)
   @objc optional func sendText(_ text: Swift.String)
 }
@@ -127,89 +109,53 @@ extension AIBudsFoundation.RecordingScene : @retroactive WCDBSwift.ColumnCodable
   @objc var vendor: AIBudsAIFoundation.AIServiceVendor { get }
   @objc var authenticationMode: AIBudsAIFoundation.AIAuthenticationMode { get }
   @objc var isAuthenticated: Swift.Bool { get }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc var aiAuthenticationService: (any AIBudsAI.AIAuthenticationServiceAPI)? { get }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc var aiChatService: (any AIBudsAI.AIChatServiceAPI)? { get }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc var textTranslationService: (any AIBudsAI.AITextTranslationServiceAPI)? { get }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc var simultaneousInterpretationService: (any AIBudsAI.SimultaneousInterpretationServiceAPI)? { get }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc var aiSummaryService: (any AIBudsAI.AISummaryServiceAPI)? { get }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc var aiAudioRecordingService: (any AIBudsAI.AIAudioRecordingServiceAPI)? { get }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc var streamingASRService: (any AIBudsAI.StreamingASRServiceAPI)? { get }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc var ttsService: (any AIBudsAI.TTSServiceAPI)? { get }
-  #endif
 }
 @objc(AIBudsAIAudioRecordingServiceAPI) public protocol AIAudioRecordingServiceAPI : ObjectiveC.NSObjectProtocol {
   @objc var isRecordingInternally: Swift.Bool { get }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc(startAIAudioRecordingWithConfig:onStartSuccess:onStartFailure:onTranscript:onError:onFinish:) func startAIAudioRecording(_ config: AIBudsAIFoundation.AIAudioRecordingSessionConfig, onStartSuccess: ((_ session: any AIBudsAI.AIAudioRecordingSessionConvertible) -> Swift.Void)?, onStartFailure: ((_ error: any Swift.Error) -> Swift.Void)?, onTranscript: ((_ transcriptData: AIBudsAIFoundation.StreamSpeechASRModel) -> Swift.Void)?, onError: ((_ error: Foundation.NSError) -> Swift.Void)?, onFinish: ((_ report: AIBudsAI.AIAudioRecordingReportModel) -> Swift.Void)?)
-  #endif
   @objc(stopAIAudioRecording) func stopAIAudioRecording()
 }
 @objc(AIBudsAIAuthenticationServiceAPI) public protocol AIAuthenticationServiceAPI : ObjectiveC.NSObjectProtocol {
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc(authenticateDevice:completion:) func authenticateDevice(_ deviceInfo: AIBudsAIFoundation.AIDeviceInfoModel, _ completion: ((_ success: Swift.Bool, _ error: Foundation.NSError?) -> Swift.Void)?)
-  #endif
 }
 @objc(AIBudsAIChatServiceAPI) public protocol AIChatServiceAPI : ObjectiveC.NSObjectProtocol {
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc(startAIChatWithConfig:onStartSuccess:onStartFailure:onChatData:onIntent:onVoiceData:onEvent:onError:onFinish:) func startAIChat(_ config: AIBudsAIFoundation.AIChatSessionConfig, onStartSuccess: ((_ session: any AIBudsAI.AIChatSessionConvertible) -> Swift.Void)?, onStartFailure: ((_ error: any Swift.Error) -> Swift.Void)?, onChatData: ((_ chatData: AIBudsAIFoundation.AIChatDataModel) -> Swift.Void)?, onIntent: ((_ intent: AIBudsAIFoundation.AIChatIntentModel) -> Swift.Void)?, onVoiceData: ((_ voiceData: AIBudsAIFoundation.AIChatVoiceDataModel) -> Swift.Void)?, onEvent: ((_ event: AIBudsAI.AIChatEventModel) -> Swift.Void)?, onError: ((_ error: Foundation.NSError) -> Swift.Void)?, onFinish: ((_ report: AIBudsAI.AIChatSessionReportModel) -> Swift.Void)?)
-  #endif
   @objc(stopAIChat) func stopAIChat()
 }
 @objc(AIBudsAISummaryServiceAPI) public protocol AISummaryServiceAPI : ObjectiveC.NSObjectProtocol {
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc(summaryWithText:streamResultHandler:) func summary(withText text: Swift.String, streamResultHandler: ((_ isFinal: Swift.Bool, _ transcript: Swift.String?, _ error: (any Swift.Error)?) -> Swift.Void)?)
-  #endif
   @objc(cancelSummary) func cancelSummary()
 }
 @objc(AIBudsAITextTranslationServiceAPI) public protocol AITextTranslationServiceAPI : ObjectiveC.NSObjectProtocol {
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc(translateText:from:to:streamResultHandler:) func translateText(_ text: Swift.String, from sourceLanguage: Swift.String, to targetLanguage: Swift.String, streamResultHandler: ((_ isFinal: Swift.Bool, _ transcript: Swift.String?, _ error: (any Swift.Error)?) -> Swift.Void)?)
-  #endif
   @objc(cancelTextTranslation) func cancelTextTranslation()
 }
 @objc(AIBudsSimultaneousInterpretationServiceAPI) public protocol SimultaneousInterpretationServiceAPI : ObjectiveC.NSObjectProtocol {
   @objc var isRecordingInternally: Swift.Bool { get }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc(startSimultaneousInterpretationWithConfig:onStartSuccess:onStartFailure:onStopByInterruption:onException:onStreamResultHandler:onFinish:) func startSimultaneousInterpretation(config: AIBudsAIFoundation.SimultaneousInterpretationConfig, onStartSuccess: ((_ session: any AIBudsAI.SimultaneousInterpretationSessionConvertible) -> Swift.Void)?, onStartFailure: ((_ error: Foundation.NSError) -> Swift.Void)?, onStopByInterruption: ((_ error: Foundation.NSError?) -> Swift.Void)?, onException: ((_ error: Foundation.NSError) -> Swift.Void)?, streamResultHandler: ((_ isFinal: Swift.Bool, _ response: AIBudsAIFoundation.SimultaneousInterpretationDataModel?, _ error: (any Swift.Error)?) -> Swift.Void)?, onFinish: ((_ report: AIBudsAI.SimultaneousInterpretationReportModel) -> Swift.Void)?)
-  #endif
   @objc(stopSimultaneousInterpretation) func stopSimultaneousInterpretation()
 }
 @objc(AIBudsStreamingASRServiceAPI) public protocol StreamingASRServiceAPI : ObjectiveC.NSObjectProtocol {
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc(recognizeVoiceData:withConfig:onTranscript:onFailed:onFinish:) func recognizeVoice(_ data: Foundation.Data, config: AIBudsAIFoundation.StreamingASRConfig, onTranscript: ((_ transcriptData: AIBudsAIFoundation.StreamSpeechASRModel) -> Swift.Void)?, onFailed: ((_ error: Foundation.NSError) -> Swift.Void)?, onFinish: (() -> Swift.Void)?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc(recognizeVoiceFile:withConfig:onTranscript:onFailed:onFinish:) func recognizeVoice(withFile filePath: Swift.String, config: AIBudsAIFoundation.StreamingASRConfig, onTranscript: ((_ transcriptData: AIBudsAIFoundation.StreamSpeechASRModel) -> Swift.Void)?, onFailed: ((_ error: Foundation.NSError) -> Swift.Void)?, onFinish: (() -> Swift.Void)?)
-  #endif
 }
 @objc(AIBudsTTSServiceAPI) public protocol TTSServiceAPI : ObjectiveC.NSObjectProtocol {
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc(synthesizeText:config:completion:) func synthesizeText(_ text: Swift.String, config: AIBudsAIFoundation.TTSConfig, completion: ((_ taskId: Swift.String?, _ success: Swift.Bool, _ response: AIBudsAIFoundation.TTSResultModel?, _ error: Foundation.NSError?) -> Swift.Void)?)
-  #endif
 }
 @objc(AIBudsSimultaneousInterpretationSessionConvertible) public protocol SimultaneousInterpretationSessionConvertible : ObjectiveC.NSObjectProtocol {
   @objc var serviceVendor: AIBudsAIFoundation.AIServiceVendor { get }
   @objc var isRecordingInternally: Swift.Bool { get }
   @objc var sessionCfg: AIBudsAIFoundation.SimultaneousInterpretationConfig { get }
   @objc var sessionStartTime: Foundation.Date { get }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc var sessionEndTime: Foundation.Date? { get }
-  #endif
   @objc optional func appendInt16PCM(_ pcmData: Foundation.Data, isFinal: Swift.Bool)
   @objc optional func appendAudioPCMBuffer(_ buffer: AVFAudio.AVAudioPCMBuffer, isFinal: Swift.Bool)
 }
@@ -222,30 +168,22 @@ extension AIBudsFoundation.RecordingScene : @retroactive WCDBSwift.ColumnCodable
   @objc final public var isStoppedByInterruption: Swift.Bool
   @objc final public var rawAudioFile: Swift.String?
   @objc final public var rawAudioFormat: AIBudsAIFoundation.AIAudioFormat
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public var rawAudioFilePath: Swift.String? {
     @objc get
   }
-  #endif
   @objc final public var convertedAudioFile: Swift.String?
   @objc final public var convertedAudioFormat: AIBudsAIFoundation.AIAudioFormat
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public var convertedAudioFilePath: Swift.String? {
     @objc get
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public var device: AIBudsAIFoundation.AIDeviceInfoModel? {
     @objc get
     @objc set
   }
-  #endif
   @objc final public var sessionDuration: Foundation.TimeInterval {
     @objc get
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(sessionStartTime: Foundation.Date = Date(), serviceVendor: AIBudsAIFoundation.AIServiceVendor = .starBurst, recordingScene: AIBudsFoundation.RecordingScene = .onSite, languageForSpeechInput: Swift.String? = nil)
-  #endif
   public enum CodingKeys : Swift.String, WCDBSwift.CodingTableKey {
     public typealias Root = AIBudsAI.AIAudioRecordingReportModel
     public static let objectRelationalMapping: WCDBSwift.TableBinding<AIBudsAI.AIAudioRecordingReportModel.CodingKeys>
@@ -260,21 +198,13 @@ extension AIBudsFoundation.RecordingScene : @retroactive WCDBSwift.ColumnCodable
     case convertedAudioFormat
     case isStoppedByInterruption
     case deviceInfoData
-    #if compiler(>=5.3) && $NonescapableTypes
     public init?(rawValue: Swift.String)
-    #endif
-    #if compiler(>=5.3) && $NonescapableTypes
     public init?(stringValue: Swift.String)
-    #endif
-    #if compiler(>=5.3) && $NonescapableTypes
     public init?(intValue: Swift.Int)
-    #endif
     public typealias RawValue = Swift.String
-    #if compiler(>=5.3) && $NonescapableTypes
     public var intValue: Swift.Int? {
       get
     }
-    #endif
     public var rawValue: Swift.String {
       get
     }
@@ -293,14 +223,10 @@ extension AIBudsFoundation.RecordingScene : @retroactive WCDBSwift.ColumnCodable
   @objc final public let timeSinceSessionStart: Foundation.TimeInterval
   @objc final public let evidence: Swift.String
   @objc final public let details: Swift.String?
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public var error: Foundation.NSError? {
     @objc get
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(eventType: AIBudsAIFoundation.AIChatEventType, timestamp: Foundation.Date, timeSinceSessionStart: Foundation.TimeInterval, evidence: Swift.String, details: Swift.String? = nil, error: Foundation.NSError? = nil)
-  #endif
   @objc override final public var description: Swift.String {
     @objc get
   }
@@ -324,17 +250,13 @@ extension AIBudsFoundation.RecordingScene : @retroactive WCDBSwift.ColumnCodable
   @objc final public var rawAudioFormat: AIBudsAIFoundation.AIAudioFormat
   @objc final public var segmentAudioFilesFormat: AIBudsAIFoundation.AIAudioFormat
   @objc final public var segmentAudioFiles: [Swift.String]
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public var device: AIBudsAIFoundation.AIDeviceInfoModel? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public var rawAudioFilePath: Swift.String? {
     @objc get
   }
-  #endif
   @objc final public var segmentAudioFilePaths: [Swift.String] {
     @objc get
   }
@@ -360,21 +282,13 @@ extension AIBudsFoundation.RecordingScene : @retroactive WCDBSwift.ColumnCodable
     case rawAudioFormat
     case segmentAudioFiles
     case deviceInfoData
-    #if compiler(>=5.3) && $NonescapableTypes
     public init?(rawValue: Swift.String)
-    #endif
-    #if compiler(>=5.3) && $NonescapableTypes
     public init?(stringValue: Swift.String)
-    #endif
-    #if compiler(>=5.3) && $NonescapableTypes
     public init?(intValue: Swift.Int)
-    #endif
     public typealias RawValue = Swift.String
-    #if compiler(>=5.3) && $NonescapableTypes
     public var intValue: Swift.Int? {
       get
     }
-    #endif
     public var rawValue: Swift.String {
       get
     }
@@ -403,20 +317,16 @@ extension AIBudsFoundation.RecordingScene : @retroactive WCDBSwift.ColumnCodable
   @objc final public var rawAudioFile: Swift.String?
   @objc final public var rawAudioFormat: AIBudsAIFoundation.AIAudioFormat
   @objc final public var isStoppedByInterruption: Swift.Bool
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public var rawAudioFilePath: Swift.String? {
     @objc get
   }
-  #endif
   @objc final public var sessionDuration: Foundation.TimeInterval {
     @objc get
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public var device: AIBudsAIFoundation.AIDeviceInfoModel? {
     @objc get
     @objc set
   }
-  #endif
   @objc public init(sessionStartTime: Foundation.Date = Date(), serviceVendor: AIBudsAIFoundation.AIServiceVendor = .starBurst, sourceLanguage: Swift.String, targetLanguage: Swift.String, enableTTS: Swift.Bool, ttsFormat: Swift.String, enableVoicePlayback: Swift.Bool)
   public enum CodingKeys : Swift.String, WCDBSwift.CodingTableKey {
     public typealias Root = AIBudsAI.SimultaneousInterpretationReportModel
@@ -437,21 +347,13 @@ extension AIBudsFoundation.RecordingScene : @retroactive WCDBSwift.ColumnCodable
     case rawAudioFormat
     case isStoppedByInterruption
     case deviceInfoData
-    #if compiler(>=5.3) && $NonescapableTypes
     public init?(rawValue: Swift.String)
-    #endif
-    #if compiler(>=5.3) && $NonescapableTypes
     public init?(stringValue: Swift.String)
-    #endif
-    #if compiler(>=5.3) && $NonescapableTypes
     public init?(intValue: Swift.Int)
-    #endif
     public typealias RawValue = Swift.String
-    #if compiler(>=5.3) && $NonescapableTypes
     public var intValue: Swift.Int? {
       get
     }
-    #endif
     public var rawValue: Swift.String {
       get
     }
@@ -484,19 +386,15 @@ extension AIBudsFoundation.RecordingScene : @retroactive WCDBSwift.ColumnCodable
   @objc public static var rootPath: Swift.String {
     @objc get
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static var deviceInfo: AIBudsAIFoundation.AIDeviceInfoModel? {
     @objc get
   }
-  #endif
   @objc public static var aiServiceVendor: AIBudsAIFoundation.AIServiceVendor {
     @objc get
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static var locationContext: AIBudsAI.LocationContext? {
     @objc get
   }
-  #endif
   @objc public static func setDeviceInfo(_ deviceInfo: AIBudsAIFoundation.AIDeviceInfoModel)
   @objc public static func setAIServiceVendor(_ aiServiceVendor: AIBudsAIFoundation.AIServiceVendor)
   @objc public static func setCurrentLocation(_ location: _LocationEssentials.CLLocation)
@@ -505,38 +403,20 @@ extension AIBudsFoundation.RecordingScene : @retroactive WCDBSwift.ColumnCodable
   @objc(disableBackgroundRecordingForSCODevice) public static func disableBackgroundRecordingForSCODevice()
   @objc(authenticationModeForVendor:) public static func authenticationMode(for vendor: AIBudsAIFoundation.AIServiceVendor) -> AIBudsAIFoundation.AIAuthenticationMode
   @objc(isAuthenticatedForVendor:) public static func isAuthenticated(for vendor: AIBudsAIFoundation.AIServiceVendor) -> Swift.Bool
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc(authenticateDevice:completion:) public static func authenticateDevice(_ deviceInfo: AIBudsAIFoundation.AIDeviceInfoModel, _ completion: ((_ success: Swift.Bool, _ error: Foundation.NSError?) -> Swift.Void)? = nil)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc(startAIChatWithConfig:onStartSuccess:onStartFailure:onChatData:onIntent:onVoiceData:onEvent:onError:onFinish:) public static func startAIChat(_ config: AIBudsAIFoundation.AIChatSessionConfig = .default, onStartSuccess: ((_ session: any AIBudsAI.AIChatSessionConvertible) -> Swift.Void)? = nil, onStartFailure: ((_ error: any Swift.Error) -> Swift.Void)? = nil, onChatData: ((_ chatData: AIBudsAIFoundation.AIChatDataModel) -> Swift.Void)? = nil, onIntent: ((_ intent: AIBudsAIFoundation.AIChatIntentModel) -> Swift.Void)? = nil, onVoiceData: ((_ voiceData: AIBudsAIFoundation.AIChatVoiceDataModel) -> Swift.Void)? = nil, onEvent: ((_ event: AIBudsAI.AIChatEventModel) -> Swift.Void)? = nil, onError: ((_ error: Foundation.NSError) -> Swift.Void)? = nil, onFinish: ((_ report: AIBudsAI.AIChatSessionReportModel) -> Swift.Void)? = nil)
-  #endif
   @objc(stopAIChat) public static func stopAIChat()
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc(translateText:from:to:streamResultHandler:) public static func translateText(_ text: Swift.String, from sourceLanguage: Swift.String, to targetLanguage: Swift.String, streamResultHandler: ((_ isFinal: Swift.Bool, _ transcript: Swift.String?, _ error: (any Swift.Error)?) -> Swift.Void)? = nil)
-  #endif
   @objc(cancelTextTranslation) public static func cancelTextTranslation()
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc(startSimultaneousInterpretationWithConfig:onStartSuccess:onStartFailure:onStopByInterruption:onException:streamResultHandler:onFinish:) public static func startSimultaneousInterpretation(_ config: AIBudsAIFoundation.SimultaneousInterpretationConfig = .default, onStartSuccess: ((_ session: any AIBudsAI.SimultaneousInterpretationSessionConvertible) -> Swift.Void)? = nil, onStartFailure: ((_ error: Foundation.NSError) -> Swift.Void)? = nil, onStopByInterruption: ((_ error: Foundation.NSError?) -> Swift.Void)? = nil, onException: ((_ error: Foundation.NSError) -> Swift.Void)? = nil, streamResultHandler: ((_ isFinal: Swift.Bool, _ response: AIBudsAIFoundation.SimultaneousInterpretationDataModel?, _ error: (any Swift.Error)?) -> Swift.Void)? = nil, onFinish: ((_ report: AIBudsAI.SimultaneousInterpretationReportModel?) -> Swift.Void)? = nil)
-  #endif
   @objc(stopSimultaneousInterpretation) public static func stopSimultaneousInterpretation()
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc(summaryWithText:streamResultHandler:) public static func summary(withText text: Swift.String, streamResultHandler: ((_ isFinal: Swift.Bool, _ transcript: Swift.String?, _ error: (any Swift.Error)?) -> Swift.Void)? = nil)
-  #endif
   @objc(cancelSummary) public static func cancelSummary()
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc(startAIAudioRecordingWithConfig:onStartSuccess:onStartFailure:onTranscript:onError:onFinish:) public static func startAIAudioRecording(_ config: AIBudsAIFoundation.AIAudioRecordingSessionConfig = .default, onStartSuccess: ((_ session: any AIBudsAI.AIAudioRecordingSessionConvertible) -> Swift.Void)? = nil, onStartFailure: ((_ error: any Swift.Error) -> Swift.Void)? = nil, onTranscript: ((_ transcriptData: AIBudsAIFoundation.StreamSpeechASRModel) -> Swift.Void)? = nil, onError: ((_ error: Foundation.NSError) -> Swift.Void)? = nil, onFinish: ((_ report: AIBudsAI.AIAudioRecordingReportModel) -> Swift.Void)? = nil)
-  #endif
   @objc(stopAIAudioRecording) public static func stopAIAudioRecording()
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc(recognizeVoiceData:withConfig:onTranscript:onFailed:onFinish:) public static func recognizeVoice(_ data: Foundation.Data, config: AIBudsAIFoundation.StreamingASRConfig = .default, onTranscript: ((_ transcriptData: AIBudsAIFoundation.StreamSpeechASRModel) -> Swift.Void)? = nil, onFailed: ((_ error: Foundation.NSError) -> Swift.Void)? = nil, onFinish: (() -> Swift.Void)? = nil)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc(recognizeVoiceFile:withConfig:onTranscript:onFailed:onFinish:) public static func recognizeVoice(withFile filePath: Swift.String, config: AIBudsAIFoundation.StreamingASRConfig = .default, onTranscript: ((_ transcriptData: AIBudsAIFoundation.StreamSpeechASRModel) -> Swift.Void)? = nil, onFailed: ((_ error: Foundation.NSError) -> Swift.Void)? = nil, onFinish: (() -> Swift.Void)? = nil)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc(synthesizeText:config:completion:) public static func synthesizeText(_ text: Swift.String, config: AIBudsAIFoundation.TTSConfig = .default, completion: ((_ taskId: Swift.String?, _ success: Swift.Bool, _ response: AIBudsAIFoundation.TTSResultModel?, _ error: Foundation.NSError?) -> Swift.Void)? = nil)
-  #endif
   @objc deinit
 }
 extension AIBudsAI.SdkErrorCode : Swift.Equatable {}

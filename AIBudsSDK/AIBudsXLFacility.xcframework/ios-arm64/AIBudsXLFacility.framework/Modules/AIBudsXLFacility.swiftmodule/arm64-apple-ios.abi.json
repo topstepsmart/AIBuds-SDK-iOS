@@ -656,8 +656,8 @@
                 "static": true,
                 "implicit": true,
                 "declAttributes": [
-                  "ObjC",
-                  "Final"
+                  "Final",
+                  "ObjC"
                 ],
                 "isFromExtension": true,
                 "accessorKind": "get"
@@ -712,8 +712,8 @@
                 "static": true,
                 "implicit": true,
                 "declAttributes": [
-                  "ObjC",
-                  "Final"
+                  "Final",
+                  "ObjC"
                 ],
                 "isFromExtension": true,
                 "accessorKind": "get"
@@ -748,38 +748,10 @@
           },
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
           },
           {
             "kind": "Conformance",
@@ -790,10 +762,24 @@
           },
           {
             "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
           },
           {
             "kind": "Conformance",
@@ -804,10 +790,24 @@
           },
           {
             "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
           }
         ]
       },
@@ -1088,17 +1088,17 @@
           },
           {
             "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
             "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -1160,7 +1160,10 @@
         "name": "zipzap",
         "printedName": "zipzap",
         "declKind": "Import",
-        "moduleName": "AIBudsXLFacility"
+        "moduleName": "AIBudsXLFacility",
+        "declAttributes": [
+          "AccessControl"
+        ]
       }
     ],
     "json_format_version": 8
@@ -1281,98 +1284,98 @@
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsXLFacility\/XLFacilityDBLogger.swift",
       "kind": "StringLiteral",
-      "offset": 415,
+      "offset": 424,
       "length": 43,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsXLFacility\/XLFacilityDBLogger.swift",
       "kind": "StringLiteral",
-      "offset": 440,
+      "offset": 449,
       "length": 1,
       "value": "\".log_export.queue\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsXLFacility\/XLFacilityDBLogger.swift",
       "kind": "StringLiteral",
-      "offset": 590,
+      "offset": 599,
       "length": 42,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsXLFacility\/XLFacilityDBLogger.swift",
       "kind": "StringLiteral",
-      "offset": 615,
+      "offset": 624,
       "length": 1,
       "value": "\".log_purge.queue\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsXLFacility\/XLFacilityDBLogger.swift",
       "kind": "BooleanLiteral",
-      "offset": 856,
+      "offset": 865,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsXLFacility\/XLFacilityDBLogger.swift",
       "kind": "StringLiteral",
-      "offset": 871,
+      "offset": 880,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsXLFacility\/XLFacilityDBLogger.swift",
       "kind": "StringLiteral",
-      "offset": 954,
+      "offset": 963,
       "length": 9,
       "value": "\".aibuds\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsXLFacility\/XLFacilityDBLogger.swift",
       "kind": "BooleanLiteral",
-      "offset": 1158,
+      "offset": 1167,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsXLFacility\/XLFacilityDBLogger.swift",
       "kind": "StringLiteral",
-      "offset": 1247,
+      "offset": 1256,
       "length": 70,
       "value": "\"Failed to create directory at path \""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsXLFacility\/XLFacilityDBLogger.swift",
       "kind": "StringLiteral",
-      "offset": 1299,
+      "offset": 1308,
       "length": 1,
       "value": "\", error: \""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsXLFacility\/XLFacilityDBLogger.swift",
       "kind": "StringLiteral",
-      "offset": 1316,
+      "offset": 1325,
       "length": 13,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsXLFacility\/XLFacilityDBLogger.swift",
       "kind": "StringLiteral",
-      "offset": 1328,
+      "offset": 1337,
       "length": 19,
       "value": "\"AIBuds.XLFacility\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsXLFacility\/XLFacilityDBLogger.swift",
       "kind": "StringLiteral",
-      "offset": 1464,
+      "offset": 1473,
       "length": 28,
       "value": "\".aibuds\/\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsXLFacility\/XLFacilityDBLogger.swift",
       "kind": "StringLiteral",
-      "offset": 1484,
+      "offset": 1493,
       "length": 1,
       "value": "\"-log.db\""
     }

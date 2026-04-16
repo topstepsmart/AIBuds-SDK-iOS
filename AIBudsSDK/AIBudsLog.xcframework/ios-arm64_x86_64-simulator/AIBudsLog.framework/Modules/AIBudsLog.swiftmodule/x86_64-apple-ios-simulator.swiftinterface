@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.2.4 effective-5.10 (swiftlang-6.2.4.1.4 clang-1700.6.4.2)
-// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature GlobalActorIsolatedTypesUsability -enable-upcoming-feature MemberImportVisibility -enable-upcoming-feature InferIsolatedConformances -enable-upcoming-feature NonisolatedNonsendingByDefault -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name AIBudsLog
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.4
+// swift-compiler-version: Apple Swift version 6.3 effective-5.10 (swiftlang-6.3.0.123.5 clang-2100.0.123.102)
+// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature GlobalActorIsolatedTypesUsability -enable-upcoming-feature MemberImportVisibility -enable-upcoming-feature InferIsolatedConformances -enable-upcoming-feature NonisolatedNonsendingByDefault -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name AIBudsLog
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3
 @_exported import AIBudsLog
 import Dispatch
 import Foundation
@@ -12,21 +12,12 @@ import _StringProcessing
 import _SwiftConcurrencyShims
 import os.log
 import os
-import zipzap
 import zlib
 @objc extension Foundation.FileManager {
-  #if compiler(>=5.3) && $NonescapableTypes
   @nonobjc public func extractTar(at tarURL: Foundation.URL, to dirURL: Foundation.URL, options: AIBudsLog.KBTarUnarchiver.Options = [.restoreFileAttributes], progress: Foundation.Progress? = nil) throws
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @nonobjc public func createTar(at tarURL: Foundation.URL, from dirURL: Foundation.URL, options: AIBudsLog.KBTarArchiver.Options = [], progress: Foundation.Progress? = nil) throws
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc(extractTarAtURL:toDirectoryAtURL:restoreAttributes:progressBlock:error:) dynamic public func extractTar(at tarURL: Foundation.URL, to dirURL: Foundation.URL, restoreAttributes: Swift.Bool, progress: Foundation.Progress? = nil) throws
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc(createTarAtURL:fromDirectoryAtURL:convertAliasFiles:progressBlock:error:) dynamic public func createTar(at tarURL: Foundation.URL, from dirURL: Foundation.URL, convertAliasFiles: Swift.Bool, progress: Foundation.Progress? = nil) throws
-  #endif
 }
 public struct KBFileAttributes {
   public let fileSize: Swift.Int
@@ -42,24 +33,18 @@ public struct KBFileAttributes {
     case directory
     case symbolicLink
     case alias
-    #if compiler(>=5.3) && $NonescapableTypes
     public init?(rawValue: Swift.Int)
-    #endif
     public typealias RawValue = Swift.Int
     public var rawValue: Swift.Int {
       get
     }
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   public var modificationDate: Foundation.Date? {
     get
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public var creationDate: Foundation.Date? {
     get
   }
-  #endif
 }
 public class KBTarArchiver {
   public struct Options : Swift.OptionSet {
@@ -75,9 +60,7 @@ public class KBTarArchiver {
   }
   public var maxBlockLoadInMemory: Swift.Int
   public init(directoryURL: Foundation.URL, options: AIBudsLog.KBTarArchiver.Options = [])
-  #if compiler(>=5.3) && $NonescapableTypes
   public func archive(to tarURL: Foundation.URL, progressBody: ((Swift.Double, Swift.Int64) -> Swift.Void)? = nil) throws
-  #endif
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class KBTarEntry {
@@ -85,9 +68,7 @@ public class KBTarArchiver {
     case file
     case directory
     case symbolicLink
-    #if compiler(>=5.3) && $NonescapableTypes
     public init?(rawValue: Swift.Int)
-    #endif
     public typealias RawValue = Swift.Int
     public var rawValue: Swift.Int {
       get
@@ -103,23 +84,15 @@ public class KBTarArchiver {
   public var tarURL: Foundation.URL?
   public var symbolicLinkDestinationURL: Foundation.URL?
   public var children: [AIBudsLog.KBTarEntry]
-  #if compiler(>=5.3) && $NonescapableTypes
   public func child(forName name: Swift.String) -> AIBudsLog.KBTarEntry?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public func descendant(atSubpath subpath: Swift.String) -> AIBudsLog.KBTarEntry?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public subscript(subpath: Swift.String) -> AIBudsLog.KBTarEntry? {
     get
   }
-  #endif
   public var descendants: [AIBudsLog.KBTarEntry] {
     get
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   public func regularFileContents() -> Foundation.Data?
-  #endif
   public func write(to url: Foundation.URL, atomically: Swift.Bool = false) throws
   @objc deinit
 }
@@ -132,11 +105,9 @@ public enum KBTarError : Foundation.LocalizedError {
   case invalidNumber
   case couldNotCreateExtendedHeader
   case couldNotCreateSymbolicLink
-  #if compiler(>=5.3) && $NonescapableTypes
   public var errorDescription: Swift.String? {
     get
   }
-  #endif
   public static func == (a: AIBudsLog.KBTarError, b: AIBudsLog.KBTarError) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
@@ -158,19 +129,13 @@ public class KBTarUnarchiver {
   public var progressCount: Swift.Int64 {
     get
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   public func extract(to dirURL: Foundation.URL, progressBody: ((Swift.Double, Swift.Int64) -> Swift.Void)? = nil) throws
-  #endif
   public var rootEntries: [AIBudsLog.KBTarEntry]?
-  #if compiler(>=5.3) && $NonescapableTypes
   public func entry(atSubpath findSubpath: Swift.String, useLazyLoading: Swift.Bool = false) throws -> AIBudsLog.KBTarEntry?
-  #endif
   public func loadAllEntries(lazily: Swift.Bool = true) throws
-  #if compiler(>=5.3) && $NonescapableTypes
   public subscript(subpath: Swift.String) -> AIBudsLog.KBTarEntry? {
     get
   }
-  #endif
   @objc deinit
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class AIBudsLogSDK : ObjectiveC.NSObject {
@@ -234,39 +199,17 @@ extension Foundation.Data {
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(AIBudsDefaultLogger) final public class DefaultLogger : ObjectiveC.NSObject, AIBudsLog.LogService {
   @objc public static let shared: AIBudsLog.DefaultLogger
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc(logMessage:level:subsystem:category:) final public func log(_ message: Swift.String, level: AIBudsLog.LogLevel, subsystem: Swift.String? = nil, category: Swift.String? = nil)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc(verbose:subsystem:category:) final public func verbose(_ message: Swift.String, subsystem: Swift.String? = nil, category: Swift.String? = nil)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc(debug:subsystem:category:) final public func debug(_ message: Swift.String, subsystem: Swift.String? = nil, category: Swift.String? = nil)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc(info:subsystem:category:) final public func info(_ message: Swift.String, subsystem: Swift.String? = nil, category: Swift.String? = nil)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc(warn:subsystem:category:) final public func warn(_ message: Swift.String, subsystem: Swift.String? = nil, category: Swift.String? = nil)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc(error:subsystem:category:) final public func error(_ message: Swift.String, subsystem: Swift.String? = nil, category: Swift.String? = nil)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc(fatal:subsystem:category:) final public func fatal(_ message: Swift.String, subsystem: Swift.String? = nil, category: Swift.String? = nil)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc(exportLogsWithCompletion:) final public func exportLogs(_ completion: ((_ filePath: Swift.String?, _ logStartFrom: Foundation.Date?, _ logEndAt: Foundation.Date?, _ error: Foundation.NSError?) -> Swift.Void)? = nil)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc(exportLogsWithMaxFileSize:completion:) final public func exportLogs(_ maxFileSize: Swift.UInt64, completion: ((_ filePaths: [Swift.String]?, _ logStartFrom: Foundation.Date?, _ logEndAt: Foundation.Date?, _ error: Foundation.NSError?) -> Swift.Void)? = nil)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc(purgeOldLogsWithMaxAge:completion:) final public func purgeOldLogsWithMaxAge(_ maxAge: Swift.Int, completion: ((_ error: Foundation.NSError?) -> Swift.Void)? = nil)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc(purgeOldLogsBefore:completion:) final public func purgeOldLogsBefore(_ timestamp: Foundation.Date, completion: ((_ error: Foundation.NSError?) -> Swift.Void)? = nil)
-  #endif
   @objc deinit
 }
 extension AIBudsLog.AIBudsLogSDK {
@@ -282,9 +225,7 @@ extension AIBudsLog.AIBudsLogSDK {
   case logRootUnavailable = 1004
   case failedToCalculateCutOffTime = 1005
   case failedToEnumerateLogDirectories = 1006
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -313,9 +254,7 @@ extension AIBudsLog.AIBudsLogSDK {
   case oslogger = 1
   case file = 2
   case xlfacility = 3
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -337,9 +276,7 @@ extension AIBudsLog.AIBudsLogSDK {
   public var osLogType: os.OSLogType {
     get
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -351,58 +288,26 @@ extension AIBudsLog.LogLevel : Swift.CustomStringConvertible {
   }
 }
 @objc(AIBudsLogService) public protocol LogService : ObjectiveC.NSObjectProtocol {
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc(logMessage:level:subsystem:category:) func log(_ message: Swift.String, level: AIBudsLog.LogLevel, subsystem: Swift.String?, category: Swift.String?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc(verbose:subsystem:category:) func verbose(_ message: Swift.String, subsystem: Swift.String?, category: Swift.String?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc(debug:subsystem:category:) func debug(_ message: Swift.String, subsystem: Swift.String?, category: Swift.String?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc(info:subsystem:category:) func info(_ message: Swift.String, subsystem: Swift.String?, category: Swift.String?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc(warn:subsystem:category:) func warn(_ message: Swift.String, subsystem: Swift.String?, category: Swift.String?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc(error:subsystem:category:) func error(_ message: Swift.String, subsystem: Swift.String?, category: Swift.String?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc(fatal:subsystem:category:) func fatal(_ message: Swift.String, subsystem: Swift.String?, category: Swift.String?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc(exportLogsWithCompletion:) func exportLogs(_ completion: ((_ filePath: Swift.String?, _ logStartFrom: Foundation.Date?, _ logEndAt: Foundation.Date?, _ error: Foundation.NSError?) -> Swift.Void)?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc(exportLogsWithMaxFileSize:completion:) func exportLogs(_ maxFileSize: Swift.UInt64, completion: ((_ filePaths: [Swift.String]?, _ logStartFrom: Foundation.Date?, _ logEndAt: Foundation.Date?, _ error: Foundation.NSError?) -> Swift.Void)?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc(purgeOldLogsWithMaxAge:completion:) func purgeOldLogsWithMaxAge(_ maxAge: Swift.Int, completion: ((_ error: Foundation.NSError?) -> Swift.Void)?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc(purgeOldLogsBefore:completion:) func purgeOldLogsBefore(_ timestamp: Foundation.Date, completion: ((_ error: Foundation.NSError?) -> Swift.Void)?)
-  #endif
 }
 @objc(AIBudsXLFacilityPlugin) public protocol XLFacilityPlugin : ObjectiveC.NSObjectProtocol {
   @objc var isLoaded: Swift.Bool { get }
   @objc func load()
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc(exportLogsWithCompletion:) func exportLogs(_ completion: ((_ filePath: Swift.String?, _ logStartFrom: Foundation.Date?, _ logEndAt: Foundation.Date?, _ error: Foundation.NSError?) -> Swift.Void)?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc(exportLogsWithMaxFileSize:completion:) func exportLogs(_ maxFileSize: Swift.UInt64, completion: ((_ filePaths: [Swift.String]?, _ logStartFrom: Foundation.Date?, _ logEndAt: Foundation.Date?, _ error: Foundation.NSError?) -> Swift.Void)?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc(purgeOldLogsWithMaxAge:completion:) func purgeOldLogsWithMaxAge(_ maxAge: Swift.Int, completion: ((_ error: Foundation.NSError?) -> Swift.Void)?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc(purgeOldLogsBefore:completion:) func purgeOldLogsBefore(_ timestamp: Foundation.Date, completion: ((_ error: Foundation.NSError?) -> Swift.Void)?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc(logMessage:level:subsystem:category:) func log(_ message: Swift.String, level: AIBudsLog.LogLevel, subsystem: Swift.String?, category: Swift.String?)
-  #endif
 }
 extension AIBudsLog.KBFileAttributes.FileType : Swift.Equatable {}
 extension AIBudsLog.KBFileAttributes.FileType : Swift.Hashable {}
