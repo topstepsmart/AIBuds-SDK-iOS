@@ -15234,8 +15234,8 @@
           },
           {
             "kind": "Function",
-            "name": "`init`",
-            "printedName": "`init`(_:)",
+            "name": "initialize",
+            "printedName": "initialize(_:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -15260,7 +15260,7 @@
             ],
             "declKind": "Func",
             "usr": "c:@M@AIBudsAI@objc(cs)AIBudsAISDK(cm)initWithAISDKs:",
-            "mangledName": "$s8AIBudsAI0A5AISDKC4initySbSayAA12AIConnectSDK_pGFZ",
+            "mangledName": "$s8AIBudsAI0A5AISDKC10initializeySbSayAA12AIConnectSDK_pGFZ",
             "moduleName": "AIBudsAI",
             "static": true,
             "objc_name": "initWithAISDKs:",

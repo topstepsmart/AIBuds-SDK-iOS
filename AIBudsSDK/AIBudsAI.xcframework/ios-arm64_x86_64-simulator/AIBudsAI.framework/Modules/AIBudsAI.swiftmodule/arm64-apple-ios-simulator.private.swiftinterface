@@ -398,7 +398,7 @@ extension AIBudsFoundation.RecordingScene : @retroactive WCDBSwift.ColumnCodable
   @objc public static func setDeviceInfo(_ deviceInfo: AIBudsAIFoundation.AIDeviceInfoModel)
   @objc public static func setAIServiceVendor(_ aiServiceVendor: AIBudsAIFoundation.AIServiceVendor)
   @objc public static func setCurrentLocation(_ location: _LocationEssentials.CLLocation)
-  @objc(initWithAISDKs:) public static func `init`(_ aiSDKs: [any AIBudsAI.AIConnectSDK]) -> Swift.Bool
+  @objc(initWithAISDKs:) public static func initialize(_ aiSDKs: [any AIBudsAI.AIConnectSDK]) -> Swift.Bool
   @objc(enableBackgroundRecordingForSCODevice:macAddress:) public static func enableBackgroundRecording(forSCODevice bluetoothName: Swift.String, macAddress: Swift.String)
   @objc(disableBackgroundRecordingForSCODevice) public static func disableBackgroundRecordingForSCODevice()
   @objc(authenticationModeForVendor:) public static func authenticationMode(for vendor: AIBudsAIFoundation.AIServiceVendor) -> AIBudsAIFoundation.AIAuthenticationMode

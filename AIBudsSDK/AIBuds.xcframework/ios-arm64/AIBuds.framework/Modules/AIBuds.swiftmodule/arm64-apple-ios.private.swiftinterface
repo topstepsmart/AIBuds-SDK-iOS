@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.2.4 effective-5.10 (swiftlang-6.2.4.1.4 clang-1700.6.4.2)
-// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature GlobalActorIsolatedTypesUsability -enable-upcoming-feature MemberImportVisibility -enable-upcoming-feature InferIsolatedConformances -enable-upcoming-feature NonisolatedNonsendingByDefault -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name AIBuds
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.4
+// swift-compiler-version: Apple Swift version 6.3 effective-5.10 (swiftlang-6.3.0.123.5 clang-2100.0.123.102)
+// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature GlobalActorIsolatedTypesUsability -enable-upcoming-feature MemberImportVisibility -enable-upcoming-feature InferIsolatedConformances -enable-upcoming-feature NonisolatedNonsendingByDefault -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name AIBuds
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3
 @_exported import AIBuds
 import AIBudsFoundation
 import AIBudsLog
@@ -50,9 +50,7 @@ extension AIBuds.AIBudsSDK {
   case scanningStartFailedDueToBluetoothUnsupported = 1003
   case scanningStartFailedDueToScanningAlreadyRunning = 1004
   case scanningCanceledDueToBluetoothNotPoweredOn = 1005
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -87,24 +85,16 @@ extension Foundation.NSNotification.Name {
   @objc var providerName: Swift.String { get }
   @objc var protocolKind: AIBudsFoundation.BleProtocolKind { get }
   @objc var classForDeviceModel: any AIBuds.DeviceConvertible.Type { get }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc func setSDKDelegate(_ delegate: (any AIBuds.SDKDelegate)?)
-  #endif
   @objc func isKnownDevice(_ peripheral: CoreBluetooth.CBPeripheral, advertisementData: [Swift.String : Any], rssi: Foundation.NSNumber) -> Swift.Bool
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc func create(central: CoreBluetooth.CBCentralManager, peripheral: CoreBluetooth.CBPeripheral, advertisementData: [Swift.String : Any]?, rssi: Foundation.NSNumber?) -> (any AIBuds.FoundDeviceConvertible)?
-  #endif
   @objc func knownDevicesConnectedToiOS() -> [CoreBluetooth.CBPeripheral]
 }
 @objc(AIBudsDeviceDelegate) public protocol DeviceDelegate : ObjectiveC.NSObjectProtocol {
   @objc optional func didStartConnectingDevice(_ device: any AIBuds.DeviceConvertible)
   @objc optional func didConnectedToDevice(_ device: any AIBuds.DeviceConvertible)
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc optional func didFailToConnectDevice(_ device: (any AIBuds.DeviceConvertible)?, error: Foundation.NSError?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc optional func device(_ device: (any AIBuds.DeviceConvertible)?, didDisconnectWithError error: Foundation.NSError?)
-  #endif
   @objc optional func deviceDidReady(_ device: any AIBuds.DeviceConvertible)
   @objc optional func device(_ device: any AIBuds.DeviceConvertible, didClassicBtConnectionStatusChanged isConnected: Swift.Bool)
   @objc optional func device(_ device: any AIBuds.DeviceConvertible, didBatteryStatusChanged batteryStatus: AIBudsFoundation.BatteryStatusModel)
@@ -134,9 +124,7 @@ extension Foundation.NSNotification.Name {
   @objc optional func device(_ device: any AIBuds.DeviceConvertible, didReceiveHotspotAddress hotspotAddress: Swift.String)
   @objc optional func device(_ device: any AIBuds.DeviceConvertible, didReceiveOpusAudioData opusAudioData: Foundation.Data, decodedPCMAudioData: Foundation.Data, purpose: AIBudsFoundation.OpusAudioDataPurpose)
   @objc optional func device(_ device: any AIBuds.DeviceConvertible, didReceiveAiChatSessionEvent event: AIBudsFoundation.AIChatSessionEvent)
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc optional func device(_ device: any AIBuds.DeviceConvertible, didReceivePhotoDataForSceneRecognition photoData: Foundation.Data?, enhancedPhotoData: Foundation.Data?, error: Foundation.NSError?)
-  #endif
   @objc optional func device(_ device: any AIBuds.DeviceConvertible, didFirmwareVersionChanged firmwareVersion: Swift.String)
   @objc optional func device(_ device: any AIBuds.DeviceConvertible, didCoProcessorFirmwareVersionChanged firmwareVersion: Swift.String)
   @objc optional func device(_ device: any AIBuds.DeviceConvertible, didWorkStateChanged workState: AIBudsFoundation.WorkState)
@@ -160,26 +148,16 @@ extension Foundation.NSNotification.Name {
   @objc optional func device(_ device: any AIBuds.DeviceConvertible, didAiChatAudioChannelChanged aiChatAudioChannel: AIBudsFoundation.AIChatAudioChannel)
   @objc optional func device(_ device: any AIBuds.DeviceConvertible, didTimeFormatChanged timeFormat: AIBudsFoundation.TimeFormat)
   @objc optional func device(_ device: any AIBuds.DeviceConvertible, didVideoRecordDirectionInfoChanged videoRecordDirectionInfo: AIBudsFoundation.VideoRecordDirectionInfoModel)
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc optional func device(_ device: any AIBuds.DeviceConvertible, didReceiveStarBurstAuthResult isSuccess: Swift.Bool, error: Foundation.NSError?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc optional func device(_ device: any AIBuds.DeviceConvertible, didReceiveOnDeviceVoiceAssistantAuthResult isSuccess: Swift.Bool, error: Foundation.NSError?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc optional func device(_ device: any AIBuds.DeviceConvertible, didReceiveOnDevicePaymentAuthResult isSuccess: Swift.Bool, error: Foundation.NSError?)
-  #endif
 }
 @objc(AIBudsSDKDelegate) public protocol SDKDelegate : ObjectiveC.NSObjectProtocol {
   @objc optional func onScanningStatusChanged(_ isScanning: Swift.Bool)
   @objc optional func didStartConnectingDevice(_ device: any AIBuds.DeviceConvertible)
   @objc optional func didConnectedToDevice(_ device: any AIBuds.DeviceConvertible)
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc optional func didFailToConnectDevice(_ device: (any AIBuds.DeviceConvertible)?, error: Foundation.NSError?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc optional func device(_ device: (any AIBuds.DeviceConvertible)?, didDisconnectWithError error: Foundation.NSError?)
-  #endif
   @objc optional func deviceDidReady(_ device: any AIBuds.DeviceConvertible)
   @objc optional func device(_ device: any AIBuds.DeviceConvertible, didClassicBtConnectionStatusChanged isConnected: Swift.Bool)
   @objc optional func device(_ device: any AIBuds.DeviceConvertible, didBatteryStatusChanged batteryStatus: AIBudsFoundation.BatteryStatusModel)
@@ -209,9 +187,7 @@ extension Foundation.NSNotification.Name {
   @objc optional func device(_ device: any AIBuds.DeviceConvertible, didReceiveHotspotAddress hotspotAddress: Swift.String)
   @objc optional func device(_ device: any AIBuds.DeviceConvertible, didReceiveOpusAudioData opusAudioData: Foundation.Data, decodedPCMAudioData: Foundation.Data, purpose: AIBudsFoundation.OpusAudioDataPurpose)
   @objc optional func device(_ device: any AIBuds.DeviceConvertible, didReceiveAiChatSessionEvent event: AIBudsFoundation.AIChatSessionEvent)
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc optional func device(_ device: any AIBuds.DeviceConvertible, didReceivePhotoDataForSceneRecognition photoData: Foundation.Data?, enhancedPhotoData: Foundation.Data?, error: Foundation.NSError?)
-  #endif
   @objc optional func device(_ device: any AIBuds.DeviceConvertible, didFirmwareVersionChanged firmwareVersion: Swift.String)
   @objc optional func device(_ device: any AIBuds.DeviceConvertible, didCoProcessorFirmwareVersionChanged firmwareVersion: Swift.String)
   @objc optional func device(_ device: any AIBuds.DeviceConvertible, didWorkStateChanged workState: AIBudsFoundation.WorkState)
@@ -235,367 +211,171 @@ extension Foundation.NSNotification.Name {
   @objc optional func device(_ device: any AIBuds.DeviceConvertible, didAiChatAudioChannelChanged aiChatAudioChannel: AIBudsFoundation.AIChatAudioChannel)
   @objc optional func device(_ device: any AIBuds.DeviceConvertible, didTimeFormatChanged timeFormat: AIBudsFoundation.TimeFormat)
   @objc optional func device(_ device: any AIBuds.DeviceConvertible, didVideoRecordDirectionInfoChanged videoRecordDirectionInfo: AIBudsFoundation.VideoRecordDirectionInfoModel)
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc optional func device(_ device: any AIBuds.DeviceConvertible, didReceiveStarBurstAuthResult isSuccess: Swift.Bool, error: Foundation.NSError?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc optional func device(_ device: any AIBuds.DeviceConvertible, didReceiveOnDeviceVoiceAssistantAuthResult isSuccess: Swift.Bool, error: Foundation.NSError?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc optional func device(_ device: any AIBuds.DeviceConvertible, didReceiveOnDevicePaymentAuthResult isSuccess: Swift.Bool, error: Foundation.NSError?)
-  #endif
 }
 @objc(AIBudsDeviceBeaconConvertible) public protocol DeviceBeaconConvertible : Foundation.NSSecureCoding, ObjectiveC.NSObjectProtocol {
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc var data: Foundation.Data? { get }
-  #endif
 }
 @objc(AIBudsDeviceConvertible) public protocol DeviceConvertible : Foundation.NSSecureCoding, ObjectiveC.NSObjectProtocol {
   @objc var name: Swift.String { get }
   @objc var uuid: Foundation.UUID { get }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc var lastConnectTime: Foundation.Date? { get set }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc var bindUserId: Swift.String? { get set }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc var userBindTime: Foundation.Date? { get set }
-  #endif
   @objc var isAlreadyUnbind: Swift.Bool { get set }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc var advertisementData: [Swift.String : Any]? { get set }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc var screenName: Swift.String? { get set }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc var thumbnail: UIKit.UIImage? { get set }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc var customContent: Swift.String? { get set }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc var timestampOfAdvertisementData: Foundation.Date? { get }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc var advertisementDataString: Swift.String? { get }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc var advertisementRawData: Foundation.Data? { get }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc var beaconData: (any AIBuds.DeviceBeaconConvertible)? { get }
-  #endif
   @objc var product: AIBudsFoundation.DeviceProduct { get }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc var bluetoothName: Swift.String? { get }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc var macAddress: Swift.String? { get }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc var deviceModel: Swift.String? { get }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc var deviceSerialNum: Swift.String? { get }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc var firmwareVersion: Swift.String? { get }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc var formatedFirmwareVersion: Swift.String? { get }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc var coProcessorFirmwareVersion: Swift.String? { get }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc var formatedProjNumber: Swift.String? { get }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc var manufacturerData: Foundation.Data? { get }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc var manufacturerHexDataString: Swift.String? { get }
-  #endif
   @objc var connectionState: CoreBluetooth.CBPeripheralState { get }
   @objc var deviceState: AIBudsFoundation.DeviceState { get }
   @objc static var supportedClasses: [Swift.AnyClass] { get }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc weak var peripheral: CoreBluetooth.CBPeripheral? { get }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc weak var delegate: (any AIBuds.DeviceDelegate)? { get set }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc var connectContext: AIBudsFoundation.ConnectParams? { get set }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc var defaultPresetEQs: [AIBudsFoundation.EQSettingModel]? { get }
-  #endif
   @objc var shouldAutoReconnectWhenAppLaunch: Swift.Bool { get set }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc init?(device: any AIBuds.FoundDeviceConvertible)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc init?(peripheral: CoreBluetooth.CBPeripheral, advertisementData: [Swift.String : Any]?)
-  #endif
   @objc(connectWithParams:) func connect(_ params: AIBudsFoundation.ConnectParams)
   @objc(disconnect) func disconnect()
   @objc(unpair) func unpair()
   @objc(save) func save()
 }
 @objc(AIBudsFoundDeviceConvertible) public protocol FoundDeviceConvertible : ObjectiveC.NSObjectProtocol {
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc weak var central: CoreBluetooth.CBCentralManager? { get }
-  #endif
   @objc var peripheral: CoreBluetooth.CBPeripheral { get }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc var advertisementData: [Swift.String : Any]? { get set }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc var RSSI: Foundation.NSNumber? { get set }
-  #endif
   @objc var product: AIBudsFoundation.DeviceProduct { get }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc var macAddress: Swift.String? { get }
-  #endif
   @objc var protocolKind: AIBudsFoundation.BleProtocolKind { get }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc static func create(central: CoreBluetooth.CBCentralManager, peripheral: CoreBluetooth.CBPeripheral, advertisementData: [Swift.String : Any]?, rssi: Foundation.NSNumber?) -> (any AIBuds.FoundDeviceConvertible)?
-  #endif
 }
 @objc(AIBudsDeviceAIChatAPI) public protocol DeviceAIChatAPI : AIBuds.DeviceAPI {
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc(reportAIChatStartSuccessWithCompletion:) func reportAIChatStartSuccess(_ completion: AIBuds.AIBudsCompletionHandler?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc(reportAIChatStartFailureWithCompletion:) func reportAIChatStartFailure(_ completion: AIBuds.AIBudsCompletionHandler?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc(reportAIChatStoppedWithCompletion:) func reportAIChatStopped(_ completion: AIBuds.AIBudsCompletionHandler?)
-  #endif
 }
 @objc(AIBudsDeviceAITranslationAPI) public protocol DeviceAITranslationAPI : AIBuds.DeviceAPI {
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc(enterAITranslationModeWithCompletion:) func enterAITranslationMode(_ completion: AIBuds.AIBudsCompletionHandler?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc(exitAITranslationModeWithCompletion:) func exitAITranslationMode(_ completion: AIBuds.AIBudsCompletionHandler?)
-  #endif
 }
 @objc(AIBudsDeviceANCAPI) public protocol DeviceANCAPI : AIBuds.DeviceAPI {
   @objc var ancMode: AIBudsFoundation.ANCMode { get }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc var ancGain: Foundation.NSNumber? { get }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc var transparencyGain: Foundation.NSNumber? { get }
-  #endif
   @objc var isAncFadeOn: Swift.Bool { get }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc(setAncMode:completion:) func setAncMode(_ mode: AIBudsFoundation.ANCMode, completion: AIBuds.AIBudsCompletionHandler?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc(setAncGain:completion:) func setAncGain(_ ancGain: Swift.Int, completion: AIBuds.AIBudsCompletionHandler?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc(setTransparencyGain:completion:) func setTransparencyGain(_ transparencyGain: Swift.Int, completion: AIBuds.AIBudsCompletionHandler?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc(setAncFadeOn:completion:) func setAncFadeOn(_ isOn: Swift.Bool, completion: AIBuds.AIBudsCompletionHandler?)
-  #endif
 }
 @objc(AIBudsDeviceAPI) public protocol DeviceAPI : ObjectiveC.NSObjectProtocol {
 }
 @objc(AIBudsDeviceAudioRecordingAPI) public protocol DeviceAudioRecordingAPI : AIBuds.DeviceAPI {
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc var maxAudioRecordDuration: Foundation.NSNumber? { get }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc(setMaxAudioRecordDuration:completion:) func setMaxAudioRecordDuration(_ duration: Swift.Int, completion: AIBuds.AIBudsCompletionHandler?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc(requestStartAudioRecordingWithCompletion:) func requestStartAudioRecording(_ completion: AIBuds.AIBudsStatusCodeCompletionHandler?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc(requestStopAudioRecordingWithCompletion:) func requestStopAudioRecording(_ completion: AIBuds.AIBudsStatusCodeCompletionHandler?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc(startAIAudioRecordingWithScene:completion:) func startAIAudioRecording(_ scene: AIBudsFoundation.RecordingScene, completion: AIBuds.AIBudsCompletionHandler?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc(stopAIAudioRecordingWithScene:completion:) func stopAIAudioRecording(_ scene: AIBudsFoundation.RecordingScene, completion: AIBuds.AIBudsCompletionHandler?)
-  #endif
 }
 @objc(AIBudsDeviceCameraAPI) public protocol DeviceCameraAPI : AIBuds.DeviceAPI {
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc var cameraFirmwareVersion: Swift.String? { get }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc var maxVideoRecordDuration: Foundation.NSNumber? { get }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc(setMaxVideoRecordDuration:completion:) func setMaxVideoRecordDuration(_ duration: Swift.Int, completion: AIBuds.AIBudsCompletionHandler?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc(requestPhotoTakingWithCaptureMode:completion:) func requestPhotoTaking(withCaptureMode mode: AIBudsFoundation.CaptureMode, completion: AIBuds.AIBudsStatusCodeCompletionHandler?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc(requestStopPhotoTakingWithCompletion:) func requestStopPhotoTaking(_ completion: AIBuds.AIBudsStatusCodeCompletionHandler?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc(requestVideoRecordingWithCompletion:) func requestVideoRecording(_ completion: AIBuds.AIBudsStatusCodeCompletionHandler?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc(requestStopVideoRecordingWithCompletion:) func requestStopVideoRecording(_ completion: AIBuds.AIBudsStatusCodeCompletionHandler?)
-  #endif
 }
 @objc(AIBudsDeviceCameraOtaAPI) public protocol DeviceCameraOtaAPI : AIBuds.DeviceAPI {
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc(startCameraOtaWithFilePath:configureHotspotStartingHandler:hotspotConfigureCompletionHandler:enterCameraOtaModeStartingHandler:enterCameraOtaModeCompletedHandler:waitingForHotspotOpenHandler:connectDeviceHotspotStartingHandler:deviceHotspotConnectCompletionHandler:httpServerStartingHandler:httpServerStartCompletionHandler:sendingFirmwareUrlHandler:firmwareUrlSendCompletionHandler:startCompletionHandler:fileTransferStartedHandler:fileTransferCompletedHandler:waitingForFlashingHandler:flashingStartedHandler:flashingCompletedHandler:phaseProgressHandler:completionHandler:) func startCameraOta(withFilePath filePath: Swift.String, configureHotspotStartingHandler: AIBuds.AIBudsCameraOtaConfigureHotspotStartingHandler?, hotspotConfigureCompletionHandler: AIBuds.AIBudsCameraOtaHotspotConfigureCompletionHandler?, enterCameraOtaModeStartingHandler: AIBuds.AIBudsEnterCameraOtaModeStartingHandler?, enterCameraOtaModeCompletedHandler: AIBuds.AIBudsEnterCameraOtaModeCompletionHandler?, waitingForHotspotOpenHandler: AIBuds.AIBudsCameraOtaStartingToWaitForHotspotOpenHandler?, connectDeviceHotspotStartingHandler: AIBuds.AIBudsCameraOtaConnectDeviceHotspotStartingHandler?, deviceHotspotConnectCompletionHandler: AIBuds.AIBudsCameraOtaDeviceHotspotConnectCompletionHandler?, httpServerStartingHandler: AIBuds.AIBudsCameraOtaHttpServerStartingHandler?, httpServerStartCompletionHandler: AIBuds.AIBudsCameraOtaHttpServerStartCompletionHandler?, sendingFirmwareUrlHandler: AIBuds.AIBudsCameraOtaSendingFirmwareUrlHandler?, firmwareUrlSendCompletionHandler: AIBuds.AIBudsCameraOtaFirmwareUrlSendCompletionHandler?, startCompletionHandler: AIBuds.AIBudsCameraOtaStartCompletionHandler?, fileTransferStartedHandler: AIBuds.AIBudsCameraOtaFileTransferStartedHandler?, fileTransferCompletedHandler: AIBuds.AIBudsCameraOtaFileTransferCompletedHandler?, waitingForFlashingHandler: AIBuds.AIBudsCameraOtaWaitingForFlashingHandler?, flashingStartedHandler: AIBuds.AIBudsCameraOtaFlashingStartedHandler?, flashingCompletedHandler: AIBuds.AIBudsCameraOtaFlashingCompletedHandler?, phaseProgressHandler: AIBuds.AIBudsCameraOtaPhaseProgressHandler?, completionHandler: AIBuds.AIBudsCameraOtaCompletionHandler?)
-  #endif
 }
 @objc(AIBudsDeviceCommonAPI) public protocol DeviceCommonAPI : AIBuds.DeviceAPI {
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc(factoryResetWithCompletion:) func factoryReset(_ completion: AIBuds.AIBudsCompletionHandler?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc(powerOffWithCompletion:) func powerOff(_ completion: AIBuds.AIBudsCompletionHandler?)
-  #endif
 }
 @objc(AIBudsDeviceEqualizerAPI) public protocol DeviceEqualizerAPI : AIBuds.DeviceAPI {
   @objc var allEQSettings: [AIBudsFoundation.EQSettingModel] { get }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc var eqSetting: AIBudsFoundation.EQSettingModel? { get }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc(setEqualizer:withCompletion:) func setEqualizer(_ equalizerSetting: AIBudsFoundation.EQSettingModel, completion: AIBuds.AIBudsCompletionHandler?)
-  #endif
 }
 @objc(AIBudsDeviceFileImportAPI) public protocol DeviceFileImportAPI : AIBuds.DeviceAPI {
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc(fetchMediaFilesInfoWithConfigureHotspotStartingHandler:hotspotConfigureCompletionHandler:enterFileTransferModeStartingHandler:enterFileTransferModeCompletedHandler:waitingForHotspotOpenHandler:connectDeviceHotspotStartingHandler:deviceHotspotConnectCompletionHandler:completionHandler:) func fetchMediaFilesInfo(configureHotspotStartingHandler: AIBuds.AIBudsFileImportConfigureHotspotStartingHandler?, hotspotConfigureCompletionHandler: AIBuds.AIBudsFileImportHotspotConfigureCompletionHandler?, enterFileTransferModeStartingHandler: AIBuds.AIBudsEnterFileTransferModeStartingHandler?, enterFileTransferModeCompletedHandler: AIBuds.AIBudsEnterFileTransferModeCompletionHandler?, waitingForHotspotOpenHandler: AIBuds.AIBudsFileImportStartingToWaitForHotspotOpenHandler?, connectDeviceHotspotStartingHandler: AIBuds.AIBudsFileImportConnectDeviceHotspotStartingHandler?, deviceHotspotConnectCompletionHandler: AIBuds.AIBudsFileImportDeviceHotspotConnectCompletionHandler?, completionHandler: AIBuds.AIBudsFileImportFetchMediaFilesInfoCompletionHandler?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc(importFileWithUrls:dataChunkHandler:singleTransferStartingHandler:singleTransferCompletionHandler:speedHandler:batchProgressHandler:completionHandler:) func importFiles(_ fileUrls: [Swift.String], dataChunkHandler: AIBuds.AIBudsFileImportDataChunkHandler?, singleTransferStartingHandler: AIBuds.AIBudsFileImportSingleTransferStartingHandler?, singleTransferCompletionHandler: AIBuds.AIBudsFileImportSingleTransferCompletionHandler?, speedHandler: AIBuds.AIBudsFileImportSpeedHandler?, batchProgressHandler: AIBuds.AIBudsFileImportBatchProgressHandler?, completionHandler: AIBuds.AIBudsStatusCodeCompletionHandler?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc(cancelFileImportWithCompletion:) func cancelFileImport(_ completion: AIBuds.AIBudsStatusCodeCompletionHandler?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc(deleteFile:completion:) func deleteFile(_ fileName: Swift.String, completion: AIBuds.AIBudsStatusCodeCompletionHandler?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc(deleteAllFilesWithCompletion:) func deleteAllFiles(_ completion: AIBuds.AIBudsStatusCodeCompletionHandler?)
-  #endif
 }
 @objc(AIBudsDeviceFindAPI) public protocol DeviceFindAPI : AIBuds.DeviceAPI {
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc(findDeviceWithCompletion:) func findDevice(_ completion: AIBuds.AIBudsCompletionHandler?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc(stopFindDeviceWithCompletion:) func stopFindDevice(_ completion: AIBuds.AIBudsCompletionHandler?)
-  #endif
 }
 @objc(AIBudsDeviceFirmwareAPI) public protocol DeviceFirmwareAPI : AIBuds.DeviceAPI {
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc var firmwareVersion: Swift.String? { get }
-  #endif
 }
 @objc(AIBudsDeviceHotspotAPI) public protocol DeviceHotspotAPI : AIBuds.DeviceAPI {
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc(configureHotspotWithMode:channel:ssid:password:completion:) func configureHotspot(withMode mode: AIBudsFoundation.HotspotMode, channel: Swift.Int, ssid: Swift.String, password: Swift.String, completion: AIBuds.AIBudsStatusCodeCompletionHandler?)
-  #endif
 }
 @objc(AIBudsDeviceInfoAPI) public protocol DeviceInfoAPI : AIBuds.DeviceAPI {
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc var batteryStatusInfo: AIBudsFoundation.BatteryStatusModel? { get }
-  #endif
   @objc var languageSetting: AIBudsFoundation.DeviceLanguage { get }
   @objc var supportedLanguages: [Foundation.NSNumber] { get }
   @objc var callStatus: AIBudsFoundation.CallStatus { get }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc var storageInfo: AIBudsFoundation.StorageInfoModel? { get }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc var mediaCountInfo: AIBudsFoundation.MediaCountInfoModel? { get }
-  #endif
   @objc var isSupportAdjustRecordDuration: Swift.Bool { get }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc(syncDeviceTimeWithCompletion:) func syncDeviceTime(_ completion: AIBuds.AIBudsStatusCodeCompletionHandler?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc(setDeviceTime:completion:) func setDeviceTime(to date: Foundation.Date, completion: AIBuds.AIBudsStatusCodeCompletionHandler?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc(setDeviceLanguage:completion:) func setDeviceLanguage(_ language: AIBudsFoundation.DeviceLanguage, completion: AIBuds.AIBudsCompletionHandler?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc(requestQueryStorageInfoWithCompletion:) func requestQueryStorageInfo(_ completion: AIBuds.AIBudsCompletionHandler?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc(requestQueryMediaCountInfoWithCompletion:) func requestQueryMediaCountInfo(_ completion: AIBuds.AIBudsCompletionHandler?)
-  #endif
 }
 @objc(AIBudsDeviceMusicControlAPI) public protocol DeviceMusicControlAPI : AIBuds.DeviceAPI {
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc(playMusicWithCompletion:) func playMusic(_ completion: AIBuds.AIBudsCompletionHandler?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc(pauseMusicWithCompletion:) func pauseMusic(_ completion: AIBuds.AIBudsCompletionHandler?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc(playNextMusicWithCompletion:) func playNextMusic(_ completion: AIBuds.AIBudsCompletionHandler?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc(playPreviousMusicWithCompletion:) func playPreviousMusic(_ completion: AIBuds.AIBudsCompletionHandler?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc(musicVolumeUpWithCompletion:) func musicVolumeUp(_ completion: AIBuds.AIBudsCompletionHandler?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc(musicVolumeDownWithCompletion:) func musicVolumeDown(_ completion: AIBuds.AIBudsCompletionHandler?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc(muteWithCompletion:) func mute(_ completion: AIBuds.AIBudsCompletionHandler?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc(unmuteWithCompletion:) func unmute(_ completion: AIBuds.AIBudsCompletionHandler?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc(setMusicVolume:completion:) func setMusicVolume(_ volume: Swift.Int, completion: AIBuds.AIBudsCompletionHandler?)
-  #endif
 }
 @objc(AIBudsDeviceOtaAPI) public protocol DeviceOtaAPI : AIBuds.DeviceAPI {
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc(startOtaWithFilePath:startHandler:progressHandler:completionHandler:) func startOta(withFilePath filePath: Swift.String, startHandler: AIBuds.AIBudsOtaStartCompletionHandler?, progressHandler: AIBuds.AIBudsOtaProgressHandler?, completionHandler: AIBuds.AIBudsOtaCompletionHandler?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc(startOtaWithFilePath:configuration:startHandler:progressHandler:completionHandler:) func startOta(withFilePath filePath: Swift.String, configuration: AIBuds.OtaConfiguration, startHandler: AIBuds.AIBudsOtaStartCompletionHandler?, progressHandler: AIBuds.AIBudsOtaProgressHandler?, completionHandler: AIBuds.AIBudsOtaCompletionHandler?)
-  #endif
 }
 @objc(AIBudsDevicePhysicalOperationsAPI) public protocol DevicePhysicalOperationsAPI : AIBuds.DeviceAPI {
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc(physicalOperationsMapping) var physicalOperationsMapping: [Foundation.NSNumber : Foundation.NSNumber]? { get }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc(assignFunction:forPhysicalOperation:completion:) func assignFunction(_ function: AIBudsFoundation.DeviceFunction, forPhysicalOperation operation: AIBudsFoundation.DeviceOperation, completion: AIBuds.AIBudsCompletionHandler?)
-  #endif
 }
 @objc(AIBudsDeviceRemoteShutterAPI) public protocol DeviceRemoteShutterAPI : AIBuds.DeviceAPI {
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc(syncRemoteShutterStateToDevice:completion:) func syncRemoteShutterStateToDevice(_ state: AIBudsFoundation.RemoteShutterState, completion: AIBuds.AIBudsCompletionHandler?)
-  #endif
 }
 @objc(AIBudsDeviceServiceAuthAPI) public protocol DeviceServiceAuthAPI : AIBuds.DeviceAPI {
   @objc var authorizedServices: AIBudsFoundation.AIBudsAuthorizedServices { get }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc(retryServiceAuth:completion:) func retryServiceAuth(_ service: AIBudsFoundation.ServiceAuthType, completion: AIBuds.AIBudsCompletionHandler?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc(reportSelfAiServiceAuthResult:completion:) func reportSelfAiServiceAuthResult(_ isAuthenticated: Swift.Bool, completion: AIBuds.AIBudsCompletionHandler?)
-  #endif
 }
 @objc(AIBudsDeviceTWSAPI) public protocol DeviceTWSAPI : AIBuds.DeviceAPI {
   @objc var isTws: Swift.Bool { get }
@@ -603,28 +383,18 @@ extension Foundation.NSNotification.Name {
 }
 @objc(AIBudsDeviceVolumeControlAPI) public protocol DeviceVolumeControlAPI : AIBuds.DeviceAPI {
   @objc var volumeSetCapability: AIBudsFoundation.VolumeSetCapability { get }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc var volumesInfo: AIBudsFoundation.VolumesInfoModel? { get }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc(setVolumeWithType:value:completion:) func setVolume(_ volumeType: AIBudsFoundation.DeviceVolumeType, value: Swift.Int, completion: AIBuds.AIBudsCompletionHandler?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc(setVolumesWithSystemPrompt:media:call:completion:) func setVolumes(systemPrompt: Swift.Int, media: Swift.Int, call: Swift.Int, completion: AIBuds.AIBudsCompletionHandler?)
-  #endif
 }
 @objc(AIBudsDeviceWearDetectionAPI) public protocol DeviceWearDetectionAPI : AIBuds.DeviceAPI {
   @objc var wearDetectionCapability: AIBudsFoundation.WearDetectionCapability { get }
   @objc var isWearDetectionEnabled: Swift.Bool { get }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc(setWearDetectionEnabled:completion:) func setWearDetection(enabled: Swift.Bool, completion: AIBuds.AIBudsCompletionHandler?)
-  #endif
 }
 @objc(AIBudsDeviceWorkModeAPI) public protocol DeviceWorkModeAPI : AIBuds.DeviceAPI {
   @objc var workMode: AIBudsFoundation.WorkMode { get }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc(setWorkMode:completion:) func setWorkMode(_ mode: AIBudsFoundation.WorkMode, completion: AIBuds.AIBudsCompletionHandler?)
-  #endif
 }
 @objc(AIBudsDeviceWorkStateAPI) public protocol DeviceWorkStateAPI : AIBuds.DeviceAPI {
   @objc var workState: AIBudsFoundation.WorkState { get }
@@ -632,9 +402,7 @@ extension Foundation.NSNotification.Name {
 @objc(AIBudsOnDeviceVoiceAssistantAPI) public protocol OnDeviceVoiceAssistantAPI : AIBuds.DeviceAPI {
   @objc var onDeviceVoiceAssistantCapability: AIBudsFoundation.OnDeviceVoiceAssistantCapability { get }
   @objc var onDeviceVoiceAssistantMode: AIBudsFoundation.OnDeviceVoiceAssistantMode { get }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc(setOnDeviceVoiceAssistantMode:completion:) func setOnDeviceVoiceAssistantMode(_ mode: AIBudsFoundation.OnDeviceVoiceAssistantMode, completion: AIBuds.AIBudsCompletionHandler?)
-  #endif
 }
 @_inheritsConvenienceInitializers @objc(AIBudsMltCloudAuthEnv) final public class MltCloudAuthEnv : ObjectiveC.NSObject {
   @objc final public var channelId: Swift.String?
@@ -662,12 +430,8 @@ extension Foundation.NSNotification.Name {
 @objc(AIBudsOnDeviceVoiceAssistantDevice) public protocol OnDeviceVoiceAssistantDevice : ObjectiveC.NSObjectProtocol {
   @objc var identifier: Swift.String { get }
   @objc(sendOnDeviceVoiceAssistantServiceAuthBridgeData:) func sendOnDeviceVoiceAssistantServiceAuthBridgeData(_ data: Foundation.Data)
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc(didReceiveOnDeviceVoiceAssistantAuthResult:error:) func didReceiveOnDeviceVoiceAssistantAuthResult(_ isSuccess: Swift.Bool, error: Foundation.NSError?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc(didRecieveOnDevicePaymentAuthResult:error:) func didRecieveOnDevicePaymentAuthResult(_ isSuccess: Swift.Bool, error: Foundation.NSError?)
-  #endif
 }
 @_inheritsConvenienceInitializers @objc(AIBudsStarBurstAuthEnv) final public class StarBurstAuthEnv : ObjectiveC.NSObject {
   @objc final public var authSdk: AIBudsFoundation.StarBurstAuthSdk
@@ -691,9 +455,7 @@ extension Foundation.NSNotification.Name {
 @objc(AIBudsStarBurstDevice) public protocol StarBurstDevice : ObjectiveC.NSObjectProtocol {
   @objc var identifier: Swift.String { get }
   @objc(sendStarBurstAiBridgeData:) func sendStarBurstAiBridgeData(_ data: Foundation.Data)
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc(didReceiveStarBurstAuthResult:error:) func didReceiveStarBurstAuthResult(_ isSuccess: Swift.Bool, error: Foundation.NSError?)
-  #endif
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(AIBudsStoredDevicesMgr) public class StoredDevicesMgr : ObjectiveC.NSObject {
   @objc public static func addDevice(_ device: any AIBuds.DeviceConvertible) -> Swift.Bool
@@ -702,18 +464,10 @@ extension Foundation.NSNotification.Name {
   @objc public static var allDevices: [any AIBuds.DeviceConvertible] {
     @objc get
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func findDevice(byMacAddr macAddress: Swift.String) -> (any AIBuds.DeviceConvertible)?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func findDevice(byPeripheral peripheral: CoreBluetooth.CBPeripheral) -> (any AIBuds.DeviceConvertible)?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func loadDevicesInBackgroundWithCompletion(_ completion: ((_ devices: [any AIBuds.DeviceConvertible], _ error: (any Swift.Error)?) -> Swift.Void)? = nil)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func saveDevicesInBackgroundWithCompletion(_ completion: ((_ error: (any Swift.Error)?) -> Swift.Void)? = nil)
-  #endif
   @objc deinit
 }
 extension AIBuds.AIBudsSDK {
@@ -736,41 +490,25 @@ extension AIBuds.AIBudsSDK {
   @objc public static var sdkConfiguration: AIBuds.SDKConfiguration {
     @objc get
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static var starBurstAIPlugin: (any AIBuds.StarBurstBridgePlugin)? {
     @objc get
   }
-  #endif
   @objc(setStarBurstAIPlugin:) public static func setStarBurstAIPlugin(_ plugin: any AIBuds.StarBurstBridgePlugin)
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static var mltCloudAIPlugin: (any AIBuds.MltCloudBridgePlugin)? {
     @objc get
   }
-  #endif
   @objc(setMltCloudAIPlugin:) public static func setMltCloudAIPlugin(_ plugin: any AIBuds.MltCloudBridgePlugin)
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static var onDeviceVoiceAssistantPlugin: (any AIBuds.OnDeviceVoiceAssistantBridgePlugin)? {
     @objc get
   }
-  #endif
   @objc(setOnDeviceVoiceAssistantPlugin:) public static func setOnDeviceVoiceAssistantPlugin(_ plugin: any AIBuds.OnDeviceVoiceAssistantBridgePlugin)
-  #if compiler(>=5.3) && $NonescapableTypes
-  @objc(initWithBleSDKs:delegate:) public static func `init`(_ bleSDKs: [any AIBuds.BleConnectSDK], delegate: (any AIBuds.SDKDelegate)? = nil) -> Swift.Bool
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  @objc(initWithBleSDKs:configuration:delegate:) public static func `init`(_ bleSDKs: [any AIBuds.BleConnectSDK], configuration: AIBuds.SDKConfiguration? = nil, delegate: (any AIBuds.SDKDelegate)? = nil) -> Swift.Bool
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
+  @objc(initWithBleSDKs:delegate:) public static func initialize(_ bleSDKs: [any AIBuds.BleConnectSDK], delegate: (any AIBuds.SDKDelegate)? = nil) -> Swift.Bool
+  @objc(initWithBleSDKs:configuration:delegate:) public static func initialize(_ bleSDKs: [any AIBuds.BleConnectSDK], configuration: AIBuds.SDKConfiguration? = nil, delegate: (any AIBuds.SDKDelegate)? = nil) -> Swift.Bool
   @objc(startScanningWithTimeout:deviceFoundHandler:completion:) public static func startScanning(_ timeout: Foundation.NSNumber? = nil, deviceFoundHandler: AIBuds.AIBudsScanningOnDeviceFoundHandler? = nil, completion: AIBuds.AIBudsOnScanStopHandler? = nil)
-  #endif
   @objc public static func stopScanning()
   @objc public static func isScanning() -> Swift.Bool
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func makeStorableDeviceFromDiscovered(_ device: any AIBuds.FoundDeviceConvertible) -> (any AIBuds.DeviceConvertible)?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func makeStorableDeviceFromDiscovered(_ peripheral: CoreBluetooth.CBPeripheral, central: CoreBluetooth.CBCentralManager, advertisement: [Swift.String : Any]?, rssi: Foundation.NSNumber?) -> (any AIBuds.DeviceConvertible)?
-  #endif
   @objc deinit
 }
 extension AIBuds.SdkErrorCode : Swift.Equatable {}
