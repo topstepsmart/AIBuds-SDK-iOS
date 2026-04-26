@@ -1,4 +1,3 @@
 framework module ABMate {
   header "ABMate-Swift.h"
-  requires objc
 }

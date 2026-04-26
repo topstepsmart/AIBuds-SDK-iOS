@@ -306,9 +306,109 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "allowRecordingWhileOffline",
+            "printedName": "allowRecordingWhileOffline",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBudsAIFoundation@objc(cs)AIBudsAIAudioRecordingSessionConfig(py)allowRecordingWhileOffline",
+            "mangledName": "$s18AIBudsAIFoundation29AIAudioRecordingSessionConfigC05allowD12WhileOfflineSbvp",
+            "moduleName": "AIBudsAIFoundation",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsAIFoundation@objc(cs)AIBudsAIAudioRecordingSessionConfig(im)allowRecordingWhileOffline",
+                "mangledName": "$s18AIBudsAIFoundation29AIAudioRecordingSessionConfigC05allowD12WhileOfflineSbvg",
+                "moduleName": "AIBudsAIFoundation",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsAIFoundation@objc(cs)AIBudsAIAudioRecordingSessionConfig(im)setAllowRecordingWhileOffline:",
+                "mangledName": "$s18AIBudsAIFoundation29AIAudioRecordingSessionConfigC05allowD12WhileOfflineSbvs",
+                "moduleName": "AIBudsAIFoundation",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18AIBudsAIFoundation29AIAudioRecordingSessionConfigC05allowD12WhileOfflineSbvM",
+                "mangledName": "$s18AIBudsAIFoundation29AIAudioRecordingSessionConfigC05allowD12WhileOfflineSbvM",
+                "moduleName": "AIBudsAIFoundation",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(recordingScene:languageForSpeechInput:)",
+            "printedName": "init(recordingScene:allowRecordingWhileOffline:languageForSpeechInput:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -322,6 +422,13 @@
                 "printedName": "AIBudsFoundation.RecordingScene",
                 "hasDefaultArg": true,
                 "usr": "c:@M@AIBudsFoundation@E@AIBudsRecordingScene"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
               },
               {
                 "kind": "TypeNominal",
@@ -340,16 +447,117 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "c:@M@AIBudsAIFoundation@objc(cs)AIBudsAIAudioRecordingSessionConfig(im)initWithRecordingScene:languageForSpeechInput:",
-            "mangledName": "$s18AIBudsAIFoundation29AIAudioRecordingSessionConfigC14recordingScene22languageForSpeechInputAC0A10Foundation0dH0O_SSSgtcfc",
+            "usr": "c:@M@AIBudsAIFoundation@objc(cs)AIBudsAIAudioRecordingSessionConfig(im)initWithRecordingScene:allowRecordingWhileOffline:languageForSpeechInput:",
+            "mangledName": "$s18AIBudsAIFoundation29AIAudioRecordingSessionConfigC14recordingScene05allowD12WhileOffline22languageForSpeechInputAC0A10Foundation0dH0O_SbSSSgtcfc",
             "moduleName": "AIBudsAIFoundation",
-            "objc_name": "initWithRecordingScene:languageForSpeechInput:",
+            "objc_name": "initWithRecordingScene:allowRecordingWhileOffline:languageForSpeechInput:",
             "declAttributes": [
               "AccessControl",
               "ObjC",
               "RawDocComment"
             ],
             "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "description",
+            "printedName": "description",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBudsAIFoundation@objc(cs)AIBudsAIAudioRecordingSessionConfig(py)description",
+            "mangledName": "$s18AIBudsAIFoundation29AIAudioRecordingSessionConfigC11descriptionSSvp",
+            "moduleName": "AIBudsAIFoundation",
+            "overriding": true,
+            "objc_name": "description",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "Override",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsAIFoundation@objc(cs)AIBudsAIAudioRecordingSessionConfig(im)description",
+                "mangledName": "$s18AIBudsAIFoundation29AIAudioRecordingSessionConfigC11descriptionSSvg",
+                "moduleName": "AIBudsAIFoundation",
+                "overriding": true,
+                "objc_name": "description",
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "debugJsonString",
+            "printedName": "debugJsonString",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBudsAIFoundation@objc(cs)AIBudsAIAudioRecordingSessionConfig(py)debugJsonString",
+            "mangledName": "$s18AIBudsAIFoundation29AIAudioRecordingSessionConfigC15debugJsonStringSSvp",
+            "moduleName": "AIBudsAIFoundation",
+            "objc_name": "debugJsonString",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsAIFoundation@objc(cs)AIBudsAIAudioRecordingSessionConfig(im)debugJsonString",
+                "mangledName": "$s18AIBudsAIFoundation29AIAudioRecordingSessionConfigC15debugJsonStringSSvg",
+                "moduleName": "AIBudsAIFoundation",
+                "objc_name": "debugJsonString",
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
           },
           {
             "kind": "Constructor",
@@ -433,6 +641,13 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugJsonStringConvertible",
+            "printedName": "CustomDebugJsonStringConvertible",
+            "usr": "c:@M@AIBudsFoundation@objc(pl)AIBudsCustomDebugJsonStringConvertible",
+            "mangledName": "$s16AIBudsFoundation32CustomDebugJsonStringConvertibleP"
+          },
           {
             "kind": "Conformance",
             "name": "_KeyValueCodingAndObserving",
@@ -14431,6 +14646,55 @@
   },
   "ConstValues": [
     {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/AIAudioRecording(AI录音)\/AIAudioRecordingSessionConfig.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1572,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/AIAudioRecording(AI录音)\/AIAudioRecordingSessionConfig.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2746,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/AIAudioRecording(AI录音)\/AIAudioRecordingSessionConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 3110,
+      "length": 175,
+      "value": "\"{ \"recordingScene\": \"\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/AIAudioRecording(AI录音)\/AIAudioRecordingSessionConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 3152,
+      "length": 1,
+      "value": "\"\", \"languageForSpeechInput\": \"\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/AIAudioRecording(AI录音)\/AIAudioRecordingSessionConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 3214,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/AIAudioRecording(AI录音)\/AIAudioRecordingSessionConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 3217,
+      "length": 1,
+      "value": "\"\", \"allowRecordingWhileOffline\": \""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/AIAudioRecording(AI录音)\/AIAudioRecordingSessionConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 3282,
+      "length": 1,
+      "value": "\" }\""
+    },
+    {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/AIAudioRecording(AI录音)\/StreamSpeechASRModel.swift",
       "kind": "StringLiteral",
       "offset": 2494,
@@ -14931,7 +15195,7 @@
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/AIChatSession(AIChat会话)\/AIChatIntentModel.swift",
       "kind": "StringLiteral",
       "offset": 2493,
-      "length": 235,
+      "length": 233,
       "value": "\"{ \"sequence\": \""
     },
     {
@@ -15002,7 +15266,7 @@
       "kind": "StringLiteral",
       "offset": 2721,
       "length": 1,
-      "value": "\"\"\" }\""
+      "value": "\"\" }\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/AIChatSession(AIChat会话)\/AIChatSessionConfig.swift",
@@ -15968,21 +16232,21 @@
       "kind": "StringLiteral",
       "offset": 498,
       "length": 14,
-      "value": "\"1.0.0-beta.2\""
+      "value": "\"1.0.0-beta.3\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/AIBudsAIFoundation.swift",
       "kind": "StringLiteral",
       "offset": 628,
       "length": 13,
-      "value": "\"20260412001\""
+      "value": "\"20260426001\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/AIBudsAIFoundation.swift",
       "kind": "StringLiteral",
       "offset": 743,
       "length": 12,
-      "value": "\"2026-04-12\""
+      "value": "\"2026-04-26\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/AIBudsAIFoundation.swift",

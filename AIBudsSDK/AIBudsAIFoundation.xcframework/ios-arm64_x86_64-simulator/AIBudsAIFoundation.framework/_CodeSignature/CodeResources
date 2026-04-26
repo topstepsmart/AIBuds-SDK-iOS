@@ -6,51 +6,51 @@
 	<dict>
 		<key>Headers/AIBudsAIFoundation-Swift.h</key>
 		<data>
-		6bmC8qs2T9ptS/q+Gsxi2JlNyFk=
+		DI8ZVGvGD8t2NrHamhcUyOFv4Uo=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		qeJSS546mTo4+C6+stz0x8hNNsM=
+		cYwLLbj1X8AArUK4jyFkGg7FV1I=
 		</data>
 		<key>Modules/AIBudsAIFoundation.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		o0Jgyn1YDhDZnscSUJxGYF3rYuc=
+		6/j5syKlezH0g978SDMDwAtPCXY=
 		</data>
 		<key>Modules/AIBudsAIFoundation.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		rTKqertomaNhZpHzJtrH5c/V9vM=
+		3bu1FkfrMFEhMJMq4jQAuWRyfUg=
 		</data>
 		<key>Modules/AIBudsAIFoundation.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		5qCVgsDzrRReYgVsgpq6LFZqgQs=
+		HgvSWlBH9u86wdPT66+LUeZ9xRg=
 		</data>
 		<key>Modules/AIBudsAIFoundation.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		rTKqertomaNhZpHzJtrH5c/V9vM=
+		3bu1FkfrMFEhMJMq4jQAuWRyfUg=
 		</data>
 		<key>Modules/AIBudsAIFoundation.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		7PYG0mk03pShKCjIfTlLldgk++w=
+		YSYpHjGOZcjHkSJnvJtt8qnHgjg=
 		</data>
 		<key>Modules/AIBudsAIFoundation.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		o0Jgyn1YDhDZnscSUJxGYF3rYuc=
+		6/j5syKlezH0g978SDMDwAtPCXY=
 		</data>
 		<key>Modules/AIBudsAIFoundation.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		foKhXd59uJw7lbfg+j3T/nzHHrs=
+		tDGnB/sq/oIyVi2lX/Lvdhv5ZFc=
 		</data>
 		<key>Modules/AIBudsAIFoundation.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		dX56dA0DOIlgYnxFSG58TyaJXbE=
+		jbo6otUGSruTMwCkTm4TLXmzvj8=
 		</data>
 		<key>Modules/AIBudsAIFoundation.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		foKhXd59uJw7lbfg+j3T/nzHHrs=
+		tDGnB/sq/oIyVi2lX/Lvdhv5ZFc=
 		</data>
 		<key>Modules/AIBudsAIFoundation.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Y3q8v4IKlNXAI9owvxxFdlMa+ek=
+		Boc9dqdADgERfth2xigXUv71ZhE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -63,77 +63,77 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			IpDna4JsDppE+GyqotqbQiNp2FXXqE1WERv4/Z1qqmo=
+			ym2N9HYYlVWVT61DS0I1LChZxGbovoeYekZIko7LegU=
 			</data>
 		</dict>
 		<key>Modules/AIBudsAIFoundation.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			GMmeHq0uG9BckHx2fUNlfiSMM7qF36N9eWR0ZqPq5uM=
+			X95GWl097kV7WS9emTXfkz8PuiwM9c51yl0RK3lwtVg=
 			</data>
 		</dict>
 		<key>Modules/AIBudsAIFoundation.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			oDqFMdisHBs3Wn8xiB8/XwKfXi1bD51ZJ5nYHjvd83A=
+			HYxfxgpW+R6dss2nrmW+GBhcTXchJ2mHJ9H6a33nMC8=
 			</data>
 		</dict>
 		<key>Modules/AIBudsAIFoundation.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			UdU2mukxn65xcZsaKJn8qYQnFBdfRCAgZHfuRL9r2D4=
+			rVlx7JvOytMrC6g2PMCu9RfkXArViTH5EbKmvlA8XhI=
 			</data>
 		</dict>
 		<key>Modules/AIBudsAIFoundation.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			oDqFMdisHBs3Wn8xiB8/XwKfXi1bD51ZJ5nYHjvd83A=
+			HYxfxgpW+R6dss2nrmW+GBhcTXchJ2mHJ9H6a33nMC8=
 			</data>
 		</dict>
 		<key>Modules/AIBudsAIFoundation.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			J1nvRqE3j0ZcIgJIPiZntwMOVxdCcTKeLu9Y9B8Lqio=
+			4GFtrPM6ZOB3/6xUg6DK+TBNYlyxEZ2Z22sevKHrMeA=
 			</data>
 		</dict>
 		<key>Modules/AIBudsAIFoundation.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			GMmeHq0uG9BckHx2fUNlfiSMM7qF36N9eWR0ZqPq5uM=
+			X95GWl097kV7WS9emTXfkz8PuiwM9c51yl0RK3lwtVg=
 			</data>
 		</dict>
 		<key>Modules/AIBudsAIFoundation.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			qi1/w0VX+5R3OppS261vW0LIpglbaEzrp6F1aQMdfn8=
+			AzES+QE5SrLH2P2GWgeiqgc5/eGQ+9lrWtLM/XwEHDY=
 			</data>
 		</dict>
 		<key>Modules/AIBudsAIFoundation.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			s+FHgDporWz8f1v56af9rYY+bKcFcdGU0pcdDCKJ6do=
+			VisO+HmCht1NuIpmGQ7dDeJJBdYJZekZrlZJ1GGAl2A=
 			</data>
 		</dict>
 		<key>Modules/AIBudsAIFoundation.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			qi1/w0VX+5R3OppS261vW0LIpglbaEzrp6F1aQMdfn8=
+			AzES+QE5SrLH2P2GWgeiqgc5/eGQ+9lrWtLM/XwEHDY=
 			</data>
 		</dict>
 		<key>Modules/AIBudsAIFoundation.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			U7Fo9d8+qTn/uP8FKcs4MvC6/mWm+WkEa2jRfJpZ36s=
+			DmTL6699ODiI9eDMseoycU17NpybO9pV9J08geVg5ww=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

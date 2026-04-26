@@ -6,55 +6,55 @@
 	<dict>
 		<key>Headers/ABMate-Swift.h</key>
 		<data>
-		4dXlmkZKCOw3S8+1pqEoQB8Cw1w=
+		rq/S/R9Dglzl7mg9mI8Ls5jaotI=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		zXxULrgRC5RBItxJGtWcgyCCUHA=
+		gBm+Zf2TNBAHi/foeOgWe/CDBqA=
 		</data>
 		<key>Modules/ABMate.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		mxFRV2ECt5S4S6348n4GixdWnVw=
+		hFoNA55/2o6a3LbanjdTQSTaCtk=
 		</data>
 		<key>Modules/ABMate.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		aTtD9G+0zm9N6NY7uinl4YlByLg=
+		W96Yh9Z9TyTH/MvS+v683FnQ9t0=
 		</data>
 		<key>Modules/ABMate.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		XbBgU2qqf1d704DUMrRYPSZDah4=
+		pNo4VGWwOiCTFRuneOW2iD18e6w=
 		</data>
 		<key>Modules/ABMate.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		aTtD9G+0zm9N6NY7uinl4YlByLg=
+		W96Yh9Z9TyTH/MvS+v683FnQ9t0=
 		</data>
 		<key>Modules/ABMate.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		R8+sMSijSdRJ/cQJ50/NxZqlBJ0=
+		391TWY+u0UA+VTWfmL/YNNH1/rE=
 		</data>
 		<key>Modules/ABMate.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		mxFRV2ECt5S4S6348n4GixdWnVw=
+		hFoNA55/2o6a3LbanjdTQSTaCtk=
 		</data>
 		<key>Modules/ABMate.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		xAoQeHNlUrEY6xnk65xYZKqJMJA=
+		afExNCfA270hPwDKfHCuonLGtKY=
 		</data>
 		<key>Modules/ABMate.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		9UY9gOZYTaauLzaA7ubQ5pJmfl4=
+		/Hco/8OFU6KotIHvwQSmrsty/MM=
 		</data>
 		<key>Modules/ABMate.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		xAoQeHNlUrEY6xnk65xYZKqJMJA=
+		afExNCfA270hPwDKfHCuonLGtKY=
 		</data>
 		<key>Modules/ABMate.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		EseiNb6yes0pvakRXv1RWj2pvKs=
+		KX0FjzmwAGQhaf1XWxLQhjBPqQo=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		Ar88PPlo8nHLDY70AqtbF1f3amA=
+		YchpWVT48030TcyxHOxI7jWzm+A=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -63,84 +63,84 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			qln8uUs4B+9EBRIChkv43i95W+9nVPKt2Z/Ijheje9s=
+			ckwcoGJkB/2bBYDA1LwTZVeL6xjGbGejXYKfTB6/Xck=
 			</data>
 		</dict>
 		<key>Modules/ABMate.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Buc+OIww62YO01vfDqIEAhRl2t2DBhsu7xrW5qJbaR8=
+			E9GZLLLOSwC2OtJSkStct7z2P8sl6kzJKCZ1xbbc9aU=
 			</data>
 		</dict>
 		<key>Modules/ABMate.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			clAGxzAO1NKJezhq15H2QP0OM3aZ13uM4ralvJIb2i4=
+			NPdNU/lGuQFttctk5FpZZ+NsRAzIEjhqf1DbWf79OZ0=
 			</data>
 		</dict>
 		<key>Modules/ABMate.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			SViEhm4x+Wf2IQl4x4YV/SUVkIEFMF+xNGF6zYAWkA4=
+			/x9E+w8xWxiqhZ9bIFyIWEtmbl/W3ncVpwjz02kOxt4=
 			</data>
 		</dict>
 		<key>Modules/ABMate.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			clAGxzAO1NKJezhq15H2QP0OM3aZ13uM4ralvJIb2i4=
+			NPdNU/lGuQFttctk5FpZZ+NsRAzIEjhqf1DbWf79OZ0=
 			</data>
 		</dict>
 		<key>Modules/ABMate.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			UnKqNTFwd2DBVmnpOtbZfA3ZA6l7L6oxNG6BF3rZ4Bs=
+			Zj52HrwQRHphU99DiQky87Y8Y9y7af4dlh8Lo2HszIQ=
 			</data>
 		</dict>
 		<key>Modules/ABMate.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Buc+OIww62YO01vfDqIEAhRl2t2DBhsu7xrW5qJbaR8=
+			E9GZLLLOSwC2OtJSkStct7z2P8sl6kzJKCZ1xbbc9aU=
 			</data>
 		</dict>
 		<key>Modules/ABMate.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			bwYIiUK+bSmsoaBhnURC6cxE6ah3a0IWFAGSV10g6Ec=
+			WlYJvfICr3mk0iRhaktF0bo70t4dvNQ4/RQoxVhyyA8=
 			</data>
 		</dict>
 		<key>Modules/ABMate.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			V/otN+F12mukHgfvGL6UVR6JERSuyjzNRphaRwJ5+P8=
+			hhDL+i7iYXQl8y6TE4f8SZEHjxr4bPRuPm1vBFXtm4s=
 			</data>
 		</dict>
 		<key>Modules/ABMate.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			bwYIiUK+bSmsoaBhnURC6cxE6ah3a0IWFAGSV10g6Ec=
+			WlYJvfICr3mk0iRhaktF0bo70t4dvNQ4/RQoxVhyyA8=
 			</data>
 		</dict>
 		<key>Modules/ABMate.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			gh4l7/7+LIPFz2z4Kv62cC/2HGpoUjh2MwsoqAKzMZE=
+			emwKF3Ih33WsT5SlIUSyhZyYDdNo+EOF6ikwnJ8T2Bk=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			AMBiamat1VOAKAPOSI3ErrUHw3SPEKxsB9NJ39uaZCU=
+			dptaGmPGBylx5q6Clcexn/8vr85lqlH+kJNx2lKaB7A=
 			</data>
 		</dict>
 	</dict>

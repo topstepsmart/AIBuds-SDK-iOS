@@ -12,6 +12,7 @@
 #import <AIBudsFoundation/AIBudsDeviceCapabilities.h>
 #import <AIBudsFoundation/AIBudsAuthorizedServices.h>
 #import <AIBudsFoundation/AIBudsAIChatContentCapabilities.h>
+#import <AIBudsFoundation/AIBudsAISolutionCapabilities.h>
 
 
 #endif /* AIBudsFoundation_h */

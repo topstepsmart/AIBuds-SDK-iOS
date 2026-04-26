@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.3 effective-5.10 (swiftlang-6.3.0.123.5 clang-2100.0.123.102)
+// swift-compiler-version: Apple Swift version 6.3.1 effective-5.10 (swiftlang-6.3.1.1.2 clang-2100.0.123.102)
 // swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature GlobalActorIsolatedTypesUsability -enable-upcoming-feature MemberImportVisibility -enable-upcoming-feature InferIsolatedConformances -enable-upcoming-feature NonisolatedNonsendingByDefault -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name AIBuds
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.1
 @_exported import AIBuds
 import AIBudsFoundation
 import AIBudsLog
@@ -151,6 +151,12 @@ extension Foundation.NSNotification.Name {
   @objc optional func device(_ device: any AIBuds.DeviceConvertible, didReceiveStarBurstAuthResult isSuccess: Swift.Bool, error: Foundation.NSError?)
   @objc optional func device(_ device: any AIBuds.DeviceConvertible, didReceiveOnDeviceVoiceAssistantAuthResult isSuccess: Swift.Bool, error: Foundation.NSError?)
   @objc optional func device(_ device: any AIBuds.DeviceConvertible, didReceiveOnDevicePaymentAuthResult isSuccess: Swift.Bool, error: Foundation.NSError?)
+  @objc optional func device(_ device: any AIBuds.DeviceConvertible, didOverlayPromptScrollSpeedChanged scrollSpeed: Swift.Int)
+  @objc optional func device(_ device: any AIBuds.DeviceConvertible, didReceivedCurrentOverlayPromptSlotTotalSpaceInfo totalSpaceInBytes: Swift.Int)
+  @objc optional func device(_ device: any AIBuds.DeviceConvertible, didCurrentOverlayPromptSlotUsedSpaceChanged usedSpaceInBytes: Swift.Int)
+  @objc optional func device(_ device: any AIBuds.DeviceConvertible, didWearStatusChanged wearStatus: AIBudsFoundation.WearStatus)
+  @objc optional func device(_ device: any AIBuds.DeviceConvertible, didDeviceAppLaunch app: AIBudsFoundation.DeviceApp)
+  @objc optional func device(_ device: any AIBuds.DeviceConvertible, didDeviceAppTerminate app: AIBudsFoundation.DeviceApp)
 }
 @objc(AIBudsSDKDelegate) public protocol SDKDelegate : ObjectiveC.NSObjectProtocol {
   @objc optional func onScanningStatusChanged(_ isScanning: Swift.Bool)
@@ -214,6 +220,12 @@ extension Foundation.NSNotification.Name {
   @objc optional func device(_ device: any AIBuds.DeviceConvertible, didReceiveStarBurstAuthResult isSuccess: Swift.Bool, error: Foundation.NSError?)
   @objc optional func device(_ device: any AIBuds.DeviceConvertible, didReceiveOnDeviceVoiceAssistantAuthResult isSuccess: Swift.Bool, error: Foundation.NSError?)
   @objc optional func device(_ device: any AIBuds.DeviceConvertible, didReceiveOnDevicePaymentAuthResult isSuccess: Swift.Bool, error: Foundation.NSError?)
+  @objc optional func device(_ device: any AIBuds.DeviceConvertible, didOverlayPromptScrollSpeedChanged scrollSpeed: Swift.Int)
+  @objc optional func device(_ device: any AIBuds.DeviceConvertible, didReceivedCurrentOverlayPromptSlotTotalSpaceInfo totalSpaceInBytes: Swift.Int)
+  @objc optional func device(_ device: any AIBuds.DeviceConvertible, didCurrentOverlayPromptSlotUsedSpaceChanged usedSpaceInBytes: Swift.Int)
+  @objc optional func device(_ device: any AIBuds.DeviceConvertible, didWearStatusChanged wearStatus: AIBudsFoundation.WearStatus)
+  @objc optional func device(_ device: any AIBuds.DeviceConvertible, didDeviceAppLaunch app: AIBudsFoundation.DeviceApp)
+  @objc optional func device(_ device: any AIBuds.DeviceConvertible, didDeviceAppTerminate app: AIBudsFoundation.DeviceApp)
 }
 @objc(AIBudsDeviceBeaconConvertible) public protocol DeviceBeaconConvertible : Foundation.NSSecureCoding, ObjectiveC.NSObjectProtocol {
   @objc var data: Foundation.Data? { get }
@@ -290,6 +302,13 @@ extension Foundation.NSNotification.Name {
 }
 @objc(AIBudsDeviceAPI) public protocol DeviceAPI : ObjectiveC.NSObjectProtocol {
 }
+@objc(AIBudsDeviceAppsAPI) public protocol DeviceAppsAPI : AIBuds.DeviceAPI {
+  @objc var deviceApps: [Foundation.NSNumber]? { get }
+  @objc(startApp:completion:) func startApp(_ app: AIBudsFoundation.DeviceApp, completion: AIBuds.AIBudsStatusCodeCompletionHandler?)
+  @objc(stopApp:completion:) func stopApp(_ app: AIBudsFoundation.DeviceApp, completion: AIBuds.AIBudsStatusCodeCompletionHandler?)
+  @objc(stopAllAppsAndReturnToHomeScreenWithCompletion:) func stopAllAppsAndReturnToHomeScreen(_ completion: AIBuds.AIBudsCompletionHandler?)
+  @objc(getCurrentForegroundAppWithCompletion:) func getCurrentForegroundApp(_ completion: ((_ success: Swift.Bool, _ app: Foundation.NSNumber?, _ error: Foundation.NSError?) -> Swift.Void)?)
+}
 @objc(AIBudsDeviceAudioRecordingAPI) public protocol DeviceAudioRecordingAPI : AIBuds.DeviceAPI {
   @objc var maxAudioRecordDuration: Foundation.NSNumber? { get }
   @objc(setMaxAudioRecordDuration:completion:) func setMaxAudioRecordDuration(_ duration: Swift.Int, completion: AIBuds.AIBudsCompletionHandler?)
@@ -344,6 +363,7 @@ extension Foundation.NSNotification.Name {
   @objc var storageInfo: AIBudsFoundation.StorageInfoModel? { get }
   @objc var mediaCountInfo: AIBudsFoundation.MediaCountInfoModel? { get }
   @objc var isSupportAdjustRecordDuration: Swift.Bool { get }
+  @objc var aiSolutionCapabilities: AIBudsFoundation.AIBudsAISolutionCapabilities { get }
   @objc(syncDeviceTimeWithCompletion:) func syncDeviceTime(_ completion: AIBuds.AIBudsStatusCodeCompletionHandler?)
   @objc(setDeviceTime:completion:) func setDeviceTime(to date: Foundation.Date, completion: AIBuds.AIBudsStatusCodeCompletionHandler?)
   @objc(setDeviceLanguage:completion:) func setDeviceLanguage(_ language: AIBudsFoundation.DeviceLanguage, completion: AIBuds.AIBudsCompletionHandler?)
@@ -362,6 +382,7 @@ extension Foundation.NSNotification.Name {
   @objc(setMusicVolume:completion:) func setMusicVolume(_ volume: Swift.Int, completion: AIBuds.AIBudsCompletionHandler?)
 }
 @objc(AIBudsDeviceOtaAPI) public protocol DeviceOtaAPI : AIBuds.DeviceAPI {
+  @objc var otaBatteryLimit: Swift.Int { get }
   @objc(startOtaWithFilePath:startHandler:progressHandler:completionHandler:) func startOta(withFilePath filePath: Swift.String, startHandler: AIBuds.AIBudsOtaStartCompletionHandler?, progressHandler: AIBuds.AIBudsOtaProgressHandler?, completionHandler: AIBuds.AIBudsOtaCompletionHandler?)
   @objc(startOtaWithFilePath:configuration:startHandler:progressHandler:completionHandler:) func startOta(withFilePath filePath: Swift.String, configuration: AIBuds.OtaConfiguration, startHandler: AIBuds.AIBudsOtaStartCompletionHandler?, progressHandler: AIBuds.AIBudsOtaProgressHandler?, completionHandler: AIBuds.AIBudsOtaCompletionHandler?)
 }
@@ -390,6 +411,7 @@ extension Foundation.NSNotification.Name {
 @objc(AIBudsDeviceWearDetectionAPI) public protocol DeviceWearDetectionAPI : AIBuds.DeviceAPI {
   @objc var wearDetectionCapability: AIBudsFoundation.WearDetectionCapability { get }
   @objc var isWearDetectionEnabled: Swift.Bool { get }
+  @objc var wearStatus: AIBudsFoundation.WearStatus { get }
   @objc(setWearDetectionEnabled:completion:) func setWearDetection(enabled: Swift.Bool, completion: AIBuds.AIBudsCompletionHandler?)
 }
 @objc(AIBudsDeviceWorkModeAPI) public protocol DeviceWorkModeAPI : AIBuds.DeviceAPI {
@@ -403,6 +425,20 @@ extension Foundation.NSNotification.Name {
   @objc var onDeviceVoiceAssistantCapability: AIBudsFoundation.OnDeviceVoiceAssistantCapability { get }
   @objc var onDeviceVoiceAssistantMode: AIBudsFoundation.OnDeviceVoiceAssistantMode { get }
   @objc(setOnDeviceVoiceAssistantMode:completion:) func setOnDeviceVoiceAssistantMode(_ mode: AIBudsFoundation.OnDeviceVoiceAssistantMode, completion: AIBuds.AIBudsCompletionHandler?)
+}
+@objc(AIBudsOverlayPromptAPI) public protocol OverlayPromptAPI : AIBuds.DeviceAPI {
+  @objc var overlayPromptScrollSpeed: Foundation.NSNumber? { get }
+  @objc var overlayPromptTotalSlots: Foundation.NSNumber? { get }
+  @objc var overlayPromptSlotIndex: Foundation.NSNumber? { get }
+  @objc var usedBytesOfCurrentOverlayPromptSlot: Foundation.NSNumber? { get }
+  @objc var capacityBytesOfCurrentOverlayPromptSlot: Foundation.NSNumber? { get }
+  @objc(sendOverlayPrompt:progressHandler:completionHandler:) func sendOverlayPrompt(_ prompt: Swift.String, progressHandler: ((_ progress: CoreFoundation.CGFloat) -> Swift.Void)?, completionHandler: AIBuds.AIBudsCompletionHandler?)
+  @objc(clearCurrentOverlayPromptSlotContentWithCompletion:) func clearCurrentOverlayPromptSlotContent(_ completion: AIBuds.AIBudsCompletionHandler?)
+  @objc(toggleOverlayPromptSlotIndexTo:completion:) func toggleOverlayPromptSlotIndexTo(_ index: Swift.Int, completion: AIBuds.AIBudsCompletionHandler?)
+  @objc(setOverlayPromptScrollSpeed:completion:) func setOverlayPromptScrollSpeed(_ speed: Swift.Int, completion: AIBuds.AIBudsCompletionHandler?)
+}
+@objc(AIBudsTurnByTurnNavigationAPI) public protocol TurnByTurnNavigationAPI : AIBuds.DeviceAPI {
+  @objc(sendNavigationInfo:completion:) func sendNavigationInfo(_ info: AIBudsFoundation.NavigationInfoModel, completion: AIBuds.AIBudsStatusCodeCompletionHandler?)
 }
 @_inheritsConvenienceInitializers @objc(AIBudsMltCloudAuthEnv) final public class MltCloudAuthEnv : ObjectiveC.NSObject {
   @objc final public var channelId: Swift.String?

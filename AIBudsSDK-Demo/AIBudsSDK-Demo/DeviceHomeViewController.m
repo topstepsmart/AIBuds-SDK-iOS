@@ -1271,7 +1271,7 @@
     id<AIBudsAIChatSessionConvertible> session = [AIChatContext sharedInstance].currentSession;
     if(session)
     {
-        [session sendImageForPhotoUnderstanding:[UIImage imageWithData:photoData]];
+        [session sendImageForPhotoUnderstanding:[UIImage imageWithData:photoData] prompt:nil];
     }
 }
 

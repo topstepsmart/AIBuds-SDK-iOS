@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
   # ==================== Basic Information ====================
   # SDK name and version
   s.name         = "AIBudsSDK"
-  s.version      = "1.0.0-beta.2"
+  s.version      = "1.0.0-beta.3"
   s.summary      = "AIBuds SDK - Comprehensive AI-powered device development framework for iOS"
   s.description  = <<-DESC
                     AIBuds SDK is a powerful and comprehensive development framework designed to simplify the integration of AI-powered device functionalities into iOS applications. It provides modular components including core connectivity, Bluetooth management, audio processing, AI capabilities, logging utilities, and foundation services. The SDK supports seamless communication with AIBuds devices, enabling developers to build intelligent audio experiences with features like real-time audio streaming, voice recognition, and smart device management. With its flexible subspec architecture, developers can easily include only the components they need, from basic logging to full AI integration.
@@ -119,7 +119,7 @@ Pod::Spec.new do |s|
       ai_core.vendored_frameworks = 'AIBudsSDK/AIBudsAI.xcframework'
       ai_core.dependency 'AIBudsSDK/Core'
       ai_core.dependency 'AIBudsSDK/AI/Foundation'
-      ai_core.dependency 'WCDB.swift', '2.1.15'
+      ai_core.dependency 'WCDB.swift', '2.1.16'
     end
     
     # StarBurst - Starburst AI integration

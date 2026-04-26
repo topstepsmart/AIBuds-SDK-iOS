@@ -5469,6 +5469,234 @@
             ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "device",
+            "printedName": "device(_:didOverlayPromptScrollSpeedChanged:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DeviceConvertible",
+                "printedName": "any AIBuds.DeviceConvertible",
+                "usr": "c:@M@AIBuds@objc(pl)AIBudsDeviceConvertible"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AIBuds@objc(pl)AIBudsDeviceDelegate(im)device:didOverlayPromptScrollSpeedChanged:",
+            "mangledName": "$s6AIBuds14DeviceDelegateP6device_34didOverlayPromptScrollSpeedChangedyAA0B11Convertible_p_SitF",
+            "moduleName": "AIBuds",
+            "genericSig": "<τ_0_0 where τ_0_0 : AIBuds.DeviceDelegate>",
+            "sugared_genericSig": "<Self where Self : AIBuds.DeviceDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "Optional",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "device",
+            "printedName": "device(_:didReceivedCurrentOverlayPromptSlotTotalSpaceInfo:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DeviceConvertible",
+                "printedName": "any AIBuds.DeviceConvertible",
+                "usr": "c:@M@AIBuds@objc(pl)AIBudsDeviceConvertible"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AIBuds@objc(pl)AIBudsDeviceDelegate(im)device:didReceivedCurrentOverlayPromptSlotTotalSpaceInfo:",
+            "mangledName": "$s6AIBuds14DeviceDelegateP6device_49didReceivedCurrentOverlayPromptSlotTotalSpaceInfoyAA0B11Convertible_p_SitF",
+            "moduleName": "AIBuds",
+            "genericSig": "<τ_0_0 where τ_0_0 : AIBuds.DeviceDelegate>",
+            "sugared_genericSig": "<Self where Self : AIBuds.DeviceDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "Optional",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "device",
+            "printedName": "device(_:didCurrentOverlayPromptSlotUsedSpaceChanged:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DeviceConvertible",
+                "printedName": "any AIBuds.DeviceConvertible",
+                "usr": "c:@M@AIBuds@objc(pl)AIBudsDeviceConvertible"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AIBuds@objc(pl)AIBudsDeviceDelegate(im)device:didCurrentOverlayPromptSlotUsedSpaceChanged:",
+            "mangledName": "$s6AIBuds14DeviceDelegateP6device_43didCurrentOverlayPromptSlotUsedSpaceChangedyAA0B11Convertible_p_SitF",
+            "moduleName": "AIBuds",
+            "genericSig": "<τ_0_0 where τ_0_0 : AIBuds.DeviceDelegate>",
+            "sugared_genericSig": "<Self where Self : AIBuds.DeviceDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "Optional",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "device",
+            "printedName": "device(_:didWearStatusChanged:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DeviceConvertible",
+                "printedName": "any AIBuds.DeviceConvertible",
+                "usr": "c:@M@AIBuds@objc(pl)AIBudsDeviceConvertible"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WearStatus",
+                "printedName": "AIBudsFoundation.WearStatus",
+                "usr": "c:@M@AIBudsFoundation@E@AIBudsWearStatus"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AIBuds@objc(pl)AIBudsDeviceDelegate(im)device:didWearStatusChanged:",
+            "mangledName": "$s6AIBuds14DeviceDelegateP6device_20didWearStatusChangedyAA0B11Convertible_p_0A10Foundation0fG0OtF",
+            "moduleName": "AIBuds",
+            "genericSig": "<τ_0_0 where τ_0_0 : AIBuds.DeviceDelegate>",
+            "sugared_genericSig": "<Self where Self : AIBuds.DeviceDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "Optional",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "device",
+            "printedName": "device(_:didDeviceAppLaunch:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DeviceConvertible",
+                "printedName": "any AIBuds.DeviceConvertible",
+                "usr": "c:@M@AIBuds@objc(pl)AIBudsDeviceConvertible"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DeviceApp",
+                "printedName": "AIBudsFoundation.DeviceApp",
+                "usr": "c:@M@AIBudsFoundation@E@AIBudsDeviceApp"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AIBuds@objc(pl)AIBudsDeviceDelegate(im)device:didDeviceAppLaunch:",
+            "mangledName": "$s6AIBuds14DeviceDelegateP6device_03didB9AppLaunchyAA0B11Convertible_p_0A10Foundation0bF0OtF",
+            "moduleName": "AIBuds",
+            "genericSig": "<τ_0_0 where τ_0_0 : AIBuds.DeviceDelegate>",
+            "sugared_genericSig": "<Self where Self : AIBuds.DeviceDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "Optional",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "device",
+            "printedName": "device(_:didDeviceAppTerminate:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DeviceConvertible",
+                "printedName": "any AIBuds.DeviceConvertible",
+                "usr": "c:@M@AIBuds@objc(pl)AIBudsDeviceConvertible"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DeviceApp",
+                "printedName": "AIBudsFoundation.DeviceApp",
+                "usr": "c:@M@AIBudsFoundation@E@AIBudsDeviceApp"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AIBuds@objc(pl)AIBudsDeviceDelegate(im)device:didDeviceAppTerminate:",
+            "mangledName": "$s6AIBuds14DeviceDelegateP6device_03didB12AppTerminateyAA0B11Convertible_p_0A10Foundation0bF0OtF",
+            "moduleName": "AIBuds",
+            "genericSig": "<τ_0_0 where τ_0_0 : AIBuds.DeviceDelegate>",
+            "sugared_genericSig": "<Self where Self : AIBuds.DeviceDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "Optional",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Protocol",
@@ -7962,6 +8190,234 @@
             "declKind": "Func",
             "usr": "c:@M@AIBuds@objc(pl)AIBudsSDKDelegate(im)device:didReceiveOnDevicePaymentAuthResult:error:",
             "mangledName": "$s6AIBuds11SDKDelegateP6device_35didReceiveOnDevicePaymentAuthResult5erroryAA0G11Convertible_p_SbSo7NSErrorCSgtF",
+            "moduleName": "AIBuds",
+            "genericSig": "<τ_0_0 where τ_0_0 : AIBuds.SDKDelegate>",
+            "sugared_genericSig": "<Self where Self : AIBuds.SDKDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "Optional",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "device",
+            "printedName": "device(_:didOverlayPromptScrollSpeedChanged:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DeviceConvertible",
+                "printedName": "any AIBuds.DeviceConvertible",
+                "usr": "c:@M@AIBuds@objc(pl)AIBudsDeviceConvertible"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AIBuds@objc(pl)AIBudsSDKDelegate(im)device:didOverlayPromptScrollSpeedChanged:",
+            "mangledName": "$s6AIBuds11SDKDelegateP6device_34didOverlayPromptScrollSpeedChangedyAA17DeviceConvertible_p_SitF",
+            "moduleName": "AIBuds",
+            "genericSig": "<τ_0_0 where τ_0_0 : AIBuds.SDKDelegate>",
+            "sugared_genericSig": "<Self where Self : AIBuds.SDKDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "Optional",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "device",
+            "printedName": "device(_:didReceivedCurrentOverlayPromptSlotTotalSpaceInfo:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DeviceConvertible",
+                "printedName": "any AIBuds.DeviceConvertible",
+                "usr": "c:@M@AIBuds@objc(pl)AIBudsDeviceConvertible"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AIBuds@objc(pl)AIBudsSDKDelegate(im)device:didReceivedCurrentOverlayPromptSlotTotalSpaceInfo:",
+            "mangledName": "$s6AIBuds11SDKDelegateP6device_49didReceivedCurrentOverlayPromptSlotTotalSpaceInfoyAA17DeviceConvertible_p_SitF",
+            "moduleName": "AIBuds",
+            "genericSig": "<τ_0_0 where τ_0_0 : AIBuds.SDKDelegate>",
+            "sugared_genericSig": "<Self where Self : AIBuds.SDKDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "Optional",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "device",
+            "printedName": "device(_:didCurrentOverlayPromptSlotUsedSpaceChanged:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DeviceConvertible",
+                "printedName": "any AIBuds.DeviceConvertible",
+                "usr": "c:@M@AIBuds@objc(pl)AIBudsDeviceConvertible"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AIBuds@objc(pl)AIBudsSDKDelegate(im)device:didCurrentOverlayPromptSlotUsedSpaceChanged:",
+            "mangledName": "$s6AIBuds11SDKDelegateP6device_43didCurrentOverlayPromptSlotUsedSpaceChangedyAA17DeviceConvertible_p_SitF",
+            "moduleName": "AIBuds",
+            "genericSig": "<τ_0_0 where τ_0_0 : AIBuds.SDKDelegate>",
+            "sugared_genericSig": "<Self where Self : AIBuds.SDKDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "Optional",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "device",
+            "printedName": "device(_:didWearStatusChanged:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DeviceConvertible",
+                "printedName": "any AIBuds.DeviceConvertible",
+                "usr": "c:@M@AIBuds@objc(pl)AIBudsDeviceConvertible"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WearStatus",
+                "printedName": "AIBudsFoundation.WearStatus",
+                "usr": "c:@M@AIBudsFoundation@E@AIBudsWearStatus"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AIBuds@objc(pl)AIBudsSDKDelegate(im)device:didWearStatusChanged:",
+            "mangledName": "$s6AIBuds11SDKDelegateP6device_20didWearStatusChangedyAA17DeviceConvertible_p_0A10Foundation0eF0OtF",
+            "moduleName": "AIBuds",
+            "genericSig": "<τ_0_0 where τ_0_0 : AIBuds.SDKDelegate>",
+            "sugared_genericSig": "<Self where Self : AIBuds.SDKDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "Optional",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "device",
+            "printedName": "device(_:didDeviceAppLaunch:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DeviceConvertible",
+                "printedName": "any AIBuds.DeviceConvertible",
+                "usr": "c:@M@AIBuds@objc(pl)AIBudsDeviceConvertible"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DeviceApp",
+                "printedName": "AIBudsFoundation.DeviceApp",
+                "usr": "c:@M@AIBudsFoundation@E@AIBudsDeviceApp"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AIBuds@objc(pl)AIBudsSDKDelegate(im)device:didDeviceAppLaunch:",
+            "mangledName": "$s6AIBuds11SDKDelegateP6device_18didDeviceAppLaunchyAA0E11Convertible_p_0A10Foundation0eF0OtF",
+            "moduleName": "AIBuds",
+            "genericSig": "<τ_0_0 where τ_0_0 : AIBuds.SDKDelegate>",
+            "sugared_genericSig": "<Self where Self : AIBuds.SDKDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "Optional",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "device",
+            "printedName": "device(_:didDeviceAppTerminate:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DeviceConvertible",
+                "printedName": "any AIBuds.DeviceConvertible",
+                "usr": "c:@M@AIBuds@objc(pl)AIBudsDeviceConvertible"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DeviceApp",
+                "printedName": "AIBudsFoundation.DeviceApp",
+                "usr": "c:@M@AIBudsFoundation@E@AIBudsDeviceApp"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AIBuds@objc(pl)AIBudsSDKDelegate(im)device:didDeviceAppTerminate:",
+            "mangledName": "$s6AIBuds11SDKDelegateP6device_21didDeviceAppTerminateyAA0E11Convertible_p_0A10Foundation0eF0OtF",
             "moduleName": "AIBuds",
             "genericSig": "<τ_0_0 where τ_0_0 : AIBuds.SDKDelegate>",
             "sugared_genericSig": "<Self where Self : AIBuds.SDKDelegate>",
@@ -11791,7 +12247,8 @@
         "objc_name": "AIBudsDeviceAIChatAPI",
         "declAttributes": [
           "AccessControl",
-          "ObjC"
+          "ObjC",
+          "RawDocComment"
         ],
         "conformances": [
           {
@@ -11988,7 +12445,8 @@
         "objc_name": "AIBudsDeviceAITranslationAPI",
         "declAttributes": [
           "AccessControl",
-          "ObjC"
+          "ObjC",
+          "RawDocComment"
         ],
         "conformances": [
           {
@@ -12590,7 +13048,8 @@
         "objc_name": "AIBudsDeviceANCAPI",
         "declAttributes": [
           "AccessControl",
-          "ObjC"
+          "ObjC",
+          "RawDocComment"
         ],
         "conformances": [
           {
@@ -12639,7 +13098,8 @@
         "objc_name": "AIBudsDeviceAPI",
         "declAttributes": [
           "AccessControl",
-          "ObjC"
+          "ObjC",
+          "RawDocComment"
         ],
         "conformances": [
           {
@@ -12655,6 +13115,492 @@
             "printedName": "Copyable",
             "usr": "s:s8CopyableP",
             "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AIBuds",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AIBudsFoundation",
+        "printedName": "AIBudsFoundation",
+        "declKind": "Import",
+        "moduleName": "AIBuds"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "DeviceAppsAPI",
+        "printedName": "DeviceAppsAPI",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "deviceApps",
+            "printedName": "deviceApps",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Foundation.NSNumber]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Foundation.NSNumber]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NSNumber",
+                        "printedName": "Foundation.NSNumber",
+                        "usr": "c:objc(cs)NSNumber"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBuds@objc(pl)AIBudsDeviceAppsAPI(py)deviceApps",
+            "mangledName": "$s6AIBuds13DeviceAppsAPIP06deviceC0SaySo8NSNumberCGSgvp",
+            "moduleName": "AIBuds",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Foundation.NSNumber]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[Foundation.NSNumber]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "NSNumber",
+                            "printedName": "Foundation.NSNumber",
+                            "usr": "c:objc(cs)NSNumber"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBuds@objc(pl)AIBudsDeviceAppsAPI(im)deviceApps",
+                "mangledName": "$s6AIBuds13DeviceAppsAPIP06deviceC0SaySo8NSNumberCGSgvg",
+                "moduleName": "AIBuds",
+                "genericSig": "<τ_0_0 where τ_0_0 : AIBuds.DeviceAppsAPI>",
+                "sugared_genericSig": "<Self where Self : AIBuds.DeviceAppsAPI>",
+                "protocolReq": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "startApp",
+            "printedName": "startApp(_:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DeviceApp",
+                "printedName": "AIBudsFoundation.DeviceApp",
+                "usr": "c:@M@AIBudsFoundation@E@AIBudsDeviceApp"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Swift.Bool, Foundation.NSNumber?, (any Swift.Error)?) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Bool, Foundation.NSNumber?, (any Swift.Error)?) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(Swift.Bool, Foundation.NSNumber?, (any Swift.Error)?)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Bool",
+                            "printedName": "Swift.Bool",
+                            "usr": "s:Sb"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "Foundation.NSNumber?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "NSNumber",
+                                "printedName": "Foundation.NSNumber",
+                                "usr": "c:objc(cs)NSNumber"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "(any Swift.Error)?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Error",
+                                "printedName": "any Swift.Error",
+                                "usr": "s:s5ErrorP"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AIBuds@objc(pl)AIBudsDeviceAppsAPI(im)startApp:completion:",
+            "mangledName": "$s6AIBuds13DeviceAppsAPIP8startApp_10completiony0A10Foundation0bF0O_ySb_So8NSNumberCSgs5Error_pSgtcSgtF",
+            "moduleName": "AIBuds",
+            "genericSig": "<τ_0_0 where τ_0_0 : AIBuds.DeviceAppsAPI>",
+            "sugared_genericSig": "<Self where Self : AIBuds.DeviceAppsAPI>",
+            "protocolReq": true,
+            "objc_name": "startApp:completion:",
+            "declAttributes": [
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "stopApp",
+            "printedName": "stopApp(_:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DeviceApp",
+                "printedName": "AIBudsFoundation.DeviceApp",
+                "usr": "c:@M@AIBudsFoundation@E@AIBudsDeviceApp"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Swift.Bool, Foundation.NSNumber?, (any Swift.Error)?) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Bool, Foundation.NSNumber?, (any Swift.Error)?) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(Swift.Bool, Foundation.NSNumber?, (any Swift.Error)?)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Bool",
+                            "printedName": "Swift.Bool",
+                            "usr": "s:Sb"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "Foundation.NSNumber?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "NSNumber",
+                                "printedName": "Foundation.NSNumber",
+                                "usr": "c:objc(cs)NSNumber"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "(any Swift.Error)?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Error",
+                                "printedName": "any Swift.Error",
+                                "usr": "s:s5ErrorP"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AIBuds@objc(pl)AIBudsDeviceAppsAPI(im)stopApp:completion:",
+            "mangledName": "$s6AIBuds13DeviceAppsAPIP7stopApp_10completiony0A10Foundation0bF0O_ySb_So8NSNumberCSgs5Error_pSgtcSgtF",
+            "moduleName": "AIBuds",
+            "genericSig": "<τ_0_0 where τ_0_0 : AIBuds.DeviceAppsAPI>",
+            "sugared_genericSig": "<Self where Self : AIBuds.DeviceAppsAPI>",
+            "protocolReq": true,
+            "objc_name": "stopApp:completion:",
+            "declAttributes": [
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "stopAllAppsAndReturnToHomeScreen",
+            "printedName": "stopAllAppsAndReturnToHomeScreen(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Swift.Bool, (any Swift.Error)?) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Bool, (any Swift.Error)?) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(Swift.Bool, (any Swift.Error)?)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Bool",
+                            "printedName": "Swift.Bool",
+                            "usr": "s:Sb"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "(any Swift.Error)?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Error",
+                                "printedName": "any Swift.Error",
+                                "usr": "s:s5ErrorP"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AIBuds@objc(pl)AIBudsDeviceAppsAPI(im)stopAllAppsAndReturnToHomeScreenWithCompletion:",
+            "mangledName": "$s6AIBuds13DeviceAppsAPIP07stopAllC21AndReturnToHomeScreenyyySb_s5Error_pSgtcSgF",
+            "moduleName": "AIBuds",
+            "genericSig": "<τ_0_0 where τ_0_0 : AIBuds.DeviceAppsAPI>",
+            "sugared_genericSig": "<Self where Self : AIBuds.DeviceAppsAPI>",
+            "protocolReq": true,
+            "objc_name": "stopAllAppsAndReturnToHomeScreenWithCompletion:",
+            "declAttributes": [
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getCurrentForegroundApp",
+            "printedName": "getCurrentForegroundApp(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Swift.Bool, Foundation.NSNumber?, Foundation.NSError?) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Bool, Foundation.NSNumber?, Foundation.NSError?) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(Swift.Bool, Foundation.NSNumber?, Foundation.NSError?)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Bool",
+                            "printedName": "Swift.Bool",
+                            "usr": "s:Sb"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "Foundation.NSNumber?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "NSNumber",
+                                "printedName": "Foundation.NSNumber",
+                                "usr": "c:objc(cs)NSNumber"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "Foundation.NSError?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "NSError",
+                                "printedName": "Foundation.NSError",
+                                "usr": "c:objc(cs)NSError"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AIBuds@objc(pl)AIBudsDeviceAppsAPI(im)getCurrentForegroundAppWithCompletion:",
+            "mangledName": "$s6AIBuds13DeviceAppsAPIP23getCurrentForegroundAppyyySb_So8NSNumberCSgSo7NSErrorCSgtcSgF",
+            "moduleName": "AIBuds",
+            "genericSig": "<τ_0_0 where τ_0_0 : AIBuds.DeviceAppsAPI>",
+            "sugared_genericSig": "<Self where Self : AIBuds.DeviceAppsAPI>",
+            "protocolReq": true,
+            "objc_name": "getCurrentForegroundAppWithCompletion:",
+            "declAttributes": [
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "c:@M@AIBuds@objc(pl)AIBudsDeviceAppsAPI",
+        "mangledName": "$s6AIBuds13DeviceAppsAPIP",
+        "moduleName": "AIBuds",
+        "genericSig": "<τ_0_0 : AIBuds.DeviceAPI>",
+        "sugared_genericSig": "<Self : AIBuds.DeviceAPI>",
+        "objc_name": "AIBudsDeviceAppsAPI",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "DeviceAPI",
+            "printedName": "DeviceAPI",
+            "usr": "c:@M@AIBuds@objc(pl)AIBudsDeviceAPI",
+            "mangledName": "$s6AIBuds9DeviceAPIP"
           }
         ]
       },
@@ -13159,7 +14105,8 @@
         "objc_name": "AIBudsDeviceAudioRecordingAPI",
         "declAttributes": [
           "AccessControl",
-          "ObjC"
+          "ObjC",
+          "RawDocComment"
         ],
         "conformances": [
           {
@@ -13773,7 +14720,8 @@
         "objc_name": "AIBudsDeviceCameraAPI",
         "declAttributes": [
           "AccessControl",
-          "ObjC"
+          "ObjC",
+          "RawDocComment"
         ],
         "conformances": [
           {
@@ -14699,7 +15647,8 @@
         "objc_name": "AIBudsDeviceCommonAPI",
         "declAttributes": [
           "AccessControl",
-          "ObjC"
+          "ObjC",
+          "RawDocComment"
         ],
         "conformances": [
           {
@@ -14966,7 +15915,8 @@
         "objc_name": "AIBudsDeviceEqualizerAPI",
         "declAttributes": [
           "AccessControl",
-          "ObjC"
+          "ObjC",
+          "RawDocComment"
         ],
         "conformances": [
           {
@@ -16135,7 +17085,8 @@
         "objc_name": "AIBudsDeviceFindAPI",
         "declAttributes": [
           "AccessControl",
-          "ObjC"
+          "ObjC",
+          "RawDocComment"
         ],
         "conformances": [
           {
@@ -16251,7 +17202,8 @@
         "objc_name": "AIBudsDeviceFirmwareAPI",
         "declAttributes": [
           "AccessControl",
-          "ObjC"
+          "ObjC",
+          "RawDocComment"
         ],
         "conformances": [
           {
@@ -16420,7 +17372,8 @@
         "objc_name": "AIBudsDeviceHotspotAPI",
         "declAttributes": [
           "AccessControl",
-          "ObjC"
+          "ObjC",
+          "RawDocComment"
         ],
         "conformances": [
           {
@@ -16876,6 +17829,55 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "aiSolutionCapabilities",
+            "printedName": "aiSolutionCapabilities",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AIBudsAISolutionCapabilities",
+                "printedName": "AIBudsFoundation.AIBudsAISolutionCapabilities",
+                "usr": "c:@E@AIBudsAISolutionCapabilities"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBuds@objc(pl)AIBudsDeviceInfoAPI(py)aiSolutionCapabilities",
+            "mangledName": "$s6AIBuds13DeviceInfoAPIP22aiSolutionCapabilitiesSo0a10AISolutionG0Vvp",
+            "moduleName": "AIBuds",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AIBudsAISolutionCapabilities",
+                    "printedName": "AIBudsFoundation.AIBudsAISolutionCapabilities",
+                    "usr": "c:@E@AIBudsAISolutionCapabilities"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBuds@objc(pl)AIBudsDeviceInfoAPI(im)aiSolutionCapabilities",
+                "mangledName": "$s6AIBuds13DeviceInfoAPIP22aiSolutionCapabilitiesSo0a10AISolutionG0Vvg",
+                "moduleName": "AIBuds",
+                "genericSig": "<τ_0_0 where τ_0_0 : AIBuds.DeviceInfoAPI>",
+                "sugared_genericSig": "<Self where Self : AIBuds.DeviceInfoAPI>",
+                "protocolReq": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
             "kind": "Function",
             "name": "syncDeviceTime",
             "printedName": "syncDeviceTime(_:)",
@@ -17290,7 +18292,8 @@
         "objc_name": "AIBudsDeviceInfoAPI",
         "declAttributes": [
           "AccessControl",
-          "ObjC"
+          "ObjC",
+          "RawDocComment"
         ],
         "conformances": [
           {
@@ -18004,7 +19007,8 @@
         "objc_name": "AIBudsDeviceMusicControlAPI",
         "declAttributes": [
           "AccessControl",
-          "ObjC"
+          "ObjC",
+          "RawDocComment"
         ],
         "conformances": [
           {
@@ -18045,6 +19049,55 @@
         "name": "DeviceOtaAPI",
         "printedName": "DeviceOtaAPI",
         "children": [
+          {
+            "kind": "Var",
+            "name": "otaBatteryLimit",
+            "printedName": "otaBatteryLimit",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBuds@objc(pl)AIBudsDeviceOtaAPI(py)otaBatteryLimit",
+            "mangledName": "$s6AIBuds12DeviceOtaAPIP15otaBatteryLimitSivp",
+            "moduleName": "AIBuds",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBuds@objc(pl)AIBudsDeviceOtaAPI(im)otaBatteryLimit",
+                "mangledName": "$s6AIBuds12DeviceOtaAPIP15otaBatteryLimitSivg",
+                "moduleName": "AIBuds",
+                "genericSig": "<τ_0_0 where τ_0_0 : AIBuds.DeviceOtaAPI>",
+                "sugared_genericSig": "<Self where Self : AIBuds.DeviceOtaAPI>",
+                "protocolReq": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
           {
             "kind": "Function",
             "name": "startOta",
@@ -18377,7 +19430,8 @@
         "objc_name": "AIBudsDeviceOtaAPI",
         "declAttributes": [
           "AccessControl",
-          "ObjC"
+          "ObjC",
+          "RawDocComment"
         ],
         "conformances": [
           {
@@ -18607,7 +19661,8 @@
         "objc_name": "AIBudsDevicePhysicalOperationsAPI",
         "declAttributes": [
           "AccessControl",
-          "ObjC"
+          "ObjC",
+          "RawDocComment"
         ],
         "conformances": [
           {
@@ -18737,7 +19792,8 @@
         "objc_name": "AIBudsDeviceRemoteShutterAPI",
         "declAttributes": [
           "AccessControl",
-          "ObjC"
+          "ObjC",
+          "RawDocComment"
         ],
         "conformances": [
           {
@@ -19002,7 +20058,8 @@
         "objc_name": "AIBudsDeviceServiceAuthAPI",
         "declAttributes": [
           "AccessControl",
-          "ObjC"
+          "ObjC",
+          "RawDocComment"
         ],
         "conformances": [
           {
@@ -19151,7 +20208,8 @@
         "objc_name": "AIBudsDeviceTWSAPI",
         "declAttributes": [
           "AccessControl",
-          "ObjC"
+          "ObjC",
+          "RawDocComment"
         ],
         "conformances": [
           {
@@ -19499,7 +20557,8 @@
         "objc_name": "AIBudsDeviceVolumeControlAPI",
         "declAttributes": [
           "AccessControl",
-          "ObjC"
+          "ObjC",
+          "RawDocComment"
         ],
         "conformances": [
           {
@@ -19646,6 +20705,55 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "wearStatus",
+            "printedName": "wearStatus",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WearStatus",
+                "printedName": "AIBudsFoundation.WearStatus",
+                "usr": "c:@M@AIBudsFoundation@E@AIBudsWearStatus"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBuds@objc(pl)AIBudsDeviceWearDetectionAPI(py)wearStatus",
+            "mangledName": "$s6AIBuds22DeviceWearDetectionAPIP10wearStatus0A10Foundation0cG0Ovp",
+            "moduleName": "AIBuds",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WearStatus",
+                    "printedName": "AIBudsFoundation.WearStatus",
+                    "usr": "c:@M@AIBudsFoundation@E@AIBudsWearStatus"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBuds@objc(pl)AIBudsDeviceWearDetectionAPI(im)wearStatus",
+                "mangledName": "$s6AIBuds22DeviceWearDetectionAPIP10wearStatus0A10Foundation0cG0Ovg",
+                "moduleName": "AIBuds",
+                "genericSig": "<τ_0_0 where τ_0_0 : AIBuds.DeviceWearDetectionAPI>",
+                "sugared_genericSig": "<Self where Self : AIBuds.DeviceWearDetectionAPI>",
+                "protocolReq": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
             "kind": "Function",
             "name": "setWearDetection",
             "printedName": "setWearDetection(enabled:completion:)",
@@ -19734,7 +20842,8 @@
         "objc_name": "AIBudsDeviceWearDetectionAPI",
         "declAttributes": [
           "AccessControl",
-          "ObjC"
+          "ObjC",
+          "RawDocComment"
         ],
         "conformances": [
           {
@@ -19920,7 +21029,8 @@
         "objc_name": "AIBudsDeviceWorkModeAPI",
         "declAttributes": [
           "AccessControl",
-          "ObjC"
+          "ObjC",
+          "RawDocComment"
         ],
         "conformances": [
           {
@@ -20027,7 +21137,8 @@
         "objc_name": "AIBudsDeviceWorkStateAPI",
         "declAttributes": [
           "AccessControl",
-          "ObjC"
+          "ObjC",
+          "RawDocComment"
         ],
         "conformances": [
           {
@@ -20262,7 +21373,880 @@
         "objc_name": "AIBudsOnDeviceVoiceAssistantAPI",
         "declAttributes": [
           "AccessControl",
-          "ObjC"
+          "ObjC",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "DeviceAPI",
+            "printedName": "DeviceAPI",
+            "usr": "c:@M@AIBuds@objc(pl)AIBudsDeviceAPI",
+            "mangledName": "$s6AIBuds9DeviceAPIP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AIBuds",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AIBudsFoundation",
+        "printedName": "AIBudsFoundation",
+        "declKind": "Import",
+        "moduleName": "AIBuds"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "OverlayPromptAPI",
+        "printedName": "OverlayPromptAPI",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "overlayPromptScrollSpeed",
+            "printedName": "overlayPromptScrollSpeed",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.NSNumber?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSNumber",
+                    "printedName": "Foundation.NSNumber",
+                    "usr": "c:objc(cs)NSNumber"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBuds@objc(pl)AIBudsOverlayPromptAPI(py)overlayPromptScrollSpeed",
+            "mangledName": "$s6AIBuds16OverlayPromptAPIP07overlayC11ScrollSpeedSo8NSNumberCSgvp",
+            "moduleName": "AIBuds",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.NSNumber?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NSNumber",
+                        "printedName": "Foundation.NSNumber",
+                        "usr": "c:objc(cs)NSNumber"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBuds@objc(pl)AIBudsOverlayPromptAPI(im)overlayPromptScrollSpeed",
+                "mangledName": "$s6AIBuds16OverlayPromptAPIP07overlayC11ScrollSpeedSo8NSNumberCSgvg",
+                "moduleName": "AIBuds",
+                "genericSig": "<τ_0_0 where τ_0_0 : AIBuds.OverlayPromptAPI>",
+                "sugared_genericSig": "<Self where Self : AIBuds.OverlayPromptAPI>",
+                "protocolReq": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "overlayPromptTotalSlots",
+            "printedName": "overlayPromptTotalSlots",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.NSNumber?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSNumber",
+                    "printedName": "Foundation.NSNumber",
+                    "usr": "c:objc(cs)NSNumber"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBuds@objc(pl)AIBudsOverlayPromptAPI(py)overlayPromptTotalSlots",
+            "mangledName": "$s6AIBuds16OverlayPromptAPIP07overlayC10TotalSlotsSo8NSNumberCSgvp",
+            "moduleName": "AIBuds",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.NSNumber?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NSNumber",
+                        "printedName": "Foundation.NSNumber",
+                        "usr": "c:objc(cs)NSNumber"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBuds@objc(pl)AIBudsOverlayPromptAPI(im)overlayPromptTotalSlots",
+                "mangledName": "$s6AIBuds16OverlayPromptAPIP07overlayC10TotalSlotsSo8NSNumberCSgvg",
+                "moduleName": "AIBuds",
+                "genericSig": "<τ_0_0 where τ_0_0 : AIBuds.OverlayPromptAPI>",
+                "sugared_genericSig": "<Self where Self : AIBuds.OverlayPromptAPI>",
+                "protocolReq": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "overlayPromptSlotIndex",
+            "printedName": "overlayPromptSlotIndex",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.NSNumber?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSNumber",
+                    "printedName": "Foundation.NSNumber",
+                    "usr": "c:objc(cs)NSNumber"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBuds@objc(pl)AIBudsOverlayPromptAPI(py)overlayPromptSlotIndex",
+            "mangledName": "$s6AIBuds16OverlayPromptAPIP07overlayC9SlotIndexSo8NSNumberCSgvp",
+            "moduleName": "AIBuds",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.NSNumber?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NSNumber",
+                        "printedName": "Foundation.NSNumber",
+                        "usr": "c:objc(cs)NSNumber"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBuds@objc(pl)AIBudsOverlayPromptAPI(im)overlayPromptSlotIndex",
+                "mangledName": "$s6AIBuds16OverlayPromptAPIP07overlayC9SlotIndexSo8NSNumberCSgvg",
+                "moduleName": "AIBuds",
+                "genericSig": "<τ_0_0 where τ_0_0 : AIBuds.OverlayPromptAPI>",
+                "sugared_genericSig": "<Self where Self : AIBuds.OverlayPromptAPI>",
+                "protocolReq": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "usedBytesOfCurrentOverlayPromptSlot",
+            "printedName": "usedBytesOfCurrentOverlayPromptSlot",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.NSNumber?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSNumber",
+                    "printedName": "Foundation.NSNumber",
+                    "usr": "c:objc(cs)NSNumber"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBuds@objc(pl)AIBudsOverlayPromptAPI(py)usedBytesOfCurrentOverlayPromptSlot",
+            "mangledName": "$s6AIBuds16OverlayPromptAPIP018usedBytesOfCurrentbC4SlotSo8NSNumberCSgvp",
+            "moduleName": "AIBuds",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.NSNumber?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NSNumber",
+                        "printedName": "Foundation.NSNumber",
+                        "usr": "c:objc(cs)NSNumber"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBuds@objc(pl)AIBudsOverlayPromptAPI(im)usedBytesOfCurrentOverlayPromptSlot",
+                "mangledName": "$s6AIBuds16OverlayPromptAPIP018usedBytesOfCurrentbC4SlotSo8NSNumberCSgvg",
+                "moduleName": "AIBuds",
+                "genericSig": "<τ_0_0 where τ_0_0 : AIBuds.OverlayPromptAPI>",
+                "sugared_genericSig": "<Self where Self : AIBuds.OverlayPromptAPI>",
+                "protocolReq": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "capacityBytesOfCurrentOverlayPromptSlot",
+            "printedName": "capacityBytesOfCurrentOverlayPromptSlot",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.NSNumber?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSNumber",
+                    "printedName": "Foundation.NSNumber",
+                    "usr": "c:objc(cs)NSNumber"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBuds@objc(pl)AIBudsOverlayPromptAPI(py)capacityBytesOfCurrentOverlayPromptSlot",
+            "mangledName": "$s6AIBuds16OverlayPromptAPIP022capacityBytesOfCurrentbC4SlotSo8NSNumberCSgvp",
+            "moduleName": "AIBuds",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.NSNumber?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NSNumber",
+                        "printedName": "Foundation.NSNumber",
+                        "usr": "c:objc(cs)NSNumber"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBuds@objc(pl)AIBudsOverlayPromptAPI(im)capacityBytesOfCurrentOverlayPromptSlot",
+                "mangledName": "$s6AIBuds16OverlayPromptAPIP022capacityBytesOfCurrentbC4SlotSo8NSNumberCSgvg",
+                "moduleName": "AIBuds",
+                "genericSig": "<τ_0_0 where τ_0_0 : AIBuds.OverlayPromptAPI>",
+                "sugared_genericSig": "<Self where Self : AIBuds.OverlayPromptAPI>",
+                "protocolReq": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "sendOverlayPrompt",
+            "printedName": "sendOverlayPrompt(_:progressHandler:completionHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((CoreGraphics.CGFloat) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(CoreGraphics.CGFloat) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CGFloat",
+                        "printedName": "CoreGraphics.CGFloat",
+                        "usr": "s:14CoreFoundation7CGFloatV"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Swift.Bool, (any Swift.Error)?) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Bool, (any Swift.Error)?) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(Swift.Bool, (any Swift.Error)?)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Bool",
+                            "printedName": "Swift.Bool",
+                            "usr": "s:Sb"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "(any Swift.Error)?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Error",
+                                "printedName": "any Swift.Error",
+                                "usr": "s:s5ErrorP"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AIBuds@objc(pl)AIBudsOverlayPromptAPI(im)sendOverlayPrompt:progressHandler:completionHandler:",
+            "mangledName": "$s6AIBuds16OverlayPromptAPIP04sendbC0_15progressHandler010completionG0ySS_y12CoreGraphics7CGFloatVcSgySb_s5Error_pSgtcSgtF",
+            "moduleName": "AIBuds",
+            "genericSig": "<τ_0_0 where τ_0_0 : AIBuds.OverlayPromptAPI>",
+            "sugared_genericSig": "<Self where Self : AIBuds.OverlayPromptAPI>",
+            "protocolReq": true,
+            "objc_name": "sendOverlayPrompt:progressHandler:completionHandler:",
+            "declAttributes": [
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "clearCurrentOverlayPromptSlotContent",
+            "printedName": "clearCurrentOverlayPromptSlotContent(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Swift.Bool, (any Swift.Error)?) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Bool, (any Swift.Error)?) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(Swift.Bool, (any Swift.Error)?)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Bool",
+                            "printedName": "Swift.Bool",
+                            "usr": "s:Sb"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "(any Swift.Error)?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Error",
+                                "printedName": "any Swift.Error",
+                                "usr": "s:s5ErrorP"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AIBuds@objc(pl)AIBudsOverlayPromptAPI(im)clearCurrentOverlayPromptSlotContentWithCompletion:",
+            "mangledName": "$s6AIBuds16OverlayPromptAPIP012clearCurrentbC11SlotContentyyySb_s5Error_pSgtcSgF",
+            "moduleName": "AIBuds",
+            "genericSig": "<τ_0_0 where τ_0_0 : AIBuds.OverlayPromptAPI>",
+            "sugared_genericSig": "<Self where Self : AIBuds.OverlayPromptAPI>",
+            "protocolReq": true,
+            "objc_name": "clearCurrentOverlayPromptSlotContentWithCompletion:",
+            "declAttributes": [
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "toggleOverlayPromptSlotIndexTo",
+            "printedName": "toggleOverlayPromptSlotIndexTo(_:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Swift.Bool, (any Swift.Error)?) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Bool, (any Swift.Error)?) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(Swift.Bool, (any Swift.Error)?)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Bool",
+                            "printedName": "Swift.Bool",
+                            "usr": "s:Sb"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "(any Swift.Error)?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Error",
+                                "printedName": "any Swift.Error",
+                                "usr": "s:s5ErrorP"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AIBuds@objc(pl)AIBudsOverlayPromptAPI(im)toggleOverlayPromptSlotIndexTo:completion:",
+            "mangledName": "$s6AIBuds16OverlayPromptAPIP06togglebC11SlotIndexTo_10completionySi_ySb_s5Error_pSgtcSgtF",
+            "moduleName": "AIBuds",
+            "genericSig": "<τ_0_0 where τ_0_0 : AIBuds.OverlayPromptAPI>",
+            "sugared_genericSig": "<Self where Self : AIBuds.OverlayPromptAPI>",
+            "protocolReq": true,
+            "objc_name": "toggleOverlayPromptSlotIndexTo:completion:",
+            "declAttributes": [
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setOverlayPromptScrollSpeed",
+            "printedName": "setOverlayPromptScrollSpeed(_:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Swift.Bool, (any Swift.Error)?) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Bool, (any Swift.Error)?) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(Swift.Bool, (any Swift.Error)?)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Bool",
+                            "printedName": "Swift.Bool",
+                            "usr": "s:Sb"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "(any Swift.Error)?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Error",
+                                "printedName": "any Swift.Error",
+                                "usr": "s:s5ErrorP"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AIBuds@objc(pl)AIBudsOverlayPromptAPI(im)setOverlayPromptScrollSpeed:completion:",
+            "mangledName": "$s6AIBuds16OverlayPromptAPIP03setbC11ScrollSpeed_10completionySi_ySb_s5Error_pSgtcSgtF",
+            "moduleName": "AIBuds",
+            "genericSig": "<τ_0_0 where τ_0_0 : AIBuds.OverlayPromptAPI>",
+            "sugared_genericSig": "<Self where Self : AIBuds.OverlayPromptAPI>",
+            "protocolReq": true,
+            "objc_name": "setOverlayPromptScrollSpeed:completion:",
+            "declAttributes": [
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "c:@M@AIBuds@objc(pl)AIBudsOverlayPromptAPI",
+        "mangledName": "$s6AIBuds16OverlayPromptAPIP",
+        "moduleName": "AIBuds",
+        "genericSig": "<τ_0_0 : AIBuds.DeviceAPI>",
+        "sugared_genericSig": "<Self : AIBuds.DeviceAPI>",
+        "objc_name": "AIBudsOverlayPromptAPI",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "DeviceAPI",
+            "printedName": "DeviceAPI",
+            "usr": "c:@M@AIBuds@objc(pl)AIBudsDeviceAPI",
+            "mangledName": "$s6AIBuds9DeviceAPIP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AIBuds",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AIBudsFoundation",
+        "printedName": "AIBudsFoundation",
+        "declKind": "Import",
+        "moduleName": "AIBuds"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TurnByTurnNavigationAPI",
+        "printedName": "TurnByTurnNavigationAPI",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "sendNavigationInfo",
+            "printedName": "sendNavigationInfo(_:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NavigationInfoModel",
+                "printedName": "AIBudsFoundation.NavigationInfoModel",
+                "usr": "c:@M@AIBudsFoundation@objc(cs)AIBudsNavigationInfoModel"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Swift.Bool, Foundation.NSNumber?, (any Swift.Error)?) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Bool, Foundation.NSNumber?, (any Swift.Error)?) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(Swift.Bool, Foundation.NSNumber?, (any Swift.Error)?)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Bool",
+                            "printedName": "Swift.Bool",
+                            "usr": "s:Sb"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "Foundation.NSNumber?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "NSNumber",
+                                "printedName": "Foundation.NSNumber",
+                                "usr": "c:objc(cs)NSNumber"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "(any Swift.Error)?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Error",
+                                "printedName": "any Swift.Error",
+                                "usr": "s:s5ErrorP"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AIBuds@objc(pl)AIBudsTurnByTurnNavigationAPI(im)sendNavigationInfo:completion:",
+            "mangledName": "$s6AIBuds06TurnByB13NavigationAPIP04sendD4Info_10completiony0A10Foundation0dG5ModelC_ySb_So8NSNumberCSgs5Error_pSgtcSgtF",
+            "moduleName": "AIBuds",
+            "genericSig": "<τ_0_0 where τ_0_0 : AIBuds.TurnByTurnNavigationAPI>",
+            "sugared_genericSig": "<Self where Self : AIBuds.TurnByTurnNavigationAPI>",
+            "protocolReq": true,
+            "objc_name": "sendNavigationInfo:completion:",
+            "declAttributes": [
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "c:@M@AIBuds@objc(pl)AIBudsTurnByTurnNavigationAPI",
+        "mangledName": "$s6AIBuds06TurnByB13NavigationAPIP",
+        "moduleName": "AIBuds",
+        "genericSig": "<τ_0_0 : AIBuds.DeviceAPI>",
+        "sugared_genericSig": "<Self : AIBuds.DeviceAPI>",
+        "objc_name": "AIBudsTurnByTurnNavigationAPI",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
         ],
         "conformances": [
           {
@@ -25233,21 +27217,21 @@
       "kind": "StringLiteral",
       "offset": 481,
       "length": 14,
-      "value": "\"1.0.0-beta.2\""
+      "value": "\"1.0.0-beta.3\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBuds\/AIBuds.swift",
       "kind": "StringLiteral",
       "offset": 611,
       "length": 13,
-      "value": "\"20260412001\""
+      "value": "\"20260426001\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBuds\/AIBuds.swift",
       "kind": "StringLiteral",
       "offset": 726,
       "length": 12,
-      "value": "\"2026-04-12\""
+      "value": "\"2026-04-26\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBuds\/AIBuds.swift",

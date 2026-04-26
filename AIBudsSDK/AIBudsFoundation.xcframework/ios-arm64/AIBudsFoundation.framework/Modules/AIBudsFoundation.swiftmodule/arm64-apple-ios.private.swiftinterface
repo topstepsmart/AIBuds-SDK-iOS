@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.2.4 effective-5.10 (swiftlang-6.2.4.1.4 clang-1700.6.4.2)
-// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature GlobalActorIsolatedTypesUsability -enable-upcoming-feature MemberImportVisibility -enable-upcoming-feature InferIsolatedConformances -enable-upcoming-feature NonisolatedNonsendingByDefault -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name AIBudsFoundation
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.4
+// swift-compiler-version: Apple Swift version 6.3.1 effective-5.10 (swiftlang-6.3.1.1.2 clang-2100.0.123.102)
+// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature GlobalActorIsolatedTypesUsability -enable-upcoming-feature MemberImportVisibility -enable-upcoming-feature InferIsolatedConformances -enable-upcoming-feature NonisolatedNonsendingByDefault -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name AIBudsFoundation
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.1
 @_exported import AIBudsFoundation
 import AIBudsLog
 import CommonCrypto
@@ -32,9 +32,7 @@ import _SwiftConcurrencyShims
 @objc(AIBudsBatteryStatusModel) final public class BatteryStatusModel : ObjectiveC.NSObject {
   @objc final public let units: [AIBudsFoundation.BatteryUnitInfoModel]
   @objc(initWithUnits:) public init(_ units: [AIBudsFoundation.BatteryUnitInfoModel])
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc(infoForComponent:) final public func info(for component: AIBudsFoundation.BatteryComponent) -> AIBudsFoundation.BatteryInfoModel?
-  #endif
   @objc override final public var description: Swift.String {
     @objc get
   }
@@ -72,9 +70,7 @@ import _SwiftConcurrencyShims
     get
   }
   @objc final public func encode(with coder: Foundation.NSCoder)
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc required public init?(coder: Foundation.NSCoder)
-  #endif
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc(AIBudsConnectParams) final public class ConnectParams : ObjectiveC.NSObject, Foundation.NSSecureCoding {
@@ -93,9 +89,7 @@ import _SwiftConcurrencyShims
     get
   }
   @objc final public func encode(with coder: Foundation.NSCoder)
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc required public init?(coder: Foundation.NSCoder)
-  #endif
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc(AIBudsMltCloudAIAuthParams) final public class MltCloudAIAuthParams : ObjectiveC.NSObject, Foundation.NSSecureCoding {
@@ -111,9 +105,7 @@ import _SwiftConcurrencyShims
     get
   }
   @objc final public func encode(with coder: Foundation.NSCoder)
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc required public init?(coder: Foundation.NSCoder)
-  #endif
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc(AIBudsStarBurstAIAuthParams) final public class StarBurstAIAuthParams : ObjectiveC.NSObject, Foundation.NSSecureCoding {
@@ -131,9 +123,7 @@ import _SwiftConcurrencyShims
     get
   }
   @objc final public func encode(with coder: Foundation.NSCoder)
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc required public init?(coder: Foundation.NSCoder)
-  #endif
   @objc deinit
 }
 @objc(AIBudsEndPointInfoModel) final public class EndPointInfoModel : ObjectiveC.NSObject {
@@ -167,9 +157,7 @@ import _SwiftConcurrencyShims
     @objc get
   }
   @objc(initWithMode:gains:) public init(mode: Swift.Int, gains: [Swift.Int])
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc(initWithMode:gains:name:chineseName:) public init(mode: Swift.Int, gains: [Swift.Int], name: Swift.String?, chineseName: Swift.String?)
-  #endif
   @objc override final public var description: Swift.String {
     @objc get
   }
@@ -186,21 +174,15 @@ extension AIBudsFoundation.EQSettingModel {
 }
 @objc(AIBudsFirmwareVersionModel) open class FirmwareVersionModel : ObjectiveC.NSObject {
   @objc final public let raw: Foundation.Data
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc open var shortVersion: Foundation.NSNumber? {
     @objc get
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc open var formatedFullVersion: Swift.String? {
     @objc get
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc open var formatedShortVersion: Swift.String? {
     @objc get
   }
-  #endif
   @objc public init(raw: Foundation.Data)
   @objc deinit
 }
@@ -246,6 +228,37 @@ extension AIBudsFoundation.EQSettingModel {
   }
   @objc deinit
 }
+@objc(AIBudsNavigationAlertInfoModel) final public class NavigationAlertInfoModel : ObjectiveC.NSObject, AIBudsFoundation.CustomDebugJsonStringConvertible {
+  @objc final public let alertType: Foundation.NSNumber
+  @objc final public var paramsValue: Foundation.NSNumber?
+  @objc public init(alertType: Foundation.NSNumber, paramsValue: Foundation.NSNumber? = nil)
+  @objc override final public var description: Swift.String {
+    @objc get
+  }
+  @objc final public var debugJsonString: Swift.String {
+    @objc get
+  }
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc(AIBudsNavigationInfoModel) final public class NavigationInfoModel : ObjectiveC.NSObject, AIBudsFoundation.CustomDebugJsonStringConvertible {
+  @objc final public var nextStepDistanceText: Swift.String?
+  @objc final public var maneuver: Foundation.NSNumber?
+  @objc final public var instruction: Swift.String?
+  @objc final public var roadName: Swift.String?
+  @objc final public var alertInfo: AIBudsFoundation.NavigationAlertInfoModel?
+  @objc final public var mapProvider: Foundation.NSNumber?
+  @objc final public var transportMode: Foundation.NSNumber?
+  @objc final public var remainingTime: Foundation.NSNumber?
+  @objc final public var remainingDistance: Foundation.NSNumber?
+  @objc override final public var description: Swift.String {
+    @objc get
+  }
+  @objc final public var debugJsonString: Swift.String {
+    @objc get
+  }
+  @objc override dynamic public init()
+  @objc deinit
+}
 @objc(AIBudsVideoRecordDirectionInfoModel) final public class VideoRecordDirectionInfoModel : ObjectiveC.NSObject {
   @objc final public let isDirectionSwitchSupported: Swift.Bool
   @objc final public let currentDirection: AIBudsFoundation.VideoRecordDirection
@@ -260,9 +273,7 @@ extension AIBudsFoundation.EQSettingModel {
   @objc final public let mediaVolume: Foundation.NSNumber?
   @objc final public let callVolume: Foundation.NSNumber?
   @objc final public let localPlaybackVolume: Foundation.NSNumber?
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(systemPromptVolume: Foundation.NSNumber? = nil, mediaVolume: Foundation.NSNumber? = nil, callVolume: Foundation.NSNumber? = nil, localPlaybackVolume: Foundation.NSNumber? = nil)
-  #endif
   @objc override final public var description: Swift.String {
     @objc get
   }
@@ -272,9 +283,7 @@ extension AIBudsFoundation.EQSettingModel {
   case sco = 0
   case opusInA2dpOut = 1
   case opusInOpusOut = 2
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -328,9 +337,7 @@ extension AIBudsFoundation.AIChatContentCapabilities : Swift.CustomDebugStringCo
   case initiateWithSCO = 1
   case initiateWithOpus = 2
   case interruptByStateConflict = 0xff
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -359,9 +366,7 @@ extension AIBudsFoundation.AIChatSessionEvent : Swift.CustomDebugStringConvertib
   case balancedQuality = 3
   case quality = 4
   case ultraQuality = 5
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -377,14 +382,39 @@ extension AIBudsFoundation.AIImageResolutionMode : Swift.CustomDebugStringConver
     get
   }
 }
+public struct AISolutionCapabilities : Swift.OptionSet {
+  public let rawValue: Swift.UInt
+  public init(rawValue: Swift.UInt)
+  public static let none: AIBudsFoundation.AISolutionCapabilities
+  public static let starBurst: AIBudsFoundation.AISolutionCapabilities
+  public static let mltcloud: AIBudsFoundation.AISolutionCapabilities
+  public static let all: AIBudsFoundation.AISolutionCapabilities
+  public typealias ArrayLiteralElement = AIBudsFoundation.AISolutionCapabilities
+  public typealias Element = AIBudsFoundation.AISolutionCapabilities
+}
+extension AIBudsFoundation.AISolutionCapabilities : Swift.RawRepresentable, Swift.ExpressibleByIntegerLiteral {
+  public init(integerLiteral value: Swift.UInt)
+  public func containsAll(_ capabilities: AIBudsFoundation.AISolutionCapabilities) -> Swift.Bool
+  public func containsAny(_ capabilities: AIBudsFoundation.AISolutionCapabilities) -> Swift.Bool
+  public typealias IntegerLiteralType = Swift.UInt
+  public typealias RawValue = Swift.UInt
+}
+extension AIBudsFoundation.AISolutionCapabilities : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
+extension AIBudsFoundation.AISolutionCapabilities : Swift.CustomDebugStringConvertible {
+  public var debugDescription: Swift.String {
+    get
+  }
+}
 @objc(AIBudsANCMode) public enum ANCMode : Swift.Int {
   case unknown = -1
   case normal = 0
   case anc = 1
   case transparency = 2
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -409,9 +439,7 @@ extension AIBudsFoundation.ANCMode : Swift.CustomDebugStringConvertible {
 @objc(AIBudsRecordingScene) public enum RecordingScene : Swift.Int {
   case onSite = 0
   case call = 1
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -441,9 +469,7 @@ extension AIBudsFoundation.RecordingScene : Swift.CustomDebugStringConvertible {
   case chargingCase = 3
   case mainSpeaker = 4
   case sideSpeaker = 5
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -458,9 +484,7 @@ extension AIBudsFoundation.BatteryComponent : Swift.CustomStringConvertible {
   case unknown = -1
   case discharging = 0
   case charging = 1
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -476,9 +500,7 @@ extension AIBudsFoundation.ChargingState : Swift.CustomStringConvertible {
   case abmate = 0
   case fitcloudPro = 1
   case w30 = 2
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -499,9 +521,7 @@ extension AIBudsFoundation.BleProtocolKind : Swift.CustomDebugStringConvertible 
   case abmate = 0
   case fitcloudPro = 1
   case both = 2
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -520,9 +540,7 @@ extension AIBudsFoundation.OtaProtocolCapability : Swift.CustomDebugStringConver
 @objc(AIBudsOtaProtocolKind) public enum OtaProtocolKind : Swift.Int {
   case abmate = 0
   case fitcloudPro = 1
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -545,9 +563,7 @@ extension AIBudsFoundation.OtaProtocolKind : Swift.CustomDebugStringConvertible 
   case inCall = 2
   case threeWayRinging = 3
   case aiChat = 4
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -572,9 +588,7 @@ extension AIBudsFoundation.CallStatus : Swift.CustomDebugStringConvertible {
 @objc(AIBudsCameraOtaProgressPhase) public enum CameraOtaProgressPhase : Swift.Int {
   case transferring = 1
   case flashing = 2
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -593,9 +607,7 @@ extension AIBudsFoundation.CameraOtaProgressPhase : Swift.CustomDebugStringConve
 @objc(AIBudsCaptureMode) public enum CaptureMode : Swift.Int {
   case camera = 0
   case ai = 1
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -655,9 +667,7 @@ extension AIBudsFoundation.CaptureMode : Swift.CustomDebugStringConvertible {
   case ukrainian = 33
   case bulgarian = 34
   case slovenian = 35
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -688,9 +698,7 @@ extension AIBudsFoundation.DeviceLanguage : Swift.CustomDebugStringConvertible {
   case earbuds = 4
   case speaker = 5
   public static func product(for manufacturerID: AIBudsFoundation.ManufacturerID) -> AIBudsFoundation.DeviceProduct
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -721,9 +729,7 @@ extension AIBudsFoundation.DeviceProduct : Swift.CustomDebugStringConvertible {
   case busy = 4
   case disconnecting = 5
   case disconnected = 6
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -738,9 +744,7 @@ extension AIBudsFoundation.DeviceState : Swift.CustomStringConvertible {
   case unknown = -1
   case left = 0
   case right = 1
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -771,9 +775,7 @@ extension AIBudsFoundation.EarbudSide : Swift.CustomDebugStringConvertible {
   case zkZC = 0x5A43
   case zk4206 = 0x4206
   case zkZM = 0x5a4d
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.UInt)
-  #endif
   public typealias RawValue = Swift.UInt
   public var rawValue: Swift.UInt {
     get
@@ -794,9 +796,7 @@ extension AIBudsFoundation.ManufacturerID : Swift.CustomStringConvertible {
   case none = 0
   case monochrome = 1
   case color = 2
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -808,6 +808,35 @@ extension AIBudsFoundation.ContentDisplayCapability : Swift.CustomStringConverti
   }
 }
 extension AIBudsFoundation.ContentDisplayCapability : Swift.CustomDebugStringConvertible {
+  public var debugDescription: Swift.String {
+    get
+  }
+}
+@objc(AIBudsDeviceApp) public enum DeviceApp : Swift.Int {
+  case homeScreen = 0x00
+  case overlayPrompt = 0x01
+  case aiChat = 0x02
+  case navigation = 0x03
+  case clock = 0x04
+  case translation = 0x05
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+extension AIBudsFoundation.DeviceApp : Swift.CaseIterable {
+  public static var allCases: [AIBudsFoundation.DeviceApp] {
+    get
+  }
+  public typealias AllCases = [AIBudsFoundation.DeviceApp]
+}
+extension AIBudsFoundation.DeviceApp : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
+extension AIBudsFoundation.DeviceApp : Swift.CustomDebugStringConvertible {
   public var debugDescription: Swift.String {
     get
   }
@@ -879,9 +908,7 @@ extension AIBudsFoundation.DeviceCapabilities : Swift.CustomDebugStringConvertib
   case videoRecordToggle = 12
   case audioRecordToggle = 13
   case localBluetoothToggle = 14
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -933,9 +960,7 @@ extension AIBudsFoundation.DeviceFunction : Swift.CustomDebugStringConvertible {
   case rightButton2LongPress = 0x21
   case touchSlideBackwardToForward = 0x22
   case touchSlideForwardToBackward = 0x23
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -961,9 +986,7 @@ extension AIBudsFoundation.DeviceOperation : Swift.CustomDebugStringConvertible 
   case unknown = -1
   case unexpectedExit = 0x00
   case completed = 0x01
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -984,9 +1007,7 @@ extension AIBudsFoundation.FileDeletingProgressEvent : Swift.CustomDebugStringCo
   case image = 1
   case audio = 2
   case video = 3
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -1006,9 +1027,7 @@ extension AIBudsFoundation.MediaFileType : Swift.CustomDebugStringConvertible {
   case unknown = -1
   case bt = 0
   case localPlayback = 1
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -1028,9 +1047,7 @@ extension AIBudsFoundation.MusicPlaySource : Swift.CustomDebugStringConvertible 
   case none = 0
   case keywordWakeup = 1
   case common = 2
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -1057,9 +1074,7 @@ extension AIBudsFoundation.OnDeviceVoiceAssistantCapability : Swift.CustomDebugS
   case disabled = 0
   case basic = 1
   case advanced = 2
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -1085,9 +1100,7 @@ extension AIBudsFoundation.OnDeviceVoiceAssistantMode : Swift.CustomDebugStringC
   case unknown = -1
   case aiAudioRecord = 0
   case aiChat = 1
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -1108,9 +1121,7 @@ extension AIBudsFoundation.OpusAudioDataPurpose : Swift.CustomDebugStringConvert
   case exit = 0
   case enter = 1
   case capture = 2
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -1131,9 +1142,7 @@ extension AIBudsFoundation.RemoteShutterEvent : Swift.CustomDebugStringConvertib
   case enteredPhotoMode = 1
   case photoSuccess = 2
   case photoFailed = 3
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -1179,9 +1188,7 @@ extension AIBudsFoundation.AuthorizedServices : Swift.CustomDebugStringConvertib
 @objc(AIBudsServiceAuthType) public enum ServiceAuthType : Swift.Int {
   case starBurst = 1
   case onDeviceVoiceAssistant = 2
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -1202,9 +1209,7 @@ extension AIBudsFoundation.ServiceAuthType : Swift.CustomDebugStringConvertible 
   case off = 0
   case fixed = 1
   case headTracking = 2
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -1226,9 +1231,7 @@ extension AIBudsFoundation.SpatialAudioMode : Swift.CustomDebugStringConvertible
   case mix = 3
   case glassesBle = 4
   case glassesAccount = 5
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -1247,9 +1250,7 @@ extension AIBudsFoundation.StarBurstAuthSdk : Swift.CustomDebugStringConvertible
 @objc(AIBudsTimeFormat) public enum TimeFormat : Swift.Int {
   case format24Hour = 0
   case format12Hour = 1
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -1265,12 +1266,155 @@ extension AIBudsFoundation.TimeFormat : Swift.CustomDebugStringConvertible {
     get
   }
 }
+@objc(AIBudsNavigationAlert) public enum NavigationAlert : Swift.Int {
+  case clear = 0x00
+  case speedLimit = 0x01
+  case violationCamera = 0x02
+  case roadConstruction = 0x03
+  case averageSpeedZone = 0x04
+  case accidentProneArea = 0x05
+  case rearVehicleWarning = 0x06
+  case weakGPSSignal = 0x07
+  case icyRoad = 0x08
+  case roadClosedOrRestricted = 0x09
+  case rerouting = 0x0A
+  case keepLeftLane = 0x0B
+  case keepRightLane = 0x0C
+  case trafficLightCountdown = 0x0D
+  case keepLeftNLanes = 0x0E
+  case keepRightNLanes = 0x0F
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+extension AIBudsFoundation.NavigationAlert : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
+extension AIBudsFoundation.NavigationAlert : Swift.CustomDebugStringConvertible {
+  public var debugDescription: Swift.String {
+    get
+  }
+}
+@objc(AIBudsNavigationManeuver) public enum NavigationManeuver : Swift.Int {
+  case none = 0x00
+  case start = 0x01
+  case straight = 0x02
+  case slightRight = 0x03
+  case right = 0x04
+  case sharpRight = 0x05
+  case slightLeft = 0x06
+  case left = 0x07
+  case sharpLeft = 0x08
+  case uTurnLeft = 0x09
+  case uTurnRight = 0x0A
+  case arrive = 0x0B
+  case stairsOrOverpass = 0x0C
+  case stationPlatform = 0x0D
+  case mergeLeft = 0x0E
+  case mergeRight = 0x0F
+  case roundaboutEnterRight = 0x10
+  case roundaboutEnterLeft = 0x11
+  case roundaboutPassLeft = 0x12
+  case roundaboutPassRight = 0x13
+  case roundaboutExitRight = 0x14
+  case roundaboutExitLeft = 0x15
+  case highwayEnter = 0x16
+  case highwayExitNextRight = 0x17
+  case highwayExitNextLeft = 0x18
+  case highwayExitRight = 0x19
+  case highwayExitLeft = 0x1A
+  case tunnelEnter = 0x1B
+  case tunnelExit = 0x1C
+  case ferry = 0x1D
+  case stopWait = 0x1F
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+extension AIBudsFoundation.NavigationManeuver : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
+extension AIBudsFoundation.NavigationManeuver : Swift.CustomDebugStringConvertible {
+  public var debugDescription: Swift.String {
+    get
+  }
+}
+@objc(AIBudsNavigationMapProvider) public enum NavigationMapProvider : Swift.Int {
+  case unspecified = 0x00
+  case baidu = 0x01
+  case amap = 0x02
+  case here = 0x03
+  case tomtom = 0x04
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+extension AIBudsFoundation.NavigationMapProvider : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
+extension AIBudsFoundation.NavigationMapProvider : Swift.CustomDebugStringConvertible {
+  public var debugDescription: Swift.String {
+    get
+  }
+}
+@objc(AIBudsNavigationTransportMode) public enum NavigationTransportMode : Swift.Int {
+  case unspecified = 0x00
+  case bicycle = 0x01
+  case ebike = 0x02
+  case walk = 0x03
+  case drive = 0x04
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+extension AIBudsFoundation.NavigationTransportMode : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
+extension AIBudsFoundation.NavigationTransportMode : Swift.CustomDebugStringConvertible {
+  public var debugDescription: Swift.String {
+    get
+  }
+}
+@objc(AIBudsRearVehicleMergeDirection) public enum RearVehicleMergeDirection : Swift.Int {
+  case unknown = 0
+  case fromRight = 1
+  case fromLeft = 2
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+extension AIBudsFoundation.RearVehicleMergeDirection : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
+extension AIBudsFoundation.RearVehicleMergeDirection : Swift.CustomDebugStringConvertible {
+  public var debugDescription: Swift.String {
+    get
+  }
+}
 @objc(AIBudsVideoRecordDirection) public enum VideoRecordDirection : Swift.Int {
   case landscape = 0
   case portrait = 1
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -1290,9 +1434,7 @@ extension AIBudsFoundation.VideoRecordDirection : Swift.CustomDebugStringConvert
   case systemPrompt = 0
   case media = 1
   case call = 2
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -1311,9 +1453,7 @@ extension AIBudsFoundation.DeviceVolumeType : Swift.CustomDebugStringConvertible
 @objc(AIBudsVolumeChangedReason) public enum VolumeChangedReason : Swift.Int {
   case device = 0
   case bluetoothCommand = 1
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -1339,9 +1479,7 @@ extension AIBudsFoundation.VolumeChangedReason : Swift.CustomDebugStringConverti
   case none = 0
   case common = 1
   case advanced = 2
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -1367,9 +1505,7 @@ extension AIBudsFoundation.VolumeSetCapability : Swift.CustomDebugStringConverti
   case none = 0
   case supportedNotConfigurable = 1
   case supportedAndConfigurable = 2
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -1391,14 +1527,40 @@ extension AIBudsFoundation.WearDetectionCapability : Swift.CustomDebugStringConv
     get
   }
 }
+@objc(AIBudsWearStatus) public enum WearStatus : Swift.Int {
+  case unknown = -1
+  case notWearing = 0
+  case leftWearing = 1
+  case rightWearing = 2
+  case bothWearing = 3
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+extension AIBudsFoundation.WearStatus : Swift.CaseIterable {
+  public static var allCases: [AIBudsFoundation.WearStatus] {
+    get
+  }
+  public typealias AllCases = [AIBudsFoundation.WearStatus]
+}
+extension AIBudsFoundation.WearStatus : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
+extension AIBudsFoundation.WearStatus : Swift.CustomDebugStringConvertible {
+  public var debugDescription: Swift.String {
+    get
+  }
+}
 @objc(AIBudsHotspotConfigField) public enum HotspotConfigField : Swift.Int {
   case mode = 0x01
   case ssid = 0x02
   case password = 0x03
   case channel = 0x04
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -1418,9 +1580,7 @@ extension AIBudsFoundation.HotspotConfigField : Swift.CustomDebugStringConvertib
   case station = 0
   case ap = 1
   case wifiDirect = 2
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -1444,9 +1604,7 @@ extension AIBudsFoundation.HotspotMode : Swift.CustomDebugStringConvertible {
   case wifiDirectConnected = 3
   case wifiDirectFailed = 4
   case wifiDirectTimeout = 5
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -1472,9 +1630,7 @@ extension AIBudsFoundation.HotspotState : Swift.CustomDebugStringConvertible {
   case unknown = -1
   case normal = 0
   case game = 1
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -1519,9 +1675,7 @@ extension AIBudsFoundation.WorkMode : Swift.CustomDebugStringConvertible {
   case ledTesting = 18
   case buttonTesting = 19
   case echoTesting = 20
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -1544,9 +1698,7 @@ extension AIBudsFoundation.WorkState : Swift.CustomDebugStringConvertible {
   }
 }
 extension Swift.Array {
-  #if compiler(>=5.3) && $NonescapableTypes
   public func toJSONString() -> Swift.String?
-  #endif
 }
 extension Foundation.Data {
   public func joined(format: Swift.String = "%02x", _ separator: Swift.String = "") -> Swift.String
@@ -1608,17 +1760,22 @@ extension Swift.FixedWidthInteger {
   }
 }
 extension Swift.Dictionary {
-  #if compiler(>=5.3) && $NonescapableTypes
   public func toJSONString() -> Swift.String?
-  #endif
 }
 extension Swift.String {
-  #if compiler(>=5.3) && $NonescapableTypes
+  public enum TruncationMode {
+    case head
+    case tail
+    case middle
+    public static func == (a: Swift.String.TruncationMode, b: Swift.String.TruncationMode) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
   public func toJSONDictionary() -> [Swift.String : Any]?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public func toJSONArray() -> [Any]?
-  #endif
+  public func truncated(toByteLimit limit: Swift.Int, mode: Swift.String.TruncationMode = .tail, indicator: Swift.String? = nil) -> Swift.String
 }
 extension Swift.UInt8 {
   public func hexString(format: Swift.String = "%02x") -> Swift.String
@@ -1627,20 +1784,14 @@ public struct FixedSizeFIFO<T> {
   public let maxSize: Swift.Int
   public init(maxSize: Swift.Int)
   public mutating func enqueue(_ element: T)
-  #if compiler(>=5.3) && $NonescapableTypes
   public mutating func dequeue() -> T?
-  #endif
   public mutating func clear()
-  #if compiler(>=5.3) && $NonescapableTypes
   public var front: T? {
     get
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public var rear: T? {
     get
   }
-  #endif
   public var count: Swift.Int {
     get
   }
@@ -1751,13 +1902,11 @@ extension Swift.Range where Bound == AIBudsFoundation._DequeSlot {
   internal let first: Swift.UnsafeBufferPointer<Element>
   @usableFromInline
   internal let second: Swift.UnsafeBufferPointer<Element>?
-  #if compiler(>=5.3) && $NonescapableTypes
   @inlinable @inline(__always) internal init(_ first: Swift.UnsafeBufferPointer<Element>, _ second: Swift.UnsafeBufferPointer<Element>? = nil) {
     self.first = first
     self.second = second
     assert(first.count > 0 || second == nil)
   }
-  #endif
   @inlinable internal init(start: Swift.UnsafePointer<Element>, count: Swift.Int) {
     self.init(UnsafeBufferPointer(start: start, count: count))
   }
@@ -1775,18 +1924,14 @@ extension Swift.Range where Bound == AIBudsFoundation._DequeSlot {
   internal let first: Swift.UnsafeMutableBufferPointer<Element>
   @usableFromInline
   internal let second: Swift.UnsafeMutableBufferPointer<Element>?
-  #if compiler(>=5.3) && $NonescapableTypes
   @inlinable @inline(__always) internal init(_ first: Swift.UnsafeMutableBufferPointer<Element>, _ second: Swift.UnsafeMutableBufferPointer<Element>? = nil) {
     self.first = first
     self.second = second?.count == 0 ? nil : second
     assert(first.count > 0 || second == nil)
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @inlinable @inline(__always) internal init(_ first: Swift.UnsafeMutableBufferPointer<Element>.SubSequence, _ second: Swift.UnsafeMutableBufferPointer<Element>? = nil) {
     self.init(UnsafeMutableBufferPointer(rebasing: first), second)
   }
-  #endif
   @inlinable @inline(__always) internal init(_ first: Swift.UnsafeMutableBufferPointer<Element>, _ second: Swift.UnsafeMutableBufferPointer<Element>.SubSequence) {
     self.init(first, UnsafeMutableBufferPointer(rebasing: second))
   }
@@ -2268,7 +2413,6 @@ extension AIBudsFoundation.Deque._UnsafeHandle {
   }
 }
 extension AIBudsFoundation.Deque._UnsafeHandle {
-  #if compiler(>=5.3) && $NonescapableTypes
   @inlinable internal func withUnsafeSegment<R>(startingAt start: Swift.Int, maximumCount: Swift.Int?, _ body: (Swift.UnsafeBufferPointer<Element>) throws -> R) rethrows -> (end: Swift.Int, result: R) {
     assert(start <= count)
     guard start < count else {
@@ -2282,7 +2426,6 @@ extension AIBudsFoundation.Deque._UnsafeHandle {
     let result = try body(UnsafeBufferPointer(start: ptr(at: segmentStart), count: count))
     return (start + count, result)
   }
-  #endif
 }
 extension AIBudsFoundation.Deque._UnsafeHandle {
   @inlinable internal func uncheckedReplaceInPlace<C>(inOffsets range: Swift.Range<Swift.Int>, with newElements: C) where Element == C.Element, C : Swift.Collection {
@@ -2696,7 +2839,6 @@ extension AIBudsFoundation.Deque : Swift.Sequence {
         return true
       }
     }
-    #if compiler(>=5.3) && $NonescapableTypes
     @inlinable public mutating func next() -> Element? {
       if _nextSlot == _endSlot {
         guard _swapSegment() else { return nil }
@@ -2708,7 +2850,6 @@ extension AIBudsFoundation.Deque : Swift.Sequence {
         return handle.ptr(at: slot).pointee
       }
     }
-    #endif
   }
   @inlinable public func makeIterator() -> AIBudsFoundation.Deque<Element>.Iterator {
     Iterator(_base: self)
@@ -2741,7 +2882,6 @@ extension AIBudsFoundation.Deque : Swift.Sequence {
       return (Iterator(_base: self, from: c1 + c2), c1 + c2)
     }
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   @inlinable public func withContiguousStorageIfAvailable<R>(_ body: (Swift.UnsafeBufferPointer<Element>) throws -> R) rethrows -> R? {
     return try _storage.read { handle in
       let endSlot = handle.startSlot.advanced(by: handle.count)
@@ -2749,7 +2889,6 @@ extension AIBudsFoundation.Deque : Swift.Sequence {
       return try body(handle.buffer(for: handle.startSlot ..< endSlot))
     }
   }
-  #endif
 }
 extension AIBudsFoundation.Deque.Iterator : @unchecked Swift.Sendable where Element : Swift.Sendable {
 }
@@ -2795,7 +2934,6 @@ extension AIBudsFoundation.Deque : Swift.RandomAccessCollection {
      
     return i + distance
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   @inlinable public func index(_ i: Swift.Int, offsetBy distance: Swift.Int, limitedBy limit: Swift.Int) -> Swift.Int? {
      
      
@@ -2806,7 +2944,6 @@ extension AIBudsFoundation.Deque : Swift.RandomAccessCollection {
     }
     return i + distance
   }
-  #endif
   @inlinable @inline(__always) public func distance(from start: Swift.Int, to end: Swift.Int) -> Swift.Int {
      
      
@@ -2874,7 +3011,6 @@ extension AIBudsFoundation.Deque : Swift.MutableCollection {
       handle.mutableBuffer.swapAt(slot1.position, slot2.position)
     }
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   @inlinable public mutating func withContiguousMutableStorageIfAvailable<R>(_ body: (inout Swift.UnsafeMutableBufferPointer<Element>) throws -> R) rethrows -> R? {
     _storage.ensureUnique()
     return try _storage.update { handle in
@@ -2892,12 +3028,9 @@ extension AIBudsFoundation.Deque : Swift.MutableCollection {
       return try body(&extract)
     }
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @inlinable public mutating func _withUnsafeMutableBufferPointerIfSupported<R>(_ body: (inout Swift.UnsafeMutableBufferPointer<Element>) throws -> R) rethrows -> R? {
     return try withContiguousMutableStorageIfAvailable(body)
   }
-  #endif
 }
 extension AIBudsFoundation.Deque : Swift.RangeReplaceableCollection {
   @inlinable public init() {
@@ -3057,13 +3190,11 @@ extension AIBudsFoundation.Deque : Swift.RangeReplaceableCollection {
     _storage.ensureUnique()
     _storage.update { $0.uncheckedRemove(offsets: bounds) }
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   @inlinable public mutating func _customRemoveLast() -> Element? {
     precondition(!isEmpty, "Cannot remove last element of an empty Deque")
     _storage.ensureUnique()
     return _storage.update { $0.uncheckedRemoveLast() }
   }
-  #endif
   @inlinable public mutating func _customRemoveLast(_ n: Swift.Int) -> Swift.Bool {
     precondition(n >= 0, "Can't remove a negative number of elements")
     precondition(n <= count, "Can't remove more elements than there are in the Collection")
@@ -3148,7 +3279,6 @@ extension AIBudsFoundation.Deque {
   }
 }
 extension AIBudsFoundation.Deque {
-  #if compiler(>=5.3) && $NonescapableTypes
   @inlinable public mutating func popFirst() -> Element? {
      
      
@@ -3158,7 +3288,6 @@ extension AIBudsFoundation.Deque {
       $0.uncheckedRemoveFirst()
     }
   }
-  #endif
   @inlinable public mutating func prepend(_ newElement: Element) {
     _storage.ensureUnique(minimumCapacity: count + 1)
     return _storage.update {
@@ -3384,25 +3513,18 @@ extension Swift.FixedWidthInteger {
   }
 }
 extension Swift.UInt {
-  #if compiler(>=5.3) && $NonescapableTypes
   @usableFromInline
   @_effects(releasenone) internal func _bit(ranked n: Swift.Int) -> Swift.UInt?
-  #endif
 }
 extension Swift.UInt32 {
-  #if compiler(>=5.3) && $NonescapableTypes
   @usableFromInline
   @_effects(releasenone) internal func _bit(ranked n: Swift.Int) -> Swift.UInt?
-  #endif
 }
 extension Swift.UInt16 {
-  #if compiler(>=5.3) && $NonescapableTypes
   @usableFromInline
   @_effects(releasenone) internal func _bit(ranked n: Swift.Int) -> Swift.UInt?
-  #endif
 }
 extension Swift.UInt {
-  #if compiler(>=5.3) && $NonescapableTypes
   @inlinable @inline(__always) internal var _firstSetBit: Swift.UInt? {
     get {
     guard self != 0 else { return nil }
@@ -3410,15 +3532,12 @@ extension Swift.UInt {
     return UInt(truncatingIfNeeded: v)
   }
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @inlinable @inline(__always) internal var _lastSetBit: Swift.UInt? {
     get {
     guard self != 0 else { return nil }
     return UInt(truncatingIfNeeded: self.trailingZeroBitCount)
   }
   }
-  #endif
 }
 extension Swift.UInt {
   @inlinable internal var _reversed: Swift.UInt {
@@ -3545,10 +3664,8 @@ extension AIBudsFoundation._UnsafeBitSet : Swift.Sequence {
       self._index = 0
       self._word = bitset.wordCount > 0 ? bitset._words[0] : .empty
     }
-    #if compiler(>=5.3) && $NonescapableTypes
     @usableFromInline
     @_effects(releasenone) internal mutating func next() -> Swift.UInt?
-    #endif
     @usableFromInline
     internal typealias Element = Swift.UInt
   }
@@ -3589,10 +3706,8 @@ extension AIBudsFoundation._UnsafeBitSet : Swift.BidirectionalCollection {
   @_effects(releasenone) internal func distance(from start: AIBudsFoundation._UnsafeBitSet.Index, to end: AIBudsFoundation._UnsafeBitSet.Index) -> Swift.Int
   @usableFromInline
   @_effects(releasenone) internal func index(_ i: AIBudsFoundation._UnsafeBitSet.Index, offsetBy distance: Swift.Int) -> AIBudsFoundation._UnsafeBitSet.Index
-  #if compiler(>=5.3) && $NonescapableTypes
   @usableFromInline
   @_effects(releasenone) internal func index(_ i: AIBudsFoundation._UnsafeBitSet.Index, offsetBy distance: Swift.Int, limitedBy limit: AIBudsFoundation._UnsafeBitSet.Index) -> AIBudsFoundation._UnsafeBitSet.Index?
-  #endif
   @usableFromInline
   internal typealias Indices = Swift.DefaultIndices<AIBudsFoundation._UnsafeBitSet>
   @usableFromInline
@@ -3654,20 +3769,16 @@ extension AIBudsFoundation._UnsafeBitSet._Word {
     assert(bit >= 0 && bit < UInt.bitWidth)
     return value & (1 &<< bit) != 0
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   @inlinable @inline(__always) internal var firstMember: Swift.UInt? {
     get {
     value._lastSetBit
   }
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @inlinable @inline(__always) internal var lastMember: Swift.UInt? {
     get {
     value._firstSetBit
   }
   }
-  #endif
   @discardableResult
   @inlinable @inline(__always) internal mutating func insert(_ bit: Swift.UInt) -> Swift.Bool {
     assert(bit < UInt.bitWidth)
@@ -3730,14 +3841,12 @@ extension AIBudsFoundation._UnsafeBitSet._Word : Swift.Sequence, Swift.IteratorP
     count
   }
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   @inlinable internal mutating func next() -> Swift.UInt? {
     guard value != 0 else { return nil }
     let bit = UInt(truncatingIfNeeded: value.trailingZeroBitCount)
     value &= value &- 1        
     return bit
   }
-  #endif
   @usableFromInline
   internal typealias Element = Swift.UInt
   @usableFromInline
@@ -3988,6 +4097,9 @@ extension AIBudsFoundation.ManufacturerID : Swift.RawRepresentable {}
 extension AIBudsFoundation.ContentDisplayCapability : Swift.Equatable {}
 extension AIBudsFoundation.ContentDisplayCapability : Swift.Hashable {}
 extension AIBudsFoundation.ContentDisplayCapability : Swift.RawRepresentable {}
+extension AIBudsFoundation.DeviceApp : Swift.Equatable {}
+extension AIBudsFoundation.DeviceApp : Swift.Hashable {}
+extension AIBudsFoundation.DeviceApp : Swift.RawRepresentable {}
 extension AIBudsFoundation.DeviceFunction : Swift.Equatable {}
 extension AIBudsFoundation.DeviceFunction : Swift.Hashable {}
 extension AIBudsFoundation.DeviceOperation : Swift.Equatable {}
@@ -4028,6 +4140,21 @@ extension AIBudsFoundation.StarBurstAuthSdk : Swift.RawRepresentable {}
 extension AIBudsFoundation.TimeFormat : Swift.Equatable {}
 extension AIBudsFoundation.TimeFormat : Swift.Hashable {}
 extension AIBudsFoundation.TimeFormat : Swift.RawRepresentable {}
+extension AIBudsFoundation.NavigationAlert : Swift.Equatable {}
+extension AIBudsFoundation.NavigationAlert : Swift.Hashable {}
+extension AIBudsFoundation.NavigationAlert : Swift.RawRepresentable {}
+extension AIBudsFoundation.NavigationManeuver : Swift.Equatable {}
+extension AIBudsFoundation.NavigationManeuver : Swift.Hashable {}
+extension AIBudsFoundation.NavigationManeuver : Swift.RawRepresentable {}
+extension AIBudsFoundation.NavigationMapProvider : Swift.Equatable {}
+extension AIBudsFoundation.NavigationMapProvider : Swift.Hashable {}
+extension AIBudsFoundation.NavigationMapProvider : Swift.RawRepresentable {}
+extension AIBudsFoundation.NavigationTransportMode : Swift.Equatable {}
+extension AIBudsFoundation.NavigationTransportMode : Swift.Hashable {}
+extension AIBudsFoundation.NavigationTransportMode : Swift.RawRepresentable {}
+extension AIBudsFoundation.RearVehicleMergeDirection : Swift.Equatable {}
+extension AIBudsFoundation.RearVehicleMergeDirection : Swift.Hashable {}
+extension AIBudsFoundation.RearVehicleMergeDirection : Swift.RawRepresentable {}
 extension AIBudsFoundation.VideoRecordDirection : Swift.Equatable {}
 extension AIBudsFoundation.VideoRecordDirection : Swift.Hashable {}
 extension AIBudsFoundation.VideoRecordDirection : Swift.RawRepresentable {}
@@ -4043,6 +4170,9 @@ extension AIBudsFoundation.VolumeSetCapability : Swift.RawRepresentable {}
 extension AIBudsFoundation.WearDetectionCapability : Swift.Equatable {}
 extension AIBudsFoundation.WearDetectionCapability : Swift.Hashable {}
 extension AIBudsFoundation.WearDetectionCapability : Swift.RawRepresentable {}
+extension AIBudsFoundation.WearStatus : Swift.Equatable {}
+extension AIBudsFoundation.WearStatus : Swift.Hashable {}
+extension AIBudsFoundation.WearStatus : Swift.RawRepresentable {}
 extension AIBudsFoundation.HotspotConfigField : Swift.Equatable {}
 extension AIBudsFoundation.HotspotConfigField : Swift.Hashable {}
 extension AIBudsFoundation.HotspotConfigField : Swift.RawRepresentable {}
@@ -4058,6 +4188,8 @@ extension AIBudsFoundation.WorkMode : Swift.RawRepresentable {}
 extension AIBudsFoundation.WorkState : Swift.Equatable {}
 extension AIBudsFoundation.WorkState : Swift.Hashable {}
 extension AIBudsFoundation.WorkState : Swift.RawRepresentable {}
+extension Swift.String.TruncationMode : Swift.Equatable {}
+extension Swift.String.TruncationMode : Swift.Hashable {}
 extension AIBudsFoundation._DequeSlot : Swift.Sendable {}
 extension AIBudsFoundation._DequeSlot : Swift.BitwiseCopyable {}
 extension AIBudsFoundation._UnsafeWrappedBuffer : Swift.BitwiseCopyable {}

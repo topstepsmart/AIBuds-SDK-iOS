@@ -8180,21 +8180,21 @@
       "kind": "StringLiteral",
       "offset": 508,
       "length": 14,
-      "value": "\"1.0.0-beta.2\""
+      "value": "\"1.0.0-beta.3\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsStarBurst\/AIBudsStarBurst.swift",
       "kind": "StringLiteral",
       "offset": 638,
       "length": 13,
-      "value": "\"20260412001\""
+      "value": "\"20260426001\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsStarBurst\/AIBudsStarBurst.swift",
       "kind": "StringLiteral",
       "offset": 753,
       "length": 12,
-      "value": "\"2026-04-12\""
+      "value": "\"2026-04-26\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsStarBurst\/AIBudsStarBurst.swift",
@@ -8885,7 +8885,7 @@
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsStarBurst\/StarBurstAIAudioRecordingService.swift",
       "kind": "BooleanLiteral",
-      "offset": 16633,
+      "offset": 20312,
       "length": 5,
       "value": "false"
     },

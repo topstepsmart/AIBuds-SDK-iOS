@@ -5435,6 +5435,106 @@
           },
           {
             "kind": "Var",
+            "name": "isOfflineRecording",
+            "printedName": "isOfflineRecording",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBudsAI@objc(cs)AIBudsAIAudioRecordingReportModel(py)isOfflineRecording",
+            "mangledName": "$s8AIBudsAI27AIAudioRecordingReportModelC09isOfflineD0Sbvp",
+            "moduleName": "AIBudsAI",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsAI@objc(cs)AIBudsAIAudioRecordingReportModel(im)isOfflineRecording",
+                "mangledName": "$s8AIBudsAI27AIAudioRecordingReportModelC09isOfflineD0Sbvg",
+                "moduleName": "AIBudsAI",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsAI@objc(cs)AIBudsAIAudioRecordingReportModel(im)setIsOfflineRecording:",
+                "mangledName": "$s8AIBudsAI27AIAudioRecordingReportModelC09isOfflineD0Sbvs",
+                "moduleName": "AIBudsAI",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AIBudsAI27AIAudioRecordingReportModelC09isOfflineD0SbvM",
+                "mangledName": "$s8AIBudsAI27AIAudioRecordingReportModelC09isOfflineD0SbvM",
+                "moduleName": "AIBudsAI",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "rawAudioFile",
             "printedName": "rawAudioFile",
             "children": [
@@ -18614,78 +18714,85 @@
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAI\/Report(报告)\/AIAudioRecordingReportModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1870,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAI\/Report(报告)\/AIAudioRecordingReportModel.swift",
       "kind": "StringLiteral",
-      "offset": 6225,
+      "offset": 6344,
       "length": 27,
       "value": "\"language_for_speech_input\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAI\/Report(报告)\/AIAudioRecordingReportModel.swift",
       "kind": "StringLiteral",
-      "offset": 6315,
+      "offset": 6434,
       "length": 16,
       "value": "\"service_vendor\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAI\/Report(报告)\/AIAudioRecordingReportModel.swift",
       "kind": "StringLiteral",
-      "offset": 6393,
+      "offset": 6512,
       "length": 17,
       "value": "\"recording_scene\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAI\/Report(报告)\/AIAudioRecordingReportModel.swift",
       "kind": "StringLiteral",
-      "offset": 6488,
+      "offset": 6607,
       "length": 12,
       "value": "\"start_time\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAI\/Report(报告)\/AIAudioRecordingReportModel.swift",
       "kind": "StringLiteral",
-      "offset": 6599,
+      "offset": 6718,
       "length": 10,
       "value": "\"end_time\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAI\/Report(报告)\/AIAudioRecordingReportModel.swift",
       "kind": "StringLiteral",
-      "offset": 6756,
+      "offset": 6875,
       "length": 12,
       "value": "\"audio_file\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAI\/Report(报告)\/AIAudioRecordingReportModel.swift",
       "kind": "StringLiteral",
-      "offset": 6850,
+      "offset": 6969,
       "length": 14,
       "value": "\"audio_format\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAI\/Report(报告)\/AIAudioRecordingReportModel.swift",
       "kind": "StringLiteral",
-      "offset": 7018,
+      "offset": 7137,
       "length": 22,
       "value": "\"converted_audio_file\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAI\/Report(报告)\/AIAudioRecordingReportModel.swift",
       "kind": "StringLiteral",
-      "offset": 7129,
+      "offset": 7248,
       "length": 24,
       "value": "\"converted_audio_format\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAI\/Report(报告)\/AIAudioRecordingReportModel.swift",
       "kind": "StringLiteral",
-      "offset": 7285,
+      "offset": 7404,
       "length": 28,
       "value": "\"is_stopped_by_interruption\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAI\/Report(报告)\/AIAudioRecordingReportModel.swift",
       "kind": "StringLiteral",
-      "offset": 7388,
+      "offset": 7507,
       "length": 8,
       "value": "\"device\""
     },
@@ -19135,21 +19242,21 @@
       "kind": "StringLiteral",
       "offset": 494,
       "length": 14,
-      "value": "\"1.0.0-beta.2\""
+      "value": "\"1.0.0-beta.3\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAI\/AIBudsAI.swift",
       "kind": "StringLiteral",
       "offset": 624,
       "length": 13,
-      "value": "\"20260412001\""
+      "value": "\"20260426001\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAI\/AIBudsAI.swift",
       "kind": "StringLiteral",
       "offset": 739,
       "length": 12,
-      "value": "\"2026-04-12\""
+      "value": "\"2026-04-26\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAI\/AIBudsAI.swift",

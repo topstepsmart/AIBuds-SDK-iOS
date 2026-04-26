@@ -164,7 +164,7 @@
     [self startWaveAnimation];
     
     // Create recording config
-    AIBudsAIAudioRecordingSessionConfig *config = [[AIBudsAIAudioRecordingSessionConfig alloc] initWithRecordingScene:AIBudsRecordingSceneOnSite languageForSpeechInput:nil];
+    AIBudsAIAudioRecordingSessionConfig *config = [[AIBudsAIAudioRecordingSessionConfig alloc] initWithRecordingScene:AIBudsRecordingSceneOnSite allowRecordingWhileOffline:YES languageForSpeechInput:nil];
     config.languageForSpeechInput = self.selectedLanguage;
     
     // Start recording

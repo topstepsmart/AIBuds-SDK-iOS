@@ -7,5 +7,4 @@ framework module AIBudsFoundation {
 
 module AIBudsFoundation.Swift {
   header "AIBudsFoundation-Swift.h"
-  requires objc
 }

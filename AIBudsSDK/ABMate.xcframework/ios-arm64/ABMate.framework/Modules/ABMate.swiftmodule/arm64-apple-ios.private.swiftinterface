@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.2.4 effective-5.10 (swiftlang-6.2.4.1.4 clang-1700.6.4.2)
-// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature GlobalActorIsolatedTypesUsability -enable-upcoming-feature MemberImportVisibility -enable-upcoming-feature InferIsolatedConformances -enable-upcoming-feature NonisolatedNonsendingByDefault -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name ABMate
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.4
+// swift-compiler-version: Apple Swift version 6.3.1 effective-5.10 (swiftlang-6.3.1.1.2 clang-2100.0.123.102)
+// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature GlobalActorIsolatedTypesUsability -enable-upcoming-feature MemberImportVisibility -enable-upcoming-feature InferIsolatedConformances -enable-upcoming-feature NonisolatedNonsendingByDefault -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name ABMate
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.1
 import AIBuds
 import AIBudsFoundation
 import AIBudsLog
@@ -24,9 +24,7 @@ import _SwiftConcurrencyShims
   case response = 0x02
   case notify = 0x03
   case invalid = 0xff
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.UInt8)
-  #endif
   public typealias RawValue = Swift.UInt8
   public var rawValue: Swift.UInt8 {
     get
@@ -91,12 +89,8 @@ public typealias DeviceInfoHandler = (callableType: Any, callback: ABMate.Device
     get
   }
   @objc public func encode(with coder: Foundation.NSCoder)
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc required public init?(coder: Foundation.NSCoder)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init?(data: Foundation.Data)
-  #endif
   @objc deinit
 }
 extension ABMate.DeviceBeaconModel {
@@ -125,11 +119,9 @@ extension ABMate.DeviceBeaconModel {
   @objc public var productId: Swift.UInt16 {
     @objc get
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public var macAddress: Swift.String? {
     @objc get
   }
-  #endif
   @objc public var requiresSecureAuthentication: Swift.Bool {
     @objc get
   }
@@ -139,33 +131,23 @@ extension ABMate.DeviceBeaconModel {
   @objc public var isConnectedToClassicBluetooth: Swift.Bool {
     @objc get
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public var sppUUID: Foundation.UUID? {
     @objc get
   }
-  #endif
   @objc public var connectionChannel: ABMate.ConnectionChannel {
     @objc get
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public var mainProjNo: Swift.String? {
     @objc get
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public var subProjNo: Swift.String? {
     @objc get
   }
-  #endif
   @objc public var alreadyPaired: Swift.Bool {
     get
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(peripheral: CoreBluetooth.CBPeripheral, central: CoreBluetooth.CBCentralManager?, advertisementData: [Swift.String : Any]?, rssi: Foundation.NSNumber?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func create(central: CoreBluetooth.CBCentralManager, peripheral: CoreBluetooth.CBPeripheral, advertisementData: [Swift.String : Any]?, rssi: Foundation.NSNumber?) -> (any AIBuds.FoundDeviceConvertible)?
-  #endif
   @objc deinit
 }
 extension ABMate.FoundDeviceModel {
@@ -182,9 +164,7 @@ extension ABMate.ABMateSDK {
   case invalidDataLength = 1
   case badPacketType = 2
   case badPacket = 3
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public static var _nsErrorDomain: Swift.String {
     get
@@ -194,11 +174,9 @@ extension ABMate.ABMateSDK {
   }
 }
 extension ABMate.DataPacketError : Foundation.LocalizedError {
-  #if compiler(>=5.3) && $NonescapableTypes
   public var errorDescription: Swift.String? {
     get
   }
-  #endif
 }
 extension ABMate.DataPacketError : Foundation.CustomNSError {
   public static var errorDomain: Swift.String {
@@ -217,9 +195,7 @@ extension ABMate.DataPacketError : Swift.CustomStringConvertible {
   public static var allCases: [ABMate.ConnectionChannel] {
     get
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias AllCases = [ABMate.ConnectionChannel]
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
@@ -236,9 +212,7 @@ extension ABMate.ConnectionChannel : Swift.CustomStringConvertible {
   case systemEvent = 1
   case userEvent = 2
   case factoryTest = 3
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.UInt32)
-  #endif
   public typealias RawValue = Swift.UInt32
   public var rawValue: Swift.UInt32 {
     get
@@ -259,9 +233,7 @@ extension ABMate.DebugLogCategory : Swift.CustomDebugStringConvertible {
   case batt = 0x54544142
   case awnr = 0x524E5741
   case chat = 0x54414843
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.UInt32)
-  #endif
   public typealias RawValue = Swift.UInt32
   public var rawValue: Swift.UInt32 {
     get
@@ -309,9 +281,7 @@ extension ABMate.ABMateSDK {
   case sendCameraOtaFileUrlInfoFailedDueToNotAllow = 5008
   case sendCameraOtaFileUrlInfoFailedDueToNoDataTransferChannel = 5009
   case sendCameraOtaFileUrlInfoFailedDueToStatusConflict = 5010
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -333,6 +303,7 @@ extension ABMate.ABMateSDK {
 }
 @objc(ABMateSdkErrorCode) public enum SdkErrorCode : Swift.Int {
   case unknown = -1
+  case deviceNotSupport = 1000
   case scanningStartFailedDueToBluetoothNotPoweredOn = 1001
   case scanningStartFailedDueToBluetoothAuthorizationDeniedOrRestricted = 1002
   case scanningStartFailedDueToBluetoothUnsupported = 1003
@@ -374,9 +345,11 @@ extension ABMate.ABMateSDK {
   case importFilesFailedDueToHttpError = 6015
   case importFilesFailedDueToNetworkError = 6016
   case fetchMediaFilesInfoFailedDueToAllowLocalNetworkingMissing = 6017
-  #if compiler(>=5.3) && $NonescapableTypes
+  case promptScriptInvalidOrEmpty = 7001
+  case promptScriptIsSending = 7002
+  case promptScriptSendingFailed = 7003
+  case promptScriptSendingFailedDueToDeviceDisconnect = 7004
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -406,9 +379,7 @@ extension ABMate.ABMateSDK {
   case otaTaskFailedDueToDeviceReportDataLengthError = 4017
   case otaTaskFailedDueToDeviceDisconnect = 4018
   case otaTaskFailedDueToTimeout = 4019
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -417,17 +388,13 @@ extension ABMate.ABMateSDK {
 @objc(ABMateCustomCommandConvertiable) public protocol CustomCommandConvertiable : ObjectiveC.NSObjectProtocol {
   @objc var cmdKey: Swift.UInt8 { get }
   @objc var cmdType: ABMate.CommandType { get }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc var payload: Foundation.Data? { get }
-  #endif
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class ABMateSDK : ObjectiveC.NSObject {
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public var delegate: (any AIBuds.SDKDelegate)? {
     @objc get
     @objc set
   }
-  #endif
   @objc public static let shared: ABMate.ABMateSDK
   @objc deinit
 }
@@ -456,13 +423,9 @@ extension ABMate.ABMateSDK : AIBuds.BleConnectSDK {
   @objc final public var classForDeviceModel: any AIBuds.DeviceConvertible.Type {
     @objc get
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func setSDKDelegate(_ delegate: (any AIBuds.SDKDelegate)?)
-  #endif
   @objc final public func isKnownDevice(_ peripheral: CoreBluetooth.CBPeripheral, advertisementData: [Swift.String : Any], rssi: Foundation.NSNumber) -> Swift.Bool
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func create(central: CoreBluetooth.CBCentralManager, peripheral: CoreBluetooth.CBPeripheral, advertisementData: [Swift.String : Any]?, rssi: Foundation.NSNumber?) -> (any AIBuds.FoundDeviceConvertible)?
-  #endif
   @objc final public func knownDevicesConnectedToiOS() -> [CoreBluetooth.CBPeripheral]
 }
 extension ABMate.CommandType : Swift.Equatable {}
