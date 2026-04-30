@@ -907,7 +907,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) AIBudsEQSett
 /// Whether the equalizer is a custom equalizer.
 @property (nonatomic, readonly) BOOL isCustom;
 /// The index of the custom equalizer mode.
-@property (nonatomic, readonly) NSInteger customIndex;
+@property (nonatomic, readonly, strong) NSNumber * _Nullable customIndex;
 /// Initializes an <code>EQSettingModel</code> with the specified mode and gains.
 /// \param mode The type of the preset equalizer.
 ///

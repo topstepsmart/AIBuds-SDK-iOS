@@ -1796,6 +1796,16 @@
       },
       {
         "kind": "Import",
+        "name": "MagicOggDecoder",
+        "printedName": "MagicOggDecoder",
+        "declKind": "Import",
+        "moduleName": "AIBudsMagicHelper",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -13947,21 +13957,21 @@
       "kind": "StringLiteral",
       "offset": 514,
       "length": 14,
-      "value": "\"1.0.0-beta.3\""
+      "value": "\"1.0.0-beta.4\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/AIBudsMagicHelper.swift",
       "kind": "StringLiteral",
       "offset": 644,
       "length": 13,
-      "value": "\"20260426001\""
+      "value": "\"20260430001\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/AIBudsMagicHelper.swift",
       "kind": "StringLiteral",
       "offset": 759,
       "length": 12,
-      "value": "\"2026-04-26\""
+      "value": "\"2026-04-30\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/AIBudsMagicHelper.swift",

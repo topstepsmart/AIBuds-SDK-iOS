@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
   # ==================== Basic Information ====================
   # SDK name and version
   s.name         = "AIBudsSDK"
-  s.version      = "1.0.0-beta.3"
+  s.version      = "1.0.0-beta.4"
   s.summary      = "AIBuds SDK - Comprehensive AI-powered device development framework for iOS"
   s.description  = <<-DESC
                     AIBuds SDK is a powerful and comprehensive development framework designed to simplify the integration of AI-powered device functionalities into iOS applications. It provides modular components including core connectivity, Bluetooth management, audio processing, AI capabilities, logging utilities, and foundation services. The SDK supports seamless communication with AIBuds devices, enabling developers to build intelligent audio experiences with features like real-time audio streaming, voice recognition, and smart device management. With its flexible subspec architecture, developers can easily include only the components they need, from basic logging to full AI integration.
@@ -138,6 +138,7 @@ Pod::Spec.new do |s|
       mltcloud.dependency 'AIBudsSDK/ThirdParty/Lame'
       mltcloud.dependency 'AIBudsSDK/ThirdParty/MagicHelper'
       mltcloud.dependency 'AIBudsSDK/AI/Core'
+      mltcloud.dependency 'libogg', '1.3.5'
     end
 
     # Dashboard - AI management dashboard

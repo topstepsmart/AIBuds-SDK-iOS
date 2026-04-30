@@ -153,7 +153,7 @@ import _SwiftConcurrencyShims
   @objc final public var isCustom: Swift.Bool {
     @objc get
   }
-  @objc final public var customIndex: Swift.Int {
+  @objc final public var customIndex: Foundation.NSNumber? {
     @objc get
   }
   @objc(initWithMode:gains:) public init(mode: Swift.Int, gains: [Swift.Int])

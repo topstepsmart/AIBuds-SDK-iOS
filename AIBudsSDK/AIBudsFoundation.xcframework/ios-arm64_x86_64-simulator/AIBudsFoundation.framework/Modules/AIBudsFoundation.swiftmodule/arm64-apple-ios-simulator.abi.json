@@ -5435,14 +5435,22 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
+                "name": "Optional",
+                "printedName": "Foundation.NSNumber?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSNumber",
+                    "printedName": "Foundation.NSNumber",
+                    "usr": "c:objc(cs)NSNumber"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Var",
             "usr": "c:@M@AIBudsFoundation@objc(cs)AIBudsEQSettingModel(py)customIndex",
-            "mangledName": "$s16AIBudsFoundation14EQSettingModelC11customIndexSivp",
+            "mangledName": "$s16AIBudsFoundation14EQSettingModelC11customIndexSo8NSNumberCSgvp",
             "moduleName": "AIBudsFoundation",
             "declAttributes": [
               "Final",
@@ -5458,14 +5466,22 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
+                    "name": "Optional",
+                    "printedName": "Foundation.NSNumber?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NSNumber",
+                        "printedName": "Foundation.NSNumber",
+                        "usr": "c:objc(cs)NSNumber"
+                      }
+                    ],
+                    "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
                 "usr": "c:@M@AIBudsFoundation@objc(cs)AIBudsEQSettingModel(im)customIndex",
-                "mangledName": "$s16AIBudsFoundation14EQSettingModelC11customIndexSivg",
+                "mangledName": "$s16AIBudsFoundation14EQSettingModelC11customIndexSo8NSNumberCSgvg",
                 "moduleName": "AIBudsFoundation",
                 "declAttributes": [
                   "Final",
@@ -68945,140 +68961,140 @@
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/DataModels(数据模型)\/EQ(均衡器)\/EQSettingModel.swift",
       "kind": "StringLiteral",
-      "offset": 3669,
+      "offset": 3746,
       "length": 63,
       "value": "\"[EQSetting] bands=\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/DataModels(数据模型)\/EQ(均衡器)\/EQSettingModel.swift",
       "kind": "StringLiteral",
-      "offset": 3702,
+      "offset": 3779,
       "length": 4,
       "value": "\" mode=\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/DataModels(数据模型)\/EQ(均衡器)\/EQSettingModel.swift",
       "kind": "StringLiteral",
-      "offset": 3715,
+      "offset": 3792,
       "length": 1,
       "value": "\", gains=\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/DataModels(数据模型)\/EQ(均衡器)\/EQSettingModel.swift",
       "kind": "StringLiteral",
-      "offset": 3731,
+      "offset": 3808,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/DataModels(数据模型)\/EQ(均衡器)\/EQSettingModel.swift",
       "kind": "StringLiteral",
-      "offset": 3785,
+      "offset": 3862,
       "length": 15,
       "value": "\" name=\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/DataModels(数据模型)\/EQ(均衡器)\/EQSettingModel.swift",
       "kind": "StringLiteral",
-      "offset": 3799,
+      "offset": 3876,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/DataModels(数据模型)\/EQ(均衡器)\/EQSettingModel.swift",
       "kind": "StringLiteral",
-      "offset": 3877,
+      "offset": 3954,
       "length": 29,
       "value": "\" chineseName=\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/DataModels(数据模型)\/EQ(均衡器)\/EQSettingModel.swift",
       "kind": "StringLiteral",
-      "offset": 3905,
+      "offset": 3982,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/DataModels(数据模型)\/EQ(均衡器)\/EQSettingModel.swift",
       "kind": "StringLiteral",
-      "offset": 3962,
+      "offset": 4039,
       "length": 14,
       "value": "\" type=preset\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/DataModels(数据模型)\/EQ(均衡器)\/EQSettingModel.swift",
       "kind": "StringLiteral",
-      "offset": 4017,
+      "offset": 4094,
       "length": 14,
       "value": "\" type=custom\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/DataModels(数据模型)\/EQ(均衡器)\/EQSettingModel.swift",
       "kind": "StringLiteral",
-      "offset": 4166,
+      "offset": 4243,
       "length": 70,
       "value": "\"[EQSetting] 频段数=\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/DataModels(数据模型)\/EQ(均衡器)\/EQSettingModel.swift",
       "kind": "StringLiteral",
-      "offset": 4203,
+      "offset": 4280,
       "length": 6,
       "value": "\" 模式=\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/DataModels(数据模型)\/EQ(均衡器)\/EQSettingModel.swift",
       "kind": "StringLiteral",
-      "offset": 4218,
+      "offset": 4295,
       "length": 1,
       "value": "\", 增益=\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/DataModels(数据模型)\/EQ(均衡器)\/EQSettingModel.swift",
       "kind": "StringLiteral",
-      "offset": 4235,
+      "offset": 4312,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/DataModels(数据模型)\/EQ(均衡器)\/EQSettingModel.swift",
       "kind": "StringLiteral",
-      "offset": 4289,
+      "offset": 4366,
       "length": 17,
       "value": "\" 名称=\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/DataModels(数据模型)\/EQ(均衡器)\/EQSettingModel.swift",
       "kind": "StringLiteral",
-      "offset": 4305,
+      "offset": 4382,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/DataModels(数据模型)\/EQ(均衡器)\/EQSettingModel.swift",
       "kind": "StringLiteral",
-      "offset": 4383,
+      "offset": 4460,
       "length": 27,
       "value": "\" 中文名=\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/DataModels(数据模型)\/EQ(均衡器)\/EQSettingModel.swift",
       "kind": "StringLiteral",
-      "offset": 4409,
+      "offset": 4486,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/DataModels(数据模型)\/EQ(均衡器)\/EQSettingModel.swift",
       "kind": "StringLiteral",
-      "offset": 4466,
+      "offset": 4543,
       "length": 16,
       "value": "\" 类型=预设\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/DataModels(数据模型)\/EQ(均衡器)\/EQSettingModel.swift",
       "kind": "StringLiteral",
-      "offset": 4523,
+      "offset": 4600,
       "length": 19,
       "value": "\" 类型=自定义\""
     },
@@ -73497,21 +73513,21 @@
       "kind": "StringLiteral",
       "offset": 492,
       "length": 14,
-      "value": "\"1.0.0-beta.3\""
+      "value": "\"1.0.0-beta.4\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/AIBudsFoundation.swift",
       "kind": "StringLiteral",
       "offset": 622,
       "length": 13,
-      "value": "\"20260426001\""
+      "value": "\"20260430001\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/AIBudsFoundation.swift",
       "kind": "StringLiteral",
       "offset": 737,
       "length": 12,
-      "value": "\"2026-04-26\""
+      "value": "\"2026-04-30\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/AIBudsFoundation.swift",

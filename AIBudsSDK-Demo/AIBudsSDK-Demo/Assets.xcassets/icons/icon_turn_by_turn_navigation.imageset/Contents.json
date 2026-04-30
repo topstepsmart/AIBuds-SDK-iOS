@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "icon_turn_by_turn_navigation.pdf",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
