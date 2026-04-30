@@ -1274,6 +1274,10 @@ SWIFT_PROTOCOL_NAMED("DeviceConvertible")
 @property (nonatomic, readonly) CBPeripheralState connectionState;
 /// Device state
 @property (nonatomic, readonly) enum AIBudsDeviceState deviceState;
+/// Is device connected and ready to use
+@property (nonatomic, readonly) BOOL isConnectedAndReady;
+/// Is device busy
+@property (nonatomic, readonly) BOOL isBusy;
 /// supported classes
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Class> * _Nonnull supportedClasses;)
 + (NSArray<Class> * _Nonnull)supportedClasses SWIFT_WARN_UNUSED_RESULT;
@@ -4673,6 +4677,10 @@ SWIFT_PROTOCOL_NAMED("DeviceConvertible")
 @property (nonatomic, readonly) CBPeripheralState connectionState;
 /// Device state
 @property (nonatomic, readonly) enum AIBudsDeviceState deviceState;
+/// Is device connected and ready to use
+@property (nonatomic, readonly) BOOL isConnectedAndReady;
+/// Is device busy
+@property (nonatomic, readonly) BOOL isBusy;
 /// supported classes
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<Class> * _Nonnull supportedClasses;)
 + (NSArray<Class> * _Nonnull)supportedClasses SWIFT_WARN_UNUSED_RESULT;

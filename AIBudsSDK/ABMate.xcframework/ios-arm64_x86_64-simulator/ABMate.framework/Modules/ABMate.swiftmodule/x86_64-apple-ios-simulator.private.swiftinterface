@@ -303,7 +303,10 @@ extension ABMate.ABMateSDK {
 }
 @objc(ABMateSdkErrorCode) public enum SdkErrorCode : Swift.Int {
   case unknown = -1
-  case deviceNotSupport = 1000
+  case deviceNotSupport = 1
+  case deviceNotConnected = 2
+  case deviceNotReady = 3
+  case deviceBusy = 4
   case scanningStartFailedDueToBluetoothNotPoweredOn = 1001
   case scanningStartFailedDueToBluetoothAuthorizationDeniedOrRestricted = 1002
   case scanningStartFailedDueToBluetoothUnsupported = 1003

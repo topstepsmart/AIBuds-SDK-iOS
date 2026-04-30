@@ -787,3 +787,34 @@
 "LocKey.NavigationNotSupported" = "此设备不支持导航功能";
 "LocKey.NavigationSendSuccessFormat" = "导航发送成功（状态：%@）";
 "LocKey.NavigationSendFailedFormat" = "发送失败：%@";
+
+"LocKey.DeviceAppsGroupTitle" = "设备端应用程序";
+"LocKey.DeviceAppsFeatureTitle" = "设备端应用程序";
+
+"LocKey.AppOverlayPrompt" = "提词器";
+"LocKey.AppAIChat" = "AI 聊天";
+"LocKey.AppNavigation" = "导航";
+"LocKey.AppClock" = "时钟";
+"LocKey.AppTranslation" = "翻译";
+"LocKey.DeviceAppsNotSupported" = "此设备不支持设备端应用程序";
+"LocKey.DeviceAppsLoadedFormat" = "已加载 %ld 个应用";
+"LocKey.DeviceAppsEmpty" = "设备上未找到应用";
+"LocKey.DeviceAppsTitle" = "设备端应用程序";
+"LocKey.DeviceAppsForeground" = "当前前台应用";
+"LocKey.DeviceAppsHomeScreen" = "主屏幕";
+"LocKey.DeviceAppsList" = "已安装应用";
+"LocKey.DeviceAppsActions" = "快捷操作";
+"LocKey.DeviceAppsReturnHome" = "返回主屏幕";
+"LocKey.DeviceAppsStatus" = "状态";
+"LocKey.DeviceAppsReady" = "准备管理设备端应用程序";
+"LocKey.DeviceAppsUnknownApp" = "未知应用";
+"LocKey.DeviceAppsRunning" = "运行中";
+"LocKey.DeviceAppsStopped" = "已停止";
+"LocKey.DeviceAppsStop" = "停止";
+"LocKey.DeviceAppsStart" = "启动";
+"LocKey.DeviceAppsStartedSuccessFormat" = "%@ 启动成功";
+"LocKey.DeviceAppsStartFailedFormat" = "启动应用失败：%@";
+"LocKey.DeviceAppsStoppedSuccessFormat" = "%@ 停止成功";
+"LocKey.DeviceAppsStopFailedFormat" = "停止应用失败：%@";
+"LocKey.DeviceAppsHomeSuccess" = "返回主屏幕成功";
+"LocKey.DeviceAppsHomeFailedFormat" = "返回主屏幕失败：%@";

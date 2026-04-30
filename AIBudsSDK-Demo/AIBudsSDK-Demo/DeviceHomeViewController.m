@@ -632,6 +632,9 @@
         [DeviceFeatureGroupModel modelWithIcon:@"icon_turn_by_turn_navigation" name:NSLocalizedString(@"LocKey.TurnByTurnNavigationGroupTitle", nil) features:@[
             [DeviceFeatureModel modelWithIcon:@"icon_turn_by_turn_navigation" name:NSLocalizedString(@"LocKey.TurnByTurnNavigationFeatureTitle", nil) classNameOfDemoVC:@"TurnByTurnNavigationDemoController"],
         ]],
+        [DeviceFeatureGroupModel modelWithIcon:@"icon_device_apps" name:NSLocalizedString(@"LocKey.DeviceAppsGroupTitle", nil) features:@[
+            [DeviceFeatureModel modelWithIcon:@"icon_device_apps" name:NSLocalizedString(@"LocKey.DeviceAppsFeatureTitle", nil) classNameOfDemoVC:@"DeviceAppsDemoController"],
+        ]],
         [DeviceFeatureGroupModel modelWithIcon:@"icon_ota" name:NSLocalizedString(@"LocKey.OtaGroupTitle", nil) features:@[
             [DeviceFeatureModel modelWithIcon:@"icon_device_ota" name:NSLocalizedString(@"LocKey.OtaFeatureTitle", nil) classNameOfDemoVC:@"OTADemoController"],
         ]],

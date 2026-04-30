@@ -258,6 +258,8 @@ extension Foundation.NSNotification.Name {
   @objc var manufacturerHexDataString: Swift.String? { get }
   @objc var connectionState: CoreBluetooth.CBPeripheralState { get }
   @objc var deviceState: AIBudsFoundation.DeviceState { get }
+  @objc var isConnectedAndReady: Swift.Bool { get }
+  @objc var isBusy: Swift.Bool { get }
   @objc static var supportedClasses: [Swift.AnyClass] { get }
   @objc weak var peripheral: CoreBluetooth.CBPeripheral? { get }
   @objc weak var delegate: (any AIBuds.DeviceDelegate)? { get set }

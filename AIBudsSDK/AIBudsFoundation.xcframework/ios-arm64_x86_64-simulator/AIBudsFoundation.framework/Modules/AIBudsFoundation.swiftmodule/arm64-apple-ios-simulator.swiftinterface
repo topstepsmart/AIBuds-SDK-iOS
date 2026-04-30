@@ -740,6 +740,11 @@ extension AIBudsFoundation.DeviceState : Swift.CustomStringConvertible {
     get
   }
 }
+extension AIBudsFoundation.DeviceState : Swift.CustomDebugStringConvertible {
+  public var debugDescription: Swift.String {
+    get
+  }
+}
 @objc(AIBudsEarbudSide) public enum EarbudSide : Swift.Int {
   case unknown = -1
   case left = 0

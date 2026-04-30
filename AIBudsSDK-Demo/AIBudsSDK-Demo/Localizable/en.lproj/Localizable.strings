@@ -777,7 +777,7 @@
 "LocKey.AlertWeakGPS" = "Weak GPS signal";
 "LocKey.AlertIcyRoad" = "Icy road";
 "LocKey.AlertRoadClosed" = "Road closed";
-"LocKey.AlertAverageSpeed" = "Average speed zone";
+"LocKey.AlertAverageSpeed" = "Average Speed Camera";
 "LocKey.AlertRearVehicle" = "Rear vehicle warning";
 "LocKey.AlertDefault" = "Alert";
 "LocKey.NavigationRemainingTime" = "Remaining Time";
@@ -791,3 +791,34 @@
 "LocKey.NavigationNotSupported" = "Navigation not supported on this device";
 "LocKey.NavigationSendSuccessFormat" = "Navigation sent successfully (status: %@)";
 "LocKey.NavigationSendFailedFormat" = "Send failed: %@";
+
+"LocKey.DeviceAppsGroupTitle" = "Device Apps";
+"LocKey.DeviceAppsFeatureTitle" = "Device Apps";
+
+"LocKey.AppOverlayPrompt" = "Overlay Prompt";
+"LocKey.AppAIChat" = "AI Chat";
+"LocKey.AppNavigation" = "Navigation";
+"LocKey.AppClock" = "Clock";
+"LocKey.AppTranslation" = "Translation";
+"LocKey.DeviceAppsNotSupported" = "Device Apps not supported on this device";
+"LocKey.DeviceAppsLoadedFormat" = "Loaded %ld apps";
+"LocKey.DeviceAppsEmpty" = "No apps found on device";
+"LocKey.DeviceAppsTitle" = "Device Apps";
+"LocKey.DeviceAppsForeground" = "Current Foreground App";
+"LocKey.DeviceAppsHomeScreen" = "Home Screen";
+"LocKey.DeviceAppsList" = "Installed Apps";
+"LocKey.DeviceAppsActions" = "Quick Actions";
+"LocKey.DeviceAppsReturnHome" = "Return To Home Screen";
+"LocKey.DeviceAppsStatus" = "Status";
+"LocKey.DeviceAppsReady" = "Ready to manage device apps";
+"LocKey.DeviceAppsUnknownApp" = "Unknown App";
+"LocKey.DeviceAppsRunning" = "Running";
+"LocKey.DeviceAppsStopped" = "Stopped";
+"LocKey.DeviceAppsStop" = "Stop";
+"LocKey.DeviceAppsStart" = "Start";
+"LocKey.DeviceAppsStartedSuccessFormat" = "%@ started successfully";
+"LocKey.DeviceAppsStartFailedFormat" = "Failed to start app: %@";
+"LocKey.DeviceAppsStoppedSuccessFormat" = "%@ stopped successfully";
+"LocKey.DeviceAppsStopFailedFormat" = "Failed to stop app: %@";
+"LocKey.DeviceAppsHomeSuccess" = "Returned to home screen successfully";
+"LocKey.DeviceAppsHomeFailedFormat" = "Failed to return to home: %@";

@@ -8306,6 +8306,132 @@
           },
           {
             "kind": "Var",
+            "name": "deviceNotConnected",
+            "printedName": "deviceNotConnected",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ABMate.SdkErrorCode.Type) -> ABMate.SdkErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SdkErrorCode",
+                    "printedName": "ABMate.SdkErrorCode",
+                    "usr": "c:@M@ABMate@E@ABMateSdkErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ABMate.SdkErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SdkErrorCode",
+                        "printedName": "ABMate.SdkErrorCode",
+                        "usr": "c:@M@ABMate@E@ABMateSdkErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@ABMate@E@ABMateSdkErrorCode@ABMateSdkErrorCodeDeviceNotConnected",
+            "mangledName": "$s6ABMate12SdkErrorCodeO18deviceNotConnectedyA2CmF",
+            "moduleName": "ABMate",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 2
+          },
+          {
+            "kind": "Var",
+            "name": "deviceNotReady",
+            "printedName": "deviceNotReady",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ABMate.SdkErrorCode.Type) -> ABMate.SdkErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SdkErrorCode",
+                    "printedName": "ABMate.SdkErrorCode",
+                    "usr": "c:@M@ABMate@E@ABMateSdkErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ABMate.SdkErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SdkErrorCode",
+                        "printedName": "ABMate.SdkErrorCode",
+                        "usr": "c:@M@ABMate@E@ABMateSdkErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@ABMate@E@ABMateSdkErrorCode@ABMateSdkErrorCodeDeviceNotReady",
+            "mangledName": "$s6ABMate12SdkErrorCodeO14deviceNotReadyyA2CmF",
+            "moduleName": "ABMate",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 3
+          },
+          {
+            "kind": "Var",
+            "name": "deviceBusy",
+            "printedName": "deviceBusy",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ABMate.SdkErrorCode.Type) -> ABMate.SdkErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SdkErrorCode",
+                    "printedName": "ABMate.SdkErrorCode",
+                    "usr": "c:@M@ABMate@E@ABMateSdkErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ABMate.SdkErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SdkErrorCode",
+                        "printedName": "ABMate.SdkErrorCode",
+                        "usr": "c:@M@ABMate@E@ABMateSdkErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@ABMate@E@ABMateSdkErrorCode@ABMateSdkErrorCodeDeviceBusy",
+            "mangledName": "$s6ABMate12SdkErrorCodeO10deviceBusyyA2CmF",
+            "moduleName": "ABMate",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 4
+          },
+          {
+            "kind": "Var",
             "name": "scanningStartFailedDueToBluetoothNotPoweredOn",
             "printedName": "scanningStartFailedDueToBluetoothNotPoweredOn",
             "children": [
@@ -8344,7 +8470,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 2
+            "fixedbinaryorder": 5
           },
           {
             "kind": "Var",
@@ -8386,7 +8512,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 3
+            "fixedbinaryorder": 6
           },
           {
             "kind": "Var",
@@ -8428,7 +8554,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 4
+            "fixedbinaryorder": 7
           },
           {
             "kind": "Var",
@@ -8470,7 +8596,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 5
+            "fixedbinaryorder": 8
           },
           {
             "kind": "Var",
@@ -8512,7 +8638,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 6
+            "fixedbinaryorder": 9
           },
           {
             "kind": "Var",
@@ -8554,7 +8680,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 7
+            "fixedbinaryorder": 10
           },
           {
             "kind": "Var",
@@ -8596,7 +8722,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 8
+            "fixedbinaryorder": 11
           },
           {
             "kind": "Var",
@@ -8638,7 +8764,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 9
+            "fixedbinaryorder": 12
           },
           {
             "kind": "Var",
@@ -8680,7 +8806,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 10
+            "fixedbinaryorder": 13
           },
           {
             "kind": "Var",
@@ -8722,7 +8848,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 11
+            "fixedbinaryorder": 14
           },
           {
             "kind": "Var",
@@ -8764,7 +8890,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 12
+            "fixedbinaryorder": 15
           },
           {
             "kind": "Var",
@@ -8806,7 +8932,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 13
+            "fixedbinaryorder": 16
           },
           {
             "kind": "Var",
@@ -8848,7 +8974,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 14
+            "fixedbinaryorder": 17
           },
           {
             "kind": "Var",
@@ -8890,7 +9016,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 15
+            "fixedbinaryorder": 18
           },
           {
             "kind": "Var",
@@ -8932,7 +9058,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 16
+            "fixedbinaryorder": 19
           },
           {
             "kind": "Var",
@@ -8974,7 +9100,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 17
+            "fixedbinaryorder": 20
           },
           {
             "kind": "Var",
@@ -9016,7 +9142,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 18
+            "fixedbinaryorder": 21
           },
           {
             "kind": "Var",
@@ -9058,7 +9184,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 19
+            "fixedbinaryorder": 22
           },
           {
             "kind": "Var",
@@ -9100,7 +9226,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 20
+            "fixedbinaryorder": 23
           },
           {
             "kind": "Var",
@@ -9142,7 +9268,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 21
+            "fixedbinaryorder": 24
           },
           {
             "kind": "Var",
@@ -9184,7 +9310,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 22
+            "fixedbinaryorder": 25
           },
           {
             "kind": "Var",
@@ -9226,7 +9352,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 23
+            "fixedbinaryorder": 26
           },
           {
             "kind": "Var",
@@ -9268,7 +9394,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 24
+            "fixedbinaryorder": 27
           },
           {
             "kind": "Var",
@@ -9310,7 +9436,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 25
+            "fixedbinaryorder": 28
           },
           {
             "kind": "Var",
@@ -9352,7 +9478,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 26
+            "fixedbinaryorder": 29
           },
           {
             "kind": "Var",
@@ -9394,7 +9520,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 27
+            "fixedbinaryorder": 30
           },
           {
             "kind": "Var",
@@ -9436,7 +9562,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 28
+            "fixedbinaryorder": 31
           },
           {
             "kind": "Var",
@@ -9478,7 +9604,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 29
+            "fixedbinaryorder": 32
           },
           {
             "kind": "Var",
@@ -9520,7 +9646,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 30
+            "fixedbinaryorder": 33
           },
           {
             "kind": "Var",
@@ -9562,7 +9688,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 31
+            "fixedbinaryorder": 34
           },
           {
             "kind": "Var",
@@ -9604,7 +9730,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 32
+            "fixedbinaryorder": 35
           },
           {
             "kind": "Var",
@@ -9646,7 +9772,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 33
+            "fixedbinaryorder": 36
           },
           {
             "kind": "Var",
@@ -9688,7 +9814,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 34
+            "fixedbinaryorder": 37
           },
           {
             "kind": "Var",
@@ -9730,7 +9856,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 35
+            "fixedbinaryorder": 38
           },
           {
             "kind": "Var",
@@ -9772,7 +9898,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 36
+            "fixedbinaryorder": 39
           },
           {
             "kind": "Var",
@@ -9814,7 +9940,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 37
+            "fixedbinaryorder": 40
           },
           {
             "kind": "Var",
@@ -9856,7 +9982,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 38
+            "fixedbinaryorder": 41
           },
           {
             "kind": "Var",
@@ -9898,7 +10024,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 39
+            "fixedbinaryorder": 42
           },
           {
             "kind": "Var",
@@ -9940,7 +10066,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 40
+            "fixedbinaryorder": 43
           },
           {
             "kind": "Var",
@@ -9982,7 +10108,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 41
+            "fixedbinaryorder": 44
           },
           {
             "kind": "Var",
@@ -10024,7 +10150,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 42
+            "fixedbinaryorder": 45
           },
           {
             "kind": "Var",
@@ -10066,7 +10192,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 43
+            "fixedbinaryorder": 46
           },
           {
             "kind": "Var",
@@ -10108,7 +10234,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 44
+            "fixedbinaryorder": 47
           },
           {
             "kind": "Var",
@@ -10150,7 +10276,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 45
+            "fixedbinaryorder": 48
           },
           {
             "kind": "Var",
@@ -10192,7 +10318,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 46
+            "fixedbinaryorder": 49
           },
           {
             "kind": "Constructor",
@@ -16065,321 +16191,342 @@
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Defines(定义)\/SDKError(错误)\/Errors.swift",
       "kind": "IntegerLiteral",
       "offset": 646,
-      "length": 4,
-      "value": "1000"
+      "length": 1,
+      "value": "1"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Defines(定义)\/SDKError(错误)\/Errors.swift",
       "kind": "IntegerLiteral",
-      "offset": 777,
+      "offset": 708,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Defines(定义)\/SDKError(错误)\/Errors.swift",
+      "kind": "IntegerLiteral",
+      "offset": 762,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Defines(定义)\/SDKError(错误)\/Errors.swift",
+      "kind": "IntegerLiteral",
+      "offset": 807,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Defines(定义)\/SDKError(错误)\/Errors.swift",
+      "kind": "IntegerLiteral",
+      "offset": 935,
       "length": 4,
       "value": "1001"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Defines(定义)\/SDKError(错误)\/Errors.swift",
       "kind": "IntegerLiteral",
-      "offset": 947,
+      "offset": 1105,
       "length": 4,
       "value": "1002"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Defines(定义)\/SDKError(错误)\/Errors.swift",
       "kind": "IntegerLiteral",
-      "offset": 1074,
+      "offset": 1232,
       "length": 4,
       "value": "1003"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Defines(定义)\/SDKError(错误)\/Errors.swift",
       "kind": "IntegerLiteral",
-      "offset": 1200,
+      "offset": 1358,
       "length": 4,
       "value": "1004"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Defines(定义)\/SDKError(错误)\/Errors.swift",
       "kind": "IntegerLiteral",
-      "offset": 1324,
+      "offset": 1482,
       "length": 4,
       "value": "1005"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Defines(定义)\/SDKError(错误)\/Errors.swift",
       "kind": "IntegerLiteral",
-      "offset": 1453,
+      "offset": 1611,
       "length": 4,
       "value": "2001"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Defines(定义)\/SDKError(错误)\/Errors.swift",
       "kind": "IntegerLiteral",
-      "offset": 1575,
+      "offset": 1733,
       "length": 4,
       "value": "2002"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Defines(定义)\/SDKError(错误)\/Errors.swift",
       "kind": "IntegerLiteral",
-      "offset": 1711,
+      "offset": 1869,
       "length": 4,
       "value": "2003"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Defines(定义)\/SDKError(错误)\/Errors.swift",
       "kind": "IntegerLiteral",
-      "offset": 1816,
+      "offset": 1974,
       "length": 4,
       "value": "2004"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Defines(定义)\/SDKError(错误)\/Errors.swift",
       "kind": "IntegerLiteral",
-      "offset": 1928,
+      "offset": 2086,
       "length": 4,
       "value": "2005"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Defines(定义)\/SDKError(错误)\/Errors.swift",
       "kind": "IntegerLiteral",
-      "offset": 2040,
+      "offset": 2198,
       "length": 4,
       "value": "2006"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Defines(定义)\/SDKError(错误)\/Errors.swift",
       "kind": "IntegerLiteral",
-      "offset": 2180,
+      "offset": 2338,
       "length": 4,
       "value": "2007"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Defines(定义)\/SDKError(错误)\/Errors.swift",
       "kind": "IntegerLiteral",
-      "offset": 2313,
+      "offset": 2471,
       "length": 4,
       "value": "2008"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Defines(定义)\/SDKError(错误)\/Errors.swift",
       "kind": "IntegerLiteral",
-      "offset": 2449,
+      "offset": 2607,
       "length": 4,
       "value": "2009"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Defines(定义)\/SDKError(错误)\/Errors.swift",
       "kind": "IntegerLiteral",
-      "offset": 2551,
+      "offset": 2709,
       "length": 4,
       "value": "3001"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Defines(定义)\/SDKError(错误)\/Errors.swift",
       "kind": "IntegerLiteral",
-      "offset": 2697,
+      "offset": 2855,
       "length": 4,
       "value": "3002"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Defines(定义)\/SDKError(错误)\/Errors.swift",
       "kind": "IntegerLiteral",
-      "offset": 2838,
+      "offset": 2996,
       "length": 4,
       "value": "3003"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Defines(定义)\/SDKError(错误)\/Errors.swift",
       "kind": "IntegerLiteral",
-      "offset": 2969,
+      "offset": 3127,
       "length": 4,
       "value": "3004"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Defines(定义)\/SDKError(错误)\/Errors.swift",
       "kind": "IntegerLiteral",
-      "offset": 3044,
+      "offset": 3202,
       "length": 4,
       "value": "4001"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Defines(定义)\/SDKError(错误)\/Errors.swift",
       "kind": "IntegerLiteral",
-      "offset": 3191,
+      "offset": 3349,
       "length": 4,
       "value": "5001"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Defines(定义)\/SDKError(错误)\/Errors.swift",
       "kind": "IntegerLiteral",
-      "offset": 3353,
+      "offset": 3511,
       "length": 4,
       "value": "5002"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Defines(定义)\/SDKError(错误)\/Errors.swift",
       "kind": "IntegerLiteral",
-      "offset": 3527,
+      "offset": 3685,
       "length": 4,
       "value": "5003"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Defines(定义)\/SDKError(错误)\/Errors.swift",
       "kind": "IntegerLiteral",
-      "offset": 3717,
+      "offset": 3875,
       "length": 4,
       "value": "5004"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Defines(定义)\/SDKError(错误)\/Errors.swift",
       "kind": "IntegerLiteral",
-      "offset": 3878,
+      "offset": 4036,
       "length": 4,
       "value": "6000"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Defines(定义)\/SDKError(错误)\/Errors.swift",
       "kind": "IntegerLiteral",
-      "offset": 3944,
+      "offset": 4102,
       "length": 4,
       "value": "6001"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Defines(定义)\/SDKError(错误)\/Errors.swift",
       "kind": "IntegerLiteral",
-      "offset": 4029,
+      "offset": 4187,
       "length": 4,
       "value": "6002"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Defines(定义)\/SDKError(错误)\/Errors.swift",
       "kind": "IntegerLiteral",
-      "offset": 4106,
+      "offset": 4264,
       "length": 4,
       "value": "6003"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Defines(定义)\/SDKError(错误)\/Errors.swift",
       "kind": "IntegerLiteral",
-      "offset": 4244,
+      "offset": 4402,
       "length": 4,
       "value": "6004"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Defines(定义)\/SDKError(错误)\/Errors.swift",
       "kind": "IntegerLiteral",
-      "offset": 4400,
+      "offset": 4558,
       "length": 4,
       "value": "6005"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Defines(定义)\/SDKError(错误)\/Errors.swift",
       "kind": "IntegerLiteral",
-      "offset": 4544,
+      "offset": 4702,
       "length": 4,
       "value": "6006"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Defines(定义)\/SDKError(错误)\/Errors.swift",
       "kind": "IntegerLiteral",
-      "offset": 4664,
+      "offset": 4822,
       "length": 4,
       "value": "6007"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Defines(定义)\/SDKError(错误)\/Errors.swift",
       "kind": "IntegerLiteral",
-      "offset": 4797,
+      "offset": 4955,
       "length": 4,
       "value": "6008"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Defines(定义)\/SDKError(错误)\/Errors.swift",
       "kind": "IntegerLiteral",
-      "offset": 4927,
+      "offset": 5085,
       "length": 4,
       "value": "6009"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Defines(定义)\/SDKError(错误)\/Errors.swift",
       "kind": "IntegerLiteral",
-      "offset": 5046,
+      "offset": 5204,
       "length": 4,
       "value": "6010"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Defines(定义)\/SDKError(错误)\/Errors.swift",
       "kind": "IntegerLiteral",
-      "offset": 5175,
+      "offset": 5333,
       "length": 4,
       "value": "6011"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Defines(定义)\/SDKError(错误)\/Errors.swift",
       "kind": "IntegerLiteral",
-      "offset": 5315,
+      "offset": 5473,
       "length": 4,
       "value": "6012"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Defines(定义)\/SDKError(错误)\/Errors.swift",
       "kind": "IntegerLiteral",
-      "offset": 5440,
+      "offset": 5598,
       "length": 4,
       "value": "6013"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Defines(定义)\/SDKError(错误)\/Errors.swift",
       "kind": "IntegerLiteral",
-      "offset": 5541,
+      "offset": 5699,
       "length": 4,
       "value": "6014"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Defines(定义)\/SDKError(错误)\/Errors.swift",
       "kind": "IntegerLiteral",
-      "offset": 5663,
+      "offset": 5821,
       "length": 4,
       "value": "6015"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Defines(定义)\/SDKError(错误)\/Errors.swift",
       "kind": "IntegerLiteral",
-      "offset": 5764,
+      "offset": 5922,
       "length": 4,
       "value": "6016"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Defines(定义)\/SDKError(错误)\/Errors.swift",
       "kind": "IntegerLiteral",
-      "offset": 5915,
+      "offset": 6073,
       "length": 4,
       "value": "6017"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Defines(定义)\/SDKError(错误)\/Errors.swift",
       "kind": "IntegerLiteral",
-      "offset": 6005,
+      "offset": 6163,
       "length": 4,
       "value": "7001"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Defines(定义)\/SDKError(错误)\/Errors.swift",
       "kind": "IntegerLiteral",
-      "offset": 6081,
+      "offset": 6239,
       "length": 4,
       "value": "7002"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Defines(定义)\/SDKError(错误)\/Errors.swift",
       "kind": "IntegerLiteral",
-      "offset": 6165,
+      "offset": 6323,
       "length": 4,
       "value": "7003"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Defines(定义)\/SDKError(错误)\/Errors.swift",
       "kind": "IntegerLiteral",
-      "offset": 6293,
+      "offset": 6451,
       "length": 4,
       "value": "7004"
     },
@@ -16568,372 +16715,372 @@
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "BooleanLiteral",
-      "offset": 9872,
+      "offset": 10178,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 13250,
+      "offset": 13556,
       "length": 6,
       "value": "\"name\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 13277,
+      "offset": 13583,
       "length": 6,
       "value": "\"uuid\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 13312,
+      "offset": 13618,
       "length": 14,
       "value": "\"ctkdDeviceId\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 13358,
+      "offset": 13664,
       "length": 17,
       "value": "\"lastConnectTime\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 13402,
+      "offset": 13708,
       "length": 12,
       "value": "\"bindUserId\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 13443,
+      "offset": 13749,
       "length": 14,
       "value": "\"userBindTime\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 13489,
+      "offset": 13795,
       "length": 17,
       "value": "\"isAlreadyUnbind\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 13530,
+      "offset": 13836,
       "length": 9,
       "value": "\"advData\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 13566,
+      "offset": 13872,
       "length": 12,
       "value": "\"screenName\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 13604,
+      "offset": 13910,
       "length": 11,
       "value": "\"thumbnail\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 13645,
+      "offset": 13951,
       "length": 15,
       "value": "\"customContent\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 13687,
+      "offset": 13993,
       "length": 12,
       "value": "\"beaconData\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 13730,
+      "offset": 14036,
       "length": 16,
       "value": "\"connectContext\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 13795,
+      "offset": 14101,
       "length": 34,
       "value": "\"shouldAutoReconnectWhenAppLaunch\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "BooleanLiteral",
-      "offset": 13907,
+      "offset": 14213,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 17197,
+      "offset": 17503,
       "length": 1631,
       "value": "\"\n┌─────────── Device ─────────────────────┐\n│ Name: \""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 17354,
+      "offset": 17660,
       "length": 3,
       "value": "\"\n│ UUID: \""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 17391,
+      "offset": 17697,
       "length": 1,
       "value": "\"\n| Device ID for CTKD: \""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 17445,
+      "offset": 17751,
       "length": 5,
       "value": "\"nil\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 17451,
+      "offset": 17757,
       "length": 3,
       "value": "\"\n│ MAC Address: \""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 17493,
+      "offset": 17799,
       "length": 5,
       "value": "\"nil\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 17499,
+      "offset": 17805,
       "length": 36,
       "value": "\"\n├─────────── Device Info ─────────────────────────┤\n│ Product: \""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 17667,
+      "offset": 17973,
       "length": 3,
       "value": "\"\n│ Manufacturer Data: \""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 17728,
+      "offset": 18034,
       "length": 6,
       "value": "\"None\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 17735,
+      "offset": 18041,
       "length": 3,
       "value": "\"\n│ Advertisement Data: \""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 17804,
+      "offset": 18110,
       "length": 4,
       "value": "\"\n\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 17816,
+      "offset": 18122,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 17823,
+      "offset": 18129,
       "length": 6,
       "value": "\"None\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 17830,
+      "offset": 18136,
       "length": 36,
       "value": "\" \n├─────────── Connect & Binding Info ──────────────┤\n│ Last Connect: \""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 18006,
+      "offset": 18312,
       "length": 7,
       "value": "\"Never\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 18014,
+      "offset": 18320,
       "length": 3,
       "value": "\"\n│ Bind User ID: \""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 18057,
+      "offset": 18363,
       "length": 6,
       "value": "\"None\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 18064,
+      "offset": 18370,
       "length": 3,
       "value": "\"\n│ Bind Time: \""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 18119,
+      "offset": 18425,
       "length": 7,
       "value": "\"Never\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 18127,
+      "offset": 18433,
       "length": 3,
       "value": "\"\n│ Is Unbound: \""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 18172,
+      "offset": 18478,
       "length": 5,
       "value": "\"Yes\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 18180,
+      "offset": 18486,
       "length": 4,
       "value": "\"No\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 18185,
+      "offset": 18491,
       "length": 3,
       "value": "\"\n│ Should Auto Reconnect On App Launch: \""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 18272,
+      "offset": 18578,
       "length": 5,
       "value": "\"Yes\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 18280,
+      "offset": 18586,
       "length": 4,
       "value": "\"No\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 18285,
+      "offset": 18591,
       "length": 36,
       "value": "\"\n├─────────── Display Info ────────────────────────┤\n│ Screen Name: \""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 18461,
+      "offset": 18767,
       "length": 6,
       "value": "\"None\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 18468,
+      "offset": 18774,
       "length": 3,
       "value": "\"\n│ Has Thumbnail: \""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 18517,
+      "offset": 18823,
       "length": 5,
       "value": "\"Yes\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 18525,
+      "offset": 18831,
       "length": 4,
       "value": "\"No\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 18530,
+      "offset": 18836,
       "length": 3,
       "value": "\"\n│ Custom Content: \""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 18578,
+      "offset": 18884,
       "length": 6,
       "value": "\"None\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 18585,
+      "offset": 18891,
       "length": 153,
       "value": "\"\n└─────────────────────────────────────────────────┘\n\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 18778,
+      "offset": 19084,
       "length": 32,
       "value": "\"\n\n\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 18809,
+      "offset": 19115,
       "length": 5,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 18813,
+      "offset": 19119,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 18816,
-      "length": 27636,
+      "offset": 19122,
+      "length": 27917,
       "value": "\"\""
     },
     {

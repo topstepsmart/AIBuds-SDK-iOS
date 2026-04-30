@@ -787,7 +787,13 @@ typedef SWIFT_ENUM_NAMED(NSInteger, ABMateSdkErrorCode, "SdkErrorCode", open) {
 /// Unknown error
   ABMateSdkErrorCodeUnknown = -1,
 /// Device not support
-  ABMateSdkErrorCodeDeviceNotSupport = 1000,
+  ABMateSdkErrorCodeDeviceNotSupport = 1,
+/// Device not connected
+  ABMateSdkErrorCodeDeviceNotConnected = 2,
+/// Device not ready
+  ABMateSdkErrorCodeDeviceNotReady = 3,
+/// Device busy
+  ABMateSdkErrorCodeDeviceBusy = 4,
 /// Scanning start failed due to Bluetooth not being powered on
   ABMateSdkErrorCodeScanningStartFailedDueToBluetoothNotPoweredOn = 1001,
 /// Scanning start failed due to Bluetooth authorization being denied or restricted
@@ -1721,7 +1727,13 @@ typedef SWIFT_ENUM_NAMED(NSInteger, ABMateSdkErrorCode, "SdkErrorCode", open) {
 /// Unknown error
   ABMateSdkErrorCodeUnknown = -1,
 /// Device not support
-  ABMateSdkErrorCodeDeviceNotSupport = 1000,
+  ABMateSdkErrorCodeDeviceNotSupport = 1,
+/// Device not connected
+  ABMateSdkErrorCodeDeviceNotConnected = 2,
+/// Device not ready
+  ABMateSdkErrorCodeDeviceNotReady = 3,
+/// Device busy
+  ABMateSdkErrorCodeDeviceBusy = 4,
 /// Scanning start failed due to Bluetooth not being powered on
   ABMateSdkErrorCodeScanningStartFailedDueToBluetoothNotPoweredOn = 1001,
 /// Scanning start failed due to Bluetooth authorization being denied or restricted
