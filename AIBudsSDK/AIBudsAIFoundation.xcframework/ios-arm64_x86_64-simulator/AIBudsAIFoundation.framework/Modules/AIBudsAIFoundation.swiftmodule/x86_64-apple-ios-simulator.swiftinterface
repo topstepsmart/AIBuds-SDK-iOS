@@ -83,6 +83,9 @@ extension AIBudsAIFoundation.AIAudioRecordingSessionConfig : Foundation.NSCopyin
   @objc final public let answer: Swift.String
   @objc final public let isAnswerDefinite: Swift.Bool
   @objc public init(sequence: Swift.Int, requestId: Swift.String?, questionId: Swift.String, question: Swift.String = "", answer: Swift.String = "", isQuestionDefinite: Swift.Bool = false, isAnswerDefinite: Swift.Bool = false)
+  @objc override final public var description: Swift.String {
+    @objc get
+  }
   @objc final public var debugJsonString: Swift.String {
     @objc get
   }

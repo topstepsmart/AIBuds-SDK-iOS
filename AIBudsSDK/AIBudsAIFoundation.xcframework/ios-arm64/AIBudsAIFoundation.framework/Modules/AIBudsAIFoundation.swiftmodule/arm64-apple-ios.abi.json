@@ -3203,6 +3203,57 @@
           },
           {
             "kind": "Var",
+            "name": "description",
+            "printedName": "description",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBudsAIFoundation@objc(cs)AIBudsAIChatDataModel(py)description",
+            "mangledName": "$s18AIBudsAIFoundation15AIChatDataModelC11descriptionSSvp",
+            "moduleName": "AIBudsAIFoundation",
+            "overriding": true,
+            "objc_name": "description",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "Override",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsAIFoundation@objc(cs)AIBudsAIChatDataModel(im)description",
+                "mangledName": "$s18AIBudsAIFoundation15AIChatDataModelC11descriptionSSvg",
+                "moduleName": "AIBudsAIFoundation",
+                "overriding": true,
+                "objc_name": "description",
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "debugJsonString",
             "printedName": "debugJsonString",
             "children": [
@@ -15131,63 +15182,126 @@
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/AIChatSession(AIChat会话)\/AIChatDataModel.swift",
       "kind": "StringLiteral",
-      "offset": 3334,
+      "offset": 3345,
       "length": 252,
       "value": "\"{ \"sequence\": \""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/AIChatSession(AIChat会话)\/AIChatDataModel.swift",
       "kind": "StringLiteral",
-      "offset": 3362,
+      "offset": 3373,
       "length": 1,
       "value": "\", \"requestId\": \"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/AIChatSession(AIChat会话)\/AIChatDataModel.swift",
       "kind": "StringLiteral",
-      "offset": 3396,
+      "offset": 3407,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/AIChatSession(AIChat会话)\/AIChatDataModel.swift",
       "kind": "StringLiteral",
-      "offset": 3399,
+      "offset": 3410,
       "length": 1,
       "value": "\"\", \"questionId\": \"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/AIChatSession(AIChat会话)\/AIChatDataModel.swift",
       "kind": "StringLiteral",
-      "offset": 3434,
+      "offset": 3445,
       "length": 1,
       "value": "\"\", \"question\": \"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/AIChatSession(AIChat会话)\/AIChatDataModel.swift",
       "kind": "StringLiteral",
-      "offset": 3465,
+      "offset": 3476,
       "length": 1,
       "value": "\"\", \"isQuestionDefinite\": \""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/AIChatSession(AIChat会话)\/AIChatDataModel.swift",
       "kind": "StringLiteral",
-      "offset": 3514,
+      "offset": 3525,
       "length": 1,
       "value": "\", \"answer\": \"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/AIChatSession(AIChat会话)\/AIChatDataModel.swift",
       "kind": "StringLiteral",
-      "offset": 3539,
+      "offset": 3550,
       "length": 1,
       "value": "\"\", \"isAnswerDefinite\": \""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/AIChatSession(AIChat会话)\/AIChatDataModel.swift",
       "kind": "StringLiteral",
-      "offset": 3584,
+      "offset": 3595,
+      "length": 1,
+      "value": "\"}\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/AIChatSession(AIChat会话)\/AIChatDataModel.swift",
+      "kind": "StringLiteral",
+      "offset": 3665,
+      "length": 252,
+      "value": "\"{ \"sequence\": \""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/AIChatSession(AIChat会话)\/AIChatDataModel.swift",
+      "kind": "StringLiteral",
+      "offset": 3693,
+      "length": 1,
+      "value": "\", \"requestId\": \"\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/AIChatSession(AIChat会话)\/AIChatDataModel.swift",
+      "kind": "StringLiteral",
+      "offset": 3727,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/AIChatSession(AIChat会话)\/AIChatDataModel.swift",
+      "kind": "StringLiteral",
+      "offset": 3730,
+      "length": 1,
+      "value": "\"\", \"questionId\": \"\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/AIChatSession(AIChat会话)\/AIChatDataModel.swift",
+      "kind": "StringLiteral",
+      "offset": 3765,
+      "length": 1,
+      "value": "\"\", \"question\": \"\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/AIChatSession(AIChat会话)\/AIChatDataModel.swift",
+      "kind": "StringLiteral",
+      "offset": 3796,
+      "length": 1,
+      "value": "\"\", \"isQuestionDefinite\": \""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/AIChatSession(AIChat会话)\/AIChatDataModel.swift",
+      "kind": "StringLiteral",
+      "offset": 3845,
+      "length": 1,
+      "value": "\", \"answer\": \"\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/AIChatSession(AIChat会话)\/AIChatDataModel.swift",
+      "kind": "StringLiteral",
+      "offset": 3870,
+      "length": 1,
+      "value": "\"\", \"isAnswerDefinite\": \""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/AIChatSession(AIChat会话)\/AIChatDataModel.swift",
+      "kind": "StringLiteral",
+      "offset": 3915,
       "length": 1,
       "value": "\"}\""
     },

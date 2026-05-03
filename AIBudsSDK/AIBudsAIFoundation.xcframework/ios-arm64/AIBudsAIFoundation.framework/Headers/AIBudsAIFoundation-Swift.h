@@ -622,6 +622,7 @@ SWIFT_CLASS_NAMED("AIChatDataModel")
 /// \param isAnswerDefinite Indicates if the answer is definite. Defaults to <code>false</code>.
 ///
 - (nonnull instancetype)initWithSequence:(NSInteger)sequence requestId:(NSString * _Nullable)requestId questionId:(NSString * _Nonnull)questionId question:(NSString * _Nonnull)question answer:(NSString * _Nonnull)answer isQuestionDefinite:(BOOL)isQuestionDefinite isAnswerDefinite:(BOOL)isAnswerDefinite OBJC_DESIGNATED_INITIALIZER;
+@property (nonatomic, readonly, copy) NSString * _Nonnull description;
 @property (nonatomic, readonly, copy) NSString * _Nonnull debugJsonString;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -1114,7 +1115,7 @@ SWIFT_CLASS_NAMED("SimultaneousInterpretationDataModel")
 @property (nonatomic, readonly) BOOL isTargetTextDefinite;
 /// Target text sequence number.
 @property (nonatomic, readonly, strong) NSNumber * _Nullable targetTextSequence;
-/// Base64 encoded audio data of TTS result for target text.
+/// Base64 encoded audio data of TTS result for target text. (Raw data is PCM)
 @property (nonatomic, readonly, copy) NSString * _Nullable base64AudioData;
 /// Audio data sequence number.
 @property (nonatomic, readonly, strong) NSNumber * _Nullable audioDataSequence;
