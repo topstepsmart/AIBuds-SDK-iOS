@@ -47,7 +47,7 @@
 
 - (void)setupAppInfoMapping {
     self.appInfoMapping = @{
-        @(AIBudsDeviceAppOverlayPrompt): @{@"name": NSLocalizedString(@"LocKey.AppOverlayPrompt", @"Overlay Prompt"), @"icon": @"text.bubble"},
+        @(AIBudsDeviceAppTeleprompter): @{@"name": NSLocalizedString(@"LocKey.AppTeleprompter", @"Overlay Prompt"), @"icon": @"text.bubble"},
         @(AIBudsDeviceAppAiChat): @{@"name": NSLocalizedString(@"LocKey.AppAIChat", @"AI Chat"), @"icon": @"bubble.left.and.bubble.right"},
         @(AIBudsDeviceAppNavigation): @{@"name": NSLocalizedString(@"LocKey.AppNavigation", @"Navigation"), @"icon": @"location"},
         @(AIBudsDeviceAppClock): @{@"name": NSLocalizedString(@"LocKey.AppClock", @"Clock"), @"icon": @"clock"},

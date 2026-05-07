@@ -677,8 +677,8 @@ SWIFT_PROTOCOL_NAMED("CustomDebugJsonStringConvertible")
 typedef SWIFT_ENUM_NAMED(NSInteger, AIBudsDeviceApp, "DeviceApp", open) {
 /// Home screen (cannot be used as a parameter for start/stop commands)
   AIBudsDeviceAppHomeScreen = 0x00,
-/// Overlay prompt
-  AIBudsDeviceAppOverlayPrompt = 0x01,
+/// Teleprompter
+  AIBudsDeviceAppTeleprompter = 0x01,
 /// AI Chat
   AIBudsDeviceAppAiChat = 0x02,
 /// Navigation
@@ -2390,8 +2390,8 @@ SWIFT_PROTOCOL_NAMED("CustomDebugJsonStringConvertible")
 typedef SWIFT_ENUM_NAMED(NSInteger, AIBudsDeviceApp, "DeviceApp", open) {
 /// Home screen (cannot be used as a parameter for start/stop commands)
   AIBudsDeviceAppHomeScreen = 0x00,
-/// Overlay prompt
-  AIBudsDeviceAppOverlayPrompt = 0x01,
+/// Teleprompter
+  AIBudsDeviceAppTeleprompter = 0x01,
 /// AI Chat
   AIBudsDeviceAppAiChat = 0x02,
 /// Navigation

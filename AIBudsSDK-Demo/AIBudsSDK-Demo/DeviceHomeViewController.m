@@ -626,8 +626,8 @@
         [DeviceFeatureGroupModel modelWithIcon:@"icon_file_import" name:NSLocalizedString(@"LocKey.FileImportGroupTitle", nil) features:@[
             [DeviceFeatureModel modelWithIcon:@"icon_file_import" name:NSLocalizedString(@"LocKey.FileImportFeatureTitle", nil) classNameOfDemoVC:@"FileImportDemoController"],
         ]],
-        [DeviceFeatureGroupModel modelWithIcon:@"icon_overlay_prompt" name:NSLocalizedString(@"LocKey.OverlayPromptGroupTitle", nil) features:@[
-            [DeviceFeatureModel modelWithIcon:@"icon_overlay_prompt" name:NSLocalizedString(@"LocKey.OverlayPromptFeatureTitle", nil) classNameOfDemoVC:@"OverlayPromptDemoController"],
+        [DeviceFeatureGroupModel modelWithIcon:@"icon_overlay_prompt" name:NSLocalizedString(@"LocKey.TeleprompterGroupTitle", nil) features:@[
+            [DeviceFeatureModel modelWithIcon:@"icon_overlay_prompt" name:NSLocalizedString(@"LocKey.TeleprompterFeatureTitle", nil) classNameOfDemoVC:@"TeleprompterDemoController"],
         ]],
         [DeviceFeatureGroupModel modelWithIcon:@"icon_turn_by_turn_navigation" name:NSLocalizedString(@"LocKey.TurnByTurnNavigationGroupTitle", nil) features:@[
             [DeviceFeatureModel modelWithIcon:@"icon_turn_by_turn_navigation" name:NSLocalizedString(@"LocKey.TurnByTurnNavigationFeatureTitle", nil) classNameOfDemoVC:@"TurnByTurnNavigationDemoController"],

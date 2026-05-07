@@ -27,15 +27,8 @@
       NSLog(@"%@", @"网络不可用");
     };
     [reachability startNotifier];
-    //AIBudsLogConfiguration* sdkLogConfiguration = [AIBudsLogConfiguration shared];
-    //sdkLogConfiguration.destination = AIBudsLogDestinationFile;
-    [AIBudsLogSDK setXLFacilityPlugin:[AIBudsXLFacilitySDK shared]];
-    /*iOSLogBrowserOption* option = [iOSLogBrowserOption defaultOption];
-    option.minLogLevel = SDKLOGLEVEL_VERBOSE;
-    option.suspendInBackground = YES;
-    option.showQueueNameInBrowser = YES;
-    option.consoleLoggerFormatString = @"[%x] %d %P[%p:%r] [%q] %m";
-    [iOSLogBrowserSDK startWithOption:option];*/
+    
+    /*[AIBudsLogSDK setXLFacilityPlugin:[AIBudsXLFacilitySDK shared]];
     AIBudsSDKConfiguration* sdkConfiguration = [AIBudsSDKConfiguration defaultConfiguration];
     sdkConfiguration.logLevel = AIBudsLogLevelVerbose;
     BOOL success = [AIBudsSDK initWithBleSDKs:@[[ABMateSDK shared]]
@@ -52,6 +45,9 @@
                                             [AIBudsMagicHelperSDK shared]]];
     if(!success) {
         XLOG_ERROR(@"%@", APP_LOG_STRING(@"%@", @"AIBudsAISDK initialize failed."));
+    }*/
+    if (![AIBudsAllInOneSDK initWithDelegate:self]) {
+        NSLog(@"%@", @"初始化 AIBuds 全家桶失败。");
     }
     return YES;
 }

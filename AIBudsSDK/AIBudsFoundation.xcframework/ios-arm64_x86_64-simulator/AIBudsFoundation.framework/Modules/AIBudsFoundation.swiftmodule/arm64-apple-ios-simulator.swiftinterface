@@ -819,7 +819,7 @@ extension AIBudsFoundation.ContentDisplayCapability : Swift.CustomDebugStringCon
 }
 @objc(AIBudsDeviceApp) public enum DeviceApp : Swift.Int {
   case homeScreen = 0x00
-  case overlayPrompt = 0x01
+  case teleprompter = 0x01
   case aiChat = 0x02
   case navigation = 0x03
   case clock = 0x04

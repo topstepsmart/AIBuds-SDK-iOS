@@ -641,6 +641,18 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) id <AIBudsOn
 @end
 
 @interface AIBudsSDK (SWIFT_EXTENSION(AIBuds))
+/// The error domain used for AIBudsSDK camera ota errors
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull CameraOtaErrorDomain;)
++ (NSString * _Nonnull)CameraOtaErrorDomain SWIFT_WARN_UNUSED_RESULT;
+@end
+
+@interface AIBudsSDK (SWIFT_EXTENSION(AIBuds))
+/// The error domain used for AIBudsSDK ota errors
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull OtaErrorDomain;)
++ (NSString * _Nonnull)OtaErrorDomain SWIFT_WARN_UNUSED_RESULT;
+@end
+
+@interface AIBudsSDK (SWIFT_EXTENSION(AIBuds))
 /// The error domain used for AIBudsSDK errors
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull ErrorDomain;)
 + (NSString * _Nonnull)ErrorDomain SWIFT_WARN_UNUSED_RESULT;
@@ -2648,86 +2660,12 @@ SWIFT_CLASS_NAMED("OtaConfiguration")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-/// Overlay prompt API
-SWIFT_PROTOCOL_NAMED("OverlayPromptAPI")
-@protocol AIBudsOverlayPromptAPI <AIBudsDeviceAPI>
-/// the overlay prompt scroll speed, all slots share this value
-/// 100 represents 1.0x scrolling speed, 150 represents 1.5x scrolling speed, and so on. Maximum value is 1000 (10x), minimum value is 10 (0.1x)
-@property (nonatomic, readonly, strong) NSNumber * _Nullable overlayPromptScrollSpeed;
-/// the total number of overlay prompt slots
-@property (nonatomic, readonly, strong) NSNumber * _Nullable overlayPromptTotalSlots;
-/// the current overlay prompt slot index，0-based
-@property (nonatomic, readonly, strong) NSNumber * _Nullable overlayPromptSlotIndex;
-/// the current overlay prompt slot used bytes
-@property (nonatomic, readonly, strong) NSNumber * _Nullable usedBytesOfCurrentOverlayPromptSlot;
-/// the current overlay prompt slot capacity bytes
-@property (nonatomic, readonly, strong) NSNumber * _Nullable capacityBytesOfCurrentOverlayPromptSlot;
-/// send overlay prompt to device
-/// \param prompt the overlay prompt to send
-///
-/// \param progressHandler the progress handler to be called when the progress changes
-///
-/// \param completionHandler the completion handler to be called when the operation is completed
-/// <ul>
-///   <li>
-///     success: <code>true</code> if the operation was successful; otherwise <code>false</code>.
-///   </li>
-///   <li>
-///     error: An <code>NSError</code> object that describes the error that occurred, or <code>nil</code> if the operation was successful.
-///   </li>
-/// </ul>
-///
-- (void)sendOverlayPrompt:(NSString * _Nonnull)prompt progressHandler:(void (^ _Nullable)(CGFloat))progressHandler completionHandler:(AIBudsCompletionHandler _Nullable)completionHandler;
-/// clear the current overlay prompt slot content
-/// \param completion the completion handler to be called when the operation is completed
-/// <ul>
-///   <li>
-///     success: <code>true</code> if the operation was successful; otherwise <code>false</code>.
-///   </li>
-///   <li>
-///     error: An <code>NSError</code> object that describes the error that occurred, or <code>nil</code> if the operation was successful.
-///   </li>
-/// </ul>
-///
-- (void)clearCurrentOverlayPromptSlotContentWithCompletion:(AIBudsCompletionHandler _Nullable)completion;
-/// toggle overlay prompt slot index to the specified index
-/// \param index the index to toggle to
-/// 0-based, must be in the range of 0 to overlayPromptTotalSlots - 1
-///
-/// \param completion the completion handler to be called when the operation is completed
-/// <ul>
-///   <li>
-///     success: <code>true</code> if the operation was successful; otherwise <code>false</code>.
-///   </li>
-///   <li>
-///     error: An <code>NSError</code> object that describes the error that occurred, or <code>nil</code> if the operation was successful.
-///   </li>
-/// </ul>
-///
-- (void)toggleOverlayPromptSlotIndexTo:(NSInteger)index completion:(AIBudsCompletionHandler _Nullable)completion;
-/// set overlay prompt scroll speed
-/// \param speed the scroll speed to set
-/// 100 represents 1.0x scrolling speed, 150 represents 1.5x scrolling speed, and so on. Maximum value is 1000 (10x), minimum value is 10 (0.1x)
-///
-/// \param completion the completion handler to be called when the operation is completed
-/// <ul>
-///   <li>
-///     success: <code>true</code> if the operation was successful; otherwise <code>false</code>.
-///   </li>
-///   <li>
-///     error: An <code>NSError</code> object that describes the error that occurred, or <code>nil</code> if the operation was successful.
-///   </li>
-/// </ul>
-///
-- (void)setOverlayPromptScrollSpeed:(NSInteger)speed completion:(AIBudsCompletionHandler _Nullable)completion;
-@end
-
 SWIFT_ENUM_FWD_DECL(NSInteger, AIBudsLogLevel)
 /// Global SDK configuration class for centralized management of parameters governing connection, scanning, logging, and other behaviors.
 /// By modifying the properties of an <code>SDKConfiguration</code> instance, you can customize key runtime behaviors such as timeouts, log levels, and Bluetooth packet intervals.
 /// It is recommended to complete the configuration before calling <code>AIConnectSDK.initialize(configuration:)</code> to ensure all parameters take effect during SDK initialization.
 SWIFT_CLASS_NAMED("SDKConfiguration")
-@interface AIBudsSDKConfiguration : NSObject
+@interface AIBudsSDKConfiguration : NSObject <AIBudsCustomDebugJsonStringConvertible>
 /// The log level.
 /// <blockquote>
 /// Important: The default value is <code>LogLevel.info</code>
@@ -2786,6 +2724,8 @@ SWIFT_CLASS_NAMED("SDKConfiguration")
 /// The default initialize option.
 + (AIBudsSDKConfiguration * _Nonnull)defaultConfiguration SWIFT_WARN_UNUSED_RESULT;
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
+/// Debug JSON string
+@property (nonatomic, readonly, copy) NSString * _Nonnull debugJsonString;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -3214,10 +3154,78 @@ SWIFT_PROTOCOL_NAMED("SDKDelegate")
 - (void)device:(id <AIBudsDeviceConvertible> _Nonnull)device didDeviceAppTerminate:(enum AIBudsDeviceApp)app;
 @end
 
+/// Camera OTA Error Code
+typedef SWIFT_ENUM_NAMED(NSInteger, AIBudsSdkCameraOtaErrorCode, "SdkCameraOtaErrorCode", open) {
+/// Unknown
+  AIBudsSdkCameraOtaErrorCodeUnknown = -1,
+/// Network request failed
+  AIBudsSdkCameraOtaErrorCodeNetworkRequestFailed = 0,
+/// Camera OTA file not found
+  AIBudsSdkCameraOtaErrorCodeCameraOtaFileNotFound = 1,
+/// Invalid camera OTA file
+  AIBudsSdkCameraOtaErrorCodeInvalidCameraOtaFile = 2,
+/// Hotspot disconnected during OTA file transfer
+  AIBudsSdkCameraOtaErrorCodeHotspotDisconnectedDuringTransfer = 3,
+/// Stage two did not complete within the specified time (stuck at 99% timeout)
+  AIBudsSdkCameraOtaErrorCodeStageTwoTimeout = 4,
+/// Invalid hotspot configuration
+  AIBudsSdkCameraOtaErrorCodeInvalidHotspotConfig = 5,
+/// Interrupted by shutdown command or low battery
+  AIBudsSdkCameraOtaErrorCodeInterruptedByShutdownOrLowBattery = 6,
+/// Network connection timeout
+  AIBudsSdkCameraOtaErrorCodeNetworkTimeout = 7,
+/// Camera OTA task already running
+  AIBudsSdkCameraOtaErrorCodeCameraOtaTaskAlreadyRunning = 4001,
+/// Camera OTA task create failed due to file not found
+  AIBudsSdkCameraOtaErrorCodeCameraOtaTaskCreateFailedDueToFileNotFound = 4002,
+/// Camera OTA task failed due to device disconnect
+  AIBudsSdkCameraOtaErrorCodeCameraOtaTaskFailedDueToDeviceDisconnect = 4003,
+/// Camera OTA task failed due to timeout
+  AIBudsSdkCameraOtaErrorCodeCameraOtaTaskFailedDueToTimeout = 4004,
+/// Camera OTA task start failed due to hotspot configure error
+  AIBudsSdkCameraOtaErrorCodeCameraOtaTaskStartFailedDueToHotspotConfigureError = 4005,
+/// Camera OTA task start failed due to enter camera OTA mode failed
+  AIBudsSdkCameraOtaErrorCodeCameraOtaTaskStartFailedDueToEnterCameraOtaModeFailed = 4006,
+/// Camera OTA task start failed due to hotspot connection failure
+  AIBudsSdkCameraOtaErrorCodeCameraOtaTaskStartFailedDueToHotspotConnectionFailure = 4007,
+/// Camera OTA task start failed due to http server start failed
+  AIBudsSdkCameraOtaErrorCodeCameraOtaTaskStartFailedDueToHttpServerStartFailed = 4008,
+/// Camera OTA task failed due to send firmware file url info failed
+  AIBudsSdkCameraOtaErrorCodeCameraOtaTaskFailedDueToSendFileUrlInfoFailed = 4009,
+/// Enter camera OTA mode failed due to bad command
+  AIBudsSdkCameraOtaErrorCodeEnterCameraOtaModeFailedDueToBadCommand = 5001,
+/// Enter camera OTA mode failed due to storage full
+  AIBudsSdkCameraOtaErrorCodeEnterCameraOtaModeFailedDueToStorageFull = 5002,
+/// Enter camera OTA mode failed due to not allow, for example, low battery, high core temperature, etc.
+  AIBudsSdkCameraOtaErrorCodeEnterCameraOtaModeFailedDueToNotAllow = 5003,
+/// Enter camera OTA mode failed due to no data transfer channel available
+  AIBudsSdkCameraOtaErrorCodeEnterCameraOtaModeFailedDueToNoDataTransferChannel = 5004,
+/// Enter camera OTA mode failed due to status conflict
+  AIBudsSdkCameraOtaErrorCodeEnterCameraOtaModeFailedDueToStatusConflict = 5005,
+/// Send camera OTA file URL info failed due to bad command
+  AIBudsSdkCameraOtaErrorCodeSendCameraOtaFileUrlInfoFailedDueToBadCommand = 5006,
+/// Send camera OTA file URL info failed due to storage full
+  AIBudsSdkCameraOtaErrorCodeSendCameraOtaFileUrlInfoFailedDueToStorageFull = 5007,
+/// Send camera OTA file URL info failed due to not allow, for example, low battery, high core temperature, etc.
+  AIBudsSdkCameraOtaErrorCodeSendCameraOtaFileUrlInfoFailedDueToNotAllow = 5008,
+/// Send camera OTA file URL info failed due to no data transfer channel available
+  AIBudsSdkCameraOtaErrorCodeSendCameraOtaFileUrlInfoFailedDueToNoDataTransferChannel = 5009,
+/// Send camera OTA file URL info failed due to status conflict
+  AIBudsSdkCameraOtaErrorCodeSendCameraOtaFileUrlInfoFailedDueToStatusConflict = 5010,
+};
+
 /// The error codes used for AIBudsSDK errors
 typedef SWIFT_ENUM_NAMED(NSInteger, AIBudsSdkErrorCode, "SdkErrorCode", open) {
 /// Unknown error
   AIBudsSdkErrorCodeUnknown = -1,
+/// Device not support
+  AIBudsSdkErrorCodeDeviceNotSupport = 1,
+/// Device not connected
+  AIBudsSdkErrorCodeDeviceNotConnected = 2,
+/// Device not ready
+  AIBudsSdkErrorCodeDeviceNotReady = 3,
+/// Device busy
+  AIBudsSdkErrorCodeDeviceBusy = 4,
 /// Scanning start failed due to Bluetooth not being powered on
   AIBudsSdkErrorCodeScanningStartFailedDueToBluetoothNotPoweredOn = 1001,
 /// Scanning start failed due to Bluetooth authorization being denied or restricted
@@ -3228,6 +3236,130 @@ typedef SWIFT_ENUM_NAMED(NSInteger, AIBudsSdkErrorCode, "SdkErrorCode", open) {
   AIBudsSdkErrorCodeScanningStartFailedDueToScanningAlreadyRunning = 1004,
 /// Scanning canceled due to Bluetooth not being powered on
   AIBudsSdkErrorCodeScanningCanceledDueToBluetoothNotPoweredOn = 1005,
+/// Request send failed due to peripheral being unavailable
+  AIBudsSdkErrorCodeRequestSendFailedDueToPeripheralUnavailable = 2001,
+/// Request send failed due to peripheral not connected
+  AIBudsSdkErrorCodeRequestSendFailedDueToPeripheralNotConnected = 2002,
+/// Bluetooth packet send failed due to peripheral being unavailable
+  AIBudsSdkErrorCodeBlePacketSendFailedDueToPeripheralUnavailable = 2003,
+/// Bluetooth packet send failed due to timeout
+  AIBudsSdkErrorCodeBlePacketSendFailedDueToTimeout = 2004,
+/// Bluetooth packet send failed due to write error
+  AIBudsSdkErrorCodeBlePacketSendFailedDueToWriteError = 2005,
+/// Bluetooth command execution failed due to timeout
+  AIBudsSdkErrorCodeBleCommandExecFailedDueToTimeout = 2006,
+/// Bluetooth data handle failed due to unexpected frame sequence number
+  AIBudsSdkErrorCodeBleDataHandleFailedDueToUnexpectedFrameSeqNum = 2007,
+/// Bluetooth data handle failed due to packet info corruption
+  AIBudsSdkErrorCodeBleDataHandleFailedDueToPacketInfoCorruption = 2008,
+/// Bluetooth data handle failed due to packet frames not matching
+  AIBudsSdkErrorCodeBleDataHandleFailedDueToPacketFramesNotMatching = 2009,
+/// Operation failed due to wrong parameters
+  AIBudsSdkErrorCodeOperationFailedDueToWrongParameters = 3001,
+/// Operation failed due to device return a non-success status code
+  AIBudsSdkErrorCodeOperationFailedDueToDeviceReturnNonSuccessStatusCode = 3002,
+/// Operation failed due to device response data parsing failed
+  AIBudsSdkErrorCodeOperationFailedDueToDeviceResponseDataParsingFailed = 3003,
+/// AI chat hangup or failed to start due to device exception
+  AIBudsSdkErrorCodeAiChatHangupOrFailedToStartDueToDeviceException = 3004,
+/// Hotspot connection failed
+  AIBudsSdkErrorCodeHotspotConnectionFailed = 4001,
+/// Photo data for scene recognition handle failed due to bad command
+  AIBudsSdkErrorCodePhotoDataForSceneRecognitionHandleFailedDueToBadCommand = 5001,
+/// Photo data for scene recognition handle failed due to invalid status code
+  AIBudsSdkErrorCodePhotoDataForSceneRecognitionHandleFailedDueToInvalidStatusCode = 5002,
+/// Photo data for scene recognition transfer canceled due to system capture failed
+  AIBudsSdkErrorCodePhotoDataForSceneRecognitionTransferCanceledDueToSystemCaptureFailed = 5003,
+/// Photo data for scene recognition transfer canceled due to Bluetooth communication error
+  AIBudsSdkErrorCodePhotoDataForSceneRecognitionTransferCanceledDueToBluetoothCommunicationError = 5004,
+/// Fetch media files info failed due to local network usage description missing
+  AIBudsSdkErrorCodeFetchMediaFilesInfoFailedDueToLocalNetworkUsageDescMissing = 6000,
+/// File import not ready
+  AIBudsSdkErrorCodeFileImportNotReady = 6001,
+/// File import already in progress
+  AIBudsSdkErrorCodeFileImportAlreadyInProgress = 6002,
+/// File import not in progress
+  AIBudsSdkErrorCodeFileImportNotInProgress = 6003,
+/// Fetch media file infos failed due to hotspot configure error
+  AIBudsSdkErrorCodeFetchMediaFileInfosFailedDueToHotspotConfigureError = 6004,
+/// File import task prepare failed due to enter file transfer mode failed
+  AIBudsSdkErrorCodeFileImportTaskPrepareFailedDueToEnterFileTransferModeFailed = 6005,
+/// Fetch media file infos failed due to hotspot connection failure
+  AIBudsSdkErrorCodeFetchMediaFileInfosFailedDueToHotspotConnectionFailure = 6006,
+/// Fetch media file infos failed due to empty base url
+  AIBudsSdkErrorCodeFetchMediaFileInfosFailedDueToEmptyBaseUrl = 6007,
+/// Fetch media file infos failed due to invalid config file url
+  AIBudsSdkErrorCodeFetchMediaFileInfosFailedDueToInvalidConfigUrl = 6008,
+/// Fetch media file infos failed due to config file error
+  AIBudsSdkErrorCodeFetchMediaFileInfosFailedDueToConfigFileError = 6009,
+/// Fetch media file infos failed due to network error
+  AIBudsSdkErrorCodeFetchMediaFileInfosFailedDueToNetworkError = 6010,
+/// Fetch media file infos failed due to invalid response
+  AIBudsSdkErrorCodeFetchMediaFileInfosFailedDueToInvalidResponse = 6011,
+/// Fetch media file infos failed due to HTTP error code not success range
+  AIBudsSdkErrorCodeFetchMediaFileInfosFailedDueToHttpError = 6012,
+/// Import files failed due to device connection lost
+  AIBudsSdkErrorCodeImportFilesFailedDueToDeviceHotspotConnectionLost = 6013,
+/// Import files failed due to invalid url
+  AIBudsSdkErrorCodeImportFilesFailedDueToInvalidUrl = 6014,
+/// Import files failed due to HTTP error code not success range
+  AIBudsSdkErrorCodeImportFilesFailedDueToHttpError = 6015,
+/// Import files failed due to network error
+  AIBudsSdkErrorCodeImportFilesFailedDueToNetworkError = 6016,
+/// Fetch media files info failed due to allow local networking missing
+  AIBudsSdkErrorCodeFetchMediaFilesInfoFailedDueToAllowLocalNetworkingMissing = 6017,
+/// Prompt script is invalid or empty
+  AIBudsSdkErrorCodePromptScriptInvalidOrEmpty = 7001,
+/// Prompt script is sending
+  AIBudsSdkErrorCodePromptScriptIsSending = 7002,
+/// Prompt script sending failed
+  AIBudsSdkErrorCodePromptScriptSendingFailed = 7003,
+/// Prompt script sending failed due to device disconnected
+  AIBudsSdkErrorCodePromptScriptSendingFailedDueToDeviceDisconnect = 7004,
+};
+
+/// The error codes used for AIBudsSDK ota errors
+typedef SWIFT_ENUM_NAMED(NSInteger, AIbudsSdkOtaErrorCode, "SdkOtaErrorCode", open) {
+/// Unknown error
+  AIbudsSdkOtaErrorCodeUnknown = -1,
+/// OTA task already running
+  AIbudsSdkOtaErrorCodeOtaTaskAlreadyRunning = 4001,
+/// OTA task create failed due to file not found
+  AIbudsSdkOtaErrorCodeOtaTaskCreateFailedDueToFileNotFound = 4002,
+/// OTA task start failed due to file read error
+  AIbudsSdkOtaErrorCodeOtaTaskStartFailedDueToFileReadError = 4003,
+/// OTA task start failed due to file handle create error
+  AIbudsSdkOtaErrorCodeOtaTaskStartFailedDueToFileHandleCreateError = 4004,
+/// OTA task start failed due to invalid file hash data
+  AIbudsSdkOtaErrorCodeOtaTaskStartFailedDueToInvalidFileHashData = 4005,
+/// OTA task start failed due to get ota info error
+  AIbudsSdkOtaErrorCodeOtaTaskStartFailedDueToGetOtaInfoError = 4006,
+/// OTA task start failed due to invalid offset address
+  AIbudsSdkOtaErrorCodeOtaTaskStartFailedDueToInvalidOffsetAddress = 4007,
+/// OTA task start failed due to invalid block size
+  AIbudsSdkOtaErrorCodeOtaTaskStartFailedDueToInvalidBlockSize = 4008,
+/// OTA task start failed due to not allow update
+  AIbudsSdkOtaErrorCodeOtaTaskStartFailedDueToNotAllowUpdate = 4009,
+/// OTA task send data failed due to file handle is nil
+  AIbudsSdkOtaErrorCodeOtaTaskSendDataFailedDueToFileHandleIsNil = 4010,
+/// OTA task send data failed due to seek file handle failed
+  AIbudsSdkOtaErrorCodeOtaTaskSendDataFailedDueToSeekFileHandleFailed = 4011,
+/// OTA task send data failed due to read file data failed
+  AIbudsSdkOtaErrorCodeOtaTaskSendDataFailedDueToReadFileDataFailed = 4012,
+/// OTA task send data failed due to ota info is nil
+  AIbudsSdkOtaErrorCodeOtaTaskSendDataFailedDueToOtaInfoIsNil = 4013,
+/// OTA task failed due to device report key mismatch
+  AIbudsSdkOtaErrorCodeOtaTaskFailedDueToDeviceReportKeyMismatch = 4014,
+/// OTA task failed due to device report crc error
+  AIbudsSdkOtaErrorCodeOtaTaskFailedDueToDeviceReportCrcError = 4015,
+/// OTA task failed due to device report seq error
+  AIbudsSdkOtaErrorCodeOtaTaskFailedDueToDeviceReportSeqError = 4016,
+/// OTA task failed due to device report data length error
+  AIbudsSdkOtaErrorCodeOtaTaskFailedDueToDeviceReportDataLengthError = 4017,
+/// OTA task failed due to device disconnect
+  AIbudsSdkOtaErrorCodeOtaTaskFailedDueToDeviceDisconnect = 4018,
+/// OTA task failed due to timeout
+  AIbudsSdkOtaErrorCodeOtaTaskFailedDueToTimeout = 4019,
 };
 
 SWIFT_ENUM_FWD_DECL(NSInteger, AIBudsStarBurstAuthSdk)
@@ -3368,6 +3500,80 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<id <AI
 /// Private initializer to enforce singleton pattern
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+/// Teleprompter API
+SWIFT_PROTOCOL_NAMED("TeleprompterAPI")
+@protocol AIBudsTeleprompterAPI <AIBudsDeviceAPI>
+/// the overlay prompt scroll speed, all slots share this value
+/// 100 represents 1.0x scrolling speed, 150 represents 1.5x scrolling speed, and so on. Maximum value is 1000 (10x), minimum value is 10 (0.1x)
+@property (nonatomic, readonly, strong) NSNumber * _Nullable overlayPromptScrollSpeed;
+/// the total number of overlay prompt slots
+@property (nonatomic, readonly, strong) NSNumber * _Nullable overlayPromptTotalSlots;
+/// the current overlay prompt slot index，0-based
+@property (nonatomic, readonly, strong) NSNumber * _Nullable overlayPromptSlotIndex;
+/// the current overlay prompt slot used bytes
+@property (nonatomic, readonly, strong) NSNumber * _Nullable usedBytesOfCurrentOverlayPromptSlot;
+/// the current overlay prompt slot capacity bytes
+@property (nonatomic, readonly, strong) NSNumber * _Nullable capacityBytesOfCurrentOverlayPromptSlot;
+/// send overlay prompt to device
+/// \param prompt the overlay prompt to send
+///
+/// \param progressHandler the progress handler to be called when the progress changes
+///
+/// \param completionHandler the completion handler to be called when the operation is completed
+/// <ul>
+///   <li>
+///     success: <code>true</code> if the operation was successful; otherwise <code>false</code>.
+///   </li>
+///   <li>
+///     error: An <code>NSError</code> object that describes the error that occurred, or <code>nil</code> if the operation was successful.
+///   </li>
+/// </ul>
+///
+- (void)sendOverlayPrompt:(NSString * _Nonnull)prompt progressHandler:(void (^ _Nullable)(CGFloat))progressHandler completionHandler:(AIBudsCompletionHandler _Nullable)completionHandler;
+/// clear the current overlay prompt slot content
+/// \param completion the completion handler to be called when the operation is completed
+/// <ul>
+///   <li>
+///     success: <code>true</code> if the operation was successful; otherwise <code>false</code>.
+///   </li>
+///   <li>
+///     error: An <code>NSError</code> object that describes the error that occurred, or <code>nil</code> if the operation was successful.
+///   </li>
+/// </ul>
+///
+- (void)clearCurrentOverlayPromptSlotContentWithCompletion:(AIBudsCompletionHandler _Nullable)completion;
+/// toggle overlay prompt slot index to the specified index
+/// \param index the index to toggle to
+/// 0-based, must be in the range of 0 to overlayPromptTotalSlots - 1
+///
+/// \param completion the completion handler to be called when the operation is completed
+/// <ul>
+///   <li>
+///     success: <code>true</code> if the operation was successful; otherwise <code>false</code>.
+///   </li>
+///   <li>
+///     error: An <code>NSError</code> object that describes the error that occurred, or <code>nil</code> if the operation was successful.
+///   </li>
+/// </ul>
+///
+- (void)toggleOverlayPromptSlotIndexTo:(NSInteger)index completion:(AIBudsCompletionHandler _Nullable)completion;
+/// set overlay prompt scroll speed
+/// \param speed the scroll speed to set
+/// 100 represents 1.0x scrolling speed, 150 represents 1.5x scrolling speed, and so on. Maximum value is 1000 (10x), minimum value is 10 (0.1x)
+///
+/// \param completion the completion handler to be called when the operation is completed
+/// <ul>
+///   <li>
+///     success: <code>true</code> if the operation was successful; otherwise <code>false</code>.
+///   </li>
+///   <li>
+///     error: An <code>NSError</code> object that describes the error that occurred, or <code>nil</code> if the operation was successful.
+///   </li>
+/// </ul>
+///
+- (void)setOverlayPromptScrollSpeed:(NSInteger)speed completion:(AIBudsCompletionHandler _Nullable)completion;
 @end
 
 @class AIBudsNavigationInfoModel;
@@ -4044,6 +4250,18 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) id <AIBudsOn
 @end
 
 @interface AIBudsSDK (SWIFT_EXTENSION(AIBuds))
+/// The error domain used for AIBudsSDK camera ota errors
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull CameraOtaErrorDomain;)
++ (NSString * _Nonnull)CameraOtaErrorDomain SWIFT_WARN_UNUSED_RESULT;
+@end
+
+@interface AIBudsSDK (SWIFT_EXTENSION(AIBuds))
+/// The error domain used for AIBudsSDK ota errors
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull OtaErrorDomain;)
++ (NSString * _Nonnull)OtaErrorDomain SWIFT_WARN_UNUSED_RESULT;
+@end
+
+@interface AIBudsSDK (SWIFT_EXTENSION(AIBuds))
 /// The error domain used for AIBudsSDK errors
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull ErrorDomain;)
 + (NSString * _Nonnull)ErrorDomain SWIFT_WARN_UNUSED_RESULT;
@@ -6051,86 +6269,12 @@ SWIFT_CLASS_NAMED("OtaConfiguration")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-/// Overlay prompt API
-SWIFT_PROTOCOL_NAMED("OverlayPromptAPI")
-@protocol AIBudsOverlayPromptAPI <AIBudsDeviceAPI>
-/// the overlay prompt scroll speed, all slots share this value
-/// 100 represents 1.0x scrolling speed, 150 represents 1.5x scrolling speed, and so on. Maximum value is 1000 (10x), minimum value is 10 (0.1x)
-@property (nonatomic, readonly, strong) NSNumber * _Nullable overlayPromptScrollSpeed;
-/// the total number of overlay prompt slots
-@property (nonatomic, readonly, strong) NSNumber * _Nullable overlayPromptTotalSlots;
-/// the current overlay prompt slot index，0-based
-@property (nonatomic, readonly, strong) NSNumber * _Nullable overlayPromptSlotIndex;
-/// the current overlay prompt slot used bytes
-@property (nonatomic, readonly, strong) NSNumber * _Nullable usedBytesOfCurrentOverlayPromptSlot;
-/// the current overlay prompt slot capacity bytes
-@property (nonatomic, readonly, strong) NSNumber * _Nullable capacityBytesOfCurrentOverlayPromptSlot;
-/// send overlay prompt to device
-/// \param prompt the overlay prompt to send
-///
-/// \param progressHandler the progress handler to be called when the progress changes
-///
-/// \param completionHandler the completion handler to be called when the operation is completed
-/// <ul>
-///   <li>
-///     success: <code>true</code> if the operation was successful; otherwise <code>false</code>.
-///   </li>
-///   <li>
-///     error: An <code>NSError</code> object that describes the error that occurred, or <code>nil</code> if the operation was successful.
-///   </li>
-/// </ul>
-///
-- (void)sendOverlayPrompt:(NSString * _Nonnull)prompt progressHandler:(void (^ _Nullable)(CGFloat))progressHandler completionHandler:(AIBudsCompletionHandler _Nullable)completionHandler;
-/// clear the current overlay prompt slot content
-/// \param completion the completion handler to be called when the operation is completed
-/// <ul>
-///   <li>
-///     success: <code>true</code> if the operation was successful; otherwise <code>false</code>.
-///   </li>
-///   <li>
-///     error: An <code>NSError</code> object that describes the error that occurred, or <code>nil</code> if the operation was successful.
-///   </li>
-/// </ul>
-///
-- (void)clearCurrentOverlayPromptSlotContentWithCompletion:(AIBudsCompletionHandler _Nullable)completion;
-/// toggle overlay prompt slot index to the specified index
-/// \param index the index to toggle to
-/// 0-based, must be in the range of 0 to overlayPromptTotalSlots - 1
-///
-/// \param completion the completion handler to be called when the operation is completed
-/// <ul>
-///   <li>
-///     success: <code>true</code> if the operation was successful; otherwise <code>false</code>.
-///   </li>
-///   <li>
-///     error: An <code>NSError</code> object that describes the error that occurred, or <code>nil</code> if the operation was successful.
-///   </li>
-/// </ul>
-///
-- (void)toggleOverlayPromptSlotIndexTo:(NSInteger)index completion:(AIBudsCompletionHandler _Nullable)completion;
-/// set overlay prompt scroll speed
-/// \param speed the scroll speed to set
-/// 100 represents 1.0x scrolling speed, 150 represents 1.5x scrolling speed, and so on. Maximum value is 1000 (10x), minimum value is 10 (0.1x)
-///
-/// \param completion the completion handler to be called when the operation is completed
-/// <ul>
-///   <li>
-///     success: <code>true</code> if the operation was successful; otherwise <code>false</code>.
-///   </li>
-///   <li>
-///     error: An <code>NSError</code> object that describes the error that occurred, or <code>nil</code> if the operation was successful.
-///   </li>
-/// </ul>
-///
-- (void)setOverlayPromptScrollSpeed:(NSInteger)speed completion:(AIBudsCompletionHandler _Nullable)completion;
-@end
-
 SWIFT_ENUM_FWD_DECL(NSInteger, AIBudsLogLevel)
 /// Global SDK configuration class for centralized management of parameters governing connection, scanning, logging, and other behaviors.
 /// By modifying the properties of an <code>SDKConfiguration</code> instance, you can customize key runtime behaviors such as timeouts, log levels, and Bluetooth packet intervals.
 /// It is recommended to complete the configuration before calling <code>AIConnectSDK.initialize(configuration:)</code> to ensure all parameters take effect during SDK initialization.
 SWIFT_CLASS_NAMED("SDKConfiguration")
-@interface AIBudsSDKConfiguration : NSObject
+@interface AIBudsSDKConfiguration : NSObject <AIBudsCustomDebugJsonStringConvertible>
 /// The log level.
 /// <blockquote>
 /// Important: The default value is <code>LogLevel.info</code>
@@ -6189,6 +6333,8 @@ SWIFT_CLASS_NAMED("SDKConfiguration")
 /// The default initialize option.
 + (AIBudsSDKConfiguration * _Nonnull)defaultConfiguration SWIFT_WARN_UNUSED_RESULT;
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
+/// Debug JSON string
+@property (nonatomic, readonly, copy) NSString * _Nonnull debugJsonString;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -6617,10 +6763,78 @@ SWIFT_PROTOCOL_NAMED("SDKDelegate")
 - (void)device:(id <AIBudsDeviceConvertible> _Nonnull)device didDeviceAppTerminate:(enum AIBudsDeviceApp)app;
 @end
 
+/// Camera OTA Error Code
+typedef SWIFT_ENUM_NAMED(NSInteger, AIBudsSdkCameraOtaErrorCode, "SdkCameraOtaErrorCode", open) {
+/// Unknown
+  AIBudsSdkCameraOtaErrorCodeUnknown = -1,
+/// Network request failed
+  AIBudsSdkCameraOtaErrorCodeNetworkRequestFailed = 0,
+/// Camera OTA file not found
+  AIBudsSdkCameraOtaErrorCodeCameraOtaFileNotFound = 1,
+/// Invalid camera OTA file
+  AIBudsSdkCameraOtaErrorCodeInvalidCameraOtaFile = 2,
+/// Hotspot disconnected during OTA file transfer
+  AIBudsSdkCameraOtaErrorCodeHotspotDisconnectedDuringTransfer = 3,
+/// Stage two did not complete within the specified time (stuck at 99% timeout)
+  AIBudsSdkCameraOtaErrorCodeStageTwoTimeout = 4,
+/// Invalid hotspot configuration
+  AIBudsSdkCameraOtaErrorCodeInvalidHotspotConfig = 5,
+/// Interrupted by shutdown command or low battery
+  AIBudsSdkCameraOtaErrorCodeInterruptedByShutdownOrLowBattery = 6,
+/// Network connection timeout
+  AIBudsSdkCameraOtaErrorCodeNetworkTimeout = 7,
+/// Camera OTA task already running
+  AIBudsSdkCameraOtaErrorCodeCameraOtaTaskAlreadyRunning = 4001,
+/// Camera OTA task create failed due to file not found
+  AIBudsSdkCameraOtaErrorCodeCameraOtaTaskCreateFailedDueToFileNotFound = 4002,
+/// Camera OTA task failed due to device disconnect
+  AIBudsSdkCameraOtaErrorCodeCameraOtaTaskFailedDueToDeviceDisconnect = 4003,
+/// Camera OTA task failed due to timeout
+  AIBudsSdkCameraOtaErrorCodeCameraOtaTaskFailedDueToTimeout = 4004,
+/// Camera OTA task start failed due to hotspot configure error
+  AIBudsSdkCameraOtaErrorCodeCameraOtaTaskStartFailedDueToHotspotConfigureError = 4005,
+/// Camera OTA task start failed due to enter camera OTA mode failed
+  AIBudsSdkCameraOtaErrorCodeCameraOtaTaskStartFailedDueToEnterCameraOtaModeFailed = 4006,
+/// Camera OTA task start failed due to hotspot connection failure
+  AIBudsSdkCameraOtaErrorCodeCameraOtaTaskStartFailedDueToHotspotConnectionFailure = 4007,
+/// Camera OTA task start failed due to http server start failed
+  AIBudsSdkCameraOtaErrorCodeCameraOtaTaskStartFailedDueToHttpServerStartFailed = 4008,
+/// Camera OTA task failed due to send firmware file url info failed
+  AIBudsSdkCameraOtaErrorCodeCameraOtaTaskFailedDueToSendFileUrlInfoFailed = 4009,
+/// Enter camera OTA mode failed due to bad command
+  AIBudsSdkCameraOtaErrorCodeEnterCameraOtaModeFailedDueToBadCommand = 5001,
+/// Enter camera OTA mode failed due to storage full
+  AIBudsSdkCameraOtaErrorCodeEnterCameraOtaModeFailedDueToStorageFull = 5002,
+/// Enter camera OTA mode failed due to not allow, for example, low battery, high core temperature, etc.
+  AIBudsSdkCameraOtaErrorCodeEnterCameraOtaModeFailedDueToNotAllow = 5003,
+/// Enter camera OTA mode failed due to no data transfer channel available
+  AIBudsSdkCameraOtaErrorCodeEnterCameraOtaModeFailedDueToNoDataTransferChannel = 5004,
+/// Enter camera OTA mode failed due to status conflict
+  AIBudsSdkCameraOtaErrorCodeEnterCameraOtaModeFailedDueToStatusConflict = 5005,
+/// Send camera OTA file URL info failed due to bad command
+  AIBudsSdkCameraOtaErrorCodeSendCameraOtaFileUrlInfoFailedDueToBadCommand = 5006,
+/// Send camera OTA file URL info failed due to storage full
+  AIBudsSdkCameraOtaErrorCodeSendCameraOtaFileUrlInfoFailedDueToStorageFull = 5007,
+/// Send camera OTA file URL info failed due to not allow, for example, low battery, high core temperature, etc.
+  AIBudsSdkCameraOtaErrorCodeSendCameraOtaFileUrlInfoFailedDueToNotAllow = 5008,
+/// Send camera OTA file URL info failed due to no data transfer channel available
+  AIBudsSdkCameraOtaErrorCodeSendCameraOtaFileUrlInfoFailedDueToNoDataTransferChannel = 5009,
+/// Send camera OTA file URL info failed due to status conflict
+  AIBudsSdkCameraOtaErrorCodeSendCameraOtaFileUrlInfoFailedDueToStatusConflict = 5010,
+};
+
 /// The error codes used for AIBudsSDK errors
 typedef SWIFT_ENUM_NAMED(NSInteger, AIBudsSdkErrorCode, "SdkErrorCode", open) {
 /// Unknown error
   AIBudsSdkErrorCodeUnknown = -1,
+/// Device not support
+  AIBudsSdkErrorCodeDeviceNotSupport = 1,
+/// Device not connected
+  AIBudsSdkErrorCodeDeviceNotConnected = 2,
+/// Device not ready
+  AIBudsSdkErrorCodeDeviceNotReady = 3,
+/// Device busy
+  AIBudsSdkErrorCodeDeviceBusy = 4,
 /// Scanning start failed due to Bluetooth not being powered on
   AIBudsSdkErrorCodeScanningStartFailedDueToBluetoothNotPoweredOn = 1001,
 /// Scanning start failed due to Bluetooth authorization being denied or restricted
@@ -6631,6 +6845,130 @@ typedef SWIFT_ENUM_NAMED(NSInteger, AIBudsSdkErrorCode, "SdkErrorCode", open) {
   AIBudsSdkErrorCodeScanningStartFailedDueToScanningAlreadyRunning = 1004,
 /// Scanning canceled due to Bluetooth not being powered on
   AIBudsSdkErrorCodeScanningCanceledDueToBluetoothNotPoweredOn = 1005,
+/// Request send failed due to peripheral being unavailable
+  AIBudsSdkErrorCodeRequestSendFailedDueToPeripheralUnavailable = 2001,
+/// Request send failed due to peripheral not connected
+  AIBudsSdkErrorCodeRequestSendFailedDueToPeripheralNotConnected = 2002,
+/// Bluetooth packet send failed due to peripheral being unavailable
+  AIBudsSdkErrorCodeBlePacketSendFailedDueToPeripheralUnavailable = 2003,
+/// Bluetooth packet send failed due to timeout
+  AIBudsSdkErrorCodeBlePacketSendFailedDueToTimeout = 2004,
+/// Bluetooth packet send failed due to write error
+  AIBudsSdkErrorCodeBlePacketSendFailedDueToWriteError = 2005,
+/// Bluetooth command execution failed due to timeout
+  AIBudsSdkErrorCodeBleCommandExecFailedDueToTimeout = 2006,
+/// Bluetooth data handle failed due to unexpected frame sequence number
+  AIBudsSdkErrorCodeBleDataHandleFailedDueToUnexpectedFrameSeqNum = 2007,
+/// Bluetooth data handle failed due to packet info corruption
+  AIBudsSdkErrorCodeBleDataHandleFailedDueToPacketInfoCorruption = 2008,
+/// Bluetooth data handle failed due to packet frames not matching
+  AIBudsSdkErrorCodeBleDataHandleFailedDueToPacketFramesNotMatching = 2009,
+/// Operation failed due to wrong parameters
+  AIBudsSdkErrorCodeOperationFailedDueToWrongParameters = 3001,
+/// Operation failed due to device return a non-success status code
+  AIBudsSdkErrorCodeOperationFailedDueToDeviceReturnNonSuccessStatusCode = 3002,
+/// Operation failed due to device response data parsing failed
+  AIBudsSdkErrorCodeOperationFailedDueToDeviceResponseDataParsingFailed = 3003,
+/// AI chat hangup or failed to start due to device exception
+  AIBudsSdkErrorCodeAiChatHangupOrFailedToStartDueToDeviceException = 3004,
+/// Hotspot connection failed
+  AIBudsSdkErrorCodeHotspotConnectionFailed = 4001,
+/// Photo data for scene recognition handle failed due to bad command
+  AIBudsSdkErrorCodePhotoDataForSceneRecognitionHandleFailedDueToBadCommand = 5001,
+/// Photo data for scene recognition handle failed due to invalid status code
+  AIBudsSdkErrorCodePhotoDataForSceneRecognitionHandleFailedDueToInvalidStatusCode = 5002,
+/// Photo data for scene recognition transfer canceled due to system capture failed
+  AIBudsSdkErrorCodePhotoDataForSceneRecognitionTransferCanceledDueToSystemCaptureFailed = 5003,
+/// Photo data for scene recognition transfer canceled due to Bluetooth communication error
+  AIBudsSdkErrorCodePhotoDataForSceneRecognitionTransferCanceledDueToBluetoothCommunicationError = 5004,
+/// Fetch media files info failed due to local network usage description missing
+  AIBudsSdkErrorCodeFetchMediaFilesInfoFailedDueToLocalNetworkUsageDescMissing = 6000,
+/// File import not ready
+  AIBudsSdkErrorCodeFileImportNotReady = 6001,
+/// File import already in progress
+  AIBudsSdkErrorCodeFileImportAlreadyInProgress = 6002,
+/// File import not in progress
+  AIBudsSdkErrorCodeFileImportNotInProgress = 6003,
+/// Fetch media file infos failed due to hotspot configure error
+  AIBudsSdkErrorCodeFetchMediaFileInfosFailedDueToHotspotConfigureError = 6004,
+/// File import task prepare failed due to enter file transfer mode failed
+  AIBudsSdkErrorCodeFileImportTaskPrepareFailedDueToEnterFileTransferModeFailed = 6005,
+/// Fetch media file infos failed due to hotspot connection failure
+  AIBudsSdkErrorCodeFetchMediaFileInfosFailedDueToHotspotConnectionFailure = 6006,
+/// Fetch media file infos failed due to empty base url
+  AIBudsSdkErrorCodeFetchMediaFileInfosFailedDueToEmptyBaseUrl = 6007,
+/// Fetch media file infos failed due to invalid config file url
+  AIBudsSdkErrorCodeFetchMediaFileInfosFailedDueToInvalidConfigUrl = 6008,
+/// Fetch media file infos failed due to config file error
+  AIBudsSdkErrorCodeFetchMediaFileInfosFailedDueToConfigFileError = 6009,
+/// Fetch media file infos failed due to network error
+  AIBudsSdkErrorCodeFetchMediaFileInfosFailedDueToNetworkError = 6010,
+/// Fetch media file infos failed due to invalid response
+  AIBudsSdkErrorCodeFetchMediaFileInfosFailedDueToInvalidResponse = 6011,
+/// Fetch media file infos failed due to HTTP error code not success range
+  AIBudsSdkErrorCodeFetchMediaFileInfosFailedDueToHttpError = 6012,
+/// Import files failed due to device connection lost
+  AIBudsSdkErrorCodeImportFilesFailedDueToDeviceHotspotConnectionLost = 6013,
+/// Import files failed due to invalid url
+  AIBudsSdkErrorCodeImportFilesFailedDueToInvalidUrl = 6014,
+/// Import files failed due to HTTP error code not success range
+  AIBudsSdkErrorCodeImportFilesFailedDueToHttpError = 6015,
+/// Import files failed due to network error
+  AIBudsSdkErrorCodeImportFilesFailedDueToNetworkError = 6016,
+/// Fetch media files info failed due to allow local networking missing
+  AIBudsSdkErrorCodeFetchMediaFilesInfoFailedDueToAllowLocalNetworkingMissing = 6017,
+/// Prompt script is invalid or empty
+  AIBudsSdkErrorCodePromptScriptInvalidOrEmpty = 7001,
+/// Prompt script is sending
+  AIBudsSdkErrorCodePromptScriptIsSending = 7002,
+/// Prompt script sending failed
+  AIBudsSdkErrorCodePromptScriptSendingFailed = 7003,
+/// Prompt script sending failed due to device disconnected
+  AIBudsSdkErrorCodePromptScriptSendingFailedDueToDeviceDisconnect = 7004,
+};
+
+/// The error codes used for AIBudsSDK ota errors
+typedef SWIFT_ENUM_NAMED(NSInteger, AIbudsSdkOtaErrorCode, "SdkOtaErrorCode", open) {
+/// Unknown error
+  AIbudsSdkOtaErrorCodeUnknown = -1,
+/// OTA task already running
+  AIbudsSdkOtaErrorCodeOtaTaskAlreadyRunning = 4001,
+/// OTA task create failed due to file not found
+  AIbudsSdkOtaErrorCodeOtaTaskCreateFailedDueToFileNotFound = 4002,
+/// OTA task start failed due to file read error
+  AIbudsSdkOtaErrorCodeOtaTaskStartFailedDueToFileReadError = 4003,
+/// OTA task start failed due to file handle create error
+  AIbudsSdkOtaErrorCodeOtaTaskStartFailedDueToFileHandleCreateError = 4004,
+/// OTA task start failed due to invalid file hash data
+  AIbudsSdkOtaErrorCodeOtaTaskStartFailedDueToInvalidFileHashData = 4005,
+/// OTA task start failed due to get ota info error
+  AIbudsSdkOtaErrorCodeOtaTaskStartFailedDueToGetOtaInfoError = 4006,
+/// OTA task start failed due to invalid offset address
+  AIbudsSdkOtaErrorCodeOtaTaskStartFailedDueToInvalidOffsetAddress = 4007,
+/// OTA task start failed due to invalid block size
+  AIbudsSdkOtaErrorCodeOtaTaskStartFailedDueToInvalidBlockSize = 4008,
+/// OTA task start failed due to not allow update
+  AIbudsSdkOtaErrorCodeOtaTaskStartFailedDueToNotAllowUpdate = 4009,
+/// OTA task send data failed due to file handle is nil
+  AIbudsSdkOtaErrorCodeOtaTaskSendDataFailedDueToFileHandleIsNil = 4010,
+/// OTA task send data failed due to seek file handle failed
+  AIbudsSdkOtaErrorCodeOtaTaskSendDataFailedDueToSeekFileHandleFailed = 4011,
+/// OTA task send data failed due to read file data failed
+  AIbudsSdkOtaErrorCodeOtaTaskSendDataFailedDueToReadFileDataFailed = 4012,
+/// OTA task send data failed due to ota info is nil
+  AIbudsSdkOtaErrorCodeOtaTaskSendDataFailedDueToOtaInfoIsNil = 4013,
+/// OTA task failed due to device report key mismatch
+  AIbudsSdkOtaErrorCodeOtaTaskFailedDueToDeviceReportKeyMismatch = 4014,
+/// OTA task failed due to device report crc error
+  AIbudsSdkOtaErrorCodeOtaTaskFailedDueToDeviceReportCrcError = 4015,
+/// OTA task failed due to device report seq error
+  AIbudsSdkOtaErrorCodeOtaTaskFailedDueToDeviceReportSeqError = 4016,
+/// OTA task failed due to device report data length error
+  AIbudsSdkOtaErrorCodeOtaTaskFailedDueToDeviceReportDataLengthError = 4017,
+/// OTA task failed due to device disconnect
+  AIbudsSdkOtaErrorCodeOtaTaskFailedDueToDeviceDisconnect = 4018,
+/// OTA task failed due to timeout
+  AIbudsSdkOtaErrorCodeOtaTaskFailedDueToTimeout = 4019,
 };
 
 SWIFT_ENUM_FWD_DECL(NSInteger, AIBudsStarBurstAuthSdk)
@@ -6771,6 +7109,80 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<id <AI
 /// Private initializer to enforce singleton pattern
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+/// Teleprompter API
+SWIFT_PROTOCOL_NAMED("TeleprompterAPI")
+@protocol AIBudsTeleprompterAPI <AIBudsDeviceAPI>
+/// the overlay prompt scroll speed, all slots share this value
+/// 100 represents 1.0x scrolling speed, 150 represents 1.5x scrolling speed, and so on. Maximum value is 1000 (10x), minimum value is 10 (0.1x)
+@property (nonatomic, readonly, strong) NSNumber * _Nullable overlayPromptScrollSpeed;
+/// the total number of overlay prompt slots
+@property (nonatomic, readonly, strong) NSNumber * _Nullable overlayPromptTotalSlots;
+/// the current overlay prompt slot index，0-based
+@property (nonatomic, readonly, strong) NSNumber * _Nullable overlayPromptSlotIndex;
+/// the current overlay prompt slot used bytes
+@property (nonatomic, readonly, strong) NSNumber * _Nullable usedBytesOfCurrentOverlayPromptSlot;
+/// the current overlay prompt slot capacity bytes
+@property (nonatomic, readonly, strong) NSNumber * _Nullable capacityBytesOfCurrentOverlayPromptSlot;
+/// send overlay prompt to device
+/// \param prompt the overlay prompt to send
+///
+/// \param progressHandler the progress handler to be called when the progress changes
+///
+/// \param completionHandler the completion handler to be called when the operation is completed
+/// <ul>
+///   <li>
+///     success: <code>true</code> if the operation was successful; otherwise <code>false</code>.
+///   </li>
+///   <li>
+///     error: An <code>NSError</code> object that describes the error that occurred, or <code>nil</code> if the operation was successful.
+///   </li>
+/// </ul>
+///
+- (void)sendOverlayPrompt:(NSString * _Nonnull)prompt progressHandler:(void (^ _Nullable)(CGFloat))progressHandler completionHandler:(AIBudsCompletionHandler _Nullable)completionHandler;
+/// clear the current overlay prompt slot content
+/// \param completion the completion handler to be called when the operation is completed
+/// <ul>
+///   <li>
+///     success: <code>true</code> if the operation was successful; otherwise <code>false</code>.
+///   </li>
+///   <li>
+///     error: An <code>NSError</code> object that describes the error that occurred, or <code>nil</code> if the operation was successful.
+///   </li>
+/// </ul>
+///
+- (void)clearCurrentOverlayPromptSlotContentWithCompletion:(AIBudsCompletionHandler _Nullable)completion;
+/// toggle overlay prompt slot index to the specified index
+/// \param index the index to toggle to
+/// 0-based, must be in the range of 0 to overlayPromptTotalSlots - 1
+///
+/// \param completion the completion handler to be called when the operation is completed
+/// <ul>
+///   <li>
+///     success: <code>true</code> if the operation was successful; otherwise <code>false</code>.
+///   </li>
+///   <li>
+///     error: An <code>NSError</code> object that describes the error that occurred, or <code>nil</code> if the operation was successful.
+///   </li>
+/// </ul>
+///
+- (void)toggleOverlayPromptSlotIndexTo:(NSInteger)index completion:(AIBudsCompletionHandler _Nullable)completion;
+/// set overlay prompt scroll speed
+/// \param speed the scroll speed to set
+/// 100 represents 1.0x scrolling speed, 150 represents 1.5x scrolling speed, and so on. Maximum value is 1000 (10x), minimum value is 10 (0.1x)
+///
+/// \param completion the completion handler to be called when the operation is completed
+/// <ul>
+///   <li>
+///     success: <code>true</code> if the operation was successful; otherwise <code>false</code>.
+///   </li>
+///   <li>
+///     error: An <code>NSError</code> object that describes the error that occurred, or <code>nil</code> if the operation was successful.
+///   </li>
+/// </ul>
+///
+- (void)setOverlayPromptScrollSpeed:(NSInteger)speed completion:(AIBudsCompletionHandler _Nullable)completion;
 @end
 
 @class AIBudsNavigationInfoModel;

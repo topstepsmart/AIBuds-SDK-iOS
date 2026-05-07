@@ -19,7 +19,7 @@ import _SwiftConcurrencyShims
   @objc override dynamic public init()
   @objc deinit
 }
-@_inheritsConvenienceInitializers @objc(AIBudsSDKConfiguration) final public class SDKConfiguration : ObjectiveC.NSObject {
+@_inheritsConvenienceInitializers @objc(AIBudsSDKConfiguration) final public class SDKConfiguration : ObjectiveC.NSObject, AIBudsFoundation.CustomDebugJsonStringConvertible {
   @objc final public var logLevel: AIBudsLog.LogLevel {
     @objc get
     @objc set
@@ -36,8 +36,59 @@ import _SwiftConcurrencyShims
   @objc override final public var description: Swift.String {
     @objc get
   }
+  @objc final public var debugJsonString: Swift.String {
+    @objc get
+  }
   @objc override dynamic public init()
   @objc deinit
+}
+extension AIBuds.AIBudsSDK {
+  @objc public static let CameraOtaErrorDomain: Swift.String
+}
+@objc(AIBudsSdkCameraOtaErrorCode) public enum SdkCameraOtaErrorCode : Swift.Int {
+  case unknown = -1
+  case networkRequestFailed = 0
+  case cameraOtaFileNotFound = 1
+  case invalidCameraOtaFile = 2
+  case hotspotDisconnectedDuringTransfer = 3
+  case stageTwoTimeout = 4
+  case invalidHotspotConfig = 5
+  case interruptedByShutdownOrLowBattery = 6
+  case networkTimeout = 7
+  case cameraOtaTaskAlreadyRunning = 4001
+  case cameraOtaTaskCreateFailedDueToFileNotFound = 4002
+  case cameraOtaTaskFailedDueToDeviceDisconnect = 4003
+  case cameraOtaTaskFailedDueToTimeout = 4004
+  case cameraOtaTaskStartFailedDueToHotspotConfigureError = 4005
+  case cameraOtaTaskStartFailedDueToEnterCameraOtaModeFailed = 4006
+  case cameraOtaTaskStartFailedDueToHotspotConnectionFailure = 4007
+  case cameraOtaTaskStartFailedDueToHttpServerStartFailed = 4008
+  case cameraOtaTaskFailedDueToSendFileUrlInfoFailed = 4009
+  case enterCameraOtaModeFailedDueToBadCommand = 5001
+  case enterCameraOtaModeFailedDueToStorageFull = 5002
+  case enterCameraOtaModeFailedDueToNotAllow = 5003
+  case enterCameraOtaModeFailedDueToNoDataTransferChannel = 5004
+  case enterCameraOtaModeFailedDueToStatusConflict = 5005
+  case sendCameraOtaFileUrlInfoFailedDueToBadCommand = 5006
+  case sendCameraOtaFileUrlInfoFailedDueToStorageFull = 5007
+  case sendCameraOtaFileUrlInfoFailedDueToNotAllow = 5008
+  case sendCameraOtaFileUrlInfoFailedDueToNoDataTransferChannel = 5009
+  case sendCameraOtaFileUrlInfoFailedDueToStatusConflict = 5010
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+extension AIBuds.SdkCameraOtaErrorCode : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
+extension AIBuds.SdkCameraOtaErrorCode : Swift.CustomDebugStringConvertible {
+  public var debugDescription: Swift.String {
+    get
+  }
 }
 extension AIBuds.AIBudsSDK {
   @objc public static let ErrorDomain: Swift.String
@@ -45,11 +96,85 @@ extension AIBuds.AIBudsSDK {
 }
 @objc(AIBudsSdkErrorCode) public enum SdkErrorCode : Swift.Int {
   case unknown = -1
+  case deviceNotSupport = 1
+  case deviceNotConnected = 2
+  case deviceNotReady = 3
+  case deviceBusy = 4
   case scanningStartFailedDueToBluetoothNotPoweredOn = 1001
   case scanningStartFailedDueToBluetoothAuthorizationDeniedOrRestricted = 1002
   case scanningStartFailedDueToBluetoothUnsupported = 1003
   case scanningStartFailedDueToScanningAlreadyRunning = 1004
   case scanningCanceledDueToBluetoothNotPoweredOn = 1005
+  case requestSendFailedDueToPeripheralUnavailable = 2001
+  case requestSendFailedDueToPeripheralNotConnected = 2002
+  case blePacketSendFailedDueToPeripheralUnavailable = 2003
+  case blePacketSendFailedDueToTimeout = 2004
+  case blePacketSendFailedDueToWriteError = 2005
+  case bleCommandExecFailedDueToTimeout = 2006
+  case bleDataHandleFailedDueToUnexpectedFrameSeqNum = 2007
+  case bleDataHandleFailedDueToPacketInfoCorruption = 2008
+  case bleDataHandleFailedDueToPacketFramesNotMatching = 2009
+  case operationFailedDueToWrongParameters = 3001
+  case operationFailedDueToDeviceReturnNonSuccessStatusCode = 3002
+  case operationFailedDueToDeviceResponseDataParsingFailed = 3003
+  case aiChatHangupOrFailedToStartDueToDeviceException = 3004
+  case hotspotConnectionFailed = 4001
+  case photoDataForSceneRecognitionHandleFailedDueToBadCommand = 5001
+  case photoDataForSceneRecognitionHandleFailedDueToInvalidStatusCode = 5002
+  case photoDataForSceneRecognitionTransferCanceledDueToSystemCaptureFailed = 5003
+  case photoDataForSceneRecognitionTransferCanceledDueToBluetoothCommunicationError = 5004
+  case fetchMediaFilesInfoFailedDueToLocalNetworkUsageDescMissing = 6000
+  case fileImportNotReady = 6001
+  case fileImportAlreadyInProgress = 6002
+  case fileImportNotInProgress = 6003
+  case fetchMediaFileInfosFailedDueToHotspotConfigureError = 6004
+  case fileImportTaskPrepareFailedDueToEnterFileTransferModeFailed = 6005
+  case fetchMediaFileInfosFailedDueToHotspotConnectionFailure = 6006
+  case fetchMediaFileInfosFailedDueToEmptyBaseUrl = 6007
+  case fetchMediaFileInfosFailedDueToInvalidConfigUrl = 6008
+  case fetchMediaFileInfosFailedDueToConfigFileError = 6009
+  case fetchMediaFileInfosFailedDueToNetworkError = 6010
+  case fetchMediaFileInfosFailedDueToInvalidResponse = 6011
+  case fetchMediaFileInfosFailedDueToHttpError = 6012
+  case importFilesFailedDueToDeviceHotspotConnectionLost = 6013
+  case importFilesFailedDueToInvalidUrl = 6014
+  case importFilesFailedDueToHttpError = 6015
+  case importFilesFailedDueToNetworkError = 6016
+  case fetchMediaFilesInfoFailedDueToAllowLocalNetworkingMissing = 6017
+  case promptScriptInvalidOrEmpty = 7001
+  case promptScriptIsSending = 7002
+  case promptScriptSendingFailed = 7003
+  case promptScriptSendingFailedDueToDeviceDisconnect = 7004
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+extension AIBuds.AIBudsSDK {
+  @objc public static let OtaErrorDomain: Swift.String
+}
+@objc(AIbudsSdkOtaErrorCode) public enum SdkOtaErrorCode : Swift.Int {
+  case unknown = -1
+  case otaTaskAlreadyRunning = 4001
+  case otaTaskCreateFailedDueToFileNotFound = 4002
+  case otaTaskStartFailedDueToFileReadError = 4003
+  case otaTaskStartFailedDueToFileHandleCreateError = 4004
+  case otaTaskStartFailedDueToInvalidFileHashData = 4005
+  case otaTaskStartFailedDueToGetOtaInfoError = 4006
+  case otaTaskStartFailedDueToInvalidOffsetAddress = 4007
+  case otaTaskStartFailedDueToInvalidBlockSize = 4008
+  case otaTaskStartFailedDueToNotAllowUpdate = 4009
+  case otaTaskSendDataFailedDueToFileHandleIsNil = 4010
+  case otaTaskSendDataFailedDueToSeekFileHandleFailed = 4011
+  case otaTaskSendDataFailedDueToReadFileDataFailed = 4012
+  case otaTaskSendDataFailedDueToOtaInfoIsNil = 4013
+  case otaTaskFailedDueToDeviceReportKeyMismatch = 4014
+  case otaTaskFailedDueToDeviceReportCrcError = 4015
+  case otaTaskFailedDueToDeviceReportSeqError = 4016
+  case otaTaskFailedDueToDeviceReportDataLengthError = 4017
+  case otaTaskFailedDueToDeviceDisconnect = 4018
+  case otaTaskFailedDueToTimeout = 4019
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
@@ -428,7 +553,7 @@ extension Foundation.NSNotification.Name {
   @objc var onDeviceVoiceAssistantMode: AIBudsFoundation.OnDeviceVoiceAssistantMode { get }
   @objc(setOnDeviceVoiceAssistantMode:completion:) func setOnDeviceVoiceAssistantMode(_ mode: AIBudsFoundation.OnDeviceVoiceAssistantMode, completion: AIBuds.AIBudsCompletionHandler?)
 }
-@objc(AIBudsOverlayPromptAPI) public protocol OverlayPromptAPI : AIBuds.DeviceAPI {
+@objc(AIBudsTeleprompterAPI) public protocol TeleprompterAPI : AIBuds.DeviceAPI {
   @objc var overlayPromptScrollSpeed: Foundation.NSNumber? { get }
   @objc var overlayPromptTotalSlots: Foundation.NSNumber? { get }
   @objc var overlayPromptSlotIndex: Foundation.NSNumber? { get }
@@ -549,6 +674,12 @@ extension AIBuds.AIBudsSDK {
   @objc public static func makeStorableDeviceFromDiscovered(_ peripheral: CoreBluetooth.CBPeripheral, central: CoreBluetooth.CBCentralManager, advertisement: [Swift.String : Any]?, rssi: Foundation.NSNumber?) -> (any AIBuds.DeviceConvertible)?
   @objc deinit
 }
+extension AIBuds.SdkCameraOtaErrorCode : Swift.Equatable {}
+extension AIBuds.SdkCameraOtaErrorCode : Swift.Hashable {}
+extension AIBuds.SdkCameraOtaErrorCode : Swift.RawRepresentable {}
 extension AIBuds.SdkErrorCode : Swift.Equatable {}
 extension AIBuds.SdkErrorCode : Swift.Hashable {}
 extension AIBuds.SdkErrorCode : Swift.RawRepresentable {}
+extension AIBuds.SdkOtaErrorCode : Swift.Equatable {}
+extension AIBuds.SdkOtaErrorCode : Swift.Hashable {}
+extension AIBuds.SdkOtaErrorCode : Swift.RawRepresentable {}

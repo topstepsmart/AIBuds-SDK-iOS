@@ -1,0 +1,3 @@
+framework module AIBudsAllInOne {
+  header "AIBudsAllInOne-Swift.h"
+}

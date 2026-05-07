@@ -22067,8 +22067,8 @@
           },
           {
             "kind": "Var",
-            "name": "overlayPrompt",
-            "printedName": "overlayPrompt",
+            "name": "teleprompter",
+            "printedName": "teleprompter",
             "children": [
               {
                 "kind": "TypeFunc",
@@ -22098,8 +22098,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "c:@M@AIBudsFoundation@E@AIBudsDeviceApp@AIBudsDeviceAppOverlayPrompt",
-            "mangledName": "$s16AIBudsFoundation9DeviceAppO13overlayPromptyA2CmF",
+            "usr": "c:@M@AIBudsFoundation@E@AIBudsDeviceApp@AIBudsDeviceAppTeleprompter",
+            "mangledName": "$s16AIBudsFoundation9DeviceAppO12teleprompteryA2CmF",
             "moduleName": "AIBudsFoundation",
             "declAttributes": [
               "RawDocComment",
@@ -70362,35 +70362,35 @@
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/Defines(定义)\/DeviceApp(设备端应用程序)\/DeviceApp.swift",
       "kind": "IntegerLiteral",
-      "offset": 400,
+      "offset": 397,
       "length": 4,
       "value": "0x01"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/Defines(定义)\/DeviceApp(设备端应用程序)\/DeviceApp.swift",
       "kind": "IntegerLiteral",
-      "offset": 444,
+      "offset": 441,
       "length": 4,
       "value": "0x02"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/Defines(定义)\/DeviceApp(设备端应用程序)\/DeviceApp.swift",
       "kind": "IntegerLiteral",
-      "offset": 495,
+      "offset": 492,
       "length": 4,
       "value": "0x03"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/Defines(定义)\/DeviceApp(设备端应用程序)\/DeviceApp.swift",
       "kind": "IntegerLiteral",
-      "offset": 536,
+      "offset": 533,
       "length": 4,
       "value": "0x04"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/Defines(定义)\/DeviceApp(设备端应用程序)\/DeviceApp.swift",
       "kind": "IntegerLiteral",
-      "offset": 589,
+      "offset": 586,
       "length": 4,
       "value": "0x05"
     },
@@ -73563,21 +73563,21 @@
       "kind": "StringLiteral",
       "offset": 492,
       "length": 14,
-      "value": "\"1.0.0-beta.4\""
+      "value": "\"1.0.0-beta.5\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/AIBudsFoundation.swift",
       "kind": "StringLiteral",
       "offset": 622,
       "length": 13,
-      "value": "\"20260430001\""
+      "value": "\"20260508001\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/AIBudsFoundation.swift",
       "kind": "StringLiteral",
       "offset": 737,
       "length": 12,
-      "value": "\"2026-04-30\""
+      "value": "\"2026-05-08\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/AIBudsFoundation.swift",

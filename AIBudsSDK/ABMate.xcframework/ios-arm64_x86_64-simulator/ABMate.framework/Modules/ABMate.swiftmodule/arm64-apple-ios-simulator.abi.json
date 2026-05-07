@@ -1129,66 +1129,6 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "ABMate",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "ABMate",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "ABMate",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "ABMate",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "ABMate",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "ABMate",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "AIBudsFoundation",
         "printedName": "AIBudsFoundation",
         "declKind": "Import",
@@ -1278,6 +1218,66 @@
         "printedName": "AIBudsFoundation",
         "declKind": "Import",
         "moduleName": "ABMate"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ABMate",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ABMate",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ABMate",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ABMate",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ABMate",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ABMate",
+        "declAttributes": [
+          "RawDocComment"
+        ]
       },
       {
         "kind": "Import",
@@ -2268,6 +2268,13 @@
       },
       {
         "kind": "Import",
+        "name": "AIBuds",
+        "printedName": "AIBuds",
+        "declKind": "Import",
+        "moduleName": "ABMate"
+      },
+      {
+        "kind": "Import",
         "name": "AIBudsLog",
         "printedName": "AIBudsLog",
         "declKind": "Import",
@@ -2306,6 +2313,13 @@
       },
       {
         "kind": "Import",
+        "name": "AIBuds",
+        "printedName": "AIBuds",
+        "declKind": "Import",
+        "moduleName": "ABMate"
+      },
+      {
+        "kind": "Import",
         "name": "AIBudsLog",
         "printedName": "AIBudsLog",
         "declKind": "Import",
@@ -2352,6 +2366,13 @@
         "kind": "Import",
         "name": "AIBudsFoundation",
         "printedName": "AIBudsFoundation",
+        "declKind": "Import",
+        "moduleName": "ABMate"
+      },
+      {
+        "kind": "Import",
+        "name": "AIBuds",
+        "printedName": "AIBuds",
         "declKind": "Import",
         "moduleName": "ABMate"
       },
@@ -11647,6 +11668,13 @@
       },
       {
         "kind": "Import",
+        "name": "AIBuds",
+        "printedName": "AIBuds",
+        "declKind": "Import",
+        "moduleName": "ABMate"
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -12107,6 +12135,13 @@
         "kind": "Import",
         "name": "AIBudsFoundation",
         "printedName": "AIBudsFoundation",
+        "declKind": "Import",
+        "moduleName": "ABMate"
+      },
+      {
+        "kind": "Import",
+        "name": "AIBuds",
+        "printedName": "AIBuds",
         "declKind": "Import",
         "moduleName": "ABMate"
       },
@@ -13880,35 +13915,35 @@
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Commands(指令)\/Defines(定义)\/CommandKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 4737,
+      "offset": 4733,
       "length": 4,
       "value": "0xF8"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Commands(指令)\/Defines(定义)\/CommandKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 4849,
+      "offset": 4845,
       "length": 4,
       "value": "0xF9"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Commands(指令)\/Defines(定义)\/CommandKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 4909,
+      "offset": 4905,
       "length": 4,
       "value": "0xFB"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Commands(指令)\/Defines(定义)\/CommandKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 4989,
+      "offset": 4985,
       "length": 4,
       "value": "0xFC"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Commands(指令)\/Defines(定义)\/CommandKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 5060,
+      "offset": 5056,
       "length": 4,
       "value": "0xFF"
     },
@@ -15028,196 +15063,196 @@
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/CommManager\/BlePacketScheduler.swift",
       "kind": "IntegerLiteral",
-      "offset": 389,
+      "offset": 403,
       "length": 4,
       "value": "0x00"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/CommManager\/BlePacketScheduler.swift",
       "kind": "IntegerLiteral",
-      "offset": 469,
+      "offset": 483,
       "length": 4,
       "value": "0x01"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/CommManager\/BlePacketScheduler.swift",
       "kind": "IntegerLiteral",
-      "offset": 562,
+      "offset": 576,
       "length": 4,
       "value": "0x02"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/CommManager\/BlePacketScheduler.swift",
       "kind": "IntegerLiteral",
-      "offset": 614,
+      "offset": 628,
       "length": 4,
       "value": "0x03"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/CommManager\/BlePacketScheduler.swift",
       "kind": "IntegerLiteral",
-      "offset": 729,
+      "offset": 743,
       "length": 4,
       "value": "0x04"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/CommManager\/BlePacketScheduler.swift",
       "kind": "IntegerLiteral",
-      "offset": 852,
+      "offset": 866,
       "length": 4,
       "value": "0x05"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/CommManager\/BlePacketScheduler.swift",
       "kind": "IntegerLiteral",
-      "offset": 967,
+      "offset": 981,
       "length": 4,
       "value": "0x06"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/CommManager\/BlePacketScheduler.swift",
       "kind": "StringLiteral",
-      "offset": 2686,
+      "offset": 2700,
       "length": 54,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/CommManager\/BlePacketScheduler.swift",
       "kind": "StringLiteral",
-      "offset": 2711,
+      "offset": 2725,
       "length": 1,
       "value": "\".packet.send.scheduler.queue\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/CommManager\/BlePacketScheduler.swift",
       "kind": "IntegerLiteral",
-      "offset": 3173,
+      "offset": 3187,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/CommManager\/BlePacketScheduler.swift",
       "kind": "BooleanLiteral",
-      "offset": 3206,
+      "offset": 3220,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/CommManager\/CommManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1664,
+      "offset": 1678,
       "length": 3,
       "value": "135"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/CommManager\/CommManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1748,
+      "offset": 1762,
       "length": 3,
       "value": "158"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/CommManager\/CommManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1834,
+      "offset": 1848,
       "length": 3,
       "value": "185"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/CommManager\/CommManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1920,
+      "offset": 1934,
       "length": 3,
       "value": "247"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/CommManager\/CommManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 2060,
+      "offset": 2074,
       "length": 2,
       "value": "15"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/CommManager\/CommManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 2090,
+      "offset": 2104,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/CommManager\/CommManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 2015,
+      "offset": 2029,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/CommManager\/CommManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 3596,
+      "offset": 3610,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/CommManager\/CommManager.swift",
       "kind": "Dictionary",
-      "offset": 4018,
+      "offset": 4032,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/CommManager\/CommManager.swift",
       "kind": "StringLiteral",
-      "offset": 4089,
+      "offset": 4103,
       "length": 53,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/CommManager\/CommManager.swift",
       "kind": "StringLiteral",
-      "offset": 4114,
+      "offset": 4128,
       "length": 1,
       "value": "\".command.send.timeout.queue\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/CommManager\/CommManager.swift",
       "kind": "Dictionary",
-      "offset": 4245,
+      "offset": 4259,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/CommManager\/CommManager.swift",
       "kind": "Dictionary",
-      "offset": 4315,
+      "offset": 4329,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/CommManager\/CommManager.swift",
       "kind": "Dictionary",
-      "offset": 4394,
+      "offset": 4408,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/CommManager\/CommManager.swift",
       "kind": "Dictionary",
-      "offset": 4476,
+      "offset": 4490,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/CommManager\/CommManager.swift",
       "kind": "Dictionary",
-      "offset": 4550,
+      "offset": 4564,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/CommManager\/CommManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 4743,
+      "offset": 4757,
       "length": 1,
       "value": "5"
     },
@@ -17212,28 +17247,28 @@
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/HotspotConnect(连接热点)\/HotspotConnector.swift",
       "kind": "IntegerLiteral",
-      "offset": 452,
+      "offset": 466,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/HotspotConnect(连接热点)\/HotspotConnector.swift",
       "kind": "IntegerLiteral",
-      "offset": 538,
+      "offset": 552,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/HotspotConnect(连接热点)\/HotspotConnector.swift",
       "kind": "IntegerLiteral",
-      "offset": 595,
+      "offset": 609,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/HotspotConnect(连接热点)\/HotspotConnector.swift",
       "kind": "BooleanLiteral",
-      "offset": 1447,
+      "offset": 1461,
       "length": 5,
       "value": "false"
     },
@@ -17457,189 +17492,189 @@
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/ABMate.swift",
       "kind": "StringLiteral",
-      "offset": 302,
+      "offset": 316,
       "length": 6,
       "value": "\"🦁\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/ABMate.swift",
       "kind": "StringLiteral",
-      "offset": 394,
+      "offset": 408,
       "length": 11,
       "value": "\"ABMateSDK\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/ABMate.swift",
       "kind": "StringLiteral",
-      "offset": 505,
+      "offset": 519,
       "length": 14,
-      "value": "\"1.0.0-beta.4\""
+      "value": "\"1.0.0-beta.5\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/ABMate.swift",
       "kind": "StringLiteral",
-      "offset": 635,
+      "offset": 649,
       "length": 13,
-      "value": "\"20260430001\""
+      "value": "\"20260508001\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/ABMate.swift",
       "kind": "StringLiteral",
-      "offset": 750,
+      "offset": 764,
       "length": 12,
-      "value": "\"2026-04-30\""
+      "value": "\"2026-05-08\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/ABMate.swift",
       "kind": "StringLiteral",
-      "offset": 835,
+      "offset": 849,
       "length": 25,
       "value": "\"com.topstep.sdks.abmate\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/ABMate.swift",
       "kind": "StringLiteral",
-      "offset": 1168,
+      "offset": 1182,
       "length": 21,
       "value": "\"CFBundleDisplayName\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/ABMate.swift",
       "kind": "StringLiteral",
-      "offset": 1245,
+      "offset": 1259,
       "length": 14,
       "value": "\"CFBundleName\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/ABMate.swift",
       "kind": "StringLiteral",
-      "offset": 1275,
+      "offset": 1289,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/ABMate.swift",
       "kind": "StringLiteral",
-      "offset": 1400,
+      "offset": 1414,
       "length": 28,
       "value": "\"CFBundleShortVersionString\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/ABMate.swift",
       "kind": "StringLiteral",
-      "offset": 1444,
+      "offset": 1458,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/ABMate.swift",
       "kind": "StringLiteral",
-      "offset": 1566,
+      "offset": 1580,
       "length": 17,
       "value": "\"CFBundleVersion\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/ABMate.swift",
       "kind": "StringLiteral",
-      "offset": 1599,
+      "offset": 1613,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/ABMate.swift",
       "kind": "StringLiteral",
-      "offset": 1946,
+      "offset": 1960,
       "length": 31,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/ABMate.swift",
       "kind": "StringLiteral",
-      "offset": 1971,
+      "offset": 1985,
       "length": 1,
       "value": "\".init\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/ABMate.swift",
       "kind": "StringLiteral",
-      "offset": 2193,
+      "offset": 2207,
       "length": 58,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/ABMate.swift",
       "kind": "StringLiteral",
-      "offset": 2218,
+      "offset": 2232,
       "length": 1,
       "value": "\".bluetooth.events_dispatch_queue\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/ABMate.swift",
       "kind": "StringLiteral",
-      "offset": 2634,
+      "offset": 2648,
       "length": 64,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/ABMate.swift",
       "kind": "StringLiteral",
-      "offset": 2659,
+      "offset": 2673,
       "length": 1,
       "value": "\".bluetooth.scan_timeout_dispatch_queue\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/ABMate.swift",
       "kind": "StringLiteral",
-      "offset": 2838,
+      "offset": 2852,
       "length": 55,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/ABMate.swift",
       "kind": "StringLiteral",
-      "offset": 2863,
+      "offset": 2877,
       "length": 1,
       "value": "\".bluetooth.restore_identifier\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/ABMate.swift",
       "kind": "StringLiteral",
-      "offset": 3252,
+      "offset": 3266,
       "length": 65,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/ABMate.swift",
       "kind": "StringLiteral",
-      "offset": 3277,
+      "offset": 3291,
       "length": 1,
       "value": "\".opus_audio_data.process_dispatch_queue\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/ABMate.swift",
       "kind": "StringLiteral",
-      "offset": 3743,
+      "offset": 3757,
       "length": 76,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/ABMate.swift",
       "kind": "StringLiteral",
-      "offset": 3768,
+      "offset": 3782,
       "length": 1,
       "value": "\".photo_data_for_scene_recog.process_dispatch_queue\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/ABMate.swift",
       "kind": "StringLiteral",
-      "offset": 4182,
+      "offset": 4196,
       "length": 61,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/ABMate.swift",
       "kind": "StringLiteral",
-      "offset": 4207,
+      "offset": 4221,
       "length": 1,
       "value": "\".bridge_data.process_dispatch_queue\""
     },

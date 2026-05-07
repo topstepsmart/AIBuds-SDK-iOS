@@ -722,11 +722,11 @@
 "LocKey.LogDemoDestinationXLFacility" = "XLFacility";
 "LocKey.LogDemoDestinationChangedToFormat" = "输出方式已切换为：%@";
 
-"LocKey.OverlayPromptGroupTitle" = "提词器";
-"LocKey.OverlayPromptFeatureTitle" = "提词器";
+"LocKey.TeleprompterGroupTitle" = "提词器";
+"LocKey.TeleprompterFeatureTitle" = "提词器";
 
 "LocKey.OverlayPromptDefaultDisplayHint" = "输入提示词文本预览";
-"LocKey.OverlayPromptInfo" = "提词器信息";
+"LocKey.TeleprompterInfo" = "提词器信息";
 "LocKey.OverlayPromptSlotInfoFormat" = "槽位：%@ / %@";
 "LocKey.OverlayPromptSpaceInfoFormat" = "当前槽位 (已用字节/总字节容量)：%@/%@";
 "LocKey.OverlayPromptScrollSpeedFormat" = "滚动速度：%@ x";
@@ -791,7 +791,7 @@
 "LocKey.DeviceAppsGroupTitle" = "设备端应用程序";
 "LocKey.DeviceAppsFeatureTitle" = "设备端应用程序";
 
-"LocKey.AppOverlayPrompt" = "提词器";
+"LocKey.AppTeleprompter" = "提词器";
 "LocKey.AppAIChat" = "AI 聊天";
 "LocKey.AppNavigation" = "导航";
 "LocKey.AppClock" = "时钟";

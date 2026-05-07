@@ -2,17 +2,19 @@ Pod::Spec.new do |s|
   # ==================== Basic Information ====================
   # SDK name and version
   s.name         = "AIBudsSDK"
-  s.version      = "1.0.0-beta.4"
-  s.summary      = "AIBuds SDK - Comprehensive AI-powered device development framework for iOS"
+  s.version      = "1.0.0-beta.5"
+  s.summary      = "AIBuds SDK - An iOS framework for connecting AI devices"
   s.description  = <<-DESC
-                    AIBuds SDK is a powerful and comprehensive development framework designed to simplify the integration of AI-powered device functionalities into iOS applications. It provides modular components including core connectivity, Bluetooth management, audio processing, AI capabilities, logging utilities, and foundation services. The SDK supports seamless communication with AIBuds devices, enabling developers to build intelligent audio experiences with features like real-time audio streaming, voice recognition, and smart device management. With its flexible subspec architecture, developers can easily include only the components they need, from basic logging to full AI integration.
+                    AIBuds SDK is a versatile framework for connecting iOS apps to AI devices. It provides modular components including core connectivity, Bluetooth management, voice assistant, AI capabilities, logging utilities, and foundation services.
+
+                    The SDK supports seamless communication with AIBuds devices, enabling developers to build intelligent audio experiences with features like real-time audio streaming, voice recognition, and smart device management. With its flexible subspec architecture, developers can easily include only the components they need, from basic logging to full AI integration.
                    DESC
   
   # Metadata
   s.homepage     = "https://github.com/pcjbird/AIBudsSDK"
   s.license      = { :type => "MIT", :file => "LICENSE" }
   s.author       = { "pcjbird" => "pcjbird@hotmail.com" }
-  s.platform     = :ios, "11.0"
+  s.platform     = :ios, "13.0"
   s.source       = { :git => "https://github.com/pcjbird/AIBudsSDK.git", :tag => s.version.to_s }
   
   # Default subspec - Core module will be installed by default
@@ -101,6 +103,7 @@ Pod::Spec.new do |s|
   # Audio module - Audio processing capabilities
   s.subspec 'Audio' do |audio|
     audio.vendored_frameworks = 'AIBudsSDK/AIBudsAudio.xcframework'
+    audio.resource = 'AIBudsSDK/AIBudsAudio.bundle'
     audio.dependency 'AIBudsSDK/Core'
     audio.dependency 'AIBudsSDK/ThirdParty/tenVad'
     audio.frameworks = 'Foundation', 'CoreAudio', 'CoreMedia', 'AVFoundation'
@@ -156,6 +159,7 @@ Pod::Spec.new do |s|
 
   # AllInOne module - Includes all features for convenience
   s.subspec 'AllInOne' do |allinone|
+    allinone.vendored_frameworks = 'AIBudsSDK/AIBudsAllInOne.xcframework'
     allinone.dependency 'AIBudsSDK/Log'
     allinone.dependency 'AIBudsSDK/ABMate'
     allinone.dependency 'AIBudsSDK/AI'

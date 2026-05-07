@@ -1,12 +1,12 @@
 //
-//  OverlayPromptDemoController.m
+//  TeleprompterDemoController.m
 //  AIBudsSDK-Demo
 //
 //  Created by pcjbird on 2026-04-29.
 //  Copyright © 2026 Zero Status. All rights reserved.
 //
 
-#import "OverlayPromptDemoController.h"
+#import "TeleprompterDemoController.h"
 #import <objc/runtime.h>
 
 @interface UITextView (Placeholder)
@@ -31,7 +31,7 @@
 
 @end
 
-@interface OverlayPromptDemoController () <UITextViewDelegate>
+@interface TeleprompterDemoController () <UITextViewDelegate>
 
 @property (nonatomic, strong) UIScrollView *scrollView;
 @property (nonatomic, strong) UIView *contentView;
@@ -61,7 +61,7 @@
 
 @end
 
-@implementation OverlayPromptDemoController
+@implementation TeleprompterDemoController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -236,7 +236,7 @@
     ]];
     
     UILabel *titleLabel = [[UILabel alloc] init];
-    titleLabel.text = NSLocalizedString(@"LocKey.OverlayPromptInfo", @"Overlay Prompt Info");
+    titleLabel.text = NSLocalizedString(@"LocKey.TeleprompterInfo", @"Teleprompter Info");
     titleLabel.font = [UIFont systemFontOfSize:16 weight:UIFontWeightSemibold];
     titleLabel.textColor = [UIColor labelColor];
     [self.infoCard addSubview:titleLabel];
@@ -462,9 +462,9 @@
 - (void)fetchDeviceInfo {
     [self showLoading:YES];
     
-    id<AIBudsOverlayPromptAPI> overlayPromptAPI = (id<AIBudsOverlayPromptAPI>)self.device;
+    id<AIBudsTeleprompterAPI> teleprompterAPI = (id<AIBudsTeleprompterAPI>)self.device;
     
-    if (!overlayPromptAPI) {
+    if (!teleprompterAPI) {
         [self showStatus:NSLocalizedString(@"LocKey.OverlayPromptNotSupported", @"Overlay Prompt not supported") error:NO];
         [self showLoading:NO];
         return;
@@ -472,11 +472,11 @@
     
     // Fetch all info
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        NSNumber *slotIndex = overlayPromptAPI.overlayPromptSlotIndex;
-        NSNumber *totalSlots = overlayPromptAPI.overlayPromptTotalSlots;
-        NSNumber *usedBytes = overlayPromptAPI.usedBytesOfCurrentOverlayPromptSlot;
-        NSNumber *capacityBytes = overlayPromptAPI.capacityBytesOfCurrentOverlayPromptSlot;
-        NSNumber *scrollSpeed = overlayPromptAPI.overlayPromptScrollSpeed;
+        NSNumber *slotIndex = teleprompterAPI.overlayPromptSlotIndex;
+        NSNumber *totalSlots = teleprompterAPI.overlayPromptTotalSlots;
+        NSNumber *usedBytes = teleprompterAPI.usedBytesOfCurrentOverlayPromptSlot;
+        NSNumber *capacityBytes = teleprompterAPI.capacityBytesOfCurrentOverlayPromptSlot;
+        NSNumber *scrollSpeed = teleprompterAPI.overlayPromptScrollSpeed;
         
         dispatch_async(dispatch_get_main_queue(), ^{
             self.slotInfoLabel.text = [NSString stringWithFormat:NSLocalizedString(@"LocKey.OverlayPromptSlotInfoFormat", @"Slot: %@ / %@"), slotIndex ?: @"--", totalSlots ?: @"--"];
@@ -506,16 +506,16 @@
     
     [self showLoading:YES];
     
-    id<AIBudsOverlayPromptAPI> overlayPromptAPI = (id<AIBudsOverlayPromptAPI>)self.device;
+    id<AIBudsTeleprompterAPI> teleprompterAPI = (id<AIBudsTeleprompterAPI>)self.device;
     
-    if (!overlayPromptAPI) {
+    if (!teleprompterAPI) {
         [self showStatus:NSLocalizedString(@"LocKey.OverlayPromptNotSupported", @"Overlay Prompt not supported") error:NO];
         [self showLoading:NO];
         return;
     }
     
     __weak typeof(self) weakSelf = self;
-    [overlayPromptAPI sendOverlayPrompt:promptText 
+    [teleprompterAPI sendOverlayPrompt:promptText 
                           progressHandler:^(CGFloat progress) {
         dispatch_async(dispatch_get_main_queue(), ^{
             [weakSelf showStatus:[NSString stringWithFormat:NSLocalizedString(@"LocKey.OverlayPromptSendingProgressFormat", @"Sending prompt text to device %.0f%%"), progress * 100] error:NO];
@@ -538,16 +538,16 @@
 - (void)clearSlotButtonTapped:(UIButton *)sender {
     [self showLoading:YES];
     
-    id<AIBudsOverlayPromptAPI> overlayPromptAPI = (id<AIBudsOverlayPromptAPI>)self.device;
+    id<AIBudsTeleprompterAPI> teleprompterAPI = (id<AIBudsTeleprompterAPI>)self.device;
     
-    if (!overlayPromptAPI) {
+    if (!teleprompterAPI) {
         [self showStatus:NSLocalizedString(@"LocKey.OverlayPromptNotSupported", @"Overlay Prompt not supported") error:NO];
         [self showLoading:NO];
         return;
     }
     
     __weak typeof(self) weakSelf = self;
-    [overlayPromptAPI clearCurrentOverlayPromptSlotContentWithCompletion:^(BOOL success, NSError *error) {
+    [teleprompterAPI clearCurrentOverlayPromptSlotContentWithCompletion:^(BOOL success, NSError *error) {
         dispatch_async(dispatch_get_main_queue(), ^{
             [weakSelf showLoading:NO];
             if (success) {
@@ -565,23 +565,23 @@
 - (void)toggleSlotButtonTapped:(UIButton *)sender {
     [self showLoading:YES];
     
-    id<AIBudsOverlayPromptAPI> overlayPromptAPI = (id<AIBudsOverlayPromptAPI>)self.device;
+    id<AIBudsTeleprompterAPI> teleprompterAPI = (id<AIBudsTeleprompterAPI>)self.device;
     
-    if (!overlayPromptAPI) {
+    if (!teleprompterAPI) {
         [self showStatus:NSLocalizedString(@"LocKey.OverlayPromptNotSupported", @"Overlay Prompt not supported") error:NO];
         [self showLoading:NO];
         return;
     }
     
-    NSNumber *currentIndex = overlayPromptAPI.overlayPromptSlotIndex;
-    NSNumber *totalSlots = overlayPromptAPI.overlayPromptTotalSlots;
+    NSNumber *currentIndex = teleprompterAPI.overlayPromptSlotIndex;
+    NSNumber *totalSlots = teleprompterAPI.overlayPromptTotalSlots;
     
     NSInteger current = [currentIndex integerValue];
     NSInteger total = [totalSlots integerValue];
     NSInteger nextIndex = (current + 1) % total;
     
     __weak typeof(self) weakSelf = self;
-    [overlayPromptAPI toggleOverlayPromptSlotIndexTo:nextIndex completion:^(BOOL success, NSError *error) {
+    [teleprompterAPI toggleOverlayPromptSlotIndexTo:nextIndex completion:^(BOOL success, NSError *error) {
         dispatch_async(dispatch_get_main_queue(), ^{
             [weakSelf showLoading:NO];
             if (success) {
@@ -599,16 +599,16 @@
     
     [self showLoading:YES];
     
-    id<AIBudsOverlayPromptAPI> overlayPromptAPI = (id<AIBudsOverlayPromptAPI>)self.device;
+    id<AIBudsTeleprompterAPI> teleprompterAPI = (id<AIBudsTeleprompterAPI>)self.device;
     
-    if (!overlayPromptAPI) {
+    if (!teleprompterAPI) {
         [self showStatus:NSLocalizedString(@"LocKey.OverlayPromptNotSupported", @"Overlay Prompt not supported") error:NO];
         [self showLoading:NO];
         return;
     }
     
     __weak typeof(self) weakSelf = self;
-    [overlayPromptAPI setOverlayPromptScrollSpeed:speed completion:^(BOOL success, NSError *error) {
+    [teleprompterAPI setOverlayPromptScrollSpeed:speed completion:^(BOOL success, NSError *error) {
         dispatch_async(dispatch_get_main_queue(), ^{
             [weakSelf showLoading:NO];
             if (success) {

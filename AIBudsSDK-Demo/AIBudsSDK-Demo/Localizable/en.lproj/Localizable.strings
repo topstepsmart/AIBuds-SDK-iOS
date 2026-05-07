@@ -726,11 +726,11 @@
 "LocKey.LogDemoDestinationXLFacility" = "XLFacility";
 "LocKey.LogDemoDestinationChangedToFormat" = "Log destination changed to: %@";
 
-"LocKey.OverlayPromptGroupTitle" = "Overlay Prompt";
-"LocKey.OverlayPromptFeatureTitle" = "Overlay Prompt";
+"LocKey.TeleprompterGroupTitle" = "Teleprompter";
+"LocKey.TeleprompterFeatureTitle" = "Teleprompter";
 
 "LocKey.OverlayPromptDefaultDisplayHint" = "Enter prompt text to preview";
-"LocKey.OverlayPromptInfo" = "Overlay Prompt Info";
+"LocKey.TeleprompterInfo" = "Teleprompter Info";
 "LocKey.OverlayPromptSlotInfoFormat" = "Slot: %@ / %@";
 "LocKey.OverlayPromptSpaceInfoFormat" = "Current Slot (Used Bytes/Total Bytes):  %@/%@";
 "LocKey.OverlayPromptScrollSpeedFormat" = "Scroll Speed: %@ x";
@@ -795,7 +795,7 @@
 "LocKey.DeviceAppsGroupTitle" = "Device Apps";
 "LocKey.DeviceAppsFeatureTitle" = "Device Apps";
 
-"LocKey.AppOverlayPrompt" = "Overlay Prompt";
+"LocKey.AppTeleprompter" = "Teleprompter";
 "LocKey.AppAIChat" = "AI Chat";
 "LocKey.AppNavigation" = "Navigation";
 "LocKey.AppClock" = "Clock";

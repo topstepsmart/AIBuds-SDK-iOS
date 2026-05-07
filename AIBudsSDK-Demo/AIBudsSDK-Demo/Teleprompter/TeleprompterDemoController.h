@@ -1,5 +1,5 @@
 //
-//  OverlayPromptDemoController.h
+//  TeleprompterDemoController.h
 //  AIBudsSDK-Demo
 //
 //  Created by pcjbird on 2026-04-29.
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface OverlayPromptDemoController : FeatureDemoBaseController
+@interface TeleprompterDemoController : FeatureDemoBaseController
 
 @end
 

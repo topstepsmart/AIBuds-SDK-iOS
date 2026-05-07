@@ -19,6 +19,7 @@
 #import <AIBudsMagicHelper/AIBudsMagicHelper-Swift.h>
 #import <AIBudsVoiceAssistant/AIBudsVoiceAssistant-Swift.h>
 #import <AIBudsXLFacility/AIBudsXLFacility-Swift.h>
+#import <AIBudsAllInOne/AIBudsAllInOne-Swift.h>
 #import "AIBudsSDK_Demo-Swift.h"
 #import <iOSLogBrowserSDK/iOSLogBrowserSDK.h>
 #import <XLFacility/XLFacilityMacros.h>
