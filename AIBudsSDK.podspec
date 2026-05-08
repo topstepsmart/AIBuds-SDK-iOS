@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
   # ==================== Basic Information ====================
   # SDK name and version
   s.name         = "AIBudsSDK"
-  s.version      = "1.0.0-beta.5"
+  s.version      = "1.0.0-beta.6"
   s.summary      = "AIBuds SDK - An iOS framework for connecting AI devices"
   s.description  = <<-DESC
                     AIBuds SDK is a versatile framework for connecting iOS apps to AI devices. It provides modular components including core connectivity, Bluetooth management, voice assistant, AI capabilities, logging utilities, and foundation services.

@@ -24,7 +24,6 @@ target 'AIBudsSDK-Demo' do
   # Include common pods
   commonPods
   
-  pod 'XLFacility', git: 'https://github.com/pcjbird/XLFacility.git', :modular_headers => true
   pod 'iOSLogBrowserSDK'
   pod 'Reachability'
   pod 'Popover.OC'
