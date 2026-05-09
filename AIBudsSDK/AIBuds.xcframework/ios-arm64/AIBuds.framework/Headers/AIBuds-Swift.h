@@ -1764,6 +1764,18 @@ SWIFT_PROTOCOL_NAMED("DeviceDelegate")
 /// \param app the app that terminated
 ///
 - (void)device:(id <AIBudsDeviceConvertible> _Nonnull)device didDeviceAppTerminate:(enum AIBudsDeviceApp)app;
+/// Callback when device was found (usually after phone started finding device)
+/// \param device the device
+///
+- (void)deviceDidReportFound:(id <AIBudsDeviceConvertible> _Nonnull)device;
+/// Callback when device requests to start finding phone
+/// \param device the device
+///
+- (void)deviceDidRequestStartFindingPhone:(id <AIBudsDeviceConvertible> _Nonnull)device;
+/// Callback when device requests to stop finding phone
+/// \param device the device
+///
+- (void)deviceDidRequestStopFindingPhone:(id <AIBudsDeviceConvertible> _Nonnull)device;
 @end
 
 /// The protocol for device API that supports equalizer.
@@ -2512,6 +2524,23 @@ SWIFT_PROTOCOL_NAMED("DeviceWorkStateAPI")
 @property (nonatomic, readonly) enum AIBudsWorkState workState;
 @end
 
+/// Protocol for reporting the state of the finding phone.
+SWIFT_PROTOCOL_NAMED("FindPhoneStateReportingAPI")
+@protocol AIBudsFindPhoneStateReportingAPI <AIBudsDeviceAPI>
+/// Notify the device that the user has found the phone already.
+/// \param completion The completion handler to be called when the operation is completed.
+/// <ul>
+///   <li>
+///     success: <code>true</code> if the operation was successful; otherwise <code>false</code>.
+///   </li>
+///   <li>
+///     error: An <code>NSError</code> object that describes the error that occurred, or <code>nil</code> if the operation was successful.
+///   </li>
+/// </ul>
+///
+- (void)notifyPhoneFoundWithCompletion:(AIBudsCompletionHandler _Nullable)completion;
+@end
+
 SWIFT_PROTOCOL_NAMED("FoundDeviceConvertible")
 @protocol AIBudsFoundDeviceConvertible <NSObject>
 /// CBCentralManager instance
@@ -3152,6 +3181,18 @@ SWIFT_PROTOCOL_NAMED("SDKDelegate")
 /// \param app the app that terminated
 ///
 - (void)device:(id <AIBudsDeviceConvertible> _Nonnull)device didDeviceAppTerminate:(enum AIBudsDeviceApp)app;
+/// Callback when device was found (usually after phone started finding device)
+/// \param device the device
+///
+- (void)deviceDidReportFound:(id <AIBudsDeviceConvertible> _Nonnull)device;
+/// Callback when device requests to start finding phone
+/// \param device the device
+///
+- (void)deviceDidRequestStartFindingPhone:(id <AIBudsDeviceConvertible> _Nonnull)device;
+/// Callback when device requests to stop finding phone
+/// \param device the device
+///
+- (void)deviceDidRequestStopFindingPhone:(id <AIBudsDeviceConvertible> _Nonnull)device;
 @end
 
 /// Camera OTA Error Code

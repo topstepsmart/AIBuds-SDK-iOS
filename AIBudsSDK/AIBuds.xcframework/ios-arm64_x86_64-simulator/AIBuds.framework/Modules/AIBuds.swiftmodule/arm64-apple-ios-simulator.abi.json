@@ -10019,6 +10019,102 @@
             ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "deviceDidReportFound",
+            "printedName": "deviceDidReportFound(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DeviceConvertible",
+                "printedName": "any AIBuds.DeviceConvertible",
+                "usr": "c:@M@AIBuds@objc(pl)AIBudsDeviceConvertible"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AIBuds@objc(pl)AIBudsDeviceDelegate(im)deviceDidReportFound:",
+            "mangledName": "$s6AIBuds14DeviceDelegateP20deviceDidReportFoundyyAA0B11Convertible_pF",
+            "moduleName": "AIBuds",
+            "genericSig": "<τ_0_0 where τ_0_0 : AIBuds.DeviceDelegate>",
+            "sugared_genericSig": "<Self where Self : AIBuds.DeviceDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "Optional",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "deviceDidRequestStartFindingPhone",
+            "printedName": "deviceDidRequestStartFindingPhone(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DeviceConvertible",
+                "printedName": "any AIBuds.DeviceConvertible",
+                "usr": "c:@M@AIBuds@objc(pl)AIBudsDeviceConvertible"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AIBuds@objc(pl)AIBudsDeviceDelegate(im)deviceDidRequestStartFindingPhone:",
+            "mangledName": "$s6AIBuds14DeviceDelegateP33deviceDidRequestStartFindingPhoneyyAA0B11Convertible_pF",
+            "moduleName": "AIBuds",
+            "genericSig": "<τ_0_0 where τ_0_0 : AIBuds.DeviceDelegate>",
+            "sugared_genericSig": "<Self where Self : AIBuds.DeviceDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "Optional",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "deviceDidRequestStopFindingPhone",
+            "printedName": "deviceDidRequestStopFindingPhone(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DeviceConvertible",
+                "printedName": "any AIBuds.DeviceConvertible",
+                "usr": "c:@M@AIBuds@objc(pl)AIBudsDeviceConvertible"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AIBuds@objc(pl)AIBudsDeviceDelegate(im)deviceDidRequestStopFindingPhone:",
+            "mangledName": "$s6AIBuds14DeviceDelegateP32deviceDidRequestStopFindingPhoneyyAA0B11Convertible_pF",
+            "moduleName": "AIBuds",
+            "genericSig": "<τ_0_0 where τ_0_0 : AIBuds.DeviceDelegate>",
+            "sugared_genericSig": "<Self where Self : AIBuds.DeviceDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "Optional",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Protocol",
@@ -12740,6 +12836,102 @@
             "declKind": "Func",
             "usr": "c:@M@AIBuds@objc(pl)AIBudsSDKDelegate(im)device:didDeviceAppTerminate:",
             "mangledName": "$s6AIBuds11SDKDelegateP6device_21didDeviceAppTerminateyAA0E11Convertible_p_0A10Foundation0eF0OtF",
+            "moduleName": "AIBuds",
+            "genericSig": "<τ_0_0 where τ_0_0 : AIBuds.SDKDelegate>",
+            "sugared_genericSig": "<Self where Self : AIBuds.SDKDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "Optional",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "deviceDidReportFound",
+            "printedName": "deviceDidReportFound(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DeviceConvertible",
+                "printedName": "any AIBuds.DeviceConvertible",
+                "usr": "c:@M@AIBuds@objc(pl)AIBudsDeviceConvertible"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AIBuds@objc(pl)AIBudsSDKDelegate(im)deviceDidReportFound:",
+            "mangledName": "$s6AIBuds11SDKDelegateP20deviceDidReportFoundyyAA17DeviceConvertible_pF",
+            "moduleName": "AIBuds",
+            "genericSig": "<τ_0_0 where τ_0_0 : AIBuds.SDKDelegate>",
+            "sugared_genericSig": "<Self where Self : AIBuds.SDKDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "Optional",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "deviceDidRequestStartFindingPhone",
+            "printedName": "deviceDidRequestStartFindingPhone(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DeviceConvertible",
+                "printedName": "any AIBuds.DeviceConvertible",
+                "usr": "c:@M@AIBuds@objc(pl)AIBudsDeviceConvertible"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AIBuds@objc(pl)AIBudsSDKDelegate(im)deviceDidRequestStartFindingPhone:",
+            "mangledName": "$s6AIBuds11SDKDelegateP33deviceDidRequestStartFindingPhoneyyAA17DeviceConvertible_pF",
+            "moduleName": "AIBuds",
+            "genericSig": "<τ_0_0 where τ_0_0 : AIBuds.SDKDelegate>",
+            "sugared_genericSig": "<Self where Self : AIBuds.SDKDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "Optional",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "deviceDidRequestStopFindingPhone",
+            "printedName": "deviceDidRequestStopFindingPhone(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DeviceConvertible",
+                "printedName": "any AIBuds.DeviceConvertible",
+                "usr": "c:@M@AIBuds@objc(pl)AIBudsDeviceConvertible"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AIBuds@objc(pl)AIBudsSDKDelegate(im)deviceDidRequestStopFindingPhone:",
+            "mangledName": "$s6AIBuds11SDKDelegateP32deviceDidRequestStopFindingPhoneyyAA17DeviceConvertible_pF",
             "moduleName": "AIBuds",
             "genericSig": "<τ_0_0 where τ_0_0 : AIBuds.SDKDelegate>",
             "sugared_genericSig": "<Self where Self : AIBuds.SDKDelegate>",
@@ -25595,6 +25787,131 @@
         ]
       },
       {
+        "kind": "TypeDecl",
+        "name": "FindPhoneStateReportingAPI",
+        "printedName": "FindPhoneStateReportingAPI",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "notifyPhoneFound",
+            "printedName": "notifyPhoneFound(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Swift.Bool, (any Swift.Error)?) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Bool, (any Swift.Error)?) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(Swift.Bool, (any Swift.Error)?)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Bool",
+                            "printedName": "Swift.Bool",
+                            "usr": "s:Sb"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "(any Swift.Error)?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Error",
+                                "printedName": "any Swift.Error",
+                                "usr": "s:s5ErrorP"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AIBuds@objc(pl)AIBudsFindPhoneStateReportingAPI(im)notifyPhoneFoundWithCompletion:",
+            "mangledName": "$s6AIBuds26FindPhoneStateReportingAPIP06notifyC5FoundyyySb_s5Error_pSgtcSgF",
+            "moduleName": "AIBuds",
+            "genericSig": "<τ_0_0 where τ_0_0 : AIBuds.FindPhoneStateReportingAPI>",
+            "sugared_genericSig": "<Self where Self : AIBuds.FindPhoneStateReportingAPI>",
+            "protocolReq": true,
+            "objc_name": "notifyPhoneFoundWithCompletion:",
+            "declAttributes": [
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "c:@M@AIBuds@objc(pl)AIBudsFindPhoneStateReportingAPI",
+        "mangledName": "$s6AIBuds26FindPhoneStateReportingAPIP",
+        "moduleName": "AIBuds",
+        "genericSig": "<τ_0_0 : AIBuds.DeviceAPI>",
+        "sugared_genericSig": "<Self : AIBuds.DeviceAPI>",
+        "objc_name": "AIBudsFindPhoneStateReportingAPI",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "DeviceAPI",
+            "printedName": "DeviceAPI",
+            "usr": "c:@M@AIBuds@objc(pl)AIBudsDeviceAPI",
+            "mangledName": "$s6AIBuds9DeviceAPIP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AIBuds",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "Import",
         "name": "AIBudsFoundation",
         "printedName": "AIBudsFoundation",
@@ -32617,21 +32934,21 @@
       "kind": "StringLiteral",
       "offset": 481,
       "length": 14,
-      "value": "\"1.0.0-beta.5\""
+      "value": "\"1.0.0-beta.6\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBuds\/AIBuds.swift",
       "kind": "StringLiteral",
       "offset": 611,
       "length": 13,
-      "value": "\"20260508001\""
+      "value": "\"20260509001\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBuds\/AIBuds.swift",
       "kind": "StringLiteral",
       "offset": 726,
       "length": 12,
-      "value": "\"2026-05-08\""
+      "value": "\"2026-05-09\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBuds\/AIBuds.swift",

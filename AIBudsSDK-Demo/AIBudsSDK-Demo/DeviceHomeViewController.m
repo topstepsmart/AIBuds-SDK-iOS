@@ -549,6 +549,19 @@
                     }];
                 }
             }],
+            [DeviceFeatureModel modelWithIcon:@"icon_phone_found" name:NSLocalizedString(@"LocKey.NotifyPhoneFoundFeatureTitle", nil) handler:^{
+                id<AIBudsFindPhoneStateReportingAPI> device = (id<AIBudsFindPhoneStateReportingAPI>)self.device;
+                if([device conformsToProtocol:@protocol(AIBudsFindPhoneStateReportingAPI)]) {
+                    [device notifyPhoneFoundWithCompletion:^(BOOL success, NSError * _Nullable error) {
+                        __strong typeof(self) strongSelf = weakSelf;
+                        if(!strongSelf) return;
+                        NSString* message = success? NSLocalizedString(@"LocKey.NotifyPhoneFoundSuccessMessage", nil) : [NSString stringWithFormat:@"%@\n%@", NSLocalizedString(@"LocKey.NotifyPhoneFoundFailedMessage", nil), error.localizedDescription];
+                        dispatch_async(dispatch_get_main_queue(), ^{
+                            [strongSelf.view makeToast:message duration:3.0 position:CSToastPositionTop];
+                        });
+                    }];
+                }
+            }],
         ]],
         [DeviceFeatureGroupModel modelWithIcon:@"icon_firmware" name:NSLocalizedString(@"LocKey.FirmwareGroupTitle", nil) features:@[
             self.firmwareVersionFeature,

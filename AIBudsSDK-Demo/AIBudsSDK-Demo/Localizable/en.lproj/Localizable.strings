@@ -36,9 +36,10 @@
 "LocKey.SetDeviceLanguageFeatureTitle" = "Set Device Language";
 "LocKey.QueryStorageInfoFeatureTitle" = "Query Storage Info";
 "LocKey.QueryMediaCountInfoFeatureTitle" = "Query Media Count";
-"LocKey.FindFeatureGroupTitle" = "Find Device";
+"LocKey.FindFeatureGroupTitle" = "Find";
 "LocKey.FindDeviceFeatureTitle" = "Find Device";
 "LocKey.StopFindDeviceFeatureTitle" = "Stop Find Device";
+"LocKey.NotifyPhoneFoundFeatureTitle" = "Notify the device that Phone is Found";
 "LocKey.FirmwareGroupTitle" = "Firmware";
 "LocKey.FirmwareVersionFeatureTitle" = "Firmware Version";
 "LocKey.PhysicalOperationsGroupTitle" = "Physical Operations";
@@ -193,6 +194,8 @@
 "LocKey.FindDeviceFailedMessage" = "Find device failed";
 "LocKey.StopFindDeviceSuccessMessage" = "Stop find device successful";
 "LocKey.StopFindDeviceFailedMessage" = "Stop find device failed";
+"LocKey.NotifyPhoneFoundSuccessMessage" = "Successfully notified the device that the phone was found";
+"LocKey.NotifyPhoneFoundFailedMessage" = "Failed to notify the device that the phone was found";
 
 
 

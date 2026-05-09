@@ -282,6 +282,9 @@ extension Foundation.NSNotification.Name {
   @objc optional func device(_ device: any AIBuds.DeviceConvertible, didWearStatusChanged wearStatus: AIBudsFoundation.WearStatus)
   @objc optional func device(_ device: any AIBuds.DeviceConvertible, didDeviceAppLaunch app: AIBudsFoundation.DeviceApp)
   @objc optional func device(_ device: any AIBuds.DeviceConvertible, didDeviceAppTerminate app: AIBudsFoundation.DeviceApp)
+  @objc optional func deviceDidReportFound(_ device: any AIBuds.DeviceConvertible)
+  @objc optional func deviceDidRequestStartFindingPhone(_ device: any AIBuds.DeviceConvertible)
+  @objc optional func deviceDidRequestStopFindingPhone(_ device: any AIBuds.DeviceConvertible)
 }
 @objc(AIBudsSDKDelegate) public protocol SDKDelegate : ObjectiveC.NSObjectProtocol {
   @objc optional func onScanningStatusChanged(_ isScanning: Swift.Bool)
@@ -351,6 +354,9 @@ extension Foundation.NSNotification.Name {
   @objc optional func device(_ device: any AIBuds.DeviceConvertible, didWearStatusChanged wearStatus: AIBudsFoundation.WearStatus)
   @objc optional func device(_ device: any AIBuds.DeviceConvertible, didDeviceAppLaunch app: AIBudsFoundation.DeviceApp)
   @objc optional func device(_ device: any AIBuds.DeviceConvertible, didDeviceAppTerminate app: AIBudsFoundation.DeviceApp)
+  @objc optional func deviceDidReportFound(_ device: any AIBuds.DeviceConvertible)
+  @objc optional func deviceDidRequestStartFindingPhone(_ device: any AIBuds.DeviceConvertible)
+  @objc optional func deviceDidRequestStopFindingPhone(_ device: any AIBuds.DeviceConvertible)
 }
 @objc(AIBudsDeviceBeaconConvertible) public protocol DeviceBeaconConvertible : Foundation.NSSecureCoding, ObjectiveC.NSObjectProtocol {
   @objc var data: Foundation.Data? { get }
@@ -547,6 +553,9 @@ extension Foundation.NSNotification.Name {
 }
 @objc(AIBudsDeviceWorkStateAPI) public protocol DeviceWorkStateAPI : AIBuds.DeviceAPI {
   @objc var workState: AIBudsFoundation.WorkState { get }
+}
+@objc(AIBudsFindPhoneStateReportingAPI) public protocol FindPhoneStateReportingAPI : AIBuds.DeviceAPI {
+  @objc(notifyPhoneFoundWithCompletion:) func notifyPhoneFound(_ completion: AIBuds.AIBudsCompletionHandler?)
 }
 @objc(AIBudsOnDeviceVoiceAssistantAPI) public protocol OnDeviceVoiceAssistantAPI : AIBuds.DeviceAPI {
   @objc var onDeviceVoiceAssistantCapability: AIBudsFoundation.OnDeviceVoiceAssistantCapability { get }

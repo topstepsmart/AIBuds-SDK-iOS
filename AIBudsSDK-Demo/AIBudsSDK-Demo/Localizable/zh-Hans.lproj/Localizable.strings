@@ -38,12 +38,13 @@
 "LocKey.SetDeviceLanguageFeatureTitle" = "设置设备语言";
 "LocKey.QueryStorageInfoFeatureTitle" = "查询存储信息";
 "LocKey.QueryMediaCountInfoFeatureTitle" = "查询媒体文件数量";
-"LocKey.FindFeatureGroupTitle" = "查找设备";
+"LocKey.FindFeatureGroupTitle" = "查找";
 "LocKey.FindDeviceFeatureTitle" = "查找设备";
 "LocKey.StopFindDeviceFeatureTitle" = "停止查找设备";
+"LocKey.NotifyPhoneFoundFeatureTitle" = "通知外设手机已找到";
 "LocKey.FirmwareGroupTitle" = "固件";
 "LocKey.FirmwareVersionFeatureTitle" = "固件版本信息";
-"LocKey.PhysicalOperationsGroupTitle" = "设备操作";
+"LocKey.PhysicalOperationsGroupTitle" = "按键功能";
 "LocKey.PhysicalOperationsMappingFeatureTitle" = "按键功能映射";
 "LocKey.AssignPhysicalOperationsFeatureTitle" = "自定义按键功能";
 "LocKey.ServiceAuthGroupTitle" = "服务授权";
@@ -196,6 +197,8 @@
 "LocKey.FindDeviceFailedMessage" = "查找设备失败";
 "LocKey.StopFindDeviceSuccessMessage" = "停止查找设备成功";
 "LocKey.StopFindDeviceFailedMessage" = "停止查找设备失败";
+"LocKey.NotifyPhoneFoundSuccessMessage" = "成功通知外设手机已找到";
+"LocKey.NotifyPhoneFoundFailedMessage" = "通知外设手机已找到失败";
 
 
 "LocKey.EnterValue" = "请输入数值";

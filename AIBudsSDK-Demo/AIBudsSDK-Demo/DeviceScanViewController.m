@@ -304,14 +304,14 @@
     if (!mData) { return nil; }
     const uint8_t *bytes = mData.bytes;
     NSUInteger len = mData.length;
-    if (len >= 6) {
-        // Heuristic: last 6 bytes as MAC
-        NSMutableString *mac = [NSMutableString string];
-        for (NSInteger i = (NSInteger)len - 6; i < (NSInteger)len; i++) {
-            [mac appendFormat:@"%02X", bytes[i]];
-            if (i < (NSInteger)len - 1) { [mac appendString:@":"]; }
+    if (len >= 11) {
+        uint8_t macBytes[6];
+        for (NSInteger i = 0; i < 6; i++) {
+            macBytes[i] = bytes[5 + i] ^ 0xAD;
         }
-        return mac.copy;
+        return [NSString stringWithFormat:@"%02X:%02X:%02X:%02X:%02X:%02X",
+                macBytes[0], macBytes[1], macBytes[2],
+                macBytes[3], macBytes[4], macBytes[5]];
     }
     return nil;
 }
