@@ -18,8 +18,11 @@ NS_ASSUME_NONNULL_BEGIN
 /// 目标语言,例如zh-CN
 @property (nonatomic, strong) NSString *targetLanguage;
 /// 是否是单语言识别，YES: 只识别设置的sourceLanguage， NO: 自动识别语言
-@property (nonatomic, assign) BOOL isSingleLanguage;
-
+@property (nonatomic, assign) BOOL isSingleLanguage __attribute__((deprecated("No longer supported")));
+/// 是否开启互译，默认开启
+/// 互译开始，比如sourceLanguage是中文 targetLanguage是英文 当输入英文时 回调数据sourceLanguage会是英文 targetLanguage则是中文
+/// 不开启，回调数据中的language和设置的language一致
+@property (nonatomic, assign) BOOL enableTwoWayTranslation;
 @end
 
 NS_ASSUME_NONNULL_END

@@ -7320,6 +7320,31 @@
             ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "initBluetooth",
+            "printedName": "initBluetooth()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AIBuds@objc(pl)AIBudsBleConnectSDK(im)initBluetooth",
+            "mangledName": "$s6AIBuds13BleConnectSDKP13initBluetoothyyF",
+            "moduleName": "AIBuds",
+            "genericSig": "<τ_0_0 where τ_0_0 : AIBuds.BleConnectSDK>",
+            "sugared_genericSig": "<Self where Self : AIBuds.BleConnectSDK>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Protocol",
@@ -32934,21 +32959,21 @@
       "kind": "StringLiteral",
       "offset": 481,
       "length": 14,
-      "value": "\"1.0.0-beta.6\""
+      "value": "\"1.0.0-beta.7\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBuds\/AIBuds.swift",
       "kind": "StringLiteral",
       "offset": 611,
       "length": 13,
-      "value": "\"20260509001\""
+      "value": "\"20260531001\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBuds\/AIBuds.swift",
       "kind": "StringLiteral",
       "offset": 726,
       "length": 12,
-      "value": "\"2026-05-09\""
+      "value": "\"2026-05-31\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBuds\/AIBuds.swift",

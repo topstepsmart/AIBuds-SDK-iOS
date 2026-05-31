@@ -34,7 +34,7 @@
 		</data>
 		<key>Headers/BDMagicHelper.h</key>
 		<data>
-		YnGxFD2nBxN+JSLCswY1dKOXhjQ=
+		Lec6jzOJtbcq1E1GEQaIn7s6cvw=
 		</data>
 		<key>Headers/ChatIntlRequestBody.h</key>
 		<data>
@@ -76,13 +76,17 @@
 		<data>
 		TSdy/ixU6ZH9Neym/GWspHR5j5k=
 		</data>
+		<key>Headers/MagicConversationModels.h</key>
+		<data>
+		IfwHVGV1mHJePOvEJHpZTzTr4lY=
+		</data>
 		<key>Headers/MagicHelper-Swift.h</key>
 		<data>
 		at5ApleD5j7DXstL/KhuChQaQcg=
 		</data>
 		<key>Headers/MagicHelper.h</key>
 		<data>
-		Z2/Gmh8/4eDbYOU9vyH2TnYVSH0=
+		YNePKj0Ahe7IRdpKwH+bR8rfy4A=
 		</data>
 		<key>Headers/MagicHelperError.h</key>
 		<data>
@@ -92,13 +96,25 @@
 		<data>
 		b6vuTdSBGgFH3yKmIgsnyBf8dLY=
 		</data>
+		<key>Headers/MagicPetConfigModels.h</key>
+		<data>
+		5lTvUgXSk2kMgun/aW0U+iRkA2E=
+		</data>
+		<key>Headers/MagicRecognitionSession+Utils.h</key>
+		<data>
+		NEJESlLvvWvs6UfedZgSz2zou58=
+		</data>
 		<key>Headers/MagicRecognitionSession.h</key>
 		<data>
-		K5GMYjJoLcfXUPapk1V2zup9FW0=
+		182ub3YqoYkjdYn5+XnA1/+uChM=
+		</data>
+		<key>Headers/MagicSmartAgentUtil.h</key>
+		<data>
+		9/tq9Nexwg2f3Jf98pQ1Yxmrg9Q=
 		</data>
 		<key>Headers/MagicSmartOptionModel.h</key>
 		<data>
-		KXdbJXh06gUgjKA4hwYPDxe3JU4=
+		yl85C8evorTEtFhyjK5oHYUVirA=
 		</data>
 		<key>Headers/MeetingSummaryRequestBody.h</key>
 		<data>
@@ -126,7 +142,7 @@
 		</data>
 		<key>Headers/SimultInterpretationV2RequestBody.h</key>
 		<data>
-		xNZ+eUXA3W7Llf63kGq2IA1SmDs=
+		RKigGFc4TmvP6wkAiPV3ARgkvFY=
 		</data>
 		<key>Headers/TTSIntlRequestBody.h</key>
 		<data>
@@ -154,7 +170,7 @@
 		</data>
 		<key>Modules/MagicHelper.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		3HMsjO0oVGqITWrpvcFxXohCDBg=
+		7hPO5PRs1lEPpIciRyPauxP/bOI=
 		</data>
 		<key>Modules/MagicHelper.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
@@ -174,7 +190,7 @@
 		</data>
 		<key>Modules/MagicHelper.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		nuH5p8NGqnhT7pIANmrGvGIpGCU=
+		9VH6GW2RY/Bd+WTa4F//uUQKkE0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -264,11 +280,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			YnGxFD2nBxN+JSLCswY1dKOXhjQ=
+			Lec6jzOJtbcq1E1GEQaIn7s6cvw=
 			</data>
 			<key>hash2</key>
 			<data>
-			aZlf/ssggHT0BjBl+uo5jTeBMaFsjPxreP2T2v6QTfA=
+			PU8LToygpY6tJgVxwaZC8O8H35gh7Gr8jpHD243GyPg=
 			</data>
 		</dict>
 		<key>Headers/ChatIntlRequestBody.h</key>
@@ -381,6 +397,17 @@
 			5PWtrhj4MWVtob/wkPWggIERYQu1vso+OM3aG5mnyL0=
 			</data>
 		</dict>
+		<key>Headers/MagicConversationModels.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			IfwHVGV1mHJePOvEJHpZTzTr4lY=
+			</data>
+			<key>hash2</key>
+			<data>
+			O6xNuwtoaekrm1LEnUKi9W6Rlu/zO1VahhmV3z2zZmY=
+			</data>
+		</dict>
 		<key>Headers/MagicHelper-Swift.h</key>
 		<dict>
 			<key>hash</key>
@@ -396,11 +423,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Z2/Gmh8/4eDbYOU9vyH2TnYVSH0=
+			YNePKj0Ahe7IRdpKwH+bR8rfy4A=
 			</data>
 			<key>hash2</key>
 			<data>
-			olGPKuOfPk9JtjgipqFG3MVyeIrs6IHi06o3tpJoejY=
+			sO/Mwpba1mWnDZj9RGIKb5ShWRTdHD6HloeNq3pKRVU=
 			</data>
 		</dict>
 		<key>Headers/MagicHelperError.h</key>
@@ -425,26 +452,59 @@
 			mb8c7l6UMtG3tpQU+Zkmq0/tl6a4B2gJucQJYZQ7MNI=
 			</data>
 		</dict>
+		<key>Headers/MagicPetConfigModels.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			5lTvUgXSk2kMgun/aW0U+iRkA2E=
+			</data>
+			<key>hash2</key>
+			<data>
+			xwbep245f71kKEeJsegi21ZiRJdvG9Mv6JVaB19oIyA=
+			</data>
+		</dict>
+		<key>Headers/MagicRecognitionSession+Utils.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			NEJESlLvvWvs6UfedZgSz2zou58=
+			</data>
+			<key>hash2</key>
+			<data>
+			kOPJplWxn0UWgVMYC7eSN/zc58nFuhtEJO4eZjyOziA=
+			</data>
+		</dict>
 		<key>Headers/MagicRecognitionSession.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			K5GMYjJoLcfXUPapk1V2zup9FW0=
+			182ub3YqoYkjdYn5+XnA1/+uChM=
 			</data>
 			<key>hash2</key>
 			<data>
-			B9Q5PhWqiQyRO8D0glxqzXvDe+E9PAuwX5yP4ZF6UvQ=
+			yeC5oTTlPVGZaUHBUfQxn5CYBwtC4ZKHGHCJIt+3WS4=
+			</data>
+		</dict>
+		<key>Headers/MagicSmartAgentUtil.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			9/tq9Nexwg2f3Jf98pQ1Yxmrg9Q=
+			</data>
+			<key>hash2</key>
+			<data>
+			GDAz1BhW9fB1yV4QSrR3WNCyS4vMqxrCM8qWrN/TjYI=
 			</data>
 		</dict>
 		<key>Headers/MagicSmartOptionModel.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			KXdbJXh06gUgjKA4hwYPDxe3JU4=
+			yl85C8evorTEtFhyjK5oHYUVirA=
 			</data>
 			<key>hash2</key>
 			<data>
-			riwoMdERCQF/m4zWD2ha8tIMVdeKGhnJSWLWTIq4l74=
+			iPKP/MsiJI4npvUuGPYiZLkpRCjZhpDjrqT0ul0j8sw=
 			</data>
 		</dict>
 		<key>Headers/MeetingSummaryRequestBody.h</key>
@@ -517,11 +577,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			xNZ+eUXA3W7Llf63kGq2IA1SmDs=
+			RKigGFc4TmvP6wkAiPV3ARgkvFY=
 			</data>
 			<key>hash2</key>
 			<data>
-			8+rtmzPPhSSCJUwBMyp3ctG41xUiRfA7rwjgfBqN8ns=
+			aOnfsw68YmlrQs/FhEl70vgbdT7d8RPreBnmUPcB85c=
 			</data>
 		</dict>
 		<key>Headers/TTSIntlRequestBody.h</key>
@@ -583,11 +643,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			3HMsjO0oVGqITWrpvcFxXohCDBg=
+			7hPO5PRs1lEPpIciRyPauxP/bOI=
 			</data>
 			<key>hash2</key>
 			<data>
-			X9abce9t+ip/02rMK9pJzHiHov7gYi342ZKeGlG1Ru4=
+			OOrbKhnp/gNuQrP60b4JH/+JwWbNrJ3iaTo21byP8VQ=
 			</data>
 		</dict>
 		<key>Modules/MagicHelper.swiftmodule/arm64-apple-ios.abi.json</key>
@@ -638,11 +698,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			nuH5p8NGqnhT7pIANmrGvGIpGCU=
+			9VH6GW2RY/Bd+WTa4F//uUQKkE0=
 			</data>
 			<key>hash2</key>
 			<data>
-			IiMkL+zi/ujTtXvyeSdNDgO3SROi1STJNEQXkhf1zBA=
+			HaaLz2y2V0d65bxhMPC7MEGYRajbsxLx4hDizZFZ6to=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

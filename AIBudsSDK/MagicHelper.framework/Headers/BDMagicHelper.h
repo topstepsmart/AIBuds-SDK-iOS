@@ -140,7 +140,7 @@ FOUNDATION_EXPORT MagicDeviceType const MagicDeviceEarphone;
 /// TTS流回调
 typedef void(^MGTTSOnAudioChunk)(NSDictionary *chunk);
 ///
-typedef void(^MGCompletionHandler)(NSDictionary * _Nullable result, NSError * _Nullable error);
+typedef void(^MGCompletionHandler)(NSDictionary *result, NSError * _Nullable error);
 
 /// 管理类
 @interface BDMagicHelper : NSObject
@@ -159,8 +159,11 @@ typedef void(^MGCompletionHandler)(NSDictionary * _Nullable result, NSError * _N
 /// 是否开启海外版GPT测试链接， 默认NO
 @property (nonatomic, assign) BOOL isTestIntlGPT;
 
-///
+/// 多模态实例
 @property (nonatomic, strong) MagicRecognitionSession *recognitionSession;
+
+/// 是否支持多模态(初始化SDK接口后有效)
+@property (nonatomic, assign, readonly) BOOL isSupportMultiModelAi;
 
 /// 单例
 + (instancetype)share;
@@ -277,6 +280,10 @@ typedef void(^MGCompletionHandler)(NSDictionary * _Nullable result, NSError * _N
 /// 同声传译v1
 /// 回调见- (void)didReceiveSimultInterpretationResult:(NSDictionary *)result error:(nullable NSError *)error;
 - (nullable IntlAudioInput *)simultInterpretationWithBody:(SimultInterpretationRequestBody *)body;
+
+/// 同声传译v4
+/// 回调见- (void)didReceiveSimultInterpretationResult:(NSDictionary *)result error:(nullable NSError *)error;
+- (nullable IntlAudioInput *)simultInterpretationV4WithBody:(SimultInterpretationV2RequestBody *)body;
 
 /// 会议纪要
 - (void)generateSummaryWithBody:(MeetingSummaryRequestBody *)body;

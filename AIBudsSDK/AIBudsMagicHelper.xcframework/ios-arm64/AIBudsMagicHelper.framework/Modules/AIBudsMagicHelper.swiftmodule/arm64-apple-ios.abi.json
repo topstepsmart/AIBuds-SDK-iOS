@@ -7325,6 +7325,48 @@
           },
           {
             "kind": "Var",
+            "name": "streamingVoicePlayerStartFailed",
+            "printedName": "streamingVoicePlayerStartFailed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AIBudsMagicHelper.SdkErrorCode.Type) -> AIBudsMagicHelper.SdkErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SdkErrorCode",
+                    "printedName": "AIBudsMagicHelper.SdkErrorCode",
+                    "usr": "c:@M@AIBudsMagicHelper@E@AIBudsMagicHelperSdkErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AIBudsMagicHelper.SdkErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SdkErrorCode",
+                        "printedName": "AIBudsMagicHelper.SdkErrorCode",
+                        "usr": "c:@M@AIBudsMagicHelper@E@AIBudsMagicHelperSdkErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AIBudsMagicHelper@E@AIBudsMagicHelperSdkErrorCode@AIBudsMagicHelperSdkErrorCodeStreamingVoicePlayerStartFailed",
+            "mangledName": "$s17AIBudsMagicHelper12SdkErrorCodeO31streamingVoicePlayerStartFailedyA2CmF",
+            "moduleName": "AIBudsMagicHelper",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 26
+          },
+          {
+            "kind": "Var",
             "name": "generateSummaryFailed",
             "printedName": "generateSummaryFailed",
             "children": [
@@ -7363,7 +7405,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 26
+            "fixedbinaryorder": 27
           },
           {
             "kind": "Var",
@@ -7405,7 +7447,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 27
+            "fixedbinaryorder": 28
           },
           {
             "kind": "Var",
@@ -7447,7 +7489,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 28
+            "fixedbinaryorder": 29
           },
           {
             "kind": "Var",
@@ -7489,7 +7531,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 29
+            "fixedbinaryorder": 30
           },
           {
             "kind": "Var",
@@ -7531,7 +7573,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 30
+            "fixedbinaryorder": 31
           },
           {
             "kind": "Var",
@@ -7573,7 +7615,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 31
+            "fixedbinaryorder": 32
           },
           {
             "kind": "Var",
@@ -7615,7 +7657,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 32
+            "fixedbinaryorder": 33
           },
           {
             "kind": "Var",
@@ -7657,7 +7699,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 33
+            "fixedbinaryorder": 34
           },
           {
             "kind": "Var",
@@ -7699,7 +7741,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 34
+            "fixedbinaryorder": 35
           },
           {
             "kind": "Var",
@@ -7741,7 +7783,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 35
+            "fixedbinaryorder": 36
           },
           {
             "kind": "Var",
@@ -7783,7 +7825,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 36
+            "fixedbinaryorder": 37
           },
           {
             "kind": "Var",
@@ -7825,7 +7867,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 37
+            "fixedbinaryorder": 38
           },
           {
             "kind": "Var",
@@ -7867,7 +7909,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 38
+            "fixedbinaryorder": 39
           },
           {
             "kind": "Var",
@@ -7909,7 +7951,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 39
+            "fixedbinaryorder": 40
           },
           {
             "kind": "Var",
@@ -7951,7 +7993,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 40
+            "fixedbinaryorder": 41
           },
           {
             "kind": "Var",
@@ -7993,12 +8035,12 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 41
+            "fixedbinaryorder": 42
           },
           {
             "kind": "Var",
-            "name": "asrErrorWithSingleWordUnrecognizedDuringAIChatSession",
-            "printedName": "asrErrorWithSingleWordUnrecognizedDuringAIChatSession",
+            "name": "asrErrorWithSingleWordUnrecognized",
+            "printedName": "asrErrorWithSingleWordUnrecognized",
             "children": [
               {
                 "kind": "TypeFunc",
@@ -8028,14 +8070,14 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "c:@M@AIBudsMagicHelper@E@AIBudsMagicHelperSdkErrorCode@AIBudsMagicHelperSdkErrorCodeAsrErrorWithSingleWordUnrecognizedDuringAIChatSession",
-            "mangledName": "$s17AIBudsMagicHelper12SdkErrorCodeO03asrE45WithSingleWordUnrecognizedDuringAIChatSessionyA2CmF",
+            "usr": "c:@M@AIBudsMagicHelper@E@AIBudsMagicHelperSdkErrorCode@AIBudsMagicHelperSdkErrorCodeAsrErrorWithSingleWordUnrecognized",
+            "mangledName": "$s17AIBudsMagicHelper12SdkErrorCodeO03asrE26WithSingleWordUnrecognizedyA2CmF",
             "moduleName": "AIBudsMagicHelper",
             "declAttributes": [
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 42
+            "fixedbinaryorder": 43
           },
           {
             "kind": "Var",
@@ -8077,7 +8119,49 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 43
+            "fixedbinaryorder": 44
+          },
+          {
+            "kind": "Var",
+            "name": "aiChatSessionConfigInternalError",
+            "printedName": "aiChatSessionConfigInternalError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AIBudsMagicHelper.SdkErrorCode.Type) -> AIBudsMagicHelper.SdkErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SdkErrorCode",
+                    "printedName": "AIBudsMagicHelper.SdkErrorCode",
+                    "usr": "c:@M@AIBudsMagicHelper@E@AIBudsMagicHelperSdkErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AIBudsMagicHelper.SdkErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SdkErrorCode",
+                        "printedName": "AIBudsMagicHelper.SdkErrorCode",
+                        "usr": "c:@M@AIBudsMagicHelper@E@AIBudsMagicHelperSdkErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AIBudsMagicHelper@E@AIBudsMagicHelperSdkErrorCode@AIBudsMagicHelperSdkErrorCodeAiChatSessionConfigInternalError",
+            "mangledName": "$s17AIBudsMagicHelper12SdkErrorCodeO027aiChatSessionConfigInternalE0yA2CmF",
+            "moduleName": "AIBudsMagicHelper",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 45
           },
           {
             "kind": "Var",
@@ -8119,7 +8203,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 44
+            "fixedbinaryorder": 46
           },
           {
             "kind": "Var",
@@ -8161,7 +8245,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 45
+            "fixedbinaryorder": 47
           },
           {
             "kind": "Var",
@@ -8203,7 +8287,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 46
+            "fixedbinaryorder": 48
           },
           {
             "kind": "Var",
@@ -8245,7 +8329,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 47
+            "fixedbinaryorder": 49
           },
           {
             "kind": "Var",
@@ -8287,7 +8371,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 48
+            "fixedbinaryorder": 50
           },
           {
             "kind": "Var",
@@ -8329,7 +8413,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 49
+            "fixedbinaryorder": 51
           },
           {
             "kind": "Var",
@@ -8371,7 +8455,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 50
+            "fixedbinaryorder": 52
           },
           {
             "kind": "Var",
@@ -8413,7 +8497,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 51
+            "fixedbinaryorder": 53
           },
           {
             "kind": "Var",
@@ -8455,7 +8539,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 52
+            "fixedbinaryorder": 54
           },
           {
             "kind": "Var",
@@ -8497,7 +8581,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 53
+            "fixedbinaryorder": 55
           },
           {
             "kind": "Var",
@@ -8539,7 +8623,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 54
+            "fixedbinaryorder": 56
           },
           {
             "kind": "Var",
@@ -8581,7 +8665,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 55
+            "fixedbinaryorder": 57
           },
           {
             "kind": "Constructor",
@@ -8971,7 +9055,7 @@
           {
             "kind": "Function",
             "name": "startAIAudioRecording",
-            "printedName": "startAIAudioRecording(_:onStartSuccess:onStartFailure:onTranscript:onError:onFinish:)",
+            "printedName": "startAIAudioRecording(_:onStartSuccess:onStartFailure:onTranscript:onEvent:onError:onFinish:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -9069,6 +9153,33 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
+                "printedName": "((AIBudsAI.AIAudioRecordingEventModel) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(AIBudsAI.AIAudioRecordingEventModel) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AIAudioRecordingEventModel",
+                        "printedName": "AIBudsAI.AIAudioRecordingEventModel",
+                        "usr": "c:@M@AIBudsAI@objc(cs)AIBudsAIAudioRecordingEventModel"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
                 "printedName": "((Foundation.NSError) -> ())?",
                 "children": [
                   {
@@ -9122,10 +9233,10 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@AIBudsMagicHelper@objc(cs)AIBudsMltCloudAIAudioRecordingService(im)startAIAudioRecordingWithConfig:onStartSuccess:onStartFailure:onTranscript:onError:onFinish:",
-            "mangledName": "$s17AIBudsMagicHelper31MltCloudAIAudioRecordingServiceC05startfG0_14onStartSuccess0jK7Failure0J10Transcript0J5Error0J6Finishy0A12AIFoundation0fG13SessionConfigC_y0A2AI0fgR11Convertible_pcSgys0O0_pcSgyAJ20StreamSpeechASRModelCcSgySo7NSErrorCcSgyAM0fG11ReportModelCcSgtF",
+            "usr": "c:@M@AIBudsMagicHelper@objc(cs)AIBudsMltCloudAIAudioRecordingService(im)startAIAudioRecordingWithConfig:onStartSuccess:onStartFailure:onTranscript:onEvent:onError:onFinish:",
+            "mangledName": "$s17AIBudsMagicHelper31MltCloudAIAudioRecordingServiceC05startfG0_14onStartSuccess0jK7Failure0J10Transcript0J5Event0J5Error0J6Finishy0A12AIFoundation0fG13SessionConfigC_y0A2AI0fgS11Convertible_pcSgys0P0_pcSgyAK20StreamSpeechASRModelCcSgyAN0fgO5ModelCcSgySo7NSErrorCcSgyAN0fg6ReportZ0CcSgtF",
             "moduleName": "AIBudsMagicHelper",
-            "objc_name": "startAIAudioRecordingWithConfig:onStartSuccess:onStartFailure:onTranscript:onError:onFinish:",
+            "objc_name": "startAIAudioRecordingWithConfig:onStartSuccess:onStartFailure:onTranscript:onEvent:onError:onFinish:",
             "declAttributes": [
               "Final",
               "AccessControl",
@@ -11650,7 +11761,7 @@
           {
             "kind": "Function",
             "name": "startSimultaneousInterpretation",
-            "printedName": "startSimultaneousInterpretation(config:onStartSuccess:onStartFailure:onStopByInterruption:onException:streamResultHandler:onFinish:)",
+            "printedName": "startSimultaneousInterpretation(config:onStartSuccess:onStartFailure:onStopByInterruption:onException:streamResultHandler:onEvent:onFinish:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -11845,6 +11956,33 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
+                "printedName": "((AIBudsAI.SimultaneousInterpretationEventModel) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(AIBudsAI.SimultaneousInterpretationEventModel) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SimultaneousInterpretationEventModel",
+                        "printedName": "AIBudsAI.SimultaneousInterpretationEventModel",
+                        "usr": "c:@M@AIBudsAI@objc(cs)AIBudsSimultaneousInterpretationEventModel"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
                 "printedName": "((AIBudsAI.SimultaneousInterpretationReportModel) -> ())?",
                 "children": [
                   {
@@ -11871,10 +12009,10 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@AIBudsMagicHelper@objc(cs)AIBudsMltCloudSimultaneousInterpretationService(im)startSimultaneousInterpretationWithConfig:onStartSuccess:onStartFailure:onStopByInterruption:onException:onStreamResultHandler:onFinish:",
-            "mangledName": "$s17AIBudsMagicHelper41MltCloudSimultaneousInterpretationServiceC05startfG06config14onStartSuccess0kL7Failure0K18StopByInterruption0K9Exception19streamResultHandler0K6Finishy0A12AIFoundation0fG6ConfigC_y0A2AI0fG18SessionConvertible_pcSgySo7NSErrorCcSgyASSgcSgATySb_AL0fG9DataModelCSgs5Error_pSgtcSgyAO0fG11ReportModelCcSgtF",
+            "usr": "c:@M@AIBudsMagicHelper@objc(cs)AIBudsMltCloudSimultaneousInterpretationService(im)startSimultaneousInterpretationWithConfig:onStartSuccess:onStartFailure:onStopByInterruption:onException:onStreamResultHandler:onEvent:onFinish:",
+            "mangledName": "$s17AIBudsMagicHelper41MltCloudSimultaneousInterpretationServiceC05startfG06config14onStartSuccess0kL7Failure0K18StopByInterruption0K9Exception19streamResultHandler0K5Event0K6Finishy0A12AIFoundation0fG6ConfigC_y0A2AI0fG18SessionConvertible_pcSgySo7NSErrorCcSgyATSgcSgAUySb_AM0fG9DataModelCSgs5Error_pSgtcSgyAP0fgV5ModelCcSgyAP0fG11ReportModelCcSgtF",
             "moduleName": "AIBudsMagicHelper",
-            "objc_name": "startSimultaneousInterpretationWithConfig:onStartSuccess:onStartFailure:onStopByInterruption:onException:onStreamResultHandler:onFinish:",
+            "objc_name": "startSimultaneousInterpretationWithConfig:onStartSuccess:onStartFailure:onStopByInterruption:onException:onStreamResultHandler:onEvent:onFinish:",
             "declAttributes": [
               "Final",
               "ObjC",
@@ -11901,8 +12039,8 @@
             "objc_name": "stopSimultaneousInterpretation",
             "declAttributes": [
               "Final",
-              "ObjC",
               "AccessControl",
+              "ObjC",
               "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
@@ -12092,55 +12230,6 @@
           },
           {
             "kind": "Var",
-            "name": "isRecordingInternally",
-            "printedName": "isRecordingInternally",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@AIBudsMagicHelper@objc(cs)AIBudsMltCloudSimultaneousInterpretationSession(py)isRecordingInternally",
-            "mangledName": "$s17AIBudsMagicHelper41MltCloudSimultaneousInterpretationSessionC21isRecordingInternallySbvp",
-            "moduleName": "AIBudsMagicHelper",
-            "objc_name": "isRecordingInternally",
-            "declAttributes": [
-              "Final",
-              "ObjC",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@AIBudsMagicHelper@objc(cs)AIBudsMltCloudSimultaneousInterpretationSession(im)isRecordingInternally",
-                "mangledName": "$s17AIBudsMagicHelper41MltCloudSimultaneousInterpretationSessionC21isRecordingInternallySbvg",
-                "moduleName": "AIBudsMagicHelper",
-                "objc_name": "isRecordingInternally",
-                "declAttributes": [
-                  "Final",
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
             "name": "sessionCfg",
             "printedName": "sessionCfg",
             "children": [
@@ -12184,6 +12273,55 @@
                 "moduleName": "AIBudsMagicHelper",
                 "implicit": true,
                 "objc_name": "sessionCfg",
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isRecordingInternally",
+            "printedName": "isRecordingInternally",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBudsMagicHelper@objc(cs)AIBudsMltCloudSimultaneousInterpretationSession(py)isRecordingInternally",
+            "mangledName": "$s17AIBudsMagicHelper41MltCloudSimultaneousInterpretationSessionC21isRecordingInternallySbvp",
+            "moduleName": "AIBudsMagicHelper",
+            "objc_name": "isRecordingInternally",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsMagicHelper@objc(cs)AIBudsMltCloudSimultaneousInterpretationSession(im)isRecordingInternally",
+                "mangledName": "$s17AIBudsMagicHelper41MltCloudSimultaneousInterpretationSessionC21isRecordingInternallySbvg",
+                "moduleName": "AIBudsMagicHelper",
+                "objc_name": "isRecordingInternally",
                 "declAttributes": [
                   "Final",
                   "ObjC"
@@ -12417,6 +12555,78 @@
                 "accessorKind": "get"
               }
             ]
+          },
+          {
+            "kind": "Function",
+            "name": "appendInt16PCM",
+            "printedName": "appendInt16PCM(_:isFinal:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AIBudsMagicHelper@objc(cs)AIBudsMltCloudSimultaneousInterpretationSession(im)appendInt16PCM:isFinal:",
+            "mangledName": "$s17AIBudsMagicHelper41MltCloudSimultaneousInterpretationSessionC14appendInt16PCM_7isFinaly10Foundation4DataV_SbtF",
+            "moduleName": "AIBudsMagicHelper",
+            "objc_name": "appendInt16PCM:isFinal:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "appendAudioPCMBuffer",
+            "printedName": "appendAudioPCMBuffer(_:isFinal:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AVAudioPCMBuffer",
+                "printedName": "AVFAudio.AVAudioPCMBuffer",
+                "usr": "c:objc(cs)AVAudioPCMBuffer"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AIBudsMagicHelper@objc(cs)AIBudsMltCloudSimultaneousInterpretationSession(im)appendAudioPCMBuffer:isFinal:",
+            "mangledName": "$s17AIBudsMagicHelper41MltCloudSimultaneousInterpretationSessionC20appendAudioPCMBuffer_7isFinalySo07AVAudioK0C_SbtF",
+            "moduleName": "AIBudsMagicHelper",
+            "objc_name": "appendAudioPCMBuffer:isFinal:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
           },
           {
             "kind": "Constructor",
@@ -14928,210 +15138,224 @@
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/Errors.swift",
       "kind": "IntegerLiteral",
-      "offset": 11219,
+      "offset": 11245,
+      "length": 4,
+      "value": "1007"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/Errors.swift",
+      "kind": "IntegerLiteral",
+      "offset": 11316,
       "length": 4,
       "value": "3001"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/Errors.swift",
       "kind": "IntegerLiteral",
-      "offset": 11337,
+      "offset": 11434,
       "length": 4,
       "value": "4001"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/Errors.swift",
       "kind": "IntegerLiteral",
-      "offset": 11399,
+      "offset": 11496,
       "length": 4,
       "value": "4002"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/Errors.swift",
       "kind": "IntegerLiteral",
-      "offset": 11567,
+      "offset": 11664,
       "length": 4,
       "value": "5001"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/Errors.swift",
       "kind": "IntegerLiteral",
-      "offset": 11768,
+      "offset": 11865,
       "length": 4,
       "value": "5002"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/Errors.swift",
       "kind": "IntegerLiteral",
-      "offset": 11916,
+      "offset": 12013,
       "length": 4,
       "value": "5003"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/Errors.swift",
       "kind": "IntegerLiteral",
-      "offset": 12036,
+      "offset": 12133,
       "length": 4,
       "value": "5004"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/Errors.swift",
       "kind": "IntegerLiteral",
-      "offset": 12161,
+      "offset": 12258,
       "length": 4,
       "value": "5005"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/Errors.swift",
       "kind": "IntegerLiteral",
-      "offset": 12298,
+      "offset": 12395,
       "length": 4,
       "value": "5006"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/Errors.swift",
       "kind": "IntegerLiteral",
-      "offset": 12434,
+      "offset": 12531,
       "length": 4,
       "value": "5007"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/Errors.swift",
       "kind": "IntegerLiteral",
-      "offset": 12553,
+      "offset": 12650,
       "length": 4,
       "value": "5008"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/Errors.swift",
       "kind": "IntegerLiteral",
-      "offset": 12697,
+      "offset": 12794,
       "length": 4,
       "value": "6001"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/Errors.swift",
       "kind": "IntegerLiteral",
-      "offset": 12797,
+      "offset": 12894,
       "length": 4,
       "value": "6002"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/Errors.swift",
       "kind": "IntegerLiteral",
-      "offset": 12909,
+      "offset": 13006,
       "length": 4,
       "value": "6003"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/Errors.swift",
       "kind": "IntegerLiteral",
-      "offset": 13024,
+      "offset": 13121,
       "length": 4,
       "value": "6004"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/Errors.swift",
       "kind": "IntegerLiteral",
-      "offset": 13122,
+      "offset": 13219,
       "length": 4,
       "value": "6005"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/Errors.swift",
       "kind": "IntegerLiteral",
-      "offset": 13264,
+      "offset": 13342,
       "length": 4,
       "value": "6006"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/Errors.swift",
       "kind": "IntegerLiteral",
-      "offset": 13371,
+      "offset": 13449,
       "length": 4,
       "value": "6007"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/Errors.swift",
       "kind": "IntegerLiteral",
-      "offset": 13538,
+      "offset": 13549,
+      "length": 4,
+      "value": "6008"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/Errors.swift",
+      "kind": "IntegerLiteral",
+      "offset": 13716,
       "length": 4,
       "value": "7001"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/Errors.swift",
       "kind": "IntegerLiteral",
-      "offset": 13648,
+      "offset": 13826,
       "length": 4,
       "value": "7002"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/Errors.swift",
       "kind": "IntegerLiteral",
-      "offset": 13770,
+      "offset": 13948,
       "length": 4,
       "value": "7003"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/Errors.swift",
       "kind": "IntegerLiteral",
-      "offset": 13891,
+      "offset": 14069,
       "length": 4,
       "value": "7004"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/Errors.swift",
       "kind": "IntegerLiteral",
-      "offset": 13995,
+      "offset": 14173,
       "length": 4,
       "value": "7005"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/Errors.swift",
       "kind": "IntegerLiteral",
-      "offset": 14134,
+      "offset": 14312,
       "length": 4,
       "value": "8001"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/Errors.swift",
       "kind": "IntegerLiteral",
-      "offset": 14262,
+      "offset": 14440,
       "length": 4,
       "value": "8002"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/Errors.swift",
       "kind": "IntegerLiteral",
-      "offset": 14359,
+      "offset": 14537,
       "length": 4,
       "value": "8003"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/Errors.swift",
       "kind": "IntegerLiteral",
-      "offset": 14468,
+      "offset": 14646,
       "length": 4,
       "value": "8004"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/Errors.swift",
       "kind": "IntegerLiteral",
-      "offset": 14580,
+      "offset": 14758,
       "length": 4,
       "value": "8005"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/Errors.swift",
       "kind": "IntegerLiteral",
-      "offset": 14675,
+      "offset": 14853,
       "length": 4,
       "value": "8006"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/Errors.swift",
       "kind": "IntegerLiteral",
-      "offset": 14782,
+      "offset": 14960,
       "length": 4,
       "value": "9999"
     },
@@ -15488,119 +15712,147 @@
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudAIAudioRecordingService.swift",
       "kind": "StringLiteral",
-      "offset": 818,
+      "offset": 809,
+      "length": 67,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudAIAudioRecordingService.swift",
+      "kind": "StringLiteral",
+      "offset": 834,
+      "length": 1,
+      "value": "\".ai-auidio-recording.event.dispatch.queue\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudAIAudioRecordingService.swift",
+      "kind": "StringLiteral",
+      "offset": 1031,
       "length": 78,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudAIAudioRecordingService.swift",
       "kind": "StringLiteral",
-      "offset": 843,
+      "offset": 1056,
       "length": 1,
       "value": "\".ai_audio_recording.speech_input_data.dispatch.queue\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudAIAudioRecordingService.swift",
       "kind": "StringLiteral",
-      "offset": 1113,
+      "offset": 1326,
       "length": 21,
       "value": "\"yyyy-MM-dd_HH-mm-ss\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudAIAudioRecordingService.swift",
       "kind": "StringLiteral",
-      "offset": 1181,
+      "offset": 1394,
       "length": 13,
       "value": "\"en_US_POSIX\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudAIAudioRecordingService.swift",
       "kind": "StringLiteral",
-      "offset": 1444,
+      "offset": 1657,
       "length": 28,
       "value": "\"\/audios\/ai_audio_recording\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudAIAudioRecordingService.swift",
       "kind": "BooleanLiteral",
-      "offset": 1574,
+      "offset": 1787,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudAIAudioRecordingService.swift",
       "kind": "StringLiteral",
-      "offset": 1600,
+      "offset": 1813,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudAIAudioRecordingService.swift",
       "kind": "BooleanLiteral",
-      "offset": 1922,
+      "offset": 2135,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudAIAudioRecordingService.swift",
       "kind": "StringLiteral",
-      "offset": 2011,
+      "offset": 2224,
       "length": 74,
       "value": "\"Error creating ai audio recording related audio root directory: \""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudAIAudioRecordingService.swift",
       "kind": "StringLiteral",
-      "offset": 2084,
+      "offset": 2297,
       "length": 3,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudAIAudioRecordingService.swift",
       "kind": "BooleanLiteral",
-      "offset": 2204,
+      "offset": 2417,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudAIAudioRecordingService.swift",
       "kind": "IntegerLiteral",
-      "offset": 2350,
+      "offset": 2563,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudAIAudioRecordingService.swift",
       "kind": "IntegerLiteral",
-      "offset": 2428,
+      "offset": 2641,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudAIAudioRecordingService.swift",
       "kind": "BooleanLiteral",
-      "offset": 2826,
+      "offset": 3172,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudAIAudioRecordingService.swift",
       "kind": "BooleanLiteral",
-      "offset": 2961,
+      "offset": 3307,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudAIAudioRecordingService.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3623,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudAIAudioRecordingService.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5260,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudAIAudioRecordingService.swift",
       "kind": "BooleanLiteral",
-      "offset": 4209,
+      "offset": 21453,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudAIAudioRecordingService.swift",
       "kind": "BooleanLiteral",
-      "offset": 14131,
+      "offset": 25874,
       "length": 5,
       "value": "false"
     },
@@ -15614,161 +15866,175 @@
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudAIChatService.swift",
       "kind": "StringLiteral",
-      "offset": 10830,
+      "offset": 10867,
       "length": 39,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudAIChatService.swift",
       "kind": "StringLiteral",
-      "offset": 10855,
+      "offset": 10892,
       "length": 1,
       "value": "\".aichat.queue\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudAIChatService.swift",
       "kind": "StringLiteral",
-      "offset": 11000,
+      "offset": 11037,
       "length": 54,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudAIChatService.swift",
       "kind": "StringLiteral",
-      "offset": 11025,
+      "offset": 11062,
       "length": 1,
       "value": "\".aichat.event.dispatch.queue\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudAIChatService.swift",
       "kind": "StringLiteral",
-      "offset": 11205,
+      "offset": 11242,
       "length": 66,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudAIChatService.swift",
       "kind": "StringLiteral",
-      "offset": 11230,
+      "offset": 11267,
       "length": 1,
       "value": "\".aichat.speech_input_data.dispatch.queue\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudAIChatService.swift",
       "kind": "StringLiteral",
-      "offset": 11408,
+      "offset": 11445,
       "length": 51,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudAIChatService.swift",
       "kind": "StringLiteral",
-      "offset": 11433,
+      "offset": 11470,
       "length": 1,
       "value": "\".aichat.safe.access.queue\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudAIChatService.swift",
       "kind": "StringLiteral",
-      "offset": 11676,
+      "offset": 11640,
+      "length": 58,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudAIChatService.swift",
+      "kind": "StringLiteral",
+      "offset": 11665,
+      "length": 1,
+      "value": "\".aichat.segment_audio.save.queue\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudAIChatService.swift",
+      "kind": "StringLiteral",
+      "offset": 11908,
       "length": 25,
       "value": "\"yyyy-MM-dd HH:mm:ss.SSS\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudAIChatService.swift",
       "kind": "StringLiteral",
-      "offset": 11748,
+      "offset": 11980,
       "length": 13,
       "value": "\"en_US_POSIX\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudAIChatService.swift",
       "kind": "StringLiteral",
-      "offset": 11996,
+      "offset": 12228,
       "length": 21,
       "value": "\"yyyy-MM-dd_HH-mm-ss\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudAIChatService.swift",
       "kind": "StringLiteral",
-      "offset": 12064,
+      "offset": 12296,
       "length": 13,
       "value": "\"en_US_POSIX\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudAIChatService.swift",
       "kind": "StringLiteral",
-      "offset": 12336,
+      "offset": 12568,
       "length": 17,
       "value": "\"\/audios\/ai_chat\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudAIChatService.swift",
       "kind": "BooleanLiteral",
-      "offset": 12455,
+      "offset": 12687,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudAIChatService.swift",
       "kind": "StringLiteral",
-      "offset": 12481,
+      "offset": 12713,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudAIChatService.swift",
       "kind": "BooleanLiteral",
-      "offset": 12803,
+      "offset": 13035,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudAIChatService.swift",
       "kind": "StringLiteral",
-      "offset": 12892,
+      "offset": 13124,
       "length": 55,
       "value": "\"Error creating ai chat audio root directory: \""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudAIChatService.swift",
       "kind": "StringLiteral",
-      "offset": 12946,
+      "offset": 13178,
       "length": 3,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudAIChatService.swift",
       "kind": "IntegerLiteral",
-      "offset": 13057,
+      "offset": 13289,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudAIChatService.swift",
       "kind": "BooleanLiteral",
-      "offset": 14595,
+      "offset": 15585,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudAIChatService.swift",
       "kind": "BooleanLiteral",
-      "offset": 14730,
+      "offset": 15720,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudAIChatService.swift",
       "kind": "BooleanLiteral",
-      "offset": 62457,
+      "offset": 69647,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudAIChatService.swift",
       "kind": "BooleanLiteral",
-      "offset": 65011,
+      "offset": 72201,
       "length": 4,
       "value": "true"
     },
@@ -15790,7 +16056,7 @@
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudSimultaneousInterpretationService.swift",
       "kind": "StringLiteral",
       "offset": 885,
-      "length": 87,
+      "length": 75,
       "value": "\"\""
     },
     {
@@ -15798,91 +16064,133 @@
       "kind": "StringLiteral",
       "offset": 910,
       "length": 1,
+      "value": "\".simultaneous_interpretation.event.dispatch.queue\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudSimultaneousInterpretationService.swift",
+      "kind": "StringLiteral",
+      "offset": 1113,
+      "length": 74,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudSimultaneousInterpretationService.swift",
+      "kind": "StringLiteral",
+      "offset": 1138,
+      "length": 1,
+      "value": "\".simultaneous_interpretation.stream_player.queue\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudSimultaneousInterpretationService.swift",
+      "kind": "StringLiteral",
+      "offset": 1342,
+      "length": 87,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudSimultaneousInterpretationService.swift",
+      "kind": "StringLiteral",
+      "offset": 1367,
+      "length": 1,
       "value": "\".simultaneous_interpretation.speech_input_data.dispatch.queue\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudSimultaneousInterpretationService.swift",
       "kind": "StringLiteral",
-      "offset": 1189,
+      "offset": 1646,
       "length": 21,
       "value": "\"yyyy-MM-dd_HH-mm-ss\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudSimultaneousInterpretationService.swift",
       "kind": "StringLiteral",
-      "offset": 1257,
+      "offset": 1714,
       "length": 13,
       "value": "\"en_US_POSIX\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudSimultaneousInterpretationService.swift",
       "kind": "StringLiteral",
-      "offset": 1529,
+      "offset": 1986,
       "length": 37,
       "value": "\"\/audios\/simultaneous_interpretation\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudSimultaneousInterpretationService.swift",
       "kind": "BooleanLiteral",
-      "offset": 1668,
+      "offset": 2125,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudSimultaneousInterpretationService.swift",
       "kind": "StringLiteral",
-      "offset": 1694,
+      "offset": 2151,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudSimultaneousInterpretationService.swift",
       "kind": "BooleanLiteral",
-      "offset": 2016,
+      "offset": 2473,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudSimultaneousInterpretationService.swift",
       "kind": "StringLiteral",
-      "offset": 2105,
+      "offset": 2562,
       "length": 75,
       "value": "\"Error creating simultaneous interpretation audio root directory: \""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudSimultaneousInterpretationService.swift",
       "kind": "StringLiteral",
-      "offset": 2179,
+      "offset": 2636,
       "length": 3,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudSimultaneousInterpretationService.swift",
       "kind": "BooleanLiteral",
-      "offset": 2851,
+      "offset": 3590,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudSimultaneousInterpretationService.swift",
       "kind": "BooleanLiteral",
-      "offset": 2986,
+      "offset": 3725,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudSimultaneousInterpretationService.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4041,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudSimultaneousInterpretationService.swift",
+      "kind": "BooleanLiteral",
+      "offset": 8476,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudSimultaneousInterpretationService.swift",
+      "kind": "BooleanLiteral",
+      "offset": 26484,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudSimultaneousInterpretationService.swift",
       "kind": "BooleanLiteral",
-      "offset": 4171,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudSimultaneousInterpretationSession.swift",
-      "kind": "BooleanLiteral",
-      "offset": 860,
-      "length": 4,
-      "value": "true"
+      "offset": 26647,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudStreamingASRService.swift",

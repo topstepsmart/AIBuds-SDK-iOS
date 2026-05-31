@@ -177,7 +177,7 @@
 "LocKey.MaxPauseDuration" = "最大停顿时长";
 "LocKey.AutoEndSessionDuration" = "自动结束对话时长";
 "LocKey.VoiceBroadcast" = "语音播报";
-"LocKey.SaveInputVoiceForDebugging" = "保存语音用于调试";
+"LocKey.SaveVoiceForDebugging" = "保存语音用于调试";
 
 "LocKey.FactoryResetSuccessMessage" = "重置出厂设置成功";
 "LocKey.FactoryResetFailedMessage" = "重置出厂设置失败";
@@ -304,6 +304,8 @@
 "LocKey.SimultaneousInterpretationDemoTitle" = "同声传译演示";
 "LocKey.StartInterpretationButtonTitle" = "开始同声传译";
 "LocKey.StopInterpretationButtonTitle" = "停止同声传译";
+"LocKey.UseSDKInternalRecording" = "使用SDK内部录音";
+"LocKey.PreferSpeakerOutput" = "优先从手机扬声器播放";
 
 "LocKey.SourceContent" = "源内容";
 "LocKey.SourceContentWillAppearHereTips" = "源内容将显示在这里";
@@ -821,3 +823,36 @@
 "LocKey.DeviceAppsStopFailedFormat" = "停止应用失败：%@";
 "LocKey.DeviceAppsHomeSuccess" = "返回主屏幕成功";
 "LocKey.DeviceAppsHomeFailedFormat" = "返回主屏幕失败：%@";
+
+"LocKey.CrashReporterGroupTitle" = "闪退日志";
+"LocKey.CrashReporterFeatureTitle" = "闪退日志";
+
+"LocKey.CrashReporterDemoTitle" = "闪退日志";
+"LocKey.CrashReporterCrashTriggerTitle" = "触发闪退";
+"LocKey.CrashReporterCrashTypeArrayOutOfBounds" = "数组越界";
+"LocKey.CrashReporterCrashTypeNullPointer" = "空指针访问";
+"LocKey.CrashReporterCrashTypeUnrecognizedSelector" = "未识别的选择器";
+"LocKey.CrashReporterCrashTypeAssertion" = "断言失败";
+"LocKey.CrashReporterCrashTypeDivideByZero" = "除零错误";
+"LocKey.CrashReporterCrashTypeStackOverflow" = "栈溢出";
+"LocKey.CrashReporterCrashTypeBusError" = "总线错误";
+"LocKey.CrashReporterCrashTypeTriggerButton" = "触发闪退";
+"LocKey.CrashReporterCrashConfirmMessage" = "确定要触发闪退吗？应用将会立即退出。";
+"LocKey.CrashReporterFileListTitle" = "闪退文件列表";
+"LocKey.CrashReporterNoFiles" = "暂无闪退文件";
+"LocKey.CrashReporterFileName" = "文件名";
+"LocKey.CrashReporterFileSize" = "文件大小";
+"LocKey.CrashReporterFileDate" = "创建日期";
+"LocKey.CrashReporterShareAction" = "分享";
+"LocKey.CrashReporterDeleteAction" = "删除";
+"LocKey.CrashReporterDeleteConfirmTitle" = "确认删除";
+"LocKey.CrashReporterDeleteConfirmMessage" = "确定要删除此闪退文件吗？";
+"LocKey.CrashReporterDeleteAllAction" = "删除全部";
+"LocKey.CrashReporterDeleteAllConfirmMessage" = "确定要删除所有闪退文件吗？";
+"LocKey.CrashReporterFileContentTitle" = "文件内容";
+"LocKey.CrashReporterCloseButton" = "关闭";
+"LocKey.CrashReporterDeleteSuccess" = "删除成功";
+"LocKey.CrashReporterDeleteFailed" = "删除失败";
+"LocKey.CrashReporterShareFailed" = "分享失败";
+"LocKey.CrashReporterFileSizeFormat" = "%.2f KB";
+"LocKey.CrashReporterFileSizeLargeFormat" = "%.2f MB";

@@ -546,6 +546,233 @@
           },
           {
             "kind": "Function",
+            "name": "queryLogs",
+            "printedName": "queryLogs(from:to:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Date?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Date",
+                    "printedName": "Foundation.Date",
+                    "usr": "s:10Foundation4DateV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Date?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Date",
+                    "printedName": "Foundation.Date",
+                    "usr": "s:10Foundation4DateV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(([[Swift.String : Any]]?, Foundation.NSError?) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "([[Swift.String : Any]]?, Foundation.NSError?) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "([[Swift.String : Any]]?, Foundation.NSError?)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "[[Swift.String : Any]]?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Array",
+                                "printedName": "[[Swift.String : Any]]",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "Dictionary",
+                                    "printedName": "[Swift.String : Any]",
+                                    "children": [
+                                      {
+                                        "kind": "TypeNominal",
+                                        "name": "String",
+                                        "printedName": "Swift.String",
+                                        "usr": "s:SS"
+                                      },
+                                      {
+                                        "kind": "TypeNominal",
+                                        "name": "ProtocolComposition",
+                                        "printedName": "Any"
+                                      }
+                                    ],
+                                    "usr": "s:SD"
+                                  }
+                                ],
+                                "usr": "s:Sa"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "Foundation.NSError?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "NSError",
+                                "printedName": "Foundation.NSError",
+                                "usr": "c:objc(cs)NSError"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AIBudsXLFacility@objc(cs)AIBudsXLFacilitySDK(im)queryLogsFrom:to:completion:",
+            "mangledName": "$s16AIBudsXLFacility0B3SDKC9queryLogs4from2to10completiony10Foundation4DateVSg_AKySaySDySSypGGSg_So7NSErrorCSgtcSgtF",
+            "moduleName": "AIBudsXLFacility",
+            "objc_name": "queryLogsFrom:to:completion:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "fetchLogRecords",
+            "printedName": "fetchLogRecords(from:to:minLevel:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Date",
+                "printedName": "Foundation.Date",
+                "usr": "s:10Foundation4DateV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Date",
+                "printedName": "Foundation.Date",
+                "usr": "s:10Foundation4DateV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "LogLevel",
+                "printedName": "AIBudsLog.LogLevel",
+                "usr": "c:@M@AIBudsLog@E@AIBudsLogLevel"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(([AIBudsLog.LogRecord], Foundation.NSError?) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "([AIBudsLog.LogRecord], Foundation.NSError?) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "([AIBudsLog.LogRecord], Foundation.NSError?)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Array",
+                            "printedName": "[AIBudsLog.LogRecord]",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "LogRecord",
+                                "printedName": "AIBudsLog.LogRecord",
+                                "usr": "c:@M@AIBudsLog@objc(cs)AIBudsLogRecord"
+                              }
+                            ],
+                            "usr": "s:Sa"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "Foundation.NSError?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "NSError",
+                                "printedName": "Foundation.NSError",
+                                "usr": "c:objc(cs)NSError"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AIBudsXLFacility@objc(cs)AIBudsXLFacilitySDK(im)fetchLogRecordsFrom:to:minLevel:completion:",
+            "mangledName": "$s16AIBudsXLFacility0B3SDKC15fetchLogRecords4from2to8minLevel10completiony10Foundation4DateV_AK0aE00eJ0OySayAL0E6RecordCG_So7NSErrorCSgtcSgtF",
+            "moduleName": "AIBudsXLFacility",
+            "objc_name": "fetchLogRecordsFrom:to:minLevel:completion:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "log",
             "printedName": "log(_:level:subsystem:category:)",
             "children": [
@@ -1284,98 +1511,112 @@
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsXLFacility\/XLFacilityDBLogger.swift",
       "kind": "StringLiteral",
-      "offset": 424,
+      "offset": 428,
       "length": 43,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsXLFacility\/XLFacilityDBLogger.swift",
       "kind": "StringLiteral",
-      "offset": 449,
+      "offset": 453,
       "length": 1,
       "value": "\".log_export.queue\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsXLFacility\/XLFacilityDBLogger.swift",
       "kind": "StringLiteral",
-      "offset": 599,
+      "offset": 603,
       "length": 42,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsXLFacility\/XLFacilityDBLogger.swift",
       "kind": "StringLiteral",
-      "offset": 624,
+      "offset": 628,
+      "length": 1,
+      "value": "\".log_query.queue\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsXLFacility\/XLFacilityDBLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 777,
+      "length": 42,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsXLFacility\/XLFacilityDBLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 802,
       "length": 1,
       "value": "\".log_purge.queue\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsXLFacility\/XLFacilityDBLogger.swift",
       "kind": "BooleanLiteral",
-      "offset": 865,
+      "offset": 1047,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsXLFacility\/XLFacilityDBLogger.swift",
       "kind": "StringLiteral",
-      "offset": 880,
+      "offset": 1062,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsXLFacility\/XLFacilityDBLogger.swift",
       "kind": "StringLiteral",
-      "offset": 963,
+      "offset": 1145,
       "length": 9,
       "value": "\".aibuds\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsXLFacility\/XLFacilityDBLogger.swift",
       "kind": "BooleanLiteral",
-      "offset": 1167,
+      "offset": 1349,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsXLFacility\/XLFacilityDBLogger.swift",
       "kind": "StringLiteral",
-      "offset": 1256,
+      "offset": 1438,
       "length": 70,
       "value": "\"Failed to create directory at path \""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsXLFacility\/XLFacilityDBLogger.swift",
       "kind": "StringLiteral",
-      "offset": 1308,
+      "offset": 1490,
       "length": 1,
       "value": "\", error: \""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsXLFacility\/XLFacilityDBLogger.swift",
       "kind": "StringLiteral",
-      "offset": 1325,
+      "offset": 1507,
       "length": 13,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsXLFacility\/XLFacilityDBLogger.swift",
       "kind": "StringLiteral",
-      "offset": 1337,
+      "offset": 1519,
       "length": 19,
       "value": "\"AIBuds.XLFacility\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsXLFacility\/XLFacilityDBLogger.swift",
       "kind": "StringLiteral",
-      "offset": 1473,
+      "offset": 1655,
       "length": 28,
       "value": "\".aibuds\/\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsXLFacility\/XLFacilityDBLogger.swift",
       "kind": "StringLiteral",
-      "offset": 1493,
+      "offset": 1675,
       "length": 1,
       "value": "\"-log.db\""
     }

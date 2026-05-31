@@ -12,6 +12,7 @@
 #import "AIChatContext.h"
 #import "AIFeatureContext.h"
 #import "AIAudioRecordingContext.h"
+#import "SimultaneousInterpretationContext.h"
 
 
 @interface DeviceHomeViewController () <UITableViewDataSource, UITableViewDelegate, AIBudsDeviceDelegate>
@@ -669,6 +670,10 @@
         [DeviceFeatureGroupModel modelWithIcon:@"icon_log" name:NSLocalizedString(@"LocKey.LogGroupTitle", nil) features:@[
             [DeviceFeatureModel modelWithIcon:@"icon_log" name:NSLocalizedString(@"LocKey.LogFeatureTitle", nil) classNameOfDemoVC:@"LogDemoController"],
         ]],
+        
+        [DeviceFeatureGroupModel modelWithIcon:@"icon_crash_reporter" name:NSLocalizedString(@"LocKey.CrashReporterGroupTitle", nil) features:@[
+            [DeviceFeatureModel modelWithIcon:@"icon_crash_reporter" name:NSLocalizedString(@"LocKey.CrashReporterFeatureTitle", nil) classNameOfDemoVC:@"CrashReporterDemoController"],
+        ]],
     ];
 }
 
@@ -848,6 +853,7 @@
 }
 
 - (void)selectAiServiceVendor {
+    __weak typeof(self) weakSelf = self;
     
     UIAlertController *alertController = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"LocKey.SelectAiServiceVendorAlertTitle", nil) message:nil preferredStyle:UIAlertControllerStyleActionSheet];
     
@@ -900,6 +906,12 @@
                     if([error isKindOfClass:[NSError class]])
                     {
                         XLOG_ERROR(@"%@", APP_LOG_STRING(@"AI 鉴权失败 (vendor = %@)：%@", @(aiServiceVendor), error));
+                        NSString* message = [NSString stringWithFormat:@"AI 鉴权失败 (vendor = %@)：%@", @(aiServiceVendor), error];
+                        dispatch_async(dispatch_get_main_queue(), ^{
+                            __strong typeof(self) strongSelf = weakSelf;
+                            if(!strongSelf) return;
+                            [strongSelf.view makeToast:message duration:3.0 position:CSToastPositionTop];
+                        });
                         return;
                     }
                     XLOG_INFO(@"%@", APP_LOG_STRING(@"AI 鉴权成功 (vendor = %@)。", @(aiServiceVendor)));
@@ -958,6 +970,9 @@
                                                                             additionalInfo:nil];
     
     [AIBudsAISDK setDeviceInfo:deviceInfo];
+    
+    [AIBudsCrashReporterSDK setUserInfo:[deviceInfo debugJsonString] forKey:@"AIBuds Device"];
+    
     AIBudsAIServiceVendor aiServiceVendor = [AIChatContext sharedInstance].settings.serviceVendor;
     [AIBudsAISDK setAIServiceVendor:aiServiceVendor];
     
@@ -1043,7 +1058,14 @@
         }
         case AIBudsAIChatSessionEventTerminate:
         {
-            [AIBudsAISDK stopAIChat];
+            id<AIBudsDeviceAIChatAPI> aiDevice = (id<AIBudsDeviceAIChatAPI>)self.device;
+            if([aiDevice conformsToProtocol:@protocol(AIBudsDeviceAIChatAPI)]) {
+                XLOG_INFO(@"通知设备端结束 AI 对话....");
+                [aiDevice reportAIChatStoppedWithCompletion:^(BOOL success, NSError * _Nullable error) {
+                    [AIBudsAISDK stopAIChat];
+                }];
+            }
+           
             break;
         }
         case AIBudsAIChatSessionEventInterruptByStateConflict:
@@ -1069,9 +1091,14 @@
         case AIBudsOpusAudioDataPurposeAiAudioRecord:
         {
             id<AIBudsAIAudioRecordingSessionConvertible> session = [AIAudioRecordingContext sharedInstance].currentSession;
+            id<AIBudsSimultaneousInterpretationSessionConvertible> interpretationSession = [SimultaneousInterpretationContext sharedInstance].currentSession;
             if(session)
             {
                 [session appendInt16PCM:decodedPCMAudioData];
+            }
+            else if(interpretationSession)
+            {
+                [interpretationSession appendInt16PCM:decodedPCMAudioData isFinal:NO];
             }
             break;
         }

@@ -46,9 +46,17 @@
     if(!success) {
         XLOG_ERROR(@"%@", APP_LOG_STRING(@"%@", @"AIBudsAISDK initialize failed."));
     }*/
-    if (![AIBudsAllInOneSDK initWithDelegate:self]) {
+    if(![AIBudsAllInOneSDK initWithDelegate:self]) {
         NSLog(@"%@", @"初始化 AIBuds 全家桶失败。");
     }
+    [AIBudsAllInOneSDK installCrashReporterWithLastCrashReportCallback:^(NSString * _Nullable reportFilePath) {
+        
+    } reportListUpdateCallback:^{
+        
+    }];
+    [AIBudsCrashReporterSDK setUserInfo:@"张三" forKey:@"User Name"];
+    [AIBudsCrashReporterSDK setUserInfo:@"199" forKey:@"User ID"];
+    [AIBudsAllInOneSDK startAIDashboard];
     return YES;
 }
 

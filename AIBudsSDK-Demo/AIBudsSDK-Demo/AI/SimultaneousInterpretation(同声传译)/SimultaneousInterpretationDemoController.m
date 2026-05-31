@@ -7,6 +7,7 @@
 //
 
 #import "SimultaneousInterpretationDemoController.h"
+#import "SimultaneousInterpretationContext.h"
 
 @interface SimultaneousInterpretationDemoController () <UIPickerViewDelegate, UIPickerViewDataSource>
 
@@ -25,10 +26,14 @@
 @property (nonatomic, strong) NSString *selectedSourceLanguage;
 @property (nonatomic, strong) NSString *selectedTargetLanguage;
 @property (nonatomic, assign) BOOL isInterpreting;
-@property (nonatomic, strong) id<AIBudsSimultaneousInterpretationSessionConvertible> interpretationSession;
 
 @property (nonatomic, strong) NSMutableDictionary<NSNumber*, NSString*> *sourceSentences;
 @property (nonatomic, strong) NSMutableDictionary<NSNumber*, NSString*> *targetSentences;
+
+@property (nonatomic, strong) UISwitch *internalRecordingSwitch;
+@property (nonatomic, strong) UILabel *internalRecordingLabel;
+@property (nonatomic, strong) UISwitch *speakerOutputSwitch;
+@property (nonatomic, strong) UILabel *speakerOutputLabel;
 
 @end
 
@@ -102,6 +107,32 @@
     self.startButton.translatesAutoresizingMaskIntoConstraints = NO;
     [self.startButton addTarget:self action:@selector(toggleInterpretation) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:self.startButton];
+    
+    // Internal Recording Label
+    self.internalRecordingLabel = [[UILabel alloc] initWithFrame:CGRectZero];
+    self.internalRecordingLabel.text = NSLocalizedString(@"LocKey.UseSDKInternalRecording", comment:@"Use SDK internal recording");
+    self.internalRecordingLabel.font = [UIFont systemFontOfSize:16];
+    self.internalRecordingLabel.translatesAutoresizingMaskIntoConstraints = NO;
+    [self.view addSubview:self.internalRecordingLabel];
+    
+    // Internal Recording Switch
+    self.internalRecordingSwitch = [[UISwitch alloc] initWithFrame:CGRectZero];
+    self.internalRecordingSwitch.on = YES;
+    self.internalRecordingSwitch.translatesAutoresizingMaskIntoConstraints = NO;
+    [self.view addSubview:self.internalRecordingSwitch];
+    
+    // Speaker Output Label
+    self.speakerOutputLabel = [[UILabel alloc] initWithFrame:CGRectZero];
+    self.speakerOutputLabel.text = NSLocalizedString(@"LocKey.PreferSpeakerOutput", comment:@"Prefer speaker output");
+    self.speakerOutputLabel.font = [UIFont systemFontOfSize:16];
+    self.speakerOutputLabel.translatesAutoresizingMaskIntoConstraints = NO;
+    [self.view addSubview:self.speakerOutputLabel];
+    
+    // Speaker Output Switch
+    self.speakerOutputSwitch = [[UISwitch alloc] initWithFrame:CGRectZero];
+    self.speakerOutputSwitch.on = NO;
+    self.speakerOutputSwitch.translatesAutoresizingMaskIntoConstraints = NO;
+    [self.view addSubview:self.speakerOutputSwitch];
     
     // Error Label
     self.errorLabel = [[UILabel alloc] initWithFrame:CGRectZero];
@@ -183,8 +214,24 @@
         [self.startButton.widthAnchor constraintEqualToConstant:200],
         [self.startButton.heightAnchor constraintEqualToConstant:50],
         
+        // Internal Recording Label
+        [self.internalRecordingLabel.topAnchor constraintEqualToAnchor:self.startButton.bottomAnchor constant:20],
+        [self.internalRecordingLabel.leadingAnchor constraintEqualToAnchor:self.view.leadingAnchor constant:20],
+        
+        // Internal Recording Switch
+        [self.internalRecordingSwitch.topAnchor constraintEqualToAnchor:self.startButton.bottomAnchor constant:20],
+        [self.internalRecordingSwitch.trailingAnchor constraintEqualToAnchor:self.view.trailingAnchor constant:-20],
+        
+        // Speaker Output Label
+        [self.speakerOutputLabel.topAnchor constraintEqualToAnchor:self.internalRecordingLabel.bottomAnchor constant:15],
+        [self.speakerOutputLabel.leadingAnchor constraintEqualToAnchor:self.view.leadingAnchor constant:20],
+        
+        // Speaker Output Switch
+        [self.speakerOutputSwitch.topAnchor constraintEqualToAnchor:self.internalRecordingLabel.bottomAnchor constant:15],
+        [self.speakerOutputSwitch.trailingAnchor constraintEqualToAnchor:self.view.trailingAnchor constant:-20],
+        
         // Error Label
-        [self.errorLabel.topAnchor constraintEqualToAnchor:self.startButton.bottomAnchor constant:20],
+        [self.errorLabel.topAnchor constraintEqualToAnchor:self.speakerOutputLabel.bottomAnchor constant:20],
         [self.errorLabel.leadingAnchor constraintEqualToAnchor:self.view.leadingAnchor constant:20],
         [self.errorLabel.trailingAnchor constraintEqualToAnchor:self.view.trailingAnchor constant:-20],
         
@@ -283,41 +330,69 @@
     AIBudsSimultaneousInterpretationConfig *config = [AIBudsSimultaneousInterpretationConfig defaultConfig];
     config.sourceLanguage = self.selectedSourceLanguage;
     config.targetLanguage = self.selectedTargetLanguage;
+    config.usesInternalAudioRecording = self.internalRecordingSwitch.on;
+    config.preferSpeakerOutput = self.speakerOutputSwitch.on;
     
+    __weak typeof(self) weakSelf = self;
     // Start interpretation
     [AIBudsAISDK startSimultaneousInterpretationWithConfig:config onStartSuccess:^(id<AIBudsSimultaneousInterpretationSessionConvertible> _Nonnull session) {
-        self.interpretationSession = session;
+        [SimultaneousInterpretationContext sharedInstance].currentSession = session;
+        if (!session.isRecordingInternally) {
+            id<AIBudsDeviceAudioRecordingAPI> audioRecordingAPI = (id<AIBudsDeviceAudioRecordingAPI>)self.device;
+            [audioRecordingAPI startAIAudioRecordingWithScene:AIBudsRecordingSceneOnSite completion:^(BOOL success, NSError * _Nullable error) {
+                 if(!success)
+                 {
+                     XLOG_ERROR(@"启动设备端 AI 录音发生错误：%@", error);
+                     XLOG_INFO(@"停止同声传译服务...");
+                     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.1f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                         __strong typeof(self) strongSelf = weakSelf;
+                         if(!strongSelf)  return;
+                         [strongSelf toggleInterpretation];
+                     });
+                 }
+            }];
+        }
         dispatch_async(dispatch_get_main_queue(), ^{
-            self.startButton.selected = YES;
-            self.isInterpreting = YES;
+            __strong typeof(self) strongSelf = weakSelf;
+            if(!strongSelf)  return;
+            strongSelf.startButton.selected = YES;
+            strongSelf.isInterpreting = YES;
         });
     } onStartFailure:^(NSError * _Nonnull error) {
         dispatch_async(dispatch_get_main_queue(), ^{
-            self.errorLabel.text = [NSString stringWithFormat:@"%@", error.localizedDescription];
-            self.sourceTextView.text = NSLocalizedString(@"LocKey.SourceContentWillAppearHereTips", comment:@"Source content placeholder");
-            self.resultTextView.text = NSLocalizedString(@"LocKey.TranslationResultWillAppearHereTips", comment:@"Result placeholder");
+            __strong typeof(self) strongSelf = weakSelf;
+            if(!strongSelf)  return;
+            strongSelf.errorLabel.text = [NSString stringWithFormat:@"%@", error.localizedDescription];
+            strongSelf.sourceTextView.text = NSLocalizedString(@"LocKey.SourceContentWillAppearHereTips", comment:@"Source content placeholder");
+            strongSelf.resultTextView.text = NSLocalizedString(@"LocKey.TranslationResultWillAppearHereTips", comment:@"Result placeholder");
         });
     } onStopByInterruption:^(NSError * _Nullable error) {
         dispatch_async(dispatch_get_main_queue(), ^{
+            __strong typeof(self) strongSelf = weakSelf;
+            if(!strongSelf)  return;
             if (error) {
-                self.errorLabel.text = [NSString stringWithFormat:@"%@", error.localizedDescription];
+                strongSelf.errorLabel.text = [NSString stringWithFormat:@"%@", error.localizedDescription];
             }
-            [self stopInterpretation];
+            [strongSelf stopInterpretation];
         });
     } onException:^(NSError * _Nonnull error) {
         dispatch_async(dispatch_get_main_queue(), ^{
-           self.errorLabel.text = [NSString stringWithFormat:@"%@", error.localizedDescription];
+            __strong typeof(self) strongSelf = weakSelf;
+            if(!strongSelf)  return;
+            strongSelf.errorLabel.text = [NSString stringWithFormat:@"%@", error.localizedDescription];
        });
     } streamResultHandler:^(BOOL isFinal, AIBudsSimultaneousInterpretationDataModel * _Nullable response, NSError * _Nullable error) {
         dispatch_async(dispatch_get_main_queue(), ^{
+            __strong typeof(self) strongSelf = weakSelf;
+            if(!strongSelf)  return;
             if (error) {
-                self.errorLabel.text = [NSString stringWithFormat:@"%@", error.localizedDescription];
+                strongSelf.errorLabel.text = [NSString stringWithFormat:@"%@", error.localizedDescription];
             } else if (response) {
                 if (response.sourceTextSequence && response.isSourceTextDefinite) {
-                    [self.sourceSentences setObject:response.sourceText forKey:response.sourceTextSequence];
+                    [strongSelf.sourceSentences setObject:response.sourceText forKey:response.sourceTextSequence];
                 }
                 if (response.targetTextSequence && response.isTargetTextDefinite) {
-                    [self.targetSentences setObject:response.targetText forKey:response.targetTextSequence];
+                    [strongSelf.targetSentences setObject:response.targetText forKey:response.targetTextSequence];
                 }
                 // 将 sourceSentences 按 key 排序后拼接
                 NSArray *sortedSourceKeys = [[self.sourceSentences allKeys] sortedArrayUsingSelector:@selector(compare:)];
@@ -330,7 +405,7 @@
                 }
                 
                 // 将 targetSentences 按 key 排序后拼接
-                NSArray *sortedTargetKeys = [[self.targetSentences allKeys] sortedArrayUsingSelector:@selector(compare:)];
+                NSArray *sortedTargetKeys = [[strongSelf.targetSentences allKeys] sortedArrayUsingSelector:@selector(compare:)];
                 NSMutableString *targetText = [NSMutableString string];
                 for (NSNumber *key in sortedTargetKeys) {
                     if (targetText.length > 0) {
@@ -339,30 +414,76 @@
                     [targetText appendString:self.targetSentences[key]];
                 }
         
-                self.sourceTextView.text = sourceText ?: NSLocalizedString(@"LocKey.SourceContentWillAppearHereTips", comment:@"Source content placeholder");
-                self.resultTextView.text = targetText ?: NSLocalizedString(@"LocKey.TranslationResultWillAppearHereTips", comment:@"Result placeholder");
+                strongSelf.sourceTextView.text = sourceText ?: NSLocalizedString(@"LocKey.SourceContentWillAppearHereTips", comment:@"Source content placeholder");
+                strongSelf.resultTextView.text = targetText ?: NSLocalizedString(@"LocKey.TranslationResultWillAppearHereTips", comment:@"Result placeholder");
                 
-                if(self.resultTextView.text.length > 0 ) {
-                    NSRange bottom = NSMakeRange(self.resultTextView.text.length -1, 1);
-                    [self.resultTextView scrollRangeToVisible:bottom];
+                if(strongSelf.resultTextView.text.length > 0 ) {
+                    NSRange bottom = NSMakeRange(strongSelf.resultTextView.text.length -1, 1);
+                    [strongSelf.resultTextView scrollRangeToVisible:bottom];
                 }
                 
                 if(self.sourceTextView.text.length > 0 ) {
-                    NSRange bottom = NSMakeRange(self.sourceTextView.text.length -1, 1);
-                    [self.sourceTextView scrollRangeToVisible:bottom];
+                    NSRange bottom = NSMakeRange(strongSelf.sourceTextView.text.length -1, 1);
+                    [strongSelf.sourceTextView scrollRangeToVisible:bottom];
                 }
             }
         });
+    } onEvent:^(AIBudsSimultaneousInterpretationEventModel * _Nonnull event) {
+        __strong typeof(self) strongSelf = weakSelf;
+        if(!strongSelf)  return;
+        [strongSelf handleEvent:event];
     } onFinish:^(AIBudsSimultaneousInterpretationReportModel * _Nullable report) {
         dispatch_async(dispatch_get_main_queue(), ^{
-              [self stopInterpretation];
+              __strong typeof(self) strongSelf = weakSelf;
+              if(!strongSelf)  return;
+              [strongSelf stopInterpretation];
           });
     }];
 }
 
+- (void)handleEvent:(AIBudsSimultaneousInterpretationEventModel *)event {
+    switch (event.eventType) {
+        case AIBudsSimultaneousInterpretationEventTypeAppWillTerminate:
+        {
+            
+            XLOG_INFO(@"App 即将终止....");
+            [self stopDeviceSideAIAudioRecordingIfNeeded];
+        }
+            break;
+        default:
+            break;
+    }
+}
+
+-(void) stopDeviceSideAIAudioRecordingIfNeeded {
+    
+    id<AIBudsSimultaneousInterpretationSessionConvertible> currentSession = [SimultaneousInterpretationContext sharedInstance].currentSession;
+    if(currentSession && !currentSession.isRecordingInternally) {
+        id<AIBudsDeviceAudioRecordingAPI> audioRecordingAPI = (id<AIBudsDeviceAudioRecordingAPI>)self.device;
+        [audioRecordingAPI stopAIAudioRecordingWithScene:AIBudsRecordingSceneOnSite completion:^(BOOL success, NSError * _Nullable error) {
+        }];
+        return;
+    }
+}
+
 - (void)stopInterpretation {
+    __weak typeof(self) weakSelf = self;
+    id<AIBudsSimultaneousInterpretationSessionConvertible> currentSession = [SimultaneousInterpretationContext sharedInstance].currentSession;
+    if(currentSession && !currentSession.isRecordingInternally) {
+        id<AIBudsDeviceAudioRecordingAPI> audioRecordingAPI = (id<AIBudsDeviceAudioRecordingAPI>)self.device;
+        [audioRecordingAPI stopAIAudioRecordingWithScene:AIBudsRecordingSceneOnSite completion:^(BOOL success, NSError * _Nullable error) {
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [weakSelf stopInterpretationService];
+            });
+        }];
+        return;
+    }
+    [self stopInterpretationService];
+}
+
+- (void)stopInterpretationService {
     [AIBudsAISDK stopSimultaneousInterpretation];
-    self.interpretationSession = nil;
+    [SimultaneousInterpretationContext sharedInstance].currentSession = nil;
     self.startButton.selected = NO;
     self.isInterpreting = NO;
     self.sourceTextView.text = NSLocalizedString(@"LocKey.SourceContentWillAppearHereTips", comment:@"Source content placeholder");

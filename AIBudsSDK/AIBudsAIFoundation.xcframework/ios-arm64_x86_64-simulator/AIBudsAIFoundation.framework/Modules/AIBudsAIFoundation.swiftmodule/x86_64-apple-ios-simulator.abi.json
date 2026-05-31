@@ -4890,8 +4890,8 @@
           },
           {
             "kind": "Var",
-            "name": "shouldSaveInputVoiceForDebugging",
-            "printedName": "shouldSaveInputVoiceForDebugging",
+            "name": "shouldSaveVoiceForDebugging",
+            "printedName": "shouldSaveVoiceForDebugging",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -4901,8 +4901,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@AIBudsAIFoundation@objc(cs)AIBudsAIChatSessionConfig(py)shouldSaveInputVoiceForDebugging",
-            "mangledName": "$s18AIBudsAIFoundation19AIChatSessionConfigC32shouldSaveInputVoiceForDebuggingSbvp",
+            "usr": "c:@M@AIBudsAIFoundation@objc(cs)AIBudsAIChatSessionConfig(py)shouldSaveVoiceForDebugging",
+            "mangledName": "$s18AIBudsAIFoundation19AIChatSessionConfigC27shouldSaveVoiceForDebuggingSbvp",
             "moduleName": "AIBudsAIFoundation",
             "declAttributes": [
               "HasInitialValue",
@@ -4927,8 +4927,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@AIBudsAIFoundation@objc(cs)AIBudsAIChatSessionConfig(im)shouldSaveInputVoiceForDebugging",
-                "mangledName": "$s18AIBudsAIFoundation19AIChatSessionConfigC32shouldSaveInputVoiceForDebuggingSbvg",
+                "usr": "c:@M@AIBudsAIFoundation@objc(cs)AIBudsAIChatSessionConfig(im)shouldSaveVoiceForDebugging",
+                "mangledName": "$s18AIBudsAIFoundation19AIChatSessionConfigC27shouldSaveVoiceForDebuggingSbvg",
                 "moduleName": "AIBudsAIFoundation",
                 "implicit": true,
                 "declAttributes": [
@@ -4955,8 +4955,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@AIBudsAIFoundation@objc(cs)AIBudsAIChatSessionConfig(im)setShouldSaveInputVoiceForDebugging:",
-                "mangledName": "$s18AIBudsAIFoundation19AIChatSessionConfigC32shouldSaveInputVoiceForDebuggingSbvs",
+                "usr": "c:@M@AIBudsAIFoundation@objc(cs)AIBudsAIChatSessionConfig(im)setShouldSaveVoiceForDebugging:",
+                "mangledName": "$s18AIBudsAIFoundation19AIChatSessionConfigC27shouldSaveVoiceForDebuggingSbvs",
                 "moduleName": "AIBudsAIFoundation",
                 "implicit": true,
                 "declAttributes": [
@@ -4977,8 +4977,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18AIBudsAIFoundation19AIChatSessionConfigC32shouldSaveInputVoiceForDebuggingSbvM",
-                "mangledName": "$s18AIBudsAIFoundation19AIChatSessionConfigC32shouldSaveInputVoiceForDebuggingSbvM",
+                "usr": "s:18AIBudsAIFoundation19AIChatSessionConfigC27shouldSaveVoiceForDebuggingSbvM",
+                "mangledName": "$s18AIBudsAIFoundation19AIChatSessionConfigC27shouldSaveVoiceForDebuggingSbvM",
                 "moduleName": "AIBudsAIFoundation",
                 "implicit": true,
                 "declAttributes": [
@@ -5608,7 +5608,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(languageForSpeechInput:audioChannel:allowUserToInterruptAIResponse:maxPauseDurationBeforeAIResponds:autoEndSessionAfterNoInputDuration:enableVoicePlayback:shouldSaveInputVoiceForDebugging:additionalOptions:)",
+            "printedName": "init(languageForSpeechInput:audioChannel:allowUserToInterruptAIResponse:maxPauseDurationBeforeAIResponds:autoEndSessionAfterNoInputDuration:enableVoicePlayback:shouldSaveVoiceForDebugging:additionalOptions:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -5695,10 +5695,10 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "c:@M@AIBudsAIFoundation@objc(cs)AIBudsAIChatSessionConfig(im)initWithLanguageForSpeechInput:audioChannel:allowUserToInterruptAIResponse:maxPauseDurationBeforeAIResponds:autoEndSessionAfterNoInputDuration:enableVoicePlayback:shouldSaveInputVoiceForDebugging:additionalOptions:",
-            "mangledName": "$s18AIBudsAIFoundation19AIChatSessionConfigC22languageForSpeechInput12audioChannel30allowUserToInterruptAIResponse32maxPauseDurationBeforeAIResponds07autoEndd7AfterNoiS019enableVoicePlayback010shouldSavei5VoiceG9Debugging17additionalOptionsACSSSg_0A10Foundation0c5AudioK0OSbS2dS2bSDySSypGtcfc",
+            "usr": "c:@M@AIBudsAIFoundation@objc(cs)AIBudsAIChatSessionConfig(im)initWithLanguageForSpeechInput:audioChannel:allowUserToInterruptAIResponse:maxPauseDurationBeforeAIResponds:autoEndSessionAfterNoInputDuration:enableVoicePlayback:shouldSaveVoiceForDebugging:additionalOptions:",
+            "mangledName": "$s18AIBudsAIFoundation19AIChatSessionConfigC22languageForSpeechInput12audioChannel30allowUserToInterruptAIResponse32maxPauseDurationBeforeAIResponds07autoEndd7AfterNoiS019enableVoicePlayback015shouldSaveVoiceG9Debugging17additionalOptionsACSSSg_0A10Foundation0c5AudioK0OSbS2dS2bSDySSypGtcfc",
             "moduleName": "AIBudsAIFoundation",
-            "objc_name": "initWithLanguageForSpeechInput:audioChannel:allowUserToInterruptAIResponse:maxPauseDurationBeforeAIResponds:autoEndSessionAfterNoInputDuration:enableVoicePlayback:shouldSaveInputVoiceForDebugging:additionalOptions:",
+            "objc_name": "initWithLanguageForSpeechInput:audioChannel:allowUserToInterruptAIResponse:maxPauseDurationBeforeAIResponds:autoEndSessionAfterNoInputDuration:enableVoicePlayback:shouldSaveVoiceForDebugging:additionalOptions:",
             "declAttributes": [
               "AccessControl",
               "ObjC",
@@ -6196,57 +6196,6 @@
         "children": [
           {
             "kind": "Var",
-            "name": "sequence",
-            "printedName": "sequence",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@AIBudsAIFoundation@objc(cs)AIBudsSpeakerSegment(py)sequence",
-            "mangledName": "$s18AIBudsAIFoundation14SpeakerSegmentC8sequenceSivp",
-            "moduleName": "AIBudsAIFoundation",
-            "declAttributes": [
-              "Final",
-              "HasStorage",
-              "AccessControl",
-              "ObjC",
-              "RawDocComment"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@AIBudsAIFoundation@objc(cs)AIBudsSpeakerSegment(im)sequence",
-                "mangledName": "$s18AIBudsAIFoundation14SpeakerSegmentC8sequenceSivg",
-                "moduleName": "AIBudsAIFoundation",
-                "implicit": true,
-                "declAttributes": [
-                  "Final",
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
             "name": "speakerId",
             "printedName": "speakerId",
             "children": [
@@ -6416,6 +6365,57 @@
           },
           {
             "kind": "Var",
+            "name": "associatedTranscriptSequence",
+            "printedName": "associatedTranscriptSequence",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBudsAIFoundation@objc(cs)AIBudsSpeakerSegment(py)associatedTranscriptSequence",
+            "mangledName": "$s18AIBudsAIFoundation14SpeakerSegmentC28associatedTranscriptSequenceSivp",
+            "moduleName": "AIBudsAIFoundation",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsAIFoundation@objc(cs)AIBudsSpeakerSegment(im)associatedTranscriptSequence",
+                "mangledName": "$s18AIBudsAIFoundation14SpeakerSegmentC28associatedTranscriptSequenceSivg",
+                "moduleName": "AIBudsAIFoundation",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "text",
             "printedName": "text",
             "children": [
@@ -6484,19 +6484,13 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(sequence:speakerId:startTimeMs:endTimeMs:text:)",
+            "printedName": "init(speakerId:startTimeMs:endTimeMs:associatedTranscriptSequence:text:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "SpeakerSegment",
                 "printedName": "AIBudsAIFoundation.SpeakerSegment",
                 "usr": "c:@M@AIBudsAIFoundation@objc(cs)AIBudsSpeakerSegment"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
               },
               {
                 "kind": "TypeNominal",
@@ -6511,6 +6505,12 @@
                   }
                 ],
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
               },
               {
                 "kind": "TypeNominal",
@@ -6540,10 +6540,10 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "c:@M@AIBudsAIFoundation@objc(cs)AIBudsSpeakerSegment(im)initWithStartTimeMs:endTimeMs:sequence:speakerId:text:",
-            "mangledName": "$s18AIBudsAIFoundation14SpeakerSegmentC8sequence9speakerId11startTimeMs03endiJ04textACSi_SSSgS2iAItcfc",
+            "usr": "c:@M@AIBudsAIFoundation@objc(cs)AIBudsSpeakerSegment(im)initWithSpeakerId:startTimeMs:endTimeMs:associatedTranscriptSequence:text:",
+            "mangledName": "$s18AIBudsAIFoundation14SpeakerSegmentC9speakerId11startTimeMs03endhI028associatedTranscriptSequence4textACSSSg_S3iAItcfc",
             "moduleName": "AIBudsAIFoundation",
-            "objc_name": "initWithStartTimeMs:endTimeMs:sequence:speakerId:text:",
+            "objc_name": "initWithSpeakerId:startTimeMs:endTimeMs:associatedTranscriptSequence:text:",
             "declAttributes": [
               "AccessControl",
               "ObjC",
@@ -7695,6 +7695,55 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "debugJsonString",
+            "printedName": "debugJsonString",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBudsAIFoundation@objc(cs)AIBudsAIDeviceInfoModel(py)debugJsonString",
+            "mangledName": "$s18AIBudsAIFoundation17AIDeviceInfoModelC15debugJsonStringSSvp",
+            "moduleName": "AIBudsAIFoundation",
+            "objc_name": "debugJsonString",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsAIFoundation@objc(cs)AIBudsAIDeviceInfoModel(im)debugJsonString",
+                "mangledName": "$s18AIBudsAIFoundation17AIDeviceInfoModelC15debugJsonStringSSvg",
+                "moduleName": "AIBudsAIFoundation",
+                "objc_name": "debugJsonString",
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init()",
@@ -7776,6 +7825,13 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugJsonStringConvertible",
+            "printedName": "CustomDebugJsonStringConvertible",
+            "usr": "c:@M@AIBudsFoundation@objc(pl)AIBudsCustomDebugJsonStringConvertible",
+            "mangledName": "$s16AIBudsFoundation32CustomDebugJsonStringConvertibleP"
+          },
           {
             "kind": "Conformance",
             "name": "_KeyValueCodingAndObserving",
@@ -8326,6 +8382,206 @@
                 "declKind": "Accessor",
                 "usr": "s:18AIBudsAIFoundation32SimultaneousInterpretationConfigC19enableVoicePlaybackSbvM",
                 "mangledName": "$s18AIBudsAIFoundation32SimultaneousInterpretationConfigC19enableVoicePlaybackSbvM",
+                "moduleName": "AIBudsAIFoundation",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "usesInternalAudioRecording",
+            "printedName": "usesInternalAudioRecording",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBudsAIFoundation@objc(cs)AIBudsSimultaneousInterpretationConfig(py)usesInternalAudioRecording",
+            "mangledName": "$s18AIBudsAIFoundation32SimultaneousInterpretationConfigC26usesInternalAudioRecordingSbvp",
+            "moduleName": "AIBudsAIFoundation",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsAIFoundation@objc(cs)AIBudsSimultaneousInterpretationConfig(im)usesInternalAudioRecording",
+                "mangledName": "$s18AIBudsAIFoundation32SimultaneousInterpretationConfigC26usesInternalAudioRecordingSbvg",
+                "moduleName": "AIBudsAIFoundation",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsAIFoundation@objc(cs)AIBudsSimultaneousInterpretationConfig(im)setUsesInternalAudioRecording:",
+                "mangledName": "$s18AIBudsAIFoundation32SimultaneousInterpretationConfigC26usesInternalAudioRecordingSbvs",
+                "moduleName": "AIBudsAIFoundation",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18AIBudsAIFoundation32SimultaneousInterpretationConfigC26usesInternalAudioRecordingSbvM",
+                "mangledName": "$s18AIBudsAIFoundation32SimultaneousInterpretationConfigC26usesInternalAudioRecordingSbvM",
+                "moduleName": "AIBudsAIFoundation",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "preferSpeakerOutput",
+            "printedName": "preferSpeakerOutput",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBudsAIFoundation@objc(cs)AIBudsSimultaneousInterpretationConfig(py)preferSpeakerOutput",
+            "mangledName": "$s18AIBudsAIFoundation32SimultaneousInterpretationConfigC19preferSpeakerOutputSbvp",
+            "moduleName": "AIBudsAIFoundation",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsAIFoundation@objc(cs)AIBudsSimultaneousInterpretationConfig(im)preferSpeakerOutput",
+                "mangledName": "$s18AIBudsAIFoundation32SimultaneousInterpretationConfigC19preferSpeakerOutputSbvg",
+                "moduleName": "AIBudsAIFoundation",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsAIFoundation@objc(cs)AIBudsSimultaneousInterpretationConfig(im)setPreferSpeakerOutput:",
+                "mangledName": "$s18AIBudsAIFoundation32SimultaneousInterpretationConfigC19preferSpeakerOutputSbvs",
+                "moduleName": "AIBudsAIFoundation",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18AIBudsAIFoundation32SimultaneousInterpretationConfigC19preferSpeakerOutputSbvM",
+                "mangledName": "$s18AIBudsAIFoundation32SimultaneousInterpretationConfigC19preferSpeakerOutputSbvM",
                 "moduleName": "AIBudsAIFoundation",
                 "implicit": true,
                 "declAttributes": [
@@ -8994,6 +9250,173 @@
           },
           {
             "kind": "Var",
+            "name": "ttsSegmentAudioFile",
+            "printedName": "ttsSegmentAudioFile",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBudsAIFoundation@objc(cs)AIBudsSimultaneousInterpretationDataModel(py)ttsSegmentAudioFile",
+            "mangledName": "$s18AIBudsAIFoundation35SimultaneousInterpretationDataModelC19ttsSegmentAudioFileSSSgvp",
+            "moduleName": "AIBudsAIFoundation",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsAIFoundation@objc(cs)AIBudsSimultaneousInterpretationDataModel(im)ttsSegmentAudioFile",
+                "mangledName": "$s18AIBudsAIFoundation35SimultaneousInterpretationDataModelC19ttsSegmentAudioFileSSSgvg",
+                "moduleName": "AIBudsAIFoundation",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "ttsSegmentAudioFormat",
+            "printedName": "ttsSegmentAudioFormat",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AIAudioFormat",
+                "printedName": "AIBudsAIFoundation.AIAudioFormat",
+                "usr": "c:@M@AIBudsAIFoundation@E@AIBudsAIAudioFormat"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBudsAIFoundation@objc(cs)AIBudsSimultaneousInterpretationDataModel(py)ttsSegmentAudioFormat",
+            "mangledName": "$s18AIBudsAIFoundation35SimultaneousInterpretationDataModelC21ttsSegmentAudioFormatAA07AIAudioJ0Ovp",
+            "moduleName": "AIBudsAIFoundation",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AIAudioFormat",
+                    "printedName": "AIBudsAIFoundation.AIAudioFormat",
+                    "usr": "c:@M@AIBudsAIFoundation@E@AIBudsAIAudioFormat"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsAIFoundation@objc(cs)AIBudsSimultaneousInterpretationDataModel(im)ttsSegmentAudioFormat",
+                "mangledName": "$s18AIBudsAIFoundation35SimultaneousInterpretationDataModelC21ttsSegmentAudioFormatAA07AIAudioJ0Ovg",
+                "moduleName": "AIBudsAIFoundation",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AIAudioFormat",
+                    "printedName": "AIBudsAIFoundation.AIAudioFormat",
+                    "usr": "c:@M@AIBudsAIFoundation@E@AIBudsAIAudioFormat"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsAIFoundation@objc(cs)AIBudsSimultaneousInterpretationDataModel(im)setTtsSegmentAudioFormat:",
+                "mangledName": "$s18AIBudsAIFoundation35SimultaneousInterpretationDataModelC21ttsSegmentAudioFormatAA07AIAudioJ0Ovs",
+                "moduleName": "AIBudsAIFoundation",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18AIBudsAIFoundation35SimultaneousInterpretationDataModelC21ttsSegmentAudioFormatAA07AIAudioJ0OvM",
+                "mangledName": "$s18AIBudsAIFoundation35SimultaneousInterpretationDataModelC21ttsSegmentAudioFormatAA07AIAudioJ0OvM",
+                "moduleName": "AIBudsAIFoundation",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "base64AudioData",
             "printedName": "base64AudioData",
             "children": [
@@ -9277,9 +9700,72 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "ttsSegmentAudioFilePath",
+            "printedName": "ttsSegmentAudioFilePath",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBudsAIFoundation@objc(cs)AIBudsSimultaneousInterpretationDataModel(py)ttsSegmentAudioFilePath",
+            "mangledName": "$s18AIBudsAIFoundation35SimultaneousInterpretationDataModelC23ttsSegmentAudioFilePathSSSgvp",
+            "moduleName": "AIBudsAIFoundation",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsAIFoundation@objc(cs)AIBudsSimultaneousInterpretationDataModel(im)ttsSegmentAudioFilePath",
+                "mangledName": "$s18AIBudsAIFoundation35SimultaneousInterpretationDataModelC23ttsSegmentAudioFilePathSSSgvg",
+                "moduleName": "AIBudsAIFoundation",
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(sequence:requestId:sourceText:isSourceTextDefinite:sourceTextSequence:targetText:isTargetTextDefinite:targetTextSequence:base64AudioData:audioDataSequence:associatedTargetTextSequenceForAudioData:speakerSegments:)",
+            "printedName": "init(sequence:requestId:sourceText:isSourceTextDefinite:sourceTextSequence:targetText:isTargetTextDefinite:targetTextSequence:ttsSegmentAudioFile:base64AudioData:audioDataSequence:associatedTargetTextSequenceForAudioData:speakerSegments:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -9392,6 +9878,20 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
                 "printedName": "Foundation.NSNumber?",
                 "children": [
                   {
@@ -9441,10 +9941,10 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "c:@M@AIBudsAIFoundation@objc(cs)AIBudsSimultaneousInterpretationDataModel(im)initWithSequence:requestId:sourceText:isSourceTextDefinite:sourceTextSequence:targetText:isTargetTextDefinite:targetTextSequence:base64AudioData:audioDataSequence:associatedTargetTextSequenceForAudioData:speakerSegments:",
-            "mangledName": "$s18AIBudsAIFoundation35SimultaneousInterpretationDataModelC8sequence9requestId10sourceText08isSourceK8Definite0jK8Sequence06targetK00l6TargetkN00pkO0011base64AudioE005audioeO0010associatedqko3ForsE015speakerSegmentsACSi_SSSgAPSbSo8NSNumberCSgAPSbAsp2SSayAA14SpeakerSegmentCGSgtcfc",
+            "usr": "c:@M@AIBudsAIFoundation@objc(cs)AIBudsSimultaneousInterpretationDataModel(im)initWithSequence:requestId:sourceText:isSourceTextDefinite:sourceTextSequence:targetText:isTargetTextDefinite:targetTextSequence:ttsSegmentAudioFile:base64AudioData:audioDataSequence:associatedTargetTextSequenceForAudioData:speakerSegments:",
+            "mangledName": "$s18AIBudsAIFoundation35SimultaneousInterpretationDataModelC8sequence9requestId10sourceText08isSourceK8Definite0jK8Sequence06targetK00l6TargetkN00pkO019ttsSegmentAudioFile06base64tE005audioeO0010associatedqko3FortE015speakerSegmentsACSi_SSSgAQSbSo8NSNumberCSgAQSbAt2q2TSayAA07SpeakerS0CGSgtcfc",
             "moduleName": "AIBudsAIFoundation",
-            "objc_name": "initWithSequence:requestId:sourceText:isSourceTextDefinite:sourceTextSequence:targetText:isTargetTextDefinite:targetTextSequence:base64AudioData:audioDataSequence:associatedTargetTextSequenceForAudioData:speakerSegments:",
+            "objc_name": "initWithSequence:requestId:sourceText:isSourceTextDefinite:sourceTextSequence:targetText:isTargetTextDefinite:targetTextSequence:ttsSegmentAudioFile:base64AudioData:audioDataSequence:associatedTargetTextSequenceForAudioData:speakerSegments:",
             "declAttributes": [
               "AccessControl",
               "ObjC",
@@ -12039,9 +12539,1141 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "AIAudioRecordingEventType",
+        "printedName": "AIAudioRecordingEventType",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "userInitiatedToStart",
+            "printedName": "userInitiatedToStart",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AIBudsAIFoundation.AIAudioRecordingEventType.Type) -> AIBudsAIFoundation.AIAudioRecordingEventType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AIAudioRecordingEventType",
+                    "printedName": "AIBudsAIFoundation.AIAudioRecordingEventType",
+                    "usr": "c:@M@AIBudsAIFoundation@E@AIBudsAIAudioRecordingEventType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AIBudsAIFoundation.AIAudioRecordingEventType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AIAudioRecordingEventType",
+                        "printedName": "AIBudsAIFoundation.AIAudioRecordingEventType",
+                        "usr": "c:@M@AIBudsAIFoundation@E@AIBudsAIAudioRecordingEventType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AIBudsAIFoundation@E@AIBudsAIAudioRecordingEventType@AIBudsAIAudioRecordingEventTypeUserInitiatedToStart",
+            "mangledName": "$s18AIBudsAIFoundation25AIAudioRecordingEventTypeO20userInitiatedToStartyA2CmF",
+            "moduleName": "AIBudsAIFoundation",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "sessionStarted",
+            "printedName": "sessionStarted",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AIBudsAIFoundation.AIAudioRecordingEventType.Type) -> AIBudsAIFoundation.AIAudioRecordingEventType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AIAudioRecordingEventType",
+                    "printedName": "AIBudsAIFoundation.AIAudioRecordingEventType",
+                    "usr": "c:@M@AIBudsAIFoundation@E@AIBudsAIAudioRecordingEventType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AIBudsAIFoundation.AIAudioRecordingEventType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AIAudioRecordingEventType",
+                        "printedName": "AIBudsAIFoundation.AIAudioRecordingEventType",
+                        "usr": "c:@M@AIBudsAIFoundation@E@AIBudsAIAudioRecordingEventType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AIBudsAIFoundation@E@AIBudsAIAudioRecordingEventType@AIBudsAIAudioRecordingEventTypeSessionStarted",
+            "mangledName": "$s18AIBudsAIFoundation25AIAudioRecordingEventTypeO14sessionStartedyA2CmF",
+            "moduleName": "AIBudsAIFoundation",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Var",
+            "name": "sessionStartFailed",
+            "printedName": "sessionStartFailed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AIBudsAIFoundation.AIAudioRecordingEventType.Type) -> AIBudsAIFoundation.AIAudioRecordingEventType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AIAudioRecordingEventType",
+                    "printedName": "AIBudsAIFoundation.AIAudioRecordingEventType",
+                    "usr": "c:@M@AIBudsAIFoundation@E@AIBudsAIAudioRecordingEventType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AIBudsAIFoundation.AIAudioRecordingEventType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AIAudioRecordingEventType",
+                        "printedName": "AIBudsAIFoundation.AIAudioRecordingEventType",
+                        "usr": "c:@M@AIBudsAIFoundation@E@AIBudsAIAudioRecordingEventType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AIBudsAIFoundation@E@AIBudsAIAudioRecordingEventType@AIBudsAIAudioRecordingEventTypeSessionStartFailed",
+            "mangledName": "$s18AIBudsAIFoundation25AIAudioRecordingEventTypeO18sessionStartFailedyA2CmF",
+            "moduleName": "AIBudsAIFoundation",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 2
+          },
+          {
+            "kind": "Var",
+            "name": "aiServiceConnected",
+            "printedName": "aiServiceConnected",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AIBudsAIFoundation.AIAudioRecordingEventType.Type) -> AIBudsAIFoundation.AIAudioRecordingEventType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AIAudioRecordingEventType",
+                    "printedName": "AIBudsAIFoundation.AIAudioRecordingEventType",
+                    "usr": "c:@M@AIBudsAIFoundation@E@AIBudsAIAudioRecordingEventType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AIBudsAIFoundation.AIAudioRecordingEventType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AIAudioRecordingEventType",
+                        "printedName": "AIBudsAIFoundation.AIAudioRecordingEventType",
+                        "usr": "c:@M@AIBudsAIFoundation@E@AIBudsAIAudioRecordingEventType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AIBudsAIFoundation@E@AIBudsAIAudioRecordingEventType@AIBudsAIAudioRecordingEventTypeAiServiceConnected",
+            "mangledName": "$s18AIBudsAIFoundation25AIAudioRecordingEventTypeO18aiServiceConnectedyA2CmF",
+            "moduleName": "AIBudsAIFoundation",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 3
+          },
+          {
+            "kind": "Var",
+            "name": "autoEndSessionTriggered",
+            "printedName": "autoEndSessionTriggered",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AIBudsAIFoundation.AIAudioRecordingEventType.Type) -> AIBudsAIFoundation.AIAudioRecordingEventType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AIAudioRecordingEventType",
+                    "printedName": "AIBudsAIFoundation.AIAudioRecordingEventType",
+                    "usr": "c:@M@AIBudsAIFoundation@E@AIBudsAIAudioRecordingEventType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AIBudsAIFoundation.AIAudioRecordingEventType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AIAudioRecordingEventType",
+                        "printedName": "AIBudsAIFoundation.AIAudioRecordingEventType",
+                        "usr": "c:@M@AIBudsAIFoundation@E@AIBudsAIAudioRecordingEventType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AIBudsAIFoundation@E@AIBudsAIAudioRecordingEventType@AIBudsAIAudioRecordingEventTypeAutoEndSessionTriggered",
+            "mangledName": "$s18AIBudsAIFoundation25AIAudioRecordingEventTypeO23autoEndSessionTriggeredyA2CmF",
+            "moduleName": "AIBudsAIFoundation",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 4
+          },
+          {
+            "kind": "Var",
+            "name": "sessionEnded",
+            "printedName": "sessionEnded",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AIBudsAIFoundation.AIAudioRecordingEventType.Type) -> AIBudsAIFoundation.AIAudioRecordingEventType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AIAudioRecordingEventType",
+                    "printedName": "AIBudsAIFoundation.AIAudioRecordingEventType",
+                    "usr": "c:@M@AIBudsAIFoundation@E@AIBudsAIAudioRecordingEventType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AIBudsAIFoundation.AIAudioRecordingEventType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AIAudioRecordingEventType",
+                        "printedName": "AIBudsAIFoundation.AIAudioRecordingEventType",
+                        "usr": "c:@M@AIBudsAIFoundation@E@AIBudsAIAudioRecordingEventType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AIBudsAIFoundation@E@AIBudsAIAudioRecordingEventType@AIBudsAIAudioRecordingEventTypeSessionEnded",
+            "mangledName": "$s18AIBudsAIFoundation25AIAudioRecordingEventTypeO12sessionEndedyA2CmF",
+            "moduleName": "AIBudsAIFoundation",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 5
+          },
+          {
+            "kind": "Var",
+            "name": "aiServiceUnauthorized",
+            "printedName": "aiServiceUnauthorized",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AIBudsAIFoundation.AIAudioRecordingEventType.Type) -> AIBudsAIFoundation.AIAudioRecordingEventType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AIAudioRecordingEventType",
+                    "printedName": "AIBudsAIFoundation.AIAudioRecordingEventType",
+                    "usr": "c:@M@AIBudsAIFoundation@E@AIBudsAIAudioRecordingEventType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AIBudsAIFoundation.AIAudioRecordingEventType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AIAudioRecordingEventType",
+                        "printedName": "AIBudsAIFoundation.AIAudioRecordingEventType",
+                        "usr": "c:@M@AIBudsAIFoundation@E@AIBudsAIAudioRecordingEventType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AIBudsAIFoundation@E@AIBudsAIAudioRecordingEventType@AIBudsAIAudioRecordingEventTypeAiServiceUnauthorized",
+            "mangledName": "$s18AIBudsAIFoundation25AIAudioRecordingEventTypeO21aiServiceUnauthorizedyA2CmF",
+            "moduleName": "AIBudsAIFoundation",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 6
+          },
+          {
+            "kind": "Var",
+            "name": "aiServiceDisconnected",
+            "printedName": "aiServiceDisconnected",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AIBudsAIFoundation.AIAudioRecordingEventType.Type) -> AIBudsAIFoundation.AIAudioRecordingEventType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AIAudioRecordingEventType",
+                    "printedName": "AIBudsAIFoundation.AIAudioRecordingEventType",
+                    "usr": "c:@M@AIBudsAIFoundation@E@AIBudsAIAudioRecordingEventType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AIBudsAIFoundation.AIAudioRecordingEventType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AIAudioRecordingEventType",
+                        "printedName": "AIBudsAIFoundation.AIAudioRecordingEventType",
+                        "usr": "c:@M@AIBudsAIFoundation@E@AIBudsAIAudioRecordingEventType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AIBudsAIFoundation@E@AIBudsAIAudioRecordingEventType@AIBudsAIAudioRecordingEventTypeAiServiceDisconnected",
+            "mangledName": "$s18AIBudsAIFoundation25AIAudioRecordingEventTypeO21aiServiceDisconnectedyA2CmF",
+            "moduleName": "AIBudsAIFoundation",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 7
+          },
+          {
+            "kind": "Var",
+            "name": "aiServiceNetworkError",
+            "printedName": "aiServiceNetworkError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AIBudsAIFoundation.AIAudioRecordingEventType.Type) -> AIBudsAIFoundation.AIAudioRecordingEventType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AIAudioRecordingEventType",
+                    "printedName": "AIBudsAIFoundation.AIAudioRecordingEventType",
+                    "usr": "c:@M@AIBudsAIFoundation@E@AIBudsAIAudioRecordingEventType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AIBudsAIFoundation.AIAudioRecordingEventType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AIAudioRecordingEventType",
+                        "printedName": "AIBudsAIFoundation.AIAudioRecordingEventType",
+                        "usr": "c:@M@AIBudsAIFoundation@E@AIBudsAIAudioRecordingEventType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AIBudsAIFoundation@E@AIBudsAIAudioRecordingEventType@AIBudsAIAudioRecordingEventTypeAiServiceNetworkError",
+            "mangledName": "$s18AIBudsAIFoundation25AIAudioRecordingEventTypeO21aiServiceNetworkErroryA2CmF",
+            "moduleName": "AIBudsAIFoundation",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 8
+          },
+          {
+            "kind": "Var",
+            "name": "aiServiceStartRecording",
+            "printedName": "aiServiceStartRecording",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AIBudsAIFoundation.AIAudioRecordingEventType.Type) -> AIBudsAIFoundation.AIAudioRecordingEventType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AIAudioRecordingEventType",
+                    "printedName": "AIBudsAIFoundation.AIAudioRecordingEventType",
+                    "usr": "c:@M@AIBudsAIFoundation@E@AIBudsAIAudioRecordingEventType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AIBudsAIFoundation.AIAudioRecordingEventType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AIAudioRecordingEventType",
+                        "printedName": "AIBudsAIFoundation.AIAudioRecordingEventType",
+                        "usr": "c:@M@AIBudsAIFoundation@E@AIBudsAIAudioRecordingEventType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AIBudsAIFoundation@E@AIBudsAIAudioRecordingEventType@AIBudsAIAudioRecordingEventTypeAiServiceStartRecording",
+            "mangledName": "$s18AIBudsAIFoundation25AIAudioRecordingEventTypeO014aiServiceStartD0yA2CmF",
+            "moduleName": "AIBudsAIFoundation",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 9
+          },
+          {
+            "kind": "Var",
+            "name": "aiServiceEndRecording",
+            "printedName": "aiServiceEndRecording",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AIBudsAIFoundation.AIAudioRecordingEventType.Type) -> AIBudsAIFoundation.AIAudioRecordingEventType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AIAudioRecordingEventType",
+                    "printedName": "AIBudsAIFoundation.AIAudioRecordingEventType",
+                    "usr": "c:@M@AIBudsAIFoundation@E@AIBudsAIAudioRecordingEventType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AIBudsAIFoundation.AIAudioRecordingEventType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AIAudioRecordingEventType",
+                        "printedName": "AIBudsAIFoundation.AIAudioRecordingEventType",
+                        "usr": "c:@M@AIBudsAIFoundation@E@AIBudsAIAudioRecordingEventType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AIBudsAIFoundation@E@AIBudsAIAudioRecordingEventType@AIBudsAIAudioRecordingEventTypeAiServiceEndRecording",
+            "mangledName": "$s18AIBudsAIFoundation25AIAudioRecordingEventTypeO012aiServiceEndD0yA2CmF",
+            "moduleName": "AIBudsAIFoundation",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 10
+          },
+          {
+            "kind": "Var",
+            "name": "aiServiceRecordingError",
+            "printedName": "aiServiceRecordingError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AIBudsAIFoundation.AIAudioRecordingEventType.Type) -> AIBudsAIFoundation.AIAudioRecordingEventType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AIAudioRecordingEventType",
+                    "printedName": "AIBudsAIFoundation.AIAudioRecordingEventType",
+                    "usr": "c:@M@AIBudsAIFoundation@E@AIBudsAIAudioRecordingEventType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AIBudsAIFoundation.AIAudioRecordingEventType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AIAudioRecordingEventType",
+                        "printedName": "AIBudsAIFoundation.AIAudioRecordingEventType",
+                        "usr": "c:@M@AIBudsAIFoundation@E@AIBudsAIAudioRecordingEventType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AIBudsAIFoundation@E@AIBudsAIAudioRecordingEventType@AIBudsAIAudioRecordingEventTypeAiServiceRecordingError",
+            "mangledName": "$s18AIBudsAIFoundation25AIAudioRecordingEventTypeO09aiServiceD5ErroryA2CmF",
+            "moduleName": "AIBudsAIFoundation",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 11
+          },
+          {
+            "kind": "Var",
+            "name": "aiServiceResponseError",
+            "printedName": "aiServiceResponseError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AIBudsAIFoundation.AIAudioRecordingEventType.Type) -> AIBudsAIFoundation.AIAudioRecordingEventType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AIAudioRecordingEventType",
+                    "printedName": "AIBudsAIFoundation.AIAudioRecordingEventType",
+                    "usr": "c:@M@AIBudsAIFoundation@E@AIBudsAIAudioRecordingEventType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AIBudsAIFoundation.AIAudioRecordingEventType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AIAudioRecordingEventType",
+                        "printedName": "AIBudsAIFoundation.AIAudioRecordingEventType",
+                        "usr": "c:@M@AIBudsAIFoundation@E@AIBudsAIAudioRecordingEventType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AIBudsAIFoundation@E@AIBudsAIAudioRecordingEventType@AIBudsAIAudioRecordingEventTypeAiServiceResponseError",
+            "mangledName": "$s18AIBudsAIFoundation25AIAudioRecordingEventTypeO22aiServiceResponseErroryA2CmF",
+            "moduleName": "AIBudsAIFoundation",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 12
+          },
+          {
+            "kind": "Var",
+            "name": "bleDisconnected",
+            "printedName": "bleDisconnected",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AIBudsAIFoundation.AIAudioRecordingEventType.Type) -> AIBudsAIFoundation.AIAudioRecordingEventType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AIAudioRecordingEventType",
+                    "printedName": "AIBudsAIFoundation.AIAudioRecordingEventType",
+                    "usr": "c:@M@AIBudsAIFoundation@E@AIBudsAIAudioRecordingEventType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AIBudsAIFoundation.AIAudioRecordingEventType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AIAudioRecordingEventType",
+                        "printedName": "AIBudsAIFoundation.AIAudioRecordingEventType",
+                        "usr": "c:@M@AIBudsAIFoundation@E@AIBudsAIAudioRecordingEventType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AIBudsAIFoundation@E@AIBudsAIAudioRecordingEventType@AIBudsAIAudioRecordingEventTypeBleDisconnected",
+            "mangledName": "$s18AIBudsAIFoundation25AIAudioRecordingEventTypeO15bleDisconnectedyA2CmF",
+            "moduleName": "AIBudsAIFoundation",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 13
+          },
+          {
+            "kind": "Var",
+            "name": "appWillTerminate",
+            "printedName": "appWillTerminate",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AIBudsAIFoundation.AIAudioRecordingEventType.Type) -> AIBudsAIFoundation.AIAudioRecordingEventType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AIAudioRecordingEventType",
+                    "printedName": "AIBudsAIFoundation.AIAudioRecordingEventType",
+                    "usr": "c:@M@AIBudsAIFoundation@E@AIBudsAIAudioRecordingEventType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AIBudsAIFoundation.AIAudioRecordingEventType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AIAudioRecordingEventType",
+                        "printedName": "AIBudsAIFoundation.AIAudioRecordingEventType",
+                        "usr": "c:@M@AIBudsAIFoundation@E@AIBudsAIAudioRecordingEventType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AIBudsAIFoundation@E@AIBudsAIAudioRecordingEventType@AIBudsAIAudioRecordingEventTypeAppWillTerminate",
+            "mangledName": "$s18AIBudsAIFoundation25AIAudioRecordingEventTypeO16appWillTerminateyA2CmF",
+            "moduleName": "AIBudsAIFoundation",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 14
+          },
+          {
+            "kind": "Var",
+            "name": "allCases",
+            "printedName": "allCases",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[AIBudsAIFoundation.AIAudioRecordingEventType]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AIAudioRecordingEventType",
+                    "printedName": "AIBudsAIFoundation.AIAudioRecordingEventType",
+                    "usr": "c:@M@AIBudsAIFoundation@E@AIBudsAIAudioRecordingEventType"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18AIBudsAIFoundation25AIAudioRecordingEventTypeO8allCasesSayACGvpZ",
+            "mangledName": "$s18AIBudsAIFoundation25AIAudioRecordingEventTypeO8allCasesSayACGvpZ",
+            "moduleName": "AIBudsAIFoundation",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[AIBudsAIFoundation.AIAudioRecordingEventType]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AIAudioRecordingEventType",
+                        "printedName": "AIBudsAIFoundation.AIAudioRecordingEventType",
+                        "usr": "c:@M@AIBudsAIFoundation@E@AIBudsAIAudioRecordingEventType"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18AIBudsAIFoundation25AIAudioRecordingEventTypeO8allCasesSayACGvgZ",
+                "mangledName": "$s18AIBudsAIFoundation25AIAudioRecordingEventTypeO8allCasesSayACGvgZ",
+                "moduleName": "AIBudsAIFoundation",
+                "static": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "eventId",
+            "printedName": "eventId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18AIBudsAIFoundation25AIAudioRecordingEventTypeO7eventIdSSvp",
+            "mangledName": "$s18AIBudsAIFoundation25AIAudioRecordingEventTypeO7eventIdSSvp",
+            "moduleName": "AIBudsAIFoundation",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18AIBudsAIFoundation25AIAudioRecordingEventTypeO7eventIdSSvg",
+                "mangledName": "$s18AIBudsAIFoundation25AIAudioRecordingEventTypeO7eventIdSSvg",
+                "moduleName": "AIBudsAIFoundation",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "name",
+            "printedName": "name",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18AIBudsAIFoundation25AIAudioRecordingEventTypeO4nameSSvp",
+            "mangledName": "$s18AIBudsAIFoundation25AIAudioRecordingEventTypeO4nameSSvp",
+            "moduleName": "AIBudsAIFoundation",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18AIBudsAIFoundation25AIAudioRecordingEventTypeO4nameSSvg",
+                "mangledName": "$s18AIBudsAIFoundation25AIAudioRecordingEventTypeO4nameSSvg",
+                "moduleName": "AIBudsAIFoundation",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "debugName",
+            "printedName": "debugName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18AIBudsAIFoundation25AIAudioRecordingEventTypeO9debugNameSSvp",
+            "mangledName": "$s18AIBudsAIFoundation25AIAudioRecordingEventTypeO9debugNameSSvp",
+            "moduleName": "AIBudsAIFoundation",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18AIBudsAIFoundation25AIAudioRecordingEventTypeO9debugNameSSvg",
+                "mangledName": "$s18AIBudsAIFoundation25AIAudioRecordingEventTypeO9debugNameSSvg",
+                "moduleName": "AIBudsAIFoundation",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "AIBudsAIFoundation.AIAudioRecordingEventType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AIAudioRecordingEventType",
+                    "printedName": "AIBudsAIFoundation.AIAudioRecordingEventType",
+                    "usr": "c:@M@AIBudsAIFoundation@E@AIBudsAIAudioRecordingEventType"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:18AIBudsAIFoundation25AIAudioRecordingEventTypeO8rawValueACSgSi_tcfc",
+            "mangledName": "$s18AIBudsAIFoundation25AIAudioRecordingEventTypeO8rawValueACSgSi_tcfc",
+            "moduleName": "AIBudsAIFoundation",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18AIBudsAIFoundation25AIAudioRecordingEventTypeO8rawValueSivp",
+            "mangledName": "$s18AIBudsAIFoundation25AIAudioRecordingEventTypeO8rawValueSivp",
+            "moduleName": "AIBudsAIFoundation",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18AIBudsAIFoundation25AIAudioRecordingEventTypeO8rawValueSivg",
+                "mangledName": "$s18AIBudsAIFoundation25AIAudioRecordingEventTypeO8rawValueSivg",
+                "moduleName": "AIBudsAIFoundation",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "description",
+            "printedName": "description",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18AIBudsAIFoundation25AIAudioRecordingEventTypeO11descriptionSSvp",
+            "mangledName": "$s18AIBudsAIFoundation25AIAudioRecordingEventTypeO11descriptionSSvp",
+            "moduleName": "AIBudsAIFoundation",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18AIBudsAIFoundation25AIAudioRecordingEventTypeO11descriptionSSvg",
+                "mangledName": "$s18AIBudsAIFoundation25AIAudioRecordingEventTypeO11descriptionSSvg",
+                "moduleName": "AIBudsAIFoundation",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "debugDescription",
+            "printedName": "debugDescription",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18AIBudsAIFoundation25AIAudioRecordingEventTypeO16debugDescriptionSSvp",
+            "mangledName": "$s18AIBudsAIFoundation25AIAudioRecordingEventTypeO16debugDescriptionSSvp",
+            "moduleName": "AIBudsAIFoundation",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18AIBudsAIFoundation25AIAudioRecordingEventTypeO16debugDescriptionSSvg",
+                "mangledName": "$s18AIBudsAIFoundation25AIAudioRecordingEventTypeO16debugDescriptionSSvg",
+                "moduleName": "AIBudsAIFoundation",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "c:@M@AIBudsAIFoundation@E@AIBudsAIAudioRecordingEventType",
+        "mangledName": "$s18AIBudsAIFoundation25AIAudioRecordingEventTypeO",
+        "moduleName": "AIBudsAIFoundation",
+        "objc_name": "AIBudsAIAudioRecordingEventType",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CaseIterable",
+            "printedName": "CaseIterable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "AllCases",
+                "printedName": "AllCases",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[AIBudsAIFoundation.AIAudioRecordingEventType]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AIAudioRecordingEventType",
+                        "printedName": "AIBudsAIFoundation.AIAudioRecordingEventType",
+                        "usr": "c:@M@AIBudsAIFoundation@E@AIBudsAIAudioRecordingEventType"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s12CaseIterableP",
+            "mangledName": "$ss12CaseIterableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AIBudsAIFoundation",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "AIChatEventType",
         "printedName": "AIChatEventType",
         "children": [
+          {
+            "kind": "Var",
+            "name": "userInitiatedToStart",
+            "printedName": "userInitiatedToStart",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AIBudsAIFoundation.AIChatEventType.Type) -> AIBudsAIFoundation.AIChatEventType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AIChatEventType",
+                    "printedName": "AIBudsAIFoundation.AIChatEventType",
+                    "usr": "c:@M@AIBudsAIFoundation@E@AIBudsAIChatEventType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AIBudsAIFoundation.AIChatEventType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AIChatEventType",
+                        "printedName": "AIBudsAIFoundation.AIChatEventType",
+                        "usr": "c:@M@AIBudsAIFoundation@E@AIBudsAIChatEventType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AIBudsAIFoundation@E@AIBudsAIChatEventType@AIBudsAIChatEventTypeUserInitiatedToStart",
+            "mangledName": "$s18AIBudsAIFoundation15AIChatEventTypeO20userInitiatedToStartyA2CmF",
+            "moduleName": "AIBudsAIFoundation",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 0
+          },
           {
             "kind": "Var",
             "name": "sessionStarted",
@@ -12082,7 +13714,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 0
+            "fixedbinaryorder": 1
           },
           {
             "kind": "Var",
@@ -12124,7 +13756,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 1
+            "fixedbinaryorder": 2
           },
           {
             "kind": "Var",
@@ -12166,7 +13798,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 2
+            "fixedbinaryorder": 3
           },
           {
             "kind": "Var",
@@ -12208,7 +13840,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 3
+            "fixedbinaryorder": 4
           },
           {
             "kind": "Var",
@@ -12250,7 +13882,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 4
+            "fixedbinaryorder": 5
           },
           {
             "kind": "Var",
@@ -12292,7 +13924,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 5
+            "fixedbinaryorder": 6
           },
           {
             "kind": "Var",
@@ -12334,7 +13966,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 6
+            "fixedbinaryorder": 7
           },
           {
             "kind": "Var",
@@ -12376,7 +14008,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 7
+            "fixedbinaryorder": 8
           },
           {
             "kind": "Var",
@@ -12418,7 +14050,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 8
+            "fixedbinaryorder": 9
           },
           {
             "kind": "Var",
@@ -12460,7 +14092,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 9
+            "fixedbinaryorder": 10
           },
           {
             "kind": "Var",
@@ -12502,7 +14134,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 10
+            "fixedbinaryorder": 11
           },
           {
             "kind": "Var",
@@ -12544,7 +14176,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 11
+            "fixedbinaryorder": 12
           },
           {
             "kind": "Var",
@@ -12586,7 +14218,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 12
+            "fixedbinaryorder": 13
           },
           {
             "kind": "Var",
@@ -12628,7 +14260,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 13
+            "fixedbinaryorder": 14
           },
           {
             "kind": "Var",
@@ -12670,7 +14302,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 14
+            "fixedbinaryorder": 15
           },
           {
             "kind": "Var",
@@ -12712,7 +14344,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 15
+            "fixedbinaryorder": 16
           },
           {
             "kind": "Var",
@@ -12754,7 +14386,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 16
+            "fixedbinaryorder": 17
           },
           {
             "kind": "Var",
@@ -12796,7 +14428,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 17
+            "fixedbinaryorder": 18
           },
           {
             "kind": "Var",
@@ -12838,7 +14470,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 18
+            "fixedbinaryorder": 19
           },
           {
             "kind": "Var",
@@ -12880,7 +14512,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 19
+            "fixedbinaryorder": 20
           },
           {
             "kind": "Var",
@@ -12922,7 +14554,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 20
+            "fixedbinaryorder": 21
           },
           {
             "kind": "Var",
@@ -12964,7 +14596,49 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 21
+            "fixedbinaryorder": 22
+          },
+          {
+            "kind": "Var",
+            "name": "appWillTerminate",
+            "printedName": "appWillTerminate",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AIBudsAIFoundation.AIChatEventType.Type) -> AIBudsAIFoundation.AIChatEventType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AIChatEventType",
+                    "printedName": "AIBudsAIFoundation.AIChatEventType",
+                    "usr": "c:@M@AIBudsAIFoundation@E@AIBudsAIChatEventType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AIBudsAIFoundation.AIChatEventType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AIChatEventType",
+                        "printedName": "AIBudsAIFoundation.AIChatEventType",
+                        "usr": "c:@M@AIBudsAIFoundation@E@AIBudsAIChatEventType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AIBudsAIFoundation@E@AIBudsAIChatEventType@AIBudsAIChatEventTypeAppWillTerminate",
+            "mangledName": "$s18AIBudsAIFoundation15AIChatEventTypeO16appWillTerminateyA2CmF",
+            "moduleName": "AIBudsAIFoundation",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 23
           },
           {
             "kind": "Var",
@@ -13020,6 +14694,46 @@
                 "mangledName": "$s18AIBudsAIFoundation15AIChatEventTypeO8allCasesSayACGvgZ",
                 "moduleName": "AIBudsAIFoundation",
                 "static": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "eventId",
+            "printedName": "eventId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18AIBudsAIFoundation15AIChatEventTypeO7eventIdSSvp",
+            "mangledName": "$s18AIBudsAIFoundation15AIChatEventTypeO7eventIdSSvp",
+            "moduleName": "AIBudsAIFoundation",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18AIBudsAIFoundation15AIChatEventTypeO7eventIdSSvg",
+                "mangledName": "$s18AIBudsAIFoundation15AIChatEventTypeO7eventIdSSvg",
+                "moduleName": "AIBudsAIFoundation",
                 "accessorKind": "get"
               }
             ]
@@ -13352,6 +15066,1096 @@
                         "name": "AIChatEventType",
                         "printedName": "AIBudsAIFoundation.AIChatEventType",
                         "usr": "c:@M@AIBudsAIFoundation@E@AIBudsAIChatEventType"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s12CaseIterableP",
+            "mangledName": "$ss12CaseIterableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AIBudsAIFoundation",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SimultaneousInterpretationEventType",
+        "printedName": "SimultaneousInterpretationEventType",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "userInitiatedToStart",
+            "printedName": "userInitiatedToStart",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AIBudsAIFoundation.SimultaneousInterpretationEventType.Type) -> AIBudsAIFoundation.SimultaneousInterpretationEventType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SimultaneousInterpretationEventType",
+                    "printedName": "AIBudsAIFoundation.SimultaneousInterpretationEventType",
+                    "usr": "c:@M@AIBudsAIFoundation@E@AIBudsSimultaneousInterpretationEventType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AIBudsAIFoundation.SimultaneousInterpretationEventType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SimultaneousInterpretationEventType",
+                        "printedName": "AIBudsAIFoundation.SimultaneousInterpretationEventType",
+                        "usr": "c:@M@AIBudsAIFoundation@E@AIBudsSimultaneousInterpretationEventType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AIBudsAIFoundation@E@AIBudsSimultaneousInterpretationEventType@AIBudsSimultaneousInterpretationEventTypeUserInitiatedToStart",
+            "mangledName": "$s18AIBudsAIFoundation35SimultaneousInterpretationEventTypeO20userInitiatedToStartyA2CmF",
+            "moduleName": "AIBudsAIFoundation",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "sessionStarted",
+            "printedName": "sessionStarted",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AIBudsAIFoundation.SimultaneousInterpretationEventType.Type) -> AIBudsAIFoundation.SimultaneousInterpretationEventType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SimultaneousInterpretationEventType",
+                    "printedName": "AIBudsAIFoundation.SimultaneousInterpretationEventType",
+                    "usr": "c:@M@AIBudsAIFoundation@E@AIBudsSimultaneousInterpretationEventType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AIBudsAIFoundation.SimultaneousInterpretationEventType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SimultaneousInterpretationEventType",
+                        "printedName": "AIBudsAIFoundation.SimultaneousInterpretationEventType",
+                        "usr": "c:@M@AIBudsAIFoundation@E@AIBudsSimultaneousInterpretationEventType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AIBudsAIFoundation@E@AIBudsSimultaneousInterpretationEventType@AIBudsSimultaneousInterpretationEventTypeSessionStarted",
+            "mangledName": "$s18AIBudsAIFoundation35SimultaneousInterpretationEventTypeO14sessionStartedyA2CmF",
+            "moduleName": "AIBudsAIFoundation",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Var",
+            "name": "sessionStartFailed",
+            "printedName": "sessionStartFailed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AIBudsAIFoundation.SimultaneousInterpretationEventType.Type) -> AIBudsAIFoundation.SimultaneousInterpretationEventType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SimultaneousInterpretationEventType",
+                    "printedName": "AIBudsAIFoundation.SimultaneousInterpretationEventType",
+                    "usr": "c:@M@AIBudsAIFoundation@E@AIBudsSimultaneousInterpretationEventType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AIBudsAIFoundation.SimultaneousInterpretationEventType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SimultaneousInterpretationEventType",
+                        "printedName": "AIBudsAIFoundation.SimultaneousInterpretationEventType",
+                        "usr": "c:@M@AIBudsAIFoundation@E@AIBudsSimultaneousInterpretationEventType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AIBudsAIFoundation@E@AIBudsSimultaneousInterpretationEventType@AIBudsSimultaneousInterpretationEventTypeSessionStartFailed",
+            "mangledName": "$s18AIBudsAIFoundation35SimultaneousInterpretationEventTypeO18sessionStartFailedyA2CmF",
+            "moduleName": "AIBudsAIFoundation",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 2
+          },
+          {
+            "kind": "Var",
+            "name": "aiServiceConnected",
+            "printedName": "aiServiceConnected",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AIBudsAIFoundation.SimultaneousInterpretationEventType.Type) -> AIBudsAIFoundation.SimultaneousInterpretationEventType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SimultaneousInterpretationEventType",
+                    "printedName": "AIBudsAIFoundation.SimultaneousInterpretationEventType",
+                    "usr": "c:@M@AIBudsAIFoundation@E@AIBudsSimultaneousInterpretationEventType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AIBudsAIFoundation.SimultaneousInterpretationEventType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SimultaneousInterpretationEventType",
+                        "printedName": "AIBudsAIFoundation.SimultaneousInterpretationEventType",
+                        "usr": "c:@M@AIBudsAIFoundation@E@AIBudsSimultaneousInterpretationEventType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AIBudsAIFoundation@E@AIBudsSimultaneousInterpretationEventType@AIBudsSimultaneousInterpretationEventTypeAiServiceConnected",
+            "mangledName": "$s18AIBudsAIFoundation35SimultaneousInterpretationEventTypeO18aiServiceConnectedyA2CmF",
+            "moduleName": "AIBudsAIFoundation",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 3
+          },
+          {
+            "kind": "Var",
+            "name": "autoEndSessionTriggered",
+            "printedName": "autoEndSessionTriggered",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AIBudsAIFoundation.SimultaneousInterpretationEventType.Type) -> AIBudsAIFoundation.SimultaneousInterpretationEventType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SimultaneousInterpretationEventType",
+                    "printedName": "AIBudsAIFoundation.SimultaneousInterpretationEventType",
+                    "usr": "c:@M@AIBudsAIFoundation@E@AIBudsSimultaneousInterpretationEventType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AIBudsAIFoundation.SimultaneousInterpretationEventType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SimultaneousInterpretationEventType",
+                        "printedName": "AIBudsAIFoundation.SimultaneousInterpretationEventType",
+                        "usr": "c:@M@AIBudsAIFoundation@E@AIBudsSimultaneousInterpretationEventType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AIBudsAIFoundation@E@AIBudsSimultaneousInterpretationEventType@AIBudsSimultaneousInterpretationEventTypeAutoEndSessionTriggered",
+            "mangledName": "$s18AIBudsAIFoundation35SimultaneousInterpretationEventTypeO23autoEndSessionTriggeredyA2CmF",
+            "moduleName": "AIBudsAIFoundation",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 4
+          },
+          {
+            "kind": "Var",
+            "name": "sessionEnded",
+            "printedName": "sessionEnded",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AIBudsAIFoundation.SimultaneousInterpretationEventType.Type) -> AIBudsAIFoundation.SimultaneousInterpretationEventType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SimultaneousInterpretationEventType",
+                    "printedName": "AIBudsAIFoundation.SimultaneousInterpretationEventType",
+                    "usr": "c:@M@AIBudsAIFoundation@E@AIBudsSimultaneousInterpretationEventType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AIBudsAIFoundation.SimultaneousInterpretationEventType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SimultaneousInterpretationEventType",
+                        "printedName": "AIBudsAIFoundation.SimultaneousInterpretationEventType",
+                        "usr": "c:@M@AIBudsAIFoundation@E@AIBudsSimultaneousInterpretationEventType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AIBudsAIFoundation@E@AIBudsSimultaneousInterpretationEventType@AIBudsSimultaneousInterpretationEventTypeSessionEnded",
+            "mangledName": "$s18AIBudsAIFoundation35SimultaneousInterpretationEventTypeO12sessionEndedyA2CmF",
+            "moduleName": "AIBudsAIFoundation",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 5
+          },
+          {
+            "kind": "Var",
+            "name": "aiServiceUnauthorized",
+            "printedName": "aiServiceUnauthorized",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AIBudsAIFoundation.SimultaneousInterpretationEventType.Type) -> AIBudsAIFoundation.SimultaneousInterpretationEventType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SimultaneousInterpretationEventType",
+                    "printedName": "AIBudsAIFoundation.SimultaneousInterpretationEventType",
+                    "usr": "c:@M@AIBudsAIFoundation@E@AIBudsSimultaneousInterpretationEventType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AIBudsAIFoundation.SimultaneousInterpretationEventType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SimultaneousInterpretationEventType",
+                        "printedName": "AIBudsAIFoundation.SimultaneousInterpretationEventType",
+                        "usr": "c:@M@AIBudsAIFoundation@E@AIBudsSimultaneousInterpretationEventType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AIBudsAIFoundation@E@AIBudsSimultaneousInterpretationEventType@AIBudsSimultaneousInterpretationEventTypeAiServiceUnauthorized",
+            "mangledName": "$s18AIBudsAIFoundation35SimultaneousInterpretationEventTypeO21aiServiceUnauthorizedyA2CmF",
+            "moduleName": "AIBudsAIFoundation",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 6
+          },
+          {
+            "kind": "Var",
+            "name": "aiServiceDisconnected",
+            "printedName": "aiServiceDisconnected",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AIBudsAIFoundation.SimultaneousInterpretationEventType.Type) -> AIBudsAIFoundation.SimultaneousInterpretationEventType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SimultaneousInterpretationEventType",
+                    "printedName": "AIBudsAIFoundation.SimultaneousInterpretationEventType",
+                    "usr": "c:@M@AIBudsAIFoundation@E@AIBudsSimultaneousInterpretationEventType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AIBudsAIFoundation.SimultaneousInterpretationEventType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SimultaneousInterpretationEventType",
+                        "printedName": "AIBudsAIFoundation.SimultaneousInterpretationEventType",
+                        "usr": "c:@M@AIBudsAIFoundation@E@AIBudsSimultaneousInterpretationEventType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AIBudsAIFoundation@E@AIBudsSimultaneousInterpretationEventType@AIBudsSimultaneousInterpretationEventTypeAiServiceDisconnected",
+            "mangledName": "$s18AIBudsAIFoundation35SimultaneousInterpretationEventTypeO21aiServiceDisconnectedyA2CmF",
+            "moduleName": "AIBudsAIFoundation",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 7
+          },
+          {
+            "kind": "Var",
+            "name": "aiServiceNetworkError",
+            "printedName": "aiServiceNetworkError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AIBudsAIFoundation.SimultaneousInterpretationEventType.Type) -> AIBudsAIFoundation.SimultaneousInterpretationEventType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SimultaneousInterpretationEventType",
+                    "printedName": "AIBudsAIFoundation.SimultaneousInterpretationEventType",
+                    "usr": "c:@M@AIBudsAIFoundation@E@AIBudsSimultaneousInterpretationEventType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AIBudsAIFoundation.SimultaneousInterpretationEventType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SimultaneousInterpretationEventType",
+                        "printedName": "AIBudsAIFoundation.SimultaneousInterpretationEventType",
+                        "usr": "c:@M@AIBudsAIFoundation@E@AIBudsSimultaneousInterpretationEventType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AIBudsAIFoundation@E@AIBudsSimultaneousInterpretationEventType@AIBudsSimultaneousInterpretationEventTypeAiServiceNetworkError",
+            "mangledName": "$s18AIBudsAIFoundation35SimultaneousInterpretationEventTypeO21aiServiceNetworkErroryA2CmF",
+            "moduleName": "AIBudsAIFoundation",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 8
+          },
+          {
+            "kind": "Var",
+            "name": "aiServiceStartRecording",
+            "printedName": "aiServiceStartRecording",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AIBudsAIFoundation.SimultaneousInterpretationEventType.Type) -> AIBudsAIFoundation.SimultaneousInterpretationEventType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SimultaneousInterpretationEventType",
+                    "printedName": "AIBudsAIFoundation.SimultaneousInterpretationEventType",
+                    "usr": "c:@M@AIBudsAIFoundation@E@AIBudsSimultaneousInterpretationEventType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AIBudsAIFoundation.SimultaneousInterpretationEventType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SimultaneousInterpretationEventType",
+                        "printedName": "AIBudsAIFoundation.SimultaneousInterpretationEventType",
+                        "usr": "c:@M@AIBudsAIFoundation@E@AIBudsSimultaneousInterpretationEventType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AIBudsAIFoundation@E@AIBudsSimultaneousInterpretationEventType@AIBudsSimultaneousInterpretationEventTypeAiServiceStartRecording",
+            "mangledName": "$s18AIBudsAIFoundation35SimultaneousInterpretationEventTypeO23aiServiceStartRecordingyA2CmF",
+            "moduleName": "AIBudsAIFoundation",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 9
+          },
+          {
+            "kind": "Var",
+            "name": "aiServiceEndRecording",
+            "printedName": "aiServiceEndRecording",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AIBudsAIFoundation.SimultaneousInterpretationEventType.Type) -> AIBudsAIFoundation.SimultaneousInterpretationEventType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SimultaneousInterpretationEventType",
+                    "printedName": "AIBudsAIFoundation.SimultaneousInterpretationEventType",
+                    "usr": "c:@M@AIBudsAIFoundation@E@AIBudsSimultaneousInterpretationEventType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AIBudsAIFoundation.SimultaneousInterpretationEventType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SimultaneousInterpretationEventType",
+                        "printedName": "AIBudsAIFoundation.SimultaneousInterpretationEventType",
+                        "usr": "c:@M@AIBudsAIFoundation@E@AIBudsSimultaneousInterpretationEventType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AIBudsAIFoundation@E@AIBudsSimultaneousInterpretationEventType@AIBudsSimultaneousInterpretationEventTypeAiServiceEndRecording",
+            "mangledName": "$s18AIBudsAIFoundation35SimultaneousInterpretationEventTypeO21aiServiceEndRecordingyA2CmF",
+            "moduleName": "AIBudsAIFoundation",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 10
+          },
+          {
+            "kind": "Var",
+            "name": "aiServiceRecordingError",
+            "printedName": "aiServiceRecordingError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AIBudsAIFoundation.SimultaneousInterpretationEventType.Type) -> AIBudsAIFoundation.SimultaneousInterpretationEventType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SimultaneousInterpretationEventType",
+                    "printedName": "AIBudsAIFoundation.SimultaneousInterpretationEventType",
+                    "usr": "c:@M@AIBudsAIFoundation@E@AIBudsSimultaneousInterpretationEventType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AIBudsAIFoundation.SimultaneousInterpretationEventType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SimultaneousInterpretationEventType",
+                        "printedName": "AIBudsAIFoundation.SimultaneousInterpretationEventType",
+                        "usr": "c:@M@AIBudsAIFoundation@E@AIBudsSimultaneousInterpretationEventType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AIBudsAIFoundation@E@AIBudsSimultaneousInterpretationEventType@AIBudsSimultaneousInterpretationEventTypeAiServiceRecordingError",
+            "mangledName": "$s18AIBudsAIFoundation35SimultaneousInterpretationEventTypeO23aiServiceRecordingErroryA2CmF",
+            "moduleName": "AIBudsAIFoundation",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 11
+          },
+          {
+            "kind": "Var",
+            "name": "aiServiceResponseError",
+            "printedName": "aiServiceResponseError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AIBudsAIFoundation.SimultaneousInterpretationEventType.Type) -> AIBudsAIFoundation.SimultaneousInterpretationEventType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SimultaneousInterpretationEventType",
+                    "printedName": "AIBudsAIFoundation.SimultaneousInterpretationEventType",
+                    "usr": "c:@M@AIBudsAIFoundation@E@AIBudsSimultaneousInterpretationEventType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AIBudsAIFoundation.SimultaneousInterpretationEventType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SimultaneousInterpretationEventType",
+                        "printedName": "AIBudsAIFoundation.SimultaneousInterpretationEventType",
+                        "usr": "c:@M@AIBudsAIFoundation@E@AIBudsSimultaneousInterpretationEventType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AIBudsAIFoundation@E@AIBudsSimultaneousInterpretationEventType@AIBudsSimultaneousInterpretationEventTypeAiServiceResponseError",
+            "mangledName": "$s18AIBudsAIFoundation35SimultaneousInterpretationEventTypeO22aiServiceResponseErroryA2CmF",
+            "moduleName": "AIBudsAIFoundation",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 12
+          },
+          {
+            "kind": "Var",
+            "name": "bleDisconnected",
+            "printedName": "bleDisconnected",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AIBudsAIFoundation.SimultaneousInterpretationEventType.Type) -> AIBudsAIFoundation.SimultaneousInterpretationEventType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SimultaneousInterpretationEventType",
+                    "printedName": "AIBudsAIFoundation.SimultaneousInterpretationEventType",
+                    "usr": "c:@M@AIBudsAIFoundation@E@AIBudsSimultaneousInterpretationEventType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AIBudsAIFoundation.SimultaneousInterpretationEventType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SimultaneousInterpretationEventType",
+                        "printedName": "AIBudsAIFoundation.SimultaneousInterpretationEventType",
+                        "usr": "c:@M@AIBudsAIFoundation@E@AIBudsSimultaneousInterpretationEventType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AIBudsAIFoundation@E@AIBudsSimultaneousInterpretationEventType@AIBudsSimultaneousInterpretationEventTypeBleDisconnected",
+            "mangledName": "$s18AIBudsAIFoundation35SimultaneousInterpretationEventTypeO15bleDisconnectedyA2CmF",
+            "moduleName": "AIBudsAIFoundation",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 13
+          },
+          {
+            "kind": "Var",
+            "name": "appWillTerminate",
+            "printedName": "appWillTerminate",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AIBudsAIFoundation.SimultaneousInterpretationEventType.Type) -> AIBudsAIFoundation.SimultaneousInterpretationEventType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SimultaneousInterpretationEventType",
+                    "printedName": "AIBudsAIFoundation.SimultaneousInterpretationEventType",
+                    "usr": "c:@M@AIBudsAIFoundation@E@AIBudsSimultaneousInterpretationEventType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AIBudsAIFoundation.SimultaneousInterpretationEventType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SimultaneousInterpretationEventType",
+                        "printedName": "AIBudsAIFoundation.SimultaneousInterpretationEventType",
+                        "usr": "c:@M@AIBudsAIFoundation@E@AIBudsSimultaneousInterpretationEventType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AIBudsAIFoundation@E@AIBudsSimultaneousInterpretationEventType@AIBudsSimultaneousInterpretationEventTypeAppWillTerminate",
+            "mangledName": "$s18AIBudsAIFoundation35SimultaneousInterpretationEventTypeO16appWillTerminateyA2CmF",
+            "moduleName": "AIBudsAIFoundation",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 14
+          },
+          {
+            "kind": "Var",
+            "name": "allCases",
+            "printedName": "allCases",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[AIBudsAIFoundation.SimultaneousInterpretationEventType]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SimultaneousInterpretationEventType",
+                    "printedName": "AIBudsAIFoundation.SimultaneousInterpretationEventType",
+                    "usr": "c:@M@AIBudsAIFoundation@E@AIBudsSimultaneousInterpretationEventType"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18AIBudsAIFoundation35SimultaneousInterpretationEventTypeO8allCasesSayACGvpZ",
+            "mangledName": "$s18AIBudsAIFoundation35SimultaneousInterpretationEventTypeO8allCasesSayACGvpZ",
+            "moduleName": "AIBudsAIFoundation",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[AIBudsAIFoundation.SimultaneousInterpretationEventType]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SimultaneousInterpretationEventType",
+                        "printedName": "AIBudsAIFoundation.SimultaneousInterpretationEventType",
+                        "usr": "c:@M@AIBudsAIFoundation@E@AIBudsSimultaneousInterpretationEventType"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18AIBudsAIFoundation35SimultaneousInterpretationEventTypeO8allCasesSayACGvgZ",
+                "mangledName": "$s18AIBudsAIFoundation35SimultaneousInterpretationEventTypeO8allCasesSayACGvgZ",
+                "moduleName": "AIBudsAIFoundation",
+                "static": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "eventId",
+            "printedName": "eventId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18AIBudsAIFoundation35SimultaneousInterpretationEventTypeO7eventIdSSvp",
+            "mangledName": "$s18AIBudsAIFoundation35SimultaneousInterpretationEventTypeO7eventIdSSvp",
+            "moduleName": "AIBudsAIFoundation",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18AIBudsAIFoundation35SimultaneousInterpretationEventTypeO7eventIdSSvg",
+                "mangledName": "$s18AIBudsAIFoundation35SimultaneousInterpretationEventTypeO7eventIdSSvg",
+                "moduleName": "AIBudsAIFoundation",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "name",
+            "printedName": "name",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18AIBudsAIFoundation35SimultaneousInterpretationEventTypeO4nameSSvp",
+            "mangledName": "$s18AIBudsAIFoundation35SimultaneousInterpretationEventTypeO4nameSSvp",
+            "moduleName": "AIBudsAIFoundation",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18AIBudsAIFoundation35SimultaneousInterpretationEventTypeO4nameSSvg",
+                "mangledName": "$s18AIBudsAIFoundation35SimultaneousInterpretationEventTypeO4nameSSvg",
+                "moduleName": "AIBudsAIFoundation",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "debugName",
+            "printedName": "debugName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18AIBudsAIFoundation35SimultaneousInterpretationEventTypeO9debugNameSSvp",
+            "mangledName": "$s18AIBudsAIFoundation35SimultaneousInterpretationEventTypeO9debugNameSSvp",
+            "moduleName": "AIBudsAIFoundation",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18AIBudsAIFoundation35SimultaneousInterpretationEventTypeO9debugNameSSvg",
+                "mangledName": "$s18AIBudsAIFoundation35SimultaneousInterpretationEventTypeO9debugNameSSvg",
+                "moduleName": "AIBudsAIFoundation",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "AIBudsAIFoundation.SimultaneousInterpretationEventType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SimultaneousInterpretationEventType",
+                    "printedName": "AIBudsAIFoundation.SimultaneousInterpretationEventType",
+                    "usr": "c:@M@AIBudsAIFoundation@E@AIBudsSimultaneousInterpretationEventType"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:18AIBudsAIFoundation35SimultaneousInterpretationEventTypeO8rawValueACSgSi_tcfc",
+            "mangledName": "$s18AIBudsAIFoundation35SimultaneousInterpretationEventTypeO8rawValueACSgSi_tcfc",
+            "moduleName": "AIBudsAIFoundation",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18AIBudsAIFoundation35SimultaneousInterpretationEventTypeO8rawValueSivp",
+            "mangledName": "$s18AIBudsAIFoundation35SimultaneousInterpretationEventTypeO8rawValueSivp",
+            "moduleName": "AIBudsAIFoundation",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18AIBudsAIFoundation35SimultaneousInterpretationEventTypeO8rawValueSivg",
+                "mangledName": "$s18AIBudsAIFoundation35SimultaneousInterpretationEventTypeO8rawValueSivg",
+                "moduleName": "AIBudsAIFoundation",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "description",
+            "printedName": "description",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18AIBudsAIFoundation35SimultaneousInterpretationEventTypeO11descriptionSSvp",
+            "mangledName": "$s18AIBudsAIFoundation35SimultaneousInterpretationEventTypeO11descriptionSSvp",
+            "moduleName": "AIBudsAIFoundation",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18AIBudsAIFoundation35SimultaneousInterpretationEventTypeO11descriptionSSvg",
+                "mangledName": "$s18AIBudsAIFoundation35SimultaneousInterpretationEventTypeO11descriptionSSvg",
+                "moduleName": "AIBudsAIFoundation",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "debugDescription",
+            "printedName": "debugDescription",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18AIBudsAIFoundation35SimultaneousInterpretationEventTypeO16debugDescriptionSSvp",
+            "mangledName": "$s18AIBudsAIFoundation35SimultaneousInterpretationEventTypeO16debugDescriptionSSvp",
+            "moduleName": "AIBudsAIFoundation",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18AIBudsAIFoundation35SimultaneousInterpretationEventTypeO16debugDescriptionSSvg",
+                "mangledName": "$s18AIBudsAIFoundation35SimultaneousInterpretationEventTypeO16debugDescriptionSSvg",
+                "moduleName": "AIBudsAIFoundation",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "c:@M@AIBudsAIFoundation@E@AIBudsSimultaneousInterpretationEventType",
+        "mangledName": "$s18AIBudsAIFoundation35SimultaneousInterpretationEventTypeO",
+        "moduleName": "AIBudsAIFoundation",
+        "objc_name": "AIBudsSimultaneousInterpretationEventType",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CaseIterable",
+            "printedName": "CaseIterable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "AllCases",
+                "printedName": "AllCases",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[AIBudsAIFoundation.SimultaneousInterpretationEventType]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SimultaneousInterpretationEventType",
+                        "printedName": "AIBudsAIFoundation.SimultaneousInterpretationEventType",
+                        "usr": "c:@M@AIBudsAIFoundation@E@AIBudsSimultaneousInterpretationEventType"
                       }
                     ],
                     "usr": "s:Sa"
@@ -14309,6 +17113,90 @@
               "ObjC"
             ],
             "fixedbinaryorder": 21
+          },
+          {
+            "kind": "Var",
+            "name": "findPhone",
+            "printedName": "findPhone",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AIBudsAIFoundation.AIIntentType.Type) -> AIBudsAIFoundation.AIIntentType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AIIntentType",
+                    "printedName": "AIBudsAIFoundation.AIIntentType",
+                    "usr": "c:@M@AIBudsAIFoundation@E@AIBudsAIIntentType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AIBudsAIFoundation.AIIntentType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AIIntentType",
+                        "printedName": "AIBudsAIFoundation.AIIntentType",
+                        "usr": "c:@M@AIBudsAIFoundation@E@AIBudsAIIntentType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AIBudsAIFoundation@E@AIBudsAIIntentType@AIBudsAIIntentTypeFindPhone",
+            "mangledName": "$s18AIBudsAIFoundation12AIIntentTypeO9findPhoneyA2CmF",
+            "moduleName": "AIBudsAIFoundation",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 22
+          },
+          {
+            "kind": "Var",
+            "name": "stopFindPhone",
+            "printedName": "stopFindPhone",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AIBudsAIFoundation.AIIntentType.Type) -> AIBudsAIFoundation.AIIntentType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AIIntentType",
+                    "printedName": "AIBudsAIFoundation.AIIntentType",
+                    "usr": "c:@M@AIBudsAIFoundation@E@AIBudsAIIntentType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AIBudsAIFoundation.AIIntentType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AIIntentType",
+                        "printedName": "AIBudsAIFoundation.AIIntentType",
+                        "usr": "c:@M@AIBudsAIFoundation@E@AIBudsAIIntentType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AIBudsAIFoundation@E@AIBudsAIIntentType@AIBudsAIIntentTypeStopFindPhone",
+            "mangledName": "$s18AIBudsAIFoundation12AIIntentTypeO13stopFindPhoneyA2CmF",
+            "moduleName": "AIBudsAIFoundation",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 23
           },
           {
             "kind": "Var",
@@ -15413,112 +18301,112 @@
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/AIChatSession(AIChat会话)\/AIChatSessionConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 2148,
+      "offset": 2137,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/AIChatSession(AIChat会话)\/AIChatSessionConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 2462,
+      "offset": 2451,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/AIChatSession(AIChat会话)\/AIChatSessionConfig.swift",
       "kind": "Dictionary",
-      "offset": 3822,
+      "offset": 3811,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/AIChatSession(AIChat会话)\/AIChatSessionConfig.swift",
       "kind": "StringLiteral",
-      "offset": 3982,
+      "offset": 3971,
       "length": 20,
       "value": "\"starburst.agent_id\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/AIChatSession(AIChat会话)\/AIChatSessionConfig.swift",
       "kind": "StringLiteral",
-      "offset": 4167,
+      "offset": 4156,
       "length": 22,
       "value": "\"starburst.speaker_id\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/AIChatSession(AIChat会话)\/AIChatSessionConfig.swift",
       "kind": "StringLiteral",
-      "offset": 4359,
+      "offset": 4348,
       "length": 23,
       "value": "\"starburst.init_prompt\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/AIChatSession(AIChat会话)\/AIChatSessionConfig.swift",
       "kind": "StringLiteral",
-      "offset": 4547,
+      "offset": 4536,
       "length": 22,
       "value": "\"starburst.usage_plan\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/AIChatSession(AIChat会话)\/AIChatSessionConfig.swift",
       "kind": "StringLiteral",
-      "offset": 4724,
+      "offset": 4713,
       "length": 19,
       "value": "\"mltcloud.agent_id\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/AIChatSession(AIChat会话)\/AIChatSessionConfig.swift",
       "kind": "StringLiteral",
-      "offset": 4906,
+      "offset": 4895,
       "length": 21,
       "value": "\"mltcloud.speaker_id\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/AIChatSession(AIChat会话)\/AIChatSessionConfig.swift",
       "kind": "StringLiteral",
-      "offset": 5105,
+      "offset": 5094,
       "length": 28,
       "value": "\"mltcloud.intent_confg_code\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/AIChatSession(AIChat会话)\/AIChatSessionConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 7843,
+      "offset": 7827,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/AIChatSession(AIChat会话)\/AIChatSessionConfig.swift",
       "kind": "FloatLiteral",
-      "offset": 7920,
+      "offset": 7904,
       "length": 3,
       "value": "0.8"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/AIChatSession(AIChat会话)\/AIChatSessionConfig.swift",
       "kind": "FloatLiteral",
-      "offset": 7998,
+      "offset": 7982,
       "length": 4,
       "value": "15.0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/AIChatSession(AIChat会话)\/AIChatSessionConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 8054,
+      "offset": 8038,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/AIChatSession(AIChat会话)\/AIChatSessionConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 8123,
+      "offset": 8102,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/AIChatSession(AIChat会话)\/AIChatSessionConfig.swift",
       "kind": "Dictionary",
-      "offset": 8187,
+      "offset": 8166,
       "length": 3,
       "value": "[]"
     },
@@ -15532,373 +18420,541 @@
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/Common(常用)\/SpeakerSegment.swift",
       "kind": "FloatLiteral",
-      "offset": 1555,
+      "offset": 1677,
       "length": 6,
       "value": "1000.0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/Common(常用)\/SpeakerSegment.swift",
       "kind": "IntegerLiteral",
-      "offset": 1605,
+      "offset": 1727,
       "length": 4,
       "value": "3600"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/Common(常用)\/SpeakerSegment.swift",
       "kind": "IntegerLiteral",
-      "offset": 1687,
+      "offset": 1809,
       "length": 4,
       "value": "3600"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/Common(常用)\/SpeakerSegment.swift",
       "kind": "IntegerLiteral",
-      "offset": 1696,
+      "offset": 1818,
       "length": 2,
       "value": "60"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/Common(常用)\/SpeakerSegment.swift",
       "kind": "IntegerLiteral",
-      "offset": 1775,
+      "offset": 1897,
       "length": 2,
       "value": "60"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/Common(常用)\/SpeakerSegment.swift",
       "kind": "IntegerLiteral",
-      "offset": 1861,
+      "offset": 1983,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/Common(常用)\/SpeakerSegment.swift",
       "kind": "IntegerLiteral",
-      "offset": 1867,
+      "offset": 1989,
       "length": 4,
       "value": "1000"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/Common(常用)\/SpeakerSegment.swift",
       "kind": "IntegerLiteral",
-      "offset": 1909,
+      "offset": 2031,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/Common(常用)\/SpeakerSegment.swift",
       "kind": "StringLiteral",
-      "offset": 1951,
+      "offset": 2073,
       "length": 21,
       "value": "\"%02d:%02d:%02d.%03d\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/Common(常用)\/SpeakerSegment.swift",
       "kind": "StringLiteral",
-      "offset": 2072,
+      "offset": 2194,
       "length": 16,
       "value": "\"%02d:%02d.%03d\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/Common(常用)\/SpeakerSegment.swift",
       "kind": "FloatLiteral",
-      "offset": 2231,
+      "offset": 2353,
       "length": 6,
       "value": "1000.0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/Common(常用)\/SpeakerSegment.swift",
       "kind": "IntegerLiteral",
-      "offset": 2281,
+      "offset": 2403,
       "length": 4,
       "value": "3600"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/Common(常用)\/SpeakerSegment.swift",
       "kind": "IntegerLiteral",
-      "offset": 2363,
+      "offset": 2485,
       "length": 4,
       "value": "3600"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/Common(常用)\/SpeakerSegment.swift",
       "kind": "IntegerLiteral",
-      "offset": 2372,
+      "offset": 2494,
       "length": 2,
       "value": "60"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/Common(常用)\/SpeakerSegment.swift",
       "kind": "IntegerLiteral",
-      "offset": 2451,
+      "offset": 2573,
       "length": 2,
       "value": "60"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/Common(常用)\/SpeakerSegment.swift",
       "kind": "IntegerLiteral",
-      "offset": 2537,
+      "offset": 2659,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/Common(常用)\/SpeakerSegment.swift",
       "kind": "IntegerLiteral",
-      "offset": 2543,
+      "offset": 2665,
       "length": 4,
       "value": "1000"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/Common(常用)\/SpeakerSegment.swift",
       "kind": "IntegerLiteral",
-      "offset": 2585,
+      "offset": 2707,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/Common(常用)\/SpeakerSegment.swift",
       "kind": "StringLiteral",
-      "offset": 2627,
+      "offset": 2749,
       "length": 21,
       "value": "\"%02d:%02d:%02d.%03d\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/Common(常用)\/SpeakerSegment.swift",
       "kind": "StringLiteral",
-      "offset": 2748,
+      "offset": 2870,
       "length": 16,
       "value": "\"%02d:%02d.%03d\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/Common(常用)\/SpeakerSegment.swift",
       "kind": "StringLiteral",
-      "offset": 2839,
-      "length": 150,
-      "value": "\"{\"sequence\":\""
+      "offset": 2961,
+      "length": 201,
+      "value": "\"{ \"speakerId\": \"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/Common(常用)\/SpeakerSegment.swift",
       "kind": "StringLiteral",
-      "offset": 2865,
-      "length": 1,
-      "value": "\",\"speakerId\":\"\""
-    },
-    {
-      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/Common(常用)\/SpeakerSegment.swift",
-      "kind": "StringLiteral",
-      "offset": 2897,
+      "offset": 2996,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/Common(常用)\/SpeakerSegment.swift",
       "kind": "StringLiteral",
-      "offset": 2900,
+      "offset": 2999,
       "length": 1,
-      "value": "\"\",\"startTime\":\"\""
+      "value": "\"\", \"startTime\": \"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/Common(常用)\/SpeakerSegment.swift",
       "kind": "StringLiteral",
-      "offset": 2931,
+      "offset": 3032,
       "length": 1,
-      "value": "\"\",\"endTime\":\"\""
+      "value": "\"\", \"endTime\": \"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/Common(常用)\/SpeakerSegment.swift",
       "kind": "StringLiteral",
-      "offset": 2958,
+      "offset": 3061,
       "length": 1,
-      "value": "\"\",\"text\":\"\""
+      "value": "\"\", \"associatedTranscriptSequence\": \""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/Common(常用)\/SpeakerSegment.swift",
       "kind": "StringLiteral",
-      "offset": 2982,
+      "offset": 3130,
+      "length": 1,
+      "value": "\", \"text\": \"\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/Common(常用)\/SpeakerSegment.swift",
+      "kind": "StringLiteral",
+      "offset": 3154,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/Common(常用)\/SpeakerSegment.swift",
       "kind": "StringLiteral",
-      "offset": 2985,
+      "offset": 3157,
       "length": 1,
-      "value": "\"\"}\""
+      "value": "\"\" }\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/DeviceInfo(设备信息)\/AIDeviceInfoModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 3452,
+      "offset": 3486,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/DeviceInfo(设备信息)\/AIDeviceInfoModel.swift",
       "kind": "Array",
-      "offset": 5937,
+      "offset": 5988,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/DeviceInfo(设备信息)\/AIDeviceInfoModel.swift",
       "kind": "StringLiteral",
-      "offset": 6026,
+      "offset": 6077,
       "length": 20,
       "value": "\"  \""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/DeviceInfo(设备信息)\/AIDeviceInfoModel.swift",
       "kind": "StringLiteral",
-      "offset": 6035,
+      "offset": 6086,
       "length": 1,
       "value": "\": \""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/DeviceInfo(设备信息)\/AIDeviceInfoModel.swift",
       "kind": "StringLiteral",
-      "offset": 6045,
+      "offset": 6096,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/DeviceInfo(设备信息)\/AIDeviceInfoModel.swift",
       "kind": "StringLiteral",
-      "offset": 6128,
+      "offset": 6179,
       "length": 4,
       "value": "\"[]\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/DeviceInfo(设备信息)\/AIDeviceInfoModel.swift",
       "kind": "StringLiteral",
-      "offset": 6174,
+      "offset": 6225,
       "length": 4,
       "value": "\"\n\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/DeviceInfo(设备信息)\/AIDeviceInfoModel.swift",
       "kind": "StringLiteral",
-      "offset": 6205,
+      "offset": 6256,
       "length": 4,
       "value": "\"\n\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/DeviceInfo(设备信息)\/AIDeviceInfoModel.swift",
       "kind": "StringLiteral",
-      "offset": 6244,
+      "offset": 6295,
       "length": 5,
       "value": "\"nil\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/DeviceInfo(设备信息)\/AIDeviceInfoModel.swift",
       "kind": "StringLiteral",
-      "offset": 6282,
+      "offset": 6333,
       "length": 461,
       "value": "\"┌─ product: \""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/DeviceInfo(设备信息)\/AIDeviceInfoModel.swift",
       "kind": "StringLiteral",
-      "offset": 6320,
+      "offset": 6371,
       "length": 6,
       "value": "\"\n├─ name: \""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/DeviceInfo(设备信息)\/AIDeviceInfoModel.swift",
       "kind": "StringLiteral",
-      "offset": 6349,
+      "offset": 6400,
       "length": 6,
       "value": "\"\n├─ bluetoothName: \""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/DeviceInfo(设备信息)\/AIDeviceInfoModel.swift",
       "kind": "StringLiteral",
-      "offset": 6399,
+      "offset": 6450,
       "length": 5,
       "value": "\"nil\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/DeviceInfo(设备信息)\/AIDeviceInfoModel.swift",
       "kind": "StringLiteral",
-      "offset": 6405,
+      "offset": 6456,
       "length": 6,
       "value": "\"\n├─ macAddress: \""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/DeviceInfo(设备信息)\/AIDeviceInfoModel.swift",
       "kind": "StringLiteral",
-      "offset": 6449,
+      "offset": 6500,
       "length": 5,
       "value": "\"nil\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/DeviceInfo(设备信息)\/AIDeviceInfoModel.swift",
       "kind": "StringLiteral",
-      "offset": 6455,
+      "offset": 6506,
       "length": 6,
       "value": "\"\n├─ model: \""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/DeviceInfo(设备信息)\/AIDeviceInfoModel.swift",
       "kind": "StringLiteral",
-      "offset": 6489,
+      "offset": 6540,
       "length": 5,
       "value": "\"nil\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/DeviceInfo(设备信息)\/AIDeviceInfoModel.swift",
       "kind": "StringLiteral",
-      "offset": 6495,
+      "offset": 6546,
       "length": 6,
       "value": "\"\n├─ formatedProjNumber: \""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/DeviceInfo(设备信息)\/AIDeviceInfoModel.swift",
       "kind": "StringLiteral",
-      "offset": 6555,
+      "offset": 6606,
       "length": 5,
       "value": "\"nil\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/DeviceInfo(设备信息)\/AIDeviceInfoModel.swift",
       "kind": "StringLiteral",
-      "offset": 6561,
+      "offset": 6612,
       "length": 6,
       "value": "\"\n├─ formatedFirmwareVersion: \""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/DeviceInfo(设备信息)\/AIDeviceInfoModel.swift",
       "kind": "StringLiteral",
-      "offset": 6631,
+      "offset": 6682,
       "length": 5,
       "value": "\"nil\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/DeviceInfo(设备信息)\/AIDeviceInfoModel.swift",
       "kind": "StringLiteral",
-      "offset": 6637,
+      "offset": 6688,
       "length": 6,
       "value": "\"\n├─ userID: \""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/DeviceInfo(设备信息)\/AIDeviceInfoModel.swift",
       "kind": "StringLiteral",
-      "offset": 6673,
+      "offset": 6724,
       "length": 5,
       "value": "\"nil\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/DeviceInfo(设备信息)\/AIDeviceInfoModel.swift",
       "kind": "StringLiteral",
-      "offset": 6679,
+      "offset": 6730,
       "length": 6,
       "value": "\"\n└─ additionalInfo: \""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/DeviceInfo(设备信息)\/AIDeviceInfoModel.swift",
       "kind": "StringLiteral",
-      "offset": 6731,
-      "length": 555,
+      "offset": 6782,
+      "length": 1523,
       "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/DeviceInfo(设备信息)\/AIDeviceInfoModel.swift",
+      "kind": "Array",
+      "offset": 7026,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/DeviceInfo(设备信息)\/AIDeviceInfoModel.swift",
+      "kind": "StringLiteral",
+      "offset": 7115,
+      "length": 20,
+      "value": "\"  \""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/DeviceInfo(设备信息)\/AIDeviceInfoModel.swift",
+      "kind": "StringLiteral",
+      "offset": 7124,
+      "length": 1,
+      "value": "\": \""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/DeviceInfo(设备信息)\/AIDeviceInfoModel.swift",
+      "kind": "StringLiteral",
+      "offset": 7134,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/DeviceInfo(设备信息)\/AIDeviceInfoModel.swift",
+      "kind": "StringLiteral",
+      "offset": 7217,
+      "length": 4,
+      "value": "\"[]\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/DeviceInfo(设备信息)\/AIDeviceInfoModel.swift",
+      "kind": "StringLiteral",
+      "offset": 7263,
+      "length": 4,
+      "value": "\"\n\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/DeviceInfo(设备信息)\/AIDeviceInfoModel.swift",
+      "kind": "StringLiteral",
+      "offset": 7294,
+      "length": 4,
+      "value": "\"\n\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/DeviceInfo(设备信息)\/AIDeviceInfoModel.swift",
+      "kind": "StringLiteral",
+      "offset": 7333,
+      "length": 5,
+      "value": "\"nil\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/DeviceInfo(设备信息)\/AIDeviceInfoModel.swift",
+      "kind": "StringLiteral",
+      "offset": 7366,
+      "length": 396,
+      "value": "\"{ \"product\": \"\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/DeviceInfo(设备信息)\/AIDeviceInfoModel.swift",
+      "kind": "StringLiteral",
+      "offset": 7394,
+      "length": 1,
+      "value": "\"\", \"name\": \"\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/DeviceInfo(设备信息)\/AIDeviceInfoModel.swift",
+      "kind": "StringLiteral",
+      "offset": 7417,
+      "length": 1,
+      "value": "\"\", \"bluetoothName\": \"\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/DeviceInfo(设备信息)\/AIDeviceInfoModel.swift",
+      "kind": "StringLiteral",
+      "offset": 7461,
+      "length": 5,
+      "value": "\"nil\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/DeviceInfo(设备信息)\/AIDeviceInfoModel.swift",
+      "kind": "StringLiteral",
+      "offset": 7467,
+      "length": 1,
+      "value": "\"\", \"macAddress\": \"\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/DeviceInfo(设备信息)\/AIDeviceInfoModel.swift",
+      "kind": "StringLiteral",
+      "offset": 7505,
+      "length": 5,
+      "value": "\"nil\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/DeviceInfo(设备信息)\/AIDeviceInfoModel.swift",
+      "kind": "StringLiteral",
+      "offset": 7511,
+      "length": 1,
+      "value": "\"\", \"model\": \"\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/DeviceInfo(设备信息)\/AIDeviceInfoModel.swift",
+      "kind": "StringLiteral",
+      "offset": 7539,
+      "length": 5,
+      "value": "\"nil\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/DeviceInfo(设备信息)\/AIDeviceInfoModel.swift",
+      "kind": "StringLiteral",
+      "offset": 7545,
+      "length": 1,
+      "value": "\"\", \"formatedProjNumber\": \"\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/DeviceInfo(设备信息)\/AIDeviceInfoModel.swift",
+      "kind": "StringLiteral",
+      "offset": 7599,
+      "length": 5,
+      "value": "\"nil\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/DeviceInfo(设备信息)\/AIDeviceInfoModel.swift",
+      "kind": "StringLiteral",
+      "offset": 7605,
+      "length": 1,
+      "value": "\"\", \"formatedFirmwareVersion\": \"\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/DeviceInfo(设备信息)\/AIDeviceInfoModel.swift",
+      "kind": "StringLiteral",
+      "offset": 7669,
+      "length": 5,
+      "value": "\"nil\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/DeviceInfo(设备信息)\/AIDeviceInfoModel.swift",
+      "kind": "StringLiteral",
+      "offset": 7675,
+      "length": 1,
+      "value": "\"\", \"userID\": \"\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/DeviceInfo(设备信息)\/AIDeviceInfoModel.swift",
+      "kind": "StringLiteral",
+      "offset": 7705,
+      "length": 5,
+      "value": "\"nil\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/DeviceInfo(设备信息)\/AIDeviceInfoModel.swift",
+      "kind": "StringLiteral",
+      "offset": 7711,
+      "length": 1,
+      "value": "\"\", \"additionalInfo\": \"\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/DeviceInfo(设备信息)\/AIDeviceInfoModel.swift",
+      "kind": "StringLiteral",
+      "offset": 7757,
+      "length": 1,
+      "value": "\"\" }\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/SimultaneousInterpretation(同声传译)\/SimultaneousInterpretationConfig.swift",
@@ -15923,8 +18979,22 @@
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/SimultaneousInterpretation(同声传译)\/SimultaneousInterpretationConfig.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2347,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/SimultaneousInterpretation(同声传译)\/SimultaneousInterpretationConfig.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2598,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/SimultaneousInterpretation(同声传译)\/SimultaneousInterpretationConfig.swift",
       "kind": "StringLiteral",
-      "offset": 2379,
+      "offset": 2964,
       "length": 7,
       "value": "\"en-US\""
     },
@@ -16020,158 +19090,382 @@
       "value": "2"
     },
     {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/Defines(定义)\/Event(事件)\/AIAudioRecordingEventType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 434,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/Defines(定义)\/Event(事件)\/AIAudioRecordingEventType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 476,
+      "length": 14,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/Defines(定义)\/Event(事件)\/AIAudioRecordingEventType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 536,
+      "length": 18,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/Defines(定义)\/Event(事件)\/AIAudioRecordingEventType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 607,
+      "length": 18,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/Defines(定义)\/Event(事件)\/AIAudioRecordingEventType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 677,
+      "length": 23,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/Defines(定义)\/Event(事件)\/AIAudioRecordingEventType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 739,
+      "length": 12,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/Defines(定义)\/Event(事件)\/AIAudioRecordingEventType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 803,
+      "length": 21,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/Defines(定义)\/Event(事件)\/AIAudioRecordingEventType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 867,
+      "length": 21,
+      "value": "7"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/Defines(定义)\/Event(事件)\/AIAudioRecordingEventType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 946,
+      "length": 21,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/Defines(定义)\/Event(事件)\/AIAudioRecordingEventType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1015,
+      "length": 23,
+      "value": "9"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/Defines(定义)\/Event(事件)\/AIAudioRecordingEventType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1086,
+      "length": 21,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/Defines(定义)\/Event(事件)\/AIAudioRecordingEventType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1162,
+      "length": 23,
+      "value": "11"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/Defines(定义)\/Event(事件)\/AIAudioRecordingEventType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1239,
+      "length": 22,
+      "value": "12"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/Defines(定义)\/Event(事件)\/AIAudioRecordingEventType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1297,
+      "length": 15,
+      "value": "13"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/Defines(定义)\/Event(事件)\/AIAudioRecordingEventType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1350,
+      "length": 16,
+      "value": "14"
+    },
+    {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/Defines(定义)\/Event(事件)\/AIChatEventType.swift",
       "kind": "IntegerLiteral",
-      "offset": 356,
+      "offset": 382,
       "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/Defines(定义)\/Event(事件)\/AIChatEventType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 424,
+      "length": 14,
       "value": "1"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/Defines(定义)\/Event(事件)\/AIChatEventType.swift",
       "kind": "IntegerLiteral",
-      "offset": 403,
+      "offset": 484,
       "length": 18,
       "value": "2"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/Defines(定义)\/Event(事件)\/AIChatEventType.swift",
       "kind": "IntegerLiteral",
-      "offset": 474,
+      "offset": 555,
       "length": 18,
       "value": "3"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/Defines(定义)\/Event(事件)\/AIChatEventType.swift",
       "kind": "IntegerLiteral",
-      "offset": 555,
+      "offset": 636,
       "length": 27,
       "value": "4"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/Defines(定义)\/Event(事件)\/AIChatEventType.swift",
       "kind": "IntegerLiteral",
-      "offset": 627,
+      "offset": 708,
       "length": 23,
       "value": "5"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/Defines(定义)\/Event(事件)\/AIChatEventType.swift",
       "kind": "IntegerLiteral",
-      "offset": 707,
+      "offset": 788,
       "length": 16,
       "value": "6"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/Defines(定义)\/Event(事件)\/AIChatEventType.swift",
       "kind": "IntegerLiteral",
-      "offset": 781,
+      "offset": 862,
       "length": 18,
       "value": "7"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/Defines(定义)\/Event(事件)\/AIChatEventType.swift",
       "kind": "IntegerLiteral",
-      "offset": 854,
+      "offset": 935,
       "length": 14,
       "value": "8"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/Defines(定义)\/Event(事件)\/AIChatEventType.swift",
       "kind": "IntegerLiteral",
-      "offset": 928,
+      "offset": 1009,
       "length": 18,
       "value": "9"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/Defines(定义)\/Event(事件)\/AIChatEventType.swift",
       "kind": "IntegerLiteral",
-      "offset": 998,
+      "offset": 1079,
       "length": 23,
       "value": "10"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/Defines(定义)\/Event(事件)\/AIChatEventType.swift",
       "kind": "IntegerLiteral",
-      "offset": 1060,
+      "offset": 1141,
       "length": 12,
       "value": "11"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/Defines(定义)\/Event(事件)\/AIChatEventType.swift",
       "kind": "IntegerLiteral",
-      "offset": 1124,
+      "offset": 1205,
       "length": 21,
       "value": "12"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/Defines(定义)\/Event(事件)\/AIChatEventType.swift",
       "kind": "IntegerLiteral",
-      "offset": 1188,
+      "offset": 1269,
       "length": 21,
       "value": "13"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/Defines(定义)\/Event(事件)\/AIChatEventType.swift",
       "kind": "IntegerLiteral",
-      "offset": 1267,
+      "offset": 1348,
       "length": 21,
       "value": "14"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/Defines(定义)\/Event(事件)\/AIChatEventType.swift",
       "kind": "IntegerLiteral",
-      "offset": 1336,
+      "offset": 1417,
       "length": 23,
       "value": "15"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/Defines(定义)\/Event(事件)\/AIChatEventType.swift",
       "kind": "IntegerLiteral",
-      "offset": 1407,
+      "offset": 1488,
       "length": 21,
       "value": "16"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/Defines(定义)\/Event(事件)\/AIChatEventType.swift",
       "kind": "IntegerLiteral",
-      "offset": 1483,
+      "offset": 1564,
       "length": 23,
       "value": "17"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/Defines(定义)\/Event(事件)\/AIChatEventType.swift",
       "kind": "IntegerLiteral",
-      "offset": 1560,
+      "offset": 1641,
       "length": 22,
       "value": "18"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/Defines(定义)\/Event(事件)\/AIChatEventType.swift",
       "kind": "IntegerLiteral",
-      "offset": 1620,
+      "offset": 1701,
       "length": 16,
       "value": "19"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/Defines(定义)\/Event(事件)\/AIChatEventType.swift",
       "kind": "IntegerLiteral",
-      "offset": 1691,
+      "offset": 1772,
       "length": 30,
       "value": "20"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/Defines(定义)\/Event(事件)\/AIChatEventType.swift",
       "kind": "IntegerLiteral",
-      "offset": 1775,
+      "offset": 1856,
       "length": 29,
       "value": "21"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/Defines(定义)\/Event(事件)\/AIChatEventType.swift",
       "kind": "IntegerLiteral",
-      "offset": 1840,
+      "offset": 1921,
       "length": 15,
       "value": "22"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/Defines(定义)\/Event(事件)\/AIChatEventType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1974,
+      "length": 16,
+      "value": "23"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/Defines(定义)\/Event(事件)\/SimultaneousInterpretationEventType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 481,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/Defines(定义)\/Event(事件)\/SimultaneousInterpretationEventType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 523,
+      "length": 14,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/Defines(定义)\/Event(事件)\/SimultaneousInterpretationEventType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 583,
+      "length": 18,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/Defines(定义)\/Event(事件)\/SimultaneousInterpretationEventType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 654,
+      "length": 18,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/Defines(定义)\/Event(事件)\/SimultaneousInterpretationEventType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 724,
+      "length": 23,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/Defines(定义)\/Event(事件)\/SimultaneousInterpretationEventType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 786,
+      "length": 12,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/Defines(定义)\/Event(事件)\/SimultaneousInterpretationEventType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 850,
+      "length": 21,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/Defines(定义)\/Event(事件)\/SimultaneousInterpretationEventType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 914,
+      "length": 21,
+      "value": "7"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/Defines(定义)\/Event(事件)\/SimultaneousInterpretationEventType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 993,
+      "length": 21,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/Defines(定义)\/Event(事件)\/SimultaneousInterpretationEventType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1062,
+      "length": 23,
+      "value": "9"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/Defines(定义)\/Event(事件)\/SimultaneousInterpretationEventType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1133,
+      "length": 21,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/Defines(定义)\/Event(事件)\/SimultaneousInterpretationEventType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1209,
+      "length": 23,
+      "value": "11"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/Defines(定义)\/Event(事件)\/SimultaneousInterpretationEventType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1286,
+      "length": 22,
+      "value": "12"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/Defines(定义)\/Event(事件)\/SimultaneousInterpretationEventType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1344,
+      "length": 15,
+      "value": "13"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/Defines(定义)\/Event(事件)\/SimultaneousInterpretationEventType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1397,
+      "length": 16,
+      "value": "14"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/Defines(定义)\/Intent(意图)\/AIIntentType.swift",
@@ -16328,6 +19622,20 @@
       "value": "20"
     },
     {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/Defines(定义)\/Intent(意图)\/AIIntentType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1292,
+      "length": 9,
+      "value": "21"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/Defines(定义)\/Intent(意图)\/AIIntentType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1338,
+      "length": 13,
+      "value": "22"
+    },
+    {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/AIBudsAIFoundation.swift",
       "kind": "StringLiteral",
       "offset": 286,
@@ -16346,21 +19654,21 @@
       "kind": "StringLiteral",
       "offset": 498,
       "length": 14,
-      "value": "\"1.0.0-beta.5\""
+      "value": "\"1.0.0-beta.7\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/AIBudsAIFoundation.swift",
       "kind": "StringLiteral",
       "offset": 628,
       "length": 13,
-      "value": "\"20260508001\""
+      "value": "\"20260531001\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/AIBudsAIFoundation.swift",
       "kind": "StringLiteral",
       "offset": 743,
       "length": 12,
-      "value": "\"2026-05-08\""
+      "value": "\"2026-05-31\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/AIBudsAIFoundation.swift",

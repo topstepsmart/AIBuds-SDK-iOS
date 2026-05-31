@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.2.4 effective-5.10 (swiftlang-6.2.4.1.4 clang-1700.6.4.2)
-// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature GlobalActorIsolatedTypesUsability -enable-upcoming-feature MemberImportVisibility -enable-upcoming-feature InferIsolatedConformances -enable-upcoming-feature NonisolatedNonsendingByDefault -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name AIBudsAudio
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.4
+// swift-compiler-version: Apple Swift version 6.3.2 effective-5.10 (swiftlang-6.3.2.1.108 clang-2100.1.1.101)
+// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature GlobalActorIsolatedTypesUsability -enable-upcoming-feature MemberImportVisibility -enable-upcoming-feature InferIsolatedConformances -enable-upcoming-feature NonisolatedNonsendingByDefault -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name AIBudsAudio
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.2
 import AVFAudio
 import AVFoundation
 import Accelerate
@@ -38,12 +38,8 @@ extension CoreML.MLMultiArray {
   @objc final public var featureNames: Swift.Set<Swift.String> {
     @objc get
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func featureValue(for featureName: Swift.String) -> CoreML.MLFeatureValue?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public static func chain(from outputProvider: any CoreML.MLFeatureProvider, outputName: Swift.String, to inputName: Swift.String, additionalFeatures: [Swift.String : CoreML.MLFeatureValue] = [:]) -> AIBudsAudio.ZeroCopyDiarizerFeatureProvider?
-  #endif
   public static func batchProvider(waveforms: [CoreML.MLMultiArray], masks: [CoreML.MLMultiArray]) -> [AIBudsAudio.ZeroCopyDiarizerFeatureProvider]
   @objc deinit
 }
@@ -63,9 +59,7 @@ public enum ANEMemoryUtils {
   public static func createAlignedArray(shape: [Foundation.NSNumber], dataType: CoreML.MLMultiArrayDataType, zeroClear: Swift.Bool = true) throws -> CoreML.MLMultiArray
   public static func calculateOptimalStrides(for shape: [Foundation.NSNumber]) -> [Foundation.NSNumber]
   public static func getElementSize(for dataType: CoreML.MLMultiArrayDataType) -> Swift.Int
-  #if compiler(>=5.3) && $NonescapableTypes
   public static func createZeroCopyView(from array: CoreML.MLMultiArray, offset: Swift.Int, shape: [Foundation.NSNumber], strides: [Foundation.NSNumber]? = nil) throws -> CoreML.MLMultiArray
-  #endif
   public static func prefetchForANE(_ array: CoreML.MLMultiArray)
 }
 extension CoreML.MLMultiArray {
@@ -75,15 +69,9 @@ extension CoreML.MLMultiArray {
   public func prefetchForANE()
 }
 @objc(AIBudsAudioConverter) final public class AudioConverter : ObjectiveC.NSObject {
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(targetFormat: AVFAudio.AVAudioFormat? = nil)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func convertPCMBuffer(_ pcmBuffer: AVFAudio.AVAudioPCMBuffer, toFormat targetFormat: CoreAudioTypes.AudioStreamBasicDescription) -> AVFAudio.AVAudioPCMBuffer?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func convertPCMBufferToInt16Data(_ pcmBuffer: AVFAudio.AVAudioPCMBuffer) -> Foundation.Data?
-  #endif
   @objc final public func convertInt16PcmToFloat(_ int16Pcm: [Swift.Int16]) -> [Swift.Float]
   final public func convertInt16PcmToFloat(from int16Buffer: Swift.UnsafeBufferPointer<Swift.Int16>, count: Swift.Int) -> [Swift.Float]
   @objc final public func convertFloatPcmToInt16(_ floatPcm: [Swift.Float]) -> [Swift.Int16]
@@ -105,11 +93,9 @@ public enum AudioConverterError : Foundation.LocalizedError {
   case sampleBufferFormatMissing
   case failedToCreateSourceFormat
   case sampleBufferCopyFailed(Darwin.OSStatus)
-  #if compiler(>=5.3) && $NonescapableTypes
   public var errorDescription: Swift.String? {
     get
   }
-  #endif
 }
 @objc(AIBudsPlaybackStopReason) public enum PlaybackStopReason : Swift.Int, Swift.CaseIterable {
   case finished = 0
@@ -118,9 +104,7 @@ public enum AudioConverterError : Foundation.LocalizedError {
   public static var allCases: [AIBudsAudio.PlaybackStopReason] {
     get
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias AllCases = [AIBudsAudio.PlaybackStopReason]
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
@@ -141,13 +125,13 @@ extension AIBudsAudio.PlaybackStopReason : Swift.CustomDebugStringConvertible {
   @objc final public let audioFormat: AVFAudio.AVAudioFormat?
   @objc final public var onVoicePlaybackDidStart: ((_ voiceId: Swift.String) -> Swift.Void)?
   @objc final public var onVoicePlaybackDidStop: ((_ voiceId: Swift.String, _ reason: AIBudsAudio.PlaybackStopReason, _ startTime: Foundation.Date, _ stopTime: Foundation.Date, _ error: Foundation.NSError?) -> Swift.Void)?
+  @objc deinit
   @objc override dynamic public init()
   @objc final public func start() -> Swift.Bool
   @objc final public func stop() -> Swift.Bool
   @objc final public func appendInt16PCM(_ pcmData: Foundation.Data, voiceId: Swift.String, isFinal: Swift.Bool)
   @objc final public func isPlaying() -> Swift.Bool
   @objc final public func interruptCurrentVoicePlayback()
-  @objc deinit
 }
 extension AIBudsAudio.AIBudsAudioSDK {
   @objc public static let StreamingVoicePlayerErrorDomain: Swift.String
@@ -156,9 +140,7 @@ extension AIBudsAudio.AIBudsAudioSDK {
   case unknown = -1
   case audioEngineNotRunning = 1000
   case waitingMoreBufferTimeout = 1001
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -171,9 +153,72 @@ extension AIBudsAudio.AIBudsAudioSDK {
   @objc final public var onAudioBuffer: ((AVFAudio.AVAudioPCMBuffer) -> Swift.Void)?
   @objc final public var onRecordingError: ((any Swift.Error) -> Swift.Void)?
   @objc deinit
-  @objc final public func startRecording() throws
+  @objc final public func startRecording(_ preferSpeakerOutput: Swift.Bool = false) throws
   @objc final public func stopRecording()
   @objc override dynamic public init()
+}
+@objc(AIBudsAudioSessionScene) public enum AudioSessionScene : Swift.Int, Swift.CaseIterable, Swift.CustomStringConvertible, Swift.CustomDebugStringConvertible {
+  case mediaPlayback = 0
+  case spokenAudio = 1
+  case voiceChatOverHFP = 2
+  case voiceChatOverBLE = 3
+  case simultaneousInterpretationListening = 4
+  case simultaneousInterpretationMeSpeaking = 5
+  public static var allCases: [AIBudsAudio.AudioSessionScene] {
+    get
+  }
+  public var description: Swift.String {
+    get
+  }
+  public var debugDescription: Swift.String {
+    get
+  }
+  public init?(rawValue: Swift.Int)
+  public typealias AllCases = [AIBudsAudio.AudioSessionScene]
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(AIBudsAudioSessionCenter) final public class AudioSessionCenter : ObjectiveC.NSObject {
+  @objc public static let shared: AIBudsAudio.AudioSessionCenter
+  @objc final public var hfpInputDevice: AIBudsAudio.BluetoothHFPInputDevice? {
+    get
+  }
+  @objc final public var currentScene: AIBudsAudio.AudioSessionScene {
+    get
+  }
+  @objc final public var isMicrophoneInjectionAvailable: Swift.Bool {
+    get
+  }
+  @objc final public var isOutputMuted: Swift.Bool {
+    get
+  }
+  @objc public static func startRunning()
+  @objc final public func setConnectedBluetoothHFPInputDevice(_ device: AIBudsAudio.BluetoothHFPInputDevice? = nil)
+  @objc deinit
+  @objc final public func activateScene(_ scene: AIBudsAudio.AudioSessionScene, completion: ((_ success: Swift.Bool, _ error: Foundation.NSError?) -> Swift.Void)? = nil)
+  @objc final public func deactivate(completion: ((Swift.Bool, Foundation.NSError?) -> Swift.Void)? = nil)
+  @objc final public func reactivate(completion: ((Swift.Bool, Foundation.NSError?) -> Swift.Void)? = nil)
+}
+public let AIBUDS_AUDIOSESSIONCENTER_ERROR_DOMAIN: Swift.String
+@objc(AIBudsAudioSessionCenterErrorCode) public enum AudioSessionCenterErrorCode : Swift.Int {
+  case unknown = -1
+  case hfpDeviceNotFound = 1000
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc(AIBudsBluetoothHFPInputDevice) final public class BluetoothHFPInputDevice : ObjectiveC.NSObject {
+  @objc final public let name: Swift.String?
+  @objc final public let macAddress: Swift.String?
+  @objc public init(name: Swift.String? = nil, macAddress: Swift.String? = nil)
+  @objc override final public var description: Swift.String {
+    @objc get
+  }
+  @objc deinit
 }
 public enum DiarizerError : Swift.Error, Foundation.LocalizedError {
   case notInitialized
@@ -184,11 +229,9 @@ public enum DiarizerError : Swift.Error, Foundation.LocalizedError {
   case processingFailed(Swift.String)
   case memoryAllocationFailed
   case invalidArrayBounds
-  #if compiler(>=5.3) && $NonescapableTypes
   public var errorDescription: Swift.String? {
     get
   }
-  #endif
 }
 @objc(AIBudsPCMAudioPlayer) public class PCMAudioPlayer : ObjectiveC.NSObject {
   @objc public var currentProgress: Swift.Double {
@@ -220,22 +263,14 @@ public enum DiarizerError : Swift.Error, Foundation.LocalizedError {
   @objc deinit
   @objc public static func enableBackgroundMode()
   @objc public static func disableBackgroundMode()
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func setPreferredInput(_ preferredBluetoothName: Swift.String? = nil, _ preferredMacAddress: Swift.String? = nil)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func startCapturing(_ preferredBluetoothName: Swift.String? = nil, _ preferredMacAddress: Swift.String? = nil) -> Swift.Bool
-  #endif
   @objc final public func stopCapturing()
 }
 @objc final public class AIBudsTenVad : ObjectiveC.NSObject {
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init?(hopSize: Swift.Int = 256, threshold: Swift.Float = 0.5)
-  #endif
   @objc deinit
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func process(frame: [Swift.Int16]) -> AIBudsAudio.TenVadResult?
-  #endif
   @objc final public func processBuffer(samples: [Swift.Int16]) -> [AIBudsAudio.TenVadResult]
 }
 @objc(AIBudsTenVadResult) final public class TenVadResult : ObjectiveC.NSObject {
@@ -245,9 +280,7 @@ public enum DiarizerError : Swift.Error, Foundation.LocalizedError {
   @objc deinit
 }
 extension AIBudsAudio.TenVadResult : Foundation.NSCopying {
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
-  #endif
 }
 @objc(AIBudsVadConfig) final public class VadConfig : ObjectiveC.NSObject {
   @objc public static let defaultComputeUnits: CoreML.MLComputeUnits
@@ -270,9 +303,7 @@ extension AIBudsAudio.TenVadResult : Foundation.NSCopying {
   @objc deinit
 }
 extension AIBudsAudio.VadResult : Foundation.NSCopying {
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
-  #endif
 }
 @objc(AIBudsVadSegment) final public class VadSegment : ObjectiveC.NSObject {
   @objc final public let startTime: Foundation.TimeInterval
@@ -297,9 +328,7 @@ extension AIBudsAudio.VadResult : Foundation.NSCopying {
   @objc final public var minSilenceAtMaxSpeech: Foundation.TimeInterval
   @objc final public var useMaxPossibleSilenceAtMaxSpeech: Swift.Bool
   @objc(defaultConfig) public static let `default`: AIBudsAudio.VadSegmentationConfig
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(minSpeechDuration: Foundation.TimeInterval = 0.15, minSilenceDuration: Foundation.TimeInterval = 0.75, maxSpeechDuration: Foundation.TimeInterval = 14.0, speechPadding: Foundation.TimeInterval = 0.1, silenceThresholdForSplit: Swift.Float = 0.3, negativeThreshold: Foundation.NSNumber? = nil, negativeThresholdOffset: Swift.Float = 0.15, minSilenceAtMaxSpeech: Foundation.TimeInterval = 0.098, useMaxPossibleSilenceAtMaxSpeech: Swift.Bool = true)
-  #endif
   @objc final public func effectiveNegativeThreshold(baseThreshold: Swift.Float) -> Swift.Float
   @objc deinit
 }
@@ -313,17 +342,13 @@ extension AIBudsAudio.VadResult : Foundation.NSCopying {
   @objc deinit
 }
 extension AIBudsAudio.VadState : Foundation.NSCopying {
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
-  #endif
 }
 @objc(AIBudsVadStreamEvent) final public class VadStreamEvent : ObjectiveC.NSObject {
   @objc final public let kind: AIBudsAudio.VadStreamEventKind
   @objc final public let sampleIndex: Swift.Int
   @objc final public let time: Foundation.NSNumber?
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(kind: AIBudsAudio.VadStreamEventKind, sampleIndex: Swift.Int, time: Foundation.NSNumber? = nil)
-  #endif
   @objc final public var isStart: Swift.Bool {
     @objc get
   }
@@ -333,39 +358,29 @@ extension AIBudsAudio.VadState : Foundation.NSCopying {
   @objc deinit
 }
 extension AIBudsAudio.VadStreamEvent : Foundation.NSCopying {
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
-  #endif
 }
 @objc(AIBudsVadStreamResult) final public class VadStreamResult : ObjectiveC.NSObject {
   @objc final public let state: AIBudsAudio.VadStreamState
   @objc final public let event: AIBudsAudio.VadStreamEvent?
   @objc final public let probability: Swift.Float
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(state: AIBudsAudio.VadStreamState, event: AIBudsAudio.VadStreamEvent?, probability: Swift.Float)
-  #endif
   @objc deinit
 }
 extension AIBudsAudio.VadStreamResult : Foundation.NSCopying {
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
-  #endif
 }
 @objc(AIBudsVadStreamState) public class VadStreamState : ObjectiveC.NSObject {
   @objc public var modelState: AIBudsAudio.VadState
   @objc public var triggered: Swift.Bool
   @objc public var tempEndSample: Foundation.NSNumber?
   @objc public var processedSamples: Swift.Int
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(modelState: AIBudsAudio.VadState = .initial(), triggered: Swift.Bool = false, tempEndSample: Foundation.NSNumber? = nil, processedSamples: Swift.Int = 0)
-  #endif
   @objc public static func initial() -> AIBudsAudio.VadStreamState
   @objc deinit
 }
 extension AIBudsAudio.VadStreamState : Foundation.NSCopying {
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc dynamic public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
-  #endif
 }
 public let AIBUDS_VAD_ERROR_DOMAIN: Swift.String
 @objc(AIBudsVadErrorCode) public enum VadErrorCode : Swift.Int {
@@ -373,9 +388,7 @@ public let AIBUDS_VAD_ERROR_DOMAIN: Swift.String
   case notInitialized = 1000
   case modelLoadingFailed = 1001
   case modelProcessingFailed = 1002
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -384,9 +397,7 @@ public let AIBUDS_VAD_ERROR_DOMAIN: Swift.String
 @objc(AIBudsVadStreamEventKind) public enum VadStreamEventKind : Swift.Int {
   case speechStart = 0
   case speechEnd = 1
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -408,9 +419,7 @@ extension AIBudsAudio.VadStreamEventKind : Swift.CustomDebugStringConvertible {
   @objc public static var isAvailable: Swift.Bool {
     @objc get
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func start(_ config: AIBudsAudio.VadConfig = .default, completion: ((_ success: Swift.Bool, _ elapsed: Foundation.TimeInterval, _ error: Foundation.NSError?) -> Swift.Void)? = nil)
-  #endif
   #if compiler(>=5.3) && $AsyncExecutionBehaviorAttributes
   final nonisolated(nonsending) public func process(_ url: Foundation.URL) async throws -> [AIBudsAudio.VadResult]
   #endif
@@ -463,6 +472,12 @@ extension AIBudsAudio.PlaybackStopReason : Swift.RawRepresentable {}
 extension AIBudsAudio.StreamingVoicePlayerErrorCode : Swift.Equatable {}
 extension AIBudsAudio.StreamingVoicePlayerErrorCode : Swift.Hashable {}
 extension AIBudsAudio.StreamingVoicePlayerErrorCode : Swift.RawRepresentable {}
+extension AIBudsAudio.AudioSessionScene : Swift.Equatable {}
+extension AIBudsAudio.AudioSessionScene : Swift.Hashable {}
+extension AIBudsAudio.AudioSessionScene : Swift.RawRepresentable {}
+extension AIBudsAudio.AudioSessionCenterErrorCode : Swift.Equatable {}
+extension AIBudsAudio.AudioSessionCenterErrorCode : Swift.Hashable {}
+extension AIBudsAudio.AudioSessionCenterErrorCode : Swift.RawRepresentable {}
 extension AIBudsAudio.VadErrorCode : Swift.Equatable {}
 extension AIBudsAudio.VadErrorCode : Swift.Hashable {}
 extension AIBudsAudio.VadErrorCode : Swift.RawRepresentable {}

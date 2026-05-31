@@ -171,8 +171,8 @@
     __weak typeof(self) weakSelf = self;
     [AIBudsAISDK startAIAudioRecordingWithConfig:config 
                         onStartSuccess:^(id<AIBudsAIAudioRecordingSessionConvertible> session) {
-                            __strong typeof(weakSelf) strongSelf = weakSelf;
-                            if(!strongSelf)  return;  
+                            __strong typeof(self) strongSelf = weakSelf;
+                            if(!strongSelf)  return;
                             [AIAudioRecordingContext sharedInstance].currentSession = session;
                             [strongSelf startDeviceSideAIAudioRecording];
                           }
@@ -185,12 +185,21 @@
                                   self.transcriptLabel.text = transcriptData.transcript ?: NSLocalizedString(@"Transcript will appear here", comment:@"Transcript placeholder");
                               });
                           }
+                          onEvent:^(AIBudsAIAudioRecordingEventModel *event) {
+                                __strong typeof(self) strongSelf = weakSelf;
+                                if(!strongSelf)  return;
+                                [strongSelf handleEvent:event];
+                          }
                           onError:^(NSError *error) {
-                              [self handleError:error];
+                                __strong typeof(self) strongSelf = weakSelf;
+                                if(!strongSelf)  return;
+                              [strongSelf handleError:error];
                           }
                           onFinish:^(AIBudsAIAudioRecordingReportModel *report) {
                               dispatch_async(dispatch_get_main_queue(), ^{
-                                  [self stopRecording];
+                                  __strong typeof(self) strongSelf = weakSelf;
+                                  if(!strongSelf)  return;
+                                  [strongSelf stopRecording];
                               });
                           }];
 }
@@ -289,6 +298,20 @@
 - (void)stopWaveAnimation {
     for (UIView *subview in self.waveContainerView.subviews) {
         [subview.layer removeAllAnimations];
+    }
+}
+
+- (void)handleEvent:(AIBudsAIAudioRecordingEventModel *)event {
+    switch (event.eventType) {
+        case AIBudsAIAudioRecordingEventTypeAppWillTerminate:
+        {
+            
+            XLOG_INFO(@"App 即将终止....");
+            [self stopDeviceSideAIAudioRecording];
+        }
+            break;
+        default:
+            break;
     }
 }
 

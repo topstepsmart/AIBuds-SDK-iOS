@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.3.1 effective-5.10 (swiftlang-6.3.1.1.2 clang-2100.0.123.102)
+// swift-compiler-version: Apple Swift version 6.3.2 effective-5.10 (swiftlang-6.3.2.1.108 clang-2100.1.1.101)
 // swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature GlobalActorIsolatedTypesUsability -enable-upcoming-feature MemberImportVisibility -enable-upcoming-feature InferIsolatedConformances -enable-upcoming-feature NonisolatedNonsendingByDefault -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name AIBudsAIFoundation
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.1
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.2
 import AIBudsFoundation
 import AIBudsLog
 import AVFoundation
@@ -116,7 +116,7 @@ extension AIBudsAIFoundation.AIAudioRecordingSessionConfig : Foundation.NSCopyin
   @objc final public var maxPauseDurationBeforeAIResponds: Swift.Double
   @objc final public var autoEndSessionAfterNoInputDuration: Swift.Double
   @objc final public var enableVoicePlayback: Swift.Bool
-  @objc final public var shouldSaveInputVoiceForDebugging: Swift.Bool
+  @objc final public var shouldSaveVoiceForDebugging: Swift.Bool
   @objc final public var autoSelectAgentIfNotSpecified: Swift.Bool
   @objc final public var additionalOptions: [Swift.String : Any]
   @objc public static let AdditionalOptionKeyStarburstAgentId: Swift.String
@@ -126,7 +126,7 @@ extension AIBudsAIFoundation.AIAudioRecordingSessionConfig : Foundation.NSCopyin
   @objc public static let AdditionalOptionKeyMltCloudAgentId: Swift.String
   @objc public static let AdditionalOptionKeyMltCloudSpeakerId: Swift.String
   @objc public static let AdditionalOptionKeyMltCloudIntentConfigCode: Swift.String
-  @objc public init(languageForSpeechInput: Swift.String? = nil, audioChannel: AIBudsFoundation.AIChatAudioChannel = .opusInA2dpOut, allowUserToInterruptAIResponse: Swift.Bool = true, maxPauseDurationBeforeAIResponds: Foundation.TimeInterval = 0.8, autoEndSessionAfterNoInputDuration: Foundation.TimeInterval = 15.0, enableVoicePlayback: Swift.Bool = true, shouldSaveInputVoiceForDebugging: Swift.Bool = false, additionalOptions: [Swift.String : Any] = [:])
+  @objc public init(languageForSpeechInput: Swift.String? = nil, audioChannel: AIBudsFoundation.AIChatAudioChannel = .opusInA2dpOut, allowUserToInterruptAIResponse: Swift.Bool = true, maxPauseDurationBeforeAIResponds: Foundation.TimeInterval = 0.8, autoEndSessionAfterNoInputDuration: Foundation.TimeInterval = 15.0, enableVoicePlayback: Swift.Bool = true, shouldSaveVoiceForDebugging: Swift.Bool = false, additionalOptions: [Swift.String : Any] = [:])
   @objc deinit
 }
 extension AIBudsAIFoundation.AIChatSessionConfig : Foundation.NSCopying {
@@ -140,12 +140,12 @@ extension AIBudsAIFoundation.AIChatSessionConfig : Foundation.NSCopying {
   @objc deinit
 }
 @objc(AIBudsSpeakerSegment) final public class SpeakerSegment : ObjectiveC.NSObject {
-  @objc final public let sequence: Swift.Int
   @objc final public let speakerId: Swift.String?
   @objc final public let startTimeMs: Swift.Int
   @objc final public let endTimeMs: Swift.Int
+  @objc final public let associatedTranscriptSequence: Swift.Int
   @objc final public let text: Swift.String?
-  @objc(initWithStartTimeMs:endTimeMs:sequence:speakerId:text:) public init(sequence: Swift.Int, speakerId: Swift.String?, startTimeMs: Swift.Int, endTimeMs: Swift.Int, text: Swift.String?)
+  @objc(initWithSpeakerId:startTimeMs:endTimeMs:associatedTranscriptSequence:text:) public init(speakerId: Swift.String?, startTimeMs: Swift.Int, endTimeMs: Swift.Int, associatedTranscriptSequence: Swift.Int, text: Swift.String?)
   @objc deinit
 }
 extension AIBudsAIFoundation.SpeakerSegment : AIBudsFoundation.CustomDebugJsonStringConvertible {
@@ -153,7 +153,7 @@ extension AIBudsAIFoundation.SpeakerSegment : AIBudsFoundation.CustomDebugJsonSt
     @objc get
   }
 }
-@objc(AIBudsAIDeviceInfoModel) final public class AIDeviceInfoModel : ObjectiveC.NSObject, Foundation.NSSecureCoding {
+@objc(AIBudsAIDeviceInfoModel) final public class AIDeviceInfoModel : ObjectiveC.NSObject, Foundation.NSSecureCoding, AIBudsFoundation.CustomDebugJsonStringConvertible {
   @objc final public let product: AIBudsFoundation.DeviceProduct
   @objc final public let name: Swift.String
   @objc final public let bluetoothName: Swift.String?
@@ -173,6 +173,9 @@ extension AIBudsAIFoundation.SpeakerSegment : AIBudsFoundation.CustomDebugJsonSt
   @objc override final public var description: Swift.String {
     @objc get
   }
+  @objc final public var debugJsonString: Swift.String {
+    @objc get
+  }
   @objc deinit
 }
 extension AIBudsAIFoundation.AIDeviceInfoModel : Foundation.NSCopying {
@@ -184,6 +187,8 @@ extension AIBudsAIFoundation.AIDeviceInfoModel : Foundation.NSCopying {
   @objc final public var targetLanguage: Swift.String
   @objc final public var enableTTS: Swift.Bool
   @objc final public var enableVoicePlayback: Swift.Bool
+  @objc final public var usesInternalAudioRecording: Swift.Bool
+  @objc final public var preferSpeakerOutput: Swift.Bool
   @objc public init(targetLanguage: Swift.String = "en-US", sourceLanguage: Swift.String? = nil)
   @objc deinit
 }
@@ -196,11 +201,16 @@ extension AIBudsAIFoundation.AIDeviceInfoModel : Foundation.NSCopying {
   @objc final public let targetText: Swift.String?
   @objc final public let isTargetTextDefinite: Swift.Bool
   @objc final public let targetTextSequence: Foundation.NSNumber?
+  @objc final public let ttsSegmentAudioFile: Swift.String?
+  @objc final public var ttsSegmentAudioFormat: AIBudsAIFoundation.AIAudioFormat
   @objc final public let base64AudioData: Swift.String?
   @objc final public let audioDataSequence: Foundation.NSNumber?
   @objc final public let associatedTargetTextSequenceForAudioData: Foundation.NSNumber?
   @objc final public let speakerSegments: [AIBudsAIFoundation.SpeakerSegment]?
-  @objc(initWithSequence:requestId:sourceText:isSourceTextDefinite:sourceTextSequence:targetText:isTargetTextDefinite:targetTextSequence:base64AudioData:audioDataSequence:associatedTargetTextSequenceForAudioData:speakerSegments:) public init(sequence: Swift.Int, requestId: Swift.String?, sourceText: Swift.String?, isSourceTextDefinite: Swift.Bool, sourceTextSequence: Foundation.NSNumber?, targetText: Swift.String?, isTargetTextDefinite: Swift.Bool, targetTextSequence: Foundation.NSNumber?, base64AudioData: Swift.String?, audioDataSequence: Foundation.NSNumber?, associatedTargetTextSequenceForAudioData: Foundation.NSNumber?, speakerSegments: [AIBudsAIFoundation.SpeakerSegment]?)
+  @objc final public var ttsSegmentAudioFilePath: Swift.String? {
+    @objc get
+  }
+  @objc(initWithSequence:requestId:sourceText:isSourceTextDefinite:sourceTextSequence:targetText:isTargetTextDefinite:targetTextSequence:ttsSegmentAudioFile:base64AudioData:audioDataSequence:associatedTargetTextSequenceForAudioData:speakerSegments:) public init(sequence: Swift.Int, requestId: Swift.String?, sourceText: Swift.String?, isSourceTextDefinite: Swift.Bool, sourceTextSequence: Foundation.NSNumber?, targetText: Swift.String?, isTargetTextDefinite: Swift.Bool, targetTextSequence: Foundation.NSNumber?, ttsSegmentAudioFile: Swift.String?, base64AudioData: Swift.String?, audioDataSequence: Foundation.NSNumber?, associatedTargetTextSequenceForAudioData: Foundation.NSNumber?, speakerSegments: [AIBudsAIFoundation.SpeakerSegment]?)
   @objc deinit
 }
 @objc(AIBudsStreamingASRConfig) final public class StreamingASRConfig : ObjectiveC.NSObject {
@@ -297,8 +307,54 @@ extension AIBudsAIFoundation.AIAuthenticationMode : Swift.CustomDebugStringConve
     get
   }
 }
+@objc(AIBudsAIAudioRecordingEventType) public enum AIAudioRecordingEventType : Swift.Int, Swift.CaseIterable {
+  case userInitiatedToStart = 0
+  case sessionStarted
+  case sessionStartFailed
+  case aiServiceConnected
+  case autoEndSessionTriggered
+  case sessionEnded
+  case aiServiceUnauthorized
+  case aiServiceDisconnected
+  case aiServiceNetworkError
+  case aiServiceStartRecording
+  case aiServiceEndRecording
+  case aiServiceRecordingError
+  case aiServiceResponseError
+  case bleDisconnected
+  case appWillTerminate
+  public static var allCases: [AIBudsAIFoundation.AIAudioRecordingEventType] {
+    get
+  }
+  public var eventId: Swift.String {
+    get
+  }
+  public var name: Swift.String {
+    get
+  }
+  public var debugName: Swift.String {
+    get
+  }
+  public init?(rawValue: Swift.Int)
+  public typealias AllCases = [AIBudsAIFoundation.AIAudioRecordingEventType]
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+extension AIBudsAIFoundation.AIAudioRecordingEventType : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
+extension AIBudsAIFoundation.AIAudioRecordingEventType : Swift.CustomDebugStringConvertible {
+  public var debugDescription: Swift.String {
+    get
+  }
+}
 @objc(AIBudsAIChatEventType) public enum AIChatEventType : Swift.Int, Swift.CaseIterable {
-  case sessionStarted = 1
+  case userInitiatedToStart = 0
+  case sessionStarted
   case sessionStartFailed
   case aiServiceConnected
   case scoRecordingLinkEstablished
@@ -320,7 +376,11 @@ extension AIBudsAIFoundation.AIAuthenticationMode : Swift.CustomDebugStringConve
   case aiRespondVoicePlaybackDidStart
   case aiRespondVoicePlaybackDidStop
   case bleDisconnected
+  case appWillTerminate
   public static var allCases: [AIBudsAIFoundation.AIChatEventType] {
+    get
+  }
+  public var eventId: Swift.String {
     get
   }
   public var name: Swift.String {
@@ -342,6 +402,51 @@ extension AIBudsAIFoundation.AIChatEventType : Swift.CustomStringConvertible {
   }
 }
 extension AIBudsAIFoundation.AIChatEventType : Swift.CustomDebugStringConvertible {
+  public var debugDescription: Swift.String {
+    get
+  }
+}
+@objc(AIBudsSimultaneousInterpretationEventType) public enum SimultaneousInterpretationEventType : Swift.Int, Swift.CaseIterable {
+  case userInitiatedToStart = 0
+  case sessionStarted
+  case sessionStartFailed
+  case aiServiceConnected
+  case autoEndSessionTriggered
+  case sessionEnded
+  case aiServiceUnauthorized
+  case aiServiceDisconnected
+  case aiServiceNetworkError
+  case aiServiceStartRecording
+  case aiServiceEndRecording
+  case aiServiceRecordingError
+  case aiServiceResponseError
+  case bleDisconnected
+  case appWillTerminate
+  public static var allCases: [AIBudsAIFoundation.SimultaneousInterpretationEventType] {
+    get
+  }
+  public var eventId: Swift.String {
+    get
+  }
+  public var name: Swift.String {
+    get
+  }
+  public var debugName: Swift.String {
+    get
+  }
+  public init?(rawValue: Swift.Int)
+  public typealias AllCases = [AIBudsAIFoundation.SimultaneousInterpretationEventType]
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+extension AIBudsAIFoundation.SimultaneousInterpretationEventType : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
+extension AIBudsAIFoundation.SimultaneousInterpretationEventType : Swift.CustomDebugStringConvertible {
   public var debugDescription: Swift.String {
     get
   }
@@ -369,6 +474,8 @@ extension AIBudsAIFoundation.AIChatEventType : Swift.CustomDebugStringConvertibl
   case answerCall
   case declineCall
   case callRecording
+  case findPhone
+  case stopFindPhone
   public var command: Swift.String {
     get
   }
@@ -401,9 +508,15 @@ extension AIBudsAIFoundation.AIServiceVendor : Swift.RawRepresentable {}
 extension AIBudsAIFoundation.AIAuthenticationMode : Swift.Equatable {}
 extension AIBudsAIFoundation.AIAuthenticationMode : Swift.Hashable {}
 extension AIBudsAIFoundation.AIAuthenticationMode : Swift.RawRepresentable {}
+extension AIBudsAIFoundation.AIAudioRecordingEventType : Swift.Equatable {}
+extension AIBudsAIFoundation.AIAudioRecordingEventType : Swift.Hashable {}
+extension AIBudsAIFoundation.AIAudioRecordingEventType : Swift.RawRepresentable {}
 extension AIBudsAIFoundation.AIChatEventType : Swift.Equatable {}
 extension AIBudsAIFoundation.AIChatEventType : Swift.Hashable {}
 extension AIBudsAIFoundation.AIChatEventType : Swift.RawRepresentable {}
+extension AIBudsAIFoundation.SimultaneousInterpretationEventType : Swift.Equatable {}
+extension AIBudsAIFoundation.SimultaneousInterpretationEventType : Swift.Hashable {}
+extension AIBudsAIFoundation.SimultaneousInterpretationEventType : Swift.RawRepresentable {}
 extension AIBudsAIFoundation.AIIntentType : Swift.Equatable {}
 extension AIBudsAIFoundation.AIIntentType : Swift.Hashable {}
 extension AIBudsAIFoundation.AIIntentType : Swift.RawRepresentable {}

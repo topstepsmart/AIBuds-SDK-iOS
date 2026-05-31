@@ -290,6 +290,11 @@
     
     NSDictionary *configs = [self loadConfigs];
     starBurstAuthParams.productId = configs[@"STARBURST_PRODUCTID"];
+    NSString* ppeEnv = configs[@"STARBURST_PPEENV"];
+    if ([ppeEnv isKindOfClass:[NSString class]]
+        && [ppeEnv length] > 0) {
+        starBurstAuthParams.ppeEnv = ppeEnv;
+    }
     aiAuthParams.starburst = starBurstAuthParams;
     
     AIBudsMltCloudAIAuthParams* mltCloudAuthParams = [AIBudsMltCloudAIAuthParams new];

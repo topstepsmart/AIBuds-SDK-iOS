@@ -27,10 +27,16 @@
 #import <MagicHelper/MeetingSummaryRequestBody.h>
 #import <MagicHelper/MeetingSummaryV2RequestBody.h>
 #import <MagicHelper/MagicRecognitionSession.h>
+#import <MagicHelper/MagicRecognitionSession+Utils.h>
 #import <MagicHelper/MagicMemoryData.h>
+#import <MagicHelper/MagicConversationModels.h>
+#import <MagicHelper/MagicPetConfigModels.h>
 #import <MagicHelper/RecognitionImageBody.h>
 #import <MagicHelper/TranslationImageBody.h>
 #import <MagicHelper/MagicSmartOptionModel.h>
+#import <MagicHelper/MagicSmartAgentUtil.h>
+#import <MagicHelper/MagicConversationModels.h>
+#import <MagicHelper/MagicPetConfigModels.h>
 
 #import <MagicHelper/AILanguageCodeUtil.h>
 

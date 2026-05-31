@@ -132,6 +132,36 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "AIBudsCrashReporter",
+        "printedName": "AIBudsCrashReporter",
+        "declKind": "Import",
+        "moduleName": "AIBudsAllInOne",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AIBudsAIDashboard",
+        "printedName": "AIBudsAIDashboard",
+        "declKind": "Import",
+        "moduleName": "AIBudsAllInOne",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AIBudsAudio",
+        "printedName": "AIBudsAudio",
+        "declKind": "Import",
+        "moduleName": "AIBudsAllInOne",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "AIBudsAllInOneSDK",
         "printedName": "AIBudsAllInOneSDK",
@@ -428,6 +458,199 @@
               "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "installCrashReporter",
+            "printedName": "installCrashReporter(withLastCrashReportCallback:reportListUpdateCallback:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Swift.String?) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String?) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(() -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "() -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AIBudsAllInOne@objc(cs)AIBudsAllInOneSDK(cm)installCrashReporterWithLastCrashReportCallback:reportListUpdateCallback:",
+            "mangledName": "$s14AIBudsAllInOne0abcD3SDKC20installCrashReporter08withLastG14ReportCallback016reportListUpdateL0yySSSgcSg_yycSgtFZ",
+            "moduleName": "AIBudsAllInOne",
+            "static": true,
+            "objc_name": "installCrashReporterWithLastCrashReportCallback:reportListUpdateCallback:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "startAIDashboard",
+            "printedName": "startAIDashboard()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AIBudsAllInOne@objc(cs)AIBudsAllInOneSDK(cm)startAIDashboard",
+            "mangledName": "$s14AIBudsAllInOne0abcD3SDKC16startAIDashboardSbyFZ",
+            "moduleName": "AIBudsAllInOne",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "startAIDashboard",
+            "printedName": "startAIDashboard(withPort:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UInt",
+                "printedName": "Swift.UInt",
+                "hasDefaultArg": true,
+                "usr": "s:Su"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AIBudsAllInOne@objc(cs)AIBudsAllInOneSDK(cm)startAIDashboardWithPort:",
+            "mangledName": "$s14AIBudsAllInOne0abcD3SDKC16startAIDashboard8withPortSbSu_tFZ",
+            "moduleName": "AIBudsAllInOne",
+            "static": true,
+            "objc_name": "startAIDashboardWithPort:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "stopAIDashboard",
+            "printedName": "stopAIDashboard()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AIBudsAllInOne@objc(cs)AIBudsAllInOneSDK(cm)stopAIDashboard",
+            "mangledName": "$s14AIBudsAllInOne0abcD3SDKC15stopAIDashboardyyFZ",
+            "moduleName": "AIBudsAllInOne",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "isAIDashboardRunning",
+            "printedName": "isAIDashboardRunning()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AIBudsAllInOne@objc(cs)AIBudsAllInOneSDK(cm)isAIDashboardRunning",
+            "mangledName": "$s14AIBudsAllInOne0abcD3SDKC20isAIDashboardRunningSbyFZ",
+            "moduleName": "AIBudsAllInOne",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -535,21 +758,21 @@
       "kind": "StringLiteral",
       "offset": 498,
       "length": 14,
-      "value": "\"1.0.0-beta.5\""
+      "value": "\"1.0.0-beta.7\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAllInOne\/AIBudsAllInOne.swift",
       "kind": "StringLiteral",
       "offset": 628,
       "length": 13,
-      "value": "\"20260508001\""
+      "value": "\"20260531001\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAllInOne\/AIBudsAllInOne.swift",
       "kind": "StringLiteral",
       "offset": 743,
       "length": 12,
-      "value": "\"2026-05-08\""
+      "value": "\"2026-05-31\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAllInOne\/AIBudsAllInOne.swift",
@@ -561,44 +784,51 @@
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAllInOne\/AIBudsAllInOneSDK.swift",
       "kind": "StringLiteral",
-      "offset": 1981,
+      "offset": 2079,
       "length": 100,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAllInOne\/AIBudsAllInOneSDK.swift",
       "kind": "StringLiteral",
-      "offset": 1999,
+      "offset": 2097,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAllInOne\/AIBudsAllInOneSDK.swift",
       "kind": "StringLiteral",
-      "offset": 2010,
+      "offset": 2108,
       "length": 1,
       "value": "\" V\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAllInOne\/AIBudsAllInOneSDK.swift",
       "kind": "StringLiteral",
-      "offset": 2026,
+      "offset": 2124,
       "length": 1,
       "value": "\" (Build\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAllInOne\/AIBudsAllInOneSDK.swift",
       "kind": "StringLiteral",
-      "offset": 2045,
+      "offset": 2143,
       "length": 1,
       "value": "\") Release Date: \""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAllInOne\/AIBudsAllInOneSDK.swift",
       "kind": "StringLiteral",
-      "offset": 2080,
+      "offset": 2178,
       "length": 1,
       "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAllInOne\/AIBudsAllInOneSDK.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6940,
+      "length": 4,
+      "value": "3000"
     }
   ]
 }

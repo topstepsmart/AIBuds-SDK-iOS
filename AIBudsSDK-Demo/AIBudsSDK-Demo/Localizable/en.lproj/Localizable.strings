@@ -151,13 +151,13 @@
 "LocKey.ChatSettingsTitle" = "Chat Settings";
 
 "LocKey.StarBurstAI" = "StarBurst AI (ByteDance)";
-"LocKey.MLTCloudAI" = "MLTCloud AI (MLTCloud)";
+"LocKey.MLTCloudAI" = "MltCloud AI (MltCloud)";
 
 "LocKey.ServiceVendor" = "Service Vendor";
 "LocKey.SelectServiceVendor" = "Select Service Vendor";
 "LocKey.GeneralSettings" = "General Settings";
 "LocKey.StarBurstSettings" = "StarBurst AI Settings";
-"LocKey.MLTCloudSettings" = "MLTCloud AI Settings";
+"LocKey.MLTCloudSettings" = "MltCloud AI Settings";
 
 "LocKey.AiAudioChannel" = "Audio Channel";
 "LocKey.AiAudioChannelSco" = "SCO";
@@ -168,7 +168,7 @@
 "LocKey.MaxPauseDuration" = "Max Pause Duration";
 "LocKey.AutoEndSessionDuration" = "Auto End Session Duration";
 "LocKey.VoiceBroadcast" = "Voice Broadcast";
-"LocKey.SaveInputVoiceForDebugging" = "Save Input Voice for Debugging";
+"LocKey.SaveVoiceForDebugging" = "Save Voice for Debugging";
 
 "LocKey.StarBurstUsagePlan" = "Usage Plan";
 "LocKey.StarBurstLitePlan" = "Lite";
@@ -304,6 +304,8 @@
 "LocKey.SimultaneousInterpretationDemoTitle" = "Simultaneous Interpretation Demonstration";
 "LocKey.StartInterpretationButtonTitle" = "Start Interpretation";
 "LocKey.StopInterpretationButtonTitle" = "Stop Interpretation";
+"LocKey.UseSDKInternalRecording" = "Use SDK Internal Recording";
+"LocKey.PreferSpeakerOutput" = "Prefer Speaker Output";
 
 "LocKey.SourceContent" = "Source Content";
 "LocKey.SourceContentWillAppearHereTips" = "Source content will appear here";
@@ -814,6 +816,36 @@
 "LocKey.DeviceAppsReturnHome" = "Return To Home Screen";
 "LocKey.DeviceAppsStatus" = "Status";
 "LocKey.DeviceAppsReady" = "Ready to manage device apps";
+
+"LocKey.CrashReporterDemoTitle" = "Crash Reporter";
+"LocKey.CrashReporterCrashTriggerTitle" = "Trigger Crash";
+"LocKey.CrashReporterCrashTypeArrayOutOfBounds" = "Array Out of Bounds";
+"LocKey.CrashReporterCrashTypeNullPointer" = "Null Pointer Access";
+"LocKey.CrashReporterCrashTypeUnrecognizedSelector" = "Unrecognized Selector";
+"LocKey.CrashReporterCrashTypeAssertion" = "Assertion Failure";
+"LocKey.CrashReporterCrashTypeDivideByZero" = "Divide by Zero";
+"LocKey.CrashReporterCrashTypeStackOverflow" = "Stack Overflow";
+"LocKey.CrashReporterCrashTypeBusError" = "Bus Error";
+"LocKey.CrashReporterCrashTypeTriggerButton" = "Trigger Crash";
+"LocKey.CrashReporterCrashConfirmMessage" = "Are you sure you want to trigger a crash? The app will exit immediately.";
+"LocKey.CrashReporterFileListTitle" = "Crash File List";
+"LocKey.CrashReporterNoFiles" = "No crash files";
+"LocKey.CrashReporterFileName" = "File Name";
+"LocKey.CrashReporterFileSize" = "File Size";
+"LocKey.CrashReporterFileDate" = "Created Date";
+"LocKey.CrashReporterShareAction" = "Share";
+"LocKey.CrashReporterDeleteAction" = "Delete";
+"LocKey.CrashReporterDeleteConfirmTitle" = "Confirm Delete";
+"LocKey.CrashReporterDeleteConfirmMessage" = "Are you sure you want to delete this crash file?";
+"LocKey.CrashReporterDeleteAllAction" = "Delete All";
+"LocKey.CrashReporterDeleteAllConfirmMessage" = "Are you sure you want to delete all crash files?";
+"LocKey.CrashReporterFileContentTitle" = "File Content";
+"LocKey.CrashReporterCloseButton" = "Close";
+"LocKey.CrashReporterDeleteSuccess" = "Delete Success";
+"LocKey.CrashReporterDeleteFailed" = "Delete Failed";
+"LocKey.CrashReporterShareFailed" = "Share Failed";
+"LocKey.CrashReporterFileSizeFormat" = "%.2f KB";
+"LocKey.CrashReporterFileSizeLargeFormat" = "%.2f MB";
 "LocKey.DeviceAppsUnknownApp" = "Unknown App";
 "LocKey.DeviceAppsRunning" = "Running";
 "LocKey.DeviceAppsStopped" = "Stopped";
@@ -825,3 +857,6 @@
 "LocKey.DeviceAppsStopFailedFormat" = "Failed to stop app: %@";
 "LocKey.DeviceAppsHomeSuccess" = "Returned to home screen successfully";
 "LocKey.DeviceAppsHomeFailedFormat" = "Failed to return to home: %@";
+
+"LocKey.CrashReporterGroupTitle" = "Crash Reporter";
+"LocKey.CrashReporterFeatureTitle" = "Crash Reporter";

@@ -314,9 +314,9 @@
                     break;
                 }
                 case 6: {
-                    cell.textLabel.text = NSLocalizedString(@"LocKey.SaveInputVoiceForDebugging", nil);
+                    cell.textLabel.text = NSLocalizedString(@"LocKey.SaveVoiceForDebugging", nil);
                     self.saveVoiceSwitch = [[UISwitch alloc] init];
-                    self.saveVoiceSwitch.on = self.settings.sessionCfg.shouldSaveInputVoiceForDebugging;
+                    self.saveVoiceSwitch.on = self.settings.sessionCfg.shouldSaveVoiceForDebugging;
                     [self.saveVoiceSwitch addTarget:self action:@selector(saveVoiceChanged:) forControlEvents:UIControlEventValueChanged];
                     cell.accessoryView = self.saveVoiceSwitch;
                     break;
@@ -472,7 +472,7 @@
 }
 
 - (void)saveVoiceChanged:(UISwitch *)sender {
-    self.settings.sessionCfg.shouldSaveInputVoiceForDebugging = sender.on;
+    self.settings.sessionCfg.shouldSaveVoiceForDebugging = sender.on;
 }
 
 - (void)starBurstPlanChanged:(UISegmentedControl *)sender {
@@ -522,7 +522,7 @@
     context.settings.sessionCfg.audioChannel = self.settings.sessionCfg.audioChannel;
     context.settings.sessionCfg.allowUserToInterruptAIResponse = self.settings.sessionCfg.allowUserToInterruptAIResponse;
     context.settings.sessionCfg.enableVoicePlayback = self.settings.sessionCfg.enableVoicePlayback;
-    context.settings.sessionCfg.shouldSaveInputVoiceForDebugging = self.settings.sessionCfg.shouldSaveInputVoiceForDebugging;
+    context.settings.sessionCfg.shouldSaveVoiceForDebugging = self.settings.sessionCfg.shouldSaveVoiceForDebugging;
     context.settings.sessionCfg.additionalOptions = self.settings.sessionCfg.additionalOptions;
     context.settings.sessionCfg.maxPauseDurationBeforeAIResponds = self.settings.sessionCfg.maxPauseDurationBeforeAIResponds;
     context.settings.sessionCfg.autoEndSessionAfterNoInputDuration = self.settings.sessionCfg.autoEndSessionAfterNoInputDuration;

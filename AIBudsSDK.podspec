@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
   # ==================== Basic Information ====================
   # SDK name and version
   s.name         = "AIBudsSDK"
-  s.version      = "1.0.0-beta.6"
+  s.version      = "1.0.0-beta.7"
   s.summary      = "AIBuds SDK - An iOS framework for connecting AI devices"
   s.description  = <<-DESC
                     AIBuds SDK is a versatile framework for connecting iOS apps to AI devices. It provides modular components including core connectivity, Bluetooth management, voice assistant, AI capabilities, logging utilities, and foundation services.
@@ -146,7 +146,13 @@ Pod::Spec.new do |s|
 
     # Dashboard - AI management dashboard
     ai.subspec 'Dashboard' do |dashboard|
+      dashboard.vendored_frameworks = 'AIBudsSDK/AIBudsAIDashboard.xcframework'
+      dashboard.resource = 'AIBudsSDK/AIBudsAIDashboard.bundle'
       dashboard.dependency 'AIBudsSDK/AI/Core'
+      dashboard.dependency 'WCDB.swift', '2.1.16'
+      dashboard.dependency 'GCDWebServer'
+      dashboard.dependency 'YYWebImage'
+      dashboard.dependency 'iOSLogBrowserSDK'
     end
   end
 
@@ -157,6 +163,11 @@ Pod::Spec.new do |s|
     voiceassistant.dependency 'AIBudsSDK/ThirdParty/MZEncryptSDK'
   end
 
+  # CrashReporter module
+  s.subspec 'CrashReporter' do |log|
+    log.vendored_frameworks = 'AIBudsSDK/AIBudsCrashReporter.xcframework'
+  end
+
   # AllInOne module - Includes all features for convenience
   s.subspec 'AllInOne' do |allinone|
     allinone.vendored_frameworks = 'AIBudsSDK/AIBudsAllInOne.xcframework'
@@ -164,6 +175,7 @@ Pod::Spec.new do |s|
     allinone.dependency 'AIBudsSDK/ABMate'
     allinone.dependency 'AIBudsSDK/AI'
     allinone.dependency 'AIBudsSDK/VoiceAssistant'
+    allinone.dependency 'AIBudsSDK/CrashReporter'
   end
 
 end

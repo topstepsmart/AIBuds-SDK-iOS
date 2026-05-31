@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.3.1 effective-5.10 (swiftlang-6.3.1.1.2 clang-2100.0.123.102)
+// swift-compiler-version: Apple Swift version 6.3.2 effective-5.10 (swiftlang-6.3.2.1.108 clang-2100.1.1.101)
 // swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature GlobalActorIsolatedTypesUsability -enable-upcoming-feature MemberImportVisibility -enable-upcoming-feature InferIsolatedConformances -enable-upcoming-feature NonisolatedNonsendingByDefault -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name AIBudsAI
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.1
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.2
 import AIBudsAIFoundation
 import AIBudsFoundation
 import AVFoundation
@@ -46,6 +46,13 @@ extension AIBudsAIFoundation.AIAudioFormat : @retroactive WCDBSwift.ColumnCodabl
   public init?(with value: WCDBSwift.Value)
   public func archivedValue() -> WCDBSwift.Value
 }
+extension AIBudsAIFoundation.AIAudioRecordingEventType : @retroactive WCDBSwift.ColumnCodable {
+  public static var columnType: WCDBSwift.ColumnType {
+    get
+  }
+  public init?(with value: WCDBSwift.Value)
+  public func archivedValue() -> WCDBSwift.Value
+}
 extension AIBudsFoundation.AIChatAudioChannel : @retroactive WCDBSwift.ColumnCodable {
   public static var columnType: WCDBSwift.ColumnType {
     get
@@ -75,6 +82,13 @@ extension AIBudsFoundation.DeviceProduct : @retroactive WCDBSwift.ColumnCodable 
   public func archivedValue() -> WCDBSwift.Value
 }
 extension AIBudsFoundation.RecordingScene : @retroactive WCDBSwift.ColumnCodable {
+  public static var columnType: WCDBSwift.ColumnType {
+    get
+  }
+  public init?(with value: WCDBSwift.Value)
+  public func archivedValue() -> WCDBSwift.Value
+}
+extension AIBudsAIFoundation.SimultaneousInterpretationEventType : @retroactive WCDBSwift.ColumnCodable {
   public static var columnType: WCDBSwift.ColumnType {
     get
   }
@@ -120,7 +134,7 @@ extension AIBudsFoundation.RecordingScene : @retroactive WCDBSwift.ColumnCodable
 }
 @objc(AIBudsAIAudioRecordingServiceAPI) public protocol AIAudioRecordingServiceAPI : ObjectiveC.NSObjectProtocol {
   @objc var isRecordingInternally: Swift.Bool { get }
-  @objc(startAIAudioRecordingWithConfig:onStartSuccess:onStartFailure:onTranscript:onError:onFinish:) func startAIAudioRecording(_ config: AIBudsAIFoundation.AIAudioRecordingSessionConfig, onStartSuccess: ((_ session: any AIBudsAI.AIAudioRecordingSessionConvertible) -> Swift.Void)?, onStartFailure: ((_ error: any Swift.Error) -> Swift.Void)?, onTranscript: ((_ transcriptData: AIBudsAIFoundation.StreamSpeechASRModel) -> Swift.Void)?, onError: ((_ error: Foundation.NSError) -> Swift.Void)?, onFinish: ((_ report: AIBudsAI.AIAudioRecordingReportModel) -> Swift.Void)?)
+  @objc(startAIAudioRecordingWithConfig:onStartSuccess:onStartFailure:onTranscript:onEvent:onError:onFinish:) func startAIAudioRecording(_ config: AIBudsAIFoundation.AIAudioRecordingSessionConfig, onStartSuccess: ((_ session: any AIBudsAI.AIAudioRecordingSessionConvertible) -> Swift.Void)?, onStartFailure: ((_ error: any Swift.Error) -> Swift.Void)?, onTranscript: ((_ transcriptData: AIBudsAIFoundation.StreamSpeechASRModel) -> Swift.Void)?, onEvent: ((_ event: AIBudsAI.AIAudioRecordingEventModel) -> Swift.Void)?, onError: ((_ error: Foundation.NSError) -> Swift.Void)?, onFinish: ((_ report: AIBudsAI.AIAudioRecordingReportModel) -> Swift.Void)?)
   @objc(stopAIAudioRecording) func stopAIAudioRecording()
 }
 @objc(AIBudsAIAuthenticationServiceAPI) public protocol AIAuthenticationServiceAPI : ObjectiveC.NSObjectProtocol {
@@ -140,7 +154,7 @@ extension AIBudsFoundation.RecordingScene : @retroactive WCDBSwift.ColumnCodable
 }
 @objc(AIBudsSimultaneousInterpretationServiceAPI) public protocol SimultaneousInterpretationServiceAPI : ObjectiveC.NSObjectProtocol {
   @objc var isRecordingInternally: Swift.Bool { get }
-  @objc(startSimultaneousInterpretationWithConfig:onStartSuccess:onStartFailure:onStopByInterruption:onException:onStreamResultHandler:onFinish:) func startSimultaneousInterpretation(config: AIBudsAIFoundation.SimultaneousInterpretationConfig, onStartSuccess: ((_ session: any AIBudsAI.SimultaneousInterpretationSessionConvertible) -> Swift.Void)?, onStartFailure: ((_ error: Foundation.NSError) -> Swift.Void)?, onStopByInterruption: ((_ error: Foundation.NSError?) -> Swift.Void)?, onException: ((_ error: Foundation.NSError) -> Swift.Void)?, streamResultHandler: ((_ isFinal: Swift.Bool, _ response: AIBudsAIFoundation.SimultaneousInterpretationDataModel?, _ error: (any Swift.Error)?) -> Swift.Void)?, onFinish: ((_ report: AIBudsAI.SimultaneousInterpretationReportModel) -> Swift.Void)?)
+  @objc(startSimultaneousInterpretationWithConfig:onStartSuccess:onStartFailure:onStopByInterruption:onException:onStreamResultHandler:onEvent:onFinish:) func startSimultaneousInterpretation(config: AIBudsAIFoundation.SimultaneousInterpretationConfig, onStartSuccess: ((_ session: any AIBudsAI.SimultaneousInterpretationSessionConvertible) -> Swift.Void)?, onStartFailure: ((_ error: Foundation.NSError) -> Swift.Void)?, onStopByInterruption: ((_ error: Foundation.NSError?) -> Swift.Void)?, onException: ((_ error: Foundation.NSError) -> Swift.Void)?, streamResultHandler: ((_ isFinal: Swift.Bool, _ response: AIBudsAIFoundation.SimultaneousInterpretationDataModel?, _ error: (any Swift.Error)?) -> Swift.Void)?, onEvent: ((_ event: AIBudsAI.SimultaneousInterpretationEventModel) -> Swift.Void)?, onFinish: ((_ report: AIBudsAI.SimultaneousInterpretationReportModel) -> Swift.Void)?)
   @objc(stopSimultaneousInterpretation) func stopSimultaneousInterpretation()
 }
 @objc(AIBudsStreamingASRServiceAPI) public protocol StreamingASRServiceAPI : ObjectiveC.NSObjectProtocol {
@@ -159,14 +173,36 @@ extension AIBudsFoundation.RecordingScene : @retroactive WCDBSwift.ColumnCodable
   @objc optional func appendInt16PCM(_ pcmData: Foundation.Data, isFinal: Swift.Bool)
   @objc optional func appendAudioPCMBuffer(_ buffer: AVFAudio.AVAudioPCMBuffer, isFinal: Swift.Bool)
 }
+@objc(AIBudsAIAudioRecordingEventModel) final public class AIAudioRecordingEventModel : ObjectiveC.NSObject, WCDBSwift.ColumnJSONCodable {
+  @objc final public let eventType: AIBudsAIFoundation.AIAudioRecordingEventType
+  @objc final public let timestamp: Foundation.Date
+  @objc final public let timeSinceSessionStart: Foundation.TimeInterval
+  @objc final public let evidence: Swift.String
+  @objc final public let details: Swift.String?
+  @objc final public var error: Foundation.NSError? {
+    @objc get
+  }
+  @objc public init(eventType: AIBudsAIFoundation.AIAudioRecordingEventType, timestamp: Foundation.Date, timeSinceSessionStart: Foundation.TimeInterval, evidence: Swift.String, details: Swift.String? = nil, error: Foundation.NSError? = nil)
+  @objc override final public var description: Swift.String {
+    @objc get
+  }
+  @objc deinit
+  final public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
 @objc(AIBudsAIAudioRecordingReportModel) final public class AIAudioRecordingReportModel : ObjectiveC.NSObject, WCDBSwift.TableCodable {
   @objc final public let serviceVendor: AIBudsAIFoundation.AIServiceVendor
   @objc final public let recordingScene: AIBudsFoundation.RecordingScene
   @objc final public let sessionStartTime: Foundation.Date
   @objc final public var sessionEndTime: Foundation.Date?
+  @objc final public var sessionEvents: [AIBudsAI.AIAudioRecordingEventModel]
   @objc final public var languageForSpeechInput: Swift.String?
   @objc final public var isStoppedByInterruption: Swift.Bool
   @objc final public var isOfflineRecording: Swift.Bool
+  @objc final public var hadNetworkDisconnection: Swift.Bool
+  @objc final public var transcripts: [Swift.String]
+  @objc final public var speakerSegments: [Swift.String]
+  @objc final public var criticalLogRecords: [AIBudsAI.AICriticalLogRecordModel]
   @objc final public var rawAudioFile: Swift.String?
   @objc final public var rawAudioFormat: AIBudsAIFoundation.AIAudioFormat
   @objc final public var rawAudioFilePath: Swift.String? {
@@ -193,12 +229,18 @@ extension AIBudsFoundation.RecordingScene : @retroactive WCDBSwift.ColumnCodable
     case recordingScene
     case sessionStartTime
     case sessionEndTime
+    case sessionEvents
     case rawAudioFile
     case rawAudioFormat
     case convertedAudioFile
     case convertedAudioFormat
     case isStoppedByInterruption
+    case isOfflineRecording
+    case hadNetworkDisconnection
+    case transcripts
+    case speakerSegments
     case deviceInfoData
+    case criticalLogRecords
     public init?(rawValue: Swift.String)
     public init?(stringValue: Swift.String)
     public init?(intValue: Swift.Int)
@@ -214,6 +256,8 @@ extension AIBudsFoundation.RecordingScene : @retroactive WCDBSwift.ColumnCodable
     }
   }
   @objc final public func save()
+  @objc public static func fetchAllReports(_ completion: @escaping (_ reports: [AIBudsAI.AIAudioRecordingReportModel]) -> Swift.Void)
+  @objc public static func fetchReportsCount(_ completion: @escaping (_ count: Swift.Int) -> Swift.Void)
   @objc deinit
   final public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
@@ -246,14 +290,18 @@ extension AIBudsFoundation.RecordingScene : @retroactive WCDBSwift.ColumnCodable
   @objc final public var maxPauseDurationBeforeAIResponds: Swift.Double
   @objc final public var autoEndSessionAfterNoInputDuration: Swift.Double
   @objc final public var isVoicePlaybackEnabled: Swift.Bool
-  @objc final public let hasDebugInputVoice: Swift.Bool
+  @objc final public let hasVoiceForDebugging: Swift.Bool
   @objc final public var rawAudioFile: Swift.String?
   @objc final public var rawAudioFormat: AIBudsAIFoundation.AIAudioFormat
   @objc final public var segmentAudioFilesFormat: AIBudsAIFoundation.AIAudioFormat
   @objc final public var segmentAudioFiles: [Swift.String]
+  @objc final public var criticalLogRecords: [AIBudsAI.AICriticalLogRecordModel]
   @objc final public var device: AIBudsAIFoundation.AIDeviceInfoModel? {
     @objc get
     @objc set
+  }
+  @objc final public var wasAutoEnded: Swift.Bool {
+    @objc get
   }
   @objc final public var rawAudioFilePath: Swift.String? {
     @objc get
@@ -264,7 +312,7 @@ extension AIBudsFoundation.RecordingScene : @retroactive WCDBSwift.ColumnCodable
   @objc final public var sessionDuration: Foundation.TimeInterval {
     @objc get
   }
-  @objc public init(sessionStartTime: Foundation.Date = Date(), serviceVendor: AIBudsAIFoundation.AIServiceVendor = .starBurst, hasDebugInputVoice: Swift.Bool = false)
+  @objc public init(sessionStartTime: Foundation.Date = Date(), serviceVendor: AIBudsAIFoundation.AIServiceVendor = .starBurst, hasVoiceForDebugging: Swift.Bool = false)
   public enum CodingKeys : Swift.String, WCDBSwift.CodingTableKey {
     public typealias Root = AIBudsAI.AIChatSessionReportModel
     public static let objectRelationalMapping: WCDBSwift.TableBinding<AIBudsAI.AIChatSessionReportModel.CodingKeys>
@@ -278,11 +326,12 @@ extension AIBudsFoundation.RecordingScene : @retroactive WCDBSwift.ColumnCodable
     case maxPauseDurationBeforeAIResponds
     case autoEndSessionAfterNoInputDuration
     case isVoicePlaybackEnabled
-    case hasDebugInputVoice
+    case hasVoiceForDebugging
     case rawAudioFile
     case rawAudioFormat
     case segmentAudioFiles
     case deviceInfoData
+    case criticalLogRecords
     public init?(rawValue: Swift.String)
     public init?(stringValue: Swift.String)
     public init?(intValue: Swift.Int)
@@ -298,6 +347,36 @@ extension AIBudsFoundation.RecordingScene : @retroactive WCDBSwift.ColumnCodable
     }
   }
   @objc final public func save()
+  @objc public static func fetchAllReports(_ completion: @escaping (_ reports: [AIBudsAI.AIChatSessionReportModel]) -> Swift.Void)
+  @objc public static func fetchReportsCount(_ completion: @escaping (_ count: Swift.Int) -> Swift.Void)
+  @objc deinit
+  final public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+@objc(AIBudsAICriticalLogRecordModel) final public class AICriticalLogRecordModel : ObjectiveC.NSObject, WCDBSwift.ColumnJSONCodable {
+  @objc final public let timestamp: Foundation.Date
+  @objc final public let level: Swift.String
+  @objc final public let message: Swift.String
+  @objc final public var subsystem: Swift.String?
+  @objc final public var category: Swift.String?
+  @objc public init(timestamp: Foundation.Date, level: Swift.String, message: Swift.String)
+  @objc deinit
+  final public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+@objc(AIBudsSimultaneousInterpretationEventModel) final public class SimultaneousInterpretationEventModel : ObjectiveC.NSObject, WCDBSwift.ColumnJSONCodable {
+  @objc final public let eventType: AIBudsAIFoundation.SimultaneousInterpretationEventType
+  @objc final public let timestamp: Foundation.Date
+  @objc final public let timeSinceSessionStart: Foundation.TimeInterval
+  @objc final public let evidence: Swift.String
+  @objc final public let details: Swift.String?
+  @objc final public var error: Foundation.NSError? {
+    @objc get
+  }
+  @objc public init(eventType: AIBudsAIFoundation.SimultaneousInterpretationEventType, timestamp: Foundation.Date, timeSinceSessionStart: Foundation.TimeInterval, evidence: Swift.String, details: Swift.String? = nil, error: Foundation.NSError? = nil)
+  @objc override final public var description: Swift.String {
+    @objc get
+  }
   @objc deinit
   final public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
@@ -309,8 +388,11 @@ extension AIBudsFoundation.RecordingScene : @retroactive WCDBSwift.ColumnCodable
   @objc final public let enableTTS: Swift.Bool
   @objc final public let ttsFormat: Swift.String
   @objc final public let enableVoicePlayback: Swift.Bool
+  @objc final public let usesInternalAudioRecording: Swift.Bool
+  @objc final public let preferSpeakerOutput: Swift.Bool
   @objc final public let sessionStartTime: Foundation.Date
   @objc final public var sessionEndTime: Foundation.Date?
+  @objc final public var sessionEvents: [AIBudsAI.SimultaneousInterpretationEventModel]
   @objc final public var sourceSentences: [Swift.String]
   @objc final public var targetSentences: [Swift.String]
   @objc final public var ttsSegments: [Swift.String]
@@ -318,6 +400,7 @@ extension AIBudsFoundation.RecordingScene : @retroactive WCDBSwift.ColumnCodable
   @objc final public var rawAudioFile: Swift.String?
   @objc final public var rawAudioFormat: AIBudsAIFoundation.AIAudioFormat
   @objc final public var isStoppedByInterruption: Swift.Bool
+  @objc final public var criticalLogRecords: [AIBudsAI.AICriticalLogRecordModel]
   @objc final public var rawAudioFilePath: Swift.String? {
     @objc get
   }
@@ -328,7 +411,7 @@ extension AIBudsFoundation.RecordingScene : @retroactive WCDBSwift.ColumnCodable
     @objc get
     @objc set
   }
-  @objc public init(sessionStartTime: Foundation.Date = Date(), serviceVendor: AIBudsAIFoundation.AIServiceVendor = .starBurst, sourceLanguage: Swift.String, targetLanguage: Swift.String, enableTTS: Swift.Bool, ttsFormat: Swift.String, enableVoicePlayback: Swift.Bool)
+  @objc public init(sessionStartTime: Foundation.Date = Date(), serviceVendor: AIBudsAIFoundation.AIServiceVendor = .starBurst, sourceLanguage: Swift.String, targetLanguage: Swift.String, enableTTS: Swift.Bool, ttsFormat: Swift.String, enableVoicePlayback: Swift.Bool, usesInternalAudioRecording: Swift.Bool, preferSpeakerOutput: Swift.Bool)
   public enum CodingKeys : Swift.String, WCDBSwift.CodingTableKey {
     public typealias Root = AIBudsAI.SimultaneousInterpretationReportModel
     public static let objectRelationalMapping: WCDBSwift.TableBinding<AIBudsAI.SimultaneousInterpretationReportModel.CodingKeys>
@@ -337,9 +420,12 @@ extension AIBudsFoundation.RecordingScene : @retroactive WCDBSwift.ColumnCodable
     case enableTTS
     case ttsFormat
     case enableVoicePlayback
+    case usesInternalAudioRecording
+    case preferSpeakerOutput
     case serviceVendor
     case sessionStartTime
     case sessionEndTime
+    case sessionEvents
     case sourceSentences
     case targetSentences
     case ttsSegments
@@ -348,6 +434,7 @@ extension AIBudsFoundation.RecordingScene : @retroactive WCDBSwift.ColumnCodable
     case rawAudioFormat
     case isStoppedByInterruption
     case deviceInfoData
+    case criticalLogRecords
     public init?(rawValue: Swift.String)
     public init?(stringValue: Swift.String)
     public init?(intValue: Swift.Int)
@@ -363,6 +450,8 @@ extension AIBudsFoundation.RecordingScene : @retroactive WCDBSwift.ColumnCodable
     }
   }
   @objc final public func save()
+  @objc public static func fetchAllReports(_ completion: @escaping (_ reports: [AIBudsAI.SimultaneousInterpretationReportModel]) -> Swift.Void)
+  @objc public static func fetchReportsCount(_ completion: @escaping (_ count: Swift.Int) -> Swift.Void)
   @objc deinit
   final public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
@@ -409,11 +498,11 @@ extension AIBudsFoundation.RecordingScene : @retroactive WCDBSwift.ColumnCodable
   @objc(stopAIChat) public static func stopAIChat()
   @objc(translateText:from:to:streamResultHandler:) public static func translateText(_ text: Swift.String, from sourceLanguage: Swift.String, to targetLanguage: Swift.String, streamResultHandler: ((_ isFinal: Swift.Bool, _ transcript: Swift.String?, _ error: (any Swift.Error)?) -> Swift.Void)? = nil)
   @objc(cancelTextTranslation) public static func cancelTextTranslation()
-  @objc(startSimultaneousInterpretationWithConfig:onStartSuccess:onStartFailure:onStopByInterruption:onException:streamResultHandler:onFinish:) public static func startSimultaneousInterpretation(_ config: AIBudsAIFoundation.SimultaneousInterpretationConfig = .default, onStartSuccess: ((_ session: any AIBudsAI.SimultaneousInterpretationSessionConvertible) -> Swift.Void)? = nil, onStartFailure: ((_ error: Foundation.NSError) -> Swift.Void)? = nil, onStopByInterruption: ((_ error: Foundation.NSError?) -> Swift.Void)? = nil, onException: ((_ error: Foundation.NSError) -> Swift.Void)? = nil, streamResultHandler: ((_ isFinal: Swift.Bool, _ response: AIBudsAIFoundation.SimultaneousInterpretationDataModel?, _ error: (any Swift.Error)?) -> Swift.Void)? = nil, onFinish: ((_ report: AIBudsAI.SimultaneousInterpretationReportModel?) -> Swift.Void)? = nil)
+  @objc(startSimultaneousInterpretationWithConfig:onStartSuccess:onStartFailure:onStopByInterruption:onException:streamResultHandler:onEvent:onFinish:) public static func startSimultaneousInterpretation(_ config: AIBudsAIFoundation.SimultaneousInterpretationConfig = .default, onStartSuccess: ((_ session: any AIBudsAI.SimultaneousInterpretationSessionConvertible) -> Swift.Void)? = nil, onStartFailure: ((_ error: Foundation.NSError) -> Swift.Void)? = nil, onStopByInterruption: ((_ error: Foundation.NSError?) -> Swift.Void)? = nil, onException: ((_ error: Foundation.NSError) -> Swift.Void)? = nil, streamResultHandler: ((_ isFinal: Swift.Bool, _ response: AIBudsAIFoundation.SimultaneousInterpretationDataModel?, _ error: (any Swift.Error)?) -> Swift.Void)? = nil, onEvent: ((_ event: AIBudsAI.SimultaneousInterpretationEventModel) -> Swift.Void)? = nil, onFinish: ((_ report: AIBudsAI.SimultaneousInterpretationReportModel?) -> Swift.Void)? = nil)
   @objc(stopSimultaneousInterpretation) public static func stopSimultaneousInterpretation()
   @objc(summaryWithText:streamResultHandler:) public static func summary(withText text: Swift.String, streamResultHandler: ((_ isFinal: Swift.Bool, _ transcript: Swift.String?, _ error: (any Swift.Error)?) -> Swift.Void)? = nil)
   @objc(cancelSummary) public static func cancelSummary()
-  @objc(startAIAudioRecordingWithConfig:onStartSuccess:onStartFailure:onTranscript:onError:onFinish:) public static func startAIAudioRecording(_ config: AIBudsAIFoundation.AIAudioRecordingSessionConfig = .default, onStartSuccess: ((_ session: any AIBudsAI.AIAudioRecordingSessionConvertible) -> Swift.Void)? = nil, onStartFailure: ((_ error: any Swift.Error) -> Swift.Void)? = nil, onTranscript: ((_ transcriptData: AIBudsAIFoundation.StreamSpeechASRModel) -> Swift.Void)? = nil, onError: ((_ error: Foundation.NSError) -> Swift.Void)? = nil, onFinish: ((_ report: AIBudsAI.AIAudioRecordingReportModel) -> Swift.Void)? = nil)
+  @objc(startAIAudioRecordingWithConfig:onStartSuccess:onStartFailure:onTranscript:onEvent:onError:onFinish:) public static func startAIAudioRecording(_ config: AIBudsAIFoundation.AIAudioRecordingSessionConfig = .default, onStartSuccess: ((_ session: any AIBudsAI.AIAudioRecordingSessionConvertible) -> Swift.Void)? = nil, onStartFailure: ((_ error: any Swift.Error) -> Swift.Void)? = nil, onTranscript: ((_ transcriptData: AIBudsAIFoundation.StreamSpeechASRModel) -> Swift.Void)? = nil, onEvent: ((_ event: AIBudsAI.AIAudioRecordingEventModel) -> Swift.Void)? = nil, onError: ((_ error: Foundation.NSError) -> Swift.Void)? = nil, onFinish: ((_ report: AIBudsAI.AIAudioRecordingReportModel) -> Swift.Void)? = nil)
   @objc(stopAIAudioRecording) public static func stopAIAudioRecording()
   @objc(recognizeVoiceData:withConfig:onTranscript:onFailed:onFinish:) public static func recognizeVoice(_ data: Foundation.Data, config: AIBudsAIFoundation.StreamingASRConfig = .default, onTranscript: ((_ transcriptData: AIBudsAIFoundation.StreamSpeechASRModel) -> Swift.Void)? = nil, onFailed: ((_ error: Foundation.NSError) -> Swift.Void)? = nil, onFinish: (() -> Swift.Void)? = nil)
   @objc(recognizeVoiceFile:withConfig:onTranscript:onFailed:onFinish:) public static func recognizeVoice(withFile filePath: Swift.String, config: AIBudsAIFoundation.StreamingASRConfig = .default, onTranscript: ((_ transcriptData: AIBudsAIFoundation.StreamSpeechASRModel) -> Swift.Void)? = nil, onFailed: ((_ error: Foundation.NSError) -> Swift.Void)? = nil, onFinish: (() -> Swift.Void)? = nil)

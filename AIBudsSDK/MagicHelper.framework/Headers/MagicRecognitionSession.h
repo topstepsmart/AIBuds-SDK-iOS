@@ -41,6 +41,9 @@ typedef NS_ENUM(NSInteger, MGVADState) {
 /// 意图理解回调
 - (void)onIntentionAction:(NSString *)type params:(NSDictionary *)params;
 
+/// 情绪回调
+- (void)onEmotionAction:(NSString *)emotion ext:(nullable NSDictionary *)ext;
+
 /// 文本回调
 - (void)onMessage:(NSDictionary *)message;
 /// 文本回调结束
@@ -162,53 +165,6 @@ typedef NS_ENUM(NSInteger, MGVADState) {
 /// 输入文本开启对话
 - (void)commitText:(NSString *)text;
 
-#pragma mark - 记忆 (Memory)
-
-/// 记忆类型：fact-事实, card-卡证, order-订单
-typedef NSString * MagicMemoryType NS_STRING_ENUM;
-///事实类记忆，如⽤户偏好、设备状态等
-FOUNDATION_EXPORT MagicMemoryType const MagicMemoryTypeFact;
-///卡证类记忆，如身份证、银⾏卡信息
-FOUNDATION_EXPORT MagicMemoryType const MagicMemoryTypeCard;
-///订单类记忆，如购物记录、服务订单
-FOUNDATION_EXPORT MagicMemoryType const MagicMemoryTypeOrder;
-
-/// 记忆来源：dialogue-对话, image-图像, page-页面
-typedef NSString * MagicMemorySource NS_STRING_ENUM;
-///来自ai对话
-FOUNDATION_EXPORT MagicMemorySource const MagicMemorySourceDialogue;
-///来自图片识别
-FOUNDATION_EXPORT MagicMemorySource const MagicMemorySourceImage;
-///来自用户创建
-FOUNDATION_EXPORT MagicMemorySource const MagicMemorySourcePage;
-
-/// 添加记忆
-- (void)addMemoryWithTopic:(NSString *)topic
-                   content:(NSString *)content
-                      type:(MagicMemoryType)type
-                    source:(MagicMemorySource)source
-                 onSuccess:(void (^)(NSString *memoryId))onSuccess
-                   onError:(void (^)(NSString *msg, NSInteger code))onError;
-
-/// 编辑记忆
-- (void)editeMemoryWithMemoryId:(NSString *)memoryId
-                         topic:(NSString *)topic
-                       content:(NSString *)content
-                     onSuccess:(void (^)(void))onSuccess
-                       onError:(void (^)(NSString *msg, NSInteger code))onError;
-
-/// 删除记忆
-- (void)deleteMemoryWithMemoryId:(NSString *)memoryId
-                       onSuccess:(void (^)(void))onSuccess
-                         onError:(void (^)(NSString *msg, NSInteger code))onError;
-
-/// 拉取记忆列表，list 元素为 MagicMemoryData
-- (void)fetchMemoryWithSource:(nullable MagicMemorySource)source
-                         type:(nullable MagicMemoryType)type
-                     pageNum:(NSInteger)pageNum
-                    pageSize:(NSInteger)pageSize
-                   onSuccess:(void (^)(NSArray<MagicMemoryData *> *list))onSuccess
-                     onError:(void (^)(NSString *msg, NSInteger code))onError;
 
 @end
 

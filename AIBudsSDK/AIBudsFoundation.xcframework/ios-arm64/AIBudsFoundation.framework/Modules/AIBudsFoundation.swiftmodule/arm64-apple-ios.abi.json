@@ -69159,8 +69159,8 @@
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/DataModels(数据模型)\/MediaInfo(媒体信息)\/MediaCountInfoModel.swift",
       "kind": "StringLiteral",
       "offset": 1443,
-      "length": 71,
-      "value": "\"[MediaCountInfo] 照片数量: %@, 视频数量: %@, 音频数量: %@\""
+      "length": 74,
+      "value": "\"[MediaCountInfo] 照片数量：%@, 视频数量：%@, 音频数量：%@\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/DataModels(数据模型)\/MediaInfo(媒体信息)\/MediaFileInfoModel.swift",
@@ -73563,21 +73563,21 @@
       "kind": "StringLiteral",
       "offset": 492,
       "length": 14,
-      "value": "\"1.0.0-beta.5\""
+      "value": "\"1.0.0-beta.7\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/AIBudsFoundation.swift",
       "kind": "StringLiteral",
       "offset": 622,
       "length": 13,
-      "value": "\"20260508001\""
+      "value": "\"20260531001\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/AIBudsFoundation.swift",
       "kind": "StringLiteral",
       "offset": 737,
       "length": 12,
-      "value": "\"2026-05-08\""
+      "value": "\"2026-05-31\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/AIBudsFoundation.swift",

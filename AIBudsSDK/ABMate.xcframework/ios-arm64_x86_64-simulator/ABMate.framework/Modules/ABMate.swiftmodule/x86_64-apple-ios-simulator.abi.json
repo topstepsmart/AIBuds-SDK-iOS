@@ -13359,6 +13359,31 @@
             ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "initBluetooth",
+            "printedName": "initBluetooth()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@ABMate@objc(cs)ABMateSDK(im)initBluetooth",
+            "mangledName": "$s6ABMate0A3SDKC13initBluetoothyyF",
+            "moduleName": "ABMate",
+            "objc_name": "initBluetooth",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -17525,21 +17550,21 @@
       "kind": "StringLiteral",
       "offset": 519,
       "length": 14,
-      "value": "\"1.0.0-beta.6\""
+      "value": "\"1.0.0-beta.7\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/ABMate.swift",
       "kind": "StringLiteral",
       "offset": 649,
       "length": 13,
-      "value": "\"20260509001\""
+      "value": "\"20260531001\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/ABMate.swift",
       "kind": "StringLiteral",
       "offset": 764,
       "length": 12,
-      "value": "\"2026-05-09\""
+      "value": "\"2026-05-31\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/ABMate.swift",
