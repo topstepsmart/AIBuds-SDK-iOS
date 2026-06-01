@@ -12,3 +12,4 @@ AIBudsSDK/AIBudsVoiceAssistant.xcframework linguist-language=Swift
 AIBudsSDK/AIBudsAIDashboard.xcframework linguist-language=Swift
 AIBudsSDK/AIBudsCrashReporter.xcframework linguist-language=Swift
 AIBudsSDK/AIBudsAllInOne.xcframework linguist-language=Swift
+AIBudsSDK-Demo/**/* linguist-vendored
