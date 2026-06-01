@@ -12754,6 +12754,48 @@
           },
           {
             "kind": "Var",
+            "name": "userInitiatedToEndSession",
+            "printedName": "userInitiatedToEndSession",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AIBudsAIFoundation.AIAudioRecordingEventType.Type) -> AIBudsAIFoundation.AIAudioRecordingEventType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AIAudioRecordingEventType",
+                    "printedName": "AIBudsAIFoundation.AIAudioRecordingEventType",
+                    "usr": "c:@M@AIBudsAIFoundation@E@AIBudsAIAudioRecordingEventType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AIBudsAIFoundation.AIAudioRecordingEventType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AIAudioRecordingEventType",
+                        "printedName": "AIBudsAIFoundation.AIAudioRecordingEventType",
+                        "usr": "c:@M@AIBudsAIFoundation@E@AIBudsAIAudioRecordingEventType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AIBudsAIFoundation@E@AIBudsAIAudioRecordingEventType@AIBudsAIAudioRecordingEventTypeUserInitiatedToEndSession",
+            "mangledName": "$s18AIBudsAIFoundation25AIAudioRecordingEventTypeO25userInitiatedToEndSessionyA2CmF",
+            "moduleName": "AIBudsAIFoundation",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 5
+          },
+          {
+            "kind": "Var",
             "name": "sessionEnded",
             "printedName": "sessionEnded",
             "children": [
@@ -12792,7 +12834,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 5
+            "fixedbinaryorder": 6
           },
           {
             "kind": "Var",
@@ -12834,7 +12876,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 6
+            "fixedbinaryorder": 7
           },
           {
             "kind": "Var",
@@ -12876,7 +12918,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 7
+            "fixedbinaryorder": 8
           },
           {
             "kind": "Var",
@@ -12918,7 +12960,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 8
+            "fixedbinaryorder": 9
           },
           {
             "kind": "Var",
@@ -12960,7 +13002,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 9
+            "fixedbinaryorder": 10
           },
           {
             "kind": "Var",
@@ -13002,7 +13044,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 10
+            "fixedbinaryorder": 11
           },
           {
             "kind": "Var",
@@ -13044,7 +13086,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 11
+            "fixedbinaryorder": 12
           },
           {
             "kind": "Var",
@@ -13086,7 +13128,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 12
+            "fixedbinaryorder": 13
           },
           {
             "kind": "Var",
@@ -13128,7 +13170,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 13
+            "fixedbinaryorder": 14
           },
           {
             "kind": "Var",
@@ -13170,7 +13212,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 14
+            "fixedbinaryorder": 15
           },
           {
             "kind": "Var",
@@ -14096,6 +14138,48 @@
           },
           {
             "kind": "Var",
+            "name": "userInitiatedToEndSession",
+            "printedName": "userInitiatedToEndSession",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AIBudsAIFoundation.AIChatEventType.Type) -> AIBudsAIFoundation.AIChatEventType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AIChatEventType",
+                    "printedName": "AIBudsAIFoundation.AIChatEventType",
+                    "usr": "c:@M@AIBudsAIFoundation@E@AIBudsAIChatEventType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AIBudsAIFoundation.AIChatEventType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AIChatEventType",
+                        "printedName": "AIBudsAIFoundation.AIChatEventType",
+                        "usr": "c:@M@AIBudsAIFoundation@E@AIBudsAIChatEventType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AIBudsAIFoundation@E@AIBudsAIChatEventType@AIBudsAIChatEventTypeUserInitiatedToEndSession",
+            "mangledName": "$s18AIBudsAIFoundation15AIChatEventTypeO25userInitiatedToEndSessionyA2CmF",
+            "moduleName": "AIBudsAIFoundation",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 11
+          },
+          {
+            "kind": "Var",
             "name": "sessionEnded",
             "printedName": "sessionEnded",
             "children": [
@@ -14134,7 +14218,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 11
+            "fixedbinaryorder": 12
           },
           {
             "kind": "Var",
@@ -14176,7 +14260,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 12
+            "fixedbinaryorder": 13
           },
           {
             "kind": "Var",
@@ -14218,7 +14302,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 13
+            "fixedbinaryorder": 14
           },
           {
             "kind": "Var",
@@ -14260,7 +14344,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 14
+            "fixedbinaryorder": 15
           },
           {
             "kind": "Var",
@@ -14302,7 +14386,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 15
+            "fixedbinaryorder": 16
           },
           {
             "kind": "Var",
@@ -14344,7 +14428,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 16
+            "fixedbinaryorder": 17
           },
           {
             "kind": "Var",
@@ -14386,7 +14470,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 17
+            "fixedbinaryorder": 18
           },
           {
             "kind": "Var",
@@ -14428,7 +14512,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 18
+            "fixedbinaryorder": 19
           },
           {
             "kind": "Var",
@@ -14470,7 +14554,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 19
+            "fixedbinaryorder": 20
           },
           {
             "kind": "Var",
@@ -14512,7 +14596,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 20
+            "fixedbinaryorder": 21
           },
           {
             "kind": "Var",
@@ -14554,7 +14638,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 21
+            "fixedbinaryorder": 22
           },
           {
             "kind": "Var",
@@ -14596,7 +14680,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 22
+            "fixedbinaryorder": 23
           },
           {
             "kind": "Var",
@@ -14638,7 +14722,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 23
+            "fixedbinaryorder": 24
           },
           {
             "kind": "Var",
@@ -15312,6 +15396,48 @@
           },
           {
             "kind": "Var",
+            "name": "userInitiatedToEndSession",
+            "printedName": "userInitiatedToEndSession",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AIBudsAIFoundation.SimultaneousInterpretationEventType.Type) -> AIBudsAIFoundation.SimultaneousInterpretationEventType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SimultaneousInterpretationEventType",
+                    "printedName": "AIBudsAIFoundation.SimultaneousInterpretationEventType",
+                    "usr": "c:@M@AIBudsAIFoundation@E@AIBudsSimultaneousInterpretationEventType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AIBudsAIFoundation.SimultaneousInterpretationEventType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SimultaneousInterpretationEventType",
+                        "printedName": "AIBudsAIFoundation.SimultaneousInterpretationEventType",
+                        "usr": "c:@M@AIBudsAIFoundation@E@AIBudsSimultaneousInterpretationEventType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AIBudsAIFoundation@E@AIBudsSimultaneousInterpretationEventType@AIBudsSimultaneousInterpretationEventTypeUserInitiatedToEndSession",
+            "mangledName": "$s18AIBudsAIFoundation35SimultaneousInterpretationEventTypeO25userInitiatedToEndSessionyA2CmF",
+            "moduleName": "AIBudsAIFoundation",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 5
+          },
+          {
+            "kind": "Var",
             "name": "sessionEnded",
             "printedName": "sessionEnded",
             "children": [
@@ -15350,7 +15476,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 5
+            "fixedbinaryorder": 6
           },
           {
             "kind": "Var",
@@ -15392,7 +15518,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 6
+            "fixedbinaryorder": 7
           },
           {
             "kind": "Var",
@@ -15434,7 +15560,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 7
+            "fixedbinaryorder": 8
           },
           {
             "kind": "Var",
@@ -15476,7 +15602,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 8
+            "fixedbinaryorder": 9
           },
           {
             "kind": "Var",
@@ -15518,7 +15644,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 9
+            "fixedbinaryorder": 10
           },
           {
             "kind": "Var",
@@ -15560,7 +15686,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 10
+            "fixedbinaryorder": 11
           },
           {
             "kind": "Var",
@@ -15602,7 +15728,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 11
+            "fixedbinaryorder": 12
           },
           {
             "kind": "Var",
@@ -15644,7 +15770,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 12
+            "fixedbinaryorder": 13
           },
           {
             "kind": "Var",
@@ -15686,7 +15812,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 13
+            "fixedbinaryorder": 14
           },
           {
             "kind": "Var",
@@ -15728,7 +15854,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 14
+            "fixedbinaryorder": 15
           },
           {
             "kind": "Var",
@@ -19127,72 +19253,79 @@
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/Defines(定义)\/Event(事件)\/AIAudioRecordingEventType.swift",
       "kind": "IntegerLiteral",
-      "offset": 739,
-      "length": 12,
+      "offset": 759,
+      "length": 25,
       "value": "5"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/Defines(定义)\/Event(事件)\/AIAudioRecordingEventType.swift",
       "kind": "IntegerLiteral",
-      "offset": 803,
-      "length": 21,
+      "offset": 823,
+      "length": 12,
       "value": "6"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/Defines(定义)\/Event(事件)\/AIAudioRecordingEventType.swift",
       "kind": "IntegerLiteral",
-      "offset": 867,
+      "offset": 887,
       "length": 21,
       "value": "7"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/Defines(定义)\/Event(事件)\/AIAudioRecordingEventType.swift",
       "kind": "IntegerLiteral",
-      "offset": 946,
+      "offset": 951,
       "length": 21,
       "value": "8"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/Defines(定义)\/Event(事件)\/AIAudioRecordingEventType.swift",
       "kind": "IntegerLiteral",
-      "offset": 1015,
-      "length": 23,
+      "offset": 1030,
+      "length": 21,
       "value": "9"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/Defines(定义)\/Event(事件)\/AIAudioRecordingEventType.swift",
       "kind": "IntegerLiteral",
-      "offset": 1086,
-      "length": 21,
+      "offset": 1099,
+      "length": 23,
       "value": "10"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/Defines(定义)\/Event(事件)\/AIAudioRecordingEventType.swift",
       "kind": "IntegerLiteral",
-      "offset": 1162,
-      "length": 23,
+      "offset": 1170,
+      "length": 21,
       "value": "11"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/Defines(定义)\/Event(事件)\/AIAudioRecordingEventType.swift",
       "kind": "IntegerLiteral",
-      "offset": 1239,
-      "length": 22,
+      "offset": 1246,
+      "length": 23,
       "value": "12"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/Defines(定义)\/Event(事件)\/AIAudioRecordingEventType.swift",
       "kind": "IntegerLiteral",
-      "offset": 1297,
-      "length": 15,
+      "offset": 1323,
+      "length": 22,
       "value": "13"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/Defines(定义)\/Event(事件)\/AIAudioRecordingEventType.swift",
       "kind": "IntegerLiteral",
-      "offset": 1350,
-      "length": 16,
+      "offset": 1381,
+      "length": 15,
       "value": "14"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/Defines(定义)\/Event(事件)\/AIAudioRecordingEventType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1434,
+      "length": 16,
+      "value": "15"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/Defines(定义)\/Event(事件)\/AIChatEventType.swift",
@@ -19274,93 +19407,100 @@
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/Defines(定义)\/Event(事件)\/AIChatEventType.swift",
       "kind": "IntegerLiteral",
-      "offset": 1141,
-      "length": 12,
+      "offset": 1155,
+      "length": 25,
       "value": "11"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/Defines(定义)\/Event(事件)\/AIChatEventType.swift",
       "kind": "IntegerLiteral",
-      "offset": 1205,
-      "length": 21,
+      "offset": 1219,
+      "length": 12,
       "value": "12"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/Defines(定义)\/Event(事件)\/AIChatEventType.swift",
       "kind": "IntegerLiteral",
-      "offset": 1269,
+      "offset": 1283,
       "length": 21,
       "value": "13"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/Defines(定义)\/Event(事件)\/AIChatEventType.swift",
       "kind": "IntegerLiteral",
-      "offset": 1348,
+      "offset": 1347,
       "length": 21,
       "value": "14"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/Defines(定义)\/Event(事件)\/AIChatEventType.swift",
       "kind": "IntegerLiteral",
-      "offset": 1417,
-      "length": 23,
+      "offset": 1426,
+      "length": 21,
       "value": "15"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/Defines(定义)\/Event(事件)\/AIChatEventType.swift",
       "kind": "IntegerLiteral",
-      "offset": 1488,
-      "length": 21,
+      "offset": 1495,
+      "length": 23,
       "value": "16"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/Defines(定义)\/Event(事件)\/AIChatEventType.swift",
       "kind": "IntegerLiteral",
-      "offset": 1564,
-      "length": 23,
+      "offset": 1566,
+      "length": 21,
       "value": "17"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/Defines(定义)\/Event(事件)\/AIChatEventType.swift",
       "kind": "IntegerLiteral",
-      "offset": 1641,
-      "length": 22,
+      "offset": 1642,
+      "length": 23,
       "value": "18"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/Defines(定义)\/Event(事件)\/AIChatEventType.swift",
       "kind": "IntegerLiteral",
-      "offset": 1701,
-      "length": 16,
+      "offset": 1719,
+      "length": 22,
       "value": "19"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/Defines(定义)\/Event(事件)\/AIChatEventType.swift",
       "kind": "IntegerLiteral",
-      "offset": 1772,
-      "length": 30,
+      "offset": 1779,
+      "length": 16,
       "value": "20"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/Defines(定义)\/Event(事件)\/AIChatEventType.swift",
       "kind": "IntegerLiteral",
-      "offset": 1856,
-      "length": 29,
+      "offset": 1850,
+      "length": 30,
       "value": "21"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/Defines(定义)\/Event(事件)\/AIChatEventType.swift",
       "kind": "IntegerLiteral",
-      "offset": 1921,
-      "length": 15,
+      "offset": 1934,
+      "length": 29,
       "value": "22"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/Defines(定义)\/Event(事件)\/AIChatEventType.swift",
       "kind": "IntegerLiteral",
-      "offset": 1974,
-      "length": 16,
+      "offset": 1999,
+      "length": 15,
       "value": "23"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/Defines(定义)\/Event(事件)\/AIChatEventType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2052,
+      "length": 16,
+      "value": "24"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/Defines(定义)\/Event(事件)\/SimultaneousInterpretationEventType.swift",
@@ -19400,72 +19540,79 @@
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/Defines(定义)\/Event(事件)\/SimultaneousInterpretationEventType.swift",
       "kind": "IntegerLiteral",
-      "offset": 786,
-      "length": 12,
+      "offset": 800,
+      "length": 25,
       "value": "5"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/Defines(定义)\/Event(事件)\/SimultaneousInterpretationEventType.swift",
       "kind": "IntegerLiteral",
-      "offset": 850,
-      "length": 21,
+      "offset": 864,
+      "length": 12,
       "value": "6"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/Defines(定义)\/Event(事件)\/SimultaneousInterpretationEventType.swift",
       "kind": "IntegerLiteral",
-      "offset": 914,
+      "offset": 928,
       "length": 21,
       "value": "7"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/Defines(定义)\/Event(事件)\/SimultaneousInterpretationEventType.swift",
       "kind": "IntegerLiteral",
-      "offset": 993,
+      "offset": 992,
       "length": 21,
       "value": "8"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/Defines(定义)\/Event(事件)\/SimultaneousInterpretationEventType.swift",
       "kind": "IntegerLiteral",
-      "offset": 1062,
-      "length": 23,
+      "offset": 1071,
+      "length": 21,
       "value": "9"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/Defines(定义)\/Event(事件)\/SimultaneousInterpretationEventType.swift",
       "kind": "IntegerLiteral",
-      "offset": 1133,
-      "length": 21,
+      "offset": 1140,
+      "length": 23,
       "value": "10"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/Defines(定义)\/Event(事件)\/SimultaneousInterpretationEventType.swift",
       "kind": "IntegerLiteral",
-      "offset": 1209,
-      "length": 23,
+      "offset": 1211,
+      "length": 21,
       "value": "11"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/Defines(定义)\/Event(事件)\/SimultaneousInterpretationEventType.swift",
       "kind": "IntegerLiteral",
-      "offset": 1286,
-      "length": 22,
+      "offset": 1287,
+      "length": 23,
       "value": "12"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/Defines(定义)\/Event(事件)\/SimultaneousInterpretationEventType.swift",
       "kind": "IntegerLiteral",
-      "offset": 1344,
-      "length": 15,
+      "offset": 1364,
+      "length": 22,
       "value": "13"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/Defines(定义)\/Event(事件)\/SimultaneousInterpretationEventType.swift",
       "kind": "IntegerLiteral",
-      "offset": 1397,
-      "length": 16,
+      "offset": 1422,
+      "length": 15,
       "value": "14"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/Defines(定义)\/Event(事件)\/SimultaneousInterpretationEventType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1475,
+      "length": 16,
+      "value": "15"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/Defines(定义)\/Intent(意图)\/AIIntentType.swift",

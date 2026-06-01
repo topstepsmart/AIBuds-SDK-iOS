@@ -335,6 +335,7 @@ function renderEventsTimeline(events, startTime) {
         'aiRespondVoicePlaybackDidStop': { icon: '🔇', color: 'purple' },
         'aiIntentReceived': { icon: '💡', color: 'yellow' },
         'autoEndSessionTriggered': { icon: '⏰', color: 'red' },
+        'userInitiatedToEndSession': { icon: '👤', color: 'red' },
         'sessionEnded': { icon: '🏁', color: 'gray' },
         'aiServiceStartRecording': { icon: '📝', color: 'cyan' },
         'aiServiceEndRecording': { icon: '📝', color: 'cyan' },

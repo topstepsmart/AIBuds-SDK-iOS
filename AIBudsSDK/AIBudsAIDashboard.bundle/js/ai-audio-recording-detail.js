@@ -609,6 +609,7 @@ function renderEventsTimeline(events, startTime) {
         'sessionStarted': { icon: '🚀', color: 'green' },
         'aiServiceConnected': { icon: '🔗', color: 'blue' },
         'autoEndSessionTriggered': { icon: '⏰', color: 'red' },
+        'userInitiatedToEndSession': { icon: '👤', color: 'red' },
         'sessionEnded': { icon: '🏁', color: 'gray' },
         'aiServiceStartRecording': { icon: '📝', color: 'cyan' },
         'aiServiceEndRecording': { icon: '📝', color: 'cyan' },

@@ -313,6 +313,7 @@ extension AIBudsAIFoundation.AIAuthenticationMode : Swift.CustomDebugStringConve
   case sessionStartFailed
   case aiServiceConnected
   case autoEndSessionTriggered
+  case userInitiatedToEndSession
   case sessionEnded
   case aiServiceUnauthorized
   case aiServiceDisconnected
@@ -364,6 +365,7 @@ extension AIBudsAIFoundation.AIAudioRecordingEventType : Swift.CustomDebugString
   case vadEndSpeaking
   case triggerEndQuestion
   case autoEndSessionTriggered
+  case userInitiatedToEndSession
   case sessionEnded
   case aiServiceUnauthorized
   case aiServiceDisconnected
@@ -412,6 +414,7 @@ extension AIBudsAIFoundation.AIChatEventType : Swift.CustomDebugStringConvertibl
   case sessionStartFailed
   case aiServiceConnected
   case autoEndSessionTriggered
+  case userInitiatedToEndSession
   case sessionEnded
   case aiServiceUnauthorized
   case aiServiceDisconnected

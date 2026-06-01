@@ -399,26 +399,28 @@ typedef SWIFT_ENUM_NAMED(NSInteger, AIBudsAIAudioRecordingEventType, "AIAudioRec
   AIBudsAIAudioRecordingEventTypeAiServiceConnected = 3,
 /// Auto end session triggered event.
   AIBudsAIAudioRecordingEventTypeAutoEndSessionTriggered = 4,
+/// User initiated to end the session event.
+  AIBudsAIAudioRecordingEventTypeUserInitiatedToEndSession = 5,
 /// Session ended event.
-  AIBudsAIAudioRecordingEventTypeSessionEnded = 5,
+  AIBudsAIAudioRecordingEventTypeSessionEnded = 6,
 /// AI service authentication failed.
-  AIBudsAIAudioRecordingEventTypeAiServiceUnauthorized = 6,
+  AIBudsAIAudioRecordingEventTypeAiServiceUnauthorized = 7,
 /// AI service disconnected.
-  AIBudsAIAudioRecordingEventTypeAiServiceDisconnected = 7,
+  AIBudsAIAudioRecordingEventTypeAiServiceDisconnected = 8,
 /// AI service encountered a network error.
-  AIBudsAIAudioRecordingEventTypeAiServiceNetworkError = 8,
+  AIBudsAIAudioRecordingEventTypeAiServiceNetworkError = 9,
 /// AI service started recording.
-  AIBudsAIAudioRecordingEventTypeAiServiceStartRecording = 9,
+  AIBudsAIAudioRecordingEventTypeAiServiceStartRecording = 10,
 /// AI service stopped recording.
-  AIBudsAIAudioRecordingEventTypeAiServiceEndRecording = 10,
+  AIBudsAIAudioRecordingEventTypeAiServiceEndRecording = 11,
 /// AI service recording error occurred.
-  AIBudsAIAudioRecordingEventTypeAiServiceRecordingError = 11,
+  AIBudsAIAudioRecordingEventTypeAiServiceRecordingError = 12,
 /// AI service response error occurred.
-  AIBudsAIAudioRecordingEventTypeAiServiceResponseError = 12,
+  AIBudsAIAudioRecordingEventTypeAiServiceResponseError = 13,
 /// BLE disconnected.
-  AIBudsAIAudioRecordingEventTypeBleDisconnected = 13,
+  AIBudsAIAudioRecordingEventTypeBleDisconnected = 14,
 /// App will terminate.
-  AIBudsAIAudioRecordingEventTypeAppWillTerminate = 14,
+  AIBudsAIAudioRecordingEventTypeAppWillTerminate = 15,
 };
 
 SWIFT_ENUM_FWD_DECL(NSInteger, AIBudsRecordingScene)
@@ -686,32 +688,34 @@ typedef SWIFT_ENUM_NAMED(NSInteger, AIBudsAIChatEventType, "AIChatEventType", op
   AIBudsAIChatEventTypeTriggerEndQuestion = 9,
 /// Auto end session triggered event.
   AIBudsAIChatEventTypeAutoEndSessionTriggered = 10,
+/// User initiated to end the session.
+  AIBudsAIChatEventTypeUserInitiatedToEndSession = 11,
 /// Session ended event.
-  AIBudsAIChatEventTypeSessionEnded = 11,
+  AIBudsAIChatEventTypeSessionEnded = 12,
 /// AI service authentication failed.
-  AIBudsAIChatEventTypeAiServiceUnauthorized = 12,
+  AIBudsAIChatEventTypeAiServiceUnauthorized = 13,
 /// AI service disconnected.
-  AIBudsAIChatEventTypeAiServiceDisconnected = 13,
+  AIBudsAIChatEventTypeAiServiceDisconnected = 14,
 /// AI service encountered a network error.
-  AIBudsAIChatEventTypeAiServiceNetworkError = 14,
+  AIBudsAIChatEventTypeAiServiceNetworkError = 15,
 /// AI service started recording.
-  AIBudsAIChatEventTypeAiServiceStartRecording = 15,
+  AIBudsAIChatEventTypeAiServiceStartRecording = 16,
 /// AI service stopped recording.
-  AIBudsAIChatEventTypeAiServiceEndRecording = 16,
+  AIBudsAIChatEventTypeAiServiceEndRecording = 17,
 /// AI service recording error occurred.
-  AIBudsAIChatEventTypeAiServiceRecordingError = 17,
+  AIBudsAIChatEventTypeAiServiceRecordingError = 18,
 /// AI service response error occurred.
-  AIBudsAIChatEventTypeAiServiceResponseError = 18,
+  AIBudsAIChatEventTypeAiServiceResponseError = 19,
 /// AI intent received.
-  AIBudsAIChatEventTypeAiIntentReceived = 19,
+  AIBudsAIChatEventTypeAiIntentReceived = 20,
 /// AI respond voice playback did start.
-  AIBudsAIChatEventTypeAiRespondVoicePlaybackDidStart = 20,
+  AIBudsAIChatEventTypeAiRespondVoicePlaybackDidStart = 21,
 /// AI respond voice playback did stop.
-  AIBudsAIChatEventTypeAiRespondVoicePlaybackDidStop = 21,
+  AIBudsAIChatEventTypeAiRespondVoicePlaybackDidStop = 22,
 /// BLE disconnected.
-  AIBudsAIChatEventTypeBleDisconnected = 22,
+  AIBudsAIChatEventTypeBleDisconnected = 23,
 /// App will terminate.
-  AIBudsAIChatEventTypeAppWillTerminate = 23,
+  AIBudsAIChatEventTypeAppWillTerminate = 24,
 };
 
 SWIFT_ENUM_FWD_DECL(NSInteger, AIBudsAIIntentType)
@@ -1229,26 +1233,28 @@ typedef SWIFT_ENUM_NAMED(NSInteger, AIBudsSimultaneousInterpretationEventType, "
   AIBudsSimultaneousInterpretationEventTypeAiServiceConnected = 3,
 /// Auto end session triggered event.
   AIBudsSimultaneousInterpretationEventTypeAutoEndSessionTriggered = 4,
+/// User initiated to end the session.
+  AIBudsSimultaneousInterpretationEventTypeUserInitiatedToEndSession = 5,
 /// Session ended event.
-  AIBudsSimultaneousInterpretationEventTypeSessionEnded = 5,
+  AIBudsSimultaneousInterpretationEventTypeSessionEnded = 6,
 /// AI service authentication failed.
-  AIBudsSimultaneousInterpretationEventTypeAiServiceUnauthorized = 6,
+  AIBudsSimultaneousInterpretationEventTypeAiServiceUnauthorized = 7,
 /// AI service disconnected.
-  AIBudsSimultaneousInterpretationEventTypeAiServiceDisconnected = 7,
+  AIBudsSimultaneousInterpretationEventTypeAiServiceDisconnected = 8,
 /// AI service encountered a network error.
-  AIBudsSimultaneousInterpretationEventTypeAiServiceNetworkError = 8,
+  AIBudsSimultaneousInterpretationEventTypeAiServiceNetworkError = 9,
 /// AI service started recording.
-  AIBudsSimultaneousInterpretationEventTypeAiServiceStartRecording = 9,
+  AIBudsSimultaneousInterpretationEventTypeAiServiceStartRecording = 10,
 /// AI service stopped recording.
-  AIBudsSimultaneousInterpretationEventTypeAiServiceEndRecording = 10,
+  AIBudsSimultaneousInterpretationEventTypeAiServiceEndRecording = 11,
 /// AI service recording error occurred.
-  AIBudsSimultaneousInterpretationEventTypeAiServiceRecordingError = 11,
+  AIBudsSimultaneousInterpretationEventTypeAiServiceRecordingError = 12,
 /// AI service response error occurred.
-  AIBudsSimultaneousInterpretationEventTypeAiServiceResponseError = 12,
+  AIBudsSimultaneousInterpretationEventTypeAiServiceResponseError = 13,
 /// BLE disconnected.
-  AIBudsSimultaneousInterpretationEventTypeBleDisconnected = 13,
+  AIBudsSimultaneousInterpretationEventTypeBleDisconnected = 14,
 /// App will terminate.
-  AIBudsSimultaneousInterpretationEventTypeAppWillTerminate = 14,
+  AIBudsSimultaneousInterpretationEventTypeAppWillTerminate = 15,
 };
 
 /// Speaker segment

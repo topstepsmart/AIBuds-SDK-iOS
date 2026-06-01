@@ -9165,7 +9165,7 @@
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsStarBurst\/StarBurstAIAudioRecordingService.swift",
       "kind": "BooleanLiteral",
-      "offset": 47197,
+      "offset": 48004,
       "length": 5,
       "value": "false"
     },
@@ -9389,14 +9389,14 @@
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsStarBurst\/StarBurstAIChatService.swift",
       "kind": "BooleanLiteral",
-      "offset": 91312,
+      "offset": 92119,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsStarBurst\/StarBurstAIChatService.swift",
       "kind": "BooleanLiteral",
-      "offset": 93866,
+      "offset": 94673,
       "length": 4,
       "value": "true"
     },
