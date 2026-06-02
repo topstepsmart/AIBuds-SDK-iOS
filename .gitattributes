@@ -15,3 +15,4 @@ AIBudsSDK/AIBudsAllInOne.xcframework linguist-language=Swift
 AIBudsSDK-Demo/* linguist-vendored
 AIBudsSDK-Demo/**/* linguist-vendored
 AIBudsSDK-Demo/**/**/* linguist-vendored
+AIBudsSDK-Demo/**/**/**/* linguist-vendored
