@@ -29,6 +29,7 @@
 #import "TranslationImageBody.h"
 #import "SimultInterpretationV2RequestBody.h"
 #import "ASRLongFileIntlRequestBody.h"
+#import "TranslationImageBodyV2.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -126,6 +127,8 @@ NS_ASSUME_NONNULL_BEGIN
 /// 图片翻译回调
 - (void)didReceiveTranslationImage:(NSDictionary *)result error:(nullable NSError *)error;
 
+/// 图片翻译V2回调
+- (void)didReceiveTranslationImageV2:(NSDictionary *)result error:(nullable NSError *)error;
 @end
 
 /// 设备类型
@@ -302,6 +305,10 @@ typedef void(^MGCompletionHandler)(NSDictionary *result, NSError * _Nullable err
 
 /// 图片翻译
 - (void)translationImage:(TranslationImageBody *)body;
+
+/// 图片翻译v2
+/// 支持返回翻译后的图片
+- (void)translationImageV2:(TranslationImageBodyV2 *)body;
 
 /// TTS V3 流式返回音频数据
 /// - Parameters:

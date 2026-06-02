@@ -33,6 +33,8 @@
 #import <MagicHelper/MagicPetConfigModels.h>
 #import <MagicHelper/RecognitionImageBody.h>
 #import <MagicHelper/TranslationImageBody.h>
+#import <MagicHelper/TranslationImageBodyV2.h>
+
 #import <MagicHelper/MagicSmartOptionModel.h>
 #import <MagicHelper/MagicSmartAgentUtil.h>
 #import <MagicHelper/MagicConversationModels.h>

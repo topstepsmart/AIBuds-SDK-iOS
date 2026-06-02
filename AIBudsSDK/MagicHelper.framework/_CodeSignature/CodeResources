@@ -34,7 +34,7 @@
 		</data>
 		<key>Headers/BDMagicHelper.h</key>
 		<data>
-		Lec6jzOJtbcq1E1GEQaIn7s6cvw=
+		r+ICPDegkaAfugwcGw7C88ALC0Y=
 		</data>
 		<key>Headers/ChatIntlRequestBody.h</key>
 		<data>
@@ -86,7 +86,7 @@
 		</data>
 		<key>Headers/MagicHelper.h</key>
 		<data>
-		YNePKj0Ahe7IRdpKwH+bR8rfy4A=
+		xst/5L4RfPUT5e9Aa7IFtiQ4bc8=
 		</data>
 		<key>Headers/MagicHelperError.h</key>
 		<data>
@@ -160,6 +160,10 @@
 		<data>
 		t26BF/FQR2NwXGSAwt2YVNRpydk=
 		</data>
+		<key>Headers/TranslationImageBodyV2.h</key>
+		<data>
+		8je7elJY6mgUON7mS2Sc7VEM23k=
+		</data>
 		<key>Info.plist</key>
 		<data>
 		H5TFgPh3e46430YyEgYRB7uyZRU=
@@ -170,7 +174,7 @@
 		</data>
 		<key>Modules/MagicHelper.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		7hPO5PRs1lEPpIciRyPauxP/bOI=
+		UopFIEsdjA4E9Gg73jwHZ7eKb94=
 		</data>
 		<key>Modules/MagicHelper.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
@@ -280,11 +284,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Lec6jzOJtbcq1E1GEQaIn7s6cvw=
+			r+ICPDegkaAfugwcGw7C88ALC0Y=
 			</data>
 			<key>hash2</key>
 			<data>
-			PU8LToygpY6tJgVxwaZC8O8H35gh7Gr8jpHD243GyPg=
+			/SplcTZHX3nCV366qDGC//CvK2By/GuLLo2K4R4yQro=
 			</data>
 		</dict>
 		<key>Headers/ChatIntlRequestBody.h</key>
@@ -423,11 +427,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			YNePKj0Ahe7IRdpKwH+bR8rfy4A=
+			xst/5L4RfPUT5e9Aa7IFtiQ4bc8=
 			</data>
 			<key>hash2</key>
 			<data>
-			sO/Mwpba1mWnDZj9RGIKb5ShWRTdHD6HloeNq3pKRVU=
+			reujGlCRWfXp+KY4Oc87ue8c7z7YJQcggLWWpM4NYp8=
 			</data>
 		</dict>
 		<key>Headers/MagicHelperError.h</key>
@@ -628,6 +632,17 @@
 			5EjuF1yLbUdm0CZ707M+nxhWNdsEzX2Rth9oJEpOmI8=
 			</data>
 		</dict>
+		<key>Headers/TranslationImageBodyV2.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			8je7elJY6mgUON7mS2Sc7VEM23k=
+			</data>
+			<key>hash2</key>
+			<data>
+			aGTdO5d+9Pf8cpK217XXO04KKG7NL8tzKXjB004GrNc=
+			</data>
+		</dict>
 		<key>MGBundle.bundle/silero_vad.onnx</key>
 		<dict>
 			<key>hash</key>
@@ -643,11 +658,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			7hPO5PRs1lEPpIciRyPauxP/bOI=
+			UopFIEsdjA4E9Gg73jwHZ7eKb94=
 			</data>
 			<key>hash2</key>
 			<data>
-			OOrbKhnp/gNuQrP60b4JH/+JwWbNrJ3iaTo21byP8VQ=
+			ILSvPKr8AdX1flGJf4lmbkBqY9EXp6JD8gGz5cLEs0I=
 			</data>
 		</dict>
 		<key>Modules/MagicHelper.swiftmodule/arm64-apple-ios.abi.json</key>
