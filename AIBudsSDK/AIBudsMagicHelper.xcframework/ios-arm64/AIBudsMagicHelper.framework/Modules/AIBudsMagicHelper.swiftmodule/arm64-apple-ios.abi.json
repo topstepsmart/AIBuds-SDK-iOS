@@ -14209,7 +14209,7 @@
       "kind": "StringLiteral",
       "offset": 1262,
       "length": 8,
-      "value": "\"2.9.26\""
+      "value": "\"2.9.30\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/AIBudsMagicHelper.swift",
@@ -15866,175 +15866,175 @@
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudAIChatService.swift",
       "kind": "StringLiteral",
-      "offset": 10867,
+      "offset": 11003,
       "length": 39,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudAIChatService.swift",
       "kind": "StringLiteral",
-      "offset": 10892,
+      "offset": 11028,
       "length": 1,
       "value": "\".aichat.queue\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudAIChatService.swift",
       "kind": "StringLiteral",
-      "offset": 11037,
+      "offset": 11173,
       "length": 54,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudAIChatService.swift",
       "kind": "StringLiteral",
-      "offset": 11062,
+      "offset": 11198,
       "length": 1,
       "value": "\".aichat.event.dispatch.queue\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudAIChatService.swift",
       "kind": "StringLiteral",
-      "offset": 11242,
+      "offset": 11378,
       "length": 66,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudAIChatService.swift",
       "kind": "StringLiteral",
-      "offset": 11267,
+      "offset": 11403,
       "length": 1,
       "value": "\".aichat.speech_input_data.dispatch.queue\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudAIChatService.swift",
       "kind": "StringLiteral",
-      "offset": 11445,
+      "offset": 11581,
       "length": 51,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudAIChatService.swift",
       "kind": "StringLiteral",
-      "offset": 11470,
+      "offset": 11606,
       "length": 1,
       "value": "\".aichat.safe.access.queue\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudAIChatService.swift",
       "kind": "StringLiteral",
-      "offset": 11640,
+      "offset": 11776,
       "length": 58,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudAIChatService.swift",
       "kind": "StringLiteral",
-      "offset": 11665,
+      "offset": 11801,
       "length": 1,
       "value": "\".aichat.segment_audio.save.queue\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudAIChatService.swift",
       "kind": "StringLiteral",
-      "offset": 11908,
+      "offset": 12044,
       "length": 25,
       "value": "\"yyyy-MM-dd HH:mm:ss.SSS\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudAIChatService.swift",
       "kind": "StringLiteral",
-      "offset": 11980,
+      "offset": 12116,
       "length": 13,
       "value": "\"en_US_POSIX\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudAIChatService.swift",
       "kind": "StringLiteral",
-      "offset": 12228,
+      "offset": 12364,
       "length": 21,
       "value": "\"yyyy-MM-dd_HH-mm-ss\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudAIChatService.swift",
       "kind": "StringLiteral",
-      "offset": 12296,
+      "offset": 12432,
       "length": 13,
       "value": "\"en_US_POSIX\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudAIChatService.swift",
       "kind": "StringLiteral",
-      "offset": 12568,
+      "offset": 12704,
       "length": 17,
       "value": "\"\/audios\/ai_chat\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudAIChatService.swift",
       "kind": "BooleanLiteral",
-      "offset": 12687,
+      "offset": 12823,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudAIChatService.swift",
       "kind": "StringLiteral",
-      "offset": 12713,
+      "offset": 12849,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudAIChatService.swift",
       "kind": "BooleanLiteral",
-      "offset": 13035,
+      "offset": 13171,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudAIChatService.swift",
       "kind": "StringLiteral",
-      "offset": 13124,
+      "offset": 13260,
       "length": 55,
       "value": "\"Error creating ai chat audio root directory: \""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudAIChatService.swift",
       "kind": "StringLiteral",
-      "offset": 13178,
+      "offset": 13314,
       "length": 3,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudAIChatService.swift",
       "kind": "IntegerLiteral",
-      "offset": 13289,
+      "offset": 13425,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudAIChatService.swift",
       "kind": "BooleanLiteral",
-      "offset": 15585,
+      "offset": 15721,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudAIChatService.swift",
       "kind": "BooleanLiteral",
-      "offset": 15720,
+      "offset": 15856,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudAIChatService.swift",
       "kind": "BooleanLiteral",
-      "offset": 70542,
+      "offset": 70678,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudAIChatService.swift",
       "kind": "BooleanLiteral",
-      "offset": 73096,
+      "offset": 73232,
       "length": 4,
       "value": "true"
     },
