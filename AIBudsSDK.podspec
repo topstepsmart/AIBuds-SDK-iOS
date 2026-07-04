@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
   # ==================== Basic Information ====================
   # SDK name and version
   s.name         = "AIBudsSDK"
-  s.version      = "1.0.0-beta.7"
+  s.version      = "1.0.0-beta.8"
   s.summary      = "AIBuds SDK - An iOS framework for connecting AI devices"
   s.description  = <<-DESC
                     AIBuds SDK is a versatile framework for connecting iOS apps to AI devices. It provides modular components including core connectivity, Bluetooth management, voice assistant, AI capabilities, logging utilities, and foundation services.
@@ -98,6 +98,20 @@ Pod::Spec.new do |s|
       mzEncryptSDK.vendored_frameworks = 'AIBudsSDK/MZEncryptSDK.framework'
       mzEncryptSDK.dependency 'AIBudsSDK/ThirdParty/openssl'
     end
+
+    # FFMpeg
+    thirdparty.subspec 'ffmpeg' do |ffmpeg|
+      ffmpeg.vendored_frameworks = 'AIBudsSDK/libavcodec.xcframework', 'AIBudsSDK/libavformat.xcframework', 'AIBudsSDK/libavutil.xcframework', 'AIBudsSDK/libswscale.xcframework', 'AIBudsSDK/libswresample.xcframework', 'AIBudsSDK/libavdevice.xcframework', 'AIBudsSDK/libavfilter.xcframework'
+      ffmpeg.pod_target_xcconfig = {
+        'OTHER_LDFLAGS' => '-lz',
+        'ENABLE_BITCODE' => 'NO',
+        'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES'
+      }
+      
+      ffmpeg.user_target_xcconfig = {
+        'OTHER_LDFLAGS' => '-lz'
+      }
+    end
   end
 
   # Audio module - Audio processing capabilities
@@ -168,6 +182,15 @@ Pod::Spec.new do |s|
     log.vendored_frameworks = 'AIBudsSDK/AIBudsCrashReporter.xcframework'
   end
 
+  # LiveStream module
+  s.subspec 'LiveStream' do |live_stream|
+    live_stream.vendored_frameworks = 'AIBudsSDK/AIBudsLiveStream.xcframework'
+    live_stream.resource = 'AIBudsSDK/AIBudsLiveStream.bundle'
+    live_stream.dependency 'AIBudsSDK/Log'
+    live_stream.dependency 'AIBudsSDK/ThirdParty/ffmpeg'
+    live_stream.frameworks = 'Foundation', 'CoreAudio', 'CoreMedia', 'AVFoundation', 'UIKit', 'QuartzCore', 'Metal', 'CoreVideo', 'CoreGraphics', 'CoreMotion', 'Accelerate', 'VideoToolbox'
+  end
+
   # AllInOne module - Includes all features for convenience
   s.subspec 'AllInOne' do |allinone|
     allinone.vendored_frameworks = 'AIBudsSDK/AIBudsAllInOne.xcframework'
@@ -176,6 +199,7 @@ Pod::Spec.new do |s|
     allinone.dependency 'AIBudsSDK/AI'
     allinone.dependency 'AIBudsSDK/VoiceAssistant'
     allinone.dependency 'AIBudsSDK/CrashReporter'
+    allinone.dependency 'AIBudsSDK/LiveStream'
   end
 
 end

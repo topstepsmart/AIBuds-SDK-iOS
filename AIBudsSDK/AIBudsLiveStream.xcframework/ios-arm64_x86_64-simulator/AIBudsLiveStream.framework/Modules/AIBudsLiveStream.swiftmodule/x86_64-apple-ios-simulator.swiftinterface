@@ -1,0 +1,498 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.3.3 effective-5.10 (swiftlang-6.3.3.1.3 clang-2100.1.1.101)
+// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature GlobalActorIsolatedTypesUsability -enable-upcoming-feature MemberImportVisibility -enable-upcoming-feature InferIsolatedConformances -enable-upcoming-feature NonisolatedNonsendingByDefault -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name AIBudsLiveStream
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.3
+import AVFoundation
+import Accelerate
+import CoreGraphics
+import CoreImage
+import CoreMotion
+import CoreVideo
+import Dispatch
+import Foundation
+import ImageIO
+import Metal
+import QuartzCore
+import Swift
+import UIKit
+import VideoToolbox
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+import simd
+@objc(AIBudsGestureControllerDelegate) public protocol GestureControllerDelegate {
+  @objc optional func gestureController(_ controller: AIBudsLiveStream.GestureController, didTap gesture: UIKit.UITapGestureRecognizer)
+  @objc optional func gestureController(_ controller: AIBudsLiveStream.GestureController, didDoubleTap gesture: UIKit.UITapGestureRecognizer)
+  @objc optional func gestureController(_ controller: AIBudsLiveStream.GestureController, didPan gesture: UIKit.UIPanGestureRecognizer, translation: CoreFoundation.CGPoint)
+  @objc optional func gestureController(_ controller: AIBudsLiveStream.GestureController, didPinch gesture: UIKit.UIPinchGestureRecognizer, scale: CoreFoundation.CGFloat)
+}
+@_inheritsConvenienceInitializers @objc(AIBudsGestureController) public class GestureController : ObjectiveC.NSObject {
+  @objc weak public var delegate: (any AIBudsLiveStream.GestureControllerDelegate)?
+  @objc weak public var targetView: UIKit.UIView? {
+    get
+  }
+  @objc public var singleTapEnabled: Swift.Bool
+  @objc public var doubleTapEnabled: Swift.Bool
+  @objc public var panEnabled: Swift.Bool
+  @objc public var pinchEnabled: Swift.Bool
+  @objc override dynamic public init()
+  @objc public func setupGestures(on view: UIKit.UIView)
+  @objc public func removeGestures()
+  @objc deinit
+}
+extension AIBudsLiveStream.GestureController : UIKit.UIGestureRecognizerDelegate {
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func gestureRecognizerShouldBegin(_ gestureRecognizer: UIKit.UIGestureRecognizer) -> Swift.Bool
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func gestureRecognizer(_ gestureRecognizer: UIKit.UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIKit.UIGestureRecognizer) -> Swift.Bool
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(AIBudsLiveStreamPerformanceMonitor) final public class LiveStreamPerformanceMonitor : ObjectiveC.NSObject {
+  @objc(sharedMonitor) public static let sharedMonitor: AIBudsLiveStream.LiveStreamPerformanceMonitor
+  @objc final public func reset()
+  @objc final public func startMainThreadMonitoring()
+  @objc final public func startMainThreadMonitoring(interval: Foundation.TimeInterval, threshold: Foundation.TimeInterval)
+  @objc final public func stopMainThreadMonitoring()
+  @objc final public func mark(_ name: Swift.String)
+  @objc final public func logSummary(_ title: Swift.String)
+  @objc final public func summary(_ title: Swift.String) -> Swift.String
+  @objc deinit
+}
+@objc(AIBudsLiveStreamingDecoderType) public enum LiveStreamingDecoderType : Swift.Int, Swift.Sendable {
+  case avPlayer = 0
+  case ffmpeg = 1
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc(AIBudsLiveStreamingVideoFormat) public enum LiveStreamingVideoFormat : Swift.Int, Swift.Sendable {
+  case unknown = 0
+  case mpeg4 = 1
+  case flv = 2
+  case hls = 3
+  case rtmp = 4
+  case rtsp = 5
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+extension AIBudsLiveStream.LiveStreamingVideoFormat : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
+extension AIBudsLiveStream.LiveStreamingVideoFormat : Swift.CustomDebugStringConvertible {
+  public var debugDescription: Swift.String {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers public class LiveStreamingVideoFormatResolver {
+  public static func format(from url: Foundation.URL?) -> AIBudsLiveStream.LiveStreamingVideoFormat
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc(AIBudsLiveStreamingDecoderConfig) public class LiveStreamingDecoderConfig : ObjectiveC.NSObject {
+  @objc public var hardwareAccelerationEnabled: Swift.Bool
+  @objc public var mpeg4Decoder: AIBudsLiveStream.LiveStreamingDecoderType
+  @objc public var flvDecoder: AIBudsLiveStream.LiveStreamingDecoderType
+  @objc public var hlsDecoder: AIBudsLiveStream.LiveStreamingDecoderType
+  @objc public var rtmpDecoder: AIBudsLiveStream.LiveStreamingDecoderType
+  @objc public var rtspDecoder: AIBudsLiveStream.LiveStreamingDecoderType
+  @objc public var unknownDecoder: AIBudsLiveStream.LiveStreamingDecoderType
+  @objc public static func defaultConfig() -> AIBudsLiveStream.LiveStreamingDecoderConfig
+  @objc public static func avPlayerConfig() -> AIBudsLiveStream.LiveStreamingDecoderConfig
+  @objc public static func ffmpegConfig() -> AIBudsLiveStream.LiveStreamingDecoderConfig
+  @objc public func decoderType(for url: Foundation.URL?) -> AIBudsLiveStream.LiveStreamingDecoderType
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc(AIBudsLiveStreamingPlayer) public class LiveStreamingPlayer : ObjectiveC.NSObject {
+  @objc weak public var delegate: (any AIBudsLiveStream.LiveStreamingPlayerDelegate)?
+  @objc public var decoderConfig: AIBudsLiveStream.LiveStreamingDecoderConfig
+  @objc public var state: AIBudsLiveStream.LiveStreamingPlayerState {
+    @objc get
+  }
+  @objc public var currentSource: AIBudsLiveStream.VideoSource? {
+    get
+  }
+  @objc public var currentTime: Foundation.TimeInterval {
+    @objc get
+  }
+  @objc public var duration: Foundation.TimeInterval {
+    @objc get
+  }
+  @objc public var playableTime: Swift.Double {
+    get
+  }
+  @objc public var videoSize: CoreFoundation.CGSize {
+    @objc get
+  }
+  @objc public var volume: Swift.Float {
+    @objc get
+    @objc set
+  }
+  @objc public var isMuted: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc public var videoType: AIBudsLiveStream.LiveStreamingVideoType
+  @objc public var displayMode: AIBudsLiveStream.LiveStreamingDisplayMode
+  @objc public var gravityMode: AIBudsLiveStream.LiveStreamingGravityMode
+  @objc public var videoViewAnimationHidden: Swift.Bool
+  @objc public var audioTracks: [AIBudsLiveStream.LiveStreamingTrack] {
+    get
+  }
+  @objc public var videoTracks: [AIBudsLiveStream.LiveStreamingTrack] {
+    get
+  }
+  @objc public var currentAudioTrack: AIBudsLiveStream.LiveStreamingTrack? {
+    get
+  }
+  @objc public var currentVideoTrack: AIBudsLiveStream.LiveStreamingTrack? {
+    get
+  }
+  @objc public var videoView: AIBudsLiveStream.VideoView? {
+    get
+  }
+  @objc public var autoPlayOnForeground: Swift.Bool
+  @objc public var error: (any Swift.Error)? {
+    get
+  }
+  @objc public var isBuffering: Swift.Bool {
+    @objc get
+  }
+  @objc override dynamic public init()
+  @objc deinit
+  @objc public func play(source: AIBudsLiveStream.VideoSource)
+  @objc public func play()
+  @objc public func pause()
+  @objc public func stop()
+  @objc public func seek(to time: Foundation.TimeInterval, completion: ((Swift.Bool) -> Swift.Void)? = nil)
+  @objc(addVideoViewToView:) public func addVideoView(to view: UIKit.UIView)
+  @objc public func removeVideoView()
+}
+@objc(AIBudsLiveStreamingPlayerDelegate) public protocol LiveStreamingPlayerDelegate {
+  @objc optional func player(_ player: AIBudsLiveStream.LiveStreamingPlayer, didChangeState oldState: AIBudsLiveStream.LiveStreamingPlayerState, newState: AIBudsLiveStream.LiveStreamingPlayerState)
+  @objc optional func player(_ player: AIBudsLiveStream.LiveStreamingPlayer, didUpdateProgress currentTime: Foundation.TimeInterval, duration: Foundation.TimeInterval)
+  @objc optional func player(_ player: AIBudsLiveStream.LiveStreamingPlayer, didUpdateBuffer playableTime: Foundation.TimeInterval, duration: Foundation.TimeInterval)
+  @objc optional func player(_ player: AIBudsLiveStream.LiveStreamingPlayer, didEncounterError error: any Swift.Error)
+  @objc optional func player(_ player: AIBudsLiveStream.LiveStreamingPlayer, didChangeVideoSize size: CoreFoundation.CGSize)
+  @objc optional func playerDidFinish(_ player: AIBudsLiveStream.LiveStreamingPlayer)
+}
+public struct LiveStreamingPlayerNotificationName {
+  public static let stateDidChange: Foundation.Notification.Name
+  public static let progressDidChange: Foundation.Notification.Name
+  public static let bufferDidChange: Foundation.Notification.Name
+  public static let didEncounterError: Foundation.Notification.Name
+  public static let didFinish: Foundation.Notification.Name
+}
+public struct LiveStreamingPlayerNotificationKey {
+  public static let previousState: Swift.String
+  public static let currentState: Swift.String
+  public static let currentTime: Swift.String
+  public static let duration: Swift.String
+  public static let playableTime: Swift.String
+  public static let error: Swift.String
+  public static let videoSize: Swift.String
+  public static let progressPercent: Swift.String
+  public static let bufferPercent: Swift.String
+}
+@objc(AIBudsLiveStreamingPlayerState) public enum LiveStreamingPlayerState : Swift.Int, Swift.Sendable {
+  case idle = 0
+  case buffering = 1
+  case readyToPlay = 2
+  case playing = 3
+  case paused = 4
+  case finished = 5
+  case error = 6
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+extension AIBudsLiveStream.LiveStreamingPlayerState : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
+extension AIBudsLiveStream.LiveStreamingPlayerState : Swift.CustomDebugStringConvertible {
+  public var debugDescription: Swift.String {
+    get
+  }
+}
+@objc(AIBudsLiveStreamingVideoType) public enum LiveStreamingVideoType : Swift.Int, Swift.Sendable {
+  case normal = 0
+  case vr = 1
+  case fisheye = 2
+  case pano = 3
+  case custom = 4
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+extension AIBudsLiveStream.LiveStreamingVideoType : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
+extension AIBudsLiveStream.LiveStreamingVideoType : Swift.CustomDebugStringConvertible {
+  public var debugDescription: Swift.String {
+    get
+  }
+}
+@objc(AIBudsLiveStreamingDisplayMode) public enum LiveStreamingDisplayMode : Swift.Int, Swift.Sendable {
+  case normal = 0
+  case vrBox = 1
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+extension AIBudsLiveStream.LiveStreamingDisplayMode : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
+extension AIBudsLiveStream.LiveStreamingDisplayMode : Swift.CustomDebugStringConvertible {
+  public var debugDescription: Swift.String {
+    get
+  }
+}
+@objc(AIBudsLiveStreamingGravityMode) public enum LiveStreamingGravityMode : Swift.Int, Swift.Sendable {
+  case resize = 0
+  case resizeAspect = 1
+  case resizeAspectFill = 2
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+extension AIBudsLiveStream.LiveStreamingGravityMode : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
+extension AIBudsLiveStream.LiveStreamingGravityMode : Swift.CustomDebugStringConvertible {
+  public var debugDescription: Swift.String {
+    get
+  }
+}
+@objc(AIBudsLiveStreamingTrack) final public class LiveStreamingTrack : ObjectiveC.NSObject, Swift.Sendable {
+  @objc final public let index: Swift.Int
+  @objc final public let name: Swift.String
+  @objc final public let language: Swift.String?
+  @objc public init(index: Swift.Int, name: Swift.String, language: Swift.String? = nil)
+  @objc deinit
+}
+@objc(AIBudsLiveStreamingTrackType) public enum LiveStreamingTrackType : Swift.Int, Swift.Sendable {
+  case audio = 0
+  case video = 1
+  case subtitle = 2
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc(AIBudsLiveStreamingVideoInput) public class LiveStreamingVideoInput : ObjectiveC.NSObject {
+  @objc(AIBudsVideoOutputType) public enum OutputType : Swift.Int {
+    case displayView = 0
+    case decoder = 1
+    public init?(rawValue: Swift.Int)
+    public typealias RawValue = Swift.Int
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  @objc public var outputType: AIBudsLiveStream.LiveStreamingVideoInput.OutputType
+  @objc public init(outputType: AIBudsLiveStream.LiveStreamingVideoInput.OutputType = .displayView)
+  @objc deinit
+}
+@objc(AIBudsVideoSource) public class VideoSource : ObjectiveC.NSObject {
+  @objc final public let url: Foundation.URL
+  @objc public var videoType: AIBudsLiveStream.LiveStreamingVideoType
+  @objc public var headers: [Swift.String : Swift.String]?
+  @objc public var isLiveStream: Swift.Bool
+  @objc public var videoInput: AIBudsLiveStream.LiveStreamingVideoInput?
+  @objc(initWithUrl:videoType:) public init(url: Foundation.URL, videoType: AIBudsLiveStream.LiveStreamingVideoType = .normal)
+  @objc(initWithUrlString:videoType:) public init?(urlString: Swift.String, videoType: AIBudsLiveStream.LiveStreamingVideoType = .normal)
+  @objc(rtspWithUrlString:) public static func rtsp(urlString: Swift.String) -> AIBudsLiveStream.VideoSource?
+  @objc(rtmpWithUrlString:) public static func rtmp(urlString: Swift.String) -> AIBudsLiveStream.VideoSource?
+  @objc(hlsWithUrlString:) public static func hls(urlString: Swift.String) -> AIBudsLiveStream.VideoSource?
+  @objc(vrWithUrlString:displayMode:) public static func vr(urlString: Swift.String, displayMode: AIBudsLiveStream.LiveStreamingDisplayMode = .normal) -> AIBudsLiveStream.VideoSource?
+  @objc(fisheyeWithUrlString:) public static func fisheye(urlString: Swift.String) -> AIBudsLiveStream.VideoSource?
+  @objc deinit
+}
+@objc(AIBudsLiveStreamerState) public enum LiveStreamerState : Swift.Int, Swift.Sendable {
+  case idle = 0
+  case connecting = 1
+  case connected = 2
+  case streaming = 3
+  case failed = 4
+  case ended = 5
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc(AIBudsLiveStreamerDelegate) public protocol LiveStreamerDelegate {
+  @objc optional func streamer(_ streamer: AIBudsLiveStream.LiveStreamer, didChangeState oldState: AIBudsLiveStream.LiveStreamerState, newState: AIBudsLiveStream.LiveStreamerState)
+  @objc optional func streamer(_ streamer: AIBudsLiveStream.LiveStreamer, didEncounterError error: any Swift.Error)
+  @objc optional func streamer(_ streamer: AIBudsLiveStream.LiveStreamer, didUpdateStats stats: AIBudsLiveStream.LiveStreamingStats)
+}
+@_inheritsConvenienceInitializers @objc(AIBudsLiveStreamingStats) public class LiveStreamingStats : ObjectiveC.NSObject {
+  @objc public var totalBytesSent: Swift.UInt64
+  @objc public var currentBitrate: Swift.UInt32
+  @objc public var framesSent: Swift.UInt64
+  @objc public var duration: Swift.Double
+  @objc public var averageBitrate: Swift.UInt32 {
+    @objc get
+  }
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc(AIBudsLiveStreamerConfig) public class LiveStreamerConfig : ObjectiveC.NSObject {
+  @objc public var videoBitrate: Swift.UInt32
+  @objc public var audioBitrate: Swift.UInt32
+  @objc public var videoWidth: Swift.UInt32
+  @objc public var videoHeight: Swift.UInt32
+  @objc public var frameRate: Swift.UInt32
+  @objc public var audioSampleRate: Swift.UInt32
+  @objc public var audioChannels: Swift.UInt32
+  @objc public var publishAudio: Swift.Bool
+  @objc public var connectionTimeout: Swift.Double
+  @objc public var adaptiveBitrate: Swift.Bool
+  @objc public var reconnectAttempts: Swift.UInt32
+  @objc public var reconnectDelay: Swift.Double
+  @objc public var useSharedRTSPIngest: Swift.Bool
+  @objc public static func defaultConfig() -> AIBudsLiveStream.LiveStreamerConfig
+  @objc public static func highQuality() -> AIBudsLiveStream.LiveStreamerConfig
+  @objc public static func lowQuality() -> AIBudsLiveStream.LiveStreamerConfig
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc(AIBudsLiveStreamer) public class LiveStreamer : ObjectiveC.NSObject {
+  @objc weak public var delegate: (any AIBudsLiveStream.LiveStreamerDelegate)?
+  @objc public var state: AIBudsLiveStream.LiveStreamerState {
+    @objc get
+  }
+  @objc public var rtmpURL: Foundation.URL? {
+    get
+  }
+  @objc public var inputURL: Foundation.URL? {
+    get
+  }
+  @objc public var config: AIBudsLiveStream.LiveStreamerConfig
+  @objc public var stats: AIBudsLiveStream.LiveStreamingStats {
+    get
+  }
+  @objc public var isStreaming: Swift.Bool {
+    @objc get
+  }
+  @objc public var error: (any Swift.Error)? {
+    get
+  }
+  @objc override dynamic public init()
+  @objc deinit
+  @objc public func configure(url: Swift.String, config: AIBudsLiveStream.LiveStreamerConfig = .defaultConfig())
+  @objc(configureWithInputURL:outputURL:config:) public func configure(inputURL: Swift.String, outputURL: Swift.String, config: AIBudsLiveStream.LiveStreamerConfig = .defaultConfig())
+  @objc public func startStreaming()
+  @objc public func stopStreaming()
+  @objc public func sendVideoFrame(_ data: Foundation.Data)
+  @objc public func sendAudioFrame(_ data: Foundation.Data)
+}
+public struct StreamerNotificationName {
+  public static let stateDidChange: Foundation.Notification.Name
+  public static let didEncounterError: Foundation.Notification.Name
+  public static let statsDidUpdate: Foundation.Notification.Name
+}
+public struct StreamerNotificationKey {
+  public static let previousState: Swift.String
+  public static let currentState: Swift.String
+  public static let error: Swift.String
+  public static let stats: Swift.String
+}
+@_inheritsConvenienceInitializers @objc(AIBudsVideoView) @_Concurrency.MainActor @preconcurrency public class VideoView : UIKit.UIView {
+  @objc @_Concurrency.MainActor @preconcurrency weak public var player: AIBudsLiveStream.LiveStreamingPlayer?
+  @objc @_Concurrency.MainActor @preconcurrency public var gravityMode: AIBudsLiveStream.LiveStreamingGravityMode {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor @preconcurrency public var videoType: AIBudsLiveStream.LiveStreamingVideoType
+  @objc @_Concurrency.MainActor @preconcurrency public var displayMode: AIBudsLiveStream.LiveStreamingDisplayMode
+  @objc @_Concurrency.MainActor @preconcurrency weak public var delegate: (any AIBudsLiveStream.VideoViewDelegate)?
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public class var layerClass: Swift.AnyClass {
+    @objc get
+  }
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+  @objc @_Concurrency.MainActor @preconcurrency public func setupRenderer(for videoType: AIBudsLiveStream.LiveStreamingVideoType)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public var contentMode: UIKit.UIView.ContentMode {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func layoutSubviews()
+}
+extension AIBudsLiveStream.VideoView : AIBudsLiveStream.GestureControllerDelegate {
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func gestureController(_ controller: AIBudsLiveStream.GestureController, didTap gesture: UIKit.UITapGestureRecognizer)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func gestureController(_ controller: AIBudsLiveStream.GestureController, didDoubleTap gesture: UIKit.UITapGestureRecognizer)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func gestureController(_ controller: AIBudsLiveStream.GestureController, didPan gesture: UIKit.UIPanGestureRecognizer, translation: CoreFoundation.CGPoint)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func gestureController(_ controller: AIBudsLiveStream.GestureController, didPinch gesture: UIKit.UIPinchGestureRecognizer, scale: CoreFoundation.CGFloat)
+}
+@objc(VideoViewDelegate) public protocol VideoViewDelegate {
+  @objc optional func videoViewDidEndDragging(_ view: AIBudsLiveStream.VideoView?, willDecelerate: Swift.Bool)
+  @objc optional func videoViewWillBeginDragging(_ view: AIBudsLiveStream.VideoView?)
+  @objc optional func videoViewWillBeginZooming(_ view: AIBudsLiveStream.VideoView?)
+  @objc optional func videoViewDidEndDecelerating(_ view: AIBudsLiveStream.VideoView?)
+  @objc optional func videoViewDidEndZooming(_ view: AIBudsLiveStream.VideoView?, atScale scale: CoreFoundation.CGFloat)
+  @objc optional func videoViewDidScroll(toBounds view: AIBudsLiveStream.VideoView?)
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class AIBudsLiveStreamSDK : ObjectiveC.NSObject {
+  @objc public static var sdkVersion: Swift.String {
+    @objc get
+  }
+  @objc public static var sdkBuild: Swift.String {
+    @objc get
+  }
+  @objc public static var sdkReleaseDate: Swift.String {
+    @objc get
+  }
+  @objc public static var sdkVersionDescription: Swift.String {
+    @objc get
+  }
+  @objc deinit
+}
+extension AIBudsLiveStream.LiveStreamingDecoderType : Swift.Equatable {}
+extension AIBudsLiveStream.LiveStreamingDecoderType : Swift.Hashable {}
+extension AIBudsLiveStream.LiveStreamingDecoderType : Swift.RawRepresentable {}
+extension AIBudsLiveStream.LiveStreamingVideoFormat : Swift.Equatable {}
+extension AIBudsLiveStream.LiveStreamingVideoFormat : Swift.Hashable {}
+extension AIBudsLiveStream.LiveStreamingVideoFormat : Swift.RawRepresentable {}
+extension AIBudsLiveStream.LiveStreamingPlayerState : Swift.Equatable {}
+extension AIBudsLiveStream.LiveStreamingPlayerState : Swift.Hashable {}
+extension AIBudsLiveStream.LiveStreamingPlayerState : Swift.RawRepresentable {}
+extension AIBudsLiveStream.LiveStreamingVideoType : Swift.Equatable {}
+extension AIBudsLiveStream.LiveStreamingVideoType : Swift.Hashable {}
+extension AIBudsLiveStream.LiveStreamingVideoType : Swift.RawRepresentable {}
+extension AIBudsLiveStream.LiveStreamingDisplayMode : Swift.Equatable {}
+extension AIBudsLiveStream.LiveStreamingDisplayMode : Swift.Hashable {}
+extension AIBudsLiveStream.LiveStreamingDisplayMode : Swift.RawRepresentable {}
+extension AIBudsLiveStream.LiveStreamingGravityMode : Swift.Equatable {}
+extension AIBudsLiveStream.LiveStreamingGravityMode : Swift.Hashable {}
+extension AIBudsLiveStream.LiveStreamingGravityMode : Swift.RawRepresentable {}
+extension AIBudsLiveStream.LiveStreamingTrackType : Swift.Equatable {}
+extension AIBudsLiveStream.LiveStreamingTrackType : Swift.Hashable {}
+extension AIBudsLiveStream.LiveStreamingTrackType : Swift.RawRepresentable {}
+extension AIBudsLiveStream.LiveStreamingVideoInput.OutputType : Swift.Equatable {}
+extension AIBudsLiveStream.LiveStreamingVideoInput.OutputType : Swift.Hashable {}
+extension AIBudsLiveStream.LiveStreamingVideoInput.OutputType : Swift.RawRepresentable {}
+extension AIBudsLiveStream.LiveStreamerState : Swift.Equatable {}
+extension AIBudsLiveStream.LiveStreamerState : Swift.Hashable {}
+extension AIBudsLiveStream.LiveStreamerState : Swift.RawRepresentable {}

@@ -6314,6 +6314,531 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "RTSPStreamParams",
+        "printedName": "RTSPStreamParams",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "default",
+            "printedName": "default",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "RTSPStreamParams",
+                "printedName": "AIBudsFoundation.RTSPStreamParams",
+                "usr": "c:@M@AIBudsFoundation@objc(cs)AIBudsRTSPStreamParams"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBudsFoundation@objc(cs)AIBudsRTSPStreamParams(cpy)defaultParams",
+            "mangledName": "$s16AIBudsFoundation16RTSPStreamParamsC7defaultACvpZ",
+            "moduleName": "AIBudsFoundation",
+            "static": true,
+            "objc_name": "defaultParams",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RTSPStreamParams",
+                    "printedName": "AIBudsFoundation.RTSPStreamParams",
+                    "usr": "c:@M@AIBudsFoundation@objc(cs)AIBudsRTSPStreamParams"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsFoundation@objc(cs)AIBudsRTSPStreamParams(cm)defaultParams",
+                "mangledName": "$s16AIBudsFoundation16RTSPStreamParamsC7defaultACvgZ",
+                "moduleName": "AIBudsFoundation",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "bitrate",
+            "printedName": "bitrate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBudsFoundation@objc(cs)AIBudsRTSPStreamParams(py)bitrate",
+            "mangledName": "$s16AIBudsFoundation16RTSPStreamParamsC7bitrateSivp",
+            "moduleName": "AIBudsFoundation",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsFoundation@objc(cs)AIBudsRTSPStreamParams(im)bitrate",
+                "mangledName": "$s16AIBudsFoundation16RTSPStreamParamsC7bitrateSivg",
+                "moduleName": "AIBudsFoundation",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsFoundation@objc(cs)AIBudsRTSPStreamParams(im)setBitrate:",
+                "mangledName": "$s16AIBudsFoundation16RTSPStreamParamsC7bitrateSivs",
+                "moduleName": "AIBudsFoundation",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16AIBudsFoundation16RTSPStreamParamsC7bitrateSivM",
+                "mangledName": "$s16AIBudsFoundation16RTSPStreamParamsC7bitrateSivM",
+                "moduleName": "AIBudsFoundation",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "qualityFactor",
+            "printedName": "qualityFactor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBudsFoundation@objc(cs)AIBudsRTSPStreamParams(py)qualityFactor",
+            "mangledName": "$s16AIBudsFoundation16RTSPStreamParamsC13qualityFactorSivp",
+            "moduleName": "AIBudsFoundation",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsFoundation@objc(cs)AIBudsRTSPStreamParams(im)qualityFactor",
+                "mangledName": "$s16AIBudsFoundation16RTSPStreamParamsC13qualityFactorSivg",
+                "moduleName": "AIBudsFoundation",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsFoundation@objc(cs)AIBudsRTSPStreamParams(im)setQualityFactor:",
+                "mangledName": "$s16AIBudsFoundation16RTSPStreamParamsC13qualityFactorSivs",
+                "moduleName": "AIBudsFoundation",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16AIBudsFoundation16RTSPStreamParamsC13qualityFactorSivM",
+                "mangledName": "$s16AIBudsFoundation16RTSPStreamParamsC13qualityFactorSivM",
+                "moduleName": "AIBudsFoundation",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "iFrameInterval",
+            "printedName": "iFrameInterval",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBudsFoundation@objc(cs)AIBudsRTSPStreamParams(py)iFrameInterval",
+            "mangledName": "$s16AIBudsFoundation16RTSPStreamParamsC14iFrameIntervalSivp",
+            "moduleName": "AIBudsFoundation",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsFoundation@objc(cs)AIBudsRTSPStreamParams(im)iFrameInterval",
+                "mangledName": "$s16AIBudsFoundation16RTSPStreamParamsC14iFrameIntervalSivg",
+                "moduleName": "AIBudsFoundation",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsFoundation@objc(cs)AIBudsRTSPStreamParams(im)setIFrameInterval:",
+                "mangledName": "$s16AIBudsFoundation16RTSPStreamParamsC14iFrameIntervalSivs",
+                "moduleName": "AIBudsFoundation",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16AIBudsFoundation16RTSPStreamParamsC14iFrameIntervalSivM",
+                "mangledName": "$s16AIBudsFoundation16RTSPStreamParamsC14iFrameIntervalSivM",
+                "moduleName": "AIBudsFoundation",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "RTSPStreamParams",
+                "printedName": "AIBudsFoundation.RTSPStreamParams",
+                "usr": "c:@M@AIBudsFoundation@objc(cs)AIBudsRTSPStreamParams"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@AIBudsFoundation@objc(cs)AIBudsRTSPStreamParams(im)init",
+            "mangledName": "$s16AIBudsFoundation16RTSPStreamParamsCACycfc",
+            "moduleName": "AIBudsFoundation",
+            "overriding": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(bitrate:qualityFactor:iFrameInterval:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "RTSPStreamParams",
+                "printedName": "AIBudsFoundation.RTSPStreamParams",
+                "usr": "c:@M@AIBudsFoundation@objc(cs)AIBudsRTSPStreamParams"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "hasDefaultArg": true,
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "hasDefaultArg": true,
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "hasDefaultArg": true,
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@AIBudsFoundation@objc(cs)AIBudsRTSPStreamParams(im)initWithBitrate:qualityFactor:iFrameInterval:",
+            "mangledName": "$s16AIBudsFoundation16RTSPStreamParamsC7bitrate13qualityFactor14iFrameIntervalACSi_S2itcfc",
+            "moduleName": "AIBudsFoundation",
+            "objc_name": "initWithBitrate:qualityFactor:iFrameInterval:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@AIBudsFoundation@objc(cs)AIBudsRTSPStreamParams",
+        "mangledName": "$s16AIBudsFoundation16RTSPStreamParamsC",
+        "moduleName": "AIBudsFoundation",
+        "objc_name": "AIBudsRTSPStreamParams",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AIBudsFoundation",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "MediaCountInfoModel",
         "printedName": "MediaCountInfoModel",
         "children": [
@@ -17243,6 +17768,598 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "CoprocessorModel",
+        "printedName": "CoprocessorModel",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "unknown",
+            "printedName": "unknown",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AIBudsFoundation.CoprocessorModel.Type) -> AIBudsFoundation.CoprocessorModel",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CoprocessorModel",
+                    "printedName": "AIBudsFoundation.CoprocessorModel",
+                    "usr": "c:@M@AIBudsFoundation@E@AIBudsCoprocessorModel"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AIBudsFoundation.CoprocessorModel.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CoprocessorModel",
+                        "printedName": "AIBudsFoundation.CoprocessorModel",
+                        "usr": "c:@M@AIBudsFoundation@E@AIBudsCoprocessorModel"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AIBudsFoundation@E@AIBudsCoprocessorModel@AIBudsCoprocessorModelUnknown",
+            "mangledName": "$s16AIBudsFoundation16CoprocessorModelO7unknownyA2CmF",
+            "moduleName": "AIBudsFoundation",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "none",
+            "printedName": "none",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AIBudsFoundation.CoprocessorModel.Type) -> AIBudsFoundation.CoprocessorModel",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CoprocessorModel",
+                    "printedName": "AIBudsFoundation.CoprocessorModel",
+                    "usr": "c:@M@AIBudsFoundation@E@AIBudsCoprocessorModel"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AIBudsFoundation.CoprocessorModel.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CoprocessorModel",
+                        "printedName": "AIBudsFoundation.CoprocessorModel",
+                        "usr": "c:@M@AIBudsFoundation@E@AIBudsCoprocessorModel"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AIBudsFoundation@E@AIBudsCoprocessorModel@AIBudsCoprocessorModelNone",
+            "mangledName": "$s16AIBudsFoundation16CoprocessorModelO4noneyA2CmF",
+            "moduleName": "AIBudsFoundation",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Var",
+            "name": "qzV821",
+            "printedName": "qzV821",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AIBudsFoundation.CoprocessorModel.Type) -> AIBudsFoundation.CoprocessorModel",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CoprocessorModel",
+                    "printedName": "AIBudsFoundation.CoprocessorModel",
+                    "usr": "c:@M@AIBudsFoundation@E@AIBudsCoprocessorModel"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AIBudsFoundation.CoprocessorModel.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CoprocessorModel",
+                        "printedName": "AIBudsFoundation.CoprocessorModel",
+                        "usr": "c:@M@AIBudsFoundation@E@AIBudsCoprocessorModel"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AIBudsFoundation@E@AIBudsCoprocessorModel@AIBudsCoprocessorModelQzV821",
+            "mangledName": "$s16AIBudsFoundation16CoprocessorModelO6qzV821yA2CmF",
+            "moduleName": "AIBudsFoundation",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 2
+          },
+          {
+            "kind": "Var",
+            "name": "txW81x",
+            "printedName": "txW81x",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AIBudsFoundation.CoprocessorModel.Type) -> AIBudsFoundation.CoprocessorModel",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CoprocessorModel",
+                    "printedName": "AIBudsFoundation.CoprocessorModel",
+                    "usr": "c:@M@AIBudsFoundation@E@AIBudsCoprocessorModel"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AIBudsFoundation.CoprocessorModel.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CoprocessorModel",
+                        "printedName": "AIBudsFoundation.CoprocessorModel",
+                        "usr": "c:@M@AIBudsFoundation@E@AIBudsCoprocessorModel"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AIBudsFoundation@E@AIBudsCoprocessorModel@AIBudsCoprocessorModelTxW81x",
+            "mangledName": "$s16AIBudsFoundation16CoprocessorModelO6txW81xyA2CmF",
+            "moduleName": "AIBudsFoundation",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 3
+          },
+          {
+            "kind": "Var",
+            "name": "realtek",
+            "printedName": "realtek",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AIBudsFoundation.CoprocessorModel.Type) -> AIBudsFoundation.CoprocessorModel",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CoprocessorModel",
+                    "printedName": "AIBudsFoundation.CoprocessorModel",
+                    "usr": "c:@M@AIBudsFoundation@E@AIBudsCoprocessorModel"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AIBudsFoundation.CoprocessorModel.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CoprocessorModel",
+                        "printedName": "AIBudsFoundation.CoprocessorModel",
+                        "usr": "c:@M@AIBudsFoundation@E@AIBudsCoprocessorModel"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AIBudsFoundation@E@AIBudsCoprocessorModel@AIBudsCoprocessorModelRealtek",
+            "mangledName": "$s16AIBudsFoundation16CoprocessorModelO7realtekyA2CmF",
+            "moduleName": "AIBudsFoundation",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 4
+          },
+          {
+            "kind": "Var",
+            "name": "bluetrum",
+            "printedName": "bluetrum",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AIBudsFoundation.CoprocessorModel.Type) -> AIBudsFoundation.CoprocessorModel",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CoprocessorModel",
+                    "printedName": "AIBudsFoundation.CoprocessorModel",
+                    "usr": "c:@M@AIBudsFoundation@E@AIBudsCoprocessorModel"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AIBudsFoundation.CoprocessorModel.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CoprocessorModel",
+                        "printedName": "AIBudsFoundation.CoprocessorModel",
+                        "usr": "c:@M@AIBudsFoundation@E@AIBudsCoprocessorModel"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AIBudsFoundation@E@AIBudsCoprocessorModel@AIBudsCoprocessorModelBluetrum",
+            "mangledName": "$s16AIBudsFoundation16CoprocessorModelO8bluetrumyA2CmF",
+            "moduleName": "AIBudsFoundation",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 5
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "AIBudsFoundation.CoprocessorModel?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CoprocessorModel",
+                    "printedName": "AIBudsFoundation.CoprocessorModel",
+                    "usr": "c:@M@AIBudsFoundation@E@AIBudsCoprocessorModel"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:16AIBudsFoundation16CoprocessorModelO8rawValueACSgSi_tcfc",
+            "mangledName": "$s16AIBudsFoundation16CoprocessorModelO8rawValueACSgSi_tcfc",
+            "moduleName": "AIBudsFoundation",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16AIBudsFoundation16CoprocessorModelO8rawValueSivp",
+            "mangledName": "$s16AIBudsFoundation16CoprocessorModelO8rawValueSivp",
+            "moduleName": "AIBudsFoundation",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16AIBudsFoundation16CoprocessorModelO8rawValueSivg",
+                "mangledName": "$s16AIBudsFoundation16CoprocessorModelO8rawValueSivg",
+                "moduleName": "AIBudsFoundation",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "allCases",
+            "printedName": "allCases",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[AIBudsFoundation.CoprocessorModel]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CoprocessorModel",
+                    "printedName": "AIBudsFoundation.CoprocessorModel",
+                    "usr": "c:@M@AIBudsFoundation@E@AIBudsCoprocessorModel"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16AIBudsFoundation16CoprocessorModelO8allCasesSayACGvpZ",
+            "mangledName": "$s16AIBudsFoundation16CoprocessorModelO8allCasesSayACGvpZ",
+            "moduleName": "AIBudsFoundation",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[AIBudsFoundation.CoprocessorModel]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CoprocessorModel",
+                        "printedName": "AIBudsFoundation.CoprocessorModel",
+                        "usr": "c:@M@AIBudsFoundation@E@AIBudsCoprocessorModel"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16AIBudsFoundation16CoprocessorModelO8allCasesSayACGvgZ",
+                "mangledName": "$s16AIBudsFoundation16CoprocessorModelO8allCasesSayACGvgZ",
+                "moduleName": "AIBudsFoundation",
+                "static": true,
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "description",
+            "printedName": "description",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16AIBudsFoundation16CoprocessorModelO11descriptionSSvp",
+            "mangledName": "$s16AIBudsFoundation16CoprocessorModelO11descriptionSSvp",
+            "moduleName": "AIBudsFoundation",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16AIBudsFoundation16CoprocessorModelO11descriptionSSvg",
+                "mangledName": "$s16AIBudsFoundation16CoprocessorModelO11descriptionSSvg",
+                "moduleName": "AIBudsFoundation",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "debugDescription",
+            "printedName": "debugDescription",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16AIBudsFoundation16CoprocessorModelO16debugDescriptionSSvp",
+            "mangledName": "$s16AIBudsFoundation16CoprocessorModelO16debugDescriptionSSvp",
+            "moduleName": "AIBudsFoundation",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16AIBudsFoundation16CoprocessorModelO16debugDescriptionSSvg",
+                "mangledName": "$s16AIBudsFoundation16CoprocessorModelO16debugDescriptionSSvg",
+                "moduleName": "AIBudsFoundation",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "c:@M@AIBudsFoundation@E@AIBudsCoprocessorModel",
+        "mangledName": "$s16AIBudsFoundation16CoprocessorModelO",
+        "moduleName": "AIBudsFoundation",
+        "objc_name": "AIBudsCoprocessorModel",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CaseIterable",
+            "printedName": "CaseIterable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "AllCases",
+                "printedName": "AllCases",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[AIBudsFoundation.CoprocessorModel]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CoprocessorModel",
+                        "printedName": "AIBudsFoundation.CoprocessorModel",
+                        "usr": "c:@M@AIBudsFoundation@E@AIBudsCoprocessorModel"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s12CaseIterableP",
+            "mangledName": "$ss12CaseIterableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AIBudsFoundation",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "DeviceLanguage",
         "printedName": "DeviceLanguage",
         "children": [
@@ -22976,8 +24093,8 @@
           },
           {
             "kind": "Var",
-            "name": "supportAntiWindNoise",
-            "printedName": "supportAntiWindNoise",
+            "name": "supportLiveStreaming",
+            "printedName": "supportLiveStreaming",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -22987,8 +24104,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:16AIBudsFoundation18DeviceCapabilitiesV20supportAntiWindNoiseACvpZ",
-            "mangledName": "$s16AIBudsFoundation18DeviceCapabilitiesV20supportAntiWindNoiseACvpZ",
+            "usr": "s:16AIBudsFoundation18DeviceCapabilitiesV20supportLiveStreamingACvpZ",
+            "mangledName": "$s16AIBudsFoundation18DeviceCapabilitiesV20supportLiveStreamingACvpZ",
             "moduleName": "AIBudsFoundation",
             "static": true,
             "declAttributes": [
@@ -23013,8 +24130,104 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:16AIBudsFoundation18DeviceCapabilitiesV20supportAntiWindNoiseACvgZ",
-                "mangledName": "$s16AIBudsFoundation18DeviceCapabilitiesV20supportAntiWindNoiseACvgZ",
+                "usr": "s:16AIBudsFoundation18DeviceCapabilitiesV20supportLiveStreamingACvgZ",
+                "mangledName": "$s16AIBudsFoundation18DeviceCapabilitiesV20supportLiveStreamingACvgZ",
+                "moduleName": "AIBudsFoundation",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "shouldHideXimalayaInApp",
+            "printedName": "shouldHideXimalayaInApp",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DeviceCapabilities",
+                "printedName": "AIBudsFoundation.DeviceCapabilities",
+                "usr": "s:16AIBudsFoundation18DeviceCapabilitiesV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16AIBudsFoundation18DeviceCapabilitiesV23shouldHideXimalayaInAppACvpZ",
+            "mangledName": "$s16AIBudsFoundation18DeviceCapabilitiesV23shouldHideXimalayaInAppACvpZ",
+            "moduleName": "AIBudsFoundation",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DeviceCapabilities",
+                    "printedName": "AIBudsFoundation.DeviceCapabilities",
+                    "usr": "s:16AIBudsFoundation18DeviceCapabilitiesV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16AIBudsFoundation18DeviceCapabilitiesV23shouldHideXimalayaInAppACvgZ",
+                "mangledName": "$s16AIBudsFoundation18DeviceCapabilitiesV23shouldHideXimalayaInAppACvgZ",
+                "moduleName": "AIBudsFoundation",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "supportFactoryTestPromptToneChirp",
+            "printedName": "supportFactoryTestPromptToneChirp",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DeviceCapabilities",
+                "printedName": "AIBudsFoundation.DeviceCapabilities",
+                "usr": "s:16AIBudsFoundation18DeviceCapabilitiesV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16AIBudsFoundation18DeviceCapabilitiesV33supportFactoryTestPromptToneChirpACvpZ",
+            "mangledName": "$s16AIBudsFoundation18DeviceCapabilitiesV33supportFactoryTestPromptToneChirpACvpZ",
+            "moduleName": "AIBudsFoundation",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DeviceCapabilities",
+                    "printedName": "AIBudsFoundation.DeviceCapabilities",
+                    "usr": "s:16AIBudsFoundation18DeviceCapabilitiesV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16AIBudsFoundation18DeviceCapabilitiesV33supportFactoryTestPromptToneChirpACvgZ",
+                "mangledName": "$s16AIBudsFoundation18DeviceCapabilitiesV33supportFactoryTestPromptToneChirpACvgZ",
                 "moduleName": "AIBudsFoundation",
                 "static": true,
                 "implicit": true,
@@ -23270,8 +24483,8 @@
           },
           {
             "kind": "Var",
-            "name": "supportAntiWindNoise",
-            "printedName": "supportAntiWindNoise",
+            "name": "supportLiveStreaming",
+            "printedName": "supportLiveStreaming",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -23281,8 +24494,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:16AIBudsFoundation18DeviceCapabilitiesV20supportAntiWindNoiseSbvp",
-            "mangledName": "$s16AIBudsFoundation18DeviceCapabilitiesV20supportAntiWindNoiseSbvp",
+            "usr": "s:16AIBudsFoundation18DeviceCapabilitiesV20supportLiveStreamingSbvp",
+            "mangledName": "$s16AIBudsFoundation18DeviceCapabilitiesV20supportLiveStreamingSbvp",
             "moduleName": "AIBudsFoundation",
             "declAttributes": [
               "AccessControl",
@@ -23302,8 +24515,90 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:16AIBudsFoundation18DeviceCapabilitiesV20supportAntiWindNoiseSbvg",
-                "mangledName": "$s16AIBudsFoundation18DeviceCapabilitiesV20supportAntiWindNoiseSbvg",
+                "usr": "s:16AIBudsFoundation18DeviceCapabilitiesV20supportLiveStreamingSbvg",
+                "mangledName": "$s16AIBudsFoundation18DeviceCapabilitiesV20supportLiveStreamingSbvg",
+                "moduleName": "AIBudsFoundation",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "shouldHideXimalayaInApp",
+            "printedName": "shouldHideXimalayaInApp",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16AIBudsFoundation18DeviceCapabilitiesV23shouldHideXimalayaInAppSbvp",
+            "mangledName": "$s16AIBudsFoundation18DeviceCapabilitiesV23shouldHideXimalayaInAppSbvp",
+            "moduleName": "AIBudsFoundation",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16AIBudsFoundation18DeviceCapabilitiesV23shouldHideXimalayaInAppSbvg",
+                "mangledName": "$s16AIBudsFoundation18DeviceCapabilitiesV23shouldHideXimalayaInAppSbvg",
+                "moduleName": "AIBudsFoundation",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "supportFactoryTestPromptToneChirp",
+            "printedName": "supportFactoryTestPromptToneChirp",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16AIBudsFoundation18DeviceCapabilitiesV33supportFactoryTestPromptToneChirpSbvp",
+            "mangledName": "$s16AIBudsFoundation18DeviceCapabilitiesV33supportFactoryTestPromptToneChirpSbvp",
+            "moduleName": "AIBudsFoundation",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16AIBudsFoundation18DeviceCapabilitiesV33supportFactoryTestPromptToneChirpSbvg",
+                "mangledName": "$s16AIBudsFoundation18DeviceCapabilitiesV33supportFactoryTestPromptToneChirpSbvg",
                 "moduleName": "AIBudsFoundation",
                 "accessorKind": "get"
               }
@@ -26494,6 +27789,430 @@
             "printedName": "CustomStringConvertible",
             "usr": "s:s23CustomStringConvertibleP",
             "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AIBudsFoundation",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "LiveStreamingMode",
+        "printedName": "LiveStreamingMode",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "rtsp",
+            "printedName": "rtsp",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AIBudsFoundation.LiveStreamingMode.Type) -> AIBudsFoundation.LiveStreamingMode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LiveStreamingMode",
+                    "printedName": "AIBudsFoundation.LiveStreamingMode",
+                    "usr": "c:@M@AIBudsFoundation@E@AIBudsLiveStreamingMode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AIBudsFoundation.LiveStreamingMode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LiveStreamingMode",
+                        "printedName": "AIBudsFoundation.LiveStreamingMode",
+                        "usr": "c:@M@AIBudsFoundation@E@AIBudsLiveStreamingMode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AIBudsFoundation@E@AIBudsLiveStreamingMode@AIBudsLiveStreamingModeRtsp",
+            "mangledName": "$s16AIBudsFoundation17LiveStreamingModeO4rtspyA2CmF",
+            "moduleName": "AIBudsFoundation",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "jpegImage",
+            "printedName": "jpegImage",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AIBudsFoundation.LiveStreamingMode.Type) -> AIBudsFoundation.LiveStreamingMode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LiveStreamingMode",
+                    "printedName": "AIBudsFoundation.LiveStreamingMode",
+                    "usr": "c:@M@AIBudsFoundation@E@AIBudsLiveStreamingMode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AIBudsFoundation.LiveStreamingMode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LiveStreamingMode",
+                        "printedName": "AIBudsFoundation.LiveStreamingMode",
+                        "usr": "c:@M@AIBudsFoundation@E@AIBudsLiveStreamingMode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AIBudsFoundation@E@AIBudsLiveStreamingMode@AIBudsLiveStreamingModeJpegImage",
+            "mangledName": "$s16AIBudsFoundation17LiveStreamingModeO9jpegImageyA2CmF",
+            "moduleName": "AIBudsFoundation",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "AIBudsFoundation.LiveStreamingMode?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LiveStreamingMode",
+                    "printedName": "AIBudsFoundation.LiveStreamingMode",
+                    "usr": "c:@M@AIBudsFoundation@E@AIBudsLiveStreamingMode"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:16AIBudsFoundation17LiveStreamingModeO8rawValueACSgSi_tcfc",
+            "mangledName": "$s16AIBudsFoundation17LiveStreamingModeO8rawValueACSgSi_tcfc",
+            "moduleName": "AIBudsFoundation",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16AIBudsFoundation17LiveStreamingModeO8rawValueSivp",
+            "mangledName": "$s16AIBudsFoundation17LiveStreamingModeO8rawValueSivp",
+            "moduleName": "AIBudsFoundation",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16AIBudsFoundation17LiveStreamingModeO8rawValueSivg",
+                "mangledName": "$s16AIBudsFoundation17LiveStreamingModeO8rawValueSivg",
+                "moduleName": "AIBudsFoundation",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "allCases",
+            "printedName": "allCases",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[AIBudsFoundation.LiveStreamingMode]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LiveStreamingMode",
+                    "printedName": "AIBudsFoundation.LiveStreamingMode",
+                    "usr": "c:@M@AIBudsFoundation@E@AIBudsLiveStreamingMode"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16AIBudsFoundation17LiveStreamingModeO8allCasesSayACGvpZ",
+            "mangledName": "$s16AIBudsFoundation17LiveStreamingModeO8allCasesSayACGvpZ",
+            "moduleName": "AIBudsFoundation",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[AIBudsFoundation.LiveStreamingMode]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LiveStreamingMode",
+                        "printedName": "AIBudsFoundation.LiveStreamingMode",
+                        "usr": "c:@M@AIBudsFoundation@E@AIBudsLiveStreamingMode"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16AIBudsFoundation17LiveStreamingModeO8allCasesSayACGvgZ",
+                "mangledName": "$s16AIBudsFoundation17LiveStreamingModeO8allCasesSayACGvgZ",
+                "moduleName": "AIBudsFoundation",
+                "static": true,
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "description",
+            "printedName": "description",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16AIBudsFoundation17LiveStreamingModeO11descriptionSSvp",
+            "mangledName": "$s16AIBudsFoundation17LiveStreamingModeO11descriptionSSvp",
+            "moduleName": "AIBudsFoundation",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16AIBudsFoundation17LiveStreamingModeO11descriptionSSvg",
+                "mangledName": "$s16AIBudsFoundation17LiveStreamingModeO11descriptionSSvg",
+                "moduleName": "AIBudsFoundation",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "debugDescription",
+            "printedName": "debugDescription",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16AIBudsFoundation17LiveStreamingModeO16debugDescriptionSSvp",
+            "mangledName": "$s16AIBudsFoundation17LiveStreamingModeO16debugDescriptionSSvp",
+            "moduleName": "AIBudsFoundation",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16AIBudsFoundation17LiveStreamingModeO16debugDescriptionSSvg",
+                "mangledName": "$s16AIBudsFoundation17LiveStreamingModeO16debugDescriptionSSvg",
+                "moduleName": "AIBudsFoundation",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "c:@M@AIBudsFoundation@E@AIBudsLiveStreamingMode",
+        "mangledName": "$s16AIBudsFoundation17LiveStreamingModeO",
+        "moduleName": "AIBudsFoundation",
+        "objc_name": "AIBudsLiveStreamingMode",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CaseIterable",
+            "printedName": "CaseIterable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "AllCases",
+                "printedName": "AllCases",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[AIBudsFoundation.LiveStreamingMode]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LiveStreamingMode",
+                        "printedName": "AIBudsFoundation.LiveStreamingMode",
+                        "usr": "c:@M@AIBudsFoundation@E@AIBudsLiveStreamingMode"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s12CaseIterableP",
+            "mangledName": "$ss12CaseIterableP"
           },
           {
             "kind": "Conformance",
@@ -69149,6 +70868,48 @@
       "value": "\" 类型=自定义\""
     },
     {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/DataModels(数据模型)\/LiveStreaming(直播)\/RTSPStreamParams.swift",
+      "kind": "IntegerLiteral",
+      "offset": 524,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/DataModels(数据模型)\/LiveStreaming(直播)\/RTSPStreamParams.swift",
+      "kind": "IntegerLiteral",
+      "offset": 707,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/DataModels(数据模型)\/LiveStreaming(直播)\/RTSPStreamParams.swift",
+      "kind": "IntegerLiteral",
+      "offset": 909,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/DataModels(数据模型)\/LiveStreaming(直播)\/RTSPStreamParams.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1663,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/DataModels(数据模型)\/LiveStreaming(直播)\/RTSPStreamParams.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1710,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/DataModels(数据模型)\/LiveStreaming(直播)\/RTSPStreamParams.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1758,
+      "length": 1,
+      "value": "0"
+    },
+    {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/DataModels(数据模型)\/MediaInfo(媒体信息)\/MediaCountInfoModel.swift",
       "kind": "StringLiteral",
       "offset": 1166,
@@ -69849,6 +71610,48 @@
       "value": "1"
     },
     {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/Defines(定义)\/Co-processor(协处理器)\/CoprocessorModel.swift",
+      "kind": "IntegerLiteral",
+      "offset": 295,
+      "length": 2,
+      "value": "-1"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/Defines(定义)\/Co-processor(协处理器)\/CoprocessorModel.swift",
+      "kind": "IntegerLiteral",
+      "offset": 327,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/Defines(定义)\/Co-processor(协处理器)\/CoprocessorModel.swift",
+      "kind": "IntegerLiteral",
+      "offset": 367,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/Defines(定义)\/Co-processor(协处理器)\/CoprocessorModel.swift",
+      "kind": "IntegerLiteral",
+      "offset": 409,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/Defines(定义)\/Co-processor(协处理器)\/CoprocessorModel.swift",
+      "kind": "IntegerLiteral",
+      "offset": 445,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/Defines(定义)\/Co-processor(协处理器)\/CoprocessorModel.swift",
+      "kind": "IntegerLiteral",
+      "offset": 488,
+      "length": 1,
+      "value": "4"
+    },
+    {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/Defines(定义)\/Common(常用)\/DeviceLanguage.swift",
       "kind": "IntegerLiteral",
       "offset": 297,
@@ -70481,16 +72284,44 @@
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/Defines(定义)\/DeviceCapability(设备能力)\/DeviceCapabilities.swift",
       "kind": "IntegerLiteral",
-      "offset": 1150,
+      "offset": 1149,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/Defines(定义)\/DeviceCapability(设备能力)\/DeviceCapabilities.swift",
       "kind": "IntegerLiteral",
-      "offset": 1155,
+      "offset": 1154,
       "length": 1,
       "value": "6"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/Defines(定义)\/DeviceCapability(设备能力)\/DeviceCapabilities.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1294,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/Defines(定义)\/DeviceCapability(设备能力)\/DeviceCapabilities.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1299,
+      "length": 1,
+      "value": "7"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/Defines(定义)\/DeviceCapability(设备能力)\/DeviceCapabilities.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1436,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/Defines(定义)\/DeviceCapability(设备能力)\/DeviceCapabilities.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1441,
+      "length": 1,
+      "value": "8"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/Defines(定义)\/DeviceOperation(设备操作)\/DeviceFunction.swift",
@@ -70820,6 +72651,20 @@
       "offset": 615,
       "length": 4,
       "value": "0x01"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/Defines(定义)\/LiveStreaming(直播)\/LiveStreamingMode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 306,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/Defines(定义)\/LiveStreaming(直播)\/LiveStreamingMode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 355,
+      "length": 1,
+      "value": "1"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/Defines(定义)\/MediaInfo(媒体信息)\/MediaFileType.swift",
@@ -73563,26 +75408,26 @@
       "kind": "StringLiteral",
       "offset": 492,
       "length": 14,
-      "value": "\"1.0.0-beta.7\""
+      "value": "\"1.0.0-beta.8\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/AIBudsFoundation.swift",
       "kind": "StringLiteral",
       "offset": 622,
-      "length": 13,
-      "value": "\"20260531001\""
-    },
-    {
-      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/AIBudsFoundation.swift",
-      "kind": "StringLiteral",
-      "offset": 737,
       "length": 12,
-      "value": "\"2026-05-31\""
+      "value": "\"2026070401\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/AIBudsFoundation.swift",
       "kind": "StringLiteral",
-      "offset": 830,
+      "offset": 736,
+      "length": 12,
+      "value": "\"2026-07-04\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/AIBudsFoundation.swift",
+      "kind": "StringLiteral",
+      "offset": 829,
       "length": 36,
       "value": "\"com.topstep.sdks.aibuds.foundation\""
     }

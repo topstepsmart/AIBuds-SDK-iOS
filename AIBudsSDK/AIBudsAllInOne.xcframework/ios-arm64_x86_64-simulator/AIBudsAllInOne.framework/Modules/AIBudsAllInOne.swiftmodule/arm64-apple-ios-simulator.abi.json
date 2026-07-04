@@ -758,26 +758,26 @@
       "kind": "StringLiteral",
       "offset": 498,
       "length": 14,
-      "value": "\"1.0.0-beta.7\""
+      "value": "\"1.0.0-beta.8\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAllInOne\/AIBudsAllInOne.swift",
       "kind": "StringLiteral",
       "offset": 628,
-      "length": 13,
-      "value": "\"20260531001\""
-    },
-    {
-      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAllInOne\/AIBudsAllInOne.swift",
-      "kind": "StringLiteral",
-      "offset": 743,
       "length": 12,
-      "value": "\"2026-05-31\""
+      "value": "\"2026070401\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAllInOne\/AIBudsAllInOne.swift",
       "kind": "StringLiteral",
-      "offset": 828,
+      "offset": 742,
+      "length": 12,
+      "value": "\"2026-07-04\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAllInOne\/AIBudsAllInOne.swift",
+      "kind": "StringLiteral",
+      "offset": 827,
       "length": 34,
       "value": "\"com.topstep.sdks.aibuds-allinone\""
     },

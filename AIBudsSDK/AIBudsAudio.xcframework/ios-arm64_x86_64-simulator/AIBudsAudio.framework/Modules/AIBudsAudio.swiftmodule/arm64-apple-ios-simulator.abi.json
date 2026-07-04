@@ -2567,6 +2567,1961 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "AVFoundation",
+        "printedName": "AVFoundation",
+        "declKind": "Import",
+        "moduleName": "AIBudsAudio"
+      },
+      {
+        "kind": "Import",
+        "name": "AIBudsLog",
+        "printedName": "AIBudsLog",
+        "declKind": "Import",
+        "moduleName": "AIBudsAudio",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "LoopMode",
+        "printedName": "LoopMode",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "none",
+            "printedName": "none",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AIBudsAudio.LoopMode.Type) -> AIBudsAudio.LoopMode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LoopMode",
+                    "printedName": "AIBudsAudio.LoopMode",
+                    "usr": "c:@M@AIBudsAudio@E@AIBudsAudioFilePlayerLoopMode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AIBudsAudio.LoopMode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LoopMode",
+                        "printedName": "AIBudsAudio.LoopMode",
+                        "usr": "c:@M@AIBudsAudio@E@AIBudsAudioFilePlayerLoopMode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AIBudsAudio@E@AIBudsAudioFilePlayerLoopMode@AIBudsAudioFilePlayerLoopModeNone",
+            "mangledName": "$s11AIBudsAudio8LoopModeO4noneyA2CmF",
+            "moduleName": "AIBudsAudio",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "single",
+            "printedName": "single",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AIBudsAudio.LoopMode.Type) -> AIBudsAudio.LoopMode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LoopMode",
+                    "printedName": "AIBudsAudio.LoopMode",
+                    "usr": "c:@M@AIBudsAudio@E@AIBudsAudioFilePlayerLoopMode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AIBudsAudio.LoopMode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LoopMode",
+                        "printedName": "AIBudsAudio.LoopMode",
+                        "usr": "c:@M@AIBudsAudio@E@AIBudsAudioFilePlayerLoopMode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AIBudsAudio@E@AIBudsAudioFilePlayerLoopMode@AIBudsAudioFilePlayerLoopModeSingle",
+            "mangledName": "$s11AIBudsAudio8LoopModeO6singleyA2CmF",
+            "moduleName": "AIBudsAudio",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Var",
+            "name": "count",
+            "printedName": "count",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AIBudsAudio.LoopMode.Type) -> AIBudsAudio.LoopMode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LoopMode",
+                    "printedName": "AIBudsAudio.LoopMode",
+                    "usr": "c:@M@AIBudsAudio@E@AIBudsAudioFilePlayerLoopMode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AIBudsAudio.LoopMode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LoopMode",
+                        "printedName": "AIBudsAudio.LoopMode",
+                        "usr": "c:@M@AIBudsAudio@E@AIBudsAudioFilePlayerLoopMode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AIBudsAudio@E@AIBudsAudioFilePlayerLoopMode@AIBudsAudioFilePlayerLoopModeCount",
+            "mangledName": "$s11AIBudsAudio8LoopModeO5countyA2CmF",
+            "moduleName": "AIBudsAudio",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 2
+          },
+          {
+            "kind": "Var",
+            "name": "allCases",
+            "printedName": "allCases",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[AIBudsAudio.LoopMode]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LoopMode",
+                    "printedName": "AIBudsAudio.LoopMode",
+                    "usr": "c:@M@AIBudsAudio@E@AIBudsAudioFilePlayerLoopMode"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11AIBudsAudio8LoopModeO8allCasesSayACGvpZ",
+            "mangledName": "$s11AIBudsAudio8LoopModeO8allCasesSayACGvpZ",
+            "moduleName": "AIBudsAudio",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[AIBudsAudio.LoopMode]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LoopMode",
+                        "printedName": "AIBudsAudio.LoopMode",
+                        "usr": "c:@M@AIBudsAudio@E@AIBudsAudioFilePlayerLoopMode"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11AIBudsAudio8LoopModeO8allCasesSayACGvgZ",
+                "mangledName": "$s11AIBudsAudio8LoopModeO8allCasesSayACGvgZ",
+                "moduleName": "AIBudsAudio",
+                "static": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "AIBudsAudio.LoopMode?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LoopMode",
+                    "printedName": "AIBudsAudio.LoopMode",
+                    "usr": "c:@M@AIBudsAudio@E@AIBudsAudioFilePlayerLoopMode"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:11AIBudsAudio8LoopModeO8rawValueACSgSi_tcfc",
+            "mangledName": "$s11AIBudsAudio8LoopModeO8rawValueACSgSi_tcfc",
+            "moduleName": "AIBudsAudio",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11AIBudsAudio8LoopModeO8rawValueSivp",
+            "mangledName": "$s11AIBudsAudio8LoopModeO8rawValueSivp",
+            "moduleName": "AIBudsAudio",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11AIBudsAudio8LoopModeO8rawValueSivg",
+                "mangledName": "$s11AIBudsAudio8LoopModeO8rawValueSivg",
+                "moduleName": "AIBudsAudio",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "description",
+            "printedName": "description",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11AIBudsAudio8LoopModeO11descriptionSSvp",
+            "mangledName": "$s11AIBudsAudio8LoopModeO11descriptionSSvp",
+            "moduleName": "AIBudsAudio",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11AIBudsAudio8LoopModeO11descriptionSSvg",
+                "mangledName": "$s11AIBudsAudio8LoopModeO11descriptionSSvg",
+                "moduleName": "AIBudsAudio",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "debugDescription",
+            "printedName": "debugDescription",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11AIBudsAudio8LoopModeO16debugDescriptionSSvp",
+            "mangledName": "$s11AIBudsAudio8LoopModeO16debugDescriptionSSvp",
+            "moduleName": "AIBudsAudio",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11AIBudsAudio8LoopModeO16debugDescriptionSSvg",
+                "mangledName": "$s11AIBudsAudio8LoopModeO16debugDescriptionSSvg",
+                "moduleName": "AIBudsAudio",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "c:@M@AIBudsAudio@E@AIBudsAudioFilePlayerLoopMode",
+        "mangledName": "$s11AIBudsAudio8LoopModeO",
+        "moduleName": "AIBudsAudio",
+        "objc_name": "AIBudsAudioFilePlayerLoopMode",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CaseIterable",
+            "printedName": "CaseIterable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "AllCases",
+                "printedName": "AllCases",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[AIBudsAudio.LoopMode]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LoopMode",
+                        "printedName": "AIBudsAudio.LoopMode",
+                        "usr": "c:@M@AIBudsAudio@E@AIBudsAudioFilePlayerLoopMode"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s12CaseIterableP",
+            "mangledName": "$ss12CaseIterableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AudioFilePlayer",
+        "printedName": "AudioFilePlayer",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "infiniteLoopCount",
+            "printedName": "infiniteLoopCount",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11AIBudsAudio0B10FilePlayerC17infiniteLoopCountSivpZ",
+            "mangledName": "$s11AIBudsAudio0B10FilePlayerC17infiniteLoopCountSivpZ",
+            "moduleName": "AIBudsAudio",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11AIBudsAudio0B10FilePlayerC17infiniteLoopCountSivgZ",
+                "mangledName": "$s11AIBudsAudio0B10FilePlayerC17infiniteLoopCountSivgZ",
+                "moduleName": "AIBudsAudio",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "duration",
+            "printedName": "duration",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBudsAudio@objc(cs)AIBudsAudioFilePlayer(py)duration",
+            "mangledName": "$s11AIBudsAudio0B10FilePlayerC8durationSdvp",
+            "moduleName": "AIBudsAudio",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsAudio@objc(cs)AIBudsAudioFilePlayer(im)duration",
+                "mangledName": "$s11AIBudsAudio0B10FilePlayerC8durationSdvg",
+                "moduleName": "AIBudsAudio",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "currentTime",
+            "printedName": "currentTime",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBudsAudio@objc(cs)AIBudsAudioFilePlayer(py)currentTime",
+            "mangledName": "$s11AIBudsAudio0B10FilePlayerC11currentTimeSdvp",
+            "moduleName": "AIBudsAudio",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsAudio@objc(cs)AIBudsAudioFilePlayer(im)currentTime",
+                "mangledName": "$s11AIBudsAudio0B10FilePlayerC11currentTimeSdvg",
+                "moduleName": "AIBudsAudio",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isPlaying",
+            "printedName": "isPlaying",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBudsAudio@objc(cs)AIBudsAudioFilePlayer(py)isPlaying",
+            "mangledName": "$s11AIBudsAudio0B10FilePlayerC9isPlayingSbvp",
+            "moduleName": "AIBudsAudio",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsAudio@objc(cs)AIBudsAudioFilePlayer(im)isPlaying",
+                "mangledName": "$s11AIBudsAudio0B10FilePlayerC9isPlayingSbvg",
+                "moduleName": "AIBudsAudio",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isPaused",
+            "printedName": "isPaused",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBudsAudio@objc(cs)AIBudsAudioFilePlayer(py)isPaused",
+            "mangledName": "$s11AIBudsAudio0B10FilePlayerC8isPausedSbvp",
+            "moduleName": "AIBudsAudio",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsAudio@objc(cs)AIBudsAudioFilePlayer(im)isPaused",
+                "mangledName": "$s11AIBudsAudio0B10FilePlayerC8isPausedSbvg",
+                "moduleName": "AIBudsAudio",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "loopCount",
+            "printedName": "loopCount",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBudsAudio@objc(cs)AIBudsAudioFilePlayer(py)loopCount",
+            "mangledName": "$s11AIBudsAudio0B10FilePlayerC9loopCountSivp",
+            "moduleName": "AIBudsAudio",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsAudio@objc(cs)AIBudsAudioFilePlayer(im)loopCount",
+                "mangledName": "$s11AIBudsAudio0B10FilePlayerC9loopCountSivg",
+                "moduleName": "AIBudsAudio",
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsAudio@objc(cs)AIBudsAudioFilePlayer(im)setLoopCount:",
+                "mangledName": "$s11AIBudsAudio0B10FilePlayerC9loopCountSivs",
+                "moduleName": "AIBudsAudio",
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11AIBudsAudio0B10FilePlayerC9loopCountSivM",
+                "mangledName": "$s11AIBudsAudio0B10FilePlayerC9loopCountSivM",
+                "moduleName": "AIBudsAudio",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "loopMode",
+            "printedName": "loopMode",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "LoopMode",
+                "printedName": "AIBudsAudio.LoopMode",
+                "usr": "c:@M@AIBudsAudio@E@AIBudsAudioFilePlayerLoopMode"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBudsAudio@objc(cs)AIBudsAudioFilePlayer(py)loopMode",
+            "mangledName": "$s11AIBudsAudio0B10FilePlayerC8loopModeAA04LoopF0Ovp",
+            "moduleName": "AIBudsAudio",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LoopMode",
+                    "printedName": "AIBudsAudio.LoopMode",
+                    "usr": "c:@M@AIBudsAudio@E@AIBudsAudioFilePlayerLoopMode"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsAudio@objc(cs)AIBudsAudioFilePlayer(im)loopMode",
+                "mangledName": "$s11AIBudsAudio0B10FilePlayerC8loopModeAA04LoopF0Ovg",
+                "moduleName": "AIBudsAudio",
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LoopMode",
+                    "printedName": "AIBudsAudio.LoopMode",
+                    "usr": "c:@M@AIBudsAudio@E@AIBudsAudioFilePlayerLoopMode"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsAudio@objc(cs)AIBudsAudioFilePlayer(im)setLoopMode:",
+                "mangledName": "$s11AIBudsAudio0B10FilePlayerC8loopModeAA04LoopF0Ovs",
+                "moduleName": "AIBudsAudio",
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11AIBudsAudio0B10FilePlayerC8loopModeAA04LoopF0OvM",
+                "mangledName": "$s11AIBudsAudio0B10FilePlayerC8loopModeAA04LoopF0OvM",
+                "moduleName": "AIBudsAudio",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "onLoopIterationDidComplete",
+            "printedName": "onLoopIterationDidComplete",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Swift.Int, Swift.Int) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Int, Swift.Int) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(Swift.Int, Swift.Int)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBudsAudio@objc(cs)AIBudsAudioFilePlayer(py)onLoopIterationDidComplete",
+            "mangledName": "$s11AIBudsAudio0B10FilePlayerC26onLoopIterationDidCompleteySi_SitcSgvp",
+            "moduleName": "AIBudsAudio",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "((Swift.Int, Swift.Int) -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Swift.Int, Swift.Int) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Tuple",
+                            "printedName": "(Swift.Int, Swift.Int)",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Int",
+                                "printedName": "Swift.Int",
+                                "usr": "s:Si"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Int",
+                                "printedName": "Swift.Int",
+                                "usr": "s:Si"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsAudio@objc(cs)AIBudsAudioFilePlayer(im)onLoopIterationDidComplete",
+                "mangledName": "$s11AIBudsAudio0B10FilePlayerC26onLoopIterationDidCompleteySi_SitcSgvg",
+                "moduleName": "AIBudsAudio",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "((Swift.Int, Swift.Int) -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Swift.Int, Swift.Int) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Tuple",
+                            "printedName": "(Swift.Int, Swift.Int)",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Int",
+                                "printedName": "Swift.Int",
+                                "usr": "s:Si"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Int",
+                                "printedName": "Swift.Int",
+                                "usr": "s:Si"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsAudio@objc(cs)AIBudsAudioFilePlayer(im)setOnLoopIterationDidComplete:",
+                "mangledName": "$s11AIBudsAudio0B10FilePlayerC26onLoopIterationDidCompleteySi_SitcSgvs",
+                "moduleName": "AIBudsAudio",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11AIBudsAudio0B10FilePlayerC26onLoopIterationDidCompleteySi_SitcSgvM",
+                "mangledName": "$s11AIBudsAudio0B10FilePlayerC26onLoopIterationDidCompleteySi_SitcSgvM",
+                "moduleName": "AIBudsAudio",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "onPlaybackDidStart",
+            "printedName": "onPlaybackDidStart",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(() -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "() -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBudsAudio@objc(cs)AIBudsAudioFilePlayer(py)onPlaybackDidStart",
+            "mangledName": "$s11AIBudsAudio0B10FilePlayerC18onPlaybackDidStartyycSgvp",
+            "moduleName": "AIBudsAudio",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(() -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "() -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsAudio@objc(cs)AIBudsAudioFilePlayer(im)onPlaybackDidStart",
+                "mangledName": "$s11AIBudsAudio0B10FilePlayerC18onPlaybackDidStartyycSgvg",
+                "moduleName": "AIBudsAudio",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(() -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "() -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsAudio@objc(cs)AIBudsAudioFilePlayer(im)setOnPlaybackDidStart:",
+                "mangledName": "$s11AIBudsAudio0B10FilePlayerC18onPlaybackDidStartyycSgvs",
+                "moduleName": "AIBudsAudio",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11AIBudsAudio0B10FilePlayerC18onPlaybackDidStartyycSgvM",
+                "mangledName": "$s11AIBudsAudio0B10FilePlayerC18onPlaybackDidStartyycSgvM",
+                "moduleName": "AIBudsAudio",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "onPlaybackDidStop",
+            "printedName": "onPlaybackDidStop",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((AIBudsAudio.PlaybackStopReason, Foundation.NSError?) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(AIBudsAudio.PlaybackStopReason, Foundation.NSError?) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(AIBudsAudio.PlaybackStopReason, Foundation.NSError?)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "PlaybackStopReason",
+                            "printedName": "AIBudsAudio.PlaybackStopReason",
+                            "usr": "c:@M@AIBudsAudio@E@AIBudsPlaybackStopReason"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "Foundation.NSError?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "NSError",
+                                "printedName": "Foundation.NSError",
+                                "usr": "c:objc(cs)NSError"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBudsAudio@objc(cs)AIBudsAudioFilePlayer(py)onPlaybackDidStop",
+            "mangledName": "$s11AIBudsAudio0B10FilePlayerC17onPlaybackDidStopyAA0fH6ReasonO_So7NSErrorCSgtcSgvp",
+            "moduleName": "AIBudsAudio",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "((AIBudsAudio.PlaybackStopReason, Foundation.NSError?) -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(AIBudsAudio.PlaybackStopReason, Foundation.NSError?) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Tuple",
+                            "printedName": "(AIBudsAudio.PlaybackStopReason, Foundation.NSError?)",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "PlaybackStopReason",
+                                "printedName": "AIBudsAudio.PlaybackStopReason",
+                                "usr": "c:@M@AIBudsAudio@E@AIBudsPlaybackStopReason"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Optional",
+                                "printedName": "Foundation.NSError?",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "NSError",
+                                    "printedName": "Foundation.NSError",
+                                    "usr": "c:objc(cs)NSError"
+                                  }
+                                ],
+                                "usr": "s:Sq"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsAudio@objc(cs)AIBudsAudioFilePlayer(im)onPlaybackDidStop",
+                "mangledName": "$s11AIBudsAudio0B10FilePlayerC17onPlaybackDidStopyAA0fH6ReasonO_So7NSErrorCSgtcSgvg",
+                "moduleName": "AIBudsAudio",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "((AIBudsAudio.PlaybackStopReason, Foundation.NSError?) -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(AIBudsAudio.PlaybackStopReason, Foundation.NSError?) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Tuple",
+                            "printedName": "(AIBudsAudio.PlaybackStopReason, Foundation.NSError?)",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "PlaybackStopReason",
+                                "printedName": "AIBudsAudio.PlaybackStopReason",
+                                "usr": "c:@M@AIBudsAudio@E@AIBudsPlaybackStopReason"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Optional",
+                                "printedName": "Foundation.NSError?",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "NSError",
+                                    "printedName": "Foundation.NSError",
+                                    "usr": "c:objc(cs)NSError"
+                                  }
+                                ],
+                                "usr": "s:Sq"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsAudio@objc(cs)AIBudsAudioFilePlayer(im)setOnPlaybackDidStop:",
+                "mangledName": "$s11AIBudsAudio0B10FilePlayerC17onPlaybackDidStopyAA0fH6ReasonO_So7NSErrorCSgtcSgvs",
+                "moduleName": "AIBudsAudio",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11AIBudsAudio0B10FilePlayerC17onPlaybackDidStopyAA0fH6ReasonO_So7NSErrorCSgtcSgvM",
+                "mangledName": "$s11AIBudsAudio0B10FilePlayerC17onPlaybackDidStopyAA0fH6ReasonO_So7NSErrorCSgtcSgvM",
+                "moduleName": "AIBudsAudio",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "onProgressUpdate",
+            "printedName": "onProgressUpdate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Swift.Double, Swift.Double) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Double, Swift.Double) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(Swift.Double, Swift.Double)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Double",
+                            "printedName": "Swift.Double",
+                            "usr": "s:Sd"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Double",
+                            "printedName": "Swift.Double",
+                            "usr": "s:Sd"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBudsAudio@objc(cs)AIBudsAudioFilePlayer(py)onProgressUpdate",
+            "mangledName": "$s11AIBudsAudio0B10FilePlayerC16onProgressUpdateySd_SdtcSgvp",
+            "moduleName": "AIBudsAudio",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "((Swift.Double, Swift.Double) -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Swift.Double, Swift.Double) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Tuple",
+                            "printedName": "(Swift.Double, Swift.Double)",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Double",
+                                "printedName": "Swift.Double",
+                                "usr": "s:Sd"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Double",
+                                "printedName": "Swift.Double",
+                                "usr": "s:Sd"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsAudio@objc(cs)AIBudsAudioFilePlayer(im)onProgressUpdate",
+                "mangledName": "$s11AIBudsAudio0B10FilePlayerC16onProgressUpdateySd_SdtcSgvg",
+                "moduleName": "AIBudsAudio",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "((Swift.Double, Swift.Double) -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Swift.Double, Swift.Double) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Tuple",
+                            "printedName": "(Swift.Double, Swift.Double)",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Double",
+                                "printedName": "Swift.Double",
+                                "usr": "s:Sd"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Double",
+                                "printedName": "Swift.Double",
+                                "usr": "s:Sd"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsAudio@objc(cs)AIBudsAudioFilePlayer(im)setOnProgressUpdate:",
+                "mangledName": "$s11AIBudsAudio0B10FilePlayerC16onProgressUpdateySd_SdtcSgvs",
+                "moduleName": "AIBudsAudio",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11AIBudsAudio0B10FilePlayerC16onProgressUpdateySd_SdtcSgvM",
+                "mangledName": "$s11AIBudsAudio0B10FilePlayerC16onProgressUpdateySd_SdtcSgvM",
+                "moduleName": "AIBudsAudio",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AudioFilePlayer",
+                "printedName": "AIBudsAudio.AudioFilePlayer",
+                "usr": "c:@M@AIBudsAudio@objc(cs)AIBudsAudioFilePlayer"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@AIBudsAudio@objc(cs)AIBudsAudioFilePlayer(im)init",
+            "mangledName": "$s11AIBudsAudio0B10FilePlayerCACycfc",
+            "moduleName": "AIBudsAudio",
+            "overriding": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "loadFile",
+            "printedName": "loadFile(at:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AIBudsAudio@objc(cs)AIBudsAudioFilePlayer(im)loadFileAt:",
+            "mangledName": "$s11AIBudsAudio0B10FilePlayerC04loadC02atSb10Foundation3URLV_tF",
+            "moduleName": "AIBudsAudio",
+            "objc_name": "loadFileAt:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "play",
+            "printedName": "play()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AIBudsAudio@objc(cs)AIBudsAudioFilePlayer(im)play",
+            "mangledName": "$s11AIBudsAudio0B10FilePlayerC4playSbyF",
+            "moduleName": "AIBudsAudio",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "pause",
+            "printedName": "pause()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AIBudsAudio@objc(cs)AIBudsAudioFilePlayer(im)pause",
+            "mangledName": "$s11AIBudsAudio0B10FilePlayerC5pauseyyF",
+            "moduleName": "AIBudsAudio",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "stop",
+            "printedName": "stop()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AIBudsAudio@objc(cs)AIBudsAudioFilePlayer(im)stop",
+            "mangledName": "$s11AIBudsAudio0B10FilePlayerC4stopyyF",
+            "moduleName": "AIBudsAudio",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "seek",
+            "printedName": "seek(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AIBudsAudio@objc(cs)AIBudsAudioFilePlayer(im)seekTo:",
+            "mangledName": "$s11AIBudsAudio0B10FilePlayerC4seek2toySd_tF",
+            "moduleName": "AIBudsAudio",
+            "objc_name": "seekTo:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@AIBudsAudio@objc(cs)AIBudsAudioFilePlayer",
+        "mangledName": "$s11AIBudsAudio0B10FilePlayerC",
+        "moduleName": "AIBudsAudio",
+        "objc_name": "AIBudsAudioFilePlayer",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AIBudsAudio",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "PlaybackStopReason",
         "printedName": "PlaybackStopReason",
@@ -16233,6 +18188,125 @@
       "value": "\"data\""
     },
     {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAudio\/AudioPlayer(音频播放器)\/AudioFilePlayer.swift",
+      "kind": "IntegerLiteral",
+      "offset": 384,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAudio\/AudioPlayer(音频播放器)\/AudioFilePlayer.swift",
+      "kind": "IntegerLiteral",
+      "offset": 460,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAudio\/AudioPlayer(音频播放器)\/AudioFilePlayer.swift",
+      "kind": "IntegerLiteral",
+      "offset": 536,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAudio\/AudioPlayer(音频播放器)\/AudioFilePlayer.swift",
+      "kind": "FloatLiteral",
+      "offset": 1704,
+      "length": 3,
+      "value": "0.1"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAudio\/AudioPlayer(音频播放器)\/AudioFilePlayer.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1803,
+      "length": 2,
+      "value": "-1"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAudio\/AudioPlayer(音频播放器)\/AudioFilePlayer.swift",
+      "kind": "StringLiteral",
+      "offset": 2350,
+      "length": 50,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAudio\/AudioPlayer(音频播放器)\/AudioFilePlayer.swift",
+      "kind": "StringLiteral",
+      "offset": 2375,
+      "length": 1,
+      "value": "\".queue.audio_file_player\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAudio\/AudioPlayer(音频播放器)\/AudioFilePlayer.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2544,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAudio\/AudioPlayer(音频播放器)\/AudioFilePlayer.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2651,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAudio\/AudioPlayer(音频播放器)\/AudioFilePlayer.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2765,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAudio\/AudioPlayer(音频播放器)\/AudioFilePlayer.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2871,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAudio\/AudioPlayer(音频播放器)\/AudioFilePlayer.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2978,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAudio\/AudioPlayer(音频播放器)\/AudioFilePlayer.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3069,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAudio\/AudioPlayer(音频播放器)\/AudioFilePlayer.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3166,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAudio\/AudioPlayer(音频播放器)\/AudioFilePlayer.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3267,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAudio\/AudioPlayer(音频播放器)\/AudioFilePlayer.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3652,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAudio\/AudioPlayer(音频播放器)\/AudioFilePlayer.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5029,
+      "length": 1,
+      "value": "0"
+    },
+    {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAudio\/AudioPlayer(音频播放器)\/PlaybackStopReason.swift",
       "kind": "IntegerLiteral",
       "offset": 332,
@@ -16318,15 +18392,22 @@
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAudio\/AudioPlayer(音频播放器)\/StreamingVoicePlayer.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2223,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAudio\/AudioPlayer(音频播放器)\/StreamingVoicePlayer.swift",
       "kind": "IntegerLiteral",
-      "offset": 2307,
+      "offset": 2416,
       "length": 5,
       "value": "16000"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAudio\/AudioPlayer(音频播放器)\/StreamingVoicePlayer.swift",
       "kind": "IntegerLiteral",
-      "offset": 2361,
+      "offset": 2470,
       "length": 1,
       "value": "1"
     },
@@ -16375,14 +18456,14 @@
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAudio\/AudioRecorder(录音)\/AudioRecorder.swift",
       "kind": "BooleanLiteral",
-      "offset": 1434,
+      "offset": 1478,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAudio\/AudioRecorder(录音)\/AudioRecorder.swift",
       "kind": "BooleanLiteral",
-      "offset": 7173,
+      "offset": 7217,
       "length": 5,
       "value": "false"
     },
@@ -17056,26 +19137,26 @@
       "kind": "StringLiteral",
       "offset": 502,
       "length": 14,
-      "value": "\"1.0.0-beta.7\""
+      "value": "\"1.0.0-beta.8\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAudio\/AIBudsAudio.swift",
       "kind": "StringLiteral",
       "offset": 632,
-      "length": 13,
-      "value": "\"20260531001\""
-    },
-    {
-      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAudio\/AIBudsAudio.swift",
-      "kind": "StringLiteral",
-      "offset": 747,
       "length": 12,
-      "value": "\"2026-05-31\""
+      "value": "\"2026070401\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAudio\/AIBudsAudio.swift",
       "kind": "StringLiteral",
-      "offset": 840,
+      "offset": 746,
+      "length": 12,
+      "value": "\"2026-07-04\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAudio\/AIBudsAudio.swift",
+      "kind": "StringLiteral",
+      "offset": 839,
       "length": 31,
       "value": "\"com.topstep.sdks.aibuds.audio\""
     },

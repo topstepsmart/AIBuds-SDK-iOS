@@ -241,6 +241,65 @@ typedef void (^AIBudsFileImportSpeedHandler)(uint64_t speed);
 typedef void (^AIBudsFileImportBatchProgressHandler)(NSInteger fileIndex,
                                                      NSInteger totalFileCount);
 
+/// Callback block for rtsp live streaming configure hotspot starting
+typedef void (^AIBudsLiveStreamingConfigureHotspotStartingHandler)(void);
+
+/// Callback block for rtsp live streaming configure hotspot completion
+/// - Parameters:
+///   - success: whether the configuration succeeded
+///   - error: error information if failed
+typedef void (^AIBudsLiveStreamingHotspotConfigureCompletionHandler)(BOOL success,
+                                                                     NSError *_Nullable error);
+
+/// Callback block for entering live streaming mode starting
+typedef void (^AIBudsEnterLiveStreamingModeStartingHandler)(void);
+
+/// Callback block for entering live streaming mode completion
+/// - Parameters:
+///   - success: whether entering live streaming mode succeeded
+///   - error: error information if failed
+typedef void (^AIBudsEnterLiveStreamingModeCompletionHandler)(BOOL success,
+                                                              NSError *_Nullable error);
+
+/// Callback block for waiting for device hotspot open during live streaming session.
+typedef void (^AIBudsLiveStreamingStartingToWaitForHotspotOpenHandler)(void);
+
+/// Callback block for live streaming connecting device hotspot starting
+/// - Parameters:
+///   - ssid: the SSID of the device hotspot
+typedef void (^AIBudsLiveStreamingConnectDeviceHotspotStartingHandler)(NSString *ssid);
+
+/// Callback block for live streaming connecting device hotspot completion
+/// - Parameters:
+///   - success: whether the connection succeeded
+///   - error: error information if failed
+typedef void (^AIBudsLiveStreamingDeviceHotspotConnectCompletionHandler)(BOOL success,
+                                                                         NSError *_Nullable error);
+
+/// Callback when rtsp live streaming address is received
+/// - Parameters:
+///   - rtspAddress: the RTSP live streaming address, for example: "rtsp://192.168.8.123:80/media/stream"
+typedef void (^AIBudsLiveStreamingRtspAddressReceivedHandler)(NSString *rtspAddress);
+
+/// Callback block for live streaming session start completion
+/// - Parameters:
+///   - success: whether the live streaming session start succeeded
+///   - error: error information if failed
+typedef void (^AIBudsLiveStreamingSessionStartCompletionHandler)(BOOL success,
+                                                                 NSError *_Nullable error);
+
+/// Callback when jpeg live streaming data is received
+/// - Parameters:
+///   - data: the jpeg live streaming data
+typedef void (^AIBudsLiveStreamingJpegDataReceivedHandler)(NSData *jpegData);
+
+/// The live streaming session finish completion callback
+/// - Parameters:
+///   - isUserInitiatedStop: whether the live streaming session is stopped by user or not
+///   - error: error information if stopped with an interrupt
+typedef void (^AIBudsLiveStreamingSessionFinishHandler)(BOOL isUserInitiatedStop,
+                                                        NSError *_Nullable error);
+
 NS_ASSUME_NONNULL_END
 
 #endif /* AIBudsHandlers_h */

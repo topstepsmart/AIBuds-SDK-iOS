@@ -766,6 +766,23 @@
       },
       {
         "kind": "Import",
+        "name": "AIBudsFoundation",
+        "printedName": "AIBudsFoundation",
+        "declKind": "Import",
+        "moduleName": "ABMate"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ABMate",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -827,6 +844,40 @@
         "declAttributes": [
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ABMate",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AIBudsFoundation",
+        "printedName": "AIBudsFoundation",
+        "declKind": "Import",
+        "moduleName": "ABMate"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ABMate",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AIBudsFoundation",
+        "printedName": "AIBudsFoundation",
+        "declKind": "Import",
+        "moduleName": "ABMate"
       },
       {
         "kind": "Import",
@@ -5993,6 +6044,298 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "CustomLogSignature",
+        "printedName": "CustomLogSignature",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "eq",
+            "printedName": "eq",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ABMate.CustomLogSignature.Type) -> ABMate.CustomLogSignature",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CustomLogSignature",
+                    "printedName": "ABMate.CustomLogSignature",
+                    "usr": "c:@M@ABMate@E@ABMateCustomLogSignature"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ABMate.CustomLogSignature.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CustomLogSignature",
+                        "printedName": "ABMate.CustomLogSignature",
+                        "usr": "c:@M@ABMate@E@ABMateCustomLogSignature"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@ABMate@E@ABMateCustomLogSignature@ABMateCustomLogSignatureEq",
+            "mangledName": "$s6ABMate18CustomLogSignatureO2eqyA2CmF",
+            "moduleName": "ABMate",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "ABMate.CustomLogSignature?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CustomLogSignature",
+                    "printedName": "ABMate.CustomLogSignature",
+                    "usr": "c:@M@ABMate@E@ABMateCustomLogSignature"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UInt32",
+                "printedName": "Swift.UInt32",
+                "usr": "s:s6UInt32V"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:6ABMate18CustomLogSignatureO8rawValueACSgs6UInt32V_tcfc",
+            "mangledName": "$s6ABMate18CustomLogSignatureO8rawValueACSgs6UInt32V_tcfc",
+            "moduleName": "ABMate",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UInt32",
+                "printedName": "Swift.UInt32",
+                "usr": "s:s6UInt32V"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6ABMate18CustomLogSignatureO8rawValues6UInt32Vvp",
+            "mangledName": "$s6ABMate18CustomLogSignatureO8rawValues6UInt32Vvp",
+            "moduleName": "ABMate",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UInt32",
+                    "printedName": "Swift.UInt32",
+                    "usr": "s:s6UInt32V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6ABMate18CustomLogSignatureO8rawValues6UInt32Vvg",
+                "mangledName": "$s6ABMate18CustomLogSignatureO8rawValues6UInt32Vvg",
+                "moduleName": "ABMate",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "description",
+            "printedName": "description",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6ABMate18CustomLogSignatureO11descriptionSSvp",
+            "mangledName": "$s6ABMate18CustomLogSignatureO11descriptionSSvp",
+            "moduleName": "ABMate",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6ABMate18CustomLogSignatureO11descriptionSSvg",
+                "mangledName": "$s6ABMate18CustomLogSignatureO11descriptionSSvg",
+                "moduleName": "ABMate",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "debugDescription",
+            "printedName": "debugDescription",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6ABMate18CustomLogSignatureO16debugDescriptionSSvp",
+            "mangledName": "$s6ABMate18CustomLogSignatureO16debugDescriptionSSvp",
+            "moduleName": "ABMate",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6ABMate18CustomLogSignatureO16debugDescriptionSSvg",
+                "mangledName": "$s6ABMate18CustomLogSignatureO16debugDescriptionSSvg",
+                "moduleName": "ABMate",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "c:@M@ABMate@E@ABMateCustomLogSignature",
+        "mangledName": "$s6ABMate18CustomLogSignatureO",
+        "moduleName": "ABMate",
+        "objc_name": "ABMateCustomLogSignature",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "enumRawTypeName": "UInt32",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UInt32",
+                    "printedName": "Swift.UInt32",
+                    "usr": "s:s6UInt32V"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ABMate",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "DebugLogCategory",
         "printedName": "DebugLogCategory",
         "children": [
@@ -6163,6 +6506,90 @@
               "ObjC"
             ],
             "fixedbinaryorder": 3
+          },
+          {
+            "kind": "Var",
+            "name": "aging",
+            "printedName": "aging",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ABMate.DebugLogCategory.Type) -> ABMate.DebugLogCategory",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DebugLogCategory",
+                    "printedName": "ABMate.DebugLogCategory",
+                    "usr": "c:@M@ABMate@E@ABMateDebugLogCategory"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ABMate.DebugLogCategory.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DebugLogCategory",
+                        "printedName": "ABMate.DebugLogCategory",
+                        "usr": "c:@M@ABMate@E@ABMateDebugLogCategory"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@ABMate@E@ABMateDebugLogCategory@ABMateDebugLogCategoryAging",
+            "mangledName": "$s6ABMate16DebugLogCategoryO5agingyA2CmF",
+            "moduleName": "ABMate",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 4
+          },
+          {
+            "kind": "Var",
+            "name": "custom",
+            "printedName": "custom",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ABMate.DebugLogCategory.Type) -> ABMate.DebugLogCategory",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DebugLogCategory",
+                    "printedName": "ABMate.DebugLogCategory",
+                    "usr": "c:@M@ABMate@E@ABMateDebugLogCategory"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ABMate.DebugLogCategory.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DebugLogCategory",
+                        "printedName": "ABMate.DebugLogCategory",
+                        "usr": "c:@M@ABMate@E@ABMateDebugLogCategory"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@ABMate@E@ABMateDebugLogCategory@ABMateDebugLogCategoryCustom",
+            "mangledName": "$s6ABMate16DebugLogCategoryO6customyA2CmF",
+            "moduleName": "ABMate",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 5
           },
           {
             "kind": "Constructor",
@@ -11733,6 +12160,65 @@
       },
       {
         "kind": "Import",
+        "name": "AIBudsLog",
+        "printedName": "AIBudsLog",
+        "declKind": "Import",
+        "moduleName": "ABMate"
+      },
+      {
+        "kind": "Import",
+        "name": "AIBuds",
+        "printedName": "AIBuds",
+        "declKind": "Import",
+        "moduleName": "ABMate"
+      },
+      {
+        "kind": "Import",
+        "name": "AIBudsFoundation",
+        "printedName": "AIBudsFoundation",
+        "declKind": "Import",
+        "moduleName": "ABMate"
+      },
+      {
+        "kind": "Import",
+        "name": "Dispatch",
+        "printedName": "Dispatch",
+        "declKind": "Import",
+        "moduleName": "ABMate"
+      },
+      {
+        "kind": "Import",
+        "name": "Network",
+        "printedName": "Network",
+        "declKind": "Import",
+        "moduleName": "ABMate"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreLocation",
+        "printedName": "CoreLocation",
+        "declKind": "Import",
+        "moduleName": "ABMate"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "ABMate"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ABMate",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "AIBudsFoundation",
         "printedName": "AIBudsFoundation",
         "declKind": "Import",
@@ -13866,126 +14352,133 @@
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Commands(指令)\/Defines(定义)\/CommandKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 3765,
+      "offset": 3729,
+      "length": 4,
+      "value": "0xE8"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Commands(指令)\/Defines(定义)\/CommandKey.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3818,
       "length": 4,
       "value": "0xE9"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Commands(指令)\/Defines(定义)\/CommandKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 3829,
+      "offset": 3882,
       "length": 4,
       "value": "0xEA"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Commands(指令)\/Defines(定义)\/CommandKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 3884,
+      "offset": 3937,
       "length": 4,
       "value": "0xEB"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Commands(指令)\/Defines(定义)\/CommandKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 3984,
+      "offset": 4037,
       "length": 4,
       "value": "0xEC"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Commands(指令)\/Defines(定义)\/CommandKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 4092,
+      "offset": 4145,
       "length": 4,
       "value": "0xED"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Commands(指令)\/Defines(定义)\/CommandKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 4200,
+      "offset": 4253,
       "length": 4,
       "value": "0xEE"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Commands(指令)\/Defines(定义)\/CommandKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 4255,
+      "offset": 4308,
       "length": 4,
       "value": "0xEF"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Commands(指令)\/Defines(定义)\/CommandKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 4316,
+      "offset": 4369,
       "length": 4,
       "value": "0xF0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Commands(指令)\/Defines(定义)\/CommandKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 4381,
+      "offset": 4434,
       "length": 4,
       "value": "0xF3"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Commands(指令)\/Defines(定义)\/CommandKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 4491,
+      "offset": 4544,
       "length": 4,
       "value": "0xF4"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Commands(指令)\/Defines(定义)\/CommandKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 4538,
+      "offset": 4591,
       "length": 4,
       "value": "0xF5"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Commands(指令)\/Defines(定义)\/CommandKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 4583,
+      "offset": 4636,
       "length": 4,
       "value": "0xF6"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Commands(指令)\/Defines(定义)\/CommandKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 4651,
+      "offset": 4704,
       "length": 4,
       "value": "0xF7"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Commands(指令)\/Defines(定义)\/CommandKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 4733,
+      "offset": 4786,
       "length": 4,
       "value": "0xF8"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Commands(指令)\/Defines(定义)\/CommandKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 4845,
+      "offset": 4898,
       "length": 4,
       "value": "0xF9"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Commands(指令)\/Defines(定义)\/CommandKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 4905,
+      "offset": 4958,
       "length": 4,
       "value": "0xFB"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Commands(指令)\/Defines(定义)\/CommandKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 4985,
+      "offset": 5038,
       "length": 4,
       "value": "0xFC"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Commands(指令)\/Defines(定义)\/CommandKey.swift",
       "kind": "IntegerLiteral",
-      "offset": 5056,
+      "offset": 5109,
       "length": 4,
       "value": "0xFF"
     },
@@ -15971,6 +16464,13 @@
       "value": "1"
     },
     {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Defines(定义)\/DeviceDebugLog(设备端调试日志)\/CustomLogSignature.swift",
+      "kind": "IntegerLiteral",
+      "offset": 365,
+      "length": 10,
+      "value": "0x51455145"
+    },
+    {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Defines(定义)\/DeviceDebugLog(设备端调试日志)\/DebugLogCategory.swift",
       "kind": "IntegerLiteral",
       "offset": 318,
@@ -15997,6 +16497,20 @@
       "offset": 498,
       "length": 1,
       "value": "3"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Defines(定义)\/DeviceDebugLog(设备端调试日志)\/DebugLogCategory.swift",
+      "kind": "IntegerLiteral",
+      "offset": 540,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Defines(定义)\/DeviceDebugLog(设备端调试日志)\/DebugLogCategory.swift",
+      "kind": "IntegerLiteral",
+      "offset": 580,
+      "length": 1,
+      "value": "5"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Defines(定义)\/DeviceDebugLog(设备端调试日志)\/EventLogSignature.swift",
@@ -16778,385 +17292,385 @@
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "BooleanLiteral",
-      "offset": 2849,
+      "offset": 2943,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "BooleanLiteral",
-      "offset": 3432,
+      "offset": 3526,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "BooleanLiteral",
-      "offset": 10178,
+      "offset": 10272,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 13556,
+      "offset": 13650,
       "length": 6,
       "value": "\"name\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 13583,
+      "offset": 13677,
       "length": 6,
       "value": "\"uuid\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 13618,
+      "offset": 13712,
       "length": 14,
       "value": "\"ctkdDeviceId\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 13664,
+      "offset": 13758,
       "length": 17,
       "value": "\"lastConnectTime\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 13708,
+      "offset": 13802,
       "length": 12,
       "value": "\"bindUserId\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 13749,
+      "offset": 13843,
       "length": 14,
       "value": "\"userBindTime\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 13795,
+      "offset": 13889,
       "length": 17,
       "value": "\"isAlreadyUnbind\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 13836,
+      "offset": 13930,
       "length": 9,
       "value": "\"advData\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 13872,
+      "offset": 13966,
       "length": 12,
       "value": "\"screenName\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 13910,
+      "offset": 14004,
       "length": 11,
       "value": "\"thumbnail\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 13951,
+      "offset": 14045,
       "length": 15,
       "value": "\"customContent\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 13993,
+      "offset": 14087,
       "length": 12,
       "value": "\"beaconData\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 14036,
+      "offset": 14130,
       "length": 16,
       "value": "\"connectContext\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 14101,
+      "offset": 14195,
       "length": 34,
       "value": "\"shouldAutoReconnectWhenAppLaunch\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "BooleanLiteral",
-      "offset": 14213,
+      "offset": 14307,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 17503,
+      "offset": 17597,
       "length": 1631,
       "value": "\"\n┌─────────── Device ─────────────────────┐\n│ Name: \""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 17660,
+      "offset": 17754,
       "length": 3,
       "value": "\"\n│ UUID: \""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 17697,
+      "offset": 17791,
       "length": 1,
       "value": "\"\n| Device ID for CTKD: \""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 17751,
+      "offset": 17845,
       "length": 5,
       "value": "\"nil\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 17757,
+      "offset": 17851,
       "length": 3,
       "value": "\"\n│ MAC Address: \""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 17799,
+      "offset": 17893,
       "length": 5,
       "value": "\"nil\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 17805,
+      "offset": 17899,
       "length": 36,
       "value": "\"\n├─────────── Device Info ─────────────────────────┤\n│ Product: \""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 17973,
+      "offset": 18067,
       "length": 3,
       "value": "\"\n│ Manufacturer Data: \""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 18034,
+      "offset": 18128,
       "length": 6,
       "value": "\"None\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 18041,
+      "offset": 18135,
       "length": 3,
       "value": "\"\n│ Advertisement Data: \""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 18110,
+      "offset": 18204,
       "length": 4,
       "value": "\"\n\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 18122,
+      "offset": 18216,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 18129,
+      "offset": 18223,
       "length": 6,
       "value": "\"None\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 18136,
+      "offset": 18230,
       "length": 36,
       "value": "\" \n├─────────── Connect & Binding Info ──────────────┤\n│ Last Connect: \""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 18312,
+      "offset": 18406,
       "length": 7,
       "value": "\"Never\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 18320,
+      "offset": 18414,
       "length": 3,
       "value": "\"\n│ Bind User ID: \""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 18363,
+      "offset": 18457,
       "length": 6,
       "value": "\"None\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 18370,
+      "offset": 18464,
       "length": 3,
       "value": "\"\n│ Bind Time: \""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 18425,
+      "offset": 18519,
       "length": 7,
       "value": "\"Never\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 18433,
+      "offset": 18527,
       "length": 3,
       "value": "\"\n│ Is Unbound: \""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 18478,
+      "offset": 18572,
       "length": 5,
       "value": "\"Yes\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 18486,
+      "offset": 18580,
       "length": 4,
       "value": "\"No\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 18491,
+      "offset": 18585,
       "length": 3,
       "value": "\"\n│ Should Auto Reconnect On App Launch: \""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 18578,
+      "offset": 18672,
       "length": 5,
       "value": "\"Yes\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 18586,
+      "offset": 18680,
       "length": 4,
       "value": "\"No\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 18591,
+      "offset": 18685,
       "length": 36,
       "value": "\"\n├─────────── Display Info ────────────────────────┤\n│ Screen Name: \""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 18767,
+      "offset": 18861,
       "length": 6,
       "value": "\"None\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 18774,
+      "offset": 18868,
       "length": 3,
       "value": "\"\n│ Has Thumbnail: \""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 18823,
+      "offset": 18917,
       "length": 5,
       "value": "\"Yes\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 18831,
+      "offset": 18925,
       "length": 4,
       "value": "\"No\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 18836,
+      "offset": 18930,
       "length": 3,
       "value": "\"\n│ Custom Content: \""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 18884,
+      "offset": 18978,
       "length": 6,
       "value": "\"None\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 18891,
+      "offset": 18985,
       "length": 153,
       "value": "\"\n└─────────────────────────────────────────────────┘\n\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 19084,
+      "offset": 19178,
       "length": 32,
       "value": "\"\n\n\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 19115,
+      "offset": 19209,
       "length": 5,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 19119,
+      "offset": 19213,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 19122,
+      "offset": 19216,
       "length": 28022,
       "value": "\"\""
     },
@@ -17275,14 +17789,14 @@
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/FileImport(文件导入)\/FileImportTask.swift",
       "kind": "IntegerLiteral",
-      "offset": 16873,
+      "offset": 16914,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/FileImport(文件导入)\/FileImportTask.swift",
       "kind": "IntegerLiteral",
-      "offset": 16896,
+      "offset": 16937,
       "length": 2,
       "value": "10"
     },
@@ -17334,6 +17848,48 @@
       "offset": 1836,
       "length": 3,
       "value": "2.0"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/LiveStreaming(直播)\/LiveStreamingSession.swift",
+      "kind": "StringLiteral",
+      "offset": 568,
+      "length": 13,
+      "value": "\"k8#mX2@pM7!\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/LiveStreaming(直播)\/LiveStreamingSession.swift",
+      "kind": "StringLiteral",
+      "offset": 674,
+      "length": 46,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/LiveStreaming(直播)\/LiveStreamingSession.swift",
+      "kind": "StringLiteral",
+      "offset": 699,
+      "length": 1,
+      "value": "\".livestreaming.queue\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/LiveStreaming(直播)\/LiveStreamingSession.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3610,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/LiveStreaming(直播)\/LiveStreamingSession.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3690,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/LiveStreaming(直播)\/LiveStreamingSession.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3804,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/OTA(固件升级)\/OtaState.swift",
@@ -17550,21 +18106,21 @@
       "kind": "StringLiteral",
       "offset": 519,
       "length": 14,
-      "value": "\"1.0.0-beta.7\""
+      "value": "\"1.0.0-beta.8\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/ABMate.swift",
       "kind": "StringLiteral",
       "offset": 649,
       "length": 13,
-      "value": "\"20260531001\""
+      "value": "\"20260704001\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/ABMate.swift",
       "kind": "StringLiteral",
       "offset": 764,
       "length": 12,
-      "value": "\"2026-05-31\""
+      "value": "\"2026-07-04\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/ABMate.swift",

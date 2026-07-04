@@ -6,55 +6,167 @@
 	<dict>
 		<key>Headers/ABMate-Swift.h</key>
 		<data>
-		sYZmsWVmfalhpqgKPY4M4DNRCaM=
+		Sk6hOYBQ3bhJGDPsZJDG/gzfyIc=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		edZQpA2fEHQr5/0W+MQcNgeu9bE=
+		ENTWHqX1eXDjCPazH1b2Ko8BBbI=
 		</data>
 		<key>Modules/ABMate.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		hmlVfWJ/mKwqPDV1gusF75Sqz88=
+		iewvDiDYlSk8Ztnvxi/Ok2Xix2k=
 		</data>
 		<key>Modules/ABMate.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		R9Tci0+BaijktnhTvJkK+J+a+wE=
+		VDIcw5lVypftk5cJLBUVGMz+Ru8=
 		</data>
 		<key>Modules/ABMate.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		3GHP10LPGsBIrdzBQKXvbfIEUXg=
+		/Pj/o9SEOqXefQefUqQuG8IbXok=
 		</data>
 		<key>Modules/ABMate.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		R9Tci0+BaijktnhTvJkK+J+a+wE=
+		VDIcw5lVypftk5cJLBUVGMz+Ru8=
 		</data>
 		<key>Modules/ABMate.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		k0AXFC+qcCHUDhl8VMq3le2hWUY=
+		2jN4SM17mIyF9L4YtEVEdI0q07c=
 		</data>
 		<key>Modules/ABMate.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		hmlVfWJ/mKwqPDV1gusF75Sqz88=
+		iewvDiDYlSk8Ztnvxi/Ok2Xix2k=
 		</data>
 		<key>Modules/ABMate.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		xbNeiJHCbkYYQ/8URnvWO9idOsk=
+		z8mQ9mSLg3sdyqBxYK95oz3pVlU=
 		</data>
 		<key>Modules/ABMate.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		rJwPERHx1FgGAmqAZkRCJJKXk4M=
+		55rgOsvFUzfjtGGJj5j80t99Mak=
 		</data>
 		<key>Modules/ABMate.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		xbNeiJHCbkYYQ/8URnvWO9idOsk=
+		z8mQ9mSLg3sdyqBxYK95oz3pVlU=
 		</data>
 		<key>Modules/ABMate.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		A7lAbl0Yb+WX9ajPsP55/tZx2vQ=
+		x1gxXR7px+FHFMa/xcwAF1VFbps=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		YchpWVT48030TcyxHOxI7jWzm+A=
+		</data>
+		<key>ai-audio-recording-detail.html</key>
+		<data>
+		E/bqr5l8GAGTNQZxMC91e9l5EVk=
+		</data>
+		<key>ai-audio-recording.html</key>
+		<data>
+		U02oEvyd5vdwLrCx4p1hLl+UKBw=
+		</data>
+		<key>ai-chat-detail.html</key>
+		<data>
+		1gXek/7NSyx6JYgL7mvz0z3gHNc=
+		</data>
+		<key>ai-chat.html</key>
+		<data>
+		D1UmILn1IWwoWg6YPjX22ikenx0=
+		</data>
+		<key>css/dashboard.css</key>
+		<data>
+		DmNVUFFgfTi0w4etEq9DkOCQj2A=
+		</data>
+		<key>css/login.css</key>
+		<data>
+		Z82Udx51l4jmj4ys6yNG8TSIlDI=
+		</data>
+		<key>css/style.css</key>
+		<data>
+		fvPMqv5C1SXesBLT/juR+ROIgq8=
+		</data>
+		<key>dashboard.html</key>
+		<data>
+		SggQZV78Ni1iwY6EvfVa5CazInk=
+		</data>
+		<key>js/ai-audio-recording-detail.js</key>
+		<data>
+		wnStfeVRKVqiC9P8aWJgVQj6+D4=
+		</data>
+		<key>js/ai-audio-recording-report-export.js</key>
+		<data>
+		5tnh9RU78JgDU/fz5Gp1fDvj3No=
+		</data>
+		<key>js/ai-audio-recording.js</key>
+		<data>
+		ebSNq1aMpaAWCoocJOCfCctIQic=
+		</data>
+		<key>js/ai-chat-detail.js</key>
+		<data>
+		v/v/QEsFFqEfVONcN3B3/3fPDqs=
+		</data>
+		<key>js/ai-chat-report-export.js</key>
+		<data>
+		sI+sa+NgEkCfc/xTbjFHMMtatsQ=
+		</data>
+		<key>js/ai-chat.js</key>
+		<data>
+		k8nZGVfY4u6jUzXJUa0WCo8MZuQ=
+		</data>
+		<key>js/chart.js</key>
+		<data>
+		y1VYFBBM+4v4jk0bIQM7SVw8Wnc=
+		</data>
+		<key>js/common.js</key>
+		<data>
+		/+uAjvZIkAAQtBk9+bJl3FYuQM0=
+		</data>
+		<key>js/config.js</key>
+		<data>
+		dWHvroLQoPy8h0ht7bzUNX+T7IA=
+		</data>
+		<key>js/dashboard.js</key>
+		<data>
+		WKkZXIX266rELFO+z1gRLSVbwmY=
+		</data>
+		<key>js/login.js</key>
+		<data>
+		+GOinlnjbTTgpFx4L+3+f+xTlf8=
+		</data>
+		<key>js/mock-data.js</key>
+		<data>
+		utS+zy2pmCJ60EUF+vKNJioQYAc=
+		</data>
+		<key>js/overview.js</key>
+		<data>
+		ZtqwiGCEEUZAPx/LdZ5IQAcOSoY=
+		</data>
+		<key>js/translation-detail.js</key>
+		<data>
+		wp34EQGiOL4Uu/XOdZ0Q14aGgZU=
+		</data>
+		<key>js/translation-report-export.js</key>
+		<data>
+		dkMnq4pdHW1Af1eykX5c65nMzu4=
+		</data>
+		<key>js/translation.js</key>
+		<data>
+		dB7wMJZfeWXS6WTV4UBO1x0urR8=
+		</data>
+		<key>login.html</key>
+		<data>
+		ol4PVJKxcfmxE0DBBDa2ied2b+w=
+		</data>
+		<key>overview.html</key>
+		<data>
+		hZ3YDR7ThXDi8URvrErjbX4Gqxw=
+		</data>
+		<key>translation-detail.html</key>
+		<data>
+		XyjCL0M0ah4WZflJYwDpZOmgvCA=
+		</data>
+		<key>translation.html</key>
+		<data>
+		cyl5ivDgTVIUcycuvNEn/WBQ0wU=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -63,77 +175,77 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			pFh0BGtfGb7fKVukhE3Yxw/vEFH/kXiTav0gGTxunKI=
+			4YmtPd0Vgd+fV7414Ei59q/Mo1gnhBPHtesTsc2AIoo=
 			</data>
 		</dict>
 		<key>Modules/ABMate.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Z3TIc/qfAsjyrlk2Kf8hDiAI8w2nM2jeCAVZO0TPFK0=
+			uWuAc5gKkmFgKUL2spzO0T/DYx/2LS2aSXYnokKT5DY=
 			</data>
 		</dict>
 		<key>Modules/ABMate.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			GhdwJUiy4lqwpsptOMlwDXKUsCEhP/Xuguug5+7Uzkc=
+			Ay4CpB4Nw1+UwhXq/w4amP2H3APDYyWOM2/wzEWfEho=
 			</data>
 		</dict>
 		<key>Modules/ABMate.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			LZ8ECV7qWfOtYj53zYvy4Qc1yikn6ZLgx5XkhSQWmFs=
+			KpT+8cZ2Jp3Pg/HQp1MuxXVFghooaPSKd2ma4hidjo4=
 			</data>
 		</dict>
 		<key>Modules/ABMate.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			GhdwJUiy4lqwpsptOMlwDXKUsCEhP/Xuguug5+7Uzkc=
+			Ay4CpB4Nw1+UwhXq/w4amP2H3APDYyWOM2/wzEWfEho=
 			</data>
 		</dict>
 		<key>Modules/ABMate.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4Bc0EIeS2cap7telCMSWZcsVYz4HEtlxn5kgfu0xC68=
+			eG1YsEi4KM5kU6FYEkDbvokiAlWghGVXajAX31jSRyE=
 			</data>
 		</dict>
 		<key>Modules/ABMate.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Z3TIc/qfAsjyrlk2Kf8hDiAI8w2nM2jeCAVZO0TPFK0=
+			uWuAc5gKkmFgKUL2spzO0T/DYx/2LS2aSXYnokKT5DY=
 			</data>
 		</dict>
 		<key>Modules/ABMate.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			PejcqZDy3UbSnhQqkG1OzcyFSGuA3fYXfSV9hv+lIks=
+			4pM6uKy7dgJC59X/B6Ctj+h6C0WohDLszrOie0spZy4=
 			</data>
 		</dict>
 		<key>Modules/ABMate.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			6J1kQf1Gq+SJSsdonV3wqxdNndgpB7M9wxJLpGWHSVA=
+			IPuAFgFrflgEPTWhnPZBo23n3UU4ot65nJ0Rc3n6zHA=
 			</data>
 		</dict>
 		<key>Modules/ABMate.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			PejcqZDy3UbSnhQqkG1OzcyFSGuA3fYXfSV9hv+lIks=
+			4pM6uKy7dgJC59X/B6Ctj+h6C0WohDLszrOie0spZy4=
 			</data>
 		</dict>
 		<key>Modules/ABMate.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			z2+Gevj5dcqfyZkg+ZxP6p9v1egbVOcl1XRuDk/mA68=
+			S5zTeP6RjovZOFlIW+8/hTb0OXQO4bW/zSip5B+4Kl4=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -141,6 +253,202 @@
 			<key>hash2</key>
 			<data>
 			dptaGmPGBylx5q6Clcexn/8vr85lqlH+kJNx2lKaB7A=
+			</data>
+		</dict>
+		<key>ai-audio-recording-detail.html</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			sUI/siXhSwPtJvuhM68PkHmQT4WZJGVyDexCirnPNTk=
+			</data>
+		</dict>
+		<key>ai-audio-recording.html</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			rnLzbehyXT7i0rgL6w6tFcsZBAYEj/eRyEp9S/MDk30=
+			</data>
+		</dict>
+		<key>ai-chat-detail.html</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			wJFZ0/wavVmu0XOeVjCq4pHjdKSP0vWaLY7JHu4vLh4=
+			</data>
+		</dict>
+		<key>ai-chat.html</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			2BRgxCZysKE2+N06jCMFRHjxWAwkguqj5giWZlErA+k=
+			</data>
+		</dict>
+		<key>css/dashboard.css</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			5JAXJc09S6KyU0+f+CMnz4kOV/KDaSodWyVOl1FfWNg=
+			</data>
+		</dict>
+		<key>css/login.css</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			UoTlTAKfEB0Xg+nuL/+iTI2O2Yf5CCVRgz0JK35UQto=
+			</data>
+		</dict>
+		<key>css/style.css</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			30vroj1uK+m4S42qiyp65AV23hI+cfmpWE8/GwoBAuE=
+			</data>
+		</dict>
+		<key>dashboard.html</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			bcep679cSzCNXbRJY0/KB1fPkvb9Kxsy3PLl7t2WZQU=
+			</data>
+		</dict>
+		<key>js/ai-audio-recording-detail.js</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			4r8P3n7blXWQTIdgYQHsHE5KhfSo66K6iSU24HhQpcw=
+			</data>
+		</dict>
+		<key>js/ai-audio-recording-report-export.js</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			kUpXAR9t4wMFLaqwBzXIIHxpR/MACd5Qqe63VKI4z2M=
+			</data>
+		</dict>
+		<key>js/ai-audio-recording.js</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			LqnD981gsAej7yYFdTr6Z3XdQSGWoZFjZKiB6kE9L1M=
+			</data>
+		</dict>
+		<key>js/ai-chat-detail.js</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			jKS5UjwrmrkMJeEzcXMektf78IfZaY84/3q8p5c/xa4=
+			</data>
+		</dict>
+		<key>js/ai-chat-report-export.js</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			JLQ7vQ9Wd0EI4u0dZoh0YOXtCwBk3xPiH7T0CJ3+rEU=
+			</data>
+		</dict>
+		<key>js/ai-chat.js</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			US7aBhhMvNRDLv0yvPaO8XmH5P5VFgUFcqdSiLlLgWI=
+			</data>
+		</dict>
+		<key>js/chart.js</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			SERKgtTty1vsDxll+qzd4Y2cF9swY9BCq62i9wXJ9Uo=
+			</data>
+		</dict>
+		<key>js/common.js</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			W1bZYaicD+YKE5WaIo+WV3tDlhtfvC8dAzSnNINC6l8=
+			</data>
+		</dict>
+		<key>js/config.js</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			BJzTXA1OF9ba+uJToo7YHhxfDEntQhhHFmiK1XDAck0=
+			</data>
+		</dict>
+		<key>js/dashboard.js</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ZPPuXlKJJ/WmRk2JEYtL2NNRj85PB2GC6Os6kuzTZD0=
+			</data>
+		</dict>
+		<key>js/login.js</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			pQGEeoDgZjciR5Sbv0eFee/X2cqiO0UvP/Fme/UjAZY=
+			</data>
+		</dict>
+		<key>js/mock-data.js</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			YShiMFYmoxK5Mpf9tkeyE0Zw+oSQzDo0wLQKwBg5LQg=
+			</data>
+		</dict>
+		<key>js/overview.js</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			IEgAMmoBsuokOiFY6/TBNJ3HHZncJKIa2k2aqlnA/j4=
+			</data>
+		</dict>
+		<key>js/translation-detail.js</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Q6MQ3PVGU1kijB7CHhdd4a9XbU9jlEAzh47sh0WZrfQ=
+			</data>
+		</dict>
+		<key>js/translation-report-export.js</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Ee3Rd4jOo9i1QcqeFcwLlMcGbc69t9P22TO17Xa4Jac=
+			</data>
+		</dict>
+		<key>js/translation.js</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			coRA9yQpPDGWCS0WZE0nhgGC6zQf3hJZ8nL6vHp7ZpM=
+			</data>
+		</dict>
+		<key>login.html</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			TJYYsm3Pn+x0DxI/ybH90QDRDN3v+zPwb6KXQ3c5dlg=
+			</data>
+		</dict>
+		<key>overview.html</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			qoTCw/NFdKLT0tzlPRR/cjbCT5GX+jjO/T/Fumal0Hc=
+			</data>
+		</dict>
+		<key>translation-detail.html</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			eShM7ciWo23QmhTrDbRcDdGo4/IC1xHb3KyWbsiHb8g=
+			</data>
+		</dict>
+		<key>translation.html</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			s6g/51TL/Cgip+kdCpdOenQelq+ayPcH+vZoysGkASM=
 			</data>
 		</dict>
 	</dict>

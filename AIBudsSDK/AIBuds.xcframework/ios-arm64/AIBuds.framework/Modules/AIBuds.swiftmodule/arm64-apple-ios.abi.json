@@ -5092,6 +5092,718 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "SdkLiveStreamingErrorCode",
+        "printedName": "SdkLiveStreamingErrorCode",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "unknown",
+            "printedName": "unknown",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AIBuds.SdkLiveStreamingErrorCode.Type) -> AIBuds.SdkLiveStreamingErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SdkLiveStreamingErrorCode",
+                    "printedName": "AIBuds.SdkLiveStreamingErrorCode",
+                    "usr": "c:@M@AIBuds@E@AIBudsSdkLiveStreamingErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AIBuds.SdkLiveStreamingErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SdkLiveStreamingErrorCode",
+                        "printedName": "AIBuds.SdkLiveStreamingErrorCode",
+                        "usr": "c:@M@AIBuds@E@AIBudsSdkLiveStreamingErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AIBuds@E@AIBudsSdkLiveStreamingErrorCode@AIBudsSdkLiveStreamingErrorCodeUnknown",
+            "mangledName": "$s6AIBuds25SdkLiveStreamingErrorCodeO7unknownyA2CmF",
+            "moduleName": "AIBuds",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "deviceNotSupport",
+            "printedName": "deviceNotSupport",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AIBuds.SdkLiveStreamingErrorCode.Type) -> AIBuds.SdkLiveStreamingErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SdkLiveStreamingErrorCode",
+                    "printedName": "AIBuds.SdkLiveStreamingErrorCode",
+                    "usr": "c:@M@AIBuds@E@AIBudsSdkLiveStreamingErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AIBuds.SdkLiveStreamingErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SdkLiveStreamingErrorCode",
+                        "printedName": "AIBuds.SdkLiveStreamingErrorCode",
+                        "usr": "c:@M@AIBuds@E@AIBudsSdkLiveStreamingErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AIBuds@E@AIBudsSdkLiveStreamingErrorCode@AIBudsSdkLiveStreamingErrorCodeDeviceNotSupport",
+            "mangledName": "$s6AIBuds25SdkLiveStreamingErrorCodeO16deviceNotSupportyA2CmF",
+            "moduleName": "AIBuds",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Var",
+            "name": "hotspotDisconnectedDuringLiveStreaming",
+            "printedName": "hotspotDisconnectedDuringLiveStreaming",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AIBuds.SdkLiveStreamingErrorCode.Type) -> AIBuds.SdkLiveStreamingErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SdkLiveStreamingErrorCode",
+                    "printedName": "AIBuds.SdkLiveStreamingErrorCode",
+                    "usr": "c:@M@AIBuds@E@AIBudsSdkLiveStreamingErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AIBuds.SdkLiveStreamingErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SdkLiveStreamingErrorCode",
+                        "printedName": "AIBuds.SdkLiveStreamingErrorCode",
+                        "usr": "c:@M@AIBuds@E@AIBudsSdkLiveStreamingErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AIBuds@E@AIBudsSdkLiveStreamingErrorCode@AIBudsSdkLiveStreamingErrorCodeHotspotDisconnectedDuringLiveStreaming",
+            "mangledName": "$s6AIBuds25SdkLiveStreamingErrorCodeO025hotspotDisconnectedDuringcD0yA2CmF",
+            "moduleName": "AIBuds",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 2
+          },
+          {
+            "kind": "Var",
+            "name": "invalidHotspotConfig",
+            "printedName": "invalidHotspotConfig",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AIBuds.SdkLiveStreamingErrorCode.Type) -> AIBuds.SdkLiveStreamingErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SdkLiveStreamingErrorCode",
+                    "printedName": "AIBuds.SdkLiveStreamingErrorCode",
+                    "usr": "c:@M@AIBuds@E@AIBudsSdkLiveStreamingErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AIBuds.SdkLiveStreamingErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SdkLiveStreamingErrorCode",
+                        "printedName": "AIBuds.SdkLiveStreamingErrorCode",
+                        "usr": "c:@M@AIBuds@E@AIBudsSdkLiveStreamingErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AIBuds@E@AIBudsSdkLiveStreamingErrorCode@AIBudsSdkLiveStreamingErrorCodeInvalidHotspotConfig",
+            "mangledName": "$s6AIBuds25SdkLiveStreamingErrorCodeO20invalidHotspotConfigyA2CmF",
+            "moduleName": "AIBuds",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 3
+          },
+          {
+            "kind": "Var",
+            "name": "interruptedByShutdownOrLowBattery",
+            "printedName": "interruptedByShutdownOrLowBattery",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AIBuds.SdkLiveStreamingErrorCode.Type) -> AIBuds.SdkLiveStreamingErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SdkLiveStreamingErrorCode",
+                    "printedName": "AIBuds.SdkLiveStreamingErrorCode",
+                    "usr": "c:@M@AIBuds@E@AIBudsSdkLiveStreamingErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AIBuds.SdkLiveStreamingErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SdkLiveStreamingErrorCode",
+                        "printedName": "AIBuds.SdkLiveStreamingErrorCode",
+                        "usr": "c:@M@AIBuds@E@AIBudsSdkLiveStreamingErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AIBuds@E@AIBudsSdkLiveStreamingErrorCode@AIBudsSdkLiveStreamingErrorCodeInterruptedByShutdownOrLowBattery",
+            "mangledName": "$s6AIBuds25SdkLiveStreamingErrorCodeO33interruptedByShutdownOrLowBatteryyA2CmF",
+            "moduleName": "AIBuds",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 4
+          },
+          {
+            "kind": "Var",
+            "name": "networkTimeout",
+            "printedName": "networkTimeout",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AIBuds.SdkLiveStreamingErrorCode.Type) -> AIBuds.SdkLiveStreamingErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SdkLiveStreamingErrorCode",
+                    "printedName": "AIBuds.SdkLiveStreamingErrorCode",
+                    "usr": "c:@M@AIBuds@E@AIBudsSdkLiveStreamingErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AIBuds.SdkLiveStreamingErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SdkLiveStreamingErrorCode",
+                        "printedName": "AIBuds.SdkLiveStreamingErrorCode",
+                        "usr": "c:@M@AIBuds@E@AIBudsSdkLiveStreamingErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AIBuds@E@AIBudsSdkLiveStreamingErrorCode@AIBudsSdkLiveStreamingErrorCodeNetworkTimeout",
+            "mangledName": "$s6AIBuds25SdkLiveStreamingErrorCodeO14networkTimeoutyA2CmF",
+            "moduleName": "AIBuds",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 5
+          },
+          {
+            "kind": "Var",
+            "name": "liveStreamingSessionAlreadyRunning",
+            "printedName": "liveStreamingSessionAlreadyRunning",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AIBuds.SdkLiveStreamingErrorCode.Type) -> AIBuds.SdkLiveStreamingErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SdkLiveStreamingErrorCode",
+                    "printedName": "AIBuds.SdkLiveStreamingErrorCode",
+                    "usr": "c:@M@AIBuds@E@AIBudsSdkLiveStreamingErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AIBuds.SdkLiveStreamingErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SdkLiveStreamingErrorCode",
+                        "printedName": "AIBuds.SdkLiveStreamingErrorCode",
+                        "usr": "c:@M@AIBuds@E@AIBudsSdkLiveStreamingErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AIBuds@E@AIBudsSdkLiveStreamingErrorCode@AIBudsSdkLiveStreamingErrorCodeLiveStreamingSessionAlreadyRunning",
+            "mangledName": "$s6AIBuds25SdkLiveStreamingErrorCodeO04liveD21SessionAlreadyRunningyA2CmF",
+            "moduleName": "AIBuds",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 6
+          },
+          {
+            "kind": "Var",
+            "name": "noLiveStreamingSessionIsRunning",
+            "printedName": "noLiveStreamingSessionIsRunning",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AIBuds.SdkLiveStreamingErrorCode.Type) -> AIBuds.SdkLiveStreamingErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SdkLiveStreamingErrorCode",
+                    "printedName": "AIBuds.SdkLiveStreamingErrorCode",
+                    "usr": "c:@M@AIBuds@E@AIBudsSdkLiveStreamingErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AIBuds.SdkLiveStreamingErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SdkLiveStreamingErrorCode",
+                        "printedName": "AIBuds.SdkLiveStreamingErrorCode",
+                        "usr": "c:@M@AIBuds@E@AIBudsSdkLiveStreamingErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AIBuds@E@AIBudsSdkLiveStreamingErrorCode@AIBudsSdkLiveStreamingErrorCodeNoLiveStreamingSessionIsRunning",
+            "mangledName": "$s6AIBuds25SdkLiveStreamingErrorCodeO02nocD16SessionIsRunningyA2CmF",
+            "moduleName": "AIBuds",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 7
+          },
+          {
+            "kind": "Var",
+            "name": "liveStreamingSessionStartFailedDueToHotspotConfigureError",
+            "printedName": "liveStreamingSessionStartFailedDueToHotspotConfigureError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AIBuds.SdkLiveStreamingErrorCode.Type) -> AIBuds.SdkLiveStreamingErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SdkLiveStreamingErrorCode",
+                    "printedName": "AIBuds.SdkLiveStreamingErrorCode",
+                    "usr": "c:@M@AIBuds@E@AIBudsSdkLiveStreamingErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AIBuds.SdkLiveStreamingErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SdkLiveStreamingErrorCode",
+                        "printedName": "AIBuds.SdkLiveStreamingErrorCode",
+                        "usr": "c:@M@AIBuds@E@AIBudsSdkLiveStreamingErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AIBuds@E@AIBudsSdkLiveStreamingErrorCode@AIBudsSdkLiveStreamingErrorCodeLiveStreamingSessionStartFailedDueToHotspotConfigureError",
+            "mangledName": "$s6AIBuds25SdkLiveStreamingErrorCodeO04lived39SessionStartFailedDueToHotspotConfigureE0yA2CmF",
+            "moduleName": "AIBuds",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 8
+          },
+          {
+            "kind": "Var",
+            "name": "liveStreamingSessionStartFailedDueToHotspotConnectionFailure",
+            "printedName": "liveStreamingSessionStartFailedDueToHotspotConnectionFailure",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AIBuds.SdkLiveStreamingErrorCode.Type) -> AIBuds.SdkLiveStreamingErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SdkLiveStreamingErrorCode",
+                    "printedName": "AIBuds.SdkLiveStreamingErrorCode",
+                    "usr": "c:@M@AIBuds@E@AIBudsSdkLiveStreamingErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AIBuds.SdkLiveStreamingErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SdkLiveStreamingErrorCode",
+                        "printedName": "AIBuds.SdkLiveStreamingErrorCode",
+                        "usr": "c:@M@AIBuds@E@AIBudsSdkLiveStreamingErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AIBuds@E@AIBudsSdkLiveStreamingErrorCode@AIBudsSdkLiveStreamingErrorCodeLiveStreamingSessionStartFailedDueToHotspotConnectionFailure",
+            "mangledName": "$s6AIBuds25SdkLiveStreamingErrorCodeO04liveD47SessionStartFailedDueToHotspotConnectionFailureyA2CmF",
+            "moduleName": "AIBuds",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 9
+          },
+          {
+            "kind": "Var",
+            "name": "liveStreamingSessionStartFailedDueToEnterLiveStreamingModeFailed",
+            "printedName": "liveStreamingSessionStartFailedDueToEnterLiveStreamingModeFailed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AIBuds.SdkLiveStreamingErrorCode.Type) -> AIBuds.SdkLiveStreamingErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SdkLiveStreamingErrorCode",
+                    "printedName": "AIBuds.SdkLiveStreamingErrorCode",
+                    "usr": "c:@M@AIBuds@E@AIBudsSdkLiveStreamingErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AIBuds.SdkLiveStreamingErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SdkLiveStreamingErrorCode",
+                        "printedName": "AIBuds.SdkLiveStreamingErrorCode",
+                        "usr": "c:@M@AIBuds@E@AIBudsSdkLiveStreamingErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AIBuds@E@AIBudsSdkLiveStreamingErrorCode@AIBudsSdkLiveStreamingErrorCodeLiveStreamingSessionStartFailedDueToEnterLiveStreamingModeFailed",
+            "mangledName": "$s6AIBuds25SdkLiveStreamingErrorCodeO04lived28SessionStartFailedDueToEntercd4ModeJ0yA2CmF",
+            "moduleName": "AIBuds",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 10
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "AIBuds.SdkLiveStreamingErrorCode?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SdkLiveStreamingErrorCode",
+                    "printedName": "AIBuds.SdkLiveStreamingErrorCode",
+                    "usr": "c:@M@AIBuds@E@AIBudsSdkLiveStreamingErrorCode"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:6AIBuds25SdkLiveStreamingErrorCodeO8rawValueACSgSi_tcfc",
+            "mangledName": "$s6AIBuds25SdkLiveStreamingErrorCodeO8rawValueACSgSi_tcfc",
+            "moduleName": "AIBuds",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6AIBuds25SdkLiveStreamingErrorCodeO8rawValueSivp",
+            "mangledName": "$s6AIBuds25SdkLiveStreamingErrorCodeO8rawValueSivp",
+            "moduleName": "AIBuds",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6AIBuds25SdkLiveStreamingErrorCodeO8rawValueSivg",
+                "mangledName": "$s6AIBuds25SdkLiveStreamingErrorCodeO8rawValueSivg",
+                "moduleName": "AIBuds",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "description",
+            "printedName": "description",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6AIBuds25SdkLiveStreamingErrorCodeO11descriptionSSvp",
+            "mangledName": "$s6AIBuds25SdkLiveStreamingErrorCodeO11descriptionSSvp",
+            "moduleName": "AIBuds",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6AIBuds25SdkLiveStreamingErrorCodeO11descriptionSSvg",
+                "mangledName": "$s6AIBuds25SdkLiveStreamingErrorCodeO11descriptionSSvg",
+                "moduleName": "AIBuds",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "debugDescription",
+            "printedName": "debugDescription",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6AIBuds25SdkLiveStreamingErrorCodeO16debugDescriptionSSvp",
+            "mangledName": "$s6AIBuds25SdkLiveStreamingErrorCodeO16debugDescriptionSSvp",
+            "moduleName": "AIBuds",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6AIBuds25SdkLiveStreamingErrorCodeO16debugDescriptionSSvg",
+                "mangledName": "$s6AIBuds25SdkLiveStreamingErrorCodeO16debugDescriptionSSvg",
+                "moduleName": "AIBuds",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "c:@M@AIBuds@E@AIBudsSdkLiveStreamingErrorCode",
+        "mangledName": "$s6AIBuds25SdkLiveStreamingErrorCodeO",
+        "moduleName": "AIBuds",
+        "objc_name": "AIBudsSdkLiveStreamingErrorCode",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AIBuds",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "SdkOtaErrorCode",
         "printedName": "SdkOtaErrorCode",
         "children": [
@@ -22515,6 +23227,55 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "coprocessorModel",
+            "printedName": "coprocessorModel",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CoprocessorModel",
+                "printedName": "AIBudsFoundation.CoprocessorModel",
+                "usr": "c:@M@AIBudsFoundation@E@AIBudsCoprocessorModel"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBuds@objc(pl)AIBudsDeviceInfoAPI(py)coprocessorModel",
+            "mangledName": "$s6AIBuds13DeviceInfoAPIP16coprocessorModel0A10Foundation011CoprocessorF0Ovp",
+            "moduleName": "AIBuds",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CoprocessorModel",
+                    "printedName": "AIBudsFoundation.CoprocessorModel",
+                    "usr": "c:@M@AIBudsFoundation@E@AIBudsCoprocessorModel"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBuds@objc(pl)AIBudsDeviceInfoAPI(im)coprocessorModel",
+                "mangledName": "$s6AIBuds13DeviceInfoAPIP16coprocessorModel0A10Foundation011CoprocessorF0Ovg",
+                "moduleName": "AIBuds",
+                "genericSig": "<τ_0_0 where τ_0_0 : AIBuds.DeviceInfoAPI>",
+                "sugared_genericSig": "<Self where Self : AIBuds.DeviceInfoAPI>",
+                "protocolReq": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
             "kind": "Function",
             "name": "syncDeviceTime",
             "printedName": "syncDeviceTime(_:)",
@@ -25897,6 +26658,729 @@
         "genericSig": "<τ_0_0 : AIBuds.DeviceAPI>",
         "sugared_genericSig": "<Self : AIBuds.DeviceAPI>",
         "objc_name": "AIBudsFindPhoneStateReportingAPI",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "DeviceAPI",
+            "printedName": "DeviceAPI",
+            "usr": "c:@M@AIBuds@objc(pl)AIBudsDeviceAPI",
+            "mangledName": "$s6AIBuds9DeviceAPIP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AIBuds",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AIBudsFoundation",
+        "printedName": "AIBudsFoundation",
+        "declKind": "Import",
+        "moduleName": "AIBuds"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "LiveStreamingAPI",
+        "printedName": "LiveStreamingAPI",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "supportsRTSPLiveStreaming",
+            "printedName": "supportsRTSPLiveStreaming",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBuds@objc(pl)AIBudsLiveStreamingAPI(py)supportsRTSPLiveStreaming",
+            "mangledName": "$s6AIBuds16LiveStreamingAPIP016supportsRTSPLiveC0Sbvp",
+            "moduleName": "AIBuds",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBuds@objc(pl)AIBudsLiveStreamingAPI(im)supportsRTSPLiveStreaming",
+                "mangledName": "$s6AIBuds16LiveStreamingAPIP016supportsRTSPLiveC0Sbvg",
+                "moduleName": "AIBuds",
+                "genericSig": "<τ_0_0 where τ_0_0 : AIBuds.LiveStreamingAPI>",
+                "sugared_genericSig": "<Self where Self : AIBuds.LiveStreamingAPI>",
+                "protocolReq": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "supportsJPEGImageLiveStreaming",
+            "printedName": "supportsJPEGImageLiveStreaming",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBuds@objc(pl)AIBudsLiveStreamingAPI(py)supportsJPEGImageLiveStreaming",
+            "mangledName": "$s6AIBuds16LiveStreamingAPIP017supportsJPEGImagebC0Sbvp",
+            "moduleName": "AIBuds",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBuds@objc(pl)AIBudsLiveStreamingAPI(im)supportsJPEGImageLiveStreaming",
+                "mangledName": "$s6AIBuds16LiveStreamingAPIP017supportsJPEGImagebC0Sbvg",
+                "moduleName": "AIBuds",
+                "genericSig": "<τ_0_0 where τ_0_0 : AIBuds.LiveStreamingAPI>",
+                "sugared_genericSig": "<Self where Self : AIBuds.LiveStreamingAPI>",
+                "protocolReq": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "startRTSPLiveStreaming",
+            "printedName": "startRTSPLiveStreaming(withParams:configureHotspotStartingHandler:hotspotConfigureCompletionHandler:enterLiveStreamingModeStartingHandler:enterLiveStreamingModeCompletedHandler:waitingForHotspotOpenHandler:connectDeviceHotspotStartingHandler:deviceHotspotConnectCompletionHandler:rtspAddressReceivedHandler:sessionStartCompletionHandler:sessionFinishHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "RTSPStreamParams",
+                "printedName": "AIBudsFoundation.RTSPStreamParams",
+                "usr": "c:@M@AIBudsFoundation@objc(cs)AIBudsRTSPStreamParams"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(() -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "() -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Swift.Bool, (any Swift.Error)?) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Bool, (any Swift.Error)?) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(Swift.Bool, (any Swift.Error)?)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Bool",
+                            "printedName": "Swift.Bool",
+                            "usr": "s:Sb"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "(any Swift.Error)?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Error",
+                                "printedName": "any Swift.Error",
+                                "usr": "s:s5ErrorP"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(() -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "() -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Swift.Bool, (any Swift.Error)?) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Bool, (any Swift.Error)?) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(Swift.Bool, (any Swift.Error)?)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Bool",
+                            "printedName": "Swift.Bool",
+                            "usr": "s:Sb"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "(any Swift.Error)?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Error",
+                                "printedName": "any Swift.Error",
+                                "usr": "s:s5ErrorP"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(() -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "() -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Swift.String) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Swift.Bool, (any Swift.Error)?) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Bool, (any Swift.Error)?) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(Swift.Bool, (any Swift.Error)?)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Bool",
+                            "printedName": "Swift.Bool",
+                            "usr": "s:Sb"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "(any Swift.Error)?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Error",
+                                "printedName": "any Swift.Error",
+                                "usr": "s:s5ErrorP"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Swift.String) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Swift.Bool, (any Swift.Error)?) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Bool, (any Swift.Error)?) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(Swift.Bool, (any Swift.Error)?)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Bool",
+                            "printedName": "Swift.Bool",
+                            "usr": "s:Sb"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "(any Swift.Error)?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Error",
+                                "printedName": "any Swift.Error",
+                                "usr": "s:s5ErrorP"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Swift.Bool, (any Swift.Error)?) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Bool, (any Swift.Error)?) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(Swift.Bool, (any Swift.Error)?)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Bool",
+                            "printedName": "Swift.Bool",
+                            "usr": "s:Sb"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "(any Swift.Error)?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Error",
+                                "printedName": "any Swift.Error",
+                                "usr": "s:s5ErrorP"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AIBuds@objc(pl)AIBudsLiveStreamingAPI(im)startRTSPLiveStreamingWithParams:configureHotspotStartingHandler:hotspotConfigureCompletionHandler:enterLiveStreamingModeStartingHandler:enterLiveStreamingModeCompletedHandler:waitingForHotspotOpenHandler:connectDeviceHotspotStartingHandler:deviceHotspotConnectCompletionHandler:rtspAddressReceivedHandler:sessionStartCompletionHandler:sessionFinishHandler:",
+            "mangledName": "$s6AIBuds16LiveStreamingAPIP013startRTSPLiveC010withParams31configureHotspotStartingHandler026hotspotConfigureCompletionL005enterbc4ModekL00pbcq9CompletedL0010waitingForj4OpenL0013connectDevicejkL006devicej7ConnectoL0019rtspAddressReceivedL0012sessionStartoL0013sessionFinishL0y0A10Foundation010RTSPStreamH0C_yycSgySb_s5Error_pSgtcSgAsvSySScSgAvw2VtF",
+            "moduleName": "AIBuds",
+            "genericSig": "<τ_0_0 where τ_0_0 : AIBuds.LiveStreamingAPI>",
+            "sugared_genericSig": "<Self where Self : AIBuds.LiveStreamingAPI>",
+            "protocolReq": true,
+            "objc_name": "startRTSPLiveStreamingWithParams:configureHotspotStartingHandler:hotspotConfigureCompletionHandler:enterLiveStreamingModeStartingHandler:enterLiveStreamingModeCompletedHandler:waitingForHotspotOpenHandler:connectDeviceHotspotStartingHandler:deviceHotspotConnectCompletionHandler:rtspAddressReceivedHandler:sessionStartCompletionHandler:sessionFinishHandler:",
+            "declAttributes": [
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "startJPEGImageLiveStreaming",
+            "printedName": "startJPEGImageLiveStreaming(withSessionStartCompletionHandler:jpegDataReceivedHandler:sessionFinishHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Swift.Bool, (any Swift.Error)?) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Bool, (any Swift.Error)?) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(Swift.Bool, (any Swift.Error)?)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Bool",
+                            "printedName": "Swift.Bool",
+                            "usr": "s:Sb"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "(any Swift.Error)?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Error",
+                                "printedName": "any Swift.Error",
+                                "usr": "s:s5ErrorP"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Foundation.Data) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Foundation.Data) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Data",
+                        "printedName": "Foundation.Data",
+                        "usr": "s:10Foundation4DataV"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Swift.Bool, (any Swift.Error)?) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Bool, (any Swift.Error)?) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(Swift.Bool, (any Swift.Error)?)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Bool",
+                            "printedName": "Swift.Bool",
+                            "usr": "s:Sb"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "(any Swift.Error)?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Error",
+                                "printedName": "any Swift.Error",
+                                "usr": "s:s5ErrorP"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AIBuds@objc(pl)AIBudsLiveStreamingAPI(im)startJPEGImageLiveStreamingWithSessionStartCompletionHandler:jpegDataReceivedHandler:sessionFinishHandler:",
+            "mangledName": "$s6AIBuds16LiveStreamingAPIP014startJPEGImagebC033withSessionStartCompletionHandler016jpegDataReceivedK0013sessionFinishK0yySb_s5Error_pSgtcSg_y10Foundation0M0VcSgAJtF",
+            "moduleName": "AIBuds",
+            "genericSig": "<τ_0_0 where τ_0_0 : AIBuds.LiveStreamingAPI>",
+            "sugared_genericSig": "<Self where Self : AIBuds.LiveStreamingAPI>",
+            "protocolReq": true,
+            "objc_name": "startJPEGImageLiveStreamingWithSessionStartCompletionHandler:jpegDataReceivedHandler:sessionFinishHandler:",
+            "declAttributes": [
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "stopLiveStreaming",
+            "printedName": "stopLiveStreaming()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AIBuds@objc(pl)AIBudsLiveStreamingAPI(im)stopLiveStreaming",
+            "mangledName": "$s6AIBuds16LiveStreamingAPIP04stopbC0yyF",
+            "moduleName": "AIBuds",
+            "genericSig": "<τ_0_0 where τ_0_0 : AIBuds.LiveStreamingAPI>",
+            "sugared_genericSig": "<Self where Self : AIBuds.LiveStreamingAPI>",
+            "protocolReq": true,
+            "objc_name": "stopLiveStreaming",
+            "declAttributes": [
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "c:@M@AIBuds@objc(pl)AIBudsLiveStreamingAPI",
+        "mangledName": "$s6AIBuds16LiveStreamingAPIP",
+        "moduleName": "AIBuds",
+        "genericSig": "<τ_0_0 : AIBuds.DeviceAPI>",
+        "sugared_genericSig": "<Self : AIBuds.DeviceAPI>",
+        "objc_name": "AIBudsLiveStreamingAPI",
         "declAttributes": [
           "AccessControl",
           "ObjC",
@@ -30667,6 +32151,62 @@
           },
           {
             "kind": "Var",
+            "name": "LiveStreamingErrorDomain",
+            "printedName": "LiveStreamingErrorDomain",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@AIBuds@objc(cs)AIBudsSDK(cpy)LiveStreamingErrorDomain",
+            "mangledName": "$s6AIBuds0A3SDKC24LiveStreamingErrorDomainSSvpZ",
+            "moduleName": "AIBuds",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@AIBuds@objc(cs)AIBudsSDK(cm)LiveStreamingErrorDomain",
+                "mangledName": "$s6AIBuds0A3SDKC24LiveStreamingErrorDomainSSvgZ",
+                "moduleName": "AIBuds",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "OtaErrorDomain",
             "printedName": "OtaErrorDomain",
             "children": [
@@ -32458,6 +33998,97 @@
       "value": "7004"
     },
     {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBuds\/Defines(定义)\/SDKError(错误)\/LiveStreamingErrors.swift",
+      "kind": "StringLiteral",
+      "offset": 315,
+      "length": 53,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBuds\/Defines(定义)\/SDKError(错误)\/LiveStreamingErrors.swift",
+      "kind": "StringLiteral",
+      "offset": 340,
+      "length": 1,
+      "value": "\".live_streaming.errordomain\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBuds\/Defines(定义)\/SDKError(错误)\/LiveStreamingErrors.swift",
+      "kind": "IntegerLiteral",
+      "offset": 526,
+      "length": 2,
+      "value": "-1"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBuds\/Defines(定义)\/SDKError(错误)\/LiveStreamingErrors.swift",
+      "kind": "IntegerLiteral",
+      "offset": 584,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBuds\/Defines(定义)\/SDKError(错误)\/LiveStreamingErrors.swift",
+      "kind": "IntegerLiteral",
+      "offset": 690,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBuds\/Defines(定义)\/SDKError(错误)\/LiveStreamingErrors.swift",
+      "kind": "IntegerLiteral",
+      "offset": 762,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBuds\/Defines(定义)\/SDKError(错误)\/LiveStreamingErrors.swift",
+      "kind": "IntegerLiteral",
+      "offset": 864,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBuds\/Defines(定义)\/SDKError(错误)\/LiveStreamingErrors.swift",
+      "kind": "IntegerLiteral",
+      "offset": 927,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBuds\/Defines(定义)\/SDKError(错误)\/LiveStreamingErrors.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1027,
+      "length": 4,
+      "value": "4001"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBuds\/Defines(定义)\/SDKError(错误)\/LiveStreamingErrors.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1125,
+      "length": 4,
+      "value": "4002"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBuds\/Defines(定义)\/SDKError(错误)\/LiveStreamingErrors.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1275,
+      "length": 4,
+      "value": "4003"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBuds\/Defines(定义)\/SDKError(错误)\/LiveStreamingErrors.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1430,
+      "length": 4,
+      "value": "4004"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBuds\/Defines(定义)\/SDKError(错误)\/LiveStreamingErrors.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1595,
+      "length": 4,
+      "value": "4005"
+    },
+    {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBuds\/Defines(定义)\/SDKError(错误)\/OtaErrors.swift",
       "kind": "StringLiteral",
       "offset": 284,
@@ -32959,21 +34590,21 @@
       "kind": "StringLiteral",
       "offset": 481,
       "length": 14,
-      "value": "\"1.0.0-beta.7\""
+      "value": "\"1.0.0-beta.8\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBuds\/AIBuds.swift",
       "kind": "StringLiteral",
       "offset": 611,
       "length": 13,
-      "value": "\"20260531001\""
+      "value": "\"20260704001\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBuds\/AIBuds.swift",
       "kind": "StringLiteral",
       "offset": 726,
       "length": 12,
-      "value": "\"2026-05-31\""
+      "value": "\"2026-07-04\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBuds\/AIBuds.swift",

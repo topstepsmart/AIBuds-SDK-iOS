@@ -16541,6 +16541,106 @@
           },
           {
             "kind": "Var",
+            "name": "isStoppedByCancel",
+            "printedName": "isStoppedByCancel",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBudsAI@objc(cs)AIBudsSimultaneousInterpretationReportModel(py)isStoppedByCancel",
+            "mangledName": "$s8AIBudsAI37SimultaneousInterpretationReportModelC17isStoppedByCancelSbvp",
+            "moduleName": "AIBudsAI",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsAI@objc(cs)AIBudsSimultaneousInterpretationReportModel(im)isStoppedByCancel",
+                "mangledName": "$s8AIBudsAI37SimultaneousInterpretationReportModelC17isStoppedByCancelSbvg",
+                "moduleName": "AIBudsAI",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsAI@objc(cs)AIBudsSimultaneousInterpretationReportModel(im)setIsStoppedByCancel:",
+                "mangledName": "$s8AIBudsAI37SimultaneousInterpretationReportModelC17isStoppedByCancelSbvs",
+                "moduleName": "AIBudsAI",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AIBudsAI37SimultaneousInterpretationReportModelC17isStoppedByCancelSbvM",
+                "mangledName": "$s8AIBudsAI37SimultaneousInterpretationReportModelC17isStoppedByCancelSbvM",
+                "moduleName": "AIBudsAI",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "criticalLogRecords",
             "printedName": "criticalLogRecords",
             "children": [
@@ -17752,6 +17852,46 @@
                 "declKind": "EnumElement",
                 "usr": "s:8AIBudsAI37SimultaneousInterpretationReportModelC10CodingKeysO23isStoppedByInterruptionyA2EmF",
                 "mangledName": "$s8AIBudsAI37SimultaneousInterpretationReportModelC10CodingKeysO23isStoppedByInterruptionyA2EmF",
+                "moduleName": "AIBudsAI",
+                "declAttributes": [
+                  "RawDocComment"
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "isStoppedByCancel",
+                "printedName": "isStoppedByCancel",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(AIBudsAI.SimultaneousInterpretationReportModel.CodingKeys.Type) -> AIBudsAI.SimultaneousInterpretationReportModel.CodingKeys",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CodingKeys",
+                        "printedName": "AIBudsAI.SimultaneousInterpretationReportModel.CodingKeys",
+                        "usr": "s:8AIBudsAI37SimultaneousInterpretationReportModelC10CodingKeysO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "AIBudsAI.SimultaneousInterpretationReportModel.CodingKeys.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "CodingKeys",
+                            "printedName": "AIBudsAI.SimultaneousInterpretationReportModel.CodingKeys",
+                            "usr": "s:8AIBudsAI37SimultaneousInterpretationReportModelC10CodingKeysO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:8AIBudsAI37SimultaneousInterpretationReportModelC10CodingKeysO17isStoppedByCancelyA2EmF",
+                "mangledName": "$s8AIBudsAI37SimultaneousInterpretationReportModelC10CodingKeysO17isStoppedByCancelyA2EmF",
                 "moduleName": "AIBudsAI",
                 "declAttributes": [
                   "RawDocComment"
@@ -24144,162 +24284,176 @@
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAI\/Report(报告)\/SimultaneousInterpretationReportModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3819,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAI\/Report(报告)\/SimultaneousInterpretationReportModel.swift",
       "kind": "Array",
-      "offset": 3870,
+      "offset": 3976,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAI\/Report(报告)\/SimultaneousInterpretationReportModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 7496,
+      "offset": 7602,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAI\/Report(报告)\/SimultaneousInterpretationReportModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 7619,
+      "offset": 7725,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAI\/Report(报告)\/SimultaneousInterpretationReportModel.swift",
       "kind": "StringLiteral",
-      "offset": 7705,
+      "offset": 7811,
       "length": 17,
       "value": "\"source_language\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAI\/Report(报告)\/SimultaneousInterpretationReportModel.swift",
       "kind": "StringLiteral",
-      "offset": 7803,
+      "offset": 7909,
       "length": 17,
       "value": "\"target_language\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAI\/Report(报告)\/SimultaneousInterpretationReportModel.swift",
       "kind": "StringLiteral",
-      "offset": 7906,
+      "offset": 8012,
       "length": 12,
       "value": "\"enable_tts\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAI\/Report(报告)\/SimultaneousInterpretationReportModel.swift",
       "kind": "StringLiteral",
-      "offset": 7982,
+      "offset": 8088,
       "length": 12,
       "value": "\"tts_format\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAI\/Report(报告)\/SimultaneousInterpretationReportModel.swift",
       "kind": "StringLiteral",
-      "offset": 8085,
+      "offset": 8191,
       "length": 23,
       "value": "\"enable_voice_playback\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAI\/Report(报告)\/SimultaneousInterpretationReportModel.swift",
       "kind": "StringLiteral",
-      "offset": 8207,
+      "offset": 8313,
       "length": 31,
       "value": "\"uses_internal_audio_recording\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAI\/Report(报告)\/SimultaneousInterpretationReportModel.swift",
       "kind": "StringLiteral",
-      "offset": 8330,
+      "offset": 8436,
       "length": 23,
       "value": "\"prefer_speaker_output\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAI\/Report(报告)\/SimultaneousInterpretationReportModel.swift",
       "kind": "StringLiteral",
-      "offset": 8416,
+      "offset": 8522,
       "length": 16,
       "value": "\"service_vendor\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAI\/Report(报告)\/SimultaneousInterpretationReportModel.swift",
       "kind": "StringLiteral",
-      "offset": 8510,
+      "offset": 8616,
       "length": 12,
       "value": "\"start_time\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAI\/Report(报告)\/SimultaneousInterpretationReportModel.swift",
       "kind": "StringLiteral",
-      "offset": 8621,
+      "offset": 8727,
       "length": 10,
       "value": "\"end_time\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAI\/Report(报告)\/SimultaneousInterpretationReportModel.swift",
       "kind": "StringLiteral",
-      "offset": 8716,
+      "offset": 8822,
       "length": 16,
       "value": "\"session_events\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAI\/Report(报告)\/SimultaneousInterpretationReportModel.swift",
       "kind": "StringLiteral",
-      "offset": 8792,
+      "offset": 8898,
       "length": 18,
       "value": "\"source_sentences\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAI\/Report(报告)\/SimultaneousInterpretationReportModel.swift",
       "kind": "StringLiteral",
-      "offset": 8870,
+      "offset": 8976,
       "length": 18,
       "value": "\"target_sentences\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAI\/Report(报告)\/SimultaneousInterpretationReportModel.swift",
       "kind": "StringLiteral",
-      "offset": 8940,
+      "offset": 9046,
       "length": 14,
       "value": "\"tts_segments\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAI\/Report(报告)\/SimultaneousInterpretationReportModel.swift",
       "kind": "StringLiteral",
-      "offset": 9014,
+      "offset": 9120,
       "length": 18,
       "value": "\"speaker_segments\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAI\/Report(报告)\/SimultaneousInterpretationReportModel.swift",
       "kind": "StringLiteral",
-      "offset": 9179,
+      "offset": 9285,
       "length": 12,
       "value": "\"audio_file\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAI\/Report(报告)\/SimultaneousInterpretationReportModel.swift",
       "kind": "StringLiteral",
-      "offset": 9273,
+      "offset": 9379,
       "length": 14,
       "value": "\"audio_format\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAI\/Report(报告)\/SimultaneousInterpretationReportModel.swift",
       "kind": "StringLiteral",
-      "offset": 9419,
+      "offset": 9525,
       "length": 28,
       "value": "\"is_stopped_by_interruption\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAI\/Report(报告)\/SimultaneousInterpretationReportModel.swift",
       "kind": "StringLiteral",
-      "offset": 9521,
+      "offset": 9637,
+      "length": 22,
+      "value": "\"is_stopped_by_cancel\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAI\/Report(报告)\/SimultaneousInterpretationReportModel.swift",
+      "kind": "StringLiteral",
+      "offset": 9733,
       "length": 8,
       "value": "\"device\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAI\/Report(报告)\/SimultaneousInterpretationReportModel.swift",
       "kind": "StringLiteral",
-      "offset": 9642,
+      "offset": 9854,
       "length": 22,
       "value": "\"critical_log_records\""
     },
@@ -24322,21 +24476,21 @@
       "kind": "StringLiteral",
       "offset": 496,
       "length": 14,
-      "value": "\"1.0.0-beta.7\""
+      "value": "\"1.0.0-beta.8\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAI\/AIBudsAI.swift",
       "kind": "StringLiteral",
       "offset": 626,
       "length": 13,
-      "value": "\"20260531001\""
+      "value": "\"20260704001\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAI\/AIBudsAI.swift",
       "kind": "StringLiteral",
       "offset": 741,
       "length": 12,
-      "value": "\"2026-05-31\""
+      "value": "\"2026-07-04\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAI\/AIBudsAI.swift",

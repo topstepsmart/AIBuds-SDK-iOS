@@ -19,6 +19,7 @@
 #import <AIBudsMagicHelper/AIBudsMagicHelper-Swift.h>
 #import <AIBudsVoiceAssistant/AIBudsVoiceAssistant-Swift.h>
 #import <AIBudsXLFacility/AIBudsXLFacility-Swift.h>
+#import <AIBudsLiveStream/AIBudsLiveStream-Swift.h>
 #import <AIBudsCrashReporter/AIBudsCrashReporter.h>
 #import <AIBudsCrashReporter/AIBudsCrashReporter-Swift.h>
 #import <AIBudsAllInOne/AIBudsAllInOne-Swift.h>

@@ -1,0 +1,3070 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "AIBudsLiveStreamFlutterPlugin",
+    "printedName": "AIBudsLiveStreamFlutterPlugin",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AIBudsLiveStreamFlutterPlugin",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Dispatch",
+        "printedName": "Dispatch",
+        "declKind": "Import",
+        "moduleName": "AIBudsLiveStreamFlutterPlugin"
+      },
+      {
+        "kind": "Import",
+        "name": "AIBudsLog",
+        "printedName": "AIBudsLog",
+        "declKind": "Import",
+        "moduleName": "AIBudsLiveStreamFlutterPlugin",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AIBudsLiveStreamFlutterPlugin",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Flutter",
+        "printedName": "Flutter",
+        "declKind": "Import",
+        "moduleName": "AIBudsLiveStreamFlutterPlugin"
+      },
+      {
+        "kind": "Import",
+        "name": "AIBudsLiveStream",
+        "printedName": "AIBudsLiveStream",
+        "declKind": "Import",
+        "moduleName": "AIBudsLiveStreamFlutterPlugin"
+      },
+      {
+        "kind": "Import",
+        "name": "AIBudsLog",
+        "printedName": "AIBudsLog",
+        "declKind": "Import",
+        "moduleName": "AIBudsLiveStreamFlutterPlugin",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AIBudsLiveStreamFlutterPluginSDK",
+        "printedName": "AIBudsLiveStreamFlutterPluginSDK",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "channelName",
+            "printedName": "channelName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBudsLiveStreamFlutterPlugin@objc(cs)AIBudsLiveStreamFlutterPluginSDK(cpy)channelName",
+            "mangledName": "$s29AIBudsLiveStreamFlutterPlugin0abcdE3SDKC11channelNameSSvpZ",
+            "moduleName": "AIBudsLiveStreamFlutterPlugin",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsLiveStreamFlutterPlugin@objc(cs)AIBudsLiveStreamFlutterPluginSDK(cm)channelName",
+                "mangledName": "$s29AIBudsLiveStreamFlutterPlugin0abcdE3SDKC11channelNameSSvgZ",
+                "moduleName": "AIBudsLiveStreamFlutterPlugin",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "platformViewType",
+            "printedName": "platformViewType",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBudsLiveStreamFlutterPlugin@objc(cs)AIBudsLiveStreamFlutterPluginSDK(cpy)platformViewType",
+            "mangledName": "$s29AIBudsLiveStreamFlutterPlugin0abcdE3SDKC16platformViewTypeSSvpZ",
+            "moduleName": "AIBudsLiveStreamFlutterPlugin",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsLiveStreamFlutterPlugin@objc(cs)AIBudsLiveStreamFlutterPluginSDK(cm)platformViewType",
+                "mangledName": "$s29AIBudsLiveStreamFlutterPlugin0abcdE3SDKC16platformViewTypeSSvgZ",
+                "moduleName": "AIBudsLiveStreamFlutterPlugin",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "register",
+            "printedName": "register(with:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FlutterPluginRegistrar",
+                "printedName": "any Flutter.FlutterPluginRegistrar",
+                "usr": "c:objc(pl)FlutterPluginRegistrar"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AIBudsLiveStreamFlutterPlugin@objc(cs)AIBudsLiveStreamFlutterPluginSDK(cm)registerWithRegistrar:",
+            "mangledName": "$s29AIBudsLiveStreamFlutterPlugin0abcdE3SDKC8register4withySo0dE9Registrar_p_tFZ",
+            "moduleName": "AIBudsLiveStreamFlutterPlugin",
+            "static": true,
+            "objc_name": "registerWithRegistrar:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "handle",
+            "printedName": "handle(_:result:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FlutterMethodCall",
+                "printedName": "Flutter.FlutterMethodCall",
+                "usr": "c:objc(cs)FlutterMethodCall"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Any?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Any?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AIBudsLiveStreamFlutterPlugin@objc(cs)AIBudsLiveStreamFlutterPluginSDK(im)handleMethodCall:result:",
+            "mangledName": "$s29AIBudsLiveStreamFlutterPlugin0abcdE3SDKC6handle_6resultySo0D10MethodCallC_yypSgctF",
+            "moduleName": "AIBudsLiveStreamFlutterPlugin",
+            "objc_name": "handleMethodCall:result:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "sdkVersion",
+            "printedName": "sdkVersion",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBudsLiveStreamFlutterPlugin@objc(cs)AIBudsLiveStreamFlutterPluginSDK(cpy)sdkVersion",
+            "mangledName": "$s29AIBudsLiveStreamFlutterPlugin0abcdE3SDKC10sdkVersionSSvpZ",
+            "moduleName": "AIBudsLiveStreamFlutterPlugin",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsLiveStreamFlutterPlugin@objc(cs)AIBudsLiveStreamFlutterPluginSDK(cm)sdkVersion",
+                "mangledName": "$s29AIBudsLiveStreamFlutterPlugin0abcdE3SDKC10sdkVersionSSvgZ",
+                "moduleName": "AIBudsLiveStreamFlutterPlugin",
+                "static": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "sdkBuild",
+            "printedName": "sdkBuild",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBudsLiveStreamFlutterPlugin@objc(cs)AIBudsLiveStreamFlutterPluginSDK(cpy)sdkBuild",
+            "mangledName": "$s29AIBudsLiveStreamFlutterPlugin0abcdE3SDKC8sdkBuildSSvpZ",
+            "moduleName": "AIBudsLiveStreamFlutterPlugin",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsLiveStreamFlutterPlugin@objc(cs)AIBudsLiveStreamFlutterPluginSDK(cm)sdkBuild",
+                "mangledName": "$s29AIBudsLiveStreamFlutterPlugin0abcdE3SDKC8sdkBuildSSvgZ",
+                "moduleName": "AIBudsLiveStreamFlutterPlugin",
+                "static": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "sdkReleaseDate",
+            "printedName": "sdkReleaseDate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBudsLiveStreamFlutterPlugin@objc(cs)AIBudsLiveStreamFlutterPluginSDK(cpy)sdkReleaseDate",
+            "mangledName": "$s29AIBudsLiveStreamFlutterPlugin0abcdE3SDKC14sdkReleaseDateSSvpZ",
+            "moduleName": "AIBudsLiveStreamFlutterPlugin",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsLiveStreamFlutterPlugin@objc(cs)AIBudsLiveStreamFlutterPluginSDK(cm)sdkReleaseDate",
+                "mangledName": "$s29AIBudsLiveStreamFlutterPlugin0abcdE3SDKC14sdkReleaseDateSSvgZ",
+                "moduleName": "AIBudsLiveStreamFlutterPlugin",
+                "static": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "sdkVersionDescription",
+            "printedName": "sdkVersionDescription",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBudsLiveStreamFlutterPlugin@objc(cs)AIBudsLiveStreamFlutterPluginSDK(cpy)sdkVersionDescription",
+            "mangledName": "$s29AIBudsLiveStreamFlutterPlugin0abcdE3SDKC21sdkVersionDescriptionSSvpZ",
+            "moduleName": "AIBudsLiveStreamFlutterPlugin",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsLiveStreamFlutterPlugin@objc(cs)AIBudsLiveStreamFlutterPluginSDK(cm)sdkVersionDescription",
+                "mangledName": "$s29AIBudsLiveStreamFlutterPlugin0abcdE3SDKC21sdkVersionDescriptionSSvgZ",
+                "moduleName": "AIBudsLiveStreamFlutterPlugin",
+                "static": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "sdkInfo",
+            "printedName": "sdkInfo",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBudsLiveStreamFlutterPlugin@objc(cs)AIBudsLiveStreamFlutterPluginSDK(cpy)sdkInfo",
+            "mangledName": "$s29AIBudsLiveStreamFlutterPlugin0abcdE3SDKC7sdkInfoSDySSypGvpZ",
+            "moduleName": "AIBudsLiveStreamFlutterPlugin",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsLiveStreamFlutterPlugin@objc(cs)AIBudsLiveStreamFlutterPluginSDK(cm)sdkInfo",
+                "mangledName": "$s29AIBudsLiveStreamFlutterPlugin0abcdE3SDKC7sdkInfoSDySSypGvgZ",
+                "moduleName": "AIBudsLiveStreamFlutterPlugin",
+                "static": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@AIBudsLiveStreamFlutterPlugin@objc(cs)AIBudsLiveStreamFlutterPluginSDK",
+        "mangledName": "$s29AIBudsLiveStreamFlutterPlugin0abcdE3SDKC",
+        "moduleName": "AIBudsLiveStreamFlutterPlugin",
+        "objc_name": "AIBudsLiveStreamFlutterPluginSDK",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AIBudsLiveStreamFlutterPlugin",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "AIBudsLiveStreamFlutterPlugin"
+      },
+      {
+        "kind": "Import",
+        "name": "Flutter",
+        "printedName": "Flutter",
+        "declKind": "Import",
+        "moduleName": "AIBudsLiveStreamFlutterPlugin"
+      },
+      {
+        "kind": "Import",
+        "name": "AIBudsLiveStream",
+        "printedName": "AIBudsLiveStream",
+        "declKind": "Import",
+        "moduleName": "AIBudsLiveStreamFlutterPlugin"
+      },
+      {
+        "kind": "Import",
+        "name": "AIBudsLog",
+        "printedName": "AIBudsLog",
+        "declKind": "Import",
+        "moduleName": "AIBudsLiveStreamFlutterPlugin",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "LiveStreamFlutterPlatformViewFactory",
+        "printedName": "LiveStreamFlutterPlatformViewFactory",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(messenger:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "LiveStreamFlutterPlatformViewFactory",
+                "printedName": "AIBudsLiveStreamFlutterPlugin.LiveStreamFlutterPlatformViewFactory",
+                "usr": "c:@M@AIBudsLiveStreamFlutterPlugin@objc(cs)AIBudsLiveStreamFlutterPlatformViewFactory"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FlutterBinaryMessenger",
+                "printedName": "any Flutter.FlutterBinaryMessenger",
+                "usr": "c:objc(pl)FlutterBinaryMessenger"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:29AIBudsLiveStreamFlutterPlugin0bcD19PlatformViewFactoryC9messengerACSo0D15BinaryMessenger_p_tcfc",
+            "mangledName": "$s29AIBudsLiveStreamFlutterPlugin0bcD19PlatformViewFactoryC9messengerACSo0D15BinaryMessenger_p_tcfc",
+            "moduleName": "AIBudsLiveStreamFlutterPlugin",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "create",
+            "printedName": "create(withFrame:viewIdentifier:arguments:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "FlutterPlatformView",
+                "printedName": "any Flutter.FlutterPlatformView",
+                "usr": "c:objc(pl)FlutterPlatformView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGRect",
+                "printedName": "CoreFoundation.CGRect",
+                "usr": "c:@S@CGRect"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int64",
+                "printedName": "Swift.Int64",
+                "usr": "s:s5Int64V"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Any?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AIBudsLiveStreamFlutterPlugin@objc(cs)AIBudsLiveStreamFlutterPlatformViewFactory(im)createWithFrame:viewIdentifier:arguments:",
+            "mangledName": "$s29AIBudsLiveStreamFlutterPlugin0bcD19PlatformViewFactoryC6create9withFrame14viewIdentifier9argumentsSo0dfG0_pSo6CGRectV_s5Int64VypSgtF",
+            "moduleName": "AIBudsLiveStreamFlutterPlugin",
+            "objc_name": "createWithFrame:viewIdentifier:arguments:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "createArgsCodec",
+            "printedName": "createArgsCodec()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ProtocolComposition",
+                "printedName": "any Flutter.FlutterMessageCodec & ObjectiveC.NSObjectProtocol"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AIBudsLiveStreamFlutterPlugin@objc(cs)AIBudsLiveStreamFlutterPlatformViewFactory(im)createArgsCodec",
+            "mangledName": "$s29AIBudsLiveStreamFlutterPlugin0bcD19PlatformViewFactoryC15createArgsCodecSo0d7MessageK0_So8NSObjectpyF",
+            "moduleName": "AIBudsLiveStreamFlutterPlugin",
+            "objc_name": "createArgsCodec",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "LiveStreamFlutterPlatformViewFactory",
+                "printedName": "AIBudsLiveStreamFlutterPlugin.LiveStreamFlutterPlatformViewFactory",
+                "usr": "c:@M@AIBudsLiveStreamFlutterPlugin@objc(cs)AIBudsLiveStreamFlutterPlatformViewFactory"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@AIBudsLiveStreamFlutterPlugin@objc(cs)AIBudsLiveStreamFlutterPlatformViewFactory(im)init",
+            "mangledName": "$s29AIBudsLiveStreamFlutterPlugin0bcD19PlatformViewFactoryCACycfc",
+            "moduleName": "AIBudsLiveStreamFlutterPlugin",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@AIBudsLiveStreamFlutterPlugin@objc(cs)AIBudsLiveStreamFlutterPlatformViewFactory",
+        "mangledName": "$s29AIBudsLiveStreamFlutterPlugin0bcD19PlatformViewFactoryC",
+        "moduleName": "AIBudsLiveStreamFlutterPlugin",
+        "objc_name": "AIBudsLiveStreamFlutterPlatformViewFactory",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "LiveStreamFlutterPlatformView",
+        "printedName": "LiveStreamFlutterPlatformView",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "controller",
+            "printedName": "controller",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "LiveStreamFlutterPlayerController",
+                "printedName": "AIBudsLiveStreamFlutterPlugin.LiveStreamFlutterPlayerController",
+                "usr": "c:@M@AIBudsLiveStreamFlutterPlugin@objc(cs)AIBudsLiveStreamFlutterPlayerController"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:29AIBudsLiveStreamFlutterPlugin0bcD12PlatformViewC10controllerAA0bcD16PlayerControllerCvp",
+            "mangledName": "$s29AIBudsLiveStreamFlutterPlugin0bcD12PlatformViewC10controllerAA0bcD16PlayerControllerCvp",
+            "moduleName": "AIBudsLiveStreamFlutterPlugin",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LiveStreamFlutterPlayerController",
+                    "printedName": "AIBudsLiveStreamFlutterPlugin.LiveStreamFlutterPlayerController",
+                    "usr": "c:@M@AIBudsLiveStreamFlutterPlugin@objc(cs)AIBudsLiveStreamFlutterPlayerController"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:29AIBudsLiveStreamFlutterPlugin0bcD12PlatformViewC10controllerAA0bcD16PlayerControllerCvg",
+                "mangledName": "$s29AIBudsLiveStreamFlutterPlugin0bcD12PlatformViewC10controllerAA0bcD16PlayerControllerCvg",
+                "moduleName": "AIBudsLiveStreamFlutterPlugin",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(frame:viewId:arguments:messenger:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "LiveStreamFlutterPlatformView",
+                "printedName": "AIBudsLiveStreamFlutterPlugin.LiveStreamFlutterPlatformView",
+                "usr": "c:@M@AIBudsLiveStreamFlutterPlugin@objc(cs)AIBudsLiveStreamFlutterPlatformView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGRect",
+                "printedName": "CoreFoundation.CGRect",
+                "usr": "c:@S@CGRect"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int64",
+                "printedName": "Swift.Int64",
+                "usr": "s:s5Int64V"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Any?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FlutterBinaryMessenger",
+                "printedName": "any Flutter.FlutterBinaryMessenger",
+                "usr": "c:objc(pl)FlutterBinaryMessenger"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:29AIBudsLiveStreamFlutterPlugin0bcD12PlatformViewC5frame6viewId9arguments9messengerACSo6CGRectV_s5Int64VypSgSo0D15BinaryMessenger_ptcfc",
+            "mangledName": "$s29AIBudsLiveStreamFlutterPlugin0bcD12PlatformViewC5frame6viewId9arguments9messengerACSo6CGRectV_s5Int64VypSgSo0D15BinaryMessenger_ptcfc",
+            "moduleName": "AIBudsLiveStreamFlutterPlugin",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "view",
+            "printedName": "view()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIView",
+                "printedName": "UIKit.UIView",
+                "usr": "c:objc(cs)UIView"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AIBudsLiveStreamFlutterPlugin@objc(cs)AIBudsLiveStreamFlutterPlatformView(im)view",
+            "mangledName": "$s29AIBudsLiveStreamFlutterPlugin0bcD12PlatformViewC4viewSo6UIViewCyF",
+            "moduleName": "AIBudsLiveStreamFlutterPlugin",
+            "objc_name": "view",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "LiveStreamFlutterPlatformView",
+                "printedName": "AIBudsLiveStreamFlutterPlugin.LiveStreamFlutterPlatformView",
+                "usr": "c:@M@AIBudsLiveStreamFlutterPlugin@objc(cs)AIBudsLiveStreamFlutterPlatformView"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@AIBudsLiveStreamFlutterPlugin@objc(cs)AIBudsLiveStreamFlutterPlatformView(im)init",
+            "mangledName": "$s29AIBudsLiveStreamFlutterPlugin0bcD12PlatformViewCACycfc",
+            "moduleName": "AIBudsLiveStreamFlutterPlugin",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@AIBudsLiveStreamFlutterPlugin@objc(cs)AIBudsLiveStreamFlutterPlatformView",
+        "mangledName": "$s29AIBudsLiveStreamFlutterPlugin0bcD12PlatformViewC",
+        "moduleName": "AIBudsLiveStreamFlutterPlugin",
+        "objc_name": "AIBudsLiveStreamFlutterPlatformView",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "LiveStreamFlutterPlayerController",
+        "printedName": "LiveStreamFlutterPlayerController",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "viewId",
+            "printedName": "viewId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int64",
+                "printedName": "Swift.Int64",
+                "usr": "s:s5Int64V"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:29AIBudsLiveStreamFlutterPlugin0bcD16PlayerControllerC6viewIds5Int64Vvp",
+            "mangledName": "$s29AIBudsLiveStreamFlutterPlugin0bcD16PlayerControllerC6viewIds5Int64Vvp",
+            "moduleName": "AIBudsLiveStreamFlutterPlugin",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int64",
+                    "printedName": "Swift.Int64",
+                    "usr": "s:s5Int64V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:29AIBudsLiveStreamFlutterPlugin0bcD16PlayerControllerC6viewIds5Int64Vvg",
+                "mangledName": "$s29AIBudsLiveStreamFlutterPlugin0bcD16PlayerControllerC6viewIds5Int64Vvg",
+                "moduleName": "AIBudsLiveStreamFlutterPlugin",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(viewId:messenger:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "LiveStreamFlutterPlayerController",
+                "printedName": "AIBudsLiveStreamFlutterPlugin.LiveStreamFlutterPlayerController",
+                "usr": "c:@M@AIBudsLiveStreamFlutterPlugin@objc(cs)AIBudsLiveStreamFlutterPlayerController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int64",
+                "printedName": "Swift.Int64",
+                "usr": "s:s5Int64V"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FlutterBinaryMessenger",
+                "printedName": "any Flutter.FlutterBinaryMessenger",
+                "usr": "c:objc(pl)FlutterBinaryMessenger"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:29AIBudsLiveStreamFlutterPlugin0bcD16PlayerControllerC6viewId9messengerACs5Int64V_So0D15BinaryMessenger_ptcfc",
+            "mangledName": "$s29AIBudsLiveStreamFlutterPlugin0bcD16PlayerControllerC6viewId9messengerACs5Int64V_So0D15BinaryMessenger_ptcfc",
+            "moduleName": "AIBudsLiveStreamFlutterPlugin",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "attach",
+            "printedName": "attach(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIView",
+                "printedName": "UIKit.UIView",
+                "usr": "c:objc(cs)UIView"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:29AIBudsLiveStreamFlutterPlugin0bcD16PlayerControllerC6attach2toySo6UIViewC_tF",
+            "mangledName": "$s29AIBudsLiveStreamFlutterPlugin0bcD16PlayerControllerC6attach2toySo6UIViewC_tF",
+            "moduleName": "AIBudsLiveStreamFlutterPlugin",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "apply",
+            "printedName": "apply(arguments:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Any?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:29AIBudsLiveStreamFlutterPlugin0bcD16PlayerControllerC5apply9argumentsyypSg_tF",
+            "mangledName": "$s29AIBudsLiveStreamFlutterPlugin0bcD16PlayerControllerC5apply9argumentsyypSg_tF",
+            "moduleName": "AIBudsLiveStreamFlutterPlugin",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "handle",
+            "printedName": "handle(_:arguments:result:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Any?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Any?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Any?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:29AIBudsLiveStreamFlutterPlugin0bcD16PlayerControllerC6handle_9arguments6resultySS_ypSgyAGctF",
+            "mangledName": "$s29AIBudsLiveStreamFlutterPlugin0bcD16PlayerControllerC6handle_9arguments6resultySS_ypSgyAGctF",
+            "moduleName": "AIBudsLiveStreamFlutterPlugin",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "dispose",
+            "printedName": "dispose()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:29AIBudsLiveStreamFlutterPlugin0bcD16PlayerControllerC7disposeyyF",
+            "mangledName": "$s29AIBudsLiveStreamFlutterPlugin0bcD16PlayerControllerC7disposeyyF",
+            "moduleName": "AIBudsLiveStreamFlutterPlugin",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onListen",
+            "printedName": "onListen(withArguments:eventSink:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Flutter.FlutterError?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FlutterError",
+                    "printedName": "Flutter.FlutterError",
+                    "usr": "c:objc(cs)FlutterError"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Any?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Any?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Any?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AIBudsLiveStreamFlutterPlugin@objc(cs)AIBudsLiveStreamFlutterPlayerController(im)onListenWithArguments:eventSink:",
+            "mangledName": "$s29AIBudsLiveStreamFlutterPlugin0bcD16PlayerControllerC8onListen13withArguments9eventSinkSo0D5ErrorCSgypSg_yAJctF",
+            "moduleName": "AIBudsLiveStreamFlutterPlugin",
+            "objc_name": "onListenWithArguments:eventSink:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onCancel",
+            "printedName": "onCancel(withArguments:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Flutter.FlutterError?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FlutterError",
+                    "printedName": "Flutter.FlutterError",
+                    "usr": "c:objc(cs)FlutterError"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Any?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AIBudsLiveStreamFlutterPlugin@objc(cs)AIBudsLiveStreamFlutterPlayerController(im)onCancelWithArguments:",
+            "mangledName": "$s29AIBudsLiveStreamFlutterPlugin0bcD16PlayerControllerC8onCancel13withArgumentsSo0D5ErrorCSgypSg_tF",
+            "moduleName": "AIBudsLiveStreamFlutterPlugin",
+            "objc_name": "onCancelWithArguments:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "player",
+            "printedName": "player(_:didChangeState:newState:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "LiveStreamingPlayer",
+                "printedName": "AIBudsLiveStream.LiveStreamingPlayer",
+                "usr": "c:@M@AIBudsLiveStream@objc(cs)AIBudsLiveStreamingPlayer"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "LiveStreamingPlayerState",
+                "printedName": "AIBudsLiveStream.LiveStreamingPlayerState",
+                "usr": "c:@M@AIBudsLiveStream@E@AIBudsLiveStreamingPlayerState"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "LiveStreamingPlayerState",
+                "printedName": "AIBudsLiveStream.LiveStreamingPlayerState",
+                "usr": "c:@M@AIBudsLiveStream@E@AIBudsLiveStreamingPlayerState"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AIBudsLiveStreamFlutterPlugin@objc(cs)AIBudsLiveStreamFlutterPlayerController(im)player:didChangeState:newState:",
+            "mangledName": "$s29AIBudsLiveStreamFlutterPlugin0bcD16PlayerControllerC6player_14didChangeState03newK0y0abC00b9StreamingF0C_AG0bmfK0OAKtF",
+            "moduleName": "AIBudsLiveStreamFlutterPlugin",
+            "objc_name": "player:didChangeState:newState:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "player",
+            "printedName": "player(_:didUpdateProgress:duration:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "LiveStreamingPlayer",
+                "printedName": "AIBudsLiveStream.LiveStreamingPlayer",
+                "usr": "c:@M@AIBudsLiveStream@objc(cs)AIBudsLiveStreamingPlayer"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AIBudsLiveStreamFlutterPlugin@objc(cs)AIBudsLiveStreamFlutterPlayerController(im)player:didUpdateProgress:duration:",
+            "mangledName": "$s29AIBudsLiveStreamFlutterPlugin0bcD16PlayerControllerC6player_17didUpdateProgress8durationy0abC00b9StreamingF0C_S2dtF",
+            "moduleName": "AIBudsLiveStreamFlutterPlugin",
+            "objc_name": "player:didUpdateProgress:duration:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "player",
+            "printedName": "player(_:didUpdateBuffer:duration:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "LiveStreamingPlayer",
+                "printedName": "AIBudsLiveStream.LiveStreamingPlayer",
+                "usr": "c:@M@AIBudsLiveStream@objc(cs)AIBudsLiveStreamingPlayer"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AIBudsLiveStreamFlutterPlugin@objc(cs)AIBudsLiveStreamFlutterPlayerController(im)player:didUpdateBuffer:duration:",
+            "mangledName": "$s29AIBudsLiveStreamFlutterPlugin0bcD16PlayerControllerC6player_15didUpdateBuffer8durationy0abC00b9StreamingF0C_S2dtF",
+            "moduleName": "AIBudsLiveStreamFlutterPlugin",
+            "objc_name": "player:didUpdateBuffer:duration:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "player",
+            "printedName": "player(_:didEncounterError:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "LiveStreamingPlayer",
+                "printedName": "AIBudsLiveStream.LiveStreamingPlayer",
+                "usr": "c:@M@AIBudsLiveStream@objc(cs)AIBudsLiveStreamingPlayer"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Error",
+                "printedName": "any Swift.Error",
+                "usr": "s:s5ErrorP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AIBudsLiveStreamFlutterPlugin@objc(cs)AIBudsLiveStreamFlutterPlayerController(im)player:didEncounterError:",
+            "mangledName": "$s29AIBudsLiveStreamFlutterPlugin0bcD16PlayerControllerC6player_17didEncounterErrory0abC00b9StreamingF0C_s0K0_ptF",
+            "moduleName": "AIBudsLiveStreamFlutterPlugin",
+            "objc_name": "player:didEncounterError:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "player",
+            "printedName": "player(_:didChangeVideoSize:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "LiveStreamingPlayer",
+                "printedName": "AIBudsLiveStream.LiveStreamingPlayer",
+                "usr": "c:@M@AIBudsLiveStream@objc(cs)AIBudsLiveStreamingPlayer"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGSize",
+                "printedName": "CoreFoundation.CGSize",
+                "usr": "c:@S@CGSize"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AIBudsLiveStreamFlutterPlugin@objc(cs)AIBudsLiveStreamFlutterPlayerController(im)player:didChangeVideoSize:",
+            "mangledName": "$s29AIBudsLiveStreamFlutterPlugin0bcD16PlayerControllerC6player_18didChangeVideoSizey0abC00b9StreamingF0C_So6CGSizeVtF",
+            "moduleName": "AIBudsLiveStreamFlutterPlugin",
+            "objc_name": "player:didChangeVideoSize:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "playerDidFinish",
+            "printedName": "playerDidFinish(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "LiveStreamingPlayer",
+                "printedName": "AIBudsLiveStream.LiveStreamingPlayer",
+                "usr": "c:@M@AIBudsLiveStream@objc(cs)AIBudsLiveStreamingPlayer"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AIBudsLiveStreamFlutterPlugin@objc(cs)AIBudsLiveStreamFlutterPlayerController(im)playerDidFinish:",
+            "mangledName": "$s29AIBudsLiveStreamFlutterPlugin0bcD16PlayerControllerC15playerDidFinishyy0abC00b9StreamingF0CF",
+            "moduleName": "AIBudsLiveStreamFlutterPlugin",
+            "objc_name": "playerDidFinish:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "LiveStreamFlutterPlayerController",
+                "printedName": "AIBudsLiveStreamFlutterPlugin.LiveStreamFlutterPlayerController",
+                "usr": "c:@M@AIBudsLiveStreamFlutterPlugin@objc(cs)AIBudsLiveStreamFlutterPlayerController"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@AIBudsLiveStreamFlutterPlugin@objc(cs)AIBudsLiveStreamFlutterPlayerController(im)init",
+            "mangledName": "$s29AIBudsLiveStreamFlutterPlugin0bcD16PlayerControllerCACycfc",
+            "moduleName": "AIBudsLiveStreamFlutterPlugin",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@AIBudsLiveStreamFlutterPlugin@objc(cs)AIBudsLiveStreamFlutterPlayerController",
+        "mangledName": "$s29AIBudsLiveStreamFlutterPlugin0bcD16PlayerControllerC",
+        "moduleName": "AIBudsLiveStreamFlutterPlugin",
+        "objc_name": "AIBudsLiveStreamFlutterPlayerController",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "LiveStreamingPlayerDelegate",
+            "printedName": "LiveStreamingPlayerDelegate",
+            "usr": "c:@M@AIBudsLiveStream@objc(pl)AIBudsLiveStreamingPlayerDelegate",
+            "mangledName": "$s16AIBudsLiveStream0B23StreamingPlayerDelegateP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "LiveStreamFlutterPlayerRegistry",
+        "printedName": "LiveStreamFlutterPlayerRegistry",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "LiveStreamFlutterPlayerRegistry",
+                "printedName": "AIBudsLiveStreamFlutterPlugin.LiveStreamFlutterPlayerRegistry",
+                "usr": "c:@M@AIBudsLiveStreamFlutterPlugin@objc(cs)AIBudsLiveStreamFlutterPlayerRegistry"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBudsLiveStreamFlutterPlugin@objc(cs)AIBudsLiveStreamFlutterPlayerRegistry(cpy)shared",
+            "mangledName": "$s29AIBudsLiveStreamFlutterPlugin0bcD14PlayerRegistryC6sharedACvpZ",
+            "moduleName": "AIBudsLiveStreamFlutterPlugin",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LiveStreamFlutterPlayerRegistry",
+                    "printedName": "AIBudsLiveStreamFlutterPlugin.LiveStreamFlutterPlayerRegistry",
+                    "usr": "c:@M@AIBudsLiveStreamFlutterPlugin@objc(cs)AIBudsLiveStreamFlutterPlayerRegistry"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsLiveStreamFlutterPlugin@objc(cs)AIBudsLiveStreamFlutterPlayerRegistry(cm)shared",
+                "mangledName": "$s29AIBudsLiveStreamFlutterPlugin0bcD14PlayerRegistryC6sharedACvgZ",
+                "moduleName": "AIBudsLiveStreamFlutterPlugin",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "set",
+            "printedName": "set(_:for:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "LiveStreamFlutterPlayerController",
+                "printedName": "AIBudsLiveStreamFlutterPlugin.LiveStreamFlutterPlayerController",
+                "usr": "c:@M@AIBudsLiveStreamFlutterPlugin@objc(cs)AIBudsLiveStreamFlutterPlayerController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int64",
+                "printedName": "Swift.Int64",
+                "usr": "s:s5Int64V"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:29AIBudsLiveStreamFlutterPlugin0bcD14PlayerRegistryC3set_3foryAA0bcdF10ControllerC_s5Int64VtF",
+            "mangledName": "$s29AIBudsLiveStreamFlutterPlugin0bcD14PlayerRegistryC3set_3foryAA0bcdF10ControllerC_s5Int64VtF",
+            "moduleName": "AIBudsLiveStreamFlutterPlugin",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "player",
+            "printedName": "player(for:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "AIBudsLiveStreamFlutterPlugin.LiveStreamFlutterPlayerController?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LiveStreamFlutterPlayerController",
+                    "printedName": "AIBudsLiveStreamFlutterPlugin.LiveStreamFlutterPlayerController",
+                    "usr": "c:@M@AIBudsLiveStreamFlutterPlugin@objc(cs)AIBudsLiveStreamFlutterPlayerController"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int64",
+                "printedName": "Swift.Int64",
+                "usr": "s:s5Int64V"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:29AIBudsLiveStreamFlutterPlugin0bcD14PlayerRegistryC6player3forAA0bcdF10ControllerCSgs5Int64V_tF",
+            "mangledName": "$s29AIBudsLiveStreamFlutterPlugin0bcD14PlayerRegistryC6player3forAA0bcdF10ControllerCSgs5Int64V_tF",
+            "moduleName": "AIBudsLiveStreamFlutterPlugin",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "remove",
+            "printedName": "remove(viewId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int64",
+                "printedName": "Swift.Int64",
+                "usr": "s:s5Int64V"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:29AIBudsLiveStreamFlutterPlugin0bcD14PlayerRegistryC6remove6viewIdys5Int64V_tF",
+            "mangledName": "$s29AIBudsLiveStreamFlutterPlugin0bcD14PlayerRegistryC6remove6viewIdys5Int64V_tF",
+            "moduleName": "AIBudsLiveStreamFlutterPlugin",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@AIBudsLiveStreamFlutterPlugin@objc(cs)AIBudsLiveStreamFlutterPlayerRegistry",
+        "mangledName": "$s29AIBudsLiveStreamFlutterPlugin0bcD14PlayerRegistryC",
+        "moduleName": "AIBudsLiveStreamFlutterPlugin",
+        "objc_name": "AIBudsLiveStreamFlutterPlayerRegistry",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AIBudsLiveStreamFlutterPlugin",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Flutter",
+        "printedName": "Flutter",
+        "declKind": "Import",
+        "moduleName": "AIBudsLiveStreamFlutterPlugin"
+      },
+      {
+        "kind": "Import",
+        "name": "AIBudsLiveStream",
+        "printedName": "AIBudsLiveStream",
+        "declKind": "Import",
+        "moduleName": "AIBudsLiveStreamFlutterPlugin"
+      },
+      {
+        "kind": "Import",
+        "name": "AIBudsLog",
+        "printedName": "AIBudsLog",
+        "declKind": "Import",
+        "moduleName": "AIBudsLiveStreamFlutterPlugin",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "LiveStreamFlutterStreamerController",
+        "printedName": "LiveStreamFlutterStreamerController",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "streamerId",
+            "printedName": "streamerId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:29AIBudsLiveStreamFlutterPlugin0bcD18StreamerControllerC10streamerIdSSvp",
+            "mangledName": "$s29AIBudsLiveStreamFlutterPlugin0bcD18StreamerControllerC10streamerIdSSvp",
+            "moduleName": "AIBudsLiveStreamFlutterPlugin",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:29AIBudsLiveStreamFlutterPlugin0bcD18StreamerControllerC10streamerIdSSvg",
+                "mangledName": "$s29AIBudsLiveStreamFlutterPlugin0bcD18StreamerControllerC10streamerIdSSvg",
+                "moduleName": "AIBudsLiveStreamFlutterPlugin",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(streamerId:messenger:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "LiveStreamFlutterStreamerController",
+                "printedName": "AIBudsLiveStreamFlutterPlugin.LiveStreamFlutterStreamerController",
+                "usr": "c:@M@AIBudsLiveStreamFlutterPlugin@objc(cs)AIBudsLiveStreamFlutterStreamerController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FlutterBinaryMessenger",
+                "printedName": "any Flutter.FlutterBinaryMessenger",
+                "usr": "c:objc(pl)FlutterBinaryMessenger"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:29AIBudsLiveStreamFlutterPlugin0bcD18StreamerControllerC10streamerId9messengerACSS_So0D15BinaryMessenger_ptcfc",
+            "mangledName": "$s29AIBudsLiveStreamFlutterPlugin0bcD18StreamerControllerC10streamerId9messengerACSS_So0D15BinaryMessenger_ptcfc",
+            "moduleName": "AIBudsLiveStreamFlutterPlugin",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "handle",
+            "printedName": "handle(_:arguments:result:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Any?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Any?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Any?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:29AIBudsLiveStreamFlutterPlugin0bcD18StreamerControllerC6handle_9arguments6resultySS_ypSgyAGctF",
+            "mangledName": "$s29AIBudsLiveStreamFlutterPlugin0bcD18StreamerControllerC6handle_9arguments6resultySS_ypSgyAGctF",
+            "moduleName": "AIBudsLiveStreamFlutterPlugin",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "dispose",
+            "printedName": "dispose()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:29AIBudsLiveStreamFlutterPlugin0bcD18StreamerControllerC7disposeyyF",
+            "mangledName": "$s29AIBudsLiveStreamFlutterPlugin0bcD18StreamerControllerC7disposeyyF",
+            "moduleName": "AIBudsLiveStreamFlutterPlugin",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onListen",
+            "printedName": "onListen(withArguments:eventSink:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Flutter.FlutterError?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FlutterError",
+                    "printedName": "Flutter.FlutterError",
+                    "usr": "c:objc(cs)FlutterError"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Any?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Any?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Any?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AIBudsLiveStreamFlutterPlugin@objc(cs)AIBudsLiveStreamFlutterStreamerController(im)onListenWithArguments:eventSink:",
+            "mangledName": "$s29AIBudsLiveStreamFlutterPlugin0bcD18StreamerControllerC8onListen13withArguments9eventSinkSo0D5ErrorCSgypSg_yAJctF",
+            "moduleName": "AIBudsLiveStreamFlutterPlugin",
+            "objc_name": "onListenWithArguments:eventSink:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onCancel",
+            "printedName": "onCancel(withArguments:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Flutter.FlutterError?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FlutterError",
+                    "printedName": "Flutter.FlutterError",
+                    "usr": "c:objc(cs)FlutterError"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Any?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AIBudsLiveStreamFlutterPlugin@objc(cs)AIBudsLiveStreamFlutterStreamerController(im)onCancelWithArguments:",
+            "mangledName": "$s29AIBudsLiveStreamFlutterPlugin0bcD18StreamerControllerC8onCancel13withArgumentsSo0D5ErrorCSgypSg_tF",
+            "moduleName": "AIBudsLiveStreamFlutterPlugin",
+            "objc_name": "onCancelWithArguments:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "streamer",
+            "printedName": "streamer(_:didChangeState:newState:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "LiveStreamer",
+                "printedName": "AIBudsLiveStream.LiveStreamer",
+                "usr": "c:@M@AIBudsLiveStream@objc(cs)AIBudsLiveStreamer"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "LiveStreamerState",
+                "printedName": "AIBudsLiveStream.LiveStreamerState",
+                "usr": "c:@M@AIBudsLiveStream@E@AIBudsLiveStreamerState"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "LiveStreamerState",
+                "printedName": "AIBudsLiveStream.LiveStreamerState",
+                "usr": "c:@M@AIBudsLiveStream@E@AIBudsLiveStreamerState"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AIBudsLiveStreamFlutterPlugin@objc(cs)AIBudsLiveStreamFlutterStreamerController(im)streamer:didChangeState:newState:",
+            "mangledName": "$s29AIBudsLiveStreamFlutterPlugin0bcD18StreamerControllerC8streamer_14didChangeState03newK0y0abC00bF0C_AG0bfK0OAKtF",
+            "moduleName": "AIBudsLiveStreamFlutterPlugin",
+            "objc_name": "streamer:didChangeState:newState:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "streamer",
+            "printedName": "streamer(_:didEncounterError:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "LiveStreamer",
+                "printedName": "AIBudsLiveStream.LiveStreamer",
+                "usr": "c:@M@AIBudsLiveStream@objc(cs)AIBudsLiveStreamer"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Error",
+                "printedName": "any Swift.Error",
+                "usr": "s:s5ErrorP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AIBudsLiveStreamFlutterPlugin@objc(cs)AIBudsLiveStreamFlutterStreamerController(im)streamer:didEncounterError:",
+            "mangledName": "$s29AIBudsLiveStreamFlutterPlugin0bcD18StreamerControllerC8streamer_17didEncounterErrory0abC00bF0C_s0K0_ptF",
+            "moduleName": "AIBudsLiveStreamFlutterPlugin",
+            "objc_name": "streamer:didEncounterError:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "streamer",
+            "printedName": "streamer(_:didUpdateStats:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "LiveStreamer",
+                "printedName": "AIBudsLiveStream.LiveStreamer",
+                "usr": "c:@M@AIBudsLiveStream@objc(cs)AIBudsLiveStreamer"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "LiveStreamingStats",
+                "printedName": "AIBudsLiveStream.LiveStreamingStats",
+                "usr": "c:@M@AIBudsLiveStream@objc(cs)AIBudsLiveStreamingStats"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AIBudsLiveStreamFlutterPlugin@objc(cs)AIBudsLiveStreamFlutterStreamerController(im)streamer:didUpdateStats:",
+            "mangledName": "$s29AIBudsLiveStreamFlutterPlugin0bcD18StreamerControllerC8streamer_14didUpdateStatsy0abC00bF0C_AF0b9StreamingK0CtF",
+            "moduleName": "AIBudsLiveStreamFlutterPlugin",
+            "objc_name": "streamer:didUpdateStats:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "LiveStreamFlutterStreamerController",
+                "printedName": "AIBudsLiveStreamFlutterPlugin.LiveStreamFlutterStreamerController",
+                "usr": "c:@M@AIBudsLiveStreamFlutterPlugin@objc(cs)AIBudsLiveStreamFlutterStreamerController"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@AIBudsLiveStreamFlutterPlugin@objc(cs)AIBudsLiveStreamFlutterStreamerController(im)init",
+            "mangledName": "$s29AIBudsLiveStreamFlutterPlugin0bcD18StreamerControllerCACycfc",
+            "moduleName": "AIBudsLiveStreamFlutterPlugin",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@AIBudsLiveStreamFlutterPlugin@objc(cs)AIBudsLiveStreamFlutterStreamerController",
+        "mangledName": "$s29AIBudsLiveStreamFlutterPlugin0bcD18StreamerControllerC",
+        "moduleName": "AIBudsLiveStreamFlutterPlugin",
+        "objc_name": "AIBudsLiveStreamFlutterStreamerController",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "LiveStreamerDelegate",
+            "printedName": "LiveStreamerDelegate",
+            "usr": "c:@M@AIBudsLiveStream@objc(pl)AIBudsLiveStreamerDelegate",
+            "mangledName": "$s16AIBudsLiveStream0B16StreamerDelegateP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "LiveStreamFlutterStreamerRegistry",
+        "printedName": "LiveStreamFlutterStreamerRegistry",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "LiveStreamFlutterStreamerRegistry",
+                "printedName": "AIBudsLiveStreamFlutterPlugin.LiveStreamFlutterStreamerRegistry",
+                "usr": "c:@M@AIBudsLiveStreamFlutterPlugin@objc(cs)AIBudsLiveStreamFlutterStreamerRegistry"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBudsLiveStreamFlutterPlugin@objc(cs)AIBudsLiveStreamFlutterStreamerRegistry(cpy)shared",
+            "mangledName": "$s29AIBudsLiveStreamFlutterPlugin0bcD16StreamerRegistryC6sharedACvpZ",
+            "moduleName": "AIBudsLiveStreamFlutterPlugin",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LiveStreamFlutterStreamerRegistry",
+                    "printedName": "AIBudsLiveStreamFlutterPlugin.LiveStreamFlutterStreamerRegistry",
+                    "usr": "c:@M@AIBudsLiveStreamFlutterPlugin@objc(cs)AIBudsLiveStreamFlutterStreamerRegistry"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsLiveStreamFlutterPlugin@objc(cs)AIBudsLiveStreamFlutterStreamerRegistry(cm)shared",
+                "mangledName": "$s29AIBudsLiveStreamFlutterPlugin0bcD16StreamerRegistryC6sharedACvgZ",
+                "moduleName": "AIBudsLiveStreamFlutterPlugin",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "configure",
+            "printedName": "configure(messenger:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FlutterBinaryMessenger",
+                "printedName": "any Flutter.FlutterBinaryMessenger",
+                "usr": "c:objc(pl)FlutterBinaryMessenger"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:29AIBudsLiveStreamFlutterPlugin0bcD16StreamerRegistryC9configure9messengerySo0D15BinaryMessenger_p_tF",
+            "mangledName": "$s29AIBudsLiveStreamFlutterPlugin0bcD16StreamerRegistryC9configure9messengerySo0D15BinaryMessenger_p_tF",
+            "moduleName": "AIBudsLiveStreamFlutterPlugin",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "streamer",
+            "printedName": "streamer(for:createIfNeeded:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "AIBudsLiveStreamFlutterPlugin.LiveStreamFlutterStreamerController?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LiveStreamFlutterStreamerController",
+                    "printedName": "AIBudsLiveStreamFlutterPlugin.LiveStreamFlutterStreamerController",
+                    "usr": "c:@M@AIBudsLiveStreamFlutterPlugin@objc(cs)AIBudsLiveStreamFlutterStreamerController"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:29AIBudsLiveStreamFlutterPlugin0bcD16StreamerRegistryC8streamer3for14createIfNeededAA0bcdF10ControllerCSgSS_SbtF",
+            "mangledName": "$s29AIBudsLiveStreamFlutterPlugin0bcD16StreamerRegistryC8streamer3for14createIfNeededAA0bcdF10ControllerCSgSS_SbtF",
+            "moduleName": "AIBudsLiveStreamFlutterPlugin",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "remove",
+            "printedName": "remove(streamerId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:29AIBudsLiveStreamFlutterPlugin0bcD16StreamerRegistryC6remove10streamerIdySS_tF",
+            "mangledName": "$s29AIBudsLiveStreamFlutterPlugin0bcD16StreamerRegistryC6remove10streamerIdySS_tF",
+            "moduleName": "AIBudsLiveStreamFlutterPlugin",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@AIBudsLiveStreamFlutterPlugin@objc(cs)AIBudsLiveStreamFlutterStreamerRegistry",
+        "mangledName": "$s29AIBudsLiveStreamFlutterPlugin0bcD16StreamerRegistryC",
+        "moduleName": "AIBudsLiveStreamFlutterPlugin",
+        "objc_name": "AIBudsLiveStreamFlutterStreamerRegistry",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStreamFlutterPlugin\/AIBudsLiveStreamFlutterPlugin.swift",
+      "kind": "StringLiteral",
+      "offset": 333,
+      "length": 6,
+      "value": "\"🍡\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStreamFlutterPlugin\/AIBudsLiveStreamFlutterPlugin.swift",
+      "kind": "StringLiteral",
+      "offset": 425,
+      "length": 34,
+      "value": "\"AIBudsLiveStreamFlutterPluginSDK\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStreamFlutterPlugin\/AIBudsLiveStreamFlutterPlugin.swift",
+      "kind": "StringLiteral",
+      "offset": 559,
+      "length": 14,
+      "value": "\"1.0.0-beta.8\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStreamFlutterPlugin\/AIBudsLiveStreamFlutterPlugin.swift",
+      "kind": "StringLiteral",
+      "offset": 689,
+      "length": 13,
+      "value": "\"20260704001\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStreamFlutterPlugin\/AIBudsLiveStreamFlutterPlugin.swift",
+      "kind": "StringLiteral",
+      "offset": 804,
+      "length": 12,
+      "value": "\"2026-07-04\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStreamFlutterPlugin\/AIBudsLiveStreamFlutterPlugin.swift",
+      "kind": "StringLiteral",
+      "offset": 889,
+      "length": 52,
+      "value": "\"com.topstep.sdks.aibuds.live-stream.flutter-plugin\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStreamFlutterPlugin\/AIBudsLiveStreamFlutterPlugin.swift",
+      "kind": "StringLiteral",
+      "offset": 1127,
+      "length": 21,
+      "value": "\"CFBundleDisplayName\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStreamFlutterPlugin\/AIBudsLiveStreamFlutterPlugin.swift",
+      "kind": "StringLiteral",
+      "offset": 1204,
+      "length": 14,
+      "value": "\"CFBundleName\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStreamFlutterPlugin\/AIBudsLiveStreamFlutterPlugin.swift",
+      "kind": "StringLiteral",
+      "offset": 1234,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStreamFlutterPlugin\/AIBudsLiveStreamFlutterPlugin.swift",
+      "kind": "StringLiteral",
+      "offset": 1359,
+      "length": 28,
+      "value": "\"CFBundleShortVersionString\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStreamFlutterPlugin\/AIBudsLiveStreamFlutterPlugin.swift",
+      "kind": "StringLiteral",
+      "offset": 1403,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStreamFlutterPlugin\/AIBudsLiveStreamFlutterPlugin.swift",
+      "kind": "StringLiteral",
+      "offset": 1525,
+      "length": 17,
+      "value": "\"CFBundleVersion\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStreamFlutterPlugin\/AIBudsLiveStreamFlutterPlugin.swift",
+      "kind": "StringLiteral",
+      "offset": 1558,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStreamFlutterPlugin\/AIBudsLiveStreamFlutterPluginSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 672,
+      "length": 52,
+      "value": "\"com.topstep.sdks.aibuds.live-stream.flutter-plugin\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStreamFlutterPlugin\/AIBudsLiveStreamFlutterPluginSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 861,
+      "length": 64,
+      "value": "\"com.topstep.sdks.aibuds.live-stream.flutter-plugin\/player-view\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStreamFlutterPlugin\/AIBudsLiveStreamFlutterPluginSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 7630,
+      "length": 100,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStreamFlutterPlugin\/AIBudsLiveStreamFlutterPluginSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 7648,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStreamFlutterPlugin\/AIBudsLiveStreamFlutterPluginSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 7659,
+      "length": 1,
+      "value": "\" V\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStreamFlutterPlugin\/AIBudsLiveStreamFlutterPluginSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 7675,
+      "length": 1,
+      "value": "\" (Build\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStreamFlutterPlugin\/AIBudsLiveStreamFlutterPluginSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 7694,
+      "length": 1,
+      "value": "\") Release Date: \""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStreamFlutterPlugin\/AIBudsLiveStreamFlutterPluginSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 7729,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStreamFlutterPlugin\/AIBudsLiveStreamFlutterPluginSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 7888,
+      "length": 6,
+      "value": "\"name\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStreamFlutterPlugin\/AIBudsLiveStreamFlutterPluginSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 7918,
+      "length": 9,
+      "value": "\"version\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStreamFlutterPlugin\/AIBudsLiveStreamFlutterPluginSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 7954,
+      "length": 7,
+      "value": "\"build\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStreamFlutterPlugin\/AIBudsLiveStreamFlutterPluginSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 7986,
+      "length": 13,
+      "value": "\"releaseDate\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStreamFlutterPlugin\/AIBudsLiveStreamFlutterPluginSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 8031,
+      "length": 18,
+      "value": "\"bundleIdentifier\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStreamFlutterPlugin\/AIBudsLiveStreamFlutterPluginSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 8086,
+      "length": 13,
+      "value": "\"channelName\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStreamFlutterPlugin\/AIBudsLiveStreamFlutterPluginSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 8126,
+      "length": 18,
+      "value": "\"platformViewType\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStreamFlutterPlugin\/AIBudsLiveStreamFlutterPluginSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 8176,
+      "length": 18,
+      "value": "\"aibudsLiveStream\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStreamFlutterPlugin\/AIBudsLiveStreamFlutterPluginSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 8214,
+      "length": 9,
+      "value": "\"version\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStreamFlutterPlugin\/AIBudsLiveStreamFlutterPluginSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 8273,
+      "length": 7,
+      "value": "\"build\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStreamFlutterPlugin\/AIBudsLiveStreamFlutterPluginSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 8328,
+      "length": 13,
+      "value": "\"releaseDate\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStreamFlutterPlugin\/AIBudsLiveStreamFlutterPluginSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 8395,
+      "length": 13,
+      "value": "\"description\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStreamFlutterPlugin\/LiveStreamFlutterPlatformView.swift",
+      "kind": "Dictionary",
+      "offset": 14566,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStreamFlutterPlugin\/LiveStreamFlutterStreamer.swift",
+      "kind": "Dictionary",
+      "offset": 9107,
+      "length": 3,
+      "value": "[]"
+    }
+  ]
+}

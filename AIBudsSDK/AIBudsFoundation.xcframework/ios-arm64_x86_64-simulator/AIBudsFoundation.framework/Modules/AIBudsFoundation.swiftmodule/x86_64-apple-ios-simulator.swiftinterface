@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.3.2 effective-5.10 (swiftlang-6.3.2.1.108 clang-2100.1.1.101)
+// swift-compiler-version: Apple Swift version 6.3.3 effective-5.10 (swiftlang-6.3.3.1.3 clang-2100.1.1.101)
 // swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature GlobalActorIsolatedTypesUsability -enable-upcoming-feature MemberImportVisibility -enable-upcoming-feature InferIsolatedConformances -enable-upcoming-feature NonisolatedNonsendingByDefault -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name AIBudsFoundation
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.2
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.3
 @_exported import AIBudsFoundation
 import AIBudsLog
 import CommonCrypto
@@ -184,6 +184,15 @@ extension AIBudsFoundation.EQSettingModel {
     @objc get
   }
   @objc public init(raw: Foundation.Data)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc(AIBudsRTSPStreamParams) final public class RTSPStreamParams : ObjectiveC.NSObject {
+  @objc(defaultParams) public static let `default`: AIBudsFoundation.RTSPStreamParams
+  @objc final public var bitrate: Swift.Int
+  @objc final public var qualityFactor: Swift.Int
+  @objc final public var iFrameInterval: Swift.Int
+  @objc override dynamic public init()
+  @objc public init(bitrate: Swift.Int = 0, qualityFactor: Swift.Int = 0, iFrameInterval: Swift.Int = 0)
   @objc deinit
 }
 @objc(AIBudsMediaCountInfoModel) final public class MediaCountInfoModel : ObjectiveC.NSObject {
@@ -629,6 +638,35 @@ extension AIBudsFoundation.CaptureMode : Swift.CustomDebugStringConvertible {
     get
   }
 }
+@objc(AIBudsCoprocessorModel) public enum CoprocessorModel : Swift.Int {
+  case unknown = -1
+  case none = 0
+  case qzV821 = 1
+  case txW81x = 2
+  case realtek = 3
+  case bluetrum = 4
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+extension AIBudsFoundation.CoprocessorModel : Swift.CaseIterable {
+  public static var allCases: [AIBudsFoundation.CoprocessorModel] {
+    get
+  }
+  public typealias AllCases = [AIBudsFoundation.CoprocessorModel]
+}
+extension AIBudsFoundation.CoprocessorModel : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
+extension AIBudsFoundation.CoprocessorModel : Swift.CustomDebugStringConvertible {
+  public var debugDescription: Swift.String {
+    get
+  }
+}
 @objc(AIBudsDeviceLanguage) public enum DeviceLanguage : Swift.Int {
   case unknown = -1
   case english = 0
@@ -855,7 +893,9 @@ public struct DeviceCapabilities : Swift.OptionSet {
   public static let supportAnc: AIBudsFoundation.DeviceCapabilities
   public static let supportOnDeviceVocieAssistant: AIBudsFoundation.DeviceCapabilities
   public static let supportBassEngine: AIBudsFoundation.DeviceCapabilities
-  public static let supportAntiWindNoise: AIBudsFoundation.DeviceCapabilities
+  public static let supportLiveStreaming: AIBudsFoundation.DeviceCapabilities
+  public static let shouldHideXimalayaInApp: AIBudsFoundation.DeviceCapabilities
+  public static let supportFactoryTestPromptToneChirp: AIBudsFoundation.DeviceCapabilities
   public var supportTws: Swift.Bool {
     get
   }
@@ -874,7 +914,13 @@ public struct DeviceCapabilities : Swift.OptionSet {
   public var supportBassEngine: Swift.Bool {
     get
   }
-  public var supportAntiWindNoise: Swift.Bool {
+  public var supportLiveStreaming: Swift.Bool {
+    get
+  }
+  public var shouldHideXimalayaInApp: Swift.Bool {
+    get
+  }
+  public var supportFactoryTestPromptToneChirp: Swift.Bool {
     get
   }
   public typealias ArrayLiteralElement = AIBudsFoundation.DeviceCapabilities
@@ -1003,6 +1049,31 @@ extension AIBudsFoundation.FileDeletingProgressEvent : Swift.CustomStringConvert
   }
 }
 extension AIBudsFoundation.FileDeletingProgressEvent : Swift.CustomDebugStringConvertible {
+  public var debugDescription: Swift.String {
+    get
+  }
+}
+@objc(AIBudsLiveStreamingMode) public enum LiveStreamingMode : Swift.Int {
+  case rtsp = 0
+  case jpegImage = 1
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+extension AIBudsFoundation.LiveStreamingMode : Swift.CaseIterable {
+  public static var allCases: [AIBudsFoundation.LiveStreamingMode] {
+    get
+  }
+  public typealias AllCases = [AIBudsFoundation.LiveStreamingMode]
+}
+extension AIBudsFoundation.LiveStreamingMode : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
+extension AIBudsFoundation.LiveStreamingMode : Swift.CustomDebugStringConvertible {
   public var debugDescription: Swift.String {
     get
   }
@@ -4077,6 +4148,9 @@ extension AIBudsFoundation.CameraOtaProgressPhase : Swift.RawRepresentable {}
 extension AIBudsFoundation.CaptureMode : Swift.Equatable {}
 extension AIBudsFoundation.CaptureMode : Swift.Hashable {}
 extension AIBudsFoundation.CaptureMode : Swift.RawRepresentable {}
+extension AIBudsFoundation.CoprocessorModel : Swift.Equatable {}
+extension AIBudsFoundation.CoprocessorModel : Swift.Hashable {}
+extension AIBudsFoundation.CoprocessorModel : Swift.RawRepresentable {}
 extension AIBudsFoundation.DeviceLanguage : Swift.Equatable {}
 extension AIBudsFoundation.DeviceLanguage : Swift.Hashable {}
 extension AIBudsFoundation.DeviceLanguage : Swift.RawRepresentable {}
@@ -4105,6 +4179,9 @@ extension AIBudsFoundation.DeviceOperation : Swift.Hashable {}
 extension AIBudsFoundation.FileDeletingProgressEvent : Swift.Equatable {}
 extension AIBudsFoundation.FileDeletingProgressEvent : Swift.Hashable {}
 extension AIBudsFoundation.FileDeletingProgressEvent : Swift.RawRepresentable {}
+extension AIBudsFoundation.LiveStreamingMode : Swift.Equatable {}
+extension AIBudsFoundation.LiveStreamingMode : Swift.Hashable {}
+extension AIBudsFoundation.LiveStreamingMode : Swift.RawRepresentable {}
 extension AIBudsFoundation.MediaFileType : Swift.Equatable {}
 extension AIBudsFoundation.MediaFileType : Swift.Hashable {}
 extension AIBudsFoundation.MediaFileType : Swift.RawRepresentable {}

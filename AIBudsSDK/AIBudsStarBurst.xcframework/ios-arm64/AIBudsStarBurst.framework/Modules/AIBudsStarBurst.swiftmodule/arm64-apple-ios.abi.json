@@ -8418,21 +8418,21 @@
       "kind": "StringLiteral",
       "offset": 508,
       "length": 14,
-      "value": "\"1.0.0-beta.7\""
+      "value": "\"1.0.0-beta.8\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsStarBurst\/AIBudsStarBurst.swift",
       "kind": "StringLiteral",
       "offset": 638,
       "length": 13,
-      "value": "\"20260531001\""
+      "value": "\"20260704001\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsStarBurst\/AIBudsStarBurst.swift",
       "kind": "StringLiteral",
       "offset": 753,
       "length": 12,
-      "value": "\"2026-05-31\""
+      "value": "\"2026-07-04\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsStarBurst\/AIBudsStarBurst.swift",
@@ -9044,6 +9044,510 @@
       "value": "\"tr\""
     },
     {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsStarBurst\/LanguageUtils.swift",
+      "kind": "StringLiteral",
+      "offset": 1622,
+      "length": 4,
+      "value": "\"bn\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsStarBurst\/LanguageUtils.swift",
+      "kind": "StringLiteral",
+      "offset": 1670,
+      "length": 4,
+      "value": "\"ro\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsStarBurst\/LanguageUtils.swift",
+      "kind": "StringLiteral",
+      "offset": 1721,
+      "length": 4,
+      "value": "\"ne\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsStarBurst\/LanguageUtils.swift",
+      "kind": "StringLiteral",
+      "offset": 1769,
+      "length": 4,
+      "value": "\"uk\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsStarBurst\/LanguageUtils.swift",
+      "kind": "StringLiteral",
+      "offset": 1817,
+      "length": 4,
+      "value": "\"cs\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsStarBurst\/LanguageUtils.swift",
+      "kind": "StringLiteral",
+      "offset": 1862,
+      "length": 4,
+      "value": "\"cy\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsStarBurst\/LanguageUtils.swift",
+      "kind": "StringLiteral",
+      "offset": 1910,
+      "length": 4,
+      "value": "\"hu\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsStarBurst\/LanguageUtils.swift",
+      "kind": "StringLiteral",
+      "offset": 1958,
+      "length": 4,
+      "value": "\"is\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsStarBurst\/LanguageUtils.swift",
+      "kind": "StringLiteral",
+      "offset": 2003,
+      "length": 4,
+      "value": "\"ka\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsStarBurst\/LanguageUtils.swift",
+      "kind": "StringLiteral",
+      "offset": 2054,
+      "length": 4,
+      "value": "\"kk\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsStarBurst\/LanguageUtils.swift",
+      "kind": "StringLiteral",
+      "offset": 2102,
+      "length": 4,
+      "value": "\"lb\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsStarBurst\/LanguageUtils.swift",
+      "kind": "StringLiteral",
+      "offset": 2150,
+      "length": 4,
+      "value": "\"lv\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsStarBurst\/LanguageUtils.swift",
+      "kind": "StringLiteral",
+      "offset": 2201,
+      "length": 4,
+      "value": "\"ml\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsStarBurst\/LanguageUtils.swift",
+      "kind": "StringLiteral",
+      "offset": 2255,
+      "length": 4,
+      "value": "\"sk\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsStarBurst\/LanguageUtils.swift",
+      "kind": "StringLiteral",
+      "offset": 2306,
+      "length": 4,
+      "value": "\"sl\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsStarBurst\/LanguageUtils.swift",
+      "kind": "StringLiteral",
+      "offset": 2360,
+      "length": 4,
+      "value": "\"sr\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsStarBurst\/LanguageUtils.swift",
+      "kind": "StringLiteral",
+      "offset": 2411,
+      "length": 4,
+      "value": "\"te\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsStarBurst\/LanguageUtils.swift",
+      "kind": "StringLiteral",
+      "offset": 2459,
+      "length": 4,
+      "value": "\"ca\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsStarBurst\/LanguageUtils.swift",
+      "kind": "StringLiteral",
+      "offset": 2513,
+      "length": 4,
+      "value": "\"ta\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsStarBurst\/LanguageUtils.swift",
+      "kind": "StringLiteral",
+      "offset": 2561,
+      "length": 4,
+      "value": "\"ur\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsStarBurst\/LanguageUtils.swift",
+      "kind": "StringLiteral",
+      "offset": 2609,
+      "length": 4,
+      "value": "\"hr\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsStarBurst\/LanguageUtils.swift",
+      "kind": "StringLiteral",
+      "offset": 2660,
+      "length": 4,
+      "value": "\"bg\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsStarBurst\/LanguageUtils.swift",
+      "kind": "StringLiteral",
+      "offset": 2711,
+      "length": 4,
+      "value": "\"lt\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsStarBurst\/LanguageUtils.swift",
+      "kind": "StringLiteral",
+      "offset": 2759,
+      "length": 4,
+      "value": "\"la\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsStarBurst\/LanguageUtils.swift",
+      "kind": "StringLiteral",
+      "offset": 2804,
+      "length": 4,
+      "value": "\"mi\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsStarBurst\/LanguageUtils.swift",
+      "kind": "StringLiteral",
+      "offset": 2849,
+      "length": 4,
+      "value": "\"fa\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsStarBurst\/LanguageUtils.swift",
+      "kind": "StringLiteral",
+      "offset": 2894,
+      "length": 4,
+      "value": "\"az\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsStarBurst\/LanguageUtils.swift",
+      "kind": "StringLiteral",
+      "offset": 2945,
+      "length": 4,
+      "value": "\"kn\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsStarBurst\/LanguageUtils.swift",
+      "kind": "StringLiteral",
+      "offset": 2993,
+      "length": 4,
+      "value": "\"et\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsStarBurst\/LanguageUtils.swift",
+      "kind": "StringLiteral",
+      "offset": 3044,
+      "length": 4,
+      "value": "\"mk\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsStarBurst\/LanguageUtils.swift",
+      "kind": "StringLiteral",
+      "offset": 3092,
+      "length": 4,
+      "value": "\"br\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsStarBurst\/LanguageUtils.swift",
+      "kind": "StringLiteral",
+      "offset": 3143,
+      "length": 4,
+      "value": "\"eu\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsStarBurst\/LanguageUtils.swift",
+      "kind": "StringLiteral",
+      "offset": 3191,
+      "length": 4,
+      "value": "\"hy\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsStarBurst\/LanguageUtils.swift",
+      "kind": "StringLiteral",
+      "offset": 3242,
+      "length": 4,
+      "value": "\"mn\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsStarBurst\/LanguageUtils.swift",
+      "kind": "StringLiteral",
+      "offset": 3287,
+      "length": 4,
+      "value": "\"bs\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsStarBurst\/LanguageUtils.swift",
+      "kind": "StringLiteral",
+      "offset": 3338,
+      "length": 4,
+      "value": "\"sq\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsStarBurst\/LanguageUtils.swift",
+      "kind": "StringLiteral",
+      "offset": 3392,
+      "length": 4,
+      "value": "\"gl\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsStarBurst\/LanguageUtils.swift",
+      "kind": "StringLiteral",
+      "offset": 3443,
+      "length": 4,
+      "value": "\"mr\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsStarBurst\/LanguageUtils.swift",
+      "kind": "StringLiteral",
+      "offset": 3491,
+      "length": 4,
+      "value": "\"pa\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsStarBurst\/LanguageUtils.swift",
+      "kind": "StringLiteral",
+      "offset": 3539,
+      "length": 4,
+      "value": "\"si\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsStarBurst\/LanguageUtils.swift",
+      "kind": "StringLiteral",
+      "offset": 3587,
+      "length": 4,
+      "value": "\"km\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsStarBurst\/LanguageUtils.swift",
+      "kind": "StringLiteral",
+      "offset": 3632,
+      "length": 4,
+      "value": "\"sn\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsStarBurst\/LanguageUtils.swift",
+      "kind": "StringLiteral",
+      "offset": 3677,
+      "length": 4,
+      "value": "\"yo\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsStarBurst\/LanguageUtils.swift",
+      "kind": "StringLiteral",
+      "offset": 3725,
+      "length": 4,
+      "value": "\"so\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsStarBurst\/LanguageUtils.swift",
+      "kind": "StringLiteral",
+      "offset": 3773,
+      "length": 4,
+      "value": "\"af\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsStarBurst\/LanguageUtils.swift",
+      "kind": "StringLiteral",
+      "offset": 3824,
+      "length": 4,
+      "value": "\"oc\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsStarBurst\/LanguageUtils.swift",
+      "kind": "StringLiteral",
+      "offset": 3869,
+      "length": 4,
+      "value": "\"be\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsStarBurst\/LanguageUtils.swift",
+      "kind": "StringLiteral",
+      "offset": 3920,
+      "length": 4,
+      "value": "\"tg\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsStarBurst\/LanguageUtils.swift",
+      "kind": "StringLiteral",
+      "offset": 3968,
+      "length": 4,
+      "value": "\"sd\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsStarBurst\/LanguageUtils.swift",
+      "kind": "StringLiteral",
+      "offset": 4013,
+      "length": 4,
+      "value": "\"gu\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsStarBurst\/LanguageUtils.swift",
+      "kind": "StringLiteral",
+      "offset": 4064,
+      "length": 4,
+      "value": "\"am\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsStarBurst\/LanguageUtils.swift",
+      "kind": "StringLiteral",
+      "offset": 4115,
+      "length": 4,
+      "value": "\"yi\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsStarBurst\/LanguageUtils.swift",
+      "kind": "StringLiteral",
+      "offset": 4163,
+      "length": 4,
+      "value": "\"lo\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsStarBurst\/LanguageUtils.swift",
+      "kind": "StringLiteral",
+      "offset": 4208,
+      "length": 4,
+      "value": "\"uz\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsStarBurst\/LanguageUtils.swift",
+      "kind": "StringLiteral",
+      "offset": 4259,
+      "length": 4,
+      "value": "\"fo\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsStarBurst\/LanguageUtils.swift",
+      "kind": "StringLiteral",
+      "offset": 4304,
+      "length": 4,
+      "value": "\"ht\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsStarBurst\/LanguageUtils.swift",
+      "kind": "StringLiteral",
+      "offset": 4361,
+      "length": 4,
+      "value": "\"ps\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsStarBurst\/LanguageUtils.swift",
+      "kind": "StringLiteral",
+      "offset": 4409,
+      "length": 4,
+      "value": "\"tk\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsStarBurst\/LanguageUtils.swift",
+      "kind": "StringLiteral",
+      "offset": 4457,
+      "length": 4,
+      "value": "\"nn\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsStarBurst\/LanguageUtils.swift",
+      "kind": "StringLiteral",
+      "offset": 4514,
+      "length": 4,
+      "value": "\"mt\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsStarBurst\/LanguageUtils.swift",
+      "kind": "StringLiteral",
+      "offset": 4562,
+      "length": 4,
+      "value": "\"sa\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsStarBurst\/LanguageUtils.swift",
+      "kind": "StringLiteral",
+      "offset": 4604,
+      "length": 4,
+      "value": "\"my\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsStarBurst\/LanguageUtils.swift",
+      "kind": "StringLiteral",
+      "offset": 4649,
+      "length": 4,
+      "value": "\"bo\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsStarBurst\/LanguageUtils.swift",
+      "kind": "StringLiteral",
+      "offset": 4691,
+      "length": 4,
+      "value": "\"mg\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsStarBurst\/LanguageUtils.swift",
+      "kind": "StringLiteral",
+      "offset": 4745,
+      "length": 4,
+      "value": "\"as\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsStarBurst\/LanguageUtils.swift",
+      "kind": "StringLiteral",
+      "offset": 4793,
+      "length": 4,
+      "value": "\"tt\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsStarBurst\/LanguageUtils.swift",
+      "kind": "StringLiteral",
+      "offset": 4839,
+      "length": 5,
+      "value": "\"haw\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsStarBurst\/LanguageUtils.swift",
+      "kind": "StringLiteral",
+      "offset": 4886,
+      "length": 4,
+      "value": "\"ln\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsStarBurst\/LanguageUtils.swift",
+      "kind": "StringLiteral",
+      "offset": 4934,
+      "length": 4,
+      "value": "\"ha\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsStarBurst\/LanguageUtils.swift",
+      "kind": "StringLiteral",
+      "offset": 4979,
+      "length": 4,
+      "value": "\"ba\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsStarBurst\/LanguageUtils.swift",
+      "kind": "StringLiteral",
+      "offset": 5030,
+      "length": 4,
+      "value": "\"jw\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsStarBurst\/LanguageUtils.swift",
+      "kind": "StringLiteral",
+      "offset": 5075,
+      "length": 4,
+      "value": "\"su\""
+    },
+    {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsStarBurst\/StarBurstAIAudioRecordingService.swift",
       "kind": "StringLiteral",
       "offset": 627,
@@ -9158,14 +9662,14 @@
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsStarBurst\/StarBurstAIAudioRecordingService.swift",
       "kind": "BooleanLiteral",
-      "offset": 38830,
+      "offset": 38831,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsStarBurst\/StarBurstAIAudioRecordingService.swift",
       "kind": "BooleanLiteral",
-      "offset": 48004,
+      "offset": 48005,
       "length": 5,
       "value": "false"
     },
@@ -9389,14 +9893,14 @@
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsStarBurst\/StarBurstAIChatService.swift",
       "kind": "BooleanLiteral",
-      "offset": 92119,
+      "offset": 96427,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsStarBurst\/StarBurstAIChatService.swift",
       "kind": "BooleanLiteral",
-      "offset": 94673,
+      "offset": 98981,
       "length": 4,
       "value": "true"
     },
@@ -9417,126 +9921,126 @@
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsStarBurst\/StarBurstSimultaneousInterpretationService.swift",
       "kind": "StringLiteral",
-      "offset": 685,
+      "offset": 1614,
       "length": 60,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsStarBurst\/StarBurstSimultaneousInterpretationService.swift",
       "kind": "StringLiteral",
-      "offset": 710,
+      "offset": 1639,
       "length": 1,
       "value": "\".simultaneous_interpretation.queue\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsStarBurst\/StarBurstSimultaneousInterpretationService.swift",
       "kind": "StringLiteral",
-      "offset": 900,
+      "offset": 1829,
       "length": 75,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsStarBurst\/StarBurstSimultaneousInterpretationService.swift",
       "kind": "StringLiteral",
-      "offset": 925,
+      "offset": 1854,
       "length": 1,
       "value": "\".simultaneous_interpretation.event.dispatch.queue\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsStarBurst\/StarBurstSimultaneousInterpretationService.swift",
       "kind": "StringLiteral",
-      "offset": 1128,
+      "offset": 2057,
       "length": 74,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsStarBurst\/StarBurstSimultaneousInterpretationService.swift",
       "kind": "StringLiteral",
-      "offset": 1153,
+      "offset": 2082,
       "length": 1,
       "value": "\".simultaneous_interpretation.stream_player.queue\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsStarBurst\/StarBurstSimultaneousInterpretationService.swift",
       "kind": "StringLiteral",
-      "offset": 1419,
+      "offset": 2348,
       "length": 21,
       "value": "\"yyyy-MM-dd_HH-mm-ss\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsStarBurst\/StarBurstSimultaneousInterpretationService.swift",
       "kind": "StringLiteral",
-      "offset": 1487,
+      "offset": 2416,
       "length": 13,
       "value": "\"en_US_POSIX\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsStarBurst\/StarBurstSimultaneousInterpretationService.swift",
       "kind": "StringLiteral",
-      "offset": 1759,
+      "offset": 2688,
       "length": 37,
       "value": "\"\/audios\/simultaneous_interpretation\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsStarBurst\/StarBurstSimultaneousInterpretationService.swift",
       "kind": "BooleanLiteral",
-      "offset": 1898,
+      "offset": 2827,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsStarBurst\/StarBurstSimultaneousInterpretationService.swift",
       "kind": "StringLiteral",
-      "offset": 1924,
+      "offset": 2853,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsStarBurst\/StarBurstSimultaneousInterpretationService.swift",
       "kind": "BooleanLiteral",
-      "offset": 2246,
+      "offset": 3175,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsStarBurst\/StarBurstSimultaneousInterpretationService.swift",
       "kind": "StringLiteral",
-      "offset": 2335,
+      "offset": 3264,
       "length": 75,
       "value": "\"Error creating simultaneous interpretation audio root directory: \""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsStarBurst\/StarBurstSimultaneousInterpretationService.swift",
       "kind": "StringLiteral",
-      "offset": 2409,
+      "offset": 3338,
       "length": 3,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsStarBurst\/StarBurstSimultaneousInterpretationService.swift",
       "kind": "BooleanLiteral",
-      "offset": 3196,
+      "offset": 4125,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsStarBurst\/StarBurstSimultaneousInterpretationService.swift",
       "kind": "BooleanLiteral",
-      "offset": 3331,
+      "offset": 4260,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsStarBurst\/StarBurstSimultaneousInterpretationService.swift",
       "kind": "IntegerLiteral",
-      "offset": 3643,
+      "offset": 4572,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsStarBurst\/StarBurstSimultaneousInterpretationService.swift",
       "kind": "BooleanLiteral",
-      "offset": 7859,
+      "offset": 8946,
       "length": 4,
       "value": "true"
     },

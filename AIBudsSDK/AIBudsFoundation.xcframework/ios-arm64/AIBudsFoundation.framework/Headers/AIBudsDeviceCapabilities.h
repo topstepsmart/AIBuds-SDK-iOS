@@ -25,8 +25,12 @@ typedef NS_OPTIONS(NSUInteger, AIBudsDeviceCapabilities) {
     AIBudsDeviceCapabilitiesSupportOnDeviceVoiceAssistant = 1 << 4,
     /// Support Bass Engine
     AIBudsDeviceCapabilitiesSupportBassEngine       = 1 << 5,
-    /// Support Anti-wind Noise
-    AIBudsDeviceCapabilitiesSupportAntiWindNoise    = 1 << 6,
+    /// Support Live Streaming
+    AIBudsDeviceCapabilitiesSupportLiveStreaming    = 1 << 6,
+    /// Indicates to whether should hide Ximalaya in app
+    AIBudsDeviceCapabilitiesShouldHideXimalayaInApp    = 1 << 7,
+    /// Support Factory Test Prompt Tone Chirp
+    AIBudsDeviceCapabilitiesSupportFactoryTestPromptToneChirp    = 1 << 8,
 };
 
 #endif /* AIBudsDeviceCapabilities_h */

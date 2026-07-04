@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.3.2 effective-5.10 (swiftlang-6.3.2.1.108 clang-2100.1.1.101)
+// swift-compiler-version: Apple Swift version 6.3.3 effective-5.10 (swiftlang-6.3.3.1.3 clang-2100.1.1.101)
 // swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature GlobalActorIsolatedTypesUsability -enable-upcoming-feature MemberImportVisibility -enable-upcoming-feature InferIsolatedConformances -enable-upcoming-feature NonisolatedNonsendingByDefault -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name AIBuds
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.2
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.3
 @_exported import AIBuds
 import AIBudsFoundation
 import AIBudsLog
@@ -148,6 +148,37 @@ extension AIBuds.AIBudsSDK {
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
+    get
+  }
+}
+extension AIBuds.AIBudsSDK {
+  @objc public static let LiveStreamingErrorDomain: Swift.String
+}
+@objc(AIBudsSdkLiveStreamingErrorCode) public enum SdkLiveStreamingErrorCode : Swift.Int {
+  case unknown = -1
+  case deviceNotSupport = 0
+  case hotspotDisconnectedDuringLiveStreaming = 1
+  case invalidHotspotConfig = 2
+  case interruptedByShutdownOrLowBattery = 3
+  case networkTimeout = 4
+  case liveStreamingSessionAlreadyRunning = 4001
+  case noLiveStreamingSessionIsRunning = 4002
+  case liveStreamingSessionStartFailedDueToHotspotConfigureError = 4003
+  case liveStreamingSessionStartFailedDueToHotspotConnectionFailure = 4004
+  case liveStreamingSessionStartFailedDueToEnterLiveStreamingModeFailed = 4005
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+extension AIBuds.SdkLiveStreamingErrorCode : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
+extension AIBuds.SdkLiveStreamingErrorCode : Swift.CustomDebugStringConvertible {
+  public var debugDescription: Swift.String {
     get
   }
 }
@@ -498,6 +529,7 @@ extension Foundation.NSNotification.Name {
   @objc var mediaCountInfo: AIBudsFoundation.MediaCountInfoModel? { get }
   @objc var isSupportAdjustRecordDuration: Swift.Bool { get }
   @objc var aiSolutionCapabilities: AIBudsFoundation.AIBudsAISolutionCapabilities { get }
+  @objc var coprocessorModel: AIBudsFoundation.CoprocessorModel { get }
   @objc(syncDeviceTimeWithCompletion:) func syncDeviceTime(_ completion: AIBuds.AIBudsStatusCodeCompletionHandler?)
   @objc(setDeviceTime:completion:) func setDeviceTime(to date: Foundation.Date, completion: AIBuds.AIBudsStatusCodeCompletionHandler?)
   @objc(setDeviceLanguage:completion:) func setDeviceLanguage(_ language: AIBudsFoundation.DeviceLanguage, completion: AIBuds.AIBudsCompletionHandler?)
@@ -557,6 +589,13 @@ extension Foundation.NSNotification.Name {
 }
 @objc(AIBudsFindPhoneStateReportingAPI) public protocol FindPhoneStateReportingAPI : AIBuds.DeviceAPI {
   @objc(notifyPhoneFoundWithCompletion:) func notifyPhoneFound(_ completion: AIBuds.AIBudsCompletionHandler?)
+}
+@objc(AIBudsLiveStreamingAPI) public protocol LiveStreamingAPI : AIBuds.DeviceAPI {
+  @objc var supportsRTSPLiveStreaming: Swift.Bool { get }
+  @objc var supportsJPEGImageLiveStreaming: Swift.Bool { get }
+  @objc(startRTSPLiveStreamingWithParams:configureHotspotStartingHandler:hotspotConfigureCompletionHandler:enterLiveStreamingModeStartingHandler:enterLiveStreamingModeCompletedHandler:waitingForHotspotOpenHandler:connectDeviceHotspotStartingHandler:deviceHotspotConnectCompletionHandler:rtspAddressReceivedHandler:sessionStartCompletionHandler:sessionFinishHandler:) func startRTSPLiveStreaming(withParams params: AIBudsFoundation.RTSPStreamParams, configureHotspotStartingHandler: AIBuds.AIBudsLiveStreamingConfigureHotspotStartingHandler?, hotspotConfigureCompletionHandler: AIBuds.AIBudsLiveStreamingHotspotConfigureCompletionHandler?, enterLiveStreamingModeStartingHandler: AIBuds.AIBudsEnterLiveStreamingModeStartingHandler?, enterLiveStreamingModeCompletedHandler: AIBuds.AIBudsEnterLiveStreamingModeCompletionHandler?, waitingForHotspotOpenHandler: AIBuds.AIBudsLiveStreamingStartingToWaitForHotspotOpenHandler?, connectDeviceHotspotStartingHandler: AIBuds.AIBudsLiveStreamingConnectDeviceHotspotStartingHandler?, deviceHotspotConnectCompletionHandler: AIBuds.AIBudsLiveStreamingDeviceHotspotConnectCompletionHandler?, rtspAddressReceivedHandler: AIBuds.AIBudsLiveStreamingRtspAddressReceivedHandler?, sessionStartCompletionHandler: AIBuds.AIBudsLiveStreamingSessionStartCompletionHandler?, sessionFinishHandler: AIBuds.AIBudsLiveStreamingSessionFinishHandler?)
+  @objc(startJPEGImageLiveStreamingWithSessionStartCompletionHandler:jpegDataReceivedHandler:sessionFinishHandler:) func startJPEGImageLiveStreaming(withSessionStartCompletionHandler sessionStartCompletionHandler: AIBuds.AIBudsLiveStreamingSessionStartCompletionHandler?, jpegDataReceivedHandler: AIBuds.AIBudsLiveStreamingJpegDataReceivedHandler?, sessionFinishHandler: AIBuds.AIBudsLiveStreamingSessionFinishHandler?)
+  @objc(stopLiveStreaming) func stopLiveStreaming()
 }
 @objc(AIBudsOnDeviceVoiceAssistantAPI) public protocol OnDeviceVoiceAssistantAPI : AIBuds.DeviceAPI {
   @objc var onDeviceVoiceAssistantCapability: AIBudsFoundation.OnDeviceVoiceAssistantCapability { get }
@@ -690,6 +729,9 @@ extension AIBuds.SdkCameraOtaErrorCode : Swift.RawRepresentable {}
 extension AIBuds.SdkErrorCode : Swift.Equatable {}
 extension AIBuds.SdkErrorCode : Swift.Hashable {}
 extension AIBuds.SdkErrorCode : Swift.RawRepresentable {}
+extension AIBuds.SdkLiveStreamingErrorCode : Swift.Equatable {}
+extension AIBuds.SdkLiveStreamingErrorCode : Swift.Hashable {}
+extension AIBuds.SdkLiveStreamingErrorCode : Swift.RawRepresentable {}
 extension AIBuds.SdkOtaErrorCode : Swift.Equatable {}
 extension AIBuds.SdkOtaErrorCode : Swift.Hashable {}
 extension AIBuds.SdkOtaErrorCode : Swift.RawRepresentable {}
