@@ -15733,9 +15733,9 @@
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MagicHelperMate.swift",
       "kind": "StringLiteral",
-      "offset": 11714,
-      "length": 3,
-      "value": "\"2\""
+      "offset": 11737,
+      "length": 4,
+      "value": "\"14\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudAIAudioRecordingService.swift",
@@ -19956,21 +19956,21 @@
       "kind": "StringLiteral",
       "offset": 257,
       "length": 15,
-      "value": "\"1.0.0-beta.11\""
+      "value": "\"1.0.0-beta.12\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/SDKBuildInfo\/SDK_Build_Info.swift",
       "kind": "StringLiteral",
       "offset": 388,
       "length": 13,
-      "value": "\"20260725001\""
+      "value": "\"20260727001\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/SDKBuildInfo\/SDK_Build_Info.swift",
       "kind": "StringLiteral",
       "offset": 503,
       "length": 12,
-      "value": "\"2026-07-25\""
+      "value": "\"2026-07-27\""
     }
   ]
 }

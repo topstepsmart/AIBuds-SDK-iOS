@@ -10,11 +10,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		NOKfhb18axQBRLIm8/N+7AVojLg=
+		H6Y8pUQFEstEAZ9Y069ylm4Nk88=
 		</data>
 		<key>Modules/AIBudsAudio.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		ObsNL/loVZKvVtAickJUe5x1vuE=
+		BkuhzeNTEMdYFuuQBJEqqzSMcms=
 		</data>
 		<key>Modules/AIBudsAudio.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/AIBudsAudio.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		swYbk0aZ4o21UQ7+Lp6Oumde7Vs=
+		Nmpd/jAH1dcXpywit3XIHaK94Hw=
 		</data>
 		<key>Modules/AIBudsAudio.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		ObsNL/loVZKvVtAickJUe5x1vuE=
+		BkuhzeNTEMdYFuuQBJEqqzSMcms=
 		</data>
 		<key>Modules/AIBudsAudio.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Modules/AIBudsAudio.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		zxEU59ajWHvxU7SiI5/2G1fh6Jo=
+		rUXX00kt/SGCKqwXxlsamxKwyoU=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -66,7 +66,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			P6VINjQQjBfjRSqAqZ0eJ1SnaBoZg1ikig/cx3xNQXQ=
+			nOHmbo3hCUbt9oHHUwKxKV0pasXELLwSAz3Pi84/mk8=
 			</data>
 		</dict>
 		<key>Modules/AIBudsAudio.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -94,14 +94,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			6WCayRlN+8HwvEvNBNvU/Xqeb4Na8EcC20kmcJlWCIE=
+			xBiPDSpah865q3g6LO9C3kzE0bJLQH9fe+TUXRQtC/c=
 			</data>
 		</dict>
 		<key>Modules/AIBudsAudio.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			P6VINjQQjBfjRSqAqZ0eJ1SnaBoZg1ikig/cx3xNQXQ=
+			nOHmbo3hCUbt9oHHUwKxKV0pasXELLwSAz3Pi84/mk8=
 			</data>
 		</dict>
 		<key>Modules/AIBudsAudio.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -129,7 +129,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			QQHhB5yCFvXWiA9ZTi0Fy0D31ptfDCqZLXpYT7wWvOo=
+			36LSYyZObFVKhMlWHcW14RbSzYMNyk9rfytAnukPX8w=
 			</data>
 		</dict>
 	</dict>
