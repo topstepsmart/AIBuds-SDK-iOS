@@ -166,7 +166,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		S9j79Gh1WBicmUDbIkZMy17pusw=
+		SGb8yIPr7GKCPBtzf8UFmh8jEqo=
 		</data>
 		<key>MGBundle.bundle/silero_vad.onnx</key>
 		<data>
@@ -174,7 +174,7 @@
 		</data>
 		<key>Modules/MagicHelper.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		QwLMg2SWHtaCtI6fLGwgp5MB9XM=
+		PQK+k0y46GEpvokY1Hsq6rqsvK8=
 		</data>
 		<key>Modules/MagicHelper.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
@@ -658,11 +658,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			QwLMg2SWHtaCtI6fLGwgp5MB9XM=
+			PQK+k0y46GEpvokY1Hsq6rqsvK8=
 			</data>
 			<key>hash2</key>
 			<data>
-			8E6dsvZuqY15Bw3STaiv9NOnuDdEuOg+QXXV8vyc53c=
+			YNIWM+d+ApcExYIDonh+i4cZx6ckWdRAn1WGgNZ2oac=
 			</data>
 		</dict>
 		<key>Modules/MagicHelper.swiftmodule/arm64-apple-ios.abi.json</key>
