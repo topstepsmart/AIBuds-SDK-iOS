@@ -14251,7 +14251,7 @@
       "kind": "StringLiteral",
       "offset": 905,
       "length": 8,
-      "value": "\"2.9.38\""
+      "value": "\"2.9.39\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/AIBudsMagicHelper.swift",
@@ -15887,14 +15887,14 @@
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudAIAudioRecordingService.swift",
       "kind": "BooleanLiteral",
-      "offset": 22832,
+      "offset": 23069,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudAIAudioRecordingService.swift",
       "kind": "BooleanLiteral",
-      "offset": 27407,
+      "offset": 27644,
       "length": 5,
       "value": "false"
     },
@@ -16195,42 +16195,42 @@
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudSimultaneousInterpretationService.swift",
       "kind": "BooleanLiteral",
-      "offset": 3590,
+      "offset": 3659,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudSimultaneousInterpretationService.swift",
       "kind": "BooleanLiteral",
-      "offset": 3725,
+      "offset": 3794,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudSimultaneousInterpretationService.swift",
       "kind": "IntegerLiteral",
-      "offset": 4041,
+      "offset": 4110,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudSimultaneousInterpretationService.swift",
       "kind": "BooleanLiteral",
-      "offset": 8694,
+      "offset": 8763,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudSimultaneousInterpretationService.swift",
       "kind": "BooleanLiteral",
-      "offset": 27591,
+      "offset": 27698,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudSimultaneousInterpretationService.swift",
       "kind": "BooleanLiteral",
-      "offset": 27754,
+      "offset": 27861,
       "length": 5,
       "value": "false"
     },
@@ -19956,21 +19956,21 @@
       "kind": "StringLiteral",
       "offset": 257,
       "length": 15,
-      "value": "\"1.0.0-beta.15\""
+      "value": "\"1.0.0-beta.16\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/SDKBuildInfo\/SDK_Build_Info.swift",
       "kind": "StringLiteral",
       "offset": 388,
       "length": 13,
-      "value": "\"20260729001\""
+      "value": "\"20260730001\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/SDKBuildInfo\/SDK_Build_Info.swift",
       "kind": "StringLiteral",
       "offset": 503,
       "length": 12,
-      "value": "\"2026-07-29\""
+      "value": "\"2026-07-30\""
     }
   ]
 }
