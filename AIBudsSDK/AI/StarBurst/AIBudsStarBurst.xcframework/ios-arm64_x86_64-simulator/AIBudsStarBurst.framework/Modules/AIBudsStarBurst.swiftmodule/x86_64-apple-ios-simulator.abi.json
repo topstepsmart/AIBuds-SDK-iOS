@@ -9917,42 +9917,56 @@
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsStarBurst\/StarBurstAIChatService.swift",
       "kind": "IntegerLiteral",
-      "offset": 4495,
+      "offset": 5380,
+      "length": 2,
+      "value": "80"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsStarBurst\/StarBurstAIChatService.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5563,
+      "length": 4,
+      "value": "1000"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsStarBurst\/StarBurstAIChatService.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5943,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsStarBurst\/StarBurstAIChatService.swift",
       "kind": "BooleanLiteral",
-      "offset": 4925,
+      "offset": 6378,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsStarBurst\/StarBurstAIChatService.swift",
       "kind": "BooleanLiteral",
-      "offset": 6240,
+      "offset": 7817,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsStarBurst\/StarBurstAIChatService.swift",
       "kind": "BooleanLiteral",
-      "offset": 6375,
+      "offset": 7952,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsStarBurst\/StarBurstAIChatService.swift",
       "kind": "BooleanLiteral",
-      "offset": 96528,
+      "offset": 102587,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsStarBurst\/StarBurstAIChatService.swift",
       "kind": "BooleanLiteral",
-      "offset": 99082,
+      "offset": 105141,
       "length": 4,
       "value": "true"
     },
@@ -10255,21 +10269,21 @@
       "kind": "StringLiteral",
       "offset": 257,
       "length": 15,
-      "value": "\"1.0.0-beta.16\""
+      "value": "\"1.0.0-beta.17\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/SDKBuildInfo\/SDK_Build_Info.swift",
       "kind": "StringLiteral",
       "offset": 388,
       "length": 13,
-      "value": "\"20260730001\""
+      "value": "\"20260731001\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/SDKBuildInfo\/SDK_Build_Info.swift",
       "kind": "StringLiteral",
       "offset": 503,
       "length": 12,
-      "value": "\"2026-07-30\""
+      "value": "\"2026-07-31\""
     }
   ]
 }

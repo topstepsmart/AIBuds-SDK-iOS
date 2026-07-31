@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
   # ==================== Basic Information ====================
   # SDK name and version
   s.name         = "AIBudsSDK"
-  s.version      = "1.0.0-beta.16"
+  s.version      = "1.0.0-beta.17"
   s.summary      = "AIBuds SDK - An iOS framework for connecting AI devices"
   s.description  = <<-DESC
                     AIBuds SDK is a versatile framework for connecting iOS apps to AI devices. It provides modular components including core connectivity, Bluetooth management, voice assistant, AI capabilities, logging utilities, and foundation services.
@@ -22,10 +22,10 @@ Pod::Spec.new do |s|
 
   # Logging module - Provides logging capabilities
   s.subspec 'Log' do |log|
-    log.subspec 'Core' do |logCore|
-      logCore.vendored_frameworks = 'AIBudsSDK/Log/Core/AIBudsLog.xcframework'
-      logCore.dependency 'zipzap'
-      logCore.frameworks = 'Foundation'
+    log.subspec 'Core' do |log_core|
+      log_core.vendored_frameworks = 'AIBudsSDK/Log/Core/AIBudsLog.xcframework'
+      log_core.dependency 'zipzap'
+      log_core.frameworks = 'Foundation'
     end
 
     # XLFacility subspec - Extended logging with browser support
@@ -72,10 +72,10 @@ Pod::Spec.new do |s|
     end
     
     # StarburstSdk - Starburst AI service SDK
-    thirdparty.subspec 'StarburstSdk' do |starburstSdk|
-      starburstSdk.vendored_frameworks = 'AIBudsSDK/ThirdParty/StarBurst/StarburstSdk.framework'
-      starburstSdk.dependency 'SocketRocket'
-      starburstSdk.dependency 'AFNetworking', '~> 4.0'
+    thirdparty.subspec 'StarburstSdk' do |starburst_sdk|
+      starburst_sdk.vendored_frameworks = 'AIBudsSDK/ThirdParty/StarBurst/StarburstSdk.framework'
+      starburst_sdk.dependency 'SocketRocket'
+      starburst_sdk.dependency 'AFNetworking', '~> 4.0'
     end
 
     # MicrosoftCognitiveServicesSpeech - Microsoft Cognitive Services Speech SDK
@@ -84,14 +84,14 @@ Pod::Spec.new do |s|
     end
     
     # MagicHelper - Magic Cloud AI service SDK
-    thirdparty.subspec 'MagicHelper' do |magicHelper|
-      magicHelper.vendored_frameworks = 'AIBudsSDK/ThirdParty/MltCloud/MagicHelper.framework'
-      magicHelper.vendored_libraries = 'AIBudsSDK/ThirdParty/MltCloud/libQPlayAutoSDK.a'
-      magicHelper.resource = 'AIBudsSDK/ThirdParty/MltCloud/MGBundle.bundle'
-      magicHelper.dependency 'AIBudsSDK/ThirdParty/MicrosoftCognitiveServicesSpeech'
-      magicHelper.dependency 'SocketRocket'
-      magicHelper.dependency 'onnxruntime-objc', '1.18.0'
-      magicHelper.dependency 'AFNetworking', '~> 4.0'
+    thirdparty.subspec 'MagicHelper' do |magic_helper|
+      magic_helper.vendored_frameworks = 'AIBudsSDK/ThirdParty/MltCloud/MagicHelper.framework'
+      magic_helper.vendored_libraries = 'AIBudsSDK/ThirdParty/MltCloud/libQPlayAutoSDK.a'
+      magic_helper.resource = 'AIBudsSDK/ThirdParty/MltCloud/MGBundle.bundle'
+      magic_helper.dependency 'AIBudsSDK/ThirdParty/MicrosoftCognitiveServicesSpeech'
+      magic_helper.dependency 'SocketRocket'
+      magic_helper.dependency 'onnxruntime-objc', '1.18.0'
+      magic_helper.dependency 'AFNetworking', '~> 4.0'
     end
     
     # OpenSSL - Cryptography library
@@ -174,27 +174,27 @@ Pod::Spec.new do |s|
     end
 
     # Dashboard - AI management dashboard
-    ai.subspec 'Dashboard' do |dashboard|
-      dashboard.vendored_frameworks = 'AIBudsSDK/AI/Dashboard/AIBudsAIDashboard.xcframework'
-      dashboard.resource = 'AIBudsSDK/AI/Dashboard/AIBudsAIDashboard.bundle'
-      dashboard.dependency 'AIBudsSDK/AI/Core'
-      dashboard.dependency 'WCDB.swift', '2.1.16'
-      dashboard.dependency 'AIBudsSDK/ThirdParty/GCDWebServer'
-      dashboard.dependency 'YYWebImage'
-      dashboard.dependency 'iOSLogBrowserSDK'
+    ai.subspec 'Dashboard' do |ai_dashboard|
+      ai_dashboard.vendored_frameworks = 'AIBudsSDK/AI/Dashboard/AIBudsAIDashboard.xcframework'
+      ai_dashboard.resource = 'AIBudsSDK/AI/Dashboard/AIBudsAIDashboard.bundle'
+      ai_dashboard.dependency 'AIBudsSDK/AI/Core'
+      ai_dashboard.dependency 'WCDB.swift', '2.1.16'
+      ai_dashboard.dependency 'AIBudsSDK/ThirdParty/GCDWebServer'
+      ai_dashboard.dependency 'YYWebImage'
+      ai_dashboard.dependency 'iOSLogBrowserSDK'
     end
   end
 
   # VoiceAssistant module - Voice assistant functionality
-  s.subspec 'VoiceAssistant' do |voiceassistant|
-    voiceassistant.vendored_frameworks = 'AIBudsSDK/VoiceAssistant/AIBudsVoiceAssistant.xcframework'
-    voiceassistant.dependency 'AIBudsSDK/Core'
-    voiceassistant.dependency 'AIBudsSDK/ThirdParty/MZEncryptSDK'
+  s.subspec 'VoiceAssistant' do |voice_assistant|
+    voice_assistant.vendored_frameworks = 'AIBudsSDK/VoiceAssistant/AIBudsVoiceAssistant.xcframework'
+    voice_assistant.dependency 'AIBudsSDK/Core'
+    voice_assistant.dependency 'AIBudsSDK/ThirdParty/MZEncryptSDK'
   end
 
   # CrashReporter module
-  s.subspec 'CrashReporter' do |log|
-    log.vendored_frameworks = 'AIBudsSDK/CrashReporter/AIBudsCrashReporter.xcframework'
+  s.subspec 'CrashReporter' do |crash_reporter|
+    crash_reporter.vendored_frameworks = 'AIBudsSDK/CrashReporter/AIBudsCrashReporter.xcframework'
   end
 
   # LiveStream module
@@ -207,14 +207,14 @@ Pod::Spec.new do |s|
   end
 
   # AllInOne module - Includes all features for convenience
-  s.subspec 'AllInOne' do |allinone|
-    allinone.vendored_frameworks = 'AIBudsSDK/AllInOne/AIBudsAllInOne.xcframework'
-    allinone.dependency 'AIBudsSDK/Log'
-    allinone.dependency 'AIBudsSDK/ABMate'
-    allinone.dependency 'AIBudsSDK/AI'
-    allinone.dependency 'AIBudsSDK/VoiceAssistant'
-    allinone.dependency 'AIBudsSDK/CrashReporter'
-    allinone.dependency 'AIBudsSDK/LiveStream'
+  s.subspec 'AllInOne' do |all_in_one|
+    all_in_one.vendored_frameworks = 'AIBudsSDK/AllInOne/AIBudsAllInOne.xcframework'
+    all_in_one.dependency 'AIBudsSDK/Log'
+    all_in_one.dependency 'AIBudsSDK/ABMate'
+    all_in_one.dependency 'AIBudsSDK/AI'
+    all_in_one.dependency 'AIBudsSDK/VoiceAssistant'
+    all_in_one.dependency 'AIBudsSDK/CrashReporter'
+    all_in_one.dependency 'AIBudsSDK/LiveStream'
   end
 
 end
