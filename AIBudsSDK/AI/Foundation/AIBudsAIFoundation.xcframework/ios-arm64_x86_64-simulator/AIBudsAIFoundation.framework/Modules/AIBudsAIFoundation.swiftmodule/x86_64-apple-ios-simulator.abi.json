@@ -10245,6 +10245,13 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "AIBudsFoundation",
+        "printedName": "AIBudsFoundation",
+        "declKind": "Import",
+        "moduleName": "AIBudsAIFoundation"
+      },
+      {
         "kind": "TypeDecl",
         "name": "StreamingASRConfig",
         "printedName": "StreamingASRConfig",
@@ -10423,9 +10430,109 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "enableSpeakerDiarization",
+            "printedName": "enableSpeakerDiarization",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBudsAIFoundation@objc(cs)AIBudsStreamingASRConfig(py)enableSpeakerDiarization",
+            "mangledName": "$s18AIBudsAIFoundation18StreamingASRConfigC24enableSpeakerDiarizationSbvp",
+            "moduleName": "AIBudsAIFoundation",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsAIFoundation@objc(cs)AIBudsStreamingASRConfig(im)enableSpeakerDiarization",
+                "mangledName": "$s18AIBudsAIFoundation18StreamingASRConfigC24enableSpeakerDiarizationSbvg",
+                "moduleName": "AIBudsAIFoundation",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsAIFoundation@objc(cs)AIBudsStreamingASRConfig(im)setEnableSpeakerDiarization:",
+                "mangledName": "$s18AIBudsAIFoundation18StreamingASRConfigC24enableSpeakerDiarizationSbvs",
+                "moduleName": "AIBudsAIFoundation",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18AIBudsAIFoundation18StreamingASRConfigC24enableSpeakerDiarizationSbvM",
+                "mangledName": "$s18AIBudsAIFoundation18StreamingASRConfigC24enableSpeakerDiarizationSbvM",
+                "moduleName": "AIBudsAIFoundation",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(languageForSpeechInput:audioFormat:)",
+            "printedName": "init(languageForSpeechInput:audioFormat:enableSpeakerDiarization:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -10454,19 +10561,127 @@
                 "printedName": "AIBudsAIFoundation.AIAudioFormat",
                 "hasDefaultArg": true,
                 "usr": "c:@M@AIBudsAIFoundation@E@AIBudsAIAudioFormat"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
               }
             ],
             "declKind": "Constructor",
-            "usr": "c:@M@AIBudsAIFoundation@objc(cs)AIBudsStreamingASRConfig(im)initWithLanguageForSpeechInput:audioFormat:",
-            "mangledName": "$s18AIBudsAIFoundation18StreamingASRConfigC22languageForSpeechInput11audioFormatACSSSg_AA07AIAudioJ0Otcfc",
+            "usr": "c:@M@AIBudsAIFoundation@objc(cs)AIBudsStreamingASRConfig(im)initWithLanguageForSpeechInput:audioFormat:enableSpeakerDiarization:",
+            "mangledName": "$s18AIBudsAIFoundation18StreamingASRConfigC22languageForSpeechInput11audioFormat24enableSpeakerDiarizationACSSSg_AA07AIAudioJ0OSbtcfc",
             "moduleName": "AIBudsAIFoundation",
-            "objc_name": "initWithLanguageForSpeechInput:audioFormat:",
+            "objc_name": "initWithLanguageForSpeechInput:audioFormat:enableSpeakerDiarization:",
             "declAttributes": [
               "AccessControl",
               "ObjC",
               "RawDocComment"
             ],
             "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "description",
+            "printedName": "description",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBudsAIFoundation@objc(cs)AIBudsStreamingASRConfig(py)description",
+            "mangledName": "$s18AIBudsAIFoundation18StreamingASRConfigC11descriptionSSvp",
+            "moduleName": "AIBudsAIFoundation",
+            "overriding": true,
+            "objc_name": "description",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "Override",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsAIFoundation@objc(cs)AIBudsStreamingASRConfig(im)description",
+                "mangledName": "$s18AIBudsAIFoundation18StreamingASRConfigC11descriptionSSvg",
+                "moduleName": "AIBudsAIFoundation",
+                "overriding": true,
+                "objc_name": "description",
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "debugJsonString",
+            "printedName": "debugJsonString",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBudsAIFoundation@objc(cs)AIBudsStreamingASRConfig(py)debugJsonString",
+            "mangledName": "$s18AIBudsAIFoundation18StreamingASRConfigC15debugJsonStringSSvp",
+            "moduleName": "AIBudsAIFoundation",
+            "objc_name": "debugJsonString",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsAIFoundation@objc(cs)AIBudsStreamingASRConfig(im)debugJsonString",
+                "mangledName": "$s18AIBudsAIFoundation18StreamingASRConfigC15debugJsonStringSSvg",
+                "moduleName": "AIBudsAIFoundation",
+                "objc_name": "debugJsonString",
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
           },
           {
             "kind": "Constructor",
@@ -10511,6 +10726,13 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugJsonStringConvertible",
+            "printedName": "CustomDebugJsonStringConvertible",
+            "usr": "c:@M@AIBudsFoundation@objc(pl)AIBudsCustomDebugJsonStringConvertible",
+            "mangledName": "$s16AIBudsFoundation32CustomDebugJsonStringConvertibleP"
+          },
           {
             "kind": "Conformance",
             "name": "_KeyValueCodingAndObserving",
@@ -18349,21 +18571,21 @@
       "kind": "StringLiteral",
       "offset": 257,
       "length": 15,
-      "value": "\"1.0.0-beta.17\""
+      "value": "\"1.0.0-beta.18\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/SDKBuildInfo\/SDK_Build_Info.swift",
       "kind": "StringLiteral",
       "offset": 388,
       "length": 13,
-      "value": "\"20260731001\""
+      "value": "\"20260804001\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/SDKBuildInfo\/SDK_Build_Info.swift",
       "kind": "StringLiteral",
       "offset": 503,
       "length": 12,
-      "value": "\"2026-07-31\""
+      "value": "\"2026-08-04\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/AIAudioRecording(AI录音)\/AIAudioRecordingSessionConfig.swift",
@@ -19799,6 +20021,55 @@
       "offset": 2964,
       "length": 7,
       "value": "\"en-US\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/StreamingASR(流式语音识别)\/StreamingASRConfig.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1378,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/StreamingASR(流式语音识别)\/StreamingASRConfig.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1926,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/StreamingASR(流式语音识别)\/StreamingASRConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 2198,
+      "length": 161,
+      "value": "\"{ \"languageForSpeechInput\": \"\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/StreamingASR(流式语音识别)\/StreamingASRConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 2259,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/StreamingASR(流式语音识别)\/StreamingASRConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 2262,
+      "length": 1,
+      "value": "\"\", \"audioFormat\": \""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/StreamingASR(流式语音识别)\/StreamingASRConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 2297,
+      "length": 1,
+      "value": "\", \"enableSpeakerDiarization\": \""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/StreamingASR(流式语音识别)\/StreamingASRConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 2356,
+      "length": 1,
+      "value": "\" }\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/Defines(定义)\/Common(常用)\/AIAudioFormat.swift",

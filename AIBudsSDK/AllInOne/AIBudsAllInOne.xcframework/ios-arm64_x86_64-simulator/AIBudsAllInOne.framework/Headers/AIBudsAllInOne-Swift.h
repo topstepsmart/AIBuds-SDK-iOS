@@ -413,7 +413,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 ///
 /// returns:
 /// A boolean value indicating whether the initialization was successful
-+ (BOOL)initWithDelegate:(id <AIBudsSDKDelegate> _Nullable)delegate SWIFT_METHOD_FAMILY(none) SWIFT_WARN_UNUSED_RESULT;
++ (BOOL)initWithDelegate:(id <AIBudsSDKDelegate> _Nullable)delegate SWIFT_METHOD_FAMILY(none);
 /// Initializes the entire AIBuds SDK suite via AIBudsAllInOneSDK with custom configuration
 /// \param configuration The custom configuration object to use for initialization
 ///
@@ -422,7 +422,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 ///
 /// returns:
 /// A boolean value indicating whether the initialization was successful
-+ (BOOL)initWithConfiguration:(AIBudsSDKConfiguration * _Nullable)configuration delegate:(id <AIBudsSDKDelegate> _Nullable)delegate SWIFT_METHOD_FAMILY(none) SWIFT_WARN_UNUSED_RESULT;
++ (BOOL)initWithConfiguration:(AIBudsSDKConfiguration * _Nullable)configuration delegate:(id <AIBudsSDKDelegate> _Nullable)delegate SWIFT_METHOD_FAMILY(none);
 /// Installs the crash reporter with the default root path
 /// \param lastCrashReportCallback A callback to be called when the last crash report is available
 ///
@@ -432,13 +432,13 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 /// Starts the AIDashboardSDK.
 /// note:
 /// This method starts the session report server and sets the SDK to running state.
-+ (BOOL)startAIDashboard SWIFT_WARN_UNUSED_RESULT;
++ (BOOL)startAIDashboard;
 /// Starts the AIDashboardSDK with a custom port.
 /// note:
 /// This method starts the session report server and sets the SDK to running state.
 /// \param port The port number to use for the session report server (default is 3000)
 ///
-+ (BOOL)startAIDashboardWithPort:(NSUInteger)port SWIFT_WARN_UNUSED_RESULT;
++ (BOOL)startAIDashboardWithPort:(NSUInteger)port;
 /// Stops the AIDashboardSDK.
 /// note:
 /// This method stops the session report server and sets the SDK to not running state.
@@ -873,7 +873,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 ///
 /// returns:
 /// A boolean value indicating whether the initialization was successful
-+ (BOOL)initWithDelegate:(id <AIBudsSDKDelegate> _Nullable)delegate SWIFT_METHOD_FAMILY(none) SWIFT_WARN_UNUSED_RESULT;
++ (BOOL)initWithDelegate:(id <AIBudsSDKDelegate> _Nullable)delegate SWIFT_METHOD_FAMILY(none);
 /// Initializes the entire AIBuds SDK suite via AIBudsAllInOneSDK with custom configuration
 /// \param configuration The custom configuration object to use for initialization
 ///
@@ -882,7 +882,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 ///
 /// returns:
 /// A boolean value indicating whether the initialization was successful
-+ (BOOL)initWithConfiguration:(AIBudsSDKConfiguration * _Nullable)configuration delegate:(id <AIBudsSDKDelegate> _Nullable)delegate SWIFT_METHOD_FAMILY(none) SWIFT_WARN_UNUSED_RESULT;
++ (BOOL)initWithConfiguration:(AIBudsSDKConfiguration * _Nullable)configuration delegate:(id <AIBudsSDKDelegate> _Nullable)delegate SWIFT_METHOD_FAMILY(none);
 /// Installs the crash reporter with the default root path
 /// \param lastCrashReportCallback A callback to be called when the last crash report is available
 ///
@@ -892,13 +892,13 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 /// Starts the AIDashboardSDK.
 /// note:
 /// This method starts the session report server and sets the SDK to running state.
-+ (BOOL)startAIDashboard SWIFT_WARN_UNUSED_RESULT;
++ (BOOL)startAIDashboard;
 /// Starts the AIDashboardSDK with a custom port.
 /// note:
 /// This method starts the session report server and sets the SDK to running state.
 /// \param port The port number to use for the session report server (default is 3000)
 ///
-+ (BOOL)startAIDashboardWithPort:(NSUInteger)port SWIFT_WARN_UNUSED_RESULT;
++ (BOOL)startAIDashboardWithPort:(NSUInteger)port;
 /// Stops the AIDashboardSDK.
 /// note:
 /// This method stops the session report server and sets the SDK to not running state.

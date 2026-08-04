@@ -10,11 +10,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		qunWcnlhD3y4H1XtgmAEAzv9hXE=
+		72vEj5OS1fqTTW7F5dLqdq9ztmU=
 		</data>
 		<key>Modules/AIBudsAudio.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		FUSMnbCO+VtfhAk1ko2q3XGzGHk=
+		GtNaolHuFw1QH5fl+21MNK5BV6U=
 		</data>
 		<key>Modules/AIBudsAudio.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/AIBudsAudio.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		8rJXCszTRllUee6Xbp2Cwy/Is/M=
+		RP5ylCPTzNOay75+aVQ6xE1doaE=
 		</data>
 		<key>Modules/AIBudsAudio.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		FUSMnbCO+VtfhAk1ko2q3XGzGHk=
+		GtNaolHuFw1QH5fl+21MNK5BV6U=
 		</data>
 		<key>Modules/AIBudsAudio.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Modules/AIBudsAudio.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		aaNxeyHjKCqtGbNs732Wrj8nvUw=
+		6xWLj0no5mJ2UP2ilRBWMDXlIq0=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -66,7 +66,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			RZOh67F0I3yzBqIvUKI7Dk6DbxP0SClX9QVLIUfWd9Q=
+			0e9O6QPyGoSNLJxgRK8XNiAyVRhcpbdqjK42Jg1+WP4=
 			</data>
 		</dict>
 		<key>Modules/AIBudsAudio.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -94,14 +94,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			G3lLLvm094EZynyYpEMONVPH6Mk2fTD8AJEc02IxMaQ=
+			/KPqFHl4pSmOlG4eHKwCySRSfjE8zbsEdsOi3PerK1Y=
 			</data>
 		</dict>
 		<key>Modules/AIBudsAudio.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			RZOh67F0I3yzBqIvUKI7Dk6DbxP0SClX9QVLIUfWd9Q=
+			0e9O6QPyGoSNLJxgRK8XNiAyVRhcpbdqjK42Jg1+WP4=
 			</data>
 		</dict>
 		<key>Modules/AIBudsAudio.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -129,7 +129,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			YEQoTkz0tsVMIj+6IKyymu0xyhMI14W95vuWMvydVoA=
+			ZT34yc0gBwA/0Ykr1OLnqzih7oc1fO8HfFOUyacYr/c=
 			</data>
 		</dict>
 	</dict>

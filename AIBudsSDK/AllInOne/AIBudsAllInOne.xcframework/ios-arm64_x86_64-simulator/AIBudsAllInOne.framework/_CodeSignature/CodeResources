@@ -6,19 +6,19 @@
 	<dict>
 		<key>Headers/AIBudsAllInOne-Swift.h</key>
 		<data>
-		PpI9dJ8mG1nUGqLoBkoM+PuQqo0=
+		RJYs/E1V4E65qVKj3vduGs8Cmq0=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		25nWgxd5BoyxN1OsdAJKbj5EaKM=
+		vaht0JO0GBuDzc4muF1p4HUvsvE=
 		</data>
 		<key>Modules/AIBudsAllInOne.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		yKS3/9NB86isf8GbR2bknddzboQ=
+		GNYZ8S1giRlD48sK5Pq28XjyEQo=
 		</data>
 		<key>Modules/AIBudsAllInOne.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		ReJRe1U3bHYVtDb0TjZQemsU98Y=
+		DmYA17S5v9epAMdSK2xriUTmq+I=
 		</data>
 		<key>Modules/AIBudsAllInOne.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -26,19 +26,19 @@
 		</data>
 		<key>Modules/AIBudsAllInOne.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		ReJRe1U3bHYVtDb0TjZQemsU98Y=
+		DmYA17S5v9epAMdSK2xriUTmq+I=
 		</data>
 		<key>Modules/AIBudsAllInOne.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		OCuOn3E9xinljJlcrVKWArpZD9Q=
+		iZhOqoppCBarpZJ/RE2HqzjKQ2c=
 		</data>
 		<key>Modules/AIBudsAllInOne.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		yKS3/9NB86isf8GbR2bknddzboQ=
+		GNYZ8S1giRlD48sK5Pq28XjyEQo=
 		</data>
 		<key>Modules/AIBudsAllInOne.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		GLjABGHrRGaPNCiWy9k1oZXppxM=
+		veeTGEZ9C6KmONnKgUSq+nAZL8M=
 		</data>
 		<key>Modules/AIBudsAllInOne.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -46,11 +46,11 @@
 		</data>
 		<key>Modules/AIBudsAllInOne.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		GLjABGHrRGaPNCiWy9k1oZXppxM=
+		veeTGEZ9C6KmONnKgUSq+nAZL8M=
 		</data>
 		<key>Modules/AIBudsAllInOne.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		LhS8rdJa+Hc037qY+AkBHXHDW6I=
+		K7GyDHkKT9rE1LJo7r4SdbxSDwE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -63,21 +63,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			AdbBwSdzRMzF5Hh1dTMD3qFWFt0seCFG2oBzftp/hmM=
+			mAwqtB1heSQGQgeWCquWbRs3YUKbyUjDV2063M8Erxc=
 			</data>
 		</dict>
 		<key>Modules/AIBudsAllInOne.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			s7S5H2yQJoNKW0PiBZiTiSCnHbr/R/y+MA2XFRp6Yy0=
+			1+3CHcZ99Ft8P68RHlRHOjk/j1zPf37uGWfG8+EsjuA=
 			</data>
 		</dict>
 		<key>Modules/AIBudsAllInOne.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			cfMzsnOkkW608NDNBsuutW+DR/NwzLLRf6nGIEk5bto=
+			dklD4tjMaX0QfoRa1mC0bN4DHrENyIc7z3uyS2d795Q=
 			</data>
 		</dict>
 		<key>Modules/AIBudsAllInOne.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -91,28 +91,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			cfMzsnOkkW608NDNBsuutW+DR/NwzLLRf6nGIEk5bto=
+			dklD4tjMaX0QfoRa1mC0bN4DHrENyIc7z3uyS2d795Q=
 			</data>
 		</dict>
 		<key>Modules/AIBudsAllInOne.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			nbftaw28U0kCg7lHUTfd18VRKfic1mbM/aiJzeTNwj0=
+			NZmeF66ho6lVtYz9VSLIcx7442vHaC45s2o/SPqWFoE=
 			</data>
 		</dict>
 		<key>Modules/AIBudsAllInOne.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			s7S5H2yQJoNKW0PiBZiTiSCnHbr/R/y+MA2XFRp6Yy0=
+			1+3CHcZ99Ft8P68RHlRHOjk/j1zPf37uGWfG8+EsjuA=
 			</data>
 		</dict>
 		<key>Modules/AIBudsAllInOne.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			nnpQdzcv+7pM4FZZemQk9cA+Jgx2R3lLfs/0xHkQtnY=
+			pzjWAqVh559FHqd3GHWkCyL99w9pTwxqSS80vOixowY=
 			</data>
 		</dict>
 		<key>Modules/AIBudsAllInOne.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -126,14 +126,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			nnpQdzcv+7pM4FZZemQk9cA+Jgx2R3lLfs/0xHkQtnY=
+			pzjWAqVh559FHqd3GHWkCyL99w9pTwxqSS80vOixowY=
 			</data>
 		</dict>
 		<key>Modules/AIBudsAllInOne.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			zfockTaJrT1aoVh4MduZYwTDUlBBbJLjY8wuL0SOcJk=
+			PL9S3SgnE1MQwpQMwKscjpZDWPRa15N/STKHTgV/Lf4=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

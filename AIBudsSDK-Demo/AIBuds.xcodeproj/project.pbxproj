@@ -397,7 +397,6 @@
 				INFOPLIST_KEY_CFBundleDisplayName = AIBudsSDK;
 				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
 				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "AIDevice connect";
-				INFOPLIST_KEY_NSBluetoothWhileInUseUsageDescription = "AIDevice connect";
 				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Acess local network";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Access microphone";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -443,7 +442,6 @@
 				INFOPLIST_KEY_CFBundleDisplayName = AIBudsSDK;
 				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
 				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "AIDevice connect";
-				INFOPLIST_KEY_NSBluetoothWhileInUseUsageDescription = "AIDevice connect";
 				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Acess local network";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Access microphone";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

@@ -21,10 +21,14 @@ import _SwiftConcurrencyShims
   @objc public static var sdkVersionDescription: Swift.String {
     @objc get
   }
+  @discardableResult
   @objc(initWithDelegate:) public static func initialize(_ delegate: (any AIBuds.SDKDelegate)? = nil) -> Swift.Bool
+  @discardableResult
   @objc(initWithConfiguration:delegate:) public static func initialize(configuration: AIBuds.SDKConfiguration? = nil, delegate: (any AIBuds.SDKDelegate)? = nil) -> Swift.Bool
   @objc(installCrashReporterWithLastCrashReportCallback:reportListUpdateCallback:) public static func installCrashReporter(withLastCrashReportCallback lastCrashReportCallback: ((_ reportFilePath: Swift.String?) -> Swift.Void)? = nil, reportListUpdateCallback: (() -> Swift.Void)? = nil)
+  @discardableResult
   @objc public static func startAIDashboard() -> Swift.Bool
+  @discardableResult
   @objc public static func startAIDashboard(withPort port: Swift.UInt = 3000) -> Swift.Bool
   @objc public static func stopAIDashboard()
   @objc public static func isAIDashboardRunning() -> Swift.Bool

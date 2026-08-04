@@ -409,6 +409,7 @@
               "Final",
               "AccessControl",
               "ObjC",
+              "DiscardableResult",
               "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
@@ -465,6 +466,7 @@
               "Final",
               "AccessControl",
               "ObjC",
+              "DiscardableResult",
               "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
@@ -576,6 +578,7 @@
               "Final",
               "AccessControl",
               "ObjC",
+              "DiscardableResult",
               "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
@@ -609,6 +612,7 @@
               "Final",
               "AccessControl",
               "ObjC",
+              "DiscardableResult",
               "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
@@ -754,21 +758,21 @@
       "kind": "StringLiteral",
       "offset": 257,
       "length": 15,
-      "value": "\"1.0.0-beta.17\""
+      "value": "\"1.0.0-beta.18\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/SDKBuildInfo\/SDK_Build_Info.swift",
       "kind": "StringLiteral",
       "offset": 388,
       "length": 13,
-      "value": "\"20260731001\""
+      "value": "\"20260804001\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/SDKBuildInfo\/SDK_Build_Info.swift",
       "kind": "StringLiteral",
       "offset": 503,
       "length": 12,
-      "value": "\"2026-07-31\""
+      "value": "\"2026-08-04\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAllInOne\/AIBudsAllInOne.swift",
@@ -836,7 +840,7 @@
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAllInOne\/AIBudsAllInOneSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 6940,
+      "offset": 7032,
       "length": 4,
       "value": "3000"
     }

@@ -1366,7 +1366,7 @@ SWIFT_CLASS_NAMED("StreamSpeechASRModel")
 
 /// Configuration class for streaming ASR settings.
 SWIFT_CLASS_NAMED("StreamingASRConfig")
-@interface AIBudsStreamingASRConfig : NSObject
+@interface AIBudsStreamingASRConfig : NSObject <AIBudsCustomDebugJsonStringConvertible>
 /// The default configuration shared instance.
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) AIBudsStreamingASRConfig * _Nonnull defaultConfig;)
 + (AIBudsStreamingASRConfig * _Nonnull)defaultConfig SWIFT_WARN_UNUSED_RESULT;
@@ -1378,12 +1378,20 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) AIBudsStream
 @property (nonatomic, readonly, copy) NSString * _Nullable languageForSpeechInput;
 /// The audio format for speech input
 @property (nonatomic, readonly) enum AIBudsAIAudioFormat audioFormat;
+/// Whether to enable speaker diarization. Default value is <code>false</code>.
+@property (nonatomic) BOOL enableSpeakerDiarization;
 /// Initializes a new instance of the <code>StreamingASRConfig</code> class.
 /// \param languageForSpeechInput The language setting for speech input. Default is <code>nil</code>.
 ///
 /// \param audioFormat The audio format for speech input. Default is <code>.pcm</code>.
 ///
-- (nonnull instancetype)initWithLanguageForSpeechInput:(NSString * _Nullable)languageForSpeechInput audioFormat:(enum AIBudsAIAudioFormat)audioFormat OBJC_DESIGNATED_INITIALIZER;
+/// \param enableSpeakerDiarization Whether to enable speaker diarization. Default value is <code>false</code>.
+///
+- (nonnull instancetype)initWithLanguageForSpeechInput:(NSString * _Nullable)languageForSpeechInput audioFormat:(enum AIBudsAIAudioFormat)audioFormat enableSpeakerDiarization:(BOOL)enableSpeakerDiarization OBJC_DESIGNATED_INITIALIZER;
+/// Description
+@property (nonatomic, readonly, copy) NSString * _Nonnull description;
+/// Debug JSON string
+@property (nonatomic, readonly, copy) NSString * _Nonnull debugJsonString;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end

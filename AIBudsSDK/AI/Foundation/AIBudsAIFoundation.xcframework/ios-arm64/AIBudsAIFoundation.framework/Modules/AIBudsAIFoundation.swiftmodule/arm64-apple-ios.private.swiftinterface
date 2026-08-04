@@ -215,11 +215,18 @@ extension AIBudsAIFoundation.AIDeviceInfoModel : Foundation.NSCopying {
   @objc(initWithSessionID:sequence:requestId:sourceText:isSourceTextDefinite:sourceTextSequence:targetText:isTargetTextDefinite:targetTextSequence:ttsSegmentAudioFile:base64AudioData:audioDataSequence:associatedTargetTextSequenceForAudioData:speakerSegments:) public init(sessionID: Swift.String, sequence: Swift.Int, requestId: Swift.String?, sourceText: Swift.String?, isSourceTextDefinite: Swift.Bool, sourceTextSequence: Foundation.NSNumber?, targetText: Swift.String?, isTargetTextDefinite: Swift.Bool, targetTextSequence: Foundation.NSNumber?, ttsSegmentAudioFile: Swift.String?, base64AudioData: Swift.String?, audioDataSequence: Foundation.NSNumber?, associatedTargetTextSequenceForAudioData: Foundation.NSNumber?, speakerSegments: [AIBudsAIFoundation.SpeakerSegment]?)
   @objc deinit
 }
-@objc(AIBudsStreamingASRConfig) final public class StreamingASRConfig : ObjectiveC.NSObject {
+@objc(AIBudsStreamingASRConfig) final public class StreamingASRConfig : ObjectiveC.NSObject, AIBudsFoundation.CustomDebugJsonStringConvertible {
   @objc(defaultConfig) public static let `default`: AIBudsAIFoundation.StreamingASRConfig
   @objc final public let languageForSpeechInput: Swift.String?
   @objc final public let audioFormat: AIBudsAIFoundation.AIAudioFormat
-  @objc public init(languageForSpeechInput: Swift.String? = nil, audioFormat: AIBudsAIFoundation.AIAudioFormat = .pcm)
+  @objc final public var enableSpeakerDiarization: Swift.Bool
+  @objc public init(languageForSpeechInput: Swift.String? = nil, audioFormat: AIBudsAIFoundation.AIAudioFormat = .pcm, enableSpeakerDiarization: Swift.Bool = false)
+  @objc override final public var description: Swift.String {
+    @objc get
+  }
+  @objc final public var debugJsonString: Swift.String {
+    @objc get
+  }
   @objc deinit
 }
 @objc(AIBudsTTSConfig) final public class TTSConfig : ObjectiveC.NSObject {
