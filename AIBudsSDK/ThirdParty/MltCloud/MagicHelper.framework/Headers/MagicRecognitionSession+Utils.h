@@ -63,7 +63,7 @@ FOUNDATION_EXPORT MagicMemorySource const MagicMemorySourcePage;
 
 #pragma mark - 会话 (Conversation)
 
-/// 会话列表查询
+/// 获取所有的会话记录
 /// @param userId 用户 ID，可选；传 nil 或空时不传该查询参数（仅按设备查）。
 /// @param onSuccess 成功回调，`list` 元素为 `MagicConversationItem`。
 /// @param onError 失败回调。
@@ -73,13 +73,13 @@ FOUNDATION_EXPORT MagicMemorySource const MagicMemorySourcePage;
 
 /// 历史消息分页查询
 /// @param conversationId 会话 ID，必填。
-/// @param userId 用户 IM ID，必填。
-/// @param cursorId 游标，首次为 0；传 nil 时按 0 处理。
+/// @param userId 用户 IM ID，可选。
+/// @param cursorId 游标，首次为 0, 否则传上一次返回的nextCursorId；传 nil 时按 0 处理。
 /// @param pageSize 每页条数；传 nil 时按 20 处理；传入 ≤0 的 NSNumber 时仍按 20 处理。
 /// @param onSuccess 成功回调，结果为 `MagicConversationHistoryResult`。
 /// @param onError 失败回调。
 - (void)fetchConversationHistoryWithConversationId:(NSString *)conversationId
-                                            userId:(NSString *)userId
+                                            userId:(nullable NSString *)userId
                                           cursorId:(nullable NSNumber *)cursorId
                                           pageSize:(nullable NSNumber *)pageSize
                                          onSuccess:(void (^)(MagicConversationHistoryResult *result))onSuccess
@@ -107,7 +107,7 @@ FOUNDATION_EXPORT MagicMemorySource const MagicMemorySourcePage;
 
 /// 按天分组获取会话列表
 /// @param date 日期，格式 `yyyy-MM-dd`，必填。
-/// @param pageNo 页码；传 nil 表示 1。
+/// @param pageNo 页码,从1开始；传 nil 表示 1。
 /// @param pageSize 每页条数；传 nil 表示 10。
 /// @param onSuccess 成功回调，结果为 `MagicConversationListByDayResult`（会话列表字段为 `conversations`）。
 /// @param onError 失败回调。
@@ -136,33 +136,33 @@ FOUNDATION_EXPORT MagicMemorySource const MagicMemorySourcePage;
 #pragma mark - 宠物配置 (Pet)
 
 
-/// 设置音色
+///  宠物配置: 设置音色
 - (void)setPetVoice:(NSString *)voice
            onSuccess:(void (^)(MagicPetSetVoiceResult *data))onSuccess
              onError:(void (^)(NSString *msg, NSInteger code))onError;
 
-/// 获取已设置音色
+/// 宠物配置: 获取已设置音色
 - (void)getPetVoiceOnSuccess:(void (^)(MagicPetGetVoiceResult *data))onSuccess
                      onError:(void (^)(NSString *msg, NSInteger code))onError;
 
-/// 支持的音色列表
+/// 获取支持的音色列表
 - (void)listPetVoicesOnSuccess:(void (^)(NSArray<MagicPetVoiceInfo *> *list))onSuccess
                        onError:(void (^)(NSString *msg, NSInteger code))onError;
 
-/// 设置性格
+/// 宠物配置: 设置智能体
 - (void)setPetPersonalityWithPersonalityCode:(NSString *)personalityCode
                                   onSuccess:(void (^)(MagicPetSetPersonalityResult *data))onSuccess
                                     onError:(void (^)(NSString *msg, NSInteger code))onError;
 
-/// 获取已设置性格
+/// 宠物配置: 获取已设置智能体
 - (void)getPetPersonalityOnSuccess:(void (^)(MagicPetGetPersonalityResult *data))onSuccess
                            onError:(void (^)(NSString *msg, NSInteger code))onError;
 
-/// 性格列表
+/// 获取支持的智能体列表
 - (void)listPetPersonalitiesOnSuccess:(void (^)(NSArray<MagicPetPersonalityInfo *> *list))onSuccess
                               onError:(void (^)(NSString *msg, NSInteger code))onError;
 
-/// 完整配置查询
+/// 获取当前设备设置的智能体和音色，返回值MagicDevicePetConfig，如果为null，则未设置
 - (void)getPetConfigOnSuccess:(void (^)(MagicDevicePetConfig * _Nullable config))onSuccess
                       onError:(void (^)(NSString *msg, NSInteger code))onError;
 

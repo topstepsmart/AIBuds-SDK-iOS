@@ -128,6 +128,7 @@ extension AIBudsAIFoundation.SimultaneousInterpretationEventType : @retroactive 
   @objc var sdkName: Swift.String { get }
   @objc var vendorName: Swift.String { get }
   @objc var vendor: AIBudsAIFoundation.AIServiceVendor { get }
+  @objc var allSupportedLanguages: [AIBudsAIFoundation.AIServiceLanguage] { get }
   @objc var authenticationMode: AIBudsAIFoundation.AIAuthenticationMode { get }
   @objc var isAuthenticated: Swift.Bool { get }
   @objc var aiAuthenticationService: (any AIBudsAI.AIAuthenticationServiceAPI)? { get }
@@ -502,6 +503,7 @@ extension AIBudsAIFoundation.SimultaneousInterpretationEventType : @retroactive 
   @objc(initWithAISDKs:) public static func initialize(_ aiSDKs: [any AIBudsAI.AIConnectSDK]) -> Swift.Bool
   @objc(enableBackgroundRecordingForSCODevice:macAddress:) public static func enableBackgroundRecording(forSCODevice bluetoothName: Swift.String, macAddress: Swift.String)
   @objc(disableBackgroundRecordingForSCODevice) public static func disableBackgroundRecordingForSCODevice()
+  @objc(allSupportedLanguagesForVendor:) public static func allSupportedLanguages(for vendor: AIBudsAIFoundation.AIServiceVendor) -> [AIBudsAIFoundation.AIServiceLanguage]
   @objc(authenticationModeForVendor:) public static func authenticationMode(for vendor: AIBudsAIFoundation.AIServiceVendor) -> AIBudsAIFoundation.AIAuthenticationMode
   @objc(isAuthenticatedForVendor:) public static func isAuthenticated(for vendor: AIBudsAIFoundation.AIServiceVendor) -> Swift.Bool
   @objc(authenticateDevice:completion:) public static func authenticateDevice(_ deviceInfo: AIBudsAIFoundation.AIDeviceInfoModel, _ completion: ((_ success: Swift.Bool, _ error: Foundation.NSError?) -> Swift.Void)? = nil)

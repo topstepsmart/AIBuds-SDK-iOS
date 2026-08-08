@@ -121,6 +121,10 @@ typedef void(^MGQPlaySearchAndPlayBlock)(BOOL success, QPlayAutoListItem * _Null
 /// 播放
 - (void)play;
 
+/// 播放（带回调）
+/// @param completion 结果回调
+- (void)playWithCompletion:(void(^)(BOOL success, NSInteger errorCode))completion;
+
 /// 暂停
 - (void)pause;
 

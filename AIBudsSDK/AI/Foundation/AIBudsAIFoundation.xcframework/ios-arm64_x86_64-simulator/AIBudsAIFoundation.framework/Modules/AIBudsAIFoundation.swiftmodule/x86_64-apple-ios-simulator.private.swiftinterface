@@ -140,6 +140,21 @@ extension AIBudsAIFoundation.AIChatSessionConfig : Foundation.NSCopying {
   @objc public init(voiceId: Swift.String, pcmSegmentData: Foundation.Data, isFinal: Swift.Bool = false)
   @objc deinit
 }
+@objc(AIBudsAIServiceLanguage) final public class AIServiceLanguage : ObjectiveC.NSObject {
+  @objc final public let languageCode: Swift.String
+  @objc final public var displayName: Swift.String {
+    @objc get
+  }
+  @objc final public var localeIdentifier: Swift.String {
+    @objc get
+  }
+  @objc final public func displayName(forLocale locale: Foundation.Locale) -> Swift.String
+  @objc public init(languageCode: Swift.String)
+  @objc override final public var description: Swift.String {
+    @objc get
+  }
+  @objc deinit
+}
 @objc(AIBudsSpeakerSegment) final public class SpeakerSegment : ObjectiveC.NSObject {
   @objc final public let speakerId: Swift.String?
   @objc final public let startTimeMs: Swift.Int

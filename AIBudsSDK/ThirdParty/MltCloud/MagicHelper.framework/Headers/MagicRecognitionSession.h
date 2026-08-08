@@ -8,8 +8,28 @@
 #import <Foundation/Foundation.h>
 #import "MagicSmartOptionModel.h"
 #import "MagicMemoryData.h"
+#import "MagicCardEnvelope.h"
 
 NS_ASSUME_NONNULL_BEGIN
+
+@interface MGAgent : NSObject
+
+@property (nonatomic, strong) NSString *agentId;
+@property (nonatomic, strong) NSString *name;
+@property (nonatomic, strong) NSString *personality;
+@property (nonatomic, strong) NSString *petDescription;
+@property (nonatomic, strong) NSString *hobby;
+@property (nonatomic, strong) NSString *birthday;
+
++ (instancetype)agentWithId:(NSString *)petId
+                     name:(NSString *)name
+              personality:(NSString *)personality
+           petDescription:(NSString *)petDescription
+                    hobby:(NSString *)hobby
+                 birthday:(NSString *)birthday;
+
+@end
+
 
 /// 音频格式
 typedef NS_ENUM(NSInteger, MagicAudioType) {
@@ -69,6 +89,30 @@ typedef NS_ENUM(NSInteger, MGVADState) {
 - (void)onVADStateChanged:(MGVADState)state
                 timestamp:(NSTimeInterval)timestamp;
 
+/**
+ * 卡片数据回调（response.card.data）。
+ * 同时携带播报文本与卡片结构化数据，收到即可渲染 UI；TTS 音频仍通过 onAudioData 下发。
+ * @param card 解析后的卡片信封，含 broadcast.text、card_data、card_group 等
+ * @param rawJson 原始事件 JSON 字符串，用于读取尚未建模的扩展字段
+ */
+- (void)onCardData:(MagicCardEnvelope *)card rawJson:(NSString *)rawJson;
+
+/**
+ * 卡片加载中回调（response.card.loading）。
+ * MCP/工具调用发起时下发，端上可展示 skeleton；后续必跟随 onCardData 或 onCardError。
+ * @param card 含 card_type、display_title、response_id 等加载态字段
+ * @param rawJson 原始事件 JSON
+ */
+- (void)onCardLoading:(MagicCardEnvelope *)card rawJson:(NSString *)rawJson;
+
+/**
+ * 卡片错误回调（response.card.error）。
+ * 卡片获取失败时的兜底事件，不触发 onFailure；降级纯文本仍走 onMessage（response.text.delta）。
+ * @param card 含 error_code、error_message、card_type 等
+ * @param rawJson 原始事件 JSON
+ */
+- (void)onCardError:(MagicCardEnvelope *)card rawJson:(NSString *)rawJson;
+
 /// 定位点的字符串表示
 ///
 /// 格式： "latitude,longitude"
@@ -103,6 +147,12 @@ typedef NS_ENUM(NSInteger, MGVADState) {
 /// 静默时长，默认10s, needVAD = YES有效
 /// 从开始传输音频到超过时长还未检测出声音，则触发vad
 @property (nonatomic, assign) NSInteger silenceTimeout;
+
+/// session.created 成功后回显的卡片能力协商结果（card_config），非卡片会话时为 nil
+@property (nonatomic, strong, readonly, nullable) MagicCardConfig *cardConfig;
+
+/// 默认1s
+@property (nonatomic, assign) NSTimeInterval vadTimeout;
 
 /// 获取支持的configCode
 - (NSArray *)getSmartConfigModels;

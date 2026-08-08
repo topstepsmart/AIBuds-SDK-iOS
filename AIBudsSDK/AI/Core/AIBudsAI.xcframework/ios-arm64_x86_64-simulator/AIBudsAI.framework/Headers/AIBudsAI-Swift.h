@@ -586,6 +586,7 @@ SWIFT_PROTOCOL_NAMED("AIAuthenticationServiceAPI")
 @class AIBudsLocationContext;
 @class CLLocation;
 @protocol AIBudsAIConnectSDK;
+@class AIBudsAIServiceLanguage;
 SWIFT_ENUM_FWD_DECL(NSInteger, AIBudsAIAuthenticationMode)
 @class AIBudsAIChatSessionConfig;
 @protocol AIBudsAIChatSessionConvertible;
@@ -698,6 +699,13 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) AIBudsLocati
 + (void)enableBackgroundRecordingForSCODevice:(NSString * _Nonnull)bluetoothName macAddress:(NSString * _Nonnull)macAddress;
 /// Disables background recording for a SCO device.
 + (void)disableBackgroundRecordingForSCODevice;
+/// Returns all supported languages for the specified vendor.
+/// \param vendor The vendor for which to get the supported languages.
+///
+///
+/// returns:
+/// An array of AIServiceLanguage objects representing the supported languages.
++ (NSArray<AIBudsAIServiceLanguage *> * _Nonnull)allSupportedLanguagesForVendor:(enum AIBudsAIServiceVendor)vendor SWIFT_WARN_UNUSED_RESULT;
 /// Returns the authentication mode for the specified vendor.
 /// note:
 /// If the vendor is not authentication mode is returned.
@@ -1342,6 +1350,11 @@ SWIFT_PROTOCOL_NAMED("AIConnectSDK")
 /// returns:
 /// An AIServiceVendor value indicating the type of service provider (e.g. .byteDance)
 @property (nonatomic, readonly) enum AIBudsAIServiceVendor vendor;
+/// The supported languages for the service provider
+///
+/// returns:
+/// An array of AIServiceLanguage objects representing the supported languages
+@property (nonatomic, readonly, copy) NSArray<AIBudsAIServiceLanguage *> * _Nonnull allSupportedLanguages;
 /// The authentication initiation mode for the ai service.
 ///
 /// returns:
@@ -2488,6 +2501,7 @@ SWIFT_PROTOCOL_NAMED("AIAuthenticationServiceAPI")
 @class AIBudsLocationContext;
 @class CLLocation;
 @protocol AIBudsAIConnectSDK;
+@class AIBudsAIServiceLanguage;
 SWIFT_ENUM_FWD_DECL(NSInteger, AIBudsAIAuthenticationMode)
 @class AIBudsAIChatSessionConfig;
 @protocol AIBudsAIChatSessionConvertible;
@@ -2600,6 +2614,13 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) AIBudsLocati
 + (void)enableBackgroundRecordingForSCODevice:(NSString * _Nonnull)bluetoothName macAddress:(NSString * _Nonnull)macAddress;
 /// Disables background recording for a SCO device.
 + (void)disableBackgroundRecordingForSCODevice;
+/// Returns all supported languages for the specified vendor.
+/// \param vendor The vendor for which to get the supported languages.
+///
+///
+/// returns:
+/// An array of AIServiceLanguage objects representing the supported languages.
++ (NSArray<AIBudsAIServiceLanguage *> * _Nonnull)allSupportedLanguagesForVendor:(enum AIBudsAIServiceVendor)vendor SWIFT_WARN_UNUSED_RESULT;
 /// Returns the authentication mode for the specified vendor.
 /// note:
 /// If the vendor is not authentication mode is returned.
@@ -3244,6 +3265,11 @@ SWIFT_PROTOCOL_NAMED("AIConnectSDK")
 /// returns:
 /// An AIServiceVendor value indicating the type of service provider (e.g. .byteDance)
 @property (nonatomic, readonly) enum AIBudsAIServiceVendor vendor;
+/// The supported languages for the service provider
+///
+/// returns:
+/// An array of AIServiceLanguage objects representing the supported languages
+@property (nonatomic, readonly, copy) NSArray<AIBudsAIServiceLanguage *> * _Nonnull allSupportedLanguages;
 /// The authentication initiation mode for the ai service.
 ///
 /// returns:

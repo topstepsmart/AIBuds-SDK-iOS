@@ -480,6 +480,73 @@
           },
           {
             "kind": "Var",
+            "name": "allSupportedLanguages",
+            "printedName": "allSupportedLanguages",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[AIBudsAIFoundation.AIServiceLanguage]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AIServiceLanguage",
+                    "printedName": "AIBudsAIFoundation.AIServiceLanguage",
+                    "usr": "c:@M@AIBudsAIFoundation@objc(cs)AIBudsAIServiceLanguage"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@AIBudsMagicHelper@objc(cs)AIBudsMagicHelperSDK(py)allSupportedLanguages",
+            "mangledName": "$s17AIBudsMagicHelper0bC3SDKC21allSupportedLanguagesSay0A12AIFoundation17AIServiceLanguageCGvp",
+            "moduleName": "AIBudsMagicHelper",
+            "objc_name": "allSupportedLanguages",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[AIBudsAIFoundation.AIServiceLanguage]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AIServiceLanguage",
+                        "printedName": "AIBudsAIFoundation.AIServiceLanguage",
+                        "usr": "c:@M@AIBudsAIFoundation@objc(cs)AIBudsAIServiceLanguage"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@AIBudsMagicHelper@objc(cs)AIBudsMagicHelperSDK(im)allSupportedLanguages",
+                "mangledName": "$s17AIBudsMagicHelper0bC3SDKC21allSupportedLanguagesSay0A12AIFoundation17AIServiceLanguageCGvg",
+                "moduleName": "AIBudsMagicHelper",
+                "objc_name": "allSupportedLanguages",
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "authenticationMode",
             "printedName": "authenticationMode",
             "children": [
@@ -13541,6 +13608,13 @@
       },
       {
         "kind": "Import",
+        "name": "AIBudsAIFoundation",
+        "printedName": "AIBudsAIFoundation",
+        "declKind": "Import",
+        "moduleName": "AIBudsMagicHelper"
+      },
+      {
+        "kind": "Import",
         "name": "AIBudsAI",
         "printedName": "AIBudsAI",
         "declKind": "Import",
@@ -14251,7 +14325,7 @@
       "kind": "StringLiteral",
       "offset": 905,
       "length": 8,
-      "value": "\"2.9.39\""
+      "value": "\"2.10.0\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/AIBudsMagicHelper.swift",
@@ -14270,51 +14344,58 @@
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/AIBudsMagicHelperSDK.swift",
       "kind": "StringLiteral",
-      "offset": 1815,
+      "offset": 1772,
       "length": 100,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/AIBudsMagicHelperSDK.swift",
       "kind": "StringLiteral",
-      "offset": 1833,
+      "offset": 1790,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/AIBudsMagicHelperSDK.swift",
       "kind": "StringLiteral",
-      "offset": 1844,
+      "offset": 1801,
       "length": 1,
       "value": "\" V\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/AIBudsMagicHelperSDK.swift",
       "kind": "StringLiteral",
-      "offset": 1860,
+      "offset": 1817,
       "length": 1,
       "value": "\" (Build\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/AIBudsMagicHelperSDK.swift",
       "kind": "StringLiteral",
-      "offset": 1879,
+      "offset": 1836,
       "length": 1,
       "value": "\") Release Date: \""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/AIBudsMagicHelperSDK.swift",
       "kind": "StringLiteral",
-      "offset": 1914,
+      "offset": 1871,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/AIBudsMagicHelperSDK.swift",
       "kind": "StringLiteral",
-      "offset": 2279,
+      "offset": 2228,
       "length": 10,
       "value": "\"MltCloud\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/AIBudsMagicHelperSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 2771,
+      "length": 6,
+      "value": "\"code\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/Errors.swift",
@@ -15887,14 +15968,14 @@
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudAIAudioRecordingService.swift",
       "kind": "BooleanLiteral",
-      "offset": 23069,
+      "offset": 23048,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudAIAudioRecordingService.swift",
       "kind": "BooleanLiteral",
-      "offset": 27644,
+      "offset": 27623,
       "length": 5,
       "value": "false"
     },
@@ -16069,14 +16150,14 @@
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudAIChatService.swift",
       "kind": "BooleanLiteral",
-      "offset": 75171,
+      "offset": 75245,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudAIChatService.swift",
       "kind": "BooleanLiteral",
-      "offset": 77725,
+      "offset": 77799,
       "length": 4,
       "value": "true"
     },
@@ -16223,14 +16304,14 @@
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudSimultaneousInterpretationService.swift",
       "kind": "BooleanLiteral",
-      "offset": 27698,
+      "offset": 27852,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudSimultaneousInterpretationService.swift",
       "kind": "BooleanLiteral",
-      "offset": 27861,
+      "offset": 28015,
       "length": 5,
       "value": "false"
     },
@@ -16321,14 +16402,14 @@
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudTextTranslationService.swift",
       "kind": "StringLiteral",
-      "offset": 493,
+      "offset": 519,
       "length": 44,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudTextTranslationService.swift",
       "kind": "StringLiteral",
-      "offset": 518,
+      "offset": 544,
       "length": 1,
       "value": "\".translation.queue\""
     },
@@ -19956,21 +20037,21 @@
       "kind": "StringLiteral",
       "offset": 257,
       "length": 15,
-      "value": "\"1.0.0-beta.18\""
+      "value": "\"1.0.0-beta.20\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/SDKBuildInfo\/SDK_Build_Info.swift",
       "kind": "StringLiteral",
       "offset": 388,
       "length": 13,
-      "value": "\"20260804001\""
+      "value": "\"20260807002\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/SDKBuildInfo\/SDK_Build_Info.swift",
       "kind": "StringLiteral",
       "offset": 503,
       "length": 12,
-      "value": "\"2026-08-04\""
+      "value": "\"2026-08-07\""
     }
   ]
 }

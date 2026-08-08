@@ -23,10 +23,12 @@
 #import <MagicHelper/ChatRequestBodyV2.h>
 #import <MagicHelper/SimultInterpretationRequestBody.h>
 #import <MagicHelper/SimultInterpretationV2RequestBody.h>
+#import <MagicHelper/SimultInterpretationV5RequestBody.h>
 
 #import <MagicHelper/MeetingSummaryRequestBody.h>
 #import <MagicHelper/MeetingSummaryV2RequestBody.h>
 #import <MagicHelper/MagicRecognitionSession.h>
+#import <MagicHelper/MagicTextSession.h>
 #import <MagicHelper/MagicRecognitionSession+Utils.h>
 #import <MagicHelper/MagicMemoryData.h>
 #import <MagicHelper/MagicConversationModels.h>
@@ -39,6 +41,9 @@
 #import <MagicHelper/MagicSmartAgentUtil.h>
 #import <MagicHelper/MagicConversationModels.h>
 #import <MagicHelper/MagicPetConfigModels.h>
+
+#import <MagicHelper/MagicCardEnvelope.h>
+#import <MagicHelper/MagicCardDefines.h>
 
 #import <MagicHelper/AILanguageCodeUtil.h>
 
@@ -55,5 +60,4 @@ FOUNDATION_EXPORT double MagicHelperVersionNumber;
 FOUNDATION_EXPORT const unsigned char MagicHelperVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <MagicHelper/PublicHeader.h>
-
 

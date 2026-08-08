@@ -10,11 +10,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		vaht0JO0GBuDzc4muF1p4HUvsvE=
+		5Gpqrs5xL/6kv9nycdnM0uXZvvI=
 		</data>
 		<key>Modules/AIBudsAllInOne.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		GNYZ8S1giRlD48sK5Pq28XjyEQo=
+		vTLWdrUvkk/kqSMwcQ9IhRjpAb4=
 		</data>
 		<key>Modules/AIBudsAllInOne.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/AIBudsAllInOne.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		iZhOqoppCBarpZJ/RE2HqzjKQ2c=
+		xUlHscjwS1gBf5bZwnmzbWEQqV0=
 		</data>
 		<key>Modules/AIBudsAllInOne.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		GNYZ8S1giRlD48sK5Pq28XjyEQo=
+		vTLWdrUvkk/kqSMwcQ9IhRjpAb4=
 		</data>
 		<key>Modules/AIBudsAllInOne.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Modules/AIBudsAllInOne.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		K7GyDHkKT9rE1LJo7r4SdbxSDwE=
+		mea1ZoEi351c0QrXFbknYdHbG3E=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -70,7 +70,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			1+3CHcZ99Ft8P68RHlRHOjk/j1zPf37uGWfG8+EsjuA=
+			Ei01fRKp6xo/eNIfbuHMbuUZyE6+H7cWbwi/Q7tuVEY=
 			</data>
 		</dict>
 		<key>Modules/AIBudsAllInOne.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -98,14 +98,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			NZmeF66ho6lVtYz9VSLIcx7442vHaC45s2o/SPqWFoE=
+			S4s0NKVmQPy5rAedgdf7MhEWjRiNC7ozfiyE3EX9yIQ=
 			</data>
 		</dict>
 		<key>Modules/AIBudsAllInOne.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1+3CHcZ99Ft8P68RHlRHOjk/j1zPf37uGWfG8+EsjuA=
+			Ei01fRKp6xo/eNIfbuHMbuUZyE6+H7cWbwi/Q7tuVEY=
 			</data>
 		</dict>
 		<key>Modules/AIBudsAllInOne.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -133,7 +133,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			PL9S3SgnE1MQwpQMwKscjpZDWPRa15N/STKHTgV/Lf4=
+			13+grlfujMNd51wu6ZSogb2dFW1FU+AuT0LY1JNXFzo=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

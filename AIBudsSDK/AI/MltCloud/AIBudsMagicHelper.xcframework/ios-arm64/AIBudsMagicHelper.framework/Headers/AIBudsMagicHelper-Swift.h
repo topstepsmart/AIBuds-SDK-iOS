@@ -529,6 +529,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 @end
 
 SWIFT_ENUM_FWD_DECL(NSInteger, AIBudsAIServiceVendor)
+@class AIBudsAIServiceLanguage;
 SWIFT_ENUM_FWD_DECL(NSInteger, AIBudsAIAuthenticationMode)
 @protocol AIBudsAIAuthenticationServiceAPI;
 @protocol AIBudsAIChatServiceAPI;
@@ -576,6 +577,11 @@ SWIFT_ENUM_FWD_DECL(NSInteger, AIBudsAIAuthenticationMode)
 /// returns:
 /// An AIServiceVendor value indicating the type of service provider (e.g. .byteDance)
 @property (nonatomic, readonly) enum AIBudsAIServiceVendor vendor;
+/// The supported languages for the service provider
+///
+/// returns:
+/// An array of AIServiceLanguage objects representing the supported languages
+@property (nonatomic, readonly, copy) NSArray<AIBudsAIServiceLanguage *> * _Nonnull allSupportedLanguages;
 /// The authentication initiation mode for the ai service.
 ///
 /// returns:

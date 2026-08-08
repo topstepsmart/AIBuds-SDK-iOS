@@ -1106,6 +1106,63 @@ typedef SWIFT_ENUM_NAMED(NSInteger, AIBudsAIIntentType, "AIIntentType", open) {
   AIBudsAIIntentTypeStopFindPhone = 22,
 };
 
+@class NSLocale;
+/// A class representing a language.
+SWIFT_CLASS_NAMED("AIServiceLanguage")
+@interface AIBudsAIServiceLanguage : NSObject
+/// The language code
+/// A string representing the language identifier.
+/// <blockquote>
+/// Important: Language identifiers must follow the hyphenated format specification, e.g.: <code>zh-CN</code>
+///
+/// </blockquote>
+/// <ul>
+///   <li>
+///     Part1: Language code (ISO 639-1) - Two letters identifying the base language (e.g., “zh” for Chinese)
+///   </li>
+///   <li>
+///     Part2: Country/Region code (ISO 3166-1) - Optional two letters specifying the country or region (e.g., “CN” for China)
+///   </li>
+/// </ul>
+@property (nonatomic, readonly, copy) NSString * _Nonnull languageCode;
+/// The display name of the language
+/// A string representing the language name.
+@property (nonatomic, readonly, copy) NSString * _Nonnull displayName;
+/// The locale identifier of the language
+/// A string representing the locale identifier.
+@property (nonatomic, readonly, copy) NSString * _Nonnull localeIdentifier;
+/// The display name of the language for a specific locale
+/// A string representing the language name.
+- (NSString * _Nonnull)displayNameForLocale:(NSLocale * _Nonnull)locale SWIFT_WARN_UNUSED_RESULT;
+/// Initialize the language with a language code.
+/// <ul>
+///   <li>
+///     Parameters languageCode: The language code to use.
+///     A string representing the language identifier.
+///   </li>
+/// </ul>
+/// <blockquote>
+/// Important: Language identifiers must follow the hyphenated format specification, e.g.: <code>zh-CN</code>
+///
+/// </blockquote>
+/// <ul>
+///   <li>
+///     Part1: Language code (ISO 639-1) - Two letters identifying the base language (e.g., “zh” for Chinese)
+///   </li>
+///   <li>
+///     Part2: Country/Region code (ISO 3166-1) - Optional two letters specifying the country or region (e.g., “CN” for China)
+///   </li>
+/// </ul>
+///
+/// returns:
+/// The language code to use.
+- (nonnull instancetype)initWithLanguageCode:(NSString * _Nonnull)languageCode OBJC_DESIGNATED_INITIALIZER;
+/// Description
+@property (nonatomic, readonly, copy) NSString * _Nonnull description;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 /// Enumeration for the ai service vendor
 typedef SWIFT_ENUM_NAMED(NSInteger, AIBudsAIServiceVendor, "AIServiceVendor", open) {
 /// No ai service vendor is set
@@ -2546,6 +2603,63 @@ typedef SWIFT_ENUM_NAMED(NSInteger, AIBudsAIIntentType, "AIIntentType", open) {
 /// Stop finding phone
   AIBudsAIIntentTypeStopFindPhone = 22,
 };
+
+@class NSLocale;
+/// A class representing a language.
+SWIFT_CLASS_NAMED("AIServiceLanguage")
+@interface AIBudsAIServiceLanguage : NSObject
+/// The language code
+/// A string representing the language identifier.
+/// <blockquote>
+/// Important: Language identifiers must follow the hyphenated format specification, e.g.: <code>zh-CN</code>
+///
+/// </blockquote>
+/// <ul>
+///   <li>
+///     Part1: Language code (ISO 639-1) - Two letters identifying the base language (e.g., “zh” for Chinese)
+///   </li>
+///   <li>
+///     Part2: Country/Region code (ISO 3166-1) - Optional two letters specifying the country or region (e.g., “CN” for China)
+///   </li>
+/// </ul>
+@property (nonatomic, readonly, copy) NSString * _Nonnull languageCode;
+/// The display name of the language
+/// A string representing the language name.
+@property (nonatomic, readonly, copy) NSString * _Nonnull displayName;
+/// The locale identifier of the language
+/// A string representing the locale identifier.
+@property (nonatomic, readonly, copy) NSString * _Nonnull localeIdentifier;
+/// The display name of the language for a specific locale
+/// A string representing the language name.
+- (NSString * _Nonnull)displayNameForLocale:(NSLocale * _Nonnull)locale SWIFT_WARN_UNUSED_RESULT;
+/// Initialize the language with a language code.
+/// <ul>
+///   <li>
+///     Parameters languageCode: The language code to use.
+///     A string representing the language identifier.
+///   </li>
+/// </ul>
+/// <blockquote>
+/// Important: Language identifiers must follow the hyphenated format specification, e.g.: <code>zh-CN</code>
+///
+/// </blockquote>
+/// <ul>
+///   <li>
+///     Part1: Language code (ISO 639-1) - Two letters identifying the base language (e.g., “zh” for Chinese)
+///   </li>
+///   <li>
+///     Part2: Country/Region code (ISO 3166-1) - Optional two letters specifying the country or region (e.g., “CN” for China)
+///   </li>
+/// </ul>
+///
+/// returns:
+/// The language code to use.
+- (nonnull instancetype)initWithLanguageCode:(NSString * _Nonnull)languageCode OBJC_DESIGNATED_INITIALIZER;
+/// Description
+@property (nonatomic, readonly, copy) NSString * _Nonnull description;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
 
 /// Enumeration for the ai service vendor
 typedef SWIFT_ENUM_NAMED(NSInteger, AIBudsAIServiceVendor, "AIServiceVendor", open) {

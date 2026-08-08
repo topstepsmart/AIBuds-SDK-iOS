@@ -81,8 +81,30 @@ typedef NS_ENUM(NSInteger, MagicLLMCode) {
 ///意图配置code, 默认basic_intent_config
 @property (nonatomic, strong) NSString *intentConfigCode;
 
+/**
+ * 会话模式（session.create config.session_mode）。
+ * 未设置或 MagicCardSessionModeDefault：纯语音对话；MagicCardSessionModeCard：卡片智能体模式。
+ */
+@property (nonatomic, copy, nullable) NSString *session_mode;
+/**
+ * 是否启用卡片下发（session.create config.enable_card）。
+ * session_mode=card 时建议 YES；设为 NO 可临时禁用卡片、仅保留播报。
+ */
+@property (nonatomic, strong, nullable) NSNumber *enable_card;
+/**
+ * 端上支持的 card_type 白名单（session.create config.card_capabilities）。
+ * 未传时服务端按全量下发；端上收到不认识的 card_type 可忽略。建议使用 +defaultCardCapabilities。
+ */
+@property (nonatomic, strong, nullable) NSArray<NSString *> *card_capabilities;
+
 /// 额外参数
 @property (nonatomic, strong, nullable) SmartOptionExt *ext;
+
+///情绪配置
+@property (nonatomic, strong) NSString *emotionIntentConfigCode;
+
+///上下文，默认true (MagicTextSession用到)
+@property (nonatomic, strong) NSNumber *enable_conversation;
 
 
 /// 构建model
@@ -95,6 +117,12 @@ typedef NS_ENUM(NSInteger, MagicLLMCode) {
                                                voice:(nullable NSString *)voice
                                     intentConfigCode:(nullable NSString *)intentConfigCode
                                              llmCode:(MagicLLMCode)llmCode;
+
+/**
+ * P0 默认 card_capabilities 白名单。
+ * @return 与 MagicCardDefaultCapabilities() 相同，包含 7 种 P0 card_type
+ */
++ (NSArray<NSString *> *)defaultCardCapabilities;
 
 @end
 

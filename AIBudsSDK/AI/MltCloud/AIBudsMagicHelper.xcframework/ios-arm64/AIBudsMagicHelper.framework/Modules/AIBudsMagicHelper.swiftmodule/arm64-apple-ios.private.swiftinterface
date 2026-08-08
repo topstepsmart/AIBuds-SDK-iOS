@@ -44,6 +44,9 @@ extension AIBudsMagicHelper.MagicHelperSDK : AIBudsAI.AIConnectSDK {
   @objc final public var vendor: AIBudsAIFoundation.AIServiceVendor {
     @objc get
   }
+  @objc final public var allSupportedLanguages: [AIBudsAIFoundation.AIServiceLanguage] {
+    @objc get
+  }
   @objc final public var authenticationMode: AIBudsAIFoundation.AIAuthenticationMode {
     @objc get
   }

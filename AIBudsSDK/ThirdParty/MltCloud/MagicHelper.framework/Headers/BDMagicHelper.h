@@ -25,9 +25,12 @@
 
 #import "MagicHelperError.h"
 #import "MagicRecognitionSession.h"
+#import "MagicTextSession.h"
 #import "RecognitionImageBody.h"
 #import "TranslationImageBody.h"
 #import "SimultInterpretationV2RequestBody.h"
+#import "SimultInterpretationV5RequestBody.h"
+#import "SimultInterpretationV5Capabilities.h"
 #import "ASRLongFileIntlRequestBody.h"
 #import "TranslationImageBodyV2.h"
 
@@ -165,6 +168,9 @@ typedef void(^MGCompletionHandler)(NSDictionary *result, NSError * _Nullable err
 /// 多模态实例
 @property (nonatomic, strong) MagicRecognitionSession *recognitionSession;
 
+/// 纯文本大模型会话实例
+@property (nonatomic, strong) MagicTextSession *textSession;
+
 /// 是否支持多模态(初始化SDK接口后有效)
 @property (nonatomic, assign, readonly) BOOL isSupportMultiModelAi;
 
@@ -281,13 +287,19 @@ typedef void(^MGCompletionHandler)(NSDictionary *result, NSError * _Nullable err
 - (void)getSupportedModelTypes;
 
 /// 同声传译v1
-/// 回调见- (void)didReceiveSimultInterpretationResult:(NSDictionary *)result error:(nullable NSError *)error;
 - (nullable IntlAudioInput *)simultInterpretationWithBody:(SimultInterpretationRequestBody *)body;
 
 /// 同声传译v4
-/// 回调见- (void)didReceiveSimultInterpretationResult:(NSDictionary *)result error:(nullable NSError *)error;
 - (nullable IntlAudioInput *)simultInterpretationV4WithBody:(SimultInterpretationV2RequestBody *)body;
+/// 同声传译 V5：MLuo 云端纯 WSS 链路。老接口不变，调用方显式选择 V5。
+/// TTS 流式分片通过 didReceiveSimultInterpretationResult 回调：
+/// mluoEvent=tts_chunk，ttsData=NSData，ttsLast=BOOL，index/messageId 用于顺序关联；
+/// 原有 ttsPath 整段文件回调继续保留。
+- (nullable IntlAudioInput *)simultInterpretationV5WithBody:(SimultInterpretationV5RequestBody *)body;
 
+/// 获取云端当前 V5 输入语种、翻译目标和 Azure TTS 音色目录。
+- (void)getSimultInterpretationV5Capabilities:(void (^)(SimultInterpretationV5Capabilities * _Nullable capabilities,
+                                                         NSError * _Nullable error))completion;
 /// 会议纪要
 - (void)generateSummaryWithBody:(MeetingSummaryRequestBody *)body;
 
@@ -329,4 +341,3 @@ typedef void(^MGCompletionHandler)(NSDictionary *result, NSError * _Nullable err
 @end
 
 NS_ASSUME_NONNULL_END
-
