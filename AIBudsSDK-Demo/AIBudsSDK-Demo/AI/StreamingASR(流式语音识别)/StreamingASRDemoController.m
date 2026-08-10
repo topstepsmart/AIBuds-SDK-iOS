@@ -161,7 +161,9 @@
     self.resultTextView.text = NSLocalizedString(@"LocKey.Processing", comment:@"Processing message");
     
     // Create config
-    AIBudsStreamingASRConfig *config = [[AIBudsStreamingASRConfig alloc] initWithLanguageForSpeechInput:nil audioFormat:[self getAudioFormatFromString:self.selectedFormat]];
+    AIBudsStreamingASRConfig *config = [[AIBudsStreamingASRConfig alloc] initWithLanguageForSpeechInput:nil
+                                                                                            audioFormat:[self getAudioFormatFromString:self.selectedFormat]
+                                                                               enableSpeakerDiarization:YES];
     
     // Start recognition
     [AIBudsAISDK recognizeVoiceFile:self.selectedFilePath 
