@@ -623,9 +623,6 @@ SWIFT_ENUM_FWD_DECL(NSInteger, AIBudsAIAuthenticationMode)
 @class AIBudsStreamingASRConfig;
 @class AIBudsTTSConfig;
 @class AIBudsTTSResultModel;
-@class AIBudsAIGCStyleModel;
-@class AIBudsAIGCTaskConfig;
-@class UIImage;
 /// The main entry point for the AIBudsAISDK.
 /// Use this class to access SDK version information and other global SDK-level functionality.
 /// This class is marked as <code>final</code> and inherits from <code>NSObject</code> to ensure Objective-C compatibility.
@@ -1067,24 +1064,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) AIBudsLocati
 /// </ul>
 ///
 + (void)synthesizeText:(NSString * _Nonnull)text config:(AIBudsTTSConfig * _Nonnull)config completion:(void (^ _Nullable)(NSString * _Nullable, BOOL, AIBudsTTSResultModel * _Nullable, NSError * _Nullable))completion;
-/// The available styles for image generation.
-@property (nonatomic, readonly, copy) NSArray<AIBudsAIGCStyleModel *> * _Nullable aigcStyles;
-/// The maximum number of images to generate in a single task.
-@property (nonatomic, readonly) NSInteger maxGenerateCount;
-/// Fetch available styles for image generation.
-/// \param completion Optional callback when the styles are fetched
-///
-- (void)fetchStylesWithCompletion:(void (^ _Nullable)(NSArray<AIBudsAIGCStyleModel *> * _Nullable, NSError * _Nullable))completion;
-/// Generate images based on a prompt and configuration.
-/// \param prompt The text prompt for the image generation
-///
-/// \param config The configuration for the task
-///
-/// \param onTaskCreated Optional callback when the task is created
-///
-/// \param completion Optional callback when the task is completed
-///
-- (void)generateWithPrompt:(NSString * _Nonnull)prompt config:(AIBudsAIGCTaskConfig * _Nonnull)config taskCreated:(void (^ _Nullable)(NSString * _Nonnull))onTaskCreated completion:(void (^ _Nullable)(NSString * _Nullable, BOOL, NSArray<UIImage *> * _Nullable, NSError * _Nullable))completion;
 @end
 
 @interface AIBudsAISDK (SWIFT_EXTENSION(AIBudsAI))
@@ -1203,6 +1182,7 @@ SWIFT_PROTOCOL_NAMED("AIChatServiceAPI")
 - (void)stopAIChat;
 @end
 
+@class UIImage;
 /// Protocol for a chat session, defining the ability to append audio data to the session.
 SWIFT_PROTOCOL_NAMED("AIChatSessionConvertible")
 @protocol AIBudsAIChatSessionConvertible <NSObject>
@@ -1478,6 +1458,8 @@ SWIFT_CLASS_NAMED("AICriticalLogRecordModel")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+@class AIBudsAIGCStyleModel;
+@class AIBudsAIGCTaskConfig;
 /// The protocol for the AIGC service API.
 SWIFT_PROTOCOL_NAMED("AIGCServiceAPI")
 @protocol AIBudsAIGCServiceAPI <NSObject>
