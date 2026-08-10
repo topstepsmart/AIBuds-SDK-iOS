@@ -76,6 +76,9 @@ extension AIBudsStarBurst.StarBurstSDK : AIBudsAI.AIConnectSDK {
   @objc final public var ttsService: (any AIBudsAI.TTSServiceAPI)? {
     @objc get
   }
+  @objc final public var aigcService: (any AIBudsAI.AIGCServiceAPI)? {
+    @objc get
+  }
 }
 extension AIBudsStarBurst.StarBurstSDK {
   @objc public static let ErrorDomain: Swift.String

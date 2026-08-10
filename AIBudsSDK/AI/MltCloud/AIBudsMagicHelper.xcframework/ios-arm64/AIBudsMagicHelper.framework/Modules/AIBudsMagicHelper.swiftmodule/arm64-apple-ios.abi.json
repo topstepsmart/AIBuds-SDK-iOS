@@ -16,6 +16,16 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AIBudsMagicHelper",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Dispatch",
         "printedName": "Dispatch",
         "declKind": "Import",
@@ -1174,6 +1184,73 @@
                 "mangledName": "$s17AIBudsMagicHelper0bC3SDKC10ttsService0A2AI13TTSServiceAPI_pSgvg",
                 "moduleName": "AIBudsMagicHelper",
                 "objc_name": "ttsService",
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "aigcService",
+            "printedName": "aigcService",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any AIBudsAI.AIGCServiceAPI)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AIGCServiceAPI",
+                    "printedName": "any AIBudsAI.AIGCServiceAPI",
+                    "usr": "c:@M@AIBudsAI@objc(pl)AIBudsAIGCServiceAPI"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@AIBudsMagicHelper@objc(cs)AIBudsMagicHelperSDK(py)aigcService",
+            "mangledName": "$s17AIBudsMagicHelper0bC3SDKC11aigcService0A2AI14AIGCServiceAPI_pSgvp",
+            "moduleName": "AIBudsMagicHelper",
+            "objc_name": "aigcService",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any AIBudsAI.AIGCServiceAPI)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AIGCServiceAPI",
+                        "printedName": "any AIBudsAI.AIGCServiceAPI",
+                        "usr": "c:@M@AIBudsAI@objc(pl)AIBudsAIGCServiceAPI"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@AIBudsMagicHelper@objc(cs)AIBudsMagicHelperSDK(im)aigcService",
+                "mangledName": "$s17AIBudsMagicHelper0bC3SDKC11aigcService0A2AI14AIGCServiceAPI_pSgvg",
+                "moduleName": "AIBudsMagicHelper",
+                "objc_name": "aigcService",
                 "declAttributes": [
                   "Final",
                   "ObjC"
@@ -11146,6 +11223,570 @@
       },
       {
         "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "AIBudsMagicHelper"
+      },
+      {
+        "kind": "Import",
+        "name": "AIBudsAI",
+        "printedName": "AIBudsAI",
+        "declKind": "Import",
+        "moduleName": "AIBudsMagicHelper"
+      },
+      {
+        "kind": "Import",
+        "name": "AIBudsLog",
+        "printedName": "AIBudsLog",
+        "declKind": "Import",
+        "moduleName": "AIBudsMagicHelper"
+      },
+      {
+        "kind": "Import",
+        "name": "AIBudsAIFoundation",
+        "printedName": "AIBudsAIFoundation",
+        "declKind": "Import",
+        "moduleName": "AIBudsMagicHelper"
+      },
+      {
+        "kind": "Import",
+        "name": "MagicHelper",
+        "printedName": "MagicHelper",
+        "declKind": "Import",
+        "moduleName": "AIBudsMagicHelper",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MltCloudAIGCService",
+        "printedName": "MltCloudAIGCService",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MltCloudAIGCService",
+                "printedName": "AIBudsMagicHelper.MltCloudAIGCService",
+                "usr": "c:@M@AIBudsMagicHelper@objc(cs)AIBudsMltCloudAIGCService"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBudsMagicHelper@objc(cs)AIBudsMltCloudAIGCService(cpy)shared",
+            "mangledName": "$s17AIBudsMagicHelper19MltCloudAIGCServiceC6sharedACvpZ",
+            "moduleName": "AIBudsMagicHelper",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MltCloudAIGCService",
+                    "printedName": "AIBudsMagicHelper.MltCloudAIGCService",
+                    "usr": "c:@M@AIBudsMagicHelper@objc(cs)AIBudsMltCloudAIGCService"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsMagicHelper@objc(cs)AIBudsMltCloudAIGCService(cm)shared",
+                "mangledName": "$s17AIBudsMagicHelper19MltCloudAIGCServiceC6sharedACvgZ",
+                "moduleName": "AIBudsMagicHelper",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "aigcStyles",
+            "printedName": "aigcStyles",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[AIBudsAIFoundation.AIGCStyleModel]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[AIBudsAIFoundation.AIGCStyleModel]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AIGCStyleModel",
+                        "printedName": "AIBudsAIFoundation.AIGCStyleModel",
+                        "usr": "c:@M@AIBudsAIFoundation@objc(cs)AIBudsAIGCStyleModel"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBudsMagicHelper@objc(cs)AIBudsMltCloudAIGCService(py)aigcStyles",
+            "mangledName": "$s17AIBudsMagicHelper19MltCloudAIGCServiceC10aigcStylesSay0A12AIFoundation14AIGCStyleModelCGSgvp",
+            "moduleName": "AIBudsMagicHelper",
+            "objc_name": "aigcStyles",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[AIBudsAIFoundation.AIGCStyleModel]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[AIBudsAIFoundation.AIGCStyleModel]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "AIGCStyleModel",
+                            "printedName": "AIBudsAIFoundation.AIGCStyleModel",
+                            "usr": "c:@M@AIBudsAIFoundation@objc(cs)AIBudsAIGCStyleModel"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsMagicHelper@objc(cs)AIBudsMltCloudAIGCService(im)aigcStyles",
+                "mangledName": "$s17AIBudsMagicHelper19MltCloudAIGCServiceC10aigcStylesSay0A12AIFoundation14AIGCStyleModelCGSgvg",
+                "moduleName": "AIBudsMagicHelper",
+                "objc_name": "aigcStyles",
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "maxGenerateCount",
+            "printedName": "maxGenerateCount",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBudsMagicHelper@objc(cs)AIBudsMltCloudAIGCService(py)maxGenerateCount",
+            "mangledName": "$s17AIBudsMagicHelper19MltCloudAIGCServiceC16maxGenerateCountSivp",
+            "moduleName": "AIBudsMagicHelper",
+            "objc_name": "maxGenerateCount",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsMagicHelper@objc(cs)AIBudsMltCloudAIGCService(im)maxGenerateCount",
+                "mangledName": "$s17AIBudsMagicHelper19MltCloudAIGCServiceC16maxGenerateCountSivg",
+                "moduleName": "AIBudsMagicHelper",
+                "objc_name": "maxGenerateCount",
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "fetchStyles",
+            "printedName": "fetchStyles(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(([AIBudsAIFoundation.AIGCStyleModel]?, Foundation.NSError?) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "([AIBudsAIFoundation.AIGCStyleModel]?, Foundation.NSError?) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "([AIBudsAIFoundation.AIGCStyleModel]?, Foundation.NSError?)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "[AIBudsAIFoundation.AIGCStyleModel]?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Array",
+                                "printedName": "[AIBudsAIFoundation.AIGCStyleModel]",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "AIGCStyleModel",
+                                    "printedName": "AIBudsAIFoundation.AIGCStyleModel",
+                                    "usr": "c:@M@AIBudsAIFoundation@objc(cs)AIBudsAIGCStyleModel"
+                                  }
+                                ],
+                                "usr": "s:Sa"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "Foundation.NSError?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "NSError",
+                                "printedName": "Foundation.NSError",
+                                "usr": "c:objc(cs)NSError"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AIBudsMagicHelper@objc(cs)AIBudsMltCloudAIGCService(im)fetchStylesWithCompletion:",
+            "mangledName": "$s17AIBudsMagicHelper19MltCloudAIGCServiceC11fetchStyles10completionyySay0A12AIFoundation14AIGCStyleModelCGSg_So7NSErrorCSgtcSg_tF",
+            "moduleName": "AIBudsMagicHelper",
+            "objc_name": "fetchStylesWithCompletion:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "generate",
+            "printedName": "generate(prompt:config:onTaskCreated:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AIGCTaskConfig",
+                "printedName": "AIBudsAIFoundation.AIGCTaskConfig",
+                "hasDefaultArg": true,
+                "usr": "c:@M@AIBudsAIFoundation@objc(cs)AIBudsAIGCTaskConfig"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Swift.String) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Swift.String?, Swift.Bool, [UIKit.UIImage]?, Foundation.NSError?) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String?, Swift.Bool, [UIKit.UIImage]?, Foundation.NSError?) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(Swift.String?, Swift.Bool, [UIKit.UIImage]?, Foundation.NSError?)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "Swift.String?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Bool",
+                            "printedName": "Swift.Bool",
+                            "usr": "s:Sb"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "[UIKit.UIImage]?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Array",
+                                "printedName": "[UIKit.UIImage]",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "UIImage",
+                                    "printedName": "UIKit.UIImage",
+                                    "usr": "c:objc(cs)UIImage"
+                                  }
+                                ],
+                                "usr": "s:Sa"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "Foundation.NSError?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "NSError",
+                                "printedName": "Foundation.NSError",
+                                "usr": "c:objc(cs)NSError"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AIBudsMagicHelper@objc(cs)AIBudsMltCloudAIGCService(im)generateWithPrompt:config:taskCreated:completion:",
+            "mangledName": "$s17AIBudsMagicHelper19MltCloudAIGCServiceC8generate6prompt6config13onTaskCreated10completionySS_0A12AIFoundation14AIGCTaskConfigCySScSgySSSg_SbSaySo7UIImageCGSgSo7NSErrorCSgtcSgtF",
+            "moduleName": "AIBudsMagicHelper",
+            "objc_name": "generateWithPrompt:config:taskCreated:completion:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@AIBudsMagicHelper@objc(cs)AIBudsMltCloudAIGCService",
+        "mangledName": "$s17AIBudsMagicHelper19MltCloudAIGCServiceC",
+        "moduleName": "AIBudsMagicHelper",
+        "objc_name": "AIBudsMltCloudAIGCService",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "AIGCServiceAPI",
+            "printedName": "AIGCServiceAPI",
+            "usr": "c:@M@AIBudsAI@objc(pl)AIBudsAIGCServiceAPI",
+            "mangledName": "$s8AIBudsAI14AIGCServiceAPIP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AIBudsMagicHelper",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "AIBudsAI",
         "printedName": "AIBudsAI",
         "declKind": "Import",
@@ -14270,21 +14911,32 @@
         "declAttributes": [
           "RawDocComment"
         ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "AIBudsMagicHelper",
-        "declAttributes": [
-          "RawDocComment"
-        ]
       }
     ],
     "json_format_version": 8
   },
   "ConstValues": [
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/SDKBuildInfo\/SDK_Build_Info.swift",
+      "kind": "StringLiteral",
+      "offset": 257,
+      "length": 15,
+      "value": "\"1.0.0-beta.22\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/SDKBuildInfo\/SDK_Build_Info.swift",
+      "kind": "StringLiteral",
+      "offset": 388,
+      "length": 13,
+      "value": "\"20260810002\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/SDKBuildInfo\/SDK_Build_Info.swift",
+      "kind": "StringLiteral",
+      "offset": 503,
+      "length": 12,
+      "value": "\"2026-08-10\""
+    },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/AIBudsMagicHelper.swift",
       "kind": "StringLiteral",
@@ -14325,7 +14977,7 @@
       "kind": "StringLiteral",
       "offset": 905,
       "length": 8,
-      "value": "\"2.10.0\""
+      "value": "\"2.11.0\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/AIBudsMagicHelper.swift",
@@ -15814,7 +16466,7 @@
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MagicHelperMate.swift",
       "kind": "StringLiteral",
-      "offset": 11737,
+      "offset": 11844,
       "length": 4,
       "value": "\"14\""
     },
@@ -15989,177 +16641,191 @@
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudAIChatService.swift",
       "kind": "StringLiteral",
-      "offset": 11264,
+      "offset": 11401,
       "length": 39,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudAIChatService.swift",
       "kind": "StringLiteral",
-      "offset": 11289,
+      "offset": 11426,
       "length": 1,
       "value": "\".aichat.queue\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudAIChatService.swift",
       "kind": "StringLiteral",
-      "offset": 11434,
+      "offset": 11571,
       "length": 54,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudAIChatService.swift",
       "kind": "StringLiteral",
-      "offset": 11459,
+      "offset": 11596,
       "length": 1,
       "value": "\".aichat.event.dispatch.queue\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudAIChatService.swift",
       "kind": "StringLiteral",
-      "offset": 11639,
+      "offset": 11776,
       "length": 66,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudAIChatService.swift",
       "kind": "StringLiteral",
-      "offset": 11664,
+      "offset": 11801,
       "length": 1,
       "value": "\".aichat.speech_input_data.dispatch.queue\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudAIChatService.swift",
       "kind": "StringLiteral",
-      "offset": 11842,
+      "offset": 11979,
       "length": 51,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudAIChatService.swift",
       "kind": "StringLiteral",
-      "offset": 11867,
+      "offset": 12004,
       "length": 1,
       "value": "\".aichat.safe.access.queue\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudAIChatService.swift",
       "kind": "StringLiteral",
-      "offset": 12037,
+      "offset": 12174,
       "length": 58,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudAIChatService.swift",
       "kind": "StringLiteral",
-      "offset": 12062,
+      "offset": 12199,
       "length": 1,
       "value": "\".aichat.segment_audio.save.queue\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudAIChatService.swift",
       "kind": "StringLiteral",
-      "offset": 12305,
+      "offset": 12442,
       "length": 25,
       "value": "\"yyyy-MM-dd HH:mm:ss.SSS\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudAIChatService.swift",
       "kind": "StringLiteral",
-      "offset": 12377,
+      "offset": 12514,
       "length": 13,
       "value": "\"en_US_POSIX\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudAIChatService.swift",
       "kind": "StringLiteral",
-      "offset": 12625,
+      "offset": 12762,
       "length": 21,
       "value": "\"yyyy-MM-dd_HH-mm-ss\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudAIChatService.swift",
       "kind": "StringLiteral",
-      "offset": 12693,
+      "offset": 12830,
       "length": 13,
       "value": "\"en_US_POSIX\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudAIChatService.swift",
       "kind": "StringLiteral",
-      "offset": 12965,
+      "offset": 13102,
       "length": 17,
       "value": "\"\/audios\/ai_chat\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudAIChatService.swift",
       "kind": "BooleanLiteral",
-      "offset": 13084,
+      "offset": 13221,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudAIChatService.swift",
       "kind": "StringLiteral",
-      "offset": 13110,
+      "offset": 13247,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudAIChatService.swift",
       "kind": "BooleanLiteral",
-      "offset": 13432,
+      "offset": 13569,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudAIChatService.swift",
       "kind": "StringLiteral",
-      "offset": 13521,
+      "offset": 13658,
       "length": 55,
       "value": "\"Error creating ai chat audio root directory: \""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudAIChatService.swift",
       "kind": "StringLiteral",
-      "offset": 13575,
+      "offset": 13712,
       "length": 3,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudAIChatService.swift",
       "kind": "IntegerLiteral",
-      "offset": 13686,
+      "offset": 13823,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudAIChatService.swift",
       "kind": "BooleanLiteral",
-      "offset": 15982,
+      "offset": 16119,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudAIChatService.swift",
       "kind": "BooleanLiteral",
-      "offset": 16117,
+      "offset": 16254,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudAIChatService.swift",
       "kind": "BooleanLiteral",
-      "offset": 75245,
+      "offset": 76246,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudAIChatService.swift",
       "kind": "BooleanLiteral",
-      "offset": 77799,
+      "offset": 78800,
       "length": 4,
       "value": "true"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudAIGCService.swift",
+      "kind": "StringLiteral",
+      "offset": 541,
+      "length": 37,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudAIGCService.swift",
+      "kind": "StringLiteral",
+      "offset": 566,
+      "length": 1,
+      "value": "\".aigc.queue\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/MltCloudSimultaneousInterpretationService.swift",
@@ -16475,6 +17141,13 @@
       "offset": 585,
       "length": 19,
       "value": "\"bq2s4ec2j4qawuvef\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/SDKContext.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1054,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/TranslateLanguage.swift",
@@ -20031,27 +20704,6 @@
       "offset": 381,
       "length": 1,
       "value": "2"
-    },
-    {
-      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/SDKBuildInfo\/SDK_Build_Info.swift",
-      "kind": "StringLiteral",
-      "offset": 257,
-      "length": 15,
-      "value": "\"1.0.0-beta.20\""
-    },
-    {
-      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/SDKBuildInfo\/SDK_Build_Info.swift",
-      "kind": "StringLiteral",
-      "offset": 388,
-      "length": 13,
-      "value": "\"20260807002\""
-    },
-    {
-      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/SDKBuildInfo\/SDK_Build_Info.swift",
-      "kind": "StringLiteral",
-      "offset": 503,
-      "length": 12,
-      "value": "\"2026-08-07\""
     }
   ]
 }

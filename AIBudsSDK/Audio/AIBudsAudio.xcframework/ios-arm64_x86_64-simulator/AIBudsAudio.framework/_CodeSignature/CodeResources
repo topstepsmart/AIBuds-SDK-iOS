@@ -10,11 +10,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		YJoY5SAMoun62UeXWCynkacKFhM=
+		uwNh2yV+nkp/HdLt0ZwqPq/PNfo=
 		</data>
 		<key>Modules/AIBudsAudio.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		mGcD4ZEuwh/pidKIpyHpvyp9hSA=
+		37LeqSpvp2w4v6cV1jlhJsgMmZo=
 		</data>
 		<key>Modules/AIBudsAudio.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/AIBudsAudio.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		c5op1zCEXLpZf3APIkK8NbbdM00=
+		h5DFp0n6Z+qQfL+r6/SUSOs9mF4=
 		</data>
 		<key>Modules/AIBudsAudio.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		mGcD4ZEuwh/pidKIpyHpvyp9hSA=
+		37LeqSpvp2w4v6cV1jlhJsgMmZo=
 		</data>
 		<key>Modules/AIBudsAudio.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Modules/AIBudsAudio.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		8yCgyCMsV/VvfMyzo8dTlGxUhKw=
+		APDKcFX/wl/2pDlfmS2FFAWgBAg=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -66,7 +66,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			+b3WOiO1l+KlbtpzsngJMzvKERn/BdzDk4Moz5yDdzw=
+			jZhTU3UZoCb7CnP6QWFpGHmn+FBBXz/2cOeZjimkxG4=
 			</data>
 		</dict>
 		<key>Modules/AIBudsAudio.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -94,14 +94,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			RCkk/vtxAQPdFSgWpPZxySp1C9if6F773xxcHLmhUn0=
+			nutf1w48pL7zeE9y/QnyeMvsshH9iJYGwZLa2yPANWk=
 			</data>
 		</dict>
 		<key>Modules/AIBudsAudio.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+b3WOiO1l+KlbtpzsngJMzvKERn/BdzDk4Moz5yDdzw=
+			jZhTU3UZoCb7CnP6QWFpGHmn+FBBXz/2cOeZjimkxG4=
 			</data>
 		</dict>
 		<key>Modules/AIBudsAudio.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -129,7 +129,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			WyYK2VvrTn4/r30FAz2uXCrAGlnhfQ4Q8/cudNnhnQ0=
+			h1bp297D09NHu2rYVJhQAK6J1GFsgMPCuBSr8uWm5Us=
 			</data>
 		</dict>
 	</dict>

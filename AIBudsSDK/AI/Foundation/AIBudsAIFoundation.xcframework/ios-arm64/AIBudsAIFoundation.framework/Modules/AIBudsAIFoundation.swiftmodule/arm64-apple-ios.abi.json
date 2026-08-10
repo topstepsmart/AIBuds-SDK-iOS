@@ -16,6 +16,16 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AIBudsAIFoundation",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "AIBudsFoundation",
         "printedName": "AIBudsFoundation",
         "declKind": "Import",
@@ -6203,6 +6213,1414 @@
         "mangledName": "$s18AIBudsAIFoundation20AIChatVoiceDataModelC",
         "moduleName": "AIBudsAIFoundation",
         "objc_name": "AIBudsAIChatVoiceDataModel",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AIBudsAIFoundation",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AIGCStyleModel",
+        "printedName": "AIGCStyleModel",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "name",
+            "printedName": "name",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBudsAIFoundation@objc(cs)AIBudsAIGCStyleModel(py)name",
+            "mangledName": "$s18AIBudsAIFoundation14AIGCStyleModelC4nameSSvp",
+            "moduleName": "AIBudsAIFoundation",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsAIFoundation@objc(cs)AIBudsAIGCStyleModel(im)name",
+                "mangledName": "$s18AIBudsAIFoundation14AIGCStyleModelC4nameSSvg",
+                "moduleName": "AIBudsAIFoundation",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "styleCode",
+            "printedName": "styleCode",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBudsAIFoundation@objc(cs)AIBudsAIGCStyleModel(py)styleCode",
+            "mangledName": "$s18AIBudsAIFoundation14AIGCStyleModelC9styleCodeSSvp",
+            "moduleName": "AIBudsAIFoundation",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsAIFoundation@objc(cs)AIBudsAIGCStyleModel(im)styleCode",
+                "mangledName": "$s18AIBudsAIFoundation14AIGCStyleModelC9styleCodeSSvg",
+                "moduleName": "AIBudsAIFoundation",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "iconUrl",
+            "printedName": "iconUrl",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBudsAIFoundation@objc(cs)AIBudsAIGCStyleModel(py)iconUrl",
+            "mangledName": "$s18AIBudsAIFoundation14AIGCStyleModelC7iconUrlSSSgvp",
+            "moduleName": "AIBudsAIFoundation",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsAIFoundation@objc(cs)AIBudsAIGCStyleModel(im)iconUrl",
+                "mangledName": "$s18AIBudsAIFoundation14AIGCStyleModelC7iconUrlSSSgvg",
+                "moduleName": "AIBudsAIFoundation",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(name:styleCode:iconUrl:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AIGCStyleModel",
+                "printedName": "AIBudsAIFoundation.AIGCStyleModel",
+                "usr": "c:@M@AIBudsAIFoundation@objc(cs)AIBudsAIGCStyleModel"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@AIBudsAIFoundation@objc(cs)AIBudsAIGCStyleModel(im)initWithName:styleCode:iconUrl:",
+            "mangledName": "$s18AIBudsAIFoundation14AIGCStyleModelC4name9styleCode7iconUrlACSS_S2SSgtcfc",
+            "moduleName": "AIBudsAIFoundation",
+            "objc_name": "initWithName:styleCode:iconUrl:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AIGCStyleModel",
+                "printedName": "AIBudsAIFoundation.AIGCStyleModel",
+                "usr": "c:@M@AIBudsAIFoundation@objc(cs)AIBudsAIGCStyleModel"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@AIBudsAIFoundation@objc(cs)AIBudsAIGCStyleModel(im)init",
+            "mangledName": "$s18AIBudsAIFoundation14AIGCStyleModelCACycfc",
+            "moduleName": "AIBudsAIFoundation",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@AIBudsAIFoundation@objc(cs)AIBudsAIGCStyleModel",
+        "mangledName": "$s18AIBudsAIFoundation14AIGCStyleModelC",
+        "moduleName": "AIBudsAIFoundation",
+        "objc_name": "AIBudsAIGCStyleModel",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AIBudsAIFoundation",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AIGCTaskConfig",
+        "printedName": "AIGCTaskConfig",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "default",
+            "printedName": "default",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AIGCTaskConfig",
+                "printedName": "AIBudsAIFoundation.AIGCTaskConfig",
+                "usr": "c:@M@AIBudsAIFoundation@objc(cs)AIBudsAIGCTaskConfig"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBudsAIFoundation@objc(cs)AIBudsAIGCTaskConfig(cpy)defaultConfig",
+            "mangledName": "$s18AIBudsAIFoundation14AIGCTaskConfigC7defaultACvpZ",
+            "moduleName": "AIBudsAIFoundation",
+            "static": true,
+            "objc_name": "defaultConfig",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AIGCTaskConfig",
+                    "printedName": "AIBudsAIFoundation.AIGCTaskConfig",
+                    "usr": "c:@M@AIBudsAIFoundation@objc(cs)AIBudsAIGCTaskConfig"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsAIFoundation@objc(cs)AIBudsAIGCTaskConfig(cm)defaultConfig",
+                "mangledName": "$s18AIBudsAIFoundation14AIGCTaskConfigC7defaultACvgZ",
+                "moduleName": "AIBudsAIFoundation",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "style",
+            "printedName": "style",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBudsAIFoundation@objc(cs)AIBudsAIGCTaskConfig(py)style",
+            "mangledName": "$s18AIBudsAIFoundation14AIGCTaskConfigC5styleSSSgvp",
+            "moduleName": "AIBudsAIFoundation",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsAIFoundation@objc(cs)AIBudsAIGCTaskConfig(im)style",
+                "mangledName": "$s18AIBudsAIFoundation14AIGCTaskConfigC5styleSSSgvg",
+                "moduleName": "AIBudsAIFoundation",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsAIFoundation@objc(cs)AIBudsAIGCTaskConfig(im)setStyle:",
+                "mangledName": "$s18AIBudsAIFoundation14AIGCTaskConfigC5styleSSSgvs",
+                "moduleName": "AIBudsAIFoundation",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18AIBudsAIFoundation14AIGCTaskConfigC5styleSSSgvM",
+                "mangledName": "$s18AIBudsAIFoundation14AIGCTaskConfigC5styleSSSgvM",
+                "moduleName": "AIBudsAIFoundation",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "imageCount",
+            "printedName": "imageCount",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBudsAIFoundation@objc(cs)AIBudsAIGCTaskConfig(py)imageCount",
+            "mangledName": "$s18AIBudsAIFoundation14AIGCTaskConfigC10imageCountSivp",
+            "moduleName": "AIBudsAIFoundation",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsAIFoundation@objc(cs)AIBudsAIGCTaskConfig(im)imageCount",
+                "mangledName": "$s18AIBudsAIFoundation14AIGCTaskConfigC10imageCountSivg",
+                "moduleName": "AIBudsAIFoundation",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsAIFoundation@objc(cs)AIBudsAIGCTaskConfig(im)setImageCount:",
+                "mangledName": "$s18AIBudsAIFoundation14AIGCTaskConfigC10imageCountSivs",
+                "moduleName": "AIBudsAIFoundation",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18AIBudsAIFoundation14AIGCTaskConfigC10imageCountSivM",
+                "mangledName": "$s18AIBudsAIFoundation14AIGCTaskConfigC10imageCountSivM",
+                "moduleName": "AIBudsAIFoundation",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "imageSize",
+            "printedName": "imageSize",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "AIBudsAIFoundation.AIImageSize?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AIImageSize",
+                    "printedName": "AIBudsAIFoundation.AIImageSize",
+                    "usr": "c:@M@AIBudsAIFoundation@objc(cs)AIBudsAIImageSize"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBudsAIFoundation@objc(cs)AIBudsAIGCTaskConfig(py)imageSize",
+            "mangledName": "$s18AIBudsAIFoundation14AIGCTaskConfigC9imageSizeAA07AIImageF0CSgvp",
+            "moduleName": "AIBudsAIFoundation",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "AIBudsAIFoundation.AIImageSize?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AIImageSize",
+                        "printedName": "AIBudsAIFoundation.AIImageSize",
+                        "usr": "c:@M@AIBudsAIFoundation@objc(cs)AIBudsAIImageSize"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsAIFoundation@objc(cs)AIBudsAIGCTaskConfig(im)imageSize",
+                "mangledName": "$s18AIBudsAIFoundation14AIGCTaskConfigC9imageSizeAA07AIImageF0CSgvg",
+                "moduleName": "AIBudsAIFoundation",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "AIBudsAIFoundation.AIImageSize?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AIImageSize",
+                        "printedName": "AIBudsAIFoundation.AIImageSize",
+                        "usr": "c:@M@AIBudsAIFoundation@objc(cs)AIBudsAIImageSize"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsAIFoundation@objc(cs)AIBudsAIGCTaskConfig(im)setImageSize:",
+                "mangledName": "$s18AIBudsAIFoundation14AIGCTaskConfigC9imageSizeAA07AIImageF0CSgvs",
+                "moduleName": "AIBudsAIFoundation",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18AIBudsAIFoundation14AIGCTaskConfigC9imageSizeAA07AIImageF0CSgvM",
+                "mangledName": "$s18AIBudsAIFoundation14AIGCTaskConfigC9imageSizeAA07AIImageF0CSgvM",
+                "moduleName": "AIBudsAIFoundation",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "language",
+            "printedName": "language",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBudsAIFoundation@objc(cs)AIBudsAIGCTaskConfig(py)language",
+            "mangledName": "$s18AIBudsAIFoundation14AIGCTaskConfigC8languageSSSgvp",
+            "moduleName": "AIBudsAIFoundation",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsAIFoundation@objc(cs)AIBudsAIGCTaskConfig(im)language",
+                "mangledName": "$s18AIBudsAIFoundation14AIGCTaskConfigC8languageSSSgvg",
+                "moduleName": "AIBudsAIFoundation",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsAIFoundation@objc(cs)AIBudsAIGCTaskConfig(im)setLanguage:",
+                "mangledName": "$s18AIBudsAIFoundation14AIGCTaskConfigC8languageSSSgvs",
+                "moduleName": "AIBudsAIFoundation",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18AIBudsAIFoundation14AIGCTaskConfigC8languageSSSgvM",
+                "mangledName": "$s18AIBudsAIFoundation14AIGCTaskConfigC8languageSSSgvM",
+                "moduleName": "AIBudsAIFoundation",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AIGCTaskConfig",
+                "printedName": "AIBudsAIFoundation.AIGCTaskConfig",
+                "usr": "c:@M@AIBudsAIFoundation@objc(cs)AIBudsAIGCTaskConfig"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@AIBudsAIFoundation@objc(cs)AIBudsAIGCTaskConfig(im)init",
+            "mangledName": "$s18AIBudsAIFoundation14AIGCTaskConfigCACycfc",
+            "moduleName": "AIBudsAIFoundation",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@AIBudsAIFoundation@objc(cs)AIBudsAIGCTaskConfig",
+        "mangledName": "$s18AIBudsAIFoundation14AIGCTaskConfigC",
+        "moduleName": "AIBudsAIFoundation",
+        "objc_name": "AIBudsAIGCTaskConfig",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AIBudsAIFoundation",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AIImageSize",
+        "printedName": "AIImageSize",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "width",
+            "printedName": "width",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBudsAIFoundation@objc(cs)AIBudsAIImageSize(py)width",
+            "mangledName": "$s18AIBudsAIFoundation11AIImageSizeC5widthSivp",
+            "moduleName": "AIBudsAIFoundation",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsAIFoundation@objc(cs)AIBudsAIImageSize(im)width",
+                "mangledName": "$s18AIBudsAIFoundation11AIImageSizeC5widthSivg",
+                "moduleName": "AIBudsAIFoundation",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsAIFoundation@objc(cs)AIBudsAIImageSize(im)setWidth:",
+                "mangledName": "$s18AIBudsAIFoundation11AIImageSizeC5widthSivs",
+                "moduleName": "AIBudsAIFoundation",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18AIBudsAIFoundation11AIImageSizeC5widthSivM",
+                "mangledName": "$s18AIBudsAIFoundation11AIImageSizeC5widthSivM",
+                "moduleName": "AIBudsAIFoundation",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "height",
+            "printedName": "height",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBudsAIFoundation@objc(cs)AIBudsAIImageSize(py)height",
+            "mangledName": "$s18AIBudsAIFoundation11AIImageSizeC6heightSivp",
+            "moduleName": "AIBudsAIFoundation",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsAIFoundation@objc(cs)AIBudsAIImageSize(im)height",
+                "mangledName": "$s18AIBudsAIFoundation11AIImageSizeC6heightSivg",
+                "moduleName": "AIBudsAIFoundation",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsAIFoundation@objc(cs)AIBudsAIImageSize(im)setHeight:",
+                "mangledName": "$s18AIBudsAIFoundation11AIImageSizeC6heightSivs",
+                "moduleName": "AIBudsAIFoundation",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18AIBudsAIFoundation11AIImageSizeC6heightSivM",
+                "mangledName": "$s18AIBudsAIFoundation11AIImageSizeC6heightSivM",
+                "moduleName": "AIBudsAIFoundation",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "default",
+            "printedName": "default",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AIImageSize",
+                "printedName": "AIBudsAIFoundation.AIImageSize",
+                "usr": "c:@M@AIBudsAIFoundation@objc(cs)AIBudsAIImageSize"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBudsAIFoundation@objc(cs)AIBudsAIImageSize(cpy)defaultSize",
+            "mangledName": "$s18AIBudsAIFoundation11AIImageSizeC7defaultACvpZ",
+            "moduleName": "AIBudsAIFoundation",
+            "static": true,
+            "objc_name": "defaultSize",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AIImageSize",
+                    "printedName": "AIBudsAIFoundation.AIImageSize",
+                    "usr": "c:@M@AIBudsAIFoundation@objc(cs)AIBudsAIImageSize"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsAIFoundation@objc(cs)AIBudsAIImageSize(cm)defaultSize",
+                "mangledName": "$s18AIBudsAIFoundation11AIImageSizeC7defaultACvgZ",
+                "moduleName": "AIBudsAIFoundation",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(width:height:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AIImageSize",
+                "printedName": "AIBudsAIFoundation.AIImageSize",
+                "usr": "c:@M@AIBudsAIFoundation@objc(cs)AIBudsAIImageSize"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@AIBudsAIFoundation@objc(cs)AIBudsAIImageSize(im)initWithWidth:height:",
+            "mangledName": "$s18AIBudsAIFoundation11AIImageSizeC5width6heightACSi_Sitcfc",
+            "moduleName": "AIBudsAIFoundation",
+            "objc_name": "initWithWidth:height:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AIImageSize",
+                "printedName": "AIBudsAIFoundation.AIImageSize",
+                "usr": "c:@M@AIBudsAIFoundation@objc(cs)AIBudsAIImageSize"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@AIBudsAIFoundation@objc(cs)AIBudsAIImageSize(im)init",
+            "mangledName": "$s18AIBudsAIFoundation11AIImageSizeCACycfc",
+            "moduleName": "AIBudsAIFoundation",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@AIBudsAIFoundation@objc(cs)AIBudsAIImageSize",
+        "mangledName": "$s18AIBudsAIFoundation11AIImageSizeC",
+        "moduleName": "AIBudsAIFoundation",
+        "objc_name": "AIBudsAIImageSize",
         "declAttributes": [
           "Final",
           "AccessControl",
@@ -18553,6 +19971,48 @@
           },
           {
             "kind": "Var",
+            "name": "locationQuery",
+            "printedName": "locationQuery",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AIBudsAIFoundation.AIIntentType.Type) -> AIBudsAIFoundation.AIIntentType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AIIntentType",
+                    "printedName": "AIBudsAIFoundation.AIIntentType",
+                    "usr": "c:@M@AIBudsAIFoundation@E@AIBudsAIIntentType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AIBudsAIFoundation.AIIntentType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AIIntentType",
+                        "printedName": "AIBudsAIFoundation.AIIntentType",
+                        "usr": "c:@M@AIBudsAIFoundation@E@AIBudsAIIntentType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AIBudsAIFoundation@E@AIBudsAIIntentType@AIBudsAIIntentTypeLocationQuery",
+            "mangledName": "$s18AIBudsAIFoundation12AIIntentTypeO13locationQueryyA2CmF",
+            "moduleName": "AIBudsAIFoundation",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 24
+          },
+          {
+            "kind": "Var",
             "name": "command",
             "printedName": "command",
             "children": [
@@ -18932,21 +20392,32 @@
         "printedName": "AIBudsLog",
         "declKind": "Import",
         "moduleName": "AIBudsAIFoundation"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "AIBudsAIFoundation",
-        "declAttributes": [
-          "RawDocComment"
-        ]
       }
     ],
     "json_format_version": 8
   },
   "ConstValues": [
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/SDKBuildInfo\/SDK_Build_Info.swift",
+      "kind": "StringLiteral",
+      "offset": 257,
+      "length": 15,
+      "value": "\"1.0.0-beta.22\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/SDKBuildInfo\/SDK_Build_Info.swift",
+      "kind": "StringLiteral",
+      "offset": 388,
+      "length": 13,
+      "value": "\"20260810002\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/SDKBuildInfo\/SDK_Build_Info.swift",
+      "kind": "StringLiteral",
+      "offset": 503,
+      "length": 12,
+      "value": "\"2026-08-10\""
+    },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/AIAudioRecording(AI录音)\/AIAudioRecordingSessionConfig.swift",
       "kind": "BooleanLiteral",
@@ -19800,6 +21271,41 @@
       "offset": 1421,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/AIGC(文生图)\/AIGCTaskConfig.swift",
+      "kind": "IntegerLiteral",
+      "offset": 583,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/AIGC(文生图)\/AIImageSize.swift",
+      "kind": "IntegerLiteral",
+      "offset": 325,
+      "length": 4,
+      "value": "1024"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/AIGC(文生图)\/AIImageSize.swift",
+      "kind": "IntegerLiteral",
+      "offset": 407,
+      "length": 4,
+      "value": "1024"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/AIGC(文生图)\/AIImageSize.swift",
+      "kind": "IntegerLiteral",
+      "offset": 521,
+      "length": 4,
+      "value": "1024"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/AIGC(文生图)\/AIImageSize.swift",
+      "kind": "IntegerLiteral",
+      "offset": 535,
+      "length": 4,
+      "value": "1024"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/AIServiceLanguage(AI服务语言)\/AIServiceLanguage.swift",
@@ -21272,6 +22778,13 @@
       "value": "22"
     },
     {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/Defines(定义)\/Intent(意图)\/AIIntentType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1389,
+      "length": 13,
+      "value": "23"
+    },
+    {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/AIBudsAIFoundation.swift",
       "kind": "StringLiteral",
       "offset": 286,
@@ -21291,27 +22804,6 @@
       "offset": 479,
       "length": 39,
       "value": "\"com.topstep.sdks.aibuds.ai-foundation\""
-    },
-    {
-      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/SDKBuildInfo\/SDK_Build_Info.swift",
-      "kind": "StringLiteral",
-      "offset": 257,
-      "length": 15,
-      "value": "\"1.0.0-beta.20\""
-    },
-    {
-      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/SDKBuildInfo\/SDK_Build_Info.swift",
-      "kind": "StringLiteral",
-      "offset": 388,
-      "length": 13,
-      "value": "\"20260807002\""
-    },
-    {
-      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/SDKBuildInfo\/SDK_Build_Info.swift",
-      "kind": "StringLiteral",
-      "offset": 503,
-      "length": 12,
-      "value": "\"2026-08-07\""
     }
   ]
 }

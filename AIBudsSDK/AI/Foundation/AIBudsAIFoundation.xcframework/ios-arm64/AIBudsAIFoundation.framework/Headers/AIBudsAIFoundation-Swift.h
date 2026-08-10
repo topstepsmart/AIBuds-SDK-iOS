@@ -1054,6 +1054,65 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) BOOL supportsSecureC
 - (id _Nonnull)copyWithZone:(struct _NSZone * _Nullable)zone SWIFT_WARN_UNUSED_RESULT;
 @end
 
+/// AIGC style model.
+SWIFT_CLASS_NAMED("AIGCStyleModel")
+@interface AIBudsAIGCStyleModel : NSObject
+/// The name of the style.
+@property (nonatomic, readonly, copy) NSString * _Nonnull name;
+/// The unique style code identifier.
+@property (nonatomic, readonly, copy) NSString * _Nonnull styleCode;
+/// The URL string for the style’s icon.
+@property (nonatomic, readonly, copy) NSString * _Nullable iconUrl;
+/// Initializer for creating a new AIGC style model
+/// \param name The name of the style
+///
+/// \param styleCode The unique style code identifier
+///
+/// \param iconUrl Optional URL string for the style’s icon
+///
+- (nonnull instancetype)initWithName:(NSString * _Nonnull)name styleCode:(NSString * _Nonnull)styleCode iconUrl:(NSString * _Nullable)iconUrl OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@class AIBudsAIImageSize;
+/// Configuration for AIGC task.
+SWIFT_CLASS_NAMED("AIGCTaskConfig")
+@interface AIBudsAIGCTaskConfig : NSObject
+/// The default configuration shared instance.
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) AIBudsAIGCTaskConfig * _Nonnull defaultConfig;)
++ (AIBudsAIGCTaskConfig * _Nonnull)defaultConfig SWIFT_WARN_UNUSED_RESULT;
+/// The style of the image.
+@property (nonatomic, copy) NSString * _Nullable style;
+/// The number of images to generate.
+@property (nonatomic) NSInteger imageCount;
+/// The size of the image.
+@property (nonatomic, strong) AIBudsAIImageSize * _Nullable imageSize;
+/// The language context for the image generation. e.g. “zh-CN”. Empty string means auto-detect.
+/// A string representing the language identifier, if not provided, the system will use the current app’s localization language (iOS allows setting a specific language per app).
+/// > Important: Language identifiers must follow the hyphenated format specification, e.g.: <code>zh-CN</code>
+/// - Part1: Language code (ISO 639-1) - Two letters identifying the base language (e.g., “zh” for Chinese)
+/// - Part2: Country/Region code (ISO 3166-1) - Optional two letters specifying the country or region (e.g., “CN” for China)
+@property (nonatomic, copy) NSString * _Nullable language;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+/// AI image size
+SWIFT_CLASS_NAMED("AIImageSize")
+@interface AIBudsAIImageSize : NSObject
+/// The width of the image.
+@property (nonatomic) NSInteger width;
+/// The height of the image.
+@property (nonatomic) NSInteger height;
+/// The default image size.
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) AIBudsAIImageSize * _Nonnull defaultSize;)
++ (AIBudsAIImageSize * _Nonnull)defaultSize SWIFT_WARN_UNUSED_RESULT;
+/// Initialize the image size with the specified width and height.
+- (nonnull instancetype)initWithWidth:(NSInteger)width height:(NSInteger)height OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 /// Intent type
 typedef SWIFT_ENUM_NAMED(NSInteger, AIBudsAIIntentType, "AIIntentType", open) {
 /// unknown
@@ -1104,6 +1163,8 @@ typedef SWIFT_ENUM_NAMED(NSInteger, AIBudsAIIntentType, "AIIntentType", open) {
   AIBudsAIIntentTypeFindPhone = 21,
 /// Stop finding phone
   AIBudsAIIntentTypeStopFindPhone = 22,
+/// Query user location
+  AIBudsAIIntentTypeLocationQuery = 23,
 };
 
 @class NSLocale;

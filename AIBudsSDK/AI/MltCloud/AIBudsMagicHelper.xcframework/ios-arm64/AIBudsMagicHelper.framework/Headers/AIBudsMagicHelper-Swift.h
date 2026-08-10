@@ -539,6 +539,7 @@ SWIFT_ENUM_FWD_DECL(NSInteger, AIBudsAIAuthenticationMode)
 @protocol AIBudsAIAudioRecordingServiceAPI;
 @protocol AIBudsStreamingASRServiceAPI;
 @protocol AIBudsTTSServiceAPI;
+@protocol AIBudsAIGCServiceAPI;
 @interface AIBudsMagicHelperSDK (SWIFT_EXTENSION(AIBudsMagicHelper)) <AIBudsAIConnectSDK>
 /// The version number of the SDK
 ///
@@ -632,6 +633,11 @@ SWIFT_ENUM_FWD_DECL(NSInteger, AIBudsAIAuthenticationMode)
 /// returns:
 /// An object conforming to TTSServiceAPI if available, otherwise nil
 @property (nonatomic, readonly, strong) id <AIBudsTTSServiceAPI> _Nullable ttsService;
+/// The AIGC service interface for the service provider
+///
+/// returns:
+/// An object conforming to AIGCServiceAPI if available, otherwise nil
+@property (nonatomic, readonly, strong) id <AIBudsAIGCServiceAPI> _Nullable aigcService;
 @end
 
 @class AIBudsAIAudioRecordingSessionConfig;
@@ -869,6 +875,37 @@ SWIFT_CLASS_NAMED("MltCloudAIChatSession")
 - (void)sendText:(NSString * _Nonnull)text;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@class AIBudsAIGCStyleModel;
+@class AIBudsAIGCTaskConfig;
+/// A service class that provides AI-generated content functionality.
+SWIFT_CLASS_NAMED("MltCloudAIGCService")
+@interface AIBudsMltCloudAIGCService : NSObject <AIBudsAIGCServiceAPI>
+/// The shared singleton instance of MltCloudAIGCService
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) AIBudsMltCloudAIGCService * _Nonnull shared;)
++ (AIBudsMltCloudAIGCService * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
+/// Private initializer to enforce singleton pattern
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+/// The available styles for image generation.
+@property (nonatomic, readonly, copy) NSArray<AIBudsAIGCStyleModel *> * _Nullable aigcStyles;
+/// The maximum number of images to generate in a single task.
+@property (nonatomic, readonly) NSInteger maxGenerateCount;
+/// Fetch available styles for image generation.
+/// \param completion Optional callback when the styles are fetched
+///
+- (void)fetchStylesWithCompletion:(void (^ _Nullable)(NSArray<AIBudsAIGCStyleModel *> * _Nullable, NSError * _Nullable))completion;
+/// Generate images based on a prompt and configuration.
+/// \param prompt The text prompt for the image generation
+///
+/// \param config The configuration for the task
+///
+/// \param onTaskCreated Optional callback when the task is created
+///
+/// \param completion Optional callback when the task is completed
+///
+- (void)generateWithPrompt:(NSString * _Nonnull)prompt config:(AIBudsAIGCTaskConfig * _Nonnull)config taskCreated:(void (^ _Nullable)(NSString * _Nonnull))onTaskCreated completion:(void (^ _Nullable)(NSString * _Nullable, BOOL, NSArray<UIImage *> * _Nullable, NSError * _Nullable))completion;
 @end
 
 @class AIBudsMltCloudAuthEnv;

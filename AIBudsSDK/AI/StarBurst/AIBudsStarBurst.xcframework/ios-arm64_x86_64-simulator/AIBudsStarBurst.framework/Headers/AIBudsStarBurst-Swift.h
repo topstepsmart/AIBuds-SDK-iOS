@@ -766,6 +766,7 @@ SWIFT_ENUM_FWD_DECL(NSInteger, AIBudsAIAuthenticationMode)
 @protocol AIBudsAISummaryServiceAPI;
 @protocol AIBudsStreamingASRServiceAPI;
 @protocol AIBudsTTSServiceAPI;
+@protocol AIBudsAIGCServiceAPI;
 @interface AIBudsStarBurstSDK (SWIFT_EXTENSION(AIBudsStarBurst)) <AIBudsAIConnectSDK>
 /// The version number of the SDK
 ///
@@ -859,6 +860,11 @@ SWIFT_ENUM_FWD_DECL(NSInteger, AIBudsAIAuthenticationMode)
 /// returns:
 /// An object conforming to TTSServiceAPI if available, otherwise nil
 @property (nonatomic, readonly, strong) id <AIBudsTTSServiceAPI> _Nullable ttsService;
+/// The AIGC service interface for the service provider
+///
+/// returns:
+/// An object conforming to AIGCServiceAPI if available, otherwise nil
+@property (nonatomic, readonly, strong) id <AIBudsAIGCServiceAPI> _Nullable aigcService;
 @end
 
 @class AIBudsSimultaneousInterpretationConfig;
@@ -1992,6 +1998,7 @@ SWIFT_ENUM_FWD_DECL(NSInteger, AIBudsAIAuthenticationMode)
 @protocol AIBudsAISummaryServiceAPI;
 @protocol AIBudsStreamingASRServiceAPI;
 @protocol AIBudsTTSServiceAPI;
+@protocol AIBudsAIGCServiceAPI;
 @interface AIBudsStarBurstSDK (SWIFT_EXTENSION(AIBudsStarBurst)) <AIBudsAIConnectSDK>
 /// The version number of the SDK
 ///
@@ -2085,6 +2092,11 @@ SWIFT_ENUM_FWD_DECL(NSInteger, AIBudsAIAuthenticationMode)
 /// returns:
 /// An object conforming to TTSServiceAPI if available, otherwise nil
 @property (nonatomic, readonly, strong) id <AIBudsTTSServiceAPI> _Nullable ttsService;
+/// The AIGC service interface for the service provider
+///
+/// returns:
+/// An object conforming to AIGCServiceAPI if available, otherwise nil
+@property (nonatomic, readonly, strong) id <AIBudsAIGCServiceAPI> _Nullable aigcService;
 @end
 
 @class AIBudsSimultaneousInterpretationConfig;

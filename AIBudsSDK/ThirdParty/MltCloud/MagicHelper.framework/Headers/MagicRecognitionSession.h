@@ -141,6 +141,9 @@ typedef NS_ENUM(NSInteger, MGVADState) {
 /// 是否需要vad, 默认YES
 @property (nonatomic, assign) BOOL needVAD;
 
+/// 是否开启 Dscrow 降噪，默认 YES
+@property (nonatomic, assign) BOOL enableDenoise;
+
 /// 连续静音达到多少毫秒判定结束，默认1500ms
 @property (nonatomic, assign) NSInteger silenceTriggerDurationMs;
 
@@ -156,6 +159,9 @@ typedef NS_ENUM(NSInteger, MGVADState) {
 
 /// 获取支持的configCode
 - (NSArray *)getSmartConfigModels;
+
+/// 初始化降噪 SDK，BDMagicHelper 初始化时内部调用
+- (void)setupDenoiseWithMac:(NSString *)mac channel:(NSString *)channel productId:(NSString *)productId;
 
 /// 创建会话
 - (void)createSession:(nullable NSDictionary *)ext  __attribute__((deprecated("请使用 createSessionWithConfigCode:ext 替代")));
@@ -215,8 +221,8 @@ typedef NS_ENUM(NSInteger, MGVADState) {
 /// 输入文本开启对话
 - (void)commitText:(NSString *)text;
 
-
+/// 主动发送ping， 会有获取最新位置点的回调
+- (void)updateLocationSendPing;
 @end
 
 NS_ASSUME_NONNULL_END
-

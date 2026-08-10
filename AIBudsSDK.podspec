@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
   # ==================== Basic Information ====================
   # SDK name and version
   s.name         = "AIBudsSDK"
-  s.version      = "1.0.0-beta.20"
+  s.version      = "1.0.0-beta.22"
   s.summary      = "AIBuds SDK - An iOS framework for connecting AI devices"
   s.description  = <<-DESC
                     AIBuds SDK is a versatile framework for connecting iOS apps to AI devices. It provides modular components including core connectivity, Bluetooth management, voice assistant, AI capabilities, logging utilities, and foundation services.
@@ -85,7 +85,7 @@ Pod::Spec.new do |s|
     
     # MagicHelper - Magic Cloud AI service SDK
     thirdparty.subspec 'MagicHelper' do |magic_helper|
-      magic_helper.vendored_frameworks = 'AIBudsSDK/ThirdParty/MltCloud/MagicHelper.framework'
+      magic_helper.vendored_frameworks = 'AIBudsSDK/ThirdParty/MltCloud/MagicHelper.framework', 'AIBudsSDK/ThirdParty/MltCloud/DscrowSdk.framework'
       magic_helper.vendored_libraries = 'AIBudsSDK/ThirdParty/MltCloud/libQPlayAutoSDK.a'
       magic_helper.resource = 'AIBudsSDK/ThirdParty/MltCloud/MGBundle.bundle'
       magic_helper.dependency 'AIBudsSDK/ThirdParty/MicrosoftCognitiveServicesSpeech'

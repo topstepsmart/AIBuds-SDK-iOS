@@ -1189,6 +1189,8 @@ SWIFT_CLASS_NAMED("MltCloudAIAuthParams")
 /// The channel ID used for MltCloud AI authentication.
 /// This value is required when connecting devices that support MltCloud AI features.
 @property (nonatomic, copy) NSString * _Nullable channelId;
+/// Is staging environment
+@property (nonatomic) BOOL isStaging;
 /// Initializes a new instance of the <code>MltCloudAIAuthParams</code> class.
 /// This initializer creates a new instance of the <code>MltCloudAIAuthParams</code> class with default values for all properties.
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;

@@ -2632,6 +2632,8 @@ SWIFT_CLASS_NAMED("MltCloudAuthEnv")
 @interface AIBudsMltCloudAuthEnv : NSObject
 /// This value is required when connecting devices that support MltCloud AI features.
 @property (nonatomic, copy) NSString * _Nullable channelId;
+/// is staging environment
+@property (nonatomic) BOOL isStaging;
 /// The description of the authentication environment.
 /// This property provides a human-readable description of the authentication environment.
 /// It can be used for logging, debugging, or displaying information to users.
@@ -6363,6 +6365,8 @@ SWIFT_CLASS_NAMED("MltCloudAuthEnv")
 @interface AIBudsMltCloudAuthEnv : NSObject
 /// This value is required when connecting devices that support MltCloud AI features.
 @property (nonatomic, copy) NSString * _Nullable channelId;
+/// is staging environment
+@property (nonatomic) BOOL isStaging;
 /// The description of the authentication environment.
 /// This property provides a human-readable description of the authentication environment.
 /// It can be used for logging, debugging, or displaying information to users.

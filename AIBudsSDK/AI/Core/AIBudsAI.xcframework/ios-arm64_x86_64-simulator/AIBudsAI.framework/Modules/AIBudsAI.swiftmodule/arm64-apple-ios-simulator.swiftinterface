@@ -23,6 +23,11 @@ import _SwiftConcurrencyShims
   @objc public init(location: _LocationEssentials.CLLocation)
   @objc deinit
 }
+@_inheritsConvenienceInitializers @objc final public class AIBudsAINotifications : ObjectiveC.NSObject {
+  @objc public static let userLocationChangedNotificationName: Swift.String
+  @objc override dynamic public init()
+  @objc deinit
+}
 extension AIBudsAI.AIBudsAISDK {
   @objc public static let ErrorDomain: Swift.String
   @objc public static let ErrorKey: Swift.String
@@ -139,6 +144,7 @@ extension AIBudsAIFoundation.SimultaneousInterpretationEventType : @retroactive 
   @objc var aiAudioRecordingService: (any AIBudsAI.AIAudioRecordingServiceAPI)? { get }
   @objc var streamingASRService: (any AIBudsAI.StreamingASRServiceAPI)? { get }
   @objc var ttsService: (any AIBudsAI.TTSServiceAPI)? { get }
+  @objc var aigcService: (any AIBudsAI.AIGCServiceAPI)? { get }
 }
 @objc(AIBudsAIAudioRecordingServiceAPI) public protocol AIAudioRecordingServiceAPI : ObjectiveC.NSObjectProtocol {
   @objc var isRecordingInternally: Swift.Bool { get }
@@ -151,6 +157,12 @@ extension AIBudsAIFoundation.SimultaneousInterpretationEventType : @retroactive 
 @objc(AIBudsAIChatServiceAPI) public protocol AIChatServiceAPI : ObjectiveC.NSObjectProtocol {
   @objc(startAIChatWithConfig:onStartSuccess:onStartFailure:onChatData:onIntent:onVoiceData:onEvent:onError:onFinish:) func startAIChat(_ config: AIBudsAIFoundation.AIChatSessionConfig, onStartSuccess: ((_ session: any AIBudsAI.AIChatSessionConvertible) -> Swift.Void)?, onStartFailure: ((_ error: any Swift.Error) -> Swift.Void)?, onChatData: ((_ chatData: AIBudsAIFoundation.AIChatDataModel) -> Swift.Void)?, onIntent: ((_ intent: AIBudsAIFoundation.AIChatIntentModel) -> Swift.Void)?, onVoiceData: ((_ voiceData: AIBudsAIFoundation.AIChatVoiceDataModel) -> Swift.Void)?, onEvent: ((_ event: AIBudsAI.AIChatEventModel) -> Swift.Void)?, onError: ((_ error: Foundation.NSError) -> Swift.Void)?, onFinish: ((_ report: AIBudsAI.AIChatSessionReportModel) -> Swift.Void)?)
   @objc(stopAIChat) func stopAIChat()
+}
+@objc(AIBudsAIGCServiceAPI) public protocol AIGCServiceAPI : ObjectiveC.NSObjectProtocol {
+  @objc var aigcStyles: [AIBudsAIFoundation.AIGCStyleModel]? { get }
+  @objc var maxGenerateCount: Swift.Int { get }
+  @objc(fetchStylesWithCompletion:) func fetchStyles(completion: ((_ styles: [AIBudsAIFoundation.AIGCStyleModel]?, _ error: Foundation.NSError?) -> Swift.Void)?)
+  @objc(generateWithPrompt:config:taskCreated:completion:) func generate(prompt: Swift.String, config: AIBudsAIFoundation.AIGCTaskConfig, onTaskCreated: ((_ taskId: Swift.String) -> Swift.Void)?, completion: ((_ taskId: Swift.String?, _ success: Swift.Bool, _ images: [UIKit.UIImage]?, _ error: Foundation.NSError?) -> Swift.Void)?)
 }
 @objc(AIBudsAISummaryServiceAPI) public protocol AISummaryServiceAPI : ObjectiveC.NSObjectProtocol {
   @objc(summaryWithText:streamResultHandler:) func summary(withText text: Swift.String, streamResultHandler: ((_ isFinal: Swift.Bool, _ transcript: Swift.String?, _ error: (any Swift.Error)?) -> Swift.Void)?)
@@ -520,6 +532,14 @@ extension AIBudsAIFoundation.SimultaneousInterpretationEventType : @retroactive 
   @objc(recognizeVoiceData:withConfig:onTranscript:onFailed:onFinish:) public static func recognizeVoice(_ data: Foundation.Data, config: AIBudsAIFoundation.StreamingASRConfig = .default, onTranscript: ((_ transcriptData: AIBudsAIFoundation.StreamSpeechASRModel) -> Swift.Void)? = nil, onFailed: ((_ error: Foundation.NSError) -> Swift.Void)? = nil, onFinish: (() -> Swift.Void)? = nil)
   @objc(recognizeVoiceFile:withConfig:onTranscript:onFailed:onFinish:) public static func recognizeVoice(withFile filePath: Swift.String, config: AIBudsAIFoundation.StreamingASRConfig = .default, onTranscript: ((_ transcriptData: AIBudsAIFoundation.StreamSpeechASRModel) -> Swift.Void)? = nil, onFailed: ((_ error: Foundation.NSError) -> Swift.Void)? = nil, onFinish: (() -> Swift.Void)? = nil)
   @objc(synthesizeText:config:completion:) public static func synthesizeText(_ text: Swift.String, config: AIBudsAIFoundation.TTSConfig = .default, completion: ((_ taskId: Swift.String?, _ success: Swift.Bool, _ response: AIBudsAIFoundation.TTSResultModel?, _ error: Foundation.NSError?) -> Swift.Void)? = nil)
+  @objc final public var aigcStyles: [AIBudsAIFoundation.AIGCStyleModel]? {
+    @objc get
+  }
+  @objc final public var maxGenerateCount: Swift.Int {
+    @objc get
+  }
+  @objc(fetchStylesWithCompletion:) final public func fetchStyles(completion: ((_ styles: [AIBudsAIFoundation.AIGCStyleModel]?, _ error: Foundation.NSError?) -> Swift.Void)? = nil)
+  @objc(generateWithPrompt:config:taskCreated:completion:) final public func generate(prompt: Swift.String, config: AIBudsAIFoundation.AIGCTaskConfig = .default, onTaskCreated: ((_ taskId: Swift.String) -> Swift.Void)? = nil, completion: ((_ taskId: Swift.String?, _ success: Swift.Bool, _ images: [UIKit.UIImage]?, _ error: Foundation.NSError?) -> Swift.Void)? = nil)
   @objc deinit
 }
 extension AIBudsAI.SdkErrorCode : Swift.Equatable {}

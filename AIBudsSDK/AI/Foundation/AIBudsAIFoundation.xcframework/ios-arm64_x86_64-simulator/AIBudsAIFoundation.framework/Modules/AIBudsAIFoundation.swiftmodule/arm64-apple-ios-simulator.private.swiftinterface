@@ -140,6 +140,29 @@ extension AIBudsAIFoundation.AIChatSessionConfig : Foundation.NSCopying {
   @objc public init(voiceId: Swift.String, pcmSegmentData: Foundation.Data, isFinal: Swift.Bool = false)
   @objc deinit
 }
+@objc(AIBudsAIGCStyleModel) final public class AIGCStyleModel : ObjectiveC.NSObject {
+  @objc final public let name: Swift.String
+  @objc final public let styleCode: Swift.String
+  @objc final public let iconUrl: Swift.String?
+  @objc public init(name: Swift.String, styleCode: Swift.String, iconUrl: Swift.String? = nil)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc(AIBudsAIGCTaskConfig) final public class AIGCTaskConfig : ObjectiveC.NSObject {
+  @objc(defaultConfig) public static let `default`: AIBudsAIFoundation.AIGCTaskConfig
+  @objc final public var style: Swift.String?
+  @objc final public var imageCount: Swift.Int
+  @objc final public var imageSize: AIBudsAIFoundation.AIImageSize?
+  @objc final public var language: Swift.String?
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc(AIBudsAIImageSize) final public class AIImageSize : ObjectiveC.NSObject {
+  @objc final public var width: Swift.Int
+  @objc final public var height: Swift.Int
+  @objc(defaultSize) public static let `default`: AIBudsAIFoundation.AIImageSize
+  @objc public init(width: Swift.Int, height: Swift.Int)
+  @objc deinit
+}
 @objc(AIBudsAIServiceLanguage) final public class AIServiceLanguage : ObjectiveC.NSObject {
   @objc final public let languageCode: Swift.String
   @objc final public var displayName: Swift.String {
@@ -525,6 +548,7 @@ extension AIBudsAIFoundation.SimultaneousInterpretationEventType : Swift.CustomD
   case callRecording
   case findPhone
   case stopFindPhone
+  case locationQuery
   public var command: Swift.String {
     get
   }

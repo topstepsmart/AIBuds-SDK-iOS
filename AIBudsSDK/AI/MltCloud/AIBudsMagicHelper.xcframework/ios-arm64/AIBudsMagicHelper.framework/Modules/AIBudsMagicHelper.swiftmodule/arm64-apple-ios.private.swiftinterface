@@ -77,6 +77,9 @@ extension AIBudsMagicHelper.MagicHelperSDK : AIBudsAI.AIConnectSDK {
   @objc final public var ttsService: (any AIBudsAI.TTSServiceAPI)? {
     @objc get
   }
+  @objc final public var aigcService: (any AIBudsAI.AIGCServiceAPI)? {
+    @objc get
+  }
 }
 extension AIBudsMagicHelper.MagicHelperSDK {
   @objc public static let ErrorDomain: Swift.String
@@ -333,6 +336,18 @@ extension AIBudsMagicHelper.MagicHelperSDK {
   @objc final public func sendImageForPhotoUnderstanding(_ image: UIKit.UIImage, prompt: Swift.String?)
   @objc final public func sendImage(_ image: UIKit.UIImage)
   @objc final public func sendText(_ text: Swift.String)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(AIBudsMltCloudAIGCService) final public class MltCloudAIGCService : ObjectiveC.NSObject, AIBudsAI.AIGCServiceAPI {
+  @objc public static let shared: AIBudsMagicHelper.MltCloudAIGCService
+  @objc final public var aigcStyles: [AIBudsAIFoundation.AIGCStyleModel]? {
+    @objc get
+  }
+  @objc final public var maxGenerateCount: Swift.Int {
+    @objc get
+  }
+  @objc(fetchStylesWithCompletion:) final public func fetchStyles(completion: ((_ styles: [AIBudsAIFoundation.AIGCStyleModel]?, _ error: Foundation.NSError?) -> Swift.Void)? = nil)
+  @objc(generateWithPrompt:config:taskCreated:completion:) final public func generate(prompt: Swift.String, config: AIBudsAIFoundation.AIGCTaskConfig = .default, onTaskCreated: ((_ taskId: Swift.String) -> Swift.Void)? = nil, completion: ((_ taskId: Swift.String?, _ success: Swift.Bool, _ images: [UIKit.UIImage]?, _ error: Foundation.NSError?) -> Swift.Void)? = nil)
   @objc deinit
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(AIBudsMltCloudAuthenticationService) final public class MltCloudAuthenticationService : ObjectiveC.NSObject, AIBudsAI.AIAuthenticationServiceAPI {

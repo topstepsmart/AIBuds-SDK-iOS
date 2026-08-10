@@ -94,6 +94,7 @@ import _SwiftConcurrencyShims
 }
 @_inheritsConvenienceInitializers @objc(AIBudsMltCloudAIAuthParams) final public class MltCloudAIAuthParams : ObjectiveC.NSObject, Foundation.NSSecureCoding {
   @objc final public var channelId: Swift.String?
+  @objc final public var isStaging: Swift.Bool
   @objc override dynamic public init()
   @objc override final public var description: Swift.String {
     @objc get

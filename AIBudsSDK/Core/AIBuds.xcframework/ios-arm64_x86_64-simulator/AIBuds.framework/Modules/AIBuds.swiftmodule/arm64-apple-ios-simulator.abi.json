@@ -28666,6 +28666,106 @@
           },
           {
             "kind": "Var",
+            "name": "isStaging",
+            "printedName": "isStaging",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBuds@objc(cs)AIBudsMltCloudAuthEnv(py)isStaging",
+            "mangledName": "$s6AIBuds15MltCloudAuthEnvC9isStagingSbvp",
+            "moduleName": "AIBuds",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBuds@objc(cs)AIBudsMltCloudAuthEnv(im)isStaging",
+                "mangledName": "$s6AIBuds15MltCloudAuthEnvC9isStagingSbvg",
+                "moduleName": "AIBuds",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBuds@objc(cs)AIBudsMltCloudAuthEnv(im)setIsStaging:",
+                "mangledName": "$s6AIBuds15MltCloudAuthEnvC9isStagingSbvs",
+                "moduleName": "AIBuds",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6AIBuds15MltCloudAuthEnvC9isStagingSbvM",
+                "mangledName": "$s6AIBuds15MltCloudAuthEnvC9isStagingSbvM",
+                "moduleName": "AIBuds",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "description",
             "printedName": "description",
             "children": [
@@ -34387,43 +34487,64 @@
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBuds\/Protocols(协议)\/MltCloudAI(美乐创AI)\/MltCloudAuthEnv.swift",
+      "kind": "BooleanLiteral",
+      "offset": 593,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBuds\/Protocols(协议)\/MltCloudAI(美乐创AI)\/MltCloudAuthEnv.swift",
       "kind": "StringLiteral",
-      "offset": 862,
+      "offset": 938,
       "length": 5,
       "value": "\"nil\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBuds\/Protocols(协议)\/MltCloudAI(美乐创AI)\/MltCloudAuthEnv.swift",
       "kind": "StringLiteral",
-      "offset": 883,
-      "length": 44,
+      "offset": 959,
+      "length": 70,
       "value": "\"[MltCloudAuthEnv] channelId = \""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBuds\/Protocols(协议)\/MltCloudAI(美乐创AI)\/MltCloudAuthEnv.swift",
       "kind": "StringLiteral",
-      "offset": 926,
+      "offset": 1002,
+      "length": 1,
+      "value": "\", isStaging = \""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBuds\/Protocols(协议)\/MltCloudAI(美乐创AI)\/MltCloudAuthEnv.swift",
+      "kind": "StringLiteral",
+      "offset": 1028,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBuds\/Protocols(协议)\/MltCloudAI(美乐创AI)\/MltCloudAuthEnv.swift",
       "kind": "StringLiteral",
-      "offset": 1285,
+      "offset": 1387,
       "length": 5,
       "value": "\"nil\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBuds\/Protocols(协议)\/MltCloudAI(美乐创AI)\/MltCloudAuthEnv.swift",
       "kind": "StringLiteral",
-      "offset": 1306,
-      "length": 54,
+      "offset": 1408,
+      "length": 80,
       "value": "\"[美乐创 AI 认证环境] 渠道 ID = \""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBuds\/Protocols(协议)\/MltCloudAI(美乐创AI)\/MltCloudAuthEnv.swift",
       "kind": "StringLiteral",
-      "offset": 1359,
+      "offset": 1461,
+      "length": 1,
+      "value": "\", isStaging = \""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBuds\/Protocols(协议)\/MltCloudAI(美乐创AI)\/MltCloudAuthEnv.swift",
+      "kind": "StringLiteral",
+      "offset": 1487,
       "length": 1,
       "value": "\"\""
     },
@@ -34733,21 +34854,21 @@
       "kind": "StringLiteral",
       "offset": 257,
       "length": 15,
-      "value": "\"1.0.0-beta.20\""
+      "value": "\"1.0.0-beta.22\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/SDKBuildInfo\/SDK_Build_Info.swift",
       "kind": "StringLiteral",
       "offset": 388,
       "length": 13,
-      "value": "\"20260807002\""
+      "value": "\"20260810002\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/SDKBuildInfo\/SDK_Build_Info.swift",
       "kind": "StringLiteral",
       "offset": 503,
       "length": 12,
-      "value": "\"2026-08-07\""
+      "value": "\"2026-08-10\""
     }
   ]
 }

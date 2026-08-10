@@ -3166,6 +3166,106 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "isStaging",
+            "printedName": "isStaging",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBudsFoundation@objc(cs)AIBudsMltCloudAIAuthParams(py)isStaging",
+            "mangledName": "$s16AIBudsFoundation20MltCloudAIAuthParamsC9isStagingSbvp",
+            "moduleName": "AIBudsFoundation",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsFoundation@objc(cs)AIBudsMltCloudAIAuthParams(im)isStaging",
+                "mangledName": "$s16AIBudsFoundation20MltCloudAIAuthParamsC9isStagingSbvg",
+                "moduleName": "AIBudsFoundation",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsFoundation@objc(cs)AIBudsMltCloudAIAuthParams(im)setIsStaging:",
+                "mangledName": "$s16AIBudsFoundation20MltCloudAIAuthParamsC9isStagingSbvs",
+                "moduleName": "AIBudsFoundation",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16AIBudsFoundation20MltCloudAIAuthParamsC9isStagingSbvM",
+                "mangledName": "$s16AIBudsFoundation20MltCloudAIAuthParamsC9isStagingSbvM",
+                "moduleName": "AIBudsFoundation",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init()",
@@ -70396,43 +70496,64 @@
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/DataModels(数据模型)\/Context(上下文)\/MltCloudAIAuthParams.swift",
+      "kind": "BooleanLiteral",
+      "offset": 641,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/DataModels(数据模型)\/Context(上下文)\/MltCloudAIAuthParams.swift",
       "kind": "Dictionary",
-      "offset": 1394,
+      "offset": 1517,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/DataModels(数据模型)\/Context(上下文)\/MltCloudAIAuthParams.swift",
       "kind": "StringLiteral",
-      "offset": 1451,
+      "offset": 1574,
       "length": 11,
       "value": "\"channelId\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/DataModels(数据模型)\/Context(上下文)\/MltCloudAIAuthParams.swift",
+      "kind": "StringLiteral",
+      "offset": 1614,
+      "length": 11,
+      "value": "\"isStaging\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/DataModels(数据模型)\/Context(上下文)\/MltCloudAIAuthParams.swift",
       "kind": "Array",
-      "offset": 1572,
+      "offset": 1733,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/DataModels(数据模型)\/Context(上下文)\/MltCloudAIAuthParams.swift",
       "kind": "StringLiteral",
-      "offset": 1702,
+      "offset": 1863,
       "length": 4,
       "value": "\"{}\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/DataModels(数据模型)\/Context(上下文)\/MltCloudAIAuthParams.swift",
       "kind": "StringLiteral",
-      "offset": 1792,
+      "offset": 1953,
       "length": 11,
       "value": "\"channelId\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/DataModels(数据模型)\/Context(上下文)\/MltCloudAIAuthParams.swift",
+      "kind": "StringLiteral",
+      "offset": 1990,
+      "length": 11,
+      "value": "\"isStaging\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/DataModels(数据模型)\/Context(上下文)\/MltCloudAIAuthParams.swift",
       "kind": "BooleanLiteral",
-      "offset": 1881,
+      "offset": 2079,
       "length": 4,
       "value": "true"
     },
@@ -75425,21 +75546,21 @@
       "kind": "StringLiteral",
       "offset": 257,
       "length": 15,
-      "value": "\"1.0.0-beta.20\""
+      "value": "\"1.0.0-beta.22\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/SDKBuildInfo\/SDK_Build_Info.swift",
       "kind": "StringLiteral",
       "offset": 388,
       "length": 13,
-      "value": "\"20260807002\""
+      "value": "\"20260810002\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/SDKBuildInfo\/SDK_Build_Info.swift",
       "kind": "StringLiteral",
       "offset": 503,
       "length": 12,
-      "value": "\"2026-08-07\""
+      "value": "\"2026-08-10\""
     }
   ]
 }

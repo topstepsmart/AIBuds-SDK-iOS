@@ -1185,6 +1185,73 @@
           },
           {
             "kind": "Var",
+            "name": "aigcService",
+            "printedName": "aigcService",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any AIBudsAI.AIGCServiceAPI)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AIGCServiceAPI",
+                    "printedName": "any AIBudsAI.AIGCServiceAPI",
+                    "usr": "c:@M@AIBudsAI@objc(pl)AIBudsAIGCServiceAPI"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@AIBudsStarBurst@objc(cs)AIBudsStarBurstSDK(py)aigcService",
+            "mangledName": "$s15AIBudsStarBurst0bC3SDKC11aigcService0A2AI14AIGCServiceAPI_pSgvp",
+            "moduleName": "AIBudsStarBurst",
+            "objc_name": "aigcService",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any AIBudsAI.AIGCServiceAPI)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AIGCServiceAPI",
+                        "printedName": "any AIBudsAI.AIGCServiceAPI",
+                        "usr": "c:@M@AIBudsAI@objc(pl)AIBudsAIGCServiceAPI"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@AIBudsStarBurst@objc(cs)AIBudsStarBurstSDK(im)aigcService",
+                "mangledName": "$s15AIBudsStarBurst0bC3SDKC11aigcService0A2AI14AIGCServiceAPI_pSgvg",
+                "moduleName": "AIBudsStarBurst",
+                "objc_name": "aigcService",
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "ErrorDomain",
             "printedName": "ErrorDomain",
             "children": [
@@ -10336,21 +10403,21 @@
       "kind": "StringLiteral",
       "offset": 257,
       "length": 15,
-      "value": "\"1.0.0-beta.20\""
+      "value": "\"1.0.0-beta.22\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/SDKBuildInfo\/SDK_Build_Info.swift",
       "kind": "StringLiteral",
       "offset": 388,
       "length": 13,
-      "value": "\"20260807002\""
+      "value": "\"20260810002\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/SDKBuildInfo\/SDK_Build_Info.swift",
       "kind": "StringLiteral",
       "offset": 503,
       "length": 12,
-      "value": "\"2026-08-07\""
+      "value": "\"2026-08-10\""
     }
   ]
 }

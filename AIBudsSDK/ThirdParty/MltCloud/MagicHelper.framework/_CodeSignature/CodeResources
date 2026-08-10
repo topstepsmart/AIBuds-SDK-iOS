@@ -114,7 +114,7 @@
 		</data>
 		<key>Headers/MagicRecognitionSession.h</key>
 		<data>
-		BJ5KbiO/4XUZxIS8JJyrAQ3d+8k=
+		YE4Z3ntiZqHqJGgM/3sadl7nDrs=
 		</data>
 		<key>Headers/MagicSmartAgentUtil.h</key>
 		<data>
@@ -186,7 +186,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		R1GODEs29wBn2kcg9ba+OqQQG04=
+		zoPmue6TBnUVSvnjTQSdwtfb5+E=
 		</data>
 		<key>MGBundle.bundle/silero_vad.onnx</key>
 		<data>
@@ -194,7 +194,7 @@
 		</data>
 		<key>Modules/MagicHelper.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		qaX71BElIL2JyWb5tXfIIKsw8sg=
+		2au0AqNOWN2rwM21NwttTqflgh0=
 		</data>
 		<key>Modules/MagicHelper.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
@@ -214,7 +214,7 @@
 		</data>
 		<key>Modules/MagicHelper.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		9VH6GW2RY/Bd+WTa4F//uUQKkE0=
+		NiIQTylZnRN/MdrjVj14Ga/7SGU=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -524,11 +524,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			BJ5KbiO/4XUZxIS8JJyrAQ3d+8k=
+			YE4Z3ntiZqHqJGgM/3sadl7nDrs=
 			</data>
 			<key>hash2</key>
 			<data>
-			biuZq+d4JFNhsdflIRC67WpZTwMo7PgGcKs0EPifmsg=
+			Rn9Gtnczj8T/8Tis+ACLi3Afq8fD53KT1/dNUpAaWYE=
 			</data>
 		</dict>
 		<key>Headers/MagicSmartAgentUtil.h</key>
@@ -733,11 +733,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			qaX71BElIL2JyWb5tXfIIKsw8sg=
+			2au0AqNOWN2rwM21NwttTqflgh0=
 			</data>
 			<key>hash2</key>
 			<data>
-			RapzJiI17sdm6bhJ++z/KNlGOiOfAf5yI21ZpLF0Bhc=
+			Ab0g5ZRd70qFSrrlgg6ZdISv3tRzTjsx8YISQOuAsgo=
 			</data>
 		</dict>
 		<key>Modules/MagicHelper.swiftmodule/arm64-apple-ios.abi.json</key>
@@ -788,11 +788,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			9VH6GW2RY/Bd+WTa4F//uUQKkE0=
+			NiIQTylZnRN/MdrjVj14Ga/7SGU=
 			</data>
 			<key>hash2</key>
 			<data>
-			HaaLz2y2V0d65bxhMPC7MEGYRajbsxLx4hDizZFZ6to=
+			fDsYxG7W0rZ61hooCCA+4bMBG2egoAq0WIohmJggPHE=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
