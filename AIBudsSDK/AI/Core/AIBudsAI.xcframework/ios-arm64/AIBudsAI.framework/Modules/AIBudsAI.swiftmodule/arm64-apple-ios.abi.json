@@ -20228,14 +20228,22 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "CLLocation",
-                "printedName": "_LocationEssentials.CLLocation",
-                "usr": "c:objc(cs)CLLocation"
+                "name": "Optional",
+                "printedName": "_LocationEssentials.CLLocation?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CLLocation",
+                    "printedName": "_LocationEssentials.CLLocation",
+                    "usr": "c:objc(cs)CLLocation"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
             "usr": "c:@M@AIBudsAI@objc(cs)AIBudsAISDK(cm)setCurrentLocation:",
-            "mangledName": "$s8AIBudsAI0A5AISDKC18setCurrentLocationyySo10CLLocationCFZ",
+            "mangledName": "$s8AIBudsAI0A5AISDKC18setCurrentLocationyySo10CLLocationCSgFZ",
             "moduleName": "AIBudsAI",
             "static": true,
             "declAttributes": [
@@ -21910,6 +21918,374 @@
             "moduleName": "AIBudsAI",
             "static": true,
             "objc_name": "synthesizeText:config:completion:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "aigcStyles",
+            "printedName": "aigcStyles",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[AIBudsAIFoundation.AIGCStyleModel]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[AIBudsAIFoundation.AIGCStyleModel]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AIGCStyleModel",
+                        "printedName": "AIBudsAIFoundation.AIGCStyleModel",
+                        "usr": "c:@M@AIBudsAIFoundation@objc(cs)AIBudsAIGCStyleModel"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBudsAI@objc(cs)AIBudsAISDK(cpy)aigcStyles",
+            "mangledName": "$s8AIBudsAI0A5AISDKC10aigcStylesSay0A12AIFoundation14AIGCStyleModelCGSgvpZ",
+            "moduleName": "AIBudsAI",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[AIBudsAIFoundation.AIGCStyleModel]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[AIBudsAIFoundation.AIGCStyleModel]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "AIGCStyleModel",
+                            "printedName": "AIBudsAIFoundation.AIGCStyleModel",
+                            "usr": "c:@M@AIBudsAIFoundation@objc(cs)AIBudsAIGCStyleModel"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsAI@objc(cs)AIBudsAISDK(cm)aigcStyles",
+                "mangledName": "$s8AIBudsAI0A5AISDKC10aigcStylesSay0A12AIFoundation14AIGCStyleModelCGSgvgZ",
+                "moduleName": "AIBudsAI",
+                "static": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "aigcMaxGenerateCount",
+            "printedName": "aigcMaxGenerateCount",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBudsAI@objc(cs)AIBudsAISDK(cpy)aigcMaxGenerateCount",
+            "mangledName": "$s8AIBudsAI0A5AISDKC20aigcMaxGenerateCountSivpZ",
+            "moduleName": "AIBudsAI",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsAI@objc(cs)AIBudsAISDK(cm)aigcMaxGenerateCount",
+                "mangledName": "$s8AIBudsAI0A5AISDKC20aigcMaxGenerateCountSivgZ",
+                "moduleName": "AIBudsAI",
+                "static": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "fetchAigcStyles",
+            "printedName": "fetchAigcStyles(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(([AIBudsAIFoundation.AIGCStyleModel]?, Foundation.NSError?) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "([AIBudsAIFoundation.AIGCStyleModel]?, Foundation.NSError?) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "([AIBudsAIFoundation.AIGCStyleModel]?, Foundation.NSError?)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "[AIBudsAIFoundation.AIGCStyleModel]?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Array",
+                                "printedName": "[AIBudsAIFoundation.AIGCStyleModel]",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "AIGCStyleModel",
+                                    "printedName": "AIBudsAIFoundation.AIGCStyleModel",
+                                    "usr": "c:@M@AIBudsAIFoundation@objc(cs)AIBudsAIGCStyleModel"
+                                  }
+                                ],
+                                "usr": "s:Sa"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "Foundation.NSError?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "NSError",
+                                "printedName": "Foundation.NSError",
+                                "usr": "c:objc(cs)NSError"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AIBudsAI@objc(cs)AIBudsAISDK(cm)fetchAigcStylesWithCompletion:",
+            "mangledName": "$s8AIBudsAI0A5AISDKC15fetchAigcStyles10completionyySay0A12AIFoundation14AIGCStyleModelCGSg_So7NSErrorCSgtcSg_tFZ",
+            "moduleName": "AIBudsAI",
+            "static": true,
+            "objc_name": "fetchAigcStylesWithCompletion:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "generateAIPhoto",
+            "printedName": "generateAIPhoto(prompt:config:onTaskCreated:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AIGCTaskConfig",
+                "printedName": "AIBudsAIFoundation.AIGCTaskConfig",
+                "hasDefaultArg": true,
+                "usr": "c:@M@AIBudsAIFoundation@objc(cs)AIBudsAIGCTaskConfig"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Swift.String) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Swift.String?, Swift.Bool, [UIKit.UIImage]?, Foundation.NSError?) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String?, Swift.Bool, [UIKit.UIImage]?, Foundation.NSError?) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(Swift.String?, Swift.Bool, [UIKit.UIImage]?, Foundation.NSError?)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "Swift.String?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Bool",
+                            "printedName": "Swift.Bool",
+                            "usr": "s:Sb"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "[UIKit.UIImage]?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Array",
+                                "printedName": "[UIKit.UIImage]",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "UIImage",
+                                    "printedName": "UIKit.UIImage",
+                                    "usr": "c:objc(cs)UIImage"
+                                  }
+                                ],
+                                "usr": "s:Sa"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "Foundation.NSError?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "NSError",
+                                "printedName": "Foundation.NSError",
+                                "usr": "c:objc(cs)NSError"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AIBudsAI@objc(cs)AIBudsAISDK(cm)generateAIPhotoWithPrompt:config:taskCreated:completion:",
+            "mangledName": "$s8AIBudsAI0A5AISDKC15generateAIPhoto6prompt6config13onTaskCreated10completionySS_0A12AIFoundation14AIGCTaskConfigCySScSgySSSg_SbSaySo7UIImageCGSgSo7NSErrorCSgtcSgtFZ",
+            "moduleName": "AIBudsAI",
+            "static": true,
+            "objc_name": "generateAIPhotoWithPrompt:config:taskCreated:completion:",
             "declAttributes": [
               "Final",
               "AccessControl",
@@ -25743,14 +26119,14 @@
       "kind": "StringLiteral",
       "offset": 257,
       "length": 15,
-      "value": "\"1.0.0-beta.23\""
+      "value": "\"1.0.0-beta.24\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/SDKBuildInfo\/SDK_Build_Info.swift",
       "kind": "StringLiteral",
       "offset": 388,
       "length": 13,
-      "value": "\"20260811001\""
+      "value": "\"20260811002\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/SDKBuildInfo\/SDK_Build_Info.swift",

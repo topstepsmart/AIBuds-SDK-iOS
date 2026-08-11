@@ -511,7 +511,7 @@ extension AIBudsAIFoundation.SimultaneousInterpretationEventType : @retroactive 
   }
   @objc public static func setDeviceInfo(_ deviceInfo: AIBudsAIFoundation.AIDeviceInfoModel)
   @objc public static func setAIServiceVendor(_ aiServiceVendor: AIBudsAIFoundation.AIServiceVendor)
-  @objc public static func setCurrentLocation(_ location: _LocationEssentials.CLLocation)
+  @objc public static func setCurrentLocation(_ location: _LocationEssentials.CLLocation?)
   @objc(initWithAISDKs:) public static func initialize(_ aiSDKs: [any AIBudsAI.AIConnectSDK]) -> Swift.Bool
   @objc(enableBackgroundRecordingForSCODevice:macAddress:) public static func enableBackgroundRecording(forSCODevice bluetoothName: Swift.String, macAddress: Swift.String)
   @objc(disableBackgroundRecordingForSCODevice) public static func disableBackgroundRecordingForSCODevice()
@@ -532,6 +532,14 @@ extension AIBudsAIFoundation.SimultaneousInterpretationEventType : @retroactive 
   @objc(recognizeVoiceData:withConfig:onTranscript:onFailed:onFinish:) public static func recognizeVoice(_ data: Foundation.Data, config: AIBudsAIFoundation.StreamingASRConfig = .default, onTranscript: ((_ transcriptData: AIBudsAIFoundation.StreamSpeechASRModel) -> Swift.Void)? = nil, onFailed: ((_ error: Foundation.NSError) -> Swift.Void)? = nil, onFinish: (() -> Swift.Void)? = nil)
   @objc(recognizeVoiceFile:withConfig:onTranscript:onFailed:onFinish:) public static func recognizeVoice(withFile filePath: Swift.String, config: AIBudsAIFoundation.StreamingASRConfig = .default, onTranscript: ((_ transcriptData: AIBudsAIFoundation.StreamSpeechASRModel) -> Swift.Void)? = nil, onFailed: ((_ error: Foundation.NSError) -> Swift.Void)? = nil, onFinish: (() -> Swift.Void)? = nil)
   @objc(synthesizeText:config:completion:) public static func synthesizeText(_ text: Swift.String, config: AIBudsAIFoundation.TTSConfig = .default, completion: ((_ taskId: Swift.String?, _ success: Swift.Bool, _ response: AIBudsAIFoundation.TTSResultModel?, _ error: Foundation.NSError?) -> Swift.Void)? = nil)
+  @objc public static var aigcStyles: [AIBudsAIFoundation.AIGCStyleModel]? {
+    @objc get
+  }
+  @objc public static var aigcMaxGenerateCount: Swift.Int {
+    @objc get
+  }
+  @objc(fetchAigcStylesWithCompletion:) public static func fetchAigcStyles(completion: ((_ styles: [AIBudsAIFoundation.AIGCStyleModel]?, _ error: Foundation.NSError?) -> Swift.Void)? = nil)
+  @objc(generateAIPhotoWithPrompt:config:taskCreated:completion:) public static func generateAIPhoto(prompt: Swift.String, config: AIBudsAIFoundation.AIGCTaskConfig = .default, onTaskCreated: ((_ taskId: Swift.String) -> Swift.Void)? = nil, completion: ((_ taskId: Swift.String?, _ success: Swift.Bool, _ images: [UIKit.UIImage]?, _ error: Foundation.NSError?) -> Swift.Void)? = nil)
   @objc deinit
 }
 extension AIBudsAI.SdkErrorCode : Swift.Equatable {}
