@@ -573,6 +573,8 @@ extension Foundation.NSNotification.Name {
   @objc var volumesInfo: AIBudsFoundation.VolumesInfoModel? { get }
   @objc(setVolumeWithType:value:completion:) func setVolume(_ volumeType: AIBudsFoundation.DeviceVolumeType, value: Swift.Int, completion: AIBuds.AIBudsCompletionHandler?)
   @objc(setVolumesWithSystemPrompt:media:call:completion:) func setVolumes(systemPrompt: Swift.Int, media: Swift.Int, call: Swift.Int, completion: AIBuds.AIBudsCompletionHandler?)
+  @objc(volumeUpWithType:completion:) func volumeUp(_ volumeType: AIBudsFoundation.DeviceVolumeType, completion: AIBuds.AIBudsCompletionHandler?)
+  @objc(volumeDownWithType:completion:) func volumeDown(_ volumeType: AIBudsFoundation.DeviceVolumeType, completion: AIBuds.AIBudsCompletionHandler?)
 }
 @objc(AIBudsDeviceWearDetectionAPI) public protocol DeviceWearDetectionAPI : AIBuds.DeviceAPI {
   @objc var wearDetectionCapability: AIBudsFoundation.WearDetectionCapability { get }

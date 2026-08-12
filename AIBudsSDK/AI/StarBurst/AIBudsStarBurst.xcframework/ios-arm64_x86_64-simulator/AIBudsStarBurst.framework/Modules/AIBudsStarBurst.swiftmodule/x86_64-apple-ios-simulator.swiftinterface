@@ -178,6 +178,18 @@ extension AIBudsStarBurst.StarBurstSDK {
   @objc final public func sendText(_ text: Swift.String)
   @objc deinit
 }
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(AIBudsStarBurstAIGCService) final public class StarBurstAIGCService : ObjectiveC.NSObject, AIBudsAI.AIGCServiceAPI {
+  @objc public static let shared: AIBudsStarBurst.StarBurstAIGCService
+  @objc final public var aigcStyles: [AIBudsAIFoundation.AIGCStyleModel]? {
+    @objc get
+  }
+  @objc final public var maxGenerateCount: Swift.Int {
+    @objc get
+  }
+  @objc(fetchStylesWithCompletion:) final public func fetchStyles(completion: ((_ styles: [AIBudsAIFoundation.AIGCStyleModel]?, _ error: Foundation.NSError?) -> Swift.Void)? = nil)
+  @objc(generateWithPrompt:config:taskCreated:completion:) final public func generate(prompt: Swift.String, config: AIBudsAIFoundation.AIGCTaskConfig = .default, onTaskCreated: ((_ taskId: Swift.String) -> Swift.Void)? = nil, completion: ((_ taskId: Swift.String?, _ success: Swift.Bool, _ images: [UIKit.UIImage]?, _ error: Foundation.NSError?) -> Swift.Void)? = nil)
+  @objc deinit
+}
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(AIBudsStarBurstAuthPlugin) final public class StarBurstAuthPlugin : ObjectiveC.NSObject, AIBuds.StarBurstBridgePlugin {
   @objc final public var logsDirectory: Swift.String {
     @objc get

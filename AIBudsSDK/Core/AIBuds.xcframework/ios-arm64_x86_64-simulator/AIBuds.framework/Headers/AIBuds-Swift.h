@@ -2479,6 +2479,34 @@ SWIFT_PROTOCOL_NAMED("DeviceVolumeControlAPI")
 /// </ul>
 ///
 - (void)setVolumesWithSystemPrompt:(NSInteger)systemPrompt media:(NSInteger)media call:(NSInteger)call completion:(AIBudsCompletionHandler _Nullable)completion;
+/// Increases the specified volume channel by one step.
+/// \param volumeType The volume channel to adjust.
+///
+/// \param completion A closure that is called when the operation completes.
+/// <ul>
+///   <li>
+///     success: <code>true</code> if the operation was successful; otherwise <code>false</code>.
+///   </li>
+///   <li>
+///     error: An <code>NSError</code> object that describes the error that occurred, or <code>nil</code> if the operation was successful.
+///   </li>
+/// </ul>
+///
+- (void)volumeUpWithType:(enum AIBudsDeviceVolumeType)volumeType completion:(AIBudsCompletionHandler _Nullable)completion;
+/// Decreases the specified volume channel by one step.
+/// \param volumeType The volume channel to adjust.
+///
+/// \param completion A closure that is called when the operation completes.
+/// <ul>
+///   <li>
+///     success: <code>true</code> if the operation was successful; otherwise <code>false</code>.
+///   </li>
+///   <li>
+///     error: An <code>NSError</code> object that describes the error that occurred, or <code>nil</code> if the operation was successful.
+///   </li>
+/// </ul>
+///
+- (void)volumeDownWithType:(enum AIBudsDeviceVolumeType)volumeType completion:(AIBudsCompletionHandler _Nullable)completion;
 @end
 
 SWIFT_ENUM_FWD_DECL(NSInteger, AIBudsWearDetectionCapability)
@@ -6212,6 +6240,34 @@ SWIFT_PROTOCOL_NAMED("DeviceVolumeControlAPI")
 /// </ul>
 ///
 - (void)setVolumesWithSystemPrompt:(NSInteger)systemPrompt media:(NSInteger)media call:(NSInteger)call completion:(AIBudsCompletionHandler _Nullable)completion;
+/// Increases the specified volume channel by one step.
+/// \param volumeType The volume channel to adjust.
+///
+/// \param completion A closure that is called when the operation completes.
+/// <ul>
+///   <li>
+///     success: <code>true</code> if the operation was successful; otherwise <code>false</code>.
+///   </li>
+///   <li>
+///     error: An <code>NSError</code> object that describes the error that occurred, or <code>nil</code> if the operation was successful.
+///   </li>
+/// </ul>
+///
+- (void)volumeUpWithType:(enum AIBudsDeviceVolumeType)volumeType completion:(AIBudsCompletionHandler _Nullable)completion;
+/// Decreases the specified volume channel by one step.
+/// \param volumeType The volume channel to adjust.
+///
+/// \param completion A closure that is called when the operation completes.
+/// <ul>
+///   <li>
+///     success: <code>true</code> if the operation was successful; otherwise <code>false</code>.
+///   </li>
+///   <li>
+///     error: An <code>NSError</code> object that describes the error that occurred, or <code>nil</code> if the operation was successful.
+///   </li>
+/// </ul>
+///
+- (void)volumeDownWithType:(enum AIBudsDeviceVolumeType)volumeType completion:(AIBudsCompletionHandler _Nullable)completion;
 @end
 
 SWIFT_ENUM_FWD_DECL(NSInteger, AIBudsWearDetectionCapability)

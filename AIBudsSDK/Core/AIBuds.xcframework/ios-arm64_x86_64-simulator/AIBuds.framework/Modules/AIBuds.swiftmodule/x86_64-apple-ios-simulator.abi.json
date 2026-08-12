@@ -25944,6 +25944,164 @@
             ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "volumeUp",
+            "printedName": "volumeUp(_:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DeviceVolumeType",
+                "printedName": "AIBudsFoundation.DeviceVolumeType",
+                "usr": "c:@M@AIBudsFoundation@E@AIBudsDeviceVolumeType"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Swift.Bool, (any Swift.Error)?) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Bool, (any Swift.Error)?) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(Swift.Bool, (any Swift.Error)?)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Bool",
+                            "printedName": "Swift.Bool",
+                            "usr": "s:Sb"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "(any Swift.Error)?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Error",
+                                "printedName": "any Swift.Error",
+                                "usr": "s:s5ErrorP"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AIBuds@objc(pl)AIBudsDeviceVolumeControlAPI(im)volumeUpWithType:completion:",
+            "mangledName": "$s6AIBuds22DeviceVolumeControlAPIP8volumeUp_10completiony0A10Foundation0bC4TypeO_ySb_s5Error_pSgtcSgtF",
+            "moduleName": "AIBuds",
+            "genericSig": "<τ_0_0 where τ_0_0 : AIBuds.DeviceVolumeControlAPI>",
+            "sugared_genericSig": "<Self where Self : AIBuds.DeviceVolumeControlAPI>",
+            "protocolReq": true,
+            "objc_name": "volumeUpWithType:completion:",
+            "declAttributes": [
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "volumeDown",
+            "printedName": "volumeDown(_:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DeviceVolumeType",
+                "printedName": "AIBudsFoundation.DeviceVolumeType",
+                "usr": "c:@M@AIBudsFoundation@E@AIBudsDeviceVolumeType"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Swift.Bool, (any Swift.Error)?) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Bool, (any Swift.Error)?) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(Swift.Bool, (any Swift.Error)?)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Bool",
+                            "printedName": "Swift.Bool",
+                            "usr": "s:Sb"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "(any Swift.Error)?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Error",
+                                "printedName": "any Swift.Error",
+                                "usr": "s:s5ErrorP"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AIBuds@objc(pl)AIBudsDeviceVolumeControlAPI(im)volumeDownWithType:completion:",
+            "mangledName": "$s6AIBuds22DeviceVolumeControlAPIP10volumeDown_10completiony0A10Foundation0bC4TypeO_ySb_s5Error_pSgtcSgtF",
+            "moduleName": "AIBuds",
+            "genericSig": "<τ_0_0 where τ_0_0 : AIBuds.DeviceVolumeControlAPI>",
+            "sugared_genericSig": "<Self where Self : AIBuds.DeviceVolumeControlAPI>",
+            "protocolReq": true,
+            "objc_name": "volumeDownWithType:completion:",
+            "declAttributes": [
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Protocol",
@@ -34854,21 +35012,21 @@
       "kind": "StringLiteral",
       "offset": 257,
       "length": 15,
-      "value": "\"1.0.0-beta.25\""
+      "value": "\"1.0.0-beta.26\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/SDKBuildInfo\/SDK_Build_Info.swift",
       "kind": "StringLiteral",
       "offset": 388,
       "length": 13,
-      "value": "\"20260812001\""
+      "value": "\"20260813001\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/SDKBuildInfo\/SDK_Build_Info.swift",
       "kind": "StringLiteral",
       "offset": 503,
       "length": 12,
-      "value": "\"2026-08-12\""
+      "value": "\"2026-08-13\""
     }
   ]
 }

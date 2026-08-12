@@ -13982,21 +13982,21 @@
       "kind": "StringLiteral",
       "offset": 257,
       "length": 15,
-      "value": "\"1.0.0-beta.25\""
+      "value": "\"1.0.0-beta.26\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/SDKBuildInfo\/SDK_Build_Info.swift",
       "kind": "StringLiteral",
       "offset": 388,
       "length": 13,
-      "value": "\"20260812001\""
+      "value": "\"20260813001\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/SDKBuildInfo\/SDK_Build_Info.swift",
       "kind": "StringLiteral",
       "offset": 503,
       "length": 12,
-      "value": "\"2026-08-12\""
+      "value": "\"2026-08-13\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/CameraOTA(摄像头固件升级)\/CameraOtaPhase.swift",
@@ -15586,6 +15586,20 @@
       "offset": 616,
       "length": 4,
       "value": "0x08"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Commands(指令)\/RequestCommands(请求指令)\/MusicControl(音乐控制)\/MusicControlCommand.swift",
+      "kind": "IntegerLiteral",
+      "offset": 694,
+      "length": 4,
+      "value": "0x09"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Commands(指令)\/RequestCommands(请求指令)\/MusicControl(音乐控制)\/MusicControlCommand.swift",
+      "kind": "IntegerLiteral",
+      "offset": 774,
+      "length": 4,
+      "value": "0x0A"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Commands(指令)\/RequestCommand.swift",

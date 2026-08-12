@@ -695,6 +695,26 @@ SWIFT_CLASS_NAMED("StarBurstAIChatSession")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+@class AIBudsAIGCStyleModel;
+@class AIBudsAIGCTaskConfig;
+/// A service class that provides AI-generated content functionality.
+SWIFT_CLASS_NAMED("StarBurstAIGCService")
+@interface AIBudsStarBurstAIGCService : NSObject <AIBudsAIGCServiceAPI>
+/// The shared singleton instance of <code>StarBurstAIGCService</code>.
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) AIBudsStarBurstAIGCService * _Nonnull shared;)
++ (AIBudsStarBurstAIGCService * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+/// The available styles for image generation.
+@property (nonatomic, readonly, copy) NSArray<AIBudsAIGCStyleModel *> * _Nullable aigcStyles;
+/// The maximum number of images Starburst accepts in a single task.
+@property (nonatomic, readonly) NSInteger maxGenerateCount;
+/// Starburst’s text-to-image API has no style-list endpoint.
+- (void)fetchStylesWithCompletion:(void (^ _Nullable)(NSArray<AIBudsAIGCStyleModel *> * _Nullable, NSError * _Nullable))completion;
+/// Generate images with Starburst’s <code>TextToImageManager</code>.
+- (void)generateWithPrompt:(NSString * _Nonnull)prompt config:(AIBudsAIGCTaskConfig * _Nonnull)config taskCreated:(void (^ _Nullable)(NSString * _Nonnull))onTaskCreated completion:(void (^ _Nullable)(NSString * _Nullable, BOOL, NSArray<UIImage *> * _Nullable, NSError * _Nullable))completion;
+@end
+
 @class AIBudsStarBurstAuthEnv;
 @protocol AIBudsStarBurstDevice;
 SWIFT_CLASS_NAMED("StarBurstAuthPlugin")
@@ -766,7 +786,6 @@ SWIFT_ENUM_FWD_DECL(NSInteger, AIBudsAIAuthenticationMode)
 @protocol AIBudsAISummaryServiceAPI;
 @protocol AIBudsStreamingASRServiceAPI;
 @protocol AIBudsTTSServiceAPI;
-@protocol AIBudsAIGCServiceAPI;
 @interface AIBudsStarBurstSDK (SWIFT_EXTENSION(AIBudsStarBurst)) <AIBudsAIConnectSDK>
 /// The version number of the SDK
 ///
