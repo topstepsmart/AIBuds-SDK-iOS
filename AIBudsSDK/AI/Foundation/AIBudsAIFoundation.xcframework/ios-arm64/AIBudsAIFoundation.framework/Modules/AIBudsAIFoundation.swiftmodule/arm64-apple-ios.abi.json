@@ -5723,6 +5723,60 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "AdditionalOptionKeyMltCloudEnableDenoise",
+            "printedName": "AdditionalOptionKeyMltCloudEnableDenoise",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBudsAIFoundation@objc(cs)AIBudsAIChatSessionConfig(cpy)AdditionalOptionKeyMltCloudEnableDenoise",
+            "mangledName": "$s18AIBudsAIFoundation19AIChatSessionConfigC40AdditionalOptionKeyMltCloudEnableDenoiseSSvpZ",
+            "moduleName": "AIBudsAIFoundation",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsAIFoundation@objc(cs)AIBudsAIChatSessionConfig(cm)AdditionalOptionKeyMltCloudEnableDenoise",
+                "mangledName": "$s18AIBudsAIFoundation19AIChatSessionConfigC40AdditionalOptionKeyMltCloudEnableDenoiseSSvgZ",
+                "moduleName": "AIBudsAIFoundation",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(languageForSpeechInput:audioChannel:allowUserToInterruptAIResponse:maxPauseDurationBeforeAIResponds:autoEndSessionAfterNoInputDuration:enableVoicePlayback:shouldSaveVoiceForDebugging:additionalOptions:)",
@@ -20402,21 +20456,21 @@
       "kind": "StringLiteral",
       "offset": 257,
       "length": 15,
-      "value": "\"1.0.0-beta.24\""
+      "value": "\"1.0.0-beta.25\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/SDKBuildInfo\/SDK_Build_Info.swift",
       "kind": "StringLiteral",
       "offset": 388,
       "length": 13,
-      "value": "\"20260811002\""
+      "value": "\"20260812001\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/SDKBuildInfo\/SDK_Build_Info.swift",
       "kind": "StringLiteral",
       "offset": 503,
       "length": 12,
-      "value": "\"2026-08-11\""
+      "value": "\"2026-08-12\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/AIAudioRecording(AI录音)\/AIAudioRecordingSessionConfig.swift",
@@ -21170,98 +21224,105 @@
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/AIChatSession(AIChat会话)\/AIChatSessionConfig.swift",
       "kind": "Dictionary",
-      "offset": 3811,
+      "offset": 6044,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/AIChatSession(AIChat会话)\/AIChatSessionConfig.swift",
       "kind": "StringLiteral",
-      "offset": 3971,
+      "offset": 6204,
       "length": 20,
       "value": "\"starburst.agent_id\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/AIChatSession(AIChat会话)\/AIChatSessionConfig.swift",
       "kind": "StringLiteral",
-      "offset": 4156,
+      "offset": 6389,
       "length": 22,
       "value": "\"starburst.speaker_id\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/AIChatSession(AIChat会话)\/AIChatSessionConfig.swift",
       "kind": "StringLiteral",
-      "offset": 4348,
+      "offset": 6581,
       "length": 23,
       "value": "\"starburst.init_prompt\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/AIChatSession(AIChat会话)\/AIChatSessionConfig.swift",
       "kind": "StringLiteral",
-      "offset": 4536,
+      "offset": 6769,
       "length": 22,
       "value": "\"starburst.usage_plan\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/AIChatSession(AIChat会话)\/AIChatSessionConfig.swift",
       "kind": "StringLiteral",
-      "offset": 4713,
+      "offset": 6946,
       "length": 19,
       "value": "\"mltcloud.agent_id\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/AIChatSession(AIChat会话)\/AIChatSessionConfig.swift",
       "kind": "StringLiteral",
-      "offset": 4895,
+      "offset": 7128,
       "length": 21,
       "value": "\"mltcloud.speaker_id\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/AIChatSession(AIChat会话)\/AIChatSessionConfig.swift",
       "kind": "StringLiteral",
-      "offset": 5094,
+      "offset": 7327,
       "length": 28,
       "value": "\"mltcloud.intent_confg_code\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/AIChatSession(AIChat会话)\/AIChatSessionConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 7571,
+      "length": 25,
+      "value": "\"mltcloud.enable_denoise\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/AIChatSession(AIChat会话)\/AIChatSessionConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 7827,
+      "offset": 10492,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/AIChatSession(AIChat会话)\/AIChatSessionConfig.swift",
       "kind": "FloatLiteral",
-      "offset": 7904,
+      "offset": 10569,
       "length": 3,
       "value": "0.8"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/AIChatSession(AIChat会话)\/AIChatSessionConfig.swift",
       "kind": "FloatLiteral",
-      "offset": 7982,
+      "offset": 10647,
       "length": 4,
       "value": "15.0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/AIChatSession(AIChat会话)\/AIChatSessionConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 8038,
+      "offset": 10703,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/AIChatSession(AIChat会话)\/AIChatSessionConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 8102,
+      "offset": 10767,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAIFoundation\/DataModels(数据模型)\/AIChatSession(AIChat会话)\/AIChatSessionConfig.swift",
       "kind": "Dictionary",
-      "offset": 8166,
+      "offset": 10831,
       "length": 3,
       "value": "[]"
     },

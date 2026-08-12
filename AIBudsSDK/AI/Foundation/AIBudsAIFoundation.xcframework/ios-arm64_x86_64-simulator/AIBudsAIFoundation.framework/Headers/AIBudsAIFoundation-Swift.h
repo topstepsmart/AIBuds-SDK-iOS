@@ -847,7 +847,47 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) AIBudsAIChat
 ///   <li>
 ///     <code>mltcloud.intent_confg_code</code>: The intent config code for MLTCloud AI. for example, <code>"basic_intent_config"</code>.
 ///   </li>
+///   <li>
+///     <code>mltcloud.enable_denoise</code>: Whether to enable Dscrow denoising for MltCloud AI. Defaults to <code>true</code>.
+///   </li>
 /// </ul>
+/// Swift examples:
+/// \code
+/// let starburstConfig = AIChatSessionConfig()
+/// starburstConfig.additionalOptions = [
+///     AIChatSessionConfig.AdditionalOptionKeyStarburstAgentId: "ZNT002",
+///     AIChatSessionConfig.AdditionalOptionKeyStarburstSpeakerId: "zh_female_tianmeitaozi_mars_bigtts",
+///     AIChatSessionConfig.AdditionalOptionKeyStarburstInitPrompt: "User's location is Beijing.",
+///     AIChatSessionConfig.AdditionalOptionKeyStarburstUsagePlan: "pro"
+/// ]
+///
+/// let mltCloudConfig = AIChatSessionConfig()
+/// mltCloudConfig.additionalOptions = [
+///     AIChatSessionConfig.AdditionalOptionKeyMltCloudAgentId: 0,
+///     AIChatSessionConfig.AdditionalOptionKeyMltCloudSpeakerId: "siyue",
+///     AIChatSessionConfig.AdditionalOptionKeyMltCloudIntentConfigCode: "basic_intent_config",
+///     AIChatSessionConfig.AdditionalOptionKeyMltCloudEnableDenoise: false
+/// ]
+///
+/// \endcodeObjective-C examples:
+/// \code
+/// AIBudsAIChatSessionConfig *starburstConfig = [AIBudsAIChatSessionConfig.defaultConfig copy];
+/// starburstConfig.additionalOptions = @{
+///     AIBudsAIChatSessionConfig.AdditionalOptionKeyStarburstAgentId: @"ZNT002",
+///     AIBudsAIChatSessionConfig.AdditionalOptionKeyStarburstSpeakerId: @"zh_female_tianmeitaozi_mars_bigtts",
+///     AIBudsAIChatSessionConfig.AdditionalOptionKeyStarburstInitPrompt: @"User's location is Beijing.",
+///     AIBudsAIChatSessionConfig.AdditionalOptionKeyStarburstUsagePlan: @"pro"
+/// };
+///
+/// AIBudsAIChatSessionConfig *mltCloudConfig = [AIBudsAIChatSessionConfig.defaultConfig copy];
+/// mltCloudConfig.additionalOptions = @{
+///     AIBudsAIChatSessionConfig.AdditionalOptionKeyMltCloudAgentId: @0,
+///     AIBudsAIChatSessionConfig.AdditionalOptionKeyMltCloudSpeakerId: @"siyue",
+///     AIBudsAIChatSessionConfig.AdditionalOptionKeyMltCloudIntentConfigCode: @"basic_intent_config",
+///     AIBudsAIChatSessionConfig.AdditionalOptionKeyMltCloudEnableDenoise: @NO
+/// };
+///
+/// \endcode
 @property (nonatomic, copy) NSDictionary<NSString *, id> * _Nonnull additionalOptions;
 /// The key for the StarBurst agent ID in the additional options dictionary.
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull AdditionalOptionKeyStarburstAgentId;)
@@ -870,6 +910,9 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 /// The key for the MltCloud intent config code in the additional options dictionary.
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull AdditionalOptionKeyMltCloudIntentConfigCode;)
 + (NSString * _Nonnull)AdditionalOptionKeyMltCloudIntentConfigCode SWIFT_WARN_UNUSED_RESULT;
+/// The key for enabling Dscrow denoising in the additional options dictionary. The value must be a <code>Bool</code> and defaults to <code>true</code>.
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull AdditionalOptionKeyMltCloudEnableDenoise;)
++ (NSString * _Nonnull)AdditionalOptionKeyMltCloudEnableDenoise SWIFT_WARN_UNUSED_RESULT;
 /// Creates a new chat session configuration.
 /// \param languageForSpeechInput The language setting for speech input. Defaults to <code>nil</code>.
 /// A string representing the language identifier, if not provided, the system will use the current app’s localization language (iOS allows setting a specific language per app).
@@ -902,10 +945,13 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 /// Known supported configuration options:
 /// <ul>
 ///   <li>
-///     <code>starburst.role_id</code>: The role ID for StarBurst AI. for example, <code>"ZNT002"</code>.
+///     <code>starburst.agent_id</code>: The agent ID for StarBurst AI. for example, <code>"ZNT002"</code>.
 ///   </li>
 ///   <li>
 ///     <code>starburst.speaker_id</code>: The speaker ID for StarBurst AI. for example, <code>"zh_female_tianmeitaozi_mars_bigtts"</code>.
+///   </li>
+///   <li>
+///     <code>starburst.init_prompt</code>: The initial prompt for StarBurst AI.
 ///   </li>
 ///   <li>
 ///     <code>starburst.usage_plan</code>: The usage plan to use. Defaults to <code>"pro"</code>. Supported plans:
@@ -934,6 +980,9 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 ///   </li>
 ///   <li>
 ///     <code>mltcloud.intent_confg_code</code>: The intent config code for MLTCloud AI. for example, <code>"basic_intent_config"</code>.
+///   </li>
+///   <li>
+///     <code>mltcloud.enable_denoise</code>: Whether to enable Dscrow denoising for MltCloud AI. Defaults to <code>true</code>.
 ///   </li>
 /// </ul>
 ///
@@ -2406,7 +2455,47 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) AIBudsAIChat
 ///   <li>
 ///     <code>mltcloud.intent_confg_code</code>: The intent config code for MLTCloud AI. for example, <code>"basic_intent_config"</code>.
 ///   </li>
+///   <li>
+///     <code>mltcloud.enable_denoise</code>: Whether to enable Dscrow denoising for MltCloud AI. Defaults to <code>true</code>.
+///   </li>
 /// </ul>
+/// Swift examples:
+/// \code
+/// let starburstConfig = AIChatSessionConfig()
+/// starburstConfig.additionalOptions = [
+///     AIChatSessionConfig.AdditionalOptionKeyStarburstAgentId: "ZNT002",
+///     AIChatSessionConfig.AdditionalOptionKeyStarburstSpeakerId: "zh_female_tianmeitaozi_mars_bigtts",
+///     AIChatSessionConfig.AdditionalOptionKeyStarburstInitPrompt: "User's location is Beijing.",
+///     AIChatSessionConfig.AdditionalOptionKeyStarburstUsagePlan: "pro"
+/// ]
+///
+/// let mltCloudConfig = AIChatSessionConfig()
+/// mltCloudConfig.additionalOptions = [
+///     AIChatSessionConfig.AdditionalOptionKeyMltCloudAgentId: 0,
+///     AIChatSessionConfig.AdditionalOptionKeyMltCloudSpeakerId: "siyue",
+///     AIChatSessionConfig.AdditionalOptionKeyMltCloudIntentConfigCode: "basic_intent_config",
+///     AIChatSessionConfig.AdditionalOptionKeyMltCloudEnableDenoise: false
+/// ]
+///
+/// \endcodeObjective-C examples:
+/// \code
+/// AIBudsAIChatSessionConfig *starburstConfig = [AIBudsAIChatSessionConfig.defaultConfig copy];
+/// starburstConfig.additionalOptions = @{
+///     AIBudsAIChatSessionConfig.AdditionalOptionKeyStarburstAgentId: @"ZNT002",
+///     AIBudsAIChatSessionConfig.AdditionalOptionKeyStarburstSpeakerId: @"zh_female_tianmeitaozi_mars_bigtts",
+///     AIBudsAIChatSessionConfig.AdditionalOptionKeyStarburstInitPrompt: @"User's location is Beijing.",
+///     AIBudsAIChatSessionConfig.AdditionalOptionKeyStarburstUsagePlan: @"pro"
+/// };
+///
+/// AIBudsAIChatSessionConfig *mltCloudConfig = [AIBudsAIChatSessionConfig.defaultConfig copy];
+/// mltCloudConfig.additionalOptions = @{
+///     AIBudsAIChatSessionConfig.AdditionalOptionKeyMltCloudAgentId: @0,
+///     AIBudsAIChatSessionConfig.AdditionalOptionKeyMltCloudSpeakerId: @"siyue",
+///     AIBudsAIChatSessionConfig.AdditionalOptionKeyMltCloudIntentConfigCode: @"basic_intent_config",
+///     AIBudsAIChatSessionConfig.AdditionalOptionKeyMltCloudEnableDenoise: @NO
+/// };
+///
+/// \endcode
 @property (nonatomic, copy) NSDictionary<NSString *, id> * _Nonnull additionalOptions;
 /// The key for the StarBurst agent ID in the additional options dictionary.
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull AdditionalOptionKeyStarburstAgentId;)
@@ -2429,6 +2518,9 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 /// The key for the MltCloud intent config code in the additional options dictionary.
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull AdditionalOptionKeyMltCloudIntentConfigCode;)
 + (NSString * _Nonnull)AdditionalOptionKeyMltCloudIntentConfigCode SWIFT_WARN_UNUSED_RESULT;
+/// The key for enabling Dscrow denoising in the additional options dictionary. The value must be a <code>Bool</code> and defaults to <code>true</code>.
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull AdditionalOptionKeyMltCloudEnableDenoise;)
++ (NSString * _Nonnull)AdditionalOptionKeyMltCloudEnableDenoise SWIFT_WARN_UNUSED_RESULT;
 /// Creates a new chat session configuration.
 /// \param languageForSpeechInput The language setting for speech input. Defaults to <code>nil</code>.
 /// A string representing the language identifier, if not provided, the system will use the current app’s localization language (iOS allows setting a specific language per app).
@@ -2461,10 +2553,13 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 /// Known supported configuration options:
 /// <ul>
 ///   <li>
-///     <code>starburst.role_id</code>: The role ID for StarBurst AI. for example, <code>"ZNT002"</code>.
+///     <code>starburst.agent_id</code>: The agent ID for StarBurst AI. for example, <code>"ZNT002"</code>.
 ///   </li>
 ///   <li>
 ///     <code>starburst.speaker_id</code>: The speaker ID for StarBurst AI. for example, <code>"zh_female_tianmeitaozi_mars_bigtts"</code>.
+///   </li>
+///   <li>
+///     <code>starburst.init_prompt</code>: The initial prompt for StarBurst AI.
 ///   </li>
 ///   <li>
 ///     <code>starburst.usage_plan</code>: The usage plan to use. Defaults to <code>"pro"</code>. Supported plans:
@@ -2493,6 +2588,9 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 ///   </li>
 ///   <li>
 ///     <code>mltcloud.intent_confg_code</code>: The intent config code for MLTCloud AI. for example, <code>"basic_intent_config"</code>.
+///   </li>
+///   <li>
+///     <code>mltcloud.enable_denoise</code>: Whether to enable Dscrow denoising for MltCloud AI. Defaults to <code>true</code>.
 ///   </li>
 /// </ul>
 ///

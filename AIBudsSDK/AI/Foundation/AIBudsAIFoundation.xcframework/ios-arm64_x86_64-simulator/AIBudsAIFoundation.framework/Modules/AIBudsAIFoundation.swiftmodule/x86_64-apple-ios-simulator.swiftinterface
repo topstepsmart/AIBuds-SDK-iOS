@@ -127,6 +127,7 @@ extension AIBudsAIFoundation.AIAudioRecordingSessionConfig : Foundation.NSCopyin
   @objc public static let AdditionalOptionKeyMltCloudAgentId: Swift.String
   @objc public static let AdditionalOptionKeyMltCloudSpeakerId: Swift.String
   @objc public static let AdditionalOptionKeyMltCloudIntentConfigCode: Swift.String
+  @objc public static let AdditionalOptionKeyMltCloudEnableDenoise: Swift.String
   @objc public init(languageForSpeechInput: Swift.String? = nil, audioChannel: AIBudsFoundation.AIChatAudioChannel = .opusInA2dpOut, allowUserToInterruptAIResponse: Swift.Bool = true, maxPauseDurationBeforeAIResponds: Foundation.TimeInterval = 0.8, autoEndSessionAfterNoInputDuration: Foundation.TimeInterval = 15.0, enableVoicePlayback: Swift.Bool = true, shouldSaveVoiceForDebugging: Swift.Bool = false, additionalOptions: [Swift.String : Any] = [:])
   @objc deinit
 }

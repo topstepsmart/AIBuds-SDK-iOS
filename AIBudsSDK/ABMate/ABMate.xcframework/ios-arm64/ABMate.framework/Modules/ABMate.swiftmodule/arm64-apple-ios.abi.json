@@ -13982,21 +13982,21 @@
       "kind": "StringLiteral",
       "offset": 257,
       "length": 15,
-      "value": "\"1.0.0-beta.24\""
+      "value": "\"1.0.0-beta.25\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/SDKBuildInfo\/SDK_Build_Info.swift",
       "kind": "StringLiteral",
       "offset": 388,
       "length": 13,
-      "value": "\"20260811002\""
+      "value": "\"20260812001\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/SDKBuildInfo\/SDK_Build_Info.swift",
       "kind": "StringLiteral",
       "offset": 503,
       "length": 12,
-      "value": "\"2026-08-11\""
+      "value": "\"2026-08-12\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/CameraOTA(摄像头固件升级)\/CameraOtaPhase.swift",
@@ -17705,7 +17705,7 @@
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
       "offset": 19216,
-      "length": 28112,
+      "length": 28638,
       "value": "\"\""
     },
     {
@@ -17858,7 +17858,14 @@
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/HotspotConnect(连接热点)\/HotspotConnector.swift",
       "kind": "BooleanLiteral",
-      "offset": 1461,
+      "offset": 902,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/HotspotConnect(连接热点)\/HotspotConnector.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1565,
       "length": 5,
       "value": "false"
     },
@@ -18117,7 +18124,28 @@
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/SDKBluetooth(蓝牙)\/SDKBluetooth.swift",
       "kind": "Array",
-      "offset": 3475,
+      "offset": 2068,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/SDKBluetooth(蓝牙)\/SDKBluetooth.swift",
+      "kind": "Array",
+      "offset": 2423,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/SDKBluetooth(蓝牙)\/SDKBluetooth.swift",
+      "kind": "Array",
+      "offset": 2597,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/SDKBluetooth(蓝牙)\/SDKBluetooth.swift",
+      "kind": "Array",
+      "offset": 4166,
       "length": 2,
       "value": "[]"
     },
