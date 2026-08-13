@@ -12104,6 +12104,13 @@
       },
       {
         "kind": "Import",
+        "name": "Network",
+        "printedName": "Network",
+        "declKind": "Import",
+        "moduleName": "ABMate"
+      },
+      {
+        "kind": "Import",
         "name": "NetworkExtension",
         "printedName": "NetworkExtension",
         "declKind": "Import",
@@ -13982,14 +13989,14 @@
       "kind": "StringLiteral",
       "offset": 257,
       "length": 15,
-      "value": "\"1.0.0-beta.27\""
+      "value": "\"1.0.0-beta.28\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/SDKBuildInfo\/SDK_Build_Info.swift",
       "kind": "StringLiteral",
       "offset": 388,
       "length": 13,
-      "value": "\"20260813002\""
+      "value": "\"20260813003\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/SDKBuildInfo\/SDK_Build_Info.swift",
@@ -17823,63 +17830,105 @@
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/FileImport(文件导入)\/FileImportTask.swift",
       "kind": "BooleanLiteral",
-      "offset": 1268,
+      "offset": 1275,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/FileImport(文件导入)\/FileImportTask.swift",
       "kind": "BooleanLiteral",
-      "offset": 1327,
+      "offset": 1444,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/FileImport(文件导入)\/FileImportTask.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1503,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/FileImport(文件导入)\/FileImportTask.swift",
       "kind": "IntegerLiteral",
-      "offset": 16914,
+      "offset": 19828,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/FileImport(文件导入)\/FileImportTask.swift",
       "kind": "IntegerLiteral",
-      "offset": 16937,
+      "offset": 19851,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/HotspotConnect(连接热点)\/HotspotConnector.swift",
       "kind": "IntegerLiteral",
-      "offset": 466,
+      "offset": 574,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/HotspotConnect(连接热点)\/HotspotConnector.swift",
       "kind": "IntegerLiteral",
-      "offset": 552,
+      "offset": 715,
+      "length": 2,
+      "value": "20"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/HotspotConnect(连接热点)\/HotspotConnector.swift",
+      "kind": "StringLiteral",
+      "offset": 764,
+      "length": 50,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/HotspotConnect(连接热点)\/HotspotConnector.swift",
+      "kind": "StringLiteral",
+      "offset": 789,
       "length": 1,
-      "value": "3"
+      "value": "\".hotspot.connector.queue\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/HotspotConnect(连接热点)\/HotspotConnector.swift",
       "kind": "IntegerLiteral",
-      "offset": 609,
+      "offset": 886,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/HotspotConnect(连接热点)\/HotspotConnector.swift",
       "kind": "BooleanLiteral",
-      "offset": 902,
+      "offset": 1337,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/HotspotConnect(连接热点)\/HotspotConnector.swift",
       "kind": "BooleanLiteral",
-      "offset": 1565,
+      "offset": 1491,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/HotspotConnect(连接热点)\/HotspotConnector.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1543,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/HotspotConnect(连接热点)\/HotspotConnector.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2089,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/HotspotConnect(连接热点)\/HotspotConnector.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2602,
       "length": 5,
       "value": "false"
     },

@@ -10,11 +10,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		I9NMkHTmrcjgRdDcqL8QBUFRAhM=
+		MCsQ/OIsqq9NOFJ6D1Buy3zCJJ0=
 		</data>
 		<key>Modules/AIBudsLiveStream.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		HiTnCdyFhAgeyoXBH5FH4/M4FZ0=
+		tupaM9/UwJIwkHb9/Xc1rvw4AYg=
 		</data>
 		<key>Modules/AIBudsLiveStream.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/AIBudsLiveStream.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		lpDkaDSf/2FKBfiwGvjZUZwaZ7Y=
+		qSCDnZzM9Vatc3GHILVuCUYWOKg=
 		</data>
 		<key>Modules/AIBudsLiveStream.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		HiTnCdyFhAgeyoXBH5FH4/M4FZ0=
+		tupaM9/UwJIwkHb9/Xc1rvw4AYg=
 		</data>
 		<key>Modules/AIBudsLiveStream.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Modules/AIBudsLiveStream.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		LMrFEvoJkSOGBLmOk2tTlaMRUFk=
+		wOSMGREV3DCrHHYO0G/+XbNgFVE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -70,7 +70,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			f80ygxCaQ5D3Wj4ehYjGONqFwlxrghgDdvDlUE5vv1Q=
+			NH6fPZg4KQYLECeg+xQmaAIEK2qBVuHyVIR/RmRQtlw=
 			</data>
 		</dict>
 		<key>Modules/AIBudsLiveStream.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -98,14 +98,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			hM3HyyxgW/xtw3gzmhPZcZBXr0DOsGJWhelwgB1FaPo=
+			u3og+vB4d2mua8MxrxNLFUDlfe7NDuqhJsJ4AXR/ZFU=
 			</data>
 		</dict>
 		<key>Modules/AIBudsLiveStream.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			f80ygxCaQ5D3Wj4ehYjGONqFwlxrghgDdvDlUE5vv1Q=
+			NH6fPZg4KQYLECeg+xQmaAIEK2qBVuHyVIR/RmRQtlw=
 			</data>
 		</dict>
 		<key>Modules/AIBudsLiveStream.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -133,7 +133,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			inEGpLGjjY/eviH70D+N2sdwHysaETGJTBHA+881euY=
+			YPJewWI1QMCzDyGeeDM2RMW1t5FVUV6lfHQXPIMfyxo=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
