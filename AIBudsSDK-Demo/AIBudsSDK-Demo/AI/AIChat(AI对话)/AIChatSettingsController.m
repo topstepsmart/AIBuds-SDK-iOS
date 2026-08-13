@@ -103,45 +103,13 @@
     return planNames;
 }
 
-+(NSArray<NSString*>*) starBurstSupportedSpeechLanguages {
-    return @[
-        @"zh-CN",
-        @"en-US",
-        @"ja-JP",
-        @"ko-KR",
-        @"fr-FR",
-        @"es-MX",
-        @"pt-BR",
-        @"id-ID",
-        @"ms-MY",
-        @"de-DE",
-        @"fil-PH",
-        @"th-TH",
-        @"ar-SA",
-        @"vi",
-        @"ru-RU",
-        @"ru",
-        @"da",
-        @"el",
-        @"fi",
-        @"he",
-        @"hi",
-        @"it",
-        @"nl",
-        @"no",
-        @"pl",
-        @"sv",
-        @"sw",
-        @"tr"
-    ];
-}
-
 +(NSArray<NSString*>*) supportedSpeechLanguagesForVendor:(AIBudsAIServiceVendor)vendor {
+    
     switch (vendor) {
         case AIBudsAIServiceVendorStarBurst:
-            return [AIChatSettingsController starBurstSupportedSpeechLanguages];
+            return [[AIBudsAISDK allSupportedLanguagesForVendor:AIBudsAIServiceVendorStarBurst] valueForKey:@"languageCode"];
         case AIBudsAIServiceVendorMltcloud:
-            return @[];
+            return [[AIBudsAISDK allSupportedLanguagesForVendor:AIBudsAIServiceVendorMltcloud] valueForKey:@"languageCode"];
         default:
             return @[];
     }
@@ -506,10 +474,10 @@
                 [AIBudsAISDK authenticateDevice:deviceInfo completion:^(BOOL isSuccess, NSError * _Nullable error) {
                     if([error isKindOfClass:[NSError class]])
                     {
-                        XLOG_ERROR(@"%@", APP_LOG_STRING(@"AI 鉴权失败(vendor = %@)：%@", @(aiServiceVendor), error));
+                        XLOG_ERROR(@"%@", APP_LOG_STRING(@"AI 鉴权失败 (vendor = %@)：%@", @(aiServiceVendor), error));
                         return;
                     }
-                    XLOG_INFO(@"%@", APP_LOG_STRING(@"AI 鉴权成功(vendor = %@)。", @(aiServiceVendor)));
+                    XLOG_INFO(@"%@", APP_LOG_STRING(@"AI 鉴权成功 (vendor = %@)。", @(aiServiceVendor)));
                 }];
             }
         }

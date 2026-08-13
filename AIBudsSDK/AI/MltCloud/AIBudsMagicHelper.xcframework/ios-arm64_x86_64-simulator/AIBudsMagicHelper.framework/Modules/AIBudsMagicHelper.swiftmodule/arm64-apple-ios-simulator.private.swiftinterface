@@ -80,6 +80,9 @@ extension AIBudsMagicHelper.MagicHelperSDK : AIBudsAI.AIConnectSDK {
   @objc final public var aigcService: (any AIBudsAI.AIGCServiceAPI)? {
     @objc get
   }
+  @objc final public var aiAskingService: (any AIBudsAI.AIAskingServiceAPI)? {
+    @objc get
+  }
 }
 extension AIBudsMagicHelper.MagicHelperSDK {
   @objc public static let ErrorDomain: Swift.String
@@ -291,6 +294,11 @@ extension AIBudsMagicHelper.MagicHelperSDK {
   public var rawValue: Swift.Int {
     get
   }
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(AIBudsMltCloudAIAskingService) final public class MltCloudAIAskingService : ObjectiveC.NSObject, AIBudsAI.AIAskingServiceAPI {
+  @objc public static let shared: AIBudsMagicHelper.MltCloudAIAskingService
+  @objc(sendWithQuestion:config:onStartAnswering:onAnswer:onFinishAnswering:onError:) final public func send(question: Swift.String, config: AIBudsAIFoundation.AIAskingConfig = .default, onStartAnswering: ((_ questionId: Swift.String?) -> Swift.Void)?, onAnswer: ((_ questionId: Swift.String, _ deltaText: Swift.String?, _ fullText: Swift.String?, _ isFinal: Swift.Bool) -> Swift.Void)?, onFinishAnswering: ((_ questionId: Swift.String) -> Swift.Void)?, onError: ((_ questionId: Swift.String, _ error: any Swift.Error) -> Swift.Void)?) -> Swift.String?
+  @objc deinit
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(AIBudsMltCloudAIAudioRecordingService) final public class MltCloudAIAudioRecordingService : ObjectiveC.NSObject, AIBudsAI.AIAudioRecordingServiceAPI {
   @objc public static let shared: AIBudsMagicHelper.MltCloudAIAudioRecordingService

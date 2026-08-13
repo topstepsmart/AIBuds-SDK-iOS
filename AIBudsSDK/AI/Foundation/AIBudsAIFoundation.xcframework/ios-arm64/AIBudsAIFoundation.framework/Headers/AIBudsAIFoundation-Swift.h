@@ -371,6 +371,18 @@ extern "C" {
 
 #if defined(__OBJC__)
 
+@class NSString;
+/// Configuration for AI asking.
+SWIFT_CLASS_NAMED("AIAskingConfig")
+@interface AIBudsAIAskingConfig : NSObject
+/// The default configuration shared instance.
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) AIBudsAIAskingConfig * _Nonnull defaultConfig;)
++ (AIBudsAIAskingConfig * _Nonnull)defaultConfig SWIFT_WARN_UNUSED_RESULT;
+/// The specified agent identifier.
+@property (nonatomic, copy) NSString * _Nullable specifiedAgent;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
 /// Audio format
 typedef SWIFT_ENUM_NAMED(NSInteger, AIBudsAIAudioFormat, "AIAudioFormat", open) {
 /// Unknown audio format
@@ -424,7 +436,6 @@ typedef SWIFT_ENUM_NAMED(NSInteger, AIBudsAIAudioRecordingEventType, "AIAudioRec
 };
 
 SWIFT_ENUM_FWD_DECL(NSInteger, AIBudsRecordingScene)
-@class NSString;
 /// Configuration for an AI audio recording session.
 SWIFT_CLASS_NAMED("AIAudioRecordingSessionConfig")
 @interface AIBudsAIAudioRecordingSessionConfig : NSObject <AIBudsCustomDebugJsonStringConvertible>

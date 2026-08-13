@@ -243,6 +243,11 @@ typedef void(^MGCompletionHandler)(NSDictionary *result, NSError * _Nullable err
 /// 支持语种：https://docs.qq.com/document/DWWZBY0dObHVNamFI?nlc=1&_bid=1&client=drive_file&tab=v3qifl
 - (nullable IntlAudioInput *)intlAsr:(ASRIntlRequestBody *)body;
 
+/// 海外内部 ASR：仅支持 PCM 16000Hz、16bit、单声道、小端序。
+/// 持续通过 IntlAudioInput 写入音频，sendFinish 后提交整段音频识别。
+/// 成功时 didReceiveIntlASRResult:error: 依次回调 status 2 和 status 3。
+- (nullable IntlAudioInput *)startInternalAsrOverseas:(ASRIntlRequestBody *)body;
+
 /// 海外版语音合成(tts)
 /// 支持语种：https://docs.qq.com/document/DWWZBY0dObHVNamFI?nlc=1&_bid=1&client=drive_file&tab=v3qifl
 - (void)intlTts:(TTSIntlRequestBody *)body;

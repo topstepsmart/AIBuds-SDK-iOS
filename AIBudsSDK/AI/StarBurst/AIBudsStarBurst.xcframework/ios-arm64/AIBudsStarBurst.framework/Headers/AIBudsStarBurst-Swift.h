@@ -786,6 +786,7 @@ SWIFT_ENUM_FWD_DECL(NSInteger, AIBudsAIAuthenticationMode)
 @protocol AIBudsAISummaryServiceAPI;
 @protocol AIBudsStreamingASRServiceAPI;
 @protocol AIBudsTTSServiceAPI;
+@protocol AIBudsAIAskingServiceAPI;
 @interface AIBudsStarBurstSDK (SWIFT_EXTENSION(AIBudsStarBurst)) <AIBudsAIConnectSDK>
 /// The version number of the SDK
 ///
@@ -884,6 +885,8 @@ SWIFT_ENUM_FWD_DECL(NSInteger, AIBudsAIAuthenticationMode)
 /// returns:
 /// An object conforming to AIGCServiceAPI if available, otherwise nil
 @property (nonatomic, readonly, strong) id <AIBudsAIGCServiceAPI> _Nullable aigcService;
+/// The AI asking service interface for the service provider.
+@property (nonatomic, readonly, strong) id <AIBudsAIAskingServiceAPI> _Nullable aiAskingService;
 @end
 
 @class AIBudsSimultaneousInterpretationConfig;

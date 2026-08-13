@@ -34,7 +34,7 @@
 		</data>
 		<key>Headers/BDMagicHelper.h</key>
 		<data>
-		ZrduEN1tkvjNtpvDos0Zd8QHxAU=
+		Y0/RmW33ZDDb1nW2d9+6/H0c4KA=
 		</data>
 		<key>Headers/ChatIntlRequestBody.h</key>
 		<data>
@@ -186,7 +186,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		zoPmue6TBnUVSvnjTQSdwtfb5+E=
+		kKLUQp+JEn8+KJsbjG8ReGt+kwI=
 		</data>
 		<key>MGBundle.bundle/silero_vad.onnx</key>
 		<data>
@@ -194,7 +194,7 @@
 		</data>
 		<key>Modules/MagicHelper.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		2au0AqNOWN2rwM21NwttTqflgh0=
+		gSEa2B7agG/fn2oHM9XOdo6qjxM=
 		</data>
 		<key>Modules/MagicHelper.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
@@ -304,11 +304,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ZrduEN1tkvjNtpvDos0Zd8QHxAU=
+			Y0/RmW33ZDDb1nW2d9+6/H0c4KA=
 			</data>
 			<key>hash2</key>
 			<data>
-			HRpKK6tWImDML1YsVsm8bAkaweAVOuT7iHstmrz3owc=
+			QbtIdyHutymxnc2Ig8+PAuLfrAgQx+79KNYa0nVaYDo=
 			</data>
 		</dict>
 		<key>Headers/ChatIntlRequestBody.h</key>
@@ -733,11 +733,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			2au0AqNOWN2rwM21NwttTqflgh0=
+			gSEa2B7agG/fn2oHM9XOdo6qjxM=
 			</data>
 			<key>hash2</key>
 			<data>
-			Ab0g5ZRd70qFSrrlgg6ZdISv3tRzTjsx8YISQOuAsgo=
+			7nT9OJESU+xO8qYxTu0Jx9Pko31E15o/SYsjBr8ugmA=
 			</data>
 		</dict>
 		<key>Modules/MagicHelper.swiftmodule/arm64-apple-ios.abi.json</key>

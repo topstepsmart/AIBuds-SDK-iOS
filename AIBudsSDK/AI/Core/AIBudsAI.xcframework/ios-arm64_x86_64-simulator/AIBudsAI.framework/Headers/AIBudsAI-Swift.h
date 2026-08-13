@@ -370,9 +370,74 @@ extern "C" {
 
 #if defined(__OBJC__)
 
+@class NSString;
+@class AIBudsAIAskingConfig;
+/// An interface for sending a text question to an AI service and receiving a
+/// streaming answer.
+/// Implementations are responsible for selecting the appropriate underlying
+/// model or agent, maintaining any provider-specific conversation context, and
+/// delivering the answer through the callbacks supplied to <code>send(question:config:onStartAnswering:onAnswer:onFinishAnswering:onError:)</code>.
+SWIFT_PROTOCOL_NAMED("AIAskingServiceAPI")
+@protocol AIBudsAIAskingServiceAPI <NSObject>
+/// Sends a question to the AI service.
+/// A successfully created request is identified by the returned question
+/// identifier. The answer can be delivered in multiple chunks through
+/// <code>onAnswer</code>; clients should use <code>isFinal</code> or <code>onFinishAnswering</code> to detect
+/// completion.
+/// important:
+/// Callback execution queues are determined by the service
+/// provider. Dispatch UI work to the main queue when necessary.
+/// \param question The question or prompt to send to the AI service.
+///
+/// \param config Configuration for the request, including an optional
+/// provider-specific agent identifier.
+///
+/// \param onStartAnswering Called when the service starts producing an answer.
+/// The question identifier may be <code>nil</code> when the provider has not yet
+/// assigned one.
+///
+/// \param onAnswer Called whenever answer data is received.
+/// <ul>
+///   <li>
+///     questionId: The identifier of the question being answered.
+///   </li>
+///   <li>
+///     deltaText: Newly generated text for the current update, if supplied
+///     by the provider.
+///   </li>
+///   <li>
+///     fullText: The complete accumulated answer at the time of the update,
+///     if supplied by the provider.
+///   </li>
+///   <li>
+///     isFinal: <code>true</code> when this update is the final answer update.
+///   </li>
+/// </ul>
+///
+/// \param onFinishAnswering Called after the answer has completed successfully.
+/// The parameter is the completed question identifier.
+///
+/// \param onError Called when the request cannot be started or fails while it
+/// is being answered.
+/// <ul>
+///   <li>
+///     questionId: The related question identifier. This can be an empty
+///     string when the failure occurs before a request is created.
+///   </li>
+///   <li>
+///     error: The error describing the failure.
+///   </li>
+/// </ul>
+///
+///
+/// returns:
+/// The question identifier if the request was created; otherwise,
+/// <code>nil</code>.
+- (NSString * _Nullable)sendWithQuestion:(NSString * _Nonnull)question config:(AIBudsAIAskingConfig * _Nonnull)config onStartAnswering:(void (^ _Nullable)(NSString * _Nullable))onStartAnswering onAnswer:(void (^ _Nullable)(NSString * _Nonnull, NSString * _Nullable, NSString * _Nullable, BOOL))onAnswer onFinishAnswering:(void (^ _Nullable)(NSString * _Nonnull))onFinishAnswering onError:(void (^ _Nullable)(NSString * _Nonnull, NSError * _Nonnull))onError SWIFT_WARN_UNUSED_RESULT;
+@end
+
 SWIFT_ENUM_FWD_DECL(NSInteger, AIBudsAIAudioRecordingEventType)
 @class NSDate;
-@class NSString;
 @class NSError;
 /// A model representing a single event within an ai-audio-recording  session.
 SWIFT_CLASS_NAMED("AIAudioRecordingEventModel")
@@ -823,6 +888,44 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) AIBudsLocati
 /// note:
 /// This method is safe to call even when no session is active
 + (void)stopAIChat;
+/// Sends a text question to the currently selected AI service and receives
+/// the answer as a stream of updates.
+/// important:
+/// Callback execution queues are determined by the selected
+/// service provider. Dispatch UI work to the main queue when necessary.
+/// \param question The question or prompt to send.
+///
+/// \param config Configuration for the request. Defaults to <code>.default</code>.
+///
+/// \param onStartAnswering Called when the service starts answering. The
+/// question identifier may be <code>nil</code> if it has not yet been assigned.
+///
+/// \param onAnswer Called for each answer update.
+/// <ul>
+///   <li>
+///     questionId: The identifier of the question being answered.
+///   </li>
+///   <li>
+///     deltaText: Newly generated text in this update, if available.
+///   </li>
+///   <li>
+///     fullText: The accumulated answer text, if available.
+///   </li>
+///   <li>
+///     isFinal: <code>true</code> when this is the final answer update.
+///   </li>
+/// </ul>
+///
+/// \param onFinishAnswering Called when answering finishes successfully.
+///
+/// \param onError Called when validation fails or the AI service reports an
+/// error. The question identifier is empty if no request was created.
+///
+///
+/// returns:
+/// The question identifier when the request is created;
+/// otherwise, <code>nil</code>.
++ (NSString * _Nullable)sendQuestion:(NSString * _Nonnull)question config:(AIBudsAIAskingConfig * _Nonnull)config onStartAnswering:(void (^ _Nullable)(NSString * _Nullable))onStartAnswering onAnswer:(void (^ _Nullable)(NSString * _Nonnull, NSString * _Nullable, NSString * _Nullable, BOOL))onAnswer onFinishAnswering:(void (^ _Nullable)(NSString * _Nonnull))onFinishAnswering onError:(void (^ _Nullable)(NSString * _Nonnull, NSError * _Nonnull))onError SWIFT_WARN_UNUSED_RESULT;
 /// Translates the given text from the source language to the target language.
 /// \param text The text to be translated.
 ///
@@ -1453,6 +1556,11 @@ SWIFT_PROTOCOL_NAMED("AIConnectSDK")
 /// returns:
 /// An object conforming to AIGCServiceAPI if available, otherwise nil
 @property (nonatomic, readonly, strong) id <AIBudsAIGCServiceAPI> _Nullable aigcService;
+/// The AI asking service interface for the service provider
+///
+/// returns:
+/// An object conforming to AIAskingServiceAPI if available, otherwise nil
+@property (nonatomic, readonly, strong) id <AIBudsAIAskingServiceAPI> _Nullable aiAskingService;
 @end
 
 /// A model representing an AI critical log record.
@@ -2356,9 +2464,74 @@ extern "C" {
 
 #if defined(__OBJC__)
 
+@class NSString;
+@class AIBudsAIAskingConfig;
+/// An interface for sending a text question to an AI service and receiving a
+/// streaming answer.
+/// Implementations are responsible for selecting the appropriate underlying
+/// model or agent, maintaining any provider-specific conversation context, and
+/// delivering the answer through the callbacks supplied to <code>send(question:config:onStartAnswering:onAnswer:onFinishAnswering:onError:)</code>.
+SWIFT_PROTOCOL_NAMED("AIAskingServiceAPI")
+@protocol AIBudsAIAskingServiceAPI <NSObject>
+/// Sends a question to the AI service.
+/// A successfully created request is identified by the returned question
+/// identifier. The answer can be delivered in multiple chunks through
+/// <code>onAnswer</code>; clients should use <code>isFinal</code> or <code>onFinishAnswering</code> to detect
+/// completion.
+/// important:
+/// Callback execution queues are determined by the service
+/// provider. Dispatch UI work to the main queue when necessary.
+/// \param question The question or prompt to send to the AI service.
+///
+/// \param config Configuration for the request, including an optional
+/// provider-specific agent identifier.
+///
+/// \param onStartAnswering Called when the service starts producing an answer.
+/// The question identifier may be <code>nil</code> when the provider has not yet
+/// assigned one.
+///
+/// \param onAnswer Called whenever answer data is received.
+/// <ul>
+///   <li>
+///     questionId: The identifier of the question being answered.
+///   </li>
+///   <li>
+///     deltaText: Newly generated text for the current update, if supplied
+///     by the provider.
+///   </li>
+///   <li>
+///     fullText: The complete accumulated answer at the time of the update,
+///     if supplied by the provider.
+///   </li>
+///   <li>
+///     isFinal: <code>true</code> when this update is the final answer update.
+///   </li>
+/// </ul>
+///
+/// \param onFinishAnswering Called after the answer has completed successfully.
+/// The parameter is the completed question identifier.
+///
+/// \param onError Called when the request cannot be started or fails while it
+/// is being answered.
+/// <ul>
+///   <li>
+///     questionId: The related question identifier. This can be an empty
+///     string when the failure occurs before a request is created.
+///   </li>
+///   <li>
+///     error: The error describing the failure.
+///   </li>
+/// </ul>
+///
+///
+/// returns:
+/// The question identifier if the request was created; otherwise,
+/// <code>nil</code>.
+- (NSString * _Nullable)sendWithQuestion:(NSString * _Nonnull)question config:(AIBudsAIAskingConfig * _Nonnull)config onStartAnswering:(void (^ _Nullable)(NSString * _Nullable))onStartAnswering onAnswer:(void (^ _Nullable)(NSString * _Nonnull, NSString * _Nullable, NSString * _Nullable, BOOL))onAnswer onFinishAnswering:(void (^ _Nullable)(NSString * _Nonnull))onFinishAnswering onError:(void (^ _Nullable)(NSString * _Nonnull, NSError * _Nonnull))onError SWIFT_WARN_UNUSED_RESULT;
+@end
+
 SWIFT_ENUM_FWD_DECL(NSInteger, AIBudsAIAudioRecordingEventType)
 @class NSDate;
-@class NSString;
 @class NSError;
 /// A model representing a single event within an ai-audio-recording  session.
 SWIFT_CLASS_NAMED("AIAudioRecordingEventModel")
@@ -2809,6 +2982,44 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) AIBudsLocati
 /// note:
 /// This method is safe to call even when no session is active
 + (void)stopAIChat;
+/// Sends a text question to the currently selected AI service and receives
+/// the answer as a stream of updates.
+/// important:
+/// Callback execution queues are determined by the selected
+/// service provider. Dispatch UI work to the main queue when necessary.
+/// \param question The question or prompt to send.
+///
+/// \param config Configuration for the request. Defaults to <code>.default</code>.
+///
+/// \param onStartAnswering Called when the service starts answering. The
+/// question identifier may be <code>nil</code> if it has not yet been assigned.
+///
+/// \param onAnswer Called for each answer update.
+/// <ul>
+///   <li>
+///     questionId: The identifier of the question being answered.
+///   </li>
+///   <li>
+///     deltaText: Newly generated text in this update, if available.
+///   </li>
+///   <li>
+///     fullText: The accumulated answer text, if available.
+///   </li>
+///   <li>
+///     isFinal: <code>true</code> when this is the final answer update.
+///   </li>
+/// </ul>
+///
+/// \param onFinishAnswering Called when answering finishes successfully.
+///
+/// \param onError Called when validation fails or the AI service reports an
+/// error. The question identifier is empty if no request was created.
+///
+///
+/// returns:
+/// The question identifier when the request is created;
+/// otherwise, <code>nil</code>.
++ (NSString * _Nullable)sendQuestion:(NSString * _Nonnull)question config:(AIBudsAIAskingConfig * _Nonnull)config onStartAnswering:(void (^ _Nullable)(NSString * _Nullable))onStartAnswering onAnswer:(void (^ _Nullable)(NSString * _Nonnull, NSString * _Nullable, NSString * _Nullable, BOOL))onAnswer onFinishAnswering:(void (^ _Nullable)(NSString * _Nonnull))onFinishAnswering onError:(void (^ _Nullable)(NSString * _Nonnull, NSError * _Nonnull))onError SWIFT_WARN_UNUSED_RESULT;
 /// Translates the given text from the source language to the target language.
 /// \param text The text to be translated.
 ///
@@ -3439,6 +3650,11 @@ SWIFT_PROTOCOL_NAMED("AIConnectSDK")
 /// returns:
 /// An object conforming to AIGCServiceAPI if available, otherwise nil
 @property (nonatomic, readonly, strong) id <AIBudsAIGCServiceAPI> _Nullable aigcService;
+/// The AI asking service interface for the service provider
+///
+/// returns:
+/// An object conforming to AIAskingServiceAPI if available, otherwise nil
+@property (nonatomic, readonly, strong) id <AIBudsAIAskingServiceAPI> _Nullable aiAskingService;
 @end
 
 /// A model representing an AI critical log record.

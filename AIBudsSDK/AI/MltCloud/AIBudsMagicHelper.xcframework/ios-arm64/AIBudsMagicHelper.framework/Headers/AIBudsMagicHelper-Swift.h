@@ -540,6 +540,7 @@ SWIFT_ENUM_FWD_DECL(NSInteger, AIBudsAIAuthenticationMode)
 @protocol AIBudsStreamingASRServiceAPI;
 @protocol AIBudsTTSServiceAPI;
 @protocol AIBudsAIGCServiceAPI;
+@protocol AIBudsAIAskingServiceAPI;
 @interface AIBudsMagicHelperSDK (SWIFT_EXTENSION(AIBudsMagicHelper)) <AIBudsAIConnectSDK>
 /// The version number of the SDK
 ///
@@ -638,6 +639,27 @@ SWIFT_ENUM_FWD_DECL(NSInteger, AIBudsAIAuthenticationMode)
 /// returns:
 /// An object conforming to AIGCServiceAPI if available, otherwise nil
 @property (nonatomic, readonly, strong) id <AIBudsAIGCServiceAPI> _Nullable aigcService;
+/// The AI asking service interface for the service provider.
+@property (nonatomic, readonly, strong) id <AIBudsAIAskingServiceAPI> _Nullable aiAskingService;
+@end
+
+@class AIBudsAIAskingConfig;
+/// A service class for AI asking.
+SWIFT_CLASS_NAMED("MltCloudAIAskingService")
+@interface AIBudsMltCloudAIAskingService : NSObject <AIBudsAIAskingServiceAPI>
+/// The shared singleton instance.
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) AIBudsMltCloudAIAskingService * _Nonnull shared;)
++ (AIBudsMltCloudAIAskingService * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+/// Sends a question to the cloud AI service.
+/// For domestic devices, <code>config.specifiedAgent</code> is passed as the cloud model/agent
+/// identifier after it has been checked against the agent list returned by MagicHelper.
+/// International devices use the international GPT endpoint.
+/// important:
+/// When a specified domestic agent must be loaded, this method waits for
+/// the MagicHelper callback. Call it from a background queue.
+- (NSString * _Nullable)sendWithQuestion:(NSString * _Nonnull)question config:(AIBudsAIAskingConfig * _Nonnull)config onStartAnswering:(void (^ _Nullable)(NSString * _Nullable))onStartAnswering onAnswer:(void (^ _Nullable)(NSString * _Nonnull, NSString * _Nullable, NSString * _Nullable, BOOL))onAnswer onFinishAnswering:(void (^ _Nullable)(NSString * _Nonnull))onFinishAnswering onError:(void (^ _Nullable)(NSString * _Nonnull, NSError * _Nonnull))onError SWIFT_WARN_UNUSED_RESULT;
 @end
 
 @class AIBudsAIAudioRecordingSessionConfig;

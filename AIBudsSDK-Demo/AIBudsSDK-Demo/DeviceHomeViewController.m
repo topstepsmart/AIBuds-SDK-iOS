@@ -667,6 +667,8 @@
             [DeviceFeatureModel modelWithIcon:@"icon_ai_translation" name:NSLocalizedString(@"LocKey.AiTextTranslationFeatureTitle", nil) classNameOfDemoVC:@"AITextTranslationDemoController"],
             [DeviceFeatureModel modelWithIcon:@"icon_simultaneous_interpretation" name:NSLocalizedString(@"LocKey.SimultaneousInterpretationFeatureTitle", nil) classNameOfDemoVC:@"SimultaneousInterpretationDemoController"],
             [DeviceFeatureModel modelWithIcon:@"icon_ai_chat" name:NSLocalizedString(@"LocKey.AiChatFeatureTitle", nil) classNameOfDemoVC:@"AIChatDemoController"],
+            [DeviceFeatureModel modelWithIcon:@"icon_aigc" name:NSLocalizedString(@"LocKey.AIGCFeatureTitle", nil) classNameOfDemoVC:@"AIGCDemoController"],
+            [DeviceFeatureModel modelWithIcon:@"icon_ai_asking" name:NSLocalizedString(@"LocKey.AIAskingFeatureTitle", nil) classNameOfDemoVC:@"AIAskingDemoController"],
             
         ]],
 
@@ -1002,11 +1004,13 @@
             [AIChatContext sharedInstance].settings.sessionCfg.audioChannel = AIBudsAIChatAudioChannelSco;
             [AIBudsAISDK startAIChatWithConfig:[AIChatContext sharedInstance].settings.sessionCfg
                                     onStartSuccess:^(id<AIBudsAIChatSessionConvertible> _Nonnull session) {
-                
+                [AIChatContext sharedInstance].currentSession = session;
+                [[AIChatContext sharedInstance] resetChatDataHistory];
+                [[NSNotificationCenter defaultCenter] postNotificationName:AIChatSessionDidStartNotification object:session];
             } onStartFailure:^(NSError * _Nonnull error) {
-                
+                [[NSNotificationCenter defaultCenter] postNotificationName:AIChatSessionDidFailNotification object:error];
             } onChatData:^(AIBudsAIChatDataModel * _Nonnull chatData) {
-                
+                [[AIChatContext sharedInstance] recordChatData:chatData];
             } onIntent:^(AIBudsAIChatIntentModel * _Nonnull intent) {
                 
             } onVoiceData:^(AIBudsAIChatVoiceDataModel * _Nonnull voiceData) {
@@ -1014,9 +1018,10 @@
             } onEvent:^(AIBudsAIChatEventModel * _Nonnull event) {
                 [self handleAIChatEvent:event];
             } onError:^(NSError * _Nonnull error) {
-                
+                [[NSNotificationCenter defaultCenter] postNotificationName:AIChatSessionDidFailNotification object:error];
             } onFinish:^(AIBudsAIChatSessionReportModel * _Nonnull report) {
-                
+                [AIChatContext sharedInstance].currentSession = nil;
+                [[NSNotificationCenter defaultCenter] postNotificationName:AIChatSessionDidEndNotification object:report];
             }];
             break;
         }
@@ -1027,6 +1032,8 @@
             [AIBudsAISDK startAIChatWithConfig:[AIChatContext sharedInstance].settings.sessionCfg
                                     onStartSuccess:^(id<AIBudsAIChatSessionConvertible> _Nonnull session) {
                 [AIChatContext sharedInstance].currentSession = session;
+                [[AIChatContext sharedInstance] resetChatDataHistory];
+                [[NSNotificationCenter defaultCenter] postNotificationName:AIChatSessionDidStartNotification object:session];
                 id<AIBudsDeviceAIChatAPI> aiDevice = (id<AIBudsDeviceAIChatAPI>)device;
                 if([aiDevice conformsToProtocol:@protocol(AIBudsDeviceAIChatAPI)]) {
                     [aiDevice reportAIChatStartSuccessWithCompletion:^(BOOL success, NSError * _Nullable error) {
@@ -1034,6 +1041,7 @@
                     }];
                 }
             } onStartFailure:^(NSError * _Nonnull error) {
+                [[NSNotificationCenter defaultCenter] postNotificationName:AIChatSessionDidFailNotification object:error];
                 id<AIBudsDeviceAIChatAPI> aiDevice = (id<AIBudsDeviceAIChatAPI>)device;
                 if([aiDevice conformsToProtocol:@protocol(AIBudsDeviceAIChatAPI)]) {
                     [aiDevice reportAIChatStartFailureWithCompletion:^(BOOL success, NSError * _Nullable error) {
@@ -1041,7 +1049,7 @@
                     }];
                 }
             } onChatData:^(AIBudsAIChatDataModel * _Nonnull chatData) {
-                
+                [[AIChatContext sharedInstance] recordChatData:chatData];
             } onIntent:^(AIBudsAIChatIntentModel * _Nonnull intent) {
                 [self handleIntent: intent];
             } onVoiceData:^(AIBudsAIChatVoiceDataModel * _Nonnull voiceData) {
@@ -1050,12 +1058,14 @@
                 [weakSelf handleAIChatEvent:event];
             } onError:^(NSError * _Nonnull error) {
                 XLOG_ERROR(@"AI 会话发生错误：%@", error);
+                [[NSNotificationCenter defaultCenter] postNotificationName:AIChatSessionDidFailNotification object:error];
                 NSString* message = [NSString stringWithFormat:@"%@\n%@", NSLocalizedString(@"LocKey.AIChatErrorMessage", nil), error.localizedDescription];
                 dispatch_async(dispatch_get_main_queue(), ^{
                     [weakSelf.view makeToast:message duration:3.0 position:CSToastPositionTop];
                 });
             } onFinish:^(AIBudsAIChatSessionReportModel * _Nonnull report) {
-                
+                [AIChatContext sharedInstance].currentSession = nil;
+                [[NSNotificationCenter defaultCenter] postNotificationName:AIChatSessionDidEndNotification object:report];
             }];
             break;
         }
@@ -1128,13 +1138,13 @@
         case AIBudsAIChatEventTypeVadStartSpeaking:
         {
             [AIChatContext sharedInstance].isSpeaking = YES;
-            [[NSNotificationCenter defaultCenter] postNotificationName:@"VadStartSpeakingNotification" object:nil];
+            [[NSNotificationCenter defaultCenter] postNotificationName:AIChatVadDidStartSpeakingNotification object:nil];
         }
             break;
         case AIBudsAIChatEventTypeVadEndSpeaking:
         {
             [AIChatContext sharedInstance].isSpeaking = NO;
-            [[NSNotificationCenter defaultCenter] postNotificationName:@"VadEndSpeakingNotification" object:nil];
+            [[NSNotificationCenter defaultCenter] postNotificationName:AIChatVadDidEndSpeakingNotification object:nil];
         }
             break;
         default:

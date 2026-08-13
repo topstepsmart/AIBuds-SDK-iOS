@@ -1252,6 +1252,73 @@
           },
           {
             "kind": "Var",
+            "name": "aiAskingService",
+            "printedName": "aiAskingService",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any AIBudsAI.AIAskingServiceAPI)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AIAskingServiceAPI",
+                    "printedName": "any AIBudsAI.AIAskingServiceAPI",
+                    "usr": "c:@M@AIBudsAI@objc(pl)AIBudsAIAskingServiceAPI"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@AIBudsStarBurst@objc(cs)AIBudsStarBurstSDK(py)aiAskingService",
+            "mangledName": "$s15AIBudsStarBurst0bC3SDKC15aiAskingService0A2AI08AIAskingG3API_pSgvp",
+            "moduleName": "AIBudsStarBurst",
+            "objc_name": "aiAskingService",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any AIBudsAI.AIAskingServiceAPI)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AIAskingServiceAPI",
+                        "printedName": "any AIBudsAI.AIAskingServiceAPI",
+                        "usr": "c:@M@AIBudsAI@objc(pl)AIBudsAIAskingServiceAPI"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@AIBudsStarBurst@objc(cs)AIBudsStarBurstSDK(im)aiAskingService",
+                "mangledName": "$s15AIBudsStarBurst0bC3SDKC15aiAskingService0A2AI08AIAskingG3API_pSgvg",
+                "moduleName": "AIBudsStarBurst",
+                "objc_name": "aiAskingService",
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "ErrorDomain",
             "printedName": "ErrorDomain",
             "children": [
@@ -11002,14 +11069,14 @@
       "kind": "StringLiteral",
       "offset": 257,
       "length": 15,
-      "value": "\"1.0.0-beta.28\""
+      "value": "\"1.0.0-beta.30\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/SDKBuildInfo\/SDK_Build_Info.swift",
       "kind": "StringLiteral",
       "offset": 388,
       "length": 13,
-      "value": "\"20260813003\""
+      "value": "\"20260813005\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/SDKBuildInfo\/SDK_Build_Info.swift",

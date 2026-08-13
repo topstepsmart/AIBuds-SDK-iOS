@@ -11,6 +11,12 @@ import Swift
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
+@_inheritsConvenienceInitializers @objc(AIBudsAIAskingConfig) final public class AIAskingConfig : ObjectiveC.NSObject {
+  @objc(defaultConfig) public static let `default`: AIBudsAIFoundation.AIAskingConfig
+  @objc final public var specifiedAgent: Swift.String?
+  @objc override dynamic public init()
+  @objc deinit
+}
 @objc(AIBudsAIAudioRecordingSessionConfig) final public class AIAudioRecordingSessionConfig : ObjectiveC.NSObject, AIBudsFoundation.CustomDebugJsonStringConvertible {
   @objc(defaultConfig) public static let `default`: AIBudsAIFoundation.AIAudioRecordingSessionConfig
   @objc final public var recordingScene: AIBudsFoundation.RecordingScene
