@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
   # ==================== Basic Information ====================
   # SDK name and version
   s.name         = "AIBudsSDK"
-  s.version      = "1.0.0-beta.30"
+  s.version      = "1.0.0-beta.31"
   s.summary      = "AIBuds SDK - An iOS framework for connecting AI devices"
   s.description  = <<-DESC
                     AIBuds SDK is a versatile framework for connecting iOS apps to AI devices. It provides modular components including core connectivity, Bluetooth management, voice assistant, AI capabilities, logging utilities, and foundation services.
@@ -161,6 +161,8 @@ Pod::Spec.new do |s|
       starburst.dependency 'AIBudsSDK/ThirdParty/Lame'
       starburst.dependency 'AIBudsSDK/ThirdParty/StarburstSdk'
       starburst.dependency 'AIBudsSDK/AI/Core'
+      starburst.dependency 'libopus', '1.1'
+      starburst.dependency 'libogg', '1.3.5'
     end
 
     # MltCloud - Magic Cloud AI integration
@@ -170,6 +172,7 @@ Pod::Spec.new do |s|
       mltcloud.dependency 'AIBudsSDK/ThirdParty/Lame'
       mltcloud.dependency 'AIBudsSDK/ThirdParty/MagicHelper'
       mltcloud.dependency 'AIBudsSDK/AI/Core'
+      mltcloud.dependency 'libopus', '1.1'
       mltcloud.dependency 'libogg', '1.3.5'
     end
 

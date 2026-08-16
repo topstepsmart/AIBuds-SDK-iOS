@@ -13989,21 +13989,21 @@
       "kind": "StringLiteral",
       "offset": 257,
       "length": 15,
-      "value": "\"1.0.0-beta.30\""
+      "value": "\"1.0.0-beta.31\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/SDKBuildInfo\/SDK_Build_Info.swift",
       "kind": "StringLiteral",
       "offset": 388,
       "length": 13,
-      "value": "\"20260813005\""
+      "value": "\"20260816001\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/SDKBuildInfo\/SDK_Build_Info.swift",
       "kind": "StringLiteral",
       "offset": 503,
       "length": 12,
-      "value": "\"2026-08-13\""
+      "value": "\"2026-08-16\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/CameraOTA(摄像头固件升级)\/CameraOtaPhase.swift",
@@ -17726,7 +17726,7 @@
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
       "offset": 19216,
-      "length": 28638,
+      "length": 30166,
       "value": "\"\""
     },
     {
@@ -18193,22 +18193,29 @@
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/SDKBluetooth(蓝牙)\/SDKBluetooth.swift",
+      "kind": "Dictionary",
+      "offset": 2374,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/SDKBluetooth(蓝牙)\/SDKBluetooth.swift",
       "kind": "Array",
-      "offset": 2423,
+      "offset": 2730,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/SDKBluetooth(蓝牙)\/SDKBluetooth.swift",
       "kind": "Array",
-      "offset": 2597,
+      "offset": 2904,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/SDKBluetooth(蓝牙)\/SDKBluetooth.swift",
       "kind": "Array",
-      "offset": 4166,
+      "offset": 4473,
       "length": 2,
       "value": "[]"
     },
