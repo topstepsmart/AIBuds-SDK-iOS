@@ -172,6 +172,16 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "AIBudsVideoStabilization",
+        "printedName": "AIBudsVideoStabilization",
+        "declKind": "Import",
+        "moduleName": "AIBudsAllInOne",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "AIBudsAllInOneSDK",
         "printedName": "AIBudsAllInOneSDK",
@@ -758,21 +768,21 @@
       "kind": "StringLiteral",
       "offset": 257,
       "length": 15,
-      "value": "\"1.0.0-beta.31\""
+      "value": "\"1.0.0-beta.32\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/SDKBuildInfo\/SDK_Build_Info.swift",
       "kind": "StringLiteral",
       "offset": 388,
       "length": 13,
-      "value": "\"20260816001\""
+      "value": "\"20260819001\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/SDKBuildInfo\/SDK_Build_Info.swift",
       "kind": "StringLiteral",
       "offset": 503,
       "length": 12,
-      "value": "\"2026-08-16\""
+      "value": "\"2026-08-19\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAllInOne\/AIBudsAllInOne.swift",
@@ -798,49 +808,49 @@
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAllInOne\/AIBudsAllInOneSDK.swift",
       "kind": "StringLiteral",
-      "offset": 2079,
+      "offset": 2120,
       "length": 100,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAllInOne\/AIBudsAllInOneSDK.swift",
       "kind": "StringLiteral",
-      "offset": 2097,
+      "offset": 2138,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAllInOne\/AIBudsAllInOneSDK.swift",
       "kind": "StringLiteral",
-      "offset": 2108,
+      "offset": 2149,
       "length": 1,
       "value": "\" V\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAllInOne\/AIBudsAllInOneSDK.swift",
       "kind": "StringLiteral",
-      "offset": 2124,
+      "offset": 2165,
       "length": 1,
       "value": "\" (Build\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAllInOne\/AIBudsAllInOneSDK.swift",
       "kind": "StringLiteral",
-      "offset": 2143,
+      "offset": 2184,
       "length": 1,
       "value": "\") Release Date: \""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAllInOne\/AIBudsAllInOneSDK.swift",
       "kind": "StringLiteral",
-      "offset": 2178,
+      "offset": 2219,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAllInOne\/AIBudsAllInOneSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 7032,
+      "offset": 7293,
       "length": 4,
       "value": "3000"
     }

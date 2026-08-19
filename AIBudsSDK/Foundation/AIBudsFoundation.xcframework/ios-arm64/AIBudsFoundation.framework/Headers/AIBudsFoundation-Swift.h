@@ -1066,6 +1066,39 @@ typedef SWIFT_ENUM_NAMED(NSInteger, AIBudsHotspotState, "HotspotState", open) {
   AIBudsHotspotStateWifiDirectTimeout = 5,
 };
 
+@class AIBudsMediaFileInfoModel;
+@class NSURL;
+SWIFT_ENUM_FWD_DECL(NSInteger, AIBudsMediaFileStabilizationStatus)
+/// The result of importing one media file to local storage.
+SWIFT_CLASS_NAMED("ImportedMediaFileModel")
+@interface AIBudsImportedMediaFileModel : NSObject <AIBudsCustomDebugJsonStringConvertible>
+/// Media metadata reported by the device.
+@property (nonatomic, readonly, strong) AIBudsMediaFileInfoModel * _Nonnull metadata;
+/// The local downloaded file for playback by default.
+@property (nonatomic, readonly, copy) NSURL * _Nullable localFileURL;
+/// The local stabilized file after post-processing, if available.
+/// This property is mutable to support async post-processing updates.
+@property (nonatomic, copy) NSURL * _Nullable stabilizedFileURL;
+/// The file name of the stabilized file, when post-processing succeeds.
+/// This is <code>nil</code> for files that were not processed (including files that are not
+/// eligible for stabilization).
+@property (nonatomic, readonly, copy) NSString * _Nullable stabilizedFileName;
+/// Stabilization status indicating whether the file was processed and why
+/// it may not have been.
+@property (nonatomic) enum AIBudsMediaFileStabilizationStatus stabilizationStatus;
+/// Whether this media file has actually been through stabilization processing.
+/// Returns <code>true</code> only when <code>stabilizedFileURL</code> is non-nil, regardless of
+/// whether the file contains six-axis data.
+@property (nonatomic, readonly) BOOL isStabilized;
+- (nonnull instancetype)initWithMetadata:(AIBudsMediaFileInfoModel * _Nonnull)metadata localFileURL:(NSURL * _Nullable)localFileURL stabilizedFileURL:(NSURL * _Nullable)stabilizedFileURL OBJC_DESIGNATED_INITIALIZER;
+/// Description of media file info model
+@property (nonatomic, readonly, copy) NSString * _Nonnull description;
+/// Debug JSON string of media file info model
+@property (nonatomic, readonly, copy) NSString * _Nonnull debugJsonString;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 /// Live streaming mode
 typedef SWIFT_ENUM_NAMED(NSInteger, AIBudsLiveStreamingMode, "LiveStreamingMode", open) {
 /// RTSP video stream
@@ -1531,6 +1564,24 @@ typedef SWIFT_ENUM_NAMED(NSInteger, AIBudsSpatialAudioMode, "SpatialAudioMode", 
   AIBudsSpatialAudioModeHeadTracking = 2,
 };
 
+/// Stabilization status of an imported media file.
+typedef SWIFT_ENUM_NAMED(NSInteger, AIBudsMediaFileStabilizationStatus, "StabilizationStatus", open) {
+/// Non-six-axis file; no stabilization needed.
+  AIBudsMediaFileStabilizationStatusNotRequired = 0,
+/// Six-axis file awaiting stabilization processing.
+  AIBudsMediaFileStabilizationStatusPending = 1,
+/// Stabilization succeeded; prefer playing <code>stabilizedFileURL</code>.
+  AIBudsMediaFileStabilizationStatusStabilized = 2,
+/// Six-axis file but no stabilization plugin registered on AIBudsSDK.
+  AIBudsMediaFileStabilizationStatusPluginUnavailable = 3,
+/// Six-axis file; plugin exists but <code>canProcess</code> returned non-<code>.canProcess</code>.
+  AIBudsMediaFileStabilizationStatusSkipped = 4,
+/// Stabilization processing failed.
+  AIBudsMediaFileStabilizationStatusFailed = 5,
+/// Stabilization explicitly disabled by the app; the app will handle it.
+  AIBudsMediaFileStabilizationStatusDisabled = 6,
+};
+
 /// Parameters required to authenticate a device with the StarBurst AI
 SWIFT_CLASS_NAMED("StarBurstAIAuthParams")
 @interface AIBudsStarBurstAIAuthParams : NSObject <NSSecureCoding>
@@ -1624,6 +1675,22 @@ SWIFT_CLASS_NAMED("VideoRecordDirectionInfoModel")
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
+
+/// Result enum describing whether the plugin can process a file and, if not, why.
+typedef SWIFT_ENUM_NAMED(NSInteger, AIBudsVideoStabilizationCanProcessResult, "VideoStabilizationCanProcessResult", open) {
+/// The plugin can process this file.
+  AIBudsVideoStabilizationCanProcessResultCanProcess = 0,
+/// The current platform is not supported (e.g. simulator).
+  AIBudsVideoStabilizationCanProcessResultUnsupportedPlatform = 1,
+/// The file type is not a video.
+  AIBudsVideoStabilizationCanProcessResultUnsupportedFileType = 2,
+/// The metadata does not contain six-axis debounce info.
+  AIBudsVideoStabilizationCanProcessResultNoSixAxisMetadata = 3,
+/// The six-axis magic number “Thisadir” was not found at the end of the file.
+  AIBudsVideoStabilizationCanProcessResultNoSixAxisMagicInFile = 4,
+/// The file could not be read or is too small.
+  AIBudsVideoStabilizationCanProcessResultFileNotReadable = 5,
+};
 
 /// Device volume change reason
 typedef SWIFT_ENUM_NAMED(NSInteger, AIBudsVolumeChangedReason, "VolumeChangedReason", open) {

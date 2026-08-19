@@ -15,6 +15,7 @@
 @property (nonatomic, strong) NSString *fileName;
 @property (nonatomic, assign) AIBudsMediaFileType fileType;
 @property (nonatomic, assign) BOOL containsSixAxisDebounceInfo;
+@property (nonatomic, assign) AIBudsMediaFileStabilizationStatus stabilizationStatus;
 @end
 
 @implementation ImportedFile
@@ -43,11 +44,9 @@
 @property (nonatomic, strong) UIView *importedFilesCardView;
 @property (nonatomic, strong) UICollectionView *filesCollectionView;
 @property (nonatomic, strong) NSMutableArray<ImportedFile*> *importedFiles;
+@property (nonatomic, strong) NSMutableSet<NSString*> *displayedFileNames;
 
 @property (nonatomic, assign) NSInteger totalMediaCount;
-@property (nonatomic, strong) NSDictionary<NSString *, AIBudsMediaFileInfoModel *> *deviceMediaFilesInfo;
-@property (nonatomic, strong) NSString* importingUrl;
-@property (nonatomic, strong) NSMutableData* cacheData;
 
 @property (nonatomic, strong) AVAudioPlayer *audioPlayer;
 @property (nonatomic, strong) UIViewController *audioPlayerViewController;
@@ -123,6 +122,7 @@
     
     // 初始化数据
     self.importedFiles = [NSMutableArray array];
+    self.displayedFileNames = [NSMutableSet set];
     
     // 设置约束
     [NSLayoutConstraint activateConstraints:@[
@@ -179,72 +179,90 @@
 
 - (void)createImportStatusCard {
     self.importStatusCardView = [self createCardView];
-    
+
+    // Content container that clips to rounded corners, card itself keeps shadow
+    UIView *contentView = [[UIView alloc] init];
+    contentView.translatesAutoresizingMaskIntoConstraints = NO;
+    contentView.clipsToBounds = YES;
+    contentView.layer.cornerRadius = 12;
+    [self.importStatusCardView addSubview:contentView];
+
     UILabel *titleLabel = [[UILabel alloc] init];
     titleLabel.text = NSLocalizedString(@"LocKey.ImportStatus", comment:@"Import Status");
     titleLabel.font = [UIFont systemFontOfSize:18 weight:UIFontWeightSemibold];
     titleLabel.textColor = [UIColor labelColor];
     titleLabel.translatesAutoresizingMaskIntoConstraints = NO;
-    [self.importStatusCardView addSubview:titleLabel];
-    
+    [contentView addSubview:titleLabel];
+
     self.currentFileNameLabel = [[UILabel alloc] init];
     self.currentFileNameLabel.text = @"";
     self.currentFileNameLabel.font = [UIFont systemFontOfSize:14];
     self.currentFileNameLabel.textColor = [UIColor secondaryLabelColor];
     self.currentFileNameLabel.numberOfLines = 2;
     self.currentFileNameLabel.translatesAutoresizingMaskIntoConstraints = NO;
-    [self.importStatusCardView addSubview:self.currentFileNameLabel];
-    
+    [contentView addSubview:self.currentFileNameLabel];
+
     self.importProgressView = [[UIProgressView alloc] init];
     self.importProgressView.progress = 0.0;
+    self.importProgressView.clipsToBounds = YES;
     self.importProgressView.translatesAutoresizingMaskIntoConstraints = NO;
-    [self.importStatusCardView addSubview:self.importProgressView];
-    
+    [contentView addSubview:self.importProgressView];
+
     self.importSpeedLabel = [[UILabel alloc] init];
     self.importSpeedLabel.text = @"";
     self.importSpeedLabel.font = [UIFont systemFontOfSize:14];
     self.importSpeedLabel.textColor = [UIColor secondaryLabelColor];
     self.importSpeedLabel.translatesAutoresizingMaskIntoConstraints = NO;
-    [self.importStatusCardView addSubview:self.importSpeedLabel];
-    
+    [contentView addSubview:self.importSpeedLabel];
+
     self.importStatusLabel = [[UILabel alloc] init];
     self.importStatusLabel.text = @"";
     self.importStatusLabel.font = [UIFont systemFontOfSize:14];
     self.importStatusLabel.textColor = [UIColor systemBlueColor];
     self.importStatusLabel.translatesAutoresizingMaskIntoConstraints = NO;
-    [self.importStatusCardView addSubview:self.importStatusLabel];
-    
-    // 新增：显示当前导入进度的 label
+    [contentView addSubview:self.importStatusLabel];
+
     self.importProgressLabel = [[UILabel alloc] init];
     self.importProgressLabel.text = @"";
     self.importProgressLabel.font = [UIFont systemFontOfSize:14];
     self.importProgressLabel.textColor = [UIColor secondaryLabelColor];
     self.importProgressLabel.translatesAutoresizingMaskIntoConstraints = NO;
-    [self.importStatusCardView addSubview:self.importProgressLabel];
-    
+    [contentView addSubview:self.importProgressLabel];
+
     [NSLayoutConstraint activateConstraints:@[
-        [titleLabel.topAnchor constraintEqualToAnchor:self.importStatusCardView.topAnchor constant:20],
-        [titleLabel.leadingAnchor constraintEqualToAnchor:self.importStatusCardView.leadingAnchor constant:20],
-        
+        // Content container fills the card
+        [contentView.topAnchor constraintEqualToAnchor:self.importStatusCardView.topAnchor],
+        [contentView.leadingAnchor constraintEqualToAnchor:self.importStatusCardView.leadingAnchor],
+        [contentView.trailingAnchor constraintEqualToAnchor:self.importStatusCardView.trailingAnchor],
+        [contentView.bottomAnchor constraintEqualToAnchor:self.importStatusCardView.bottomAnchor],
+
+        // Inner subviews anchored to contentView
+        [titleLabel.topAnchor constraintEqualToAnchor:contentView.topAnchor constant:20],
+        [titleLabel.leadingAnchor constraintEqualToAnchor:contentView.leadingAnchor constant:20],
+        [titleLabel.trailingAnchor constraintEqualToAnchor:contentView.trailingAnchor constant:-20],
+
         [self.currentFileNameLabel.topAnchor constraintEqualToAnchor:titleLabel.bottomAnchor constant:15],
-        [self.currentFileNameLabel.leadingAnchor constraintEqualToAnchor:self.importStatusCardView.leadingAnchor constant:20],
-        [self.currentFileNameLabel.trailingAnchor constraintEqualToAnchor:self.importStatusCardView.trailingAnchor constant:-20],
-        
+        [self.currentFileNameLabel.leadingAnchor constraintEqualToAnchor:contentView.leadingAnchor constant:20],
+        [self.currentFileNameLabel.trailingAnchor constraintEqualToAnchor:contentView.trailingAnchor constant:-20],
+
         [self.importProgressView.topAnchor constraintEqualToAnchor:self.currentFileNameLabel.bottomAnchor constant:15],
-        [self.importProgressView.leadingAnchor constraintEqualToAnchor:self.importStatusCardView.leadingAnchor constant:20],
-        [self.importProgressView.trailingAnchor constraintEqualToAnchor:self.importStatusCardView.trailingAnchor constant:-20],
-        
+        [self.importProgressView.leadingAnchor constraintEqualToAnchor:contentView.leadingAnchor constant:20],
+        [self.importProgressView.trailingAnchor constraintEqualToAnchor:contentView.trailingAnchor constant:-20],
+
         [self.importSpeedLabel.topAnchor constraintEqualToAnchor:self.importProgressView.bottomAnchor constant:10],
-        [self.importSpeedLabel.leadingAnchor constraintEqualToAnchor:self.importStatusCardView.leadingAnchor constant:20],
-        
+        [self.importSpeedLabel.leadingAnchor constraintEqualToAnchor:contentView.leadingAnchor constant:20],
+        [self.importSpeedLabel.trailingAnchor constraintEqualToAnchor:contentView.trailingAnchor constant:-20],
+
         [self.importProgressLabel.topAnchor constraintEqualToAnchor:self.importSpeedLabel.bottomAnchor constant:10],
-        [self.importProgressLabel.leadingAnchor constraintEqualToAnchor:self.importStatusCardView.leadingAnchor constant:20],
-        
+        [self.importProgressLabel.leadingAnchor constraintEqualToAnchor:contentView.leadingAnchor constant:20],
+        [self.importProgressLabel.trailingAnchor constraintEqualToAnchor:contentView.trailingAnchor constant:-20],
+
         [self.importStatusLabel.topAnchor constraintEqualToAnchor:self.importProgressLabel.bottomAnchor constant:10],
-        [self.importStatusLabel.leadingAnchor constraintEqualToAnchor:self.importStatusCardView.leadingAnchor constant:20],
-        [self.importStatusLabel.bottomAnchor constraintEqualToAnchor:self.importStatusCardView.bottomAnchor constant:-20]
+        [self.importStatusLabel.leadingAnchor constraintEqualToAnchor:contentView.leadingAnchor constant:20],
+        [self.importStatusLabel.trailingAnchor constraintEqualToAnchor:contentView.trailingAnchor constant:-20],
+        [self.importStatusLabel.bottomAnchor constraintEqualToAnchor:contentView.bottomAnchor constant:-20]
     ]];
-    
+
     [self.mainStackView addArrangedSubview:self.importStatusCardView];
 }
 
@@ -296,6 +314,7 @@
     cardView.layer.shadowOpacity = 0.1;
     cardView.layer.shadowRadius = 4;
     cardView.translatesAutoresizingMaskIntoConstraints = NO;
+    cardView.clipsToBounds = NO;
     return cardView;
 }
 
@@ -345,7 +364,6 @@
         self.importStatusLabel.textColor = [UIColor systemRedColor];
         return;
     }
-    self.cacheData = [NSMutableData data];
     // 开始导入文件
     [self startImportingFiles];
 }
@@ -353,10 +371,11 @@
 - (void)startImportingFiles {
     // 清空之前的导入文件
     [self.importedFiles removeAllObjects];
+    [self.displayedFileNames removeAllObjects];
     [self.filesCollectionView reloadData];
     __weak typeof(self) weakSelf = self;
-    id<AIBudsDeviceFileImportAPI> device = (id<AIBudsDeviceFileImportAPI>)self.device;
-    if([device conformsToProtocol:@protocol(AIBudsDeviceFileImportAPI)])
+    id<AIBudsDeviceMediaFileImportAPI> device = (id<AIBudsDeviceMediaFileImportAPI>)self.device;
+    if([device conformsToProtocol:@protocol(AIBudsDeviceMediaFileImportAPI)])
     {
         [device fetchMediaFilesInfoWithConfigureHotspotStartingHandler:^{
             [weakSelf updateImportStatus:NSLocalizedString(@"LocKey.ConfiguringHotspot", comment:@"Configuring hotspot...") color:[UIColor systemBlueColor]];
@@ -403,16 +422,8 @@
             if(success)
             {
                 [weakSelf updateImportStatus:NSLocalizedString(@"LocKey.ReadyToImport", comment:@"Ready to import") color:[UIColor systemGreenColor]];
-                NSMutableArray<NSString *> *toImportFiles = [NSMutableArray array];
-                NSMutableDictionary<NSString *, AIBudsMediaFileInfoModel *> *fileInfoDict = [NSMutableDictionary dictionary];
-                for(AIBudsMediaFileInfoModel *fileInfo in mediaFiles)
-                {
-                    [toImportFiles addObject:fileInfo.fileUrl];
-                    [fileInfoDict setObject:fileInfo forKey:fileInfo.fileUrl];
-                }
-                weakSelf.deviceMediaFilesInfo = fileInfoDict;
                 dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-                    [weakSelf importWithFileUrls:toImportFiles];
+                    [weakSelf importMediaFiles:mediaFiles];
                 });
             }
             else
@@ -436,85 +447,147 @@
     });
 }
 
-- (void) importWithFileUrls:(NSArray<NSString *> *)fileUrls {
-    XLOG_INFO(@"importWithFileUrls: %@", fileUrls);
+- (void)importMediaFiles:(NSArray<AIBudsMediaFileInfoModel *> *)mediaFiles {
+    XLOG_INFO(@"importMediaFiles: %@", mediaFiles);
     __weak typeof(self) weakSelf = self;
-    id<AIBudsDeviceFileImportAPI> device = (id<AIBudsDeviceFileImportAPI>)self.device;
-    if([device conformsToProtocol:@protocol(AIBudsDeviceFileImportAPI)])
+    id<AIBudsDeviceMediaFileImportAPI> device = (id<AIBudsDeviceMediaFileImportAPI>)self.device;
+    if([device conformsToProtocol:@protocol(AIBudsDeviceMediaFileImportAPI)])
     {
-        [device importFileWithUrls:fileUrls dataChunkHandler:^(NSData * _Nullable dataChunk, NSString * _Nonnull taskId, NSString * _Nonnull fileUrl, uint64_t fileSize, uint64_t transferredSize, NSError * _Nullable error) {
-            weakSelf.importingUrl = fileUrl;
+        [device importMediaFiles:mediaFiles
+                dataChunkHandler:^(NSData * _Nullable dataChunk, NSString * _Nonnull taskId, NSString * _Nonnull fileUrl, uint64_t fileSize, uint64_t transferredSize, NSError * _Nullable error) {
             if(error)
             {
-                XLOG_ERROR(@"import file %@ error: %@", fileUrl, error);
-                NSString *errorMessage = error ? error.localizedDescription : @"Unknown error";
-                NSString* message = [NSString stringWithFormat:NSLocalizedString(@"LocKey.FileImportFailedFormat", comment:@"File import failed: %@"), errorMessage];
-                [weakSelf updateImportStatus:message color:[UIColor systemRedColor]];
+                XLOG_ERROR(@"Media file data chunk %@ error: %@", fileUrl, error);
                 return;
             }
             if(dataChunk)
             {
-                [weakSelf.cacheData appendData:dataChunk];
-                NSInteger progress = (NSInteger)(transferredSize * 100.0 / fileSize);
+                XLOG_VERBOSE(@"Media file data chunk: task=%@, url=%@, chunk=%lu bytes, transferred=%llu/%llu (%.1f%%)",
+                             taskId,
+                             fileUrl,
+                             (unsigned long)dataChunk.length,
+                             (unsigned long long)transferredSize,
+                             (unsigned long long)fileSize,
+                             fileSize > 0 ? (double)transferredSize / (double)fileSize * 100 : 0);
+            }
+            if (fileSize > 0) {
+                double progress = (double)transferredSize / (double)fileSize;
                 [weakSelf updateCurrentImportingFileProgress:progress];
             }
-        } singleTransferStartingHandler:^(NSString * _Nonnull fileUrl) {
-            weakSelf.importingUrl = fileUrl;
-            NSString* fileName = [fileUrl lastPathComponent];
+        } singleTransferStartingHandler:^(AIBudsMediaFileInfoModel * _Nonnull mediaFile) {
+            NSString *fileName = mediaFile.fileName.length > 0 ? mediaFile.fileName : mediaFile.fileUrl.lastPathComponent;
             [weakSelf updateImportingFileName:fileName];
+            [weakSelf updateImportingFileStatus:NSLocalizedString(@"Downloading media file...", comment:@"Media file download is running") color:[UIColor systemBlueColor]];
             [weakSelf updateCurrentImportingFileProgress:0];
-        } singleTransferCompletionHandler:^(NSString * _Nonnull fileUrl, BOOL success, NSError * _Nullable error) {
+        } singleTransferCompletionHandler:^(BOOL success, AIBudsImportedMediaFileModel * importedMediaFile, NSError * _Nullable error) {
+            if (!success) {
+                XLOG_ERROR(@"Media file transfer failed: %@, error: %@", importedMediaFile.metadata.fileName, error);
+            } else if (importedMediaFile.stabilizationStatus != AIBudsMediaFileStabilizationStatusPending) {
+                // 无需防抖或防抖已确定的文件，立即显示
+                [weakSelf displaySingleImportedMediaFile:importedMediaFile];
+            }
+            [weakSelf updateCurrentImportingFileProgress:1];
+        } transferSpeedHandler:^(uint64_t speed) {
+            [weakSelf updateSpeed:speed];
+        } transferBatchProgressHandler:^(NSInteger fileIndex, NSInteger totalFileCount) {
+            [weakSelf updateBatchProgress:fileIndex totalFileCount:totalFileCount];
+        } videoStabilizationPhaseBeginHandler:^{
+            [weakSelf updateImportingFileStatus:NSLocalizedString(@"Stabilizing media files...", comment:@"Video stabilization phase is running") color:[UIColor systemPurpleColor]];
+            [weakSelf updateCurrentImportingFileProgress:0];
+        } videoStabilizationSingleFileProgressHandler:^(AIBudsImportedMediaFileModel * _Nonnull mediaFile, double progress) {
+            NSString *fileName = mediaFile.metadata.fileName.length > 0 ? mediaFile.metadata.fileName : mediaFile.localFileURL.lastPathComponent;
+            [weakSelf updateImportingFileName:fileName];
+            [weakSelf updateCurrentImportingFileProgress:progress];
+            XLOG_INFO(@"Stabilization progress: %@ %.2f", fileName, progress);
+        } videoStabilizationSingleFileCompletionHandler:^(AIBudsImportedMediaFileModel * _Nonnull mediaFile, BOOL success) {
+            NSString *fileName = mediaFile.metadata.fileName.length > 0 ? mediaFile.metadata.fileName : mediaFile.localFileURL.lastPathComponent;
+            XLOG_INFO(@"Stabilization single file completed: %@, success=%d, status=%ld", fileName, success, (long)mediaFile.stabilizationStatus);
+            // 防抖完成后立即显示到列表，避免所有文件都处理完才刷新
+            [weakSelf displaySingleImportedMediaFile:mediaFile];
+        } videoStabilizationBatchProgressHandler:^(NSInteger fileIndex, NSInteger totalFileCount) {
+            [weakSelf updatePostProcessBatchProgress:fileIndex totalFileCount:totalFileCount];
+        } videoStabilizationPhaseFinishHandler:^{
+            [weakSelf updateCurrentImportingFileProgress:1];
+        } completionHandler:^(BOOL success, NSArray<AIBudsImportedMediaFileModel *> * _Nonnull importedMediaFiles, NSError * _Nullable error) {
+            [weakSelf displayImportedMediaFiles:importedMediaFiles];
             if(success)
             {
-                NSData* data = [weakSelf.cacheData copy];
-                dispatch_async(dispatch_get_global_queue(0, 0), ^{
-                    [weakSelf saveFileUrl:fileUrl data:data];
-                });
+                [weakSelf updateImportStatus:NSLocalizedString(@"LocKey.FileImportAllSuccess", comment:@"All media files imported successfully") color:[UIColor systemGreenColor]];
             }
-            
-            [weakSelf updateCurrentImportingFileProgress:100];
-        } speedHandler:^(uint64_t speed) {
-            [weakSelf updateSpeed:speed];
-        } batchProgressHandler:^(NSInteger fileIndex, NSInteger totalFileCount) {
-            [weakSelf updateBatchProgress:fileIndex totalFileCount:totalFileCount];
-        } completionHandler:^(BOOL success, NSNumber * _Nullable statusCode, NSError * _Nullable error) {
-            [weakSelf updateImportStatus:NSLocalizedString(@"LocKey.FileImportAllSuccess", comment:@"All files import success") color:[UIColor systemGreenColor]];
+            else
+            {
+                NSString *errorMessage = error ? error.localizedDescription : @"Unknown error";
+                NSString *message = [NSString stringWithFormat:NSLocalizedString(@"LocKey.FileImportFailedFormat", comment:@"Media file import failed: %@"), errorMessage];
+                [weakSelf updateImportStatus:message color:[UIColor systemRedColor]];
+            }
         }];
     }
 }
 
--(void) saveFileUrl:(NSString*)fileUrl data:(NSData*)data {
-   AIBudsMediaFileInfoModel *fileInfo = self.deviceMediaFilesInfo[fileUrl];
-    if(!fileInfo)
-    {
-        XLOG_ERROR(@"fileInfo not found for fileUrl: %@", fileUrl);
-        return;
-    }
-    if(!data)
-    {
-        XLOG_ERROR(@"data is nil for fileUrl: %@", fileUrl);
-        return;
-    }
-    // 保存文件到 cache 目录
-    NSString* fileName = [fileUrl lastPathComponent];
+/// Returns the persistent directory where imported files are copied from the SDK's
+/// temporary directory so the user can keep them across sessions.
+- (NSURL *)persistentImportDirectoryURL {
     NSString *cacheDir = [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) firstObject];
-    NSString *filePath = [cacheDir stringByAppendingPathComponent:fileName];
-    BOOL writeSuccess = [data writeToFile:filePath atomically:YES];
-    if (!writeSuccess) {
-        XLOG_ERROR(@"Failed to write file to cache: %@", filePath);
-        return;
-    }
-    XLOG_INFO(@"File saved to cache: %@", filePath);
-    ImportedFile *importedFile = [ImportedFile new];
-    importedFile.fileName = fileName;
-    importedFile.fileType = fileInfo.fileType;
-    importedFile.localPath = filePath;
-    importedFile.containsSixAxisDebounceInfo = fileInfo.containsSixAxisDebounceInfo;
-    [self.importedFiles addObject:importedFile];
+    NSString *directoryPath = [cacheDir stringByAppendingPathComponent:@"AIBudsMediaImports"];
+    return [NSURL fileURLWithPath:directoryPath isDirectory:YES];
+}
+
+- (void)displaySingleImportedMediaFile:(AIBudsImportedMediaFileModel *)result {
     __weak typeof(self) weakSelf = self;
-    dispatch_async(dispatch_get_main_queue(), ^{
-        [weakSelf.filesCollectionView reloadData];
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        __strong typeof(weakSelf) strongSelf = weakSelf;
+        if(!strongSelf) return;
+        NSURL *destinationDir = [strongSelf persistentImportDirectoryURL];
+        [[NSFileManager defaultManager] createDirectoryAtURL:destinationDir
+                                  withIntermediateDirectories:YES
+                                                   attributes:nil
+                                                        error:nil];
+
+        NSURL *sourceURL = result.stabilizedFileURL ?: result.localFileURL;
+        if (!sourceURL) {
+            XLOG_WARNING(@"Skipping media file with no local URL: %@", result.metadata.fileName);
+            return;
+        }
+        NSString *fileName = sourceURL.lastPathComponent.length > 0 ? sourceURL.lastPathComponent : result.metadata.fileName;
+        NSURL *destURL = [destinationDir URLByAppendingPathComponent:fileName];
+        [[NSFileManager defaultManager] removeItemAtURL:destURL error:nil];
+        NSError *copyError = nil;
+        if ([[NSFileManager defaultManager] copyItemAtURL:sourceURL toURL:destURL error:&copyError]) {
+            ImportedFile *importedFile = [ImportedFile new];
+            importedFile.fileName = fileName;
+            importedFile.fileType = result.metadata.fileType;
+            importedFile.localPath = destURL.path;
+            importedFile.containsSixAxisDebounceInfo = result.metadata.containsSixAxisDebounceInfo;
+            importedFile.stabilizationStatus = result.stabilizationStatus;
+
+            dispatch_async(dispatch_get_main_queue(), ^{
+                __strong typeof(weakSelf) strongSelf = weakSelf;
+                if(!strongSelf) return;
+                [strongSelf.displayedFileNames addObject:fileName];
+                [strongSelf.importedFiles addObject:importedFile];
+                [strongSelf.filesCollectionView reloadData];
+            });
+
+            XLOG_INFO(@"Imported media file: source=%@, destination=%@, status=%ld",
+                      sourceURL.path,
+                      destURL.path,
+                      (long)result.stabilizationStatus);
+        } else if (copyError) {
+            XLOG_ERROR(@"Failed to copy imported media file from %@ to %@: %@",
+                       sourceURL.path,
+                       destURL.path,
+                       copyError.localizedDescription);
+        }
     });
+}
+
+- (void)displayImportedMediaFiles:(NSArray<AIBudsImportedMediaFileModel *> *)mediaFiles {
+    for (AIBudsImportedMediaFileModel *result in mediaFiles) {
+        NSURL *sourceURL = result.stabilizedFileURL ?: result.localFileURL;
+        NSString *fileName = sourceURL.lastPathComponent.length > 0 ? sourceURL.lastPathComponent : result.metadata.fileName;
+        if ([self.displayedFileNames containsObject:fileName]) continue;
+        [self displaySingleImportedMediaFile:result];
+    }
 }
 
 -(void) updateImportingFileName:(NSString*)fileName {
@@ -526,12 +599,26 @@
     });
 }
 
--(void) updateCurrentImportingFileProgress:(NSInteger)progress {
+-(void)updateCurrentImportingFileProgress:(double)progress {
     __weak typeof(self) weakSelf = self;
     dispatch_async(dispatch_get_main_queue(), ^{
         __strong typeof(weakSelf) strongSelf = weakSelf;
         if(!strongSelf) return;
-        strongSelf.importProgressView.progress = progress;
+        double normalizedProgress = MIN(1.0, MAX(0.0, progress));
+        [strongSelf.importProgressView setProgress:(float)normalizedProgress animated:YES];
+    });
+}
+
+-(void)updateImportingFileStatus:(NSString*)status color:(UIColor*)color {
+    __weak typeof(self) weakSelf = self;
+    dispatch_async(dispatch_get_main_queue(), ^{
+        __strong typeof(weakSelf) strongSelf = weakSelf;
+        if(!strongSelf) return;
+        strongSelf.importStatusLabel.text = status;
+        strongSelf.importStatusLabel.textColor = color;
+        if ([color isEqual:[UIColor systemPurpleColor]]) {
+            strongSelf.importSpeedLabel.text = @"";
+        }
     });
 }
 
@@ -554,7 +641,22 @@
     dispatch_async(dispatch_get_main_queue(), ^{
         __strong typeof(weakSelf) strongSelf = weakSelf;
         if(!strongSelf) return;
-        strongSelf.importProgressLabel.text = [NSString stringWithFormat:@"%ld/%ld", (long)(fileIndex + 1), (long)totalFileCount];
+        NSInteger safeFileCount = MAX(totalFileCount, 1);
+        NSInteger safeIndex = MAX(0, fileIndex);
+        NSInteger displayIndex = MIN(safeFileCount, safeIndex + 1);
+        strongSelf.importProgressLabel.text = [NSString stringWithFormat:@"%ld/%ld", (long)displayIndex, (long)safeFileCount];
+    });
+}
+
+-(void) updatePostProcessBatchProgress:(NSInteger)fileIndex totalFileCount:(NSInteger)totalFileCount {
+    __weak typeof(self) weakSelf = self;
+    dispatch_async(dispatch_get_main_queue(), ^{
+        __strong typeof(weakSelf) strongSelf = weakSelf;
+        if(!strongSelf) return;
+        NSInteger safeFileCount = MAX(totalFileCount, 1);
+        NSInteger safeIndex = MAX(0, fileIndex);
+        NSInteger displayIndex = MIN(safeFileCount, safeIndex + 1);
+        strongSelf.importProgressLabel.text = [NSString stringWithFormat:@"%ld/%ld", (long)displayIndex, (long)safeFileCount];
     });
 }
 
@@ -576,6 +678,17 @@
     ImportedFile *fileInfo = self.importedFiles[indexPath.item];
     NSString *fileName = fileInfo.fileName;
     AIBudsMediaFileType fileType = fileInfo.fileType;
+    if (fileInfo.stabilizationStatus == AIBudsMediaFileStabilizationStatusStabilized) {
+        fileName = [fileName stringByAppendingFormat:@"\n%@", NSLocalizedString(@"Stabilized", comment:@"Media file was stabilized")];
+    } else if (fileInfo.stabilizationStatus == AIBudsMediaFileStabilizationStatusFailed) {
+        fileName = [fileName stringByAppendingFormat:@"\n%@", NSLocalizedString(@"Stabilization Failed", comment:@"Media file stabilization failed")];
+    } else if (fileInfo.stabilizationStatus == AIBudsMediaFileStabilizationStatusPluginUnavailable) {
+        fileName = [fileName stringByAppendingFormat:@"\n%@", NSLocalizedString(@"No Stabilization Plugin", comment:@"No stabilization plugin available")];
+    } else if (fileInfo.stabilizationStatus == AIBudsMediaFileStabilizationStatusSkipped) {
+        fileName = [fileName stringByAppendingFormat:@"\n%@", NSLocalizedString(@"Stabilization Skipped", comment:@"Stabilization was skipped")];
+    } else if (fileInfo.stabilizationStatus == AIBudsMediaFileStabilizationStatusDisabled) {
+        fileName = [fileName stringByAppendingFormat:@"\n%@", NSLocalizedString(@"Stabilization Disabled", comment:@"Stabilization was disabled by app")];
+    }
     
     // 创建文件类型图标
     UIImageView *iconImageView = [[UIImageView alloc] init];
@@ -598,7 +711,7 @@
     nameLabel.text = fileName;
     nameLabel.font = [UIFont systemFontOfSize:12];
     nameLabel.textColor = [UIColor labelColor];
-    nameLabel.numberOfLines = 2;
+    nameLabel.numberOfLines = 3;
     nameLabel.textAlignment = NSTextAlignmentCenter;
     nameLabel.translatesAutoresizingMaskIntoConstraints = NO;
     [cell.contentView addSubview:nameLabel];

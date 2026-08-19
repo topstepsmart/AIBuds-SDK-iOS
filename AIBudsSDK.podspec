@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
   # ==================== Basic Information ====================
   # SDK name and version
   s.name         = "AIBudsSDK"
-  s.version      = "1.0.0-beta.31"
+  s.version      = "1.0.0-beta.32"
   s.summary      = "AIBuds SDK - An iOS framework for connecting AI devices"
   s.description  = <<-DESC
                     AIBuds SDK is a versatile framework for connecting iOS apps to AI devices. It provides modular components including core connectivity, Bluetooth management, voice assistant, AI capabilities, logging utilities, and foundation services.
@@ -127,6 +127,25 @@ Pod::Spec.new do |s|
         'HEADER_SEARCH_PATHS' => '$(SDKROOT)/usr/include/libxml2'
       }
     end
+
+    # AWEISIMG - Private implementation used by the optional video stabilization plugin
+    thirdparty.subspec 'AWEISIMG' do |aweisimg|
+      aweisimg.vendored_frameworks = 'AIBudsSDK/ThirdParty/AWEISIMG/AWEISIMG_SDK.xcframework'
+    end
+  end
+
+  # Optional automatic post-processing for imported six-axis video recordings
+  s.subspec 'VideoStabilization' do |video_stabilization|
+    video_stabilization.vendored_frameworks = 'AIBudsSDK/VideoStabilization/AIBudsVideoStabilization.xcframework'
+    video_stabilization.dependency 'AIBudsSDK/Core'
+    video_stabilization.dependency 'AIBudsSDK/ThirdParty/AWEISIMG'
+    video_stabilization.frameworks = 'Foundation', 'AVFoundation', 'CoreMedia', 'CoreVideo', 'VideoToolbox'
+    video_stabilization.pod_target_xcconfig = {
+      'OTHER_LDFLAGS' => '$(inherited) -ObjC'
+    }
+    video_stabilization.user_target_xcconfig = {
+      'OTHER_LDFLAGS' => '$(inherited) -ObjC'
+    }
   end
 
   # Audio module - Audio processing capabilities
@@ -218,6 +237,7 @@ Pod::Spec.new do |s|
     all_in_one.dependency 'AIBudsSDK/VoiceAssistant'
     all_in_one.dependency 'AIBudsSDK/CrashReporter'
     all_in_one.dependency 'AIBudsSDK/LiveStream'
+    all_in_one.dependency 'AIBudsSDK/VideoStabilization'
   end
 
 end

@@ -13,6 +13,7 @@
 
 @protocol AIBudsFoundDeviceConvertible;
 @class AIBudsMediaFileInfoModel;
+@class AIBudsImportedMediaFileModel;
 
 typedef NS_ENUM(NSInteger, AIBudsCameraOtaProgressPhase);
 
@@ -159,48 +160,48 @@ typedef void (^AIBudsCameraOtaCompletionHandler)(BOOL success,
                                                  NSError *_Nullable error);
 
 /// Callback block for file import configure hotspot starting
-typedef void (^AIBudsFileImportConfigureHotspotStartingHandler)(void);
+typedef void (^AIBudsMediaFileImportConfigureHotspotStartingHandler)(void);
 
 /// Callback block for file import configure hotspot completion
 /// - Parameters:
 ///   - success: whether the configuration succeeded
 ///   - error: error information if failed
-typedef void (^AIBudsFileImportHotspotConfigureCompletionHandler)(BOOL success,
-                                                                  NSError *_Nullable error);
+typedef void (^AIBudsMediaFileImportHotspotConfigureCompletionHandler)(BOOL success,
+                                                                       NSError *_Nullable error);
 
 /// Callback block for entering file transfer mode starting
-typedef void (^AIBudsEnterFileTransferModeStartingHandler)(void);
+typedef void (^AIBudsEnterMediaFileTransferModeStartingHandler)(void);
 
 /// Callback block for entering file transfer mode completion
 /// - Parameters:
 ///   - success: whether entering file transfer mode succeeded
 ///   - error: error information if failed
-typedef void (^AIBudsEnterFileTransferModeCompletionHandler)(BOOL success,
-                                                             NSError *_Nullable error);
+typedef void (^AIBudsEnterMediaFileTransferModeCompletionHandler)(BOOL success,
+                                                                  NSError *_Nullable error);
 
 /// Callback block for waiting for device hotspot open during file import.
-typedef void (^AIBudsFileImportStartingToWaitForHotspotOpenHandler)(void);
+typedef void (^AIBudsMediaFileImportStartingToWaitForHotspotOpenHandler)(void);
 
 /// Callback block for file import connecting device hotspot starting
 /// - Parameters:
 ///   - ssid: the SSID of the device hotspot
-typedef void (^AIBudsFileImportConnectDeviceHotspotStartingHandler)(NSString *ssid);
+typedef void (^AIBudsMediaFileImportConnectDeviceHotspotStartingHandler)(NSString *ssid);
 
 /// Callback block for file import connecting device hotspot completion
 /// - Parameters:
 ///   - success: whether the connection succeeded
 ///   - error: error information if failed
-typedef void (^AIBudsFileImportDeviceHotspotConnectCompletionHandler)(BOOL success,
-                                                                      NSError *_Nullable error);
+typedef void (^AIBudsMediaFileImportDeviceHotspotConnectCompletionHandler)(BOOL success,
+                                                                           NSError *_Nullable error);
 
 /// Callback block for file import prepare completion
 /// - Parameters:
 ///   - success: whether file import prepare succeeded
 ///   - mediaFiles: the media file info models to be imported
 ///   - error: error information if failed
-typedef void (^AIBudsFileImportFetchMediaFilesInfoCompletionHandler)(BOOL success,
-                                                                     NSArray<AIBudsMediaFileInfoModel *> *mediaFiles,
-                                                                     NSError *_Nullable error);
+typedef void (^AIBudsMediaFileImportFetchMediaFilesInfoCompletionHandler)(BOOL success,
+                                                                          NSArray<AIBudsMediaFileInfoModel *> *mediaFiles,
+                                                                          NSError *_Nullable error);
 
 /// Handler invoked when a data chunk is received during file import.
 /// - Parameters:
@@ -210,38 +211,80 @@ typedef void (^AIBudsFileImportFetchMediaFilesInfoCompletionHandler)(BOOL succes
 ///   - fileSize: The total size of the file in bytes.
 ///   - transferredSize: The number of bytes that have been transferred so far.
 ///   - error: An optional error object that provides details if the operation failed; `nil` if the operation succeeded.
-typedef void (^AIBudsFileImportDataChunkHandler)(NSData *_Nullable dataChunk,
-                                                 NSString *taskId,
-                                                 NSString *fileUrl,
-                                                 uint64_t fileSize,
-                                                 uint64_t transferredSize,
-                                                 NSError *_Nullable error);
+typedef void (^AIBudsMediaFileImportDataChunkHandler)(NSData *_Nullable dataChunk,
+                                                      NSString *taskId,
+                                                      NSString *fileUrl,
+                                                      uint64_t fileSize,
+                                                      uint64_t transferredSize,
+                                                      NSError *_Nullable error);
 
 /// Callback block for single file import transfer starting
 /// - Parameters:
-///   - fileUrl: the URL of the file that is being imported
-typedef void (^AIBudsFileImportSingleTransferStartingHandler)(NSString *fileUrl);
+///   - mediaFile: metadata model of the file that is starting to be imported.
+typedef void (^AIBudsMediaFileImportSingleTransferStartingHandler)(AIBudsMediaFileInfoModel *mediaFile);
 
 /// Callback block for single file import transfer completion
 /// - Parameters:
-///   - fileUrl: the URL of the file that was imported
-///   - success: whether the file import succeeded
+///   - success: whether the file transfer succeeded
+///   - transferResult: local result model for this transfer, including metadata,
+///     downloaded local URL, optional playable stabilized URL, and possible error.
 ///   - error: error information if failed
-typedef void (^AIBudsFileImportSingleTransferCompletionHandler)(NSString *fileUrl,
-                                                                BOOL success,
-                                                                NSError *_Nullable error);
+typedef void (^AIBudsMediaFileImportSingleTransferCompletionHandler)(BOOL success,
+                                                                     AIBudsImportedMediaFileModel * transferResult,
+                                                                     NSError *_Nullable error);
 
 /// Callback block for file import speed change
 /// - Parameters:
 ///   - speed: the current speed in bytes per second
-typedef void (^AIBudsFileImportSpeedHandler)(uint64_t speed);
+typedef void (^AIBudsMediaFileImportTransferSpeedHandler)(uint64_t speed);
 
-/// Handler invoked when the file import batch progress changes.
+/// Handler invoked when the file import transfer batch progress changes.
 /// - Parameters:
 ///   - fileIndex: The index of the current file in the batch.
 ///   - totalFileCount: The total number of files in the batch.
-typedef void (^AIBudsFileImportBatchProgressHandler)(NSInteger fileIndex,
-                                                     NSInteger totalFileCount);
+typedef void (^AIBudsMediaFileImportTransferBatchProgressHandler)(NSInteger fileIndex,
+                                                                  NSInteger totalFileCount);
+
+
+
+/// Handler invoked when the video stabilization process begins.
+typedef void (^AIBudsVideoStabilizationPhaseBeginHandler)(void);
+
+/// Handler invoked to report progress during the stabilization of an individual video file.
+/// - Parameters:
+///   - mediaFile: The imported media file model representing the video being stabilized.
+///   - progress: The current stabilization progress, in the range 0.0 to 1.0.
+typedef void (^AIBudsVideoStabilizationProgressHandler)(AIBudsImportedMediaFileModel * mediaFile,
+                                                        double progress);
+
+/// Handler invoked to report batch progress when stabilizing multiple video files.
+/// - Parameters:
+///   - fileIndex: The zero-based index of the current file being processed in the batch.
+///   - totalFileCount: The total number of files in the stabilization batch.
+typedef void (^AIBudsVideoStabilizationBatchProgressHandler)(NSInteger fileIndex,
+                                                             NSInteger totalFileCount);
+              
+/// Handler invoked when the entire video stabilization process finishes.
+typedef void (^AIBudsVideoStabilizationPhaseFinishHandler)(void);
+
+/// Handler invoked when a single video file finishes stabilization (success or failure).
+/// - Parameters:
+///   - mediaFile: The imported media file model with updated stabilization status.
+///   - success: Whether the stabilization succeeded for this file.
+typedef void (^AIBudsVideoStabilizationSingleFileCompletionHandler)(AIBudsImportedMediaFileModel * mediaFile,
+                                                                   BOOL success);
+
+
+
+/// Completion handler for high-level media file import.
+/// - Parameters:
+///   - success: Whether all requested files were downloaded successfully.
+///   - mediaFiles: Successfully imported files. A post-processing failure falls back to
+///     the original file and is reported by the corresponding result model.
+///   - error: The download or local-file error when `success` is `NO`.
+typedef void (^AIBudsMediaFileImportCompletionHandler)(BOOL success,
+                                                       NSArray<AIBudsImportedMediaFileModel *> *mediaFiles,
+                                                       NSError *_Nullable error);
 
 /// Callback block for rtsp live streaming configure hotspot starting
 typedef void (^AIBudsLiveStreamingConfigureHotspotStartingHandler)(void);

@@ -854,16 +854,16 @@ typedef SWIFT_ENUM_NAMED(NSInteger, ABMateSdkErrorCode, "SdkErrorCode", open) {
   ABMateSdkErrorCodePhotoDataForSceneRecognitionTransferCanceledDueToBluetoothCommunicationError = 5004,
 /// Fetch media files info failed due to local network usage description missing
   ABMateSdkErrorCodeFetchMediaFilesInfoFailedDueToLocalNetworkUsageDescMissing = 6000,
-/// File import not ready
-  ABMateSdkErrorCodeFileImportNotReady = 6001,
-/// File import already in progress
-  ABMateSdkErrorCodeFileImportAlreadyInProgress = 6002,
-/// File import not in progress
-  ABMateSdkErrorCodeFileImportNotInProgress = 6003,
+/// Media file import not ready
+  ABMateSdkErrorCodeMediaFileImportNotReady = 6001,
+/// Media file import already in progress
+  ABMateSdkErrorCodeMediaFileImportAlreadyInProgress = 6002,
+/// Media file import not in progress
+  ABMateSdkErrorCodeMediaFileImportNotInProgress = 6003,
 /// Fetch media file infos failed due to hotspot configure error
   ABMateSdkErrorCodeFetchMediaFileInfosFailedDueToHotspotConfigureError = 6004,
-/// File import task prepare failed due to enter file transfer mode failed
-  ABMateSdkErrorCodeFileImportTaskPrepareFailedDueToEnterFileTransferModeFailed = 6005,
+/// Media file import task prepare failed due to enter file transfer mode failed
+  ABMateSdkErrorCodeMediaFileImportTaskPrepareFailedDueToEnterFileTransferModeFailed = 6005,
 /// Fetch media file infos failed due to hotspot connection failure
   ABMateSdkErrorCodeFetchMediaFileInfosFailedDueToHotspotConnectionFailure = 6006,
 /// Fetch media file infos failed due to empty base url
@@ -878,14 +878,14 @@ typedef SWIFT_ENUM_NAMED(NSInteger, ABMateSdkErrorCode, "SdkErrorCode", open) {
   ABMateSdkErrorCodeFetchMediaFileInfosFailedDueToInvalidResponse = 6011,
 /// Fetch media file infos failed due to HTTP error code not success range
   ABMateSdkErrorCodeFetchMediaFileInfosFailedDueToHttpError = 6012,
-/// Import files failed due to device connection lost
-  ABMateSdkErrorCodeImportFilesFailedDueToDeviceHotspotConnectionLost = 6013,
-/// Import files failed due to invalid url
-  ABMateSdkErrorCodeImportFilesFailedDueToInvalidUrl = 6014,
-/// Import files failed due to HTTP error code not success range
-  ABMateSdkErrorCodeImportFilesFailedDueToHttpError = 6015,
-/// Import files failed due to network error
-  ABMateSdkErrorCodeImportFilesFailedDueToNetworkError = 6016,
+/// Import media files failed due to device connection lost
+  ABMateSdkErrorCodeImportMediaFilesFailedDueToDeviceHotspotConnectionLost = 6013,
+/// Import media files failed due to invalid url
+  ABMateSdkErrorCodeImportMediaFilesFailedDueToInvalidUrl = 6014,
+/// Import media files failed due to HTTP error code not success range
+  ABMateSdkErrorCodeImportMediaFilesFailedDueToHttpError = 6015,
+/// Import media files failed due to network error
+  ABMateSdkErrorCodeImportMediaFilesFailedDueToNetworkError = 6016,
 /// Fetch media files info failed due to allow local networking missing
   ABMateSdkErrorCodeFetchMediaFilesInfoFailedDueToAllowLocalNetworkingMissing = 6017,
 /// Prompt script is invalid or empty

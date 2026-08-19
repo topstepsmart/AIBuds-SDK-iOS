@@ -124,11 +124,11 @@ extension AIBuds.AIBudsSDK {
   case photoDataForSceneRecognitionTransferCanceledDueToSystemCaptureFailed = 5003
   case photoDataForSceneRecognitionTransferCanceledDueToBluetoothCommunicationError = 5004
   case fetchMediaFilesInfoFailedDueToLocalNetworkUsageDescMissing = 6000
-  case fileImportNotReady = 6001
-  case fileImportAlreadyInProgress = 6002
-  case fileImportNotInProgress = 6003
+  case mediaFileImportNotReady = 6001
+  case mediaFileImportAlreadyInProgress = 6002
+  case mediaFileImportNotInProgress = 6003
   case fetchMediaFileInfosFailedDueToHotspotConfigureError = 6004
-  case fileImportTaskPrepareFailedDueToEnterFileTransferModeFailed = 6005
+  case mediaFileImportTaskPrepareFailedDueToEnterFileTransferModeFailed = 6005
   case fetchMediaFileInfosFailedDueToHotspotConnectionFailure = 6006
   case fetchMediaFileInfosFailedDueToEmptyBaseUrl = 6007
   case fetchMediaFileInfosFailedDueToInvalidConfigUrl = 6008
@@ -136,10 +136,10 @@ extension AIBuds.AIBudsSDK {
   case fetchMediaFileInfosFailedDueToNetworkError = 6010
   case fetchMediaFileInfosFailedDueToInvalidResponse = 6011
   case fetchMediaFileInfosFailedDueToHttpError = 6012
-  case importFilesFailedDueToDeviceHotspotConnectionLost = 6013
-  case importFilesFailedDueToInvalidUrl = 6014
-  case importFilesFailedDueToHttpError = 6015
-  case importFilesFailedDueToNetworkError = 6016
+  case importMediaFilesFailedDueToDeviceHotspotConnectionLost = 6013
+  case importMediaFilesFailedDueToInvalidUrl = 6014
+  case importMediaFilesFailedDueToHttpError = 6015
+  case importMediaFilesFailedDueToNetworkError = 6016
   case fetchMediaFilesInfoFailedDueToAllowLocalNetworkingMissing = 6017
   case promptScriptInvalidOrEmpty = 7001
   case promptScriptIsSending = 7002
@@ -503,13 +503,6 @@ extension Foundation.NSNotification.Name {
   @objc var eqSetting: AIBudsFoundation.EQSettingModel? { get }
   @objc(setEqualizer:withCompletion:) func setEqualizer(_ equalizerSetting: AIBudsFoundation.EQSettingModel, completion: AIBuds.AIBudsCompletionHandler?)
 }
-@objc(AIBudsDeviceFileImportAPI) public protocol DeviceFileImportAPI : AIBuds.DeviceAPI {
-  @objc(fetchMediaFilesInfoWithConfigureHotspotStartingHandler:hotspotConfigureCompletionHandler:enterFileTransferModeStartingHandler:enterFileTransferModeCompletedHandler:waitingForHotspotOpenHandler:connectDeviceHotspotStartingHandler:deviceHotspotConnectCompletionHandler:completionHandler:) func fetchMediaFilesInfo(configureHotspotStartingHandler: AIBuds.AIBudsFileImportConfigureHotspotStartingHandler?, hotspotConfigureCompletionHandler: AIBuds.AIBudsFileImportHotspotConfigureCompletionHandler?, enterFileTransferModeStartingHandler: AIBuds.AIBudsEnterFileTransferModeStartingHandler?, enterFileTransferModeCompletedHandler: AIBuds.AIBudsEnterFileTransferModeCompletionHandler?, waitingForHotspotOpenHandler: AIBuds.AIBudsFileImportStartingToWaitForHotspotOpenHandler?, connectDeviceHotspotStartingHandler: AIBuds.AIBudsFileImportConnectDeviceHotspotStartingHandler?, deviceHotspotConnectCompletionHandler: AIBuds.AIBudsFileImportDeviceHotspotConnectCompletionHandler?, completionHandler: AIBuds.AIBudsFileImportFetchMediaFilesInfoCompletionHandler?)
-  @objc(importFileWithUrls:dataChunkHandler:singleTransferStartingHandler:singleTransferCompletionHandler:speedHandler:batchProgressHandler:completionHandler:) func importFiles(_ fileUrls: [Swift.String], dataChunkHandler: AIBuds.AIBudsFileImportDataChunkHandler?, singleTransferStartingHandler: AIBuds.AIBudsFileImportSingleTransferStartingHandler?, singleTransferCompletionHandler: AIBuds.AIBudsFileImportSingleTransferCompletionHandler?, speedHandler: AIBuds.AIBudsFileImportSpeedHandler?, batchProgressHandler: AIBuds.AIBudsFileImportBatchProgressHandler?, completionHandler: AIBuds.AIBudsStatusCodeCompletionHandler?)
-  @objc(cancelFileImportWithCompletion:) func cancelFileImport(_ completion: AIBuds.AIBudsStatusCodeCompletionHandler?)
-  @objc(deleteFile:completion:) func deleteFile(_ fileName: Swift.String, completion: AIBuds.AIBudsStatusCodeCompletionHandler?)
-  @objc(deleteAllFilesWithCompletion:) func deleteAllFiles(_ completion: AIBuds.AIBudsStatusCodeCompletionHandler?)
-}
 @objc(AIBudsDeviceFindAPI) public protocol DeviceFindAPI : AIBuds.DeviceAPI {
   @objc(findDeviceWithCompletion:) func findDevice(_ completion: AIBuds.AIBudsCompletionHandler?)
   @objc(stopFindDeviceWithCompletion:) func stopFindDevice(_ completion: AIBuds.AIBudsCompletionHandler?)
@@ -535,6 +528,14 @@ extension Foundation.NSNotification.Name {
   @objc(setDeviceLanguage:completion:) func setDeviceLanguage(_ language: AIBudsFoundation.DeviceLanguage, completion: AIBuds.AIBudsCompletionHandler?)
   @objc(requestQueryStorageInfoWithCompletion:) func requestQueryStorageInfo(_ completion: AIBuds.AIBudsCompletionHandler?)
   @objc(requestQueryMediaCountInfoWithCompletion:) func requestQueryMediaCountInfo(_ completion: AIBuds.AIBudsCompletionHandler?)
+}
+@objc(AIBudsDeviceMediaFileImportAPI) public protocol DeviceMediaFileImportAPI : AIBuds.DeviceAPI {
+  @objc var isVideoStabilizationAvailable: Swift.Bool { get }
+  @objc(fetchMediaFilesInfoWithConfigureHotspotStartingHandler:hotspotConfigureCompletionHandler:enterFileTransferModeStartingHandler:enterFileTransferModeCompletedHandler:waitingForHotspotOpenHandler:connectDeviceHotspotStartingHandler:deviceHotspotConnectCompletionHandler:completionHandler:) func fetchMediaFilesInfo(configureHotspotStartingHandler: AIBuds.AIBudsMediaFileImportConfigureHotspotStartingHandler?, hotspotConfigureCompletionHandler: AIBuds.AIBudsMediaFileImportHotspotConfigureCompletionHandler?, enterFileTransferModeStartingHandler: AIBuds.AIBudsEnterMediaFileTransferModeStartingHandler?, enterFileTransferModeCompletedHandler: AIBuds.AIBudsEnterMediaFileTransferModeCompletionHandler?, waitingForHotspotOpenHandler: AIBuds.AIBudsMediaFileImportStartingToWaitForHotspotOpenHandler?, connectDeviceHotspotStartingHandler: AIBuds.AIBudsMediaFileImportConnectDeviceHotspotStartingHandler?, deviceHotspotConnectCompletionHandler: AIBuds.AIBudsMediaFileImportDeviceHotspotConnectCompletionHandler?, completionHandler: AIBuds.AIBudsMediaFileImportFetchMediaFilesInfoCompletionHandler?)
+  @objc(importMediaFiles:dataChunkHandler:singleTransferStartingHandler:singleTransferCompletionHandler:transferSpeedHandler:transferBatchProgressHandler:videoStabilizationPhaseBeginHandler:videoStabilizationSingleFileProgressHandler:videoStabilizationSingleFileCompletionHandler:videoStabilizationBatchProgressHandler:videoStabilizationPhaseFinishHandler:completionHandler:) func importMediaFiles(_ mediaFiles: [AIBudsFoundation.MediaFileInfoModel], dataChunkHandler: AIBuds.AIBudsMediaFileImportDataChunkHandler?, singleTransferStartingHandler: AIBuds.AIBudsMediaFileImportSingleTransferStartingHandler?, singleTransferCompletionHandler: AIBuds.AIBudsMediaFileImportSingleTransferCompletionHandler?, transferSpeedHandler: AIBuds.AIBudsMediaFileImportTransferSpeedHandler?, transferBatchProgressHandler: AIBuds.AIBudsMediaFileImportTransferBatchProgressHandler?, videoStabilizationPhaseBeginHandler: AIBuds.AIBudsVideoStabilizationPhaseBeginHandler?, videoStabilizationSingleFileProgressHandler: AIBuds.AIBudsVideoStabilizationProgressHandler?, videoStabilizationSingleFileCompletionHandler: AIBuds.AIBudsVideoStabilizationSingleFileCompletionHandler?, videoStabilizationBatchProgressHandler: AIBuds.AIBudsVideoStabilizationBatchProgressHandler?, videoStabilizationPhaseFinishHandler: AIBuds.AIBudsVideoStabilizationPhaseFinishHandler?, completionHandler: AIBuds.AIBudsMediaFileImportCompletionHandler?)
+  @objc(cancelMediaFileImportWithCompletion:) func cancelMediaFileImport(_ completion: AIBuds.AIBudsStatusCodeCompletionHandler?)
+  @objc(deleteMediaFile:completion:) func deleteMediaFile(_ fileName: Swift.String, completion: AIBuds.AIBudsStatusCodeCompletionHandler?)
+  @objc(deleteAllMediaFilesWithCompletion:) func deleteAllMediaFiles(_ completion: AIBuds.AIBudsStatusCodeCompletionHandler?)
 }
 @objc(AIBudsDeviceMusicControlAPI) public protocol DeviceMusicControlAPI : AIBuds.DeviceAPI {
   @objc(playMusicWithCompletion:) func playMusic(_ completion: AIBuds.AIBudsCompletionHandler?)
@@ -672,6 +673,12 @@ extension Foundation.NSNotification.Name {
   @objc(sendStarBurstAiBridgeData:) func sendStarBurstAiBridgeData(_ data: Foundation.Data)
   @objc(didReceiveStarBurstAuthResult:error:) func didReceiveStarBurstAuthResult(_ isSuccess: Swift.Bool, error: Foundation.NSError?)
 }
+@objc(AIBudsVideoStabilizationPlugin) public protocol VideoStabilizationPlugin : ObjectiveC.NSObjectProtocol {
+  @objc var identifier: Swift.String { get }
+  @objc(canProcessMediaFileURL:metadata:) func canProcess(_ mediaFileURL: Foundation.URL, metadata: AIBudsFoundation.MediaFileInfoModel) -> AIBudsFoundation.VideoStabilizationCanProcessResult
+  @objc(processMediaFileAtURL:metadata:outputURL:progressHandler:completionHandler:) func processMediaFile(at inputURL: Foundation.URL, metadata: AIBudsFoundation.MediaFileInfoModel, outputURL: Foundation.URL, progressHandler: @escaping (Swift.Double) -> Swift.Void, completionHandler: @escaping (Foundation.URL?, Foundation.NSError?) -> Swift.Void)
+  @objc optional func cancelAllProcessing()
+}
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(AIBudsStoredDevicesMgr) public class StoredDevicesMgr : ObjectiveC.NSObject {
   @objc public static func addDevice(_ device: any AIBuds.DeviceConvertible) -> Swift.Bool
   @objc public static func removeDevice(_ device: any AIBuds.DeviceConvertible)
@@ -717,6 +724,18 @@ extension AIBuds.AIBudsSDK {
     @objc get
   }
   @objc(setOnDeviceVoiceAssistantPlugin:) public static func setOnDeviceVoiceAssistantPlugin(_ plugin: any AIBuds.OnDeviceVoiceAssistantBridgePlugin)
+  @objc public static var videoStabilizationPlugin: (any AIBuds.VideoStabilizationPlugin)? {
+    @objc get
+  }
+  @objc(setVideoStabilizationPlugin:) public static func setVideoStabilizationPlugin(_ plugin: (any AIBuds.VideoStabilizationPlugin)?)
+  @objc public static var isVideoStabilizationAvailable: Swift.Bool {
+    @objc get
+  }
+  @objc public static var isVideoStabilizationDisabled: Swift.Bool {
+    @objc get
+  }
+  @objc public static func disableVideoStabilization()
+  @objc public static func enableVideoStabilization()
   @objc(initWithBleSDKs:delegate:) public static func initialize(_ bleSDKs: [any AIBuds.BleConnectSDK], delegate: (any AIBuds.SDKDelegate)? = nil) -> Swift.Bool
   @objc(initWithBleSDKs:configuration:delegate:) public static func initialize(_ bleSDKs: [any AIBuds.BleConnectSDK], configuration: AIBuds.SDKConfiguration? = nil, delegate: (any AIBuds.SDKDelegate)? = nil) -> Swift.Bool
   @objc(startScanningWithTimeout:deviceFoundHandler:completion:) public static func startScanning(_ timeout: Foundation.NSNumber? = nil, deviceFoundHandler: AIBuds.AIBudsScanningOnDeviceFoundHandler? = nil, completion: AIBuds.AIBudsOnScanStopHandler? = nil)

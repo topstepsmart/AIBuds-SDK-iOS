@@ -1,0 +1,2174 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "AIBudsVideoStabilization",
+    "printedName": "AIBudsVideoStabilization",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "AVFoundation",
+        "printedName": "AVFoundation",
+        "declKind": "Import",
+        "moduleName": "AIBudsVideoStabilization",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreMedia",
+        "printedName": "CoreMedia",
+        "declKind": "Import",
+        "moduleName": "AIBudsVideoStabilization"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreVideo",
+        "printedName": "CoreVideo",
+        "declKind": "Import",
+        "moduleName": "AIBudsVideoStabilization"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AIBudsVideoStabilization"
+      },
+      {
+        "kind": "Import",
+        "name": "AIBudsVideoStabilizationInternal",
+        "printedName": "AIBudsVideoStabilizationInternal",
+        "declKind": "Import",
+        "moduleName": "AIBudsVideoStabilization",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AIBudsVideoStabilization",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AIBudsLog",
+        "printedName": "AIBudsLog",
+        "declKind": "Import",
+        "moduleName": "AIBudsVideoStabilization",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AIBudsVideoStabilization",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "VideoStabilizationConfiguration",
+        "printedName": "VideoStabilizationConfiguration",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "trimRatio",
+            "printedName": "trimRatio",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBudsVideoStabilization@objc(cs)AIBudsVideoStabilizationConfiguration(py)trimRatio",
+            "mangledName": "$s24AIBudsVideoStabilization0bC13ConfigurationC9trimRatioSdvp",
+            "moduleName": "AIBudsVideoStabilization",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsVideoStabilization@objc(cs)AIBudsVideoStabilizationConfiguration(im)trimRatio",
+                "mangledName": "$s24AIBudsVideoStabilization0bC13ConfigurationC9trimRatioSdvg",
+                "moduleName": "AIBudsVideoStabilization",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsVideoStabilization@objc(cs)AIBudsVideoStabilizationConfiguration(im)setTrimRatio:",
+                "mangledName": "$s24AIBudsVideoStabilization0bC13ConfigurationC9trimRatioSdvs",
+                "moduleName": "AIBudsVideoStabilization",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:24AIBudsVideoStabilization0bC13ConfigurationC9trimRatioSdvM",
+                "mangledName": "$s24AIBudsVideoStabilization0bC13ConfigurationC9trimRatioSdvM",
+                "moduleName": "AIBudsVideoStabilization",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "averageBitRate",
+            "printedName": "averageBitRate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBudsVideoStabilization@objc(cs)AIBudsVideoStabilizationConfiguration(py)averageBitRate",
+            "mangledName": "$s24AIBudsVideoStabilization0bC13ConfigurationC14averageBitRateSivp",
+            "moduleName": "AIBudsVideoStabilization",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsVideoStabilization@objc(cs)AIBudsVideoStabilizationConfiguration(im)averageBitRate",
+                "mangledName": "$s24AIBudsVideoStabilization0bC13ConfigurationC14averageBitRateSivg",
+                "moduleName": "AIBudsVideoStabilization",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsVideoStabilization@objc(cs)AIBudsVideoStabilizationConfiguration(im)setAverageBitRate:",
+                "mangledName": "$s24AIBudsVideoStabilization0bC13ConfigurationC14averageBitRateSivs",
+                "moduleName": "AIBudsVideoStabilization",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:24AIBudsVideoStabilization0bC13ConfigurationC14averageBitRateSivM",
+                "mangledName": "$s24AIBudsVideoStabilization0bC13ConfigurationC14averageBitRateSivM",
+                "moduleName": "AIBudsVideoStabilization",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "licenseFileURL",
+            "printedName": "licenseFileURL",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.URL?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URL",
+                    "printedName": "Foundation.URL",
+                    "usr": "s:10Foundation3URLV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBudsVideoStabilization@objc(cs)AIBudsVideoStabilizationConfiguration(py)licenseFileURL",
+            "mangledName": "$s24AIBudsVideoStabilization0bC13ConfigurationC14licenseFileURL10Foundation0G0VSgvp",
+            "moduleName": "AIBudsVideoStabilization",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.URL?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "URL",
+                        "printedName": "Foundation.URL",
+                        "usr": "s:10Foundation3URLV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsVideoStabilization@objc(cs)AIBudsVideoStabilizationConfiguration(im)licenseFileURL",
+                "mangledName": "$s24AIBudsVideoStabilization0bC13ConfigurationC14licenseFileURL10Foundation0G0VSgvg",
+                "moduleName": "AIBudsVideoStabilization",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.URL?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "URL",
+                        "printedName": "Foundation.URL",
+                        "usr": "s:10Foundation3URLV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsVideoStabilization@objc(cs)AIBudsVideoStabilizationConfiguration(im)setLicenseFileURL:",
+                "mangledName": "$s24AIBudsVideoStabilization0bC13ConfigurationC14licenseFileURL10Foundation0G0VSgvs",
+                "moduleName": "AIBudsVideoStabilization",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:24AIBudsVideoStabilization0bC13ConfigurationC14licenseFileURL10Foundation0G0VSgvM",
+                "mangledName": "$s24AIBudsVideoStabilization0bC13ConfigurationC14licenseFileURL10Foundation0G0VSgvM",
+                "moduleName": "AIBudsVideoStabilization",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "VideoStabilizationConfiguration",
+                "printedName": "AIBudsVideoStabilization.VideoStabilizationConfiguration",
+                "usr": "c:@M@AIBudsVideoStabilization@objc(cs)AIBudsVideoStabilizationConfiguration"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@AIBudsVideoStabilization@objc(cs)AIBudsVideoStabilizationConfiguration(im)init",
+            "mangledName": "$s24AIBudsVideoStabilization0bC13ConfigurationCACycfc",
+            "moduleName": "AIBudsVideoStabilization",
+            "overriding": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "default",
+            "printedName": "default()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "VideoStabilizationConfiguration",
+                "printedName": "AIBudsVideoStabilization.VideoStabilizationConfiguration",
+                "usr": "c:@M@AIBudsVideoStabilization@objc(cs)AIBudsVideoStabilizationConfiguration"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AIBudsVideoStabilization@objc(cs)AIBudsVideoStabilizationConfiguration(cm)default",
+            "mangledName": "$s24AIBudsVideoStabilization0bC13ConfigurationC7defaultACyFZ",
+            "moduleName": "AIBudsVideoStabilization",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "copy",
+            "printedName": "copy(with:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ProtocolComposition",
+                "printedName": "Any"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "ObjectiveC.NSZone?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSZone",
+                    "printedName": "ObjectiveC.NSZone",
+                    "usr": "s:10ObjectiveC6NSZoneV"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AIBudsVideoStabilization@objc(cs)AIBudsVideoStabilizationConfiguration(im)copyWithZone:",
+            "mangledName": "$s24AIBudsVideoStabilization0bC13ConfigurationC4copy4withyp10ObjectiveC6NSZoneVSg_tF",
+            "moduleName": "AIBudsVideoStabilization",
+            "objc_name": "copyWithZone:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@AIBudsVideoStabilization@objc(cs)AIBudsVideoStabilizationConfiguration",
+        "mangledName": "$s24AIBudsVideoStabilization0bC13ConfigurationC",
+        "moduleName": "AIBudsVideoStabilization",
+        "objc_name": "AIBudsVideoStabilizationConfiguration",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AIBudsVideoStabilization",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "VideoStabilizationErrorCode",
+        "printedName": "VideoStabilizationErrorCode",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "unsupportedPlatform",
+            "printedName": "unsupportedPlatform",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AIBudsVideoStabilization.VideoStabilizationErrorCode.Type) -> AIBudsVideoStabilization.VideoStabilizationErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VideoStabilizationErrorCode",
+                    "printedName": "AIBudsVideoStabilization.VideoStabilizationErrorCode",
+                    "usr": "c:@M@AIBudsVideoStabilization@E@AIBudsVideoStabilizationErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AIBudsVideoStabilization.VideoStabilizationErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "VideoStabilizationErrorCode",
+                        "printedName": "AIBudsVideoStabilization.VideoStabilizationErrorCode",
+                        "usr": "c:@M@AIBudsVideoStabilization@E@AIBudsVideoStabilizationErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AIBudsVideoStabilization@E@AIBudsVideoStabilizationErrorCode@AIBudsVideoStabilizationErrorCodeUnsupportedPlatform",
+            "mangledName": "$s24AIBudsVideoStabilization0bC9ErrorCodeO19unsupportedPlatformyA2CmF",
+            "moduleName": "AIBudsVideoStabilization",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "invalidInput",
+            "printedName": "invalidInput",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AIBudsVideoStabilization.VideoStabilizationErrorCode.Type) -> AIBudsVideoStabilization.VideoStabilizationErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VideoStabilizationErrorCode",
+                    "printedName": "AIBudsVideoStabilization.VideoStabilizationErrorCode",
+                    "usr": "c:@M@AIBudsVideoStabilization@E@AIBudsVideoStabilizationErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AIBudsVideoStabilization.VideoStabilizationErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "VideoStabilizationErrorCode",
+                        "printedName": "AIBudsVideoStabilization.VideoStabilizationErrorCode",
+                        "usr": "c:@M@AIBudsVideoStabilization@E@AIBudsVideoStabilizationErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AIBudsVideoStabilization@E@AIBudsVideoStabilizationErrorCode@AIBudsVideoStabilizationErrorCodeInvalidInput",
+            "mangledName": "$s24AIBudsVideoStabilization0bC9ErrorCodeO12invalidInputyA2CmF",
+            "moduleName": "AIBudsVideoStabilization",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Var",
+            "name": "readerCreationFailed",
+            "printedName": "readerCreationFailed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AIBudsVideoStabilization.VideoStabilizationErrorCode.Type) -> AIBudsVideoStabilization.VideoStabilizationErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VideoStabilizationErrorCode",
+                    "printedName": "AIBudsVideoStabilization.VideoStabilizationErrorCode",
+                    "usr": "c:@M@AIBudsVideoStabilization@E@AIBudsVideoStabilizationErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AIBudsVideoStabilization.VideoStabilizationErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "VideoStabilizationErrorCode",
+                        "printedName": "AIBudsVideoStabilization.VideoStabilizationErrorCode",
+                        "usr": "c:@M@AIBudsVideoStabilization@E@AIBudsVideoStabilizationErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AIBudsVideoStabilization@E@AIBudsVideoStabilizationErrorCode@AIBudsVideoStabilizationErrorCodeReaderCreationFailed",
+            "mangledName": "$s24AIBudsVideoStabilization0bC9ErrorCodeO20readerCreationFailedyA2CmF",
+            "moduleName": "AIBudsVideoStabilization",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 2
+          },
+          {
+            "kind": "Var",
+            "name": "writerCreationFailed",
+            "printedName": "writerCreationFailed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AIBudsVideoStabilization.VideoStabilizationErrorCode.Type) -> AIBudsVideoStabilization.VideoStabilizationErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VideoStabilizationErrorCode",
+                    "printedName": "AIBudsVideoStabilization.VideoStabilizationErrorCode",
+                    "usr": "c:@M@AIBudsVideoStabilization@E@AIBudsVideoStabilizationErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AIBudsVideoStabilization.VideoStabilizationErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "VideoStabilizationErrorCode",
+                        "printedName": "AIBudsVideoStabilization.VideoStabilizationErrorCode",
+                        "usr": "c:@M@AIBudsVideoStabilization@E@AIBudsVideoStabilizationErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AIBudsVideoStabilization@E@AIBudsVideoStabilizationErrorCode@AIBudsVideoStabilizationErrorCodeWriterCreationFailed",
+            "mangledName": "$s24AIBudsVideoStabilization0bC9ErrorCodeO20writerCreationFailedyA2CmF",
+            "moduleName": "AIBudsVideoStabilization",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 3
+          },
+          {
+            "kind": "Var",
+            "name": "algorithmInitializationFailed",
+            "printedName": "algorithmInitializationFailed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AIBudsVideoStabilization.VideoStabilizationErrorCode.Type) -> AIBudsVideoStabilization.VideoStabilizationErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VideoStabilizationErrorCode",
+                    "printedName": "AIBudsVideoStabilization.VideoStabilizationErrorCode",
+                    "usr": "c:@M@AIBudsVideoStabilization@E@AIBudsVideoStabilizationErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AIBudsVideoStabilization.VideoStabilizationErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "VideoStabilizationErrorCode",
+                        "printedName": "AIBudsVideoStabilization.VideoStabilizationErrorCode",
+                        "usr": "c:@M@AIBudsVideoStabilization@E@AIBudsVideoStabilizationErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AIBudsVideoStabilization@E@AIBudsVideoStabilizationErrorCode@AIBudsVideoStabilizationErrorCodeAlgorithmInitializationFailed",
+            "mangledName": "$s24AIBudsVideoStabilization0bC9ErrorCodeO29algorithmInitializationFailedyA2CmF",
+            "moduleName": "AIBudsVideoStabilization",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 4
+          },
+          {
+            "kind": "Var",
+            "name": "frameProcessingFailed",
+            "printedName": "frameProcessingFailed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AIBudsVideoStabilization.VideoStabilizationErrorCode.Type) -> AIBudsVideoStabilization.VideoStabilizationErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VideoStabilizationErrorCode",
+                    "printedName": "AIBudsVideoStabilization.VideoStabilizationErrorCode",
+                    "usr": "c:@M@AIBudsVideoStabilization@E@AIBudsVideoStabilizationErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AIBudsVideoStabilization.VideoStabilizationErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "VideoStabilizationErrorCode",
+                        "printedName": "AIBudsVideoStabilization.VideoStabilizationErrorCode",
+                        "usr": "c:@M@AIBudsVideoStabilization@E@AIBudsVideoStabilizationErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AIBudsVideoStabilization@E@AIBudsVideoStabilizationErrorCode@AIBudsVideoStabilizationErrorCodeFrameProcessingFailed",
+            "mangledName": "$s24AIBudsVideoStabilization0bC9ErrorCodeO21frameProcessingFailedyA2CmF",
+            "moduleName": "AIBudsVideoStabilization",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 5
+          },
+          {
+            "kind": "Var",
+            "name": "encodingFailed",
+            "printedName": "encodingFailed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AIBudsVideoStabilization.VideoStabilizationErrorCode.Type) -> AIBudsVideoStabilization.VideoStabilizationErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VideoStabilizationErrorCode",
+                    "printedName": "AIBudsVideoStabilization.VideoStabilizationErrorCode",
+                    "usr": "c:@M@AIBudsVideoStabilization@E@AIBudsVideoStabilizationErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AIBudsVideoStabilization.VideoStabilizationErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "VideoStabilizationErrorCode",
+                        "printedName": "AIBudsVideoStabilization.VideoStabilizationErrorCode",
+                        "usr": "c:@M@AIBudsVideoStabilization@E@AIBudsVideoStabilizationErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AIBudsVideoStabilization@E@AIBudsVideoStabilizationErrorCode@AIBudsVideoStabilizationErrorCodeEncodingFailed",
+            "mangledName": "$s24AIBudsVideoStabilization0bC9ErrorCodeO14encodingFailedyA2CmF",
+            "moduleName": "AIBudsVideoStabilization",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 6
+          },
+          {
+            "kind": "Var",
+            "name": "cancelled",
+            "printedName": "cancelled",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AIBudsVideoStabilization.VideoStabilizationErrorCode.Type) -> AIBudsVideoStabilization.VideoStabilizationErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VideoStabilizationErrorCode",
+                    "printedName": "AIBudsVideoStabilization.VideoStabilizationErrorCode",
+                    "usr": "c:@M@AIBudsVideoStabilization@E@AIBudsVideoStabilizationErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AIBudsVideoStabilization.VideoStabilizationErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "VideoStabilizationErrorCode",
+                        "printedName": "AIBudsVideoStabilization.VideoStabilizationErrorCode",
+                        "usr": "c:@M@AIBudsVideoStabilization@E@AIBudsVideoStabilizationErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AIBudsVideoStabilization@E@AIBudsVideoStabilizationErrorCode@AIBudsVideoStabilizationErrorCodeCancelled",
+            "mangledName": "$s24AIBudsVideoStabilization0bC9ErrorCodeO9cancelledyA2CmF",
+            "moduleName": "AIBudsVideoStabilization",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 7
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "AIBudsVideoStabilization.VideoStabilizationErrorCode?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VideoStabilizationErrorCode",
+                    "printedName": "AIBudsVideoStabilization.VideoStabilizationErrorCode",
+                    "usr": "c:@M@AIBudsVideoStabilization@E@AIBudsVideoStabilizationErrorCode"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:24AIBudsVideoStabilization0bC9ErrorCodeO8rawValueACSgSi_tcfc",
+            "mangledName": "$s24AIBudsVideoStabilization0bC9ErrorCodeO8rawValueACSgSi_tcfc",
+            "moduleName": "AIBudsVideoStabilization",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:24AIBudsVideoStabilization0bC9ErrorCodeO8rawValueSivp",
+            "mangledName": "$s24AIBudsVideoStabilization0bC9ErrorCodeO8rawValueSivp",
+            "moduleName": "AIBudsVideoStabilization",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:24AIBudsVideoStabilization0bC9ErrorCodeO8rawValueSivg",
+                "mangledName": "$s24AIBudsVideoStabilization0bC9ErrorCodeO8rawValueSivg",
+                "moduleName": "AIBudsVideoStabilization",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "c:@M@AIBudsVideoStabilization@E@AIBudsVideoStabilizationErrorCode",
+        "mangledName": "$s24AIBudsVideoStabilization0bC9ErrorCodeO",
+        "moduleName": "AIBudsVideoStabilization",
+        "objc_name": "AIBudsVideoStabilizationErrorCode",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AIBudsVideoStabilization",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AIBuds",
+        "printedName": "AIBuds",
+        "declKind": "Import",
+        "moduleName": "AIBudsVideoStabilization"
+      },
+      {
+        "kind": "Import",
+        "name": "AIBudsFoundation",
+        "printedName": "AIBudsFoundation",
+        "declKind": "Import",
+        "moduleName": "AIBudsVideoStabilization"
+      },
+      {
+        "kind": "Import",
+        "name": "AIBudsLog",
+        "printedName": "AIBudsLog",
+        "declKind": "Import",
+        "moduleName": "AIBudsVideoStabilization",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BuiltInVideoStabilizationPlugin",
+        "printedName": "BuiltInVideoStabilizationPlugin",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BuiltInVideoStabilizationPlugin",
+                "printedName": "AIBudsVideoStabilization.BuiltInVideoStabilizationPlugin",
+                "usr": "c:@M@AIBudsVideoStabilization@objc(cs)AIBudsBuiltInVideoStabilizationPlugin"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBudsVideoStabilization@objc(cs)AIBudsBuiltInVideoStabilizationPlugin(cpy)shared",
+            "mangledName": "$s24AIBudsVideoStabilization07BuiltInbC6PluginC6sharedACvpZ",
+            "moduleName": "AIBudsVideoStabilization",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BuiltInVideoStabilizationPlugin",
+                    "printedName": "AIBudsVideoStabilization.BuiltInVideoStabilizationPlugin",
+                    "usr": "c:@M@AIBudsVideoStabilization@objc(cs)AIBudsBuiltInVideoStabilizationPlugin"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsVideoStabilization@objc(cs)AIBudsBuiltInVideoStabilizationPlugin(cm)shared",
+                "mangledName": "$s24AIBudsVideoStabilization07BuiltInbC6PluginC6sharedACvgZ",
+                "moduleName": "AIBudsVideoStabilization",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "identifier",
+            "printedName": "identifier",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBudsVideoStabilization@objc(cs)AIBudsBuiltInVideoStabilizationPlugin(py)identifier",
+            "mangledName": "$s24AIBudsVideoStabilization07BuiltInbC6PluginC10identifierSSvp",
+            "moduleName": "AIBudsVideoStabilization",
+            "objc_name": "identifier",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "ObjC",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsVideoStabilization@objc(cs)AIBudsBuiltInVideoStabilizationPlugin(im)identifier",
+                "mangledName": "$s24AIBudsVideoStabilization07BuiltInbC6PluginC10identifierSSvg",
+                "moduleName": "AIBudsVideoStabilization",
+                "implicit": true,
+                "objc_name": "identifier",
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(configuration:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BuiltInVideoStabilizationPlugin",
+                "printedName": "AIBudsVideoStabilization.BuiltInVideoStabilizationPlugin",
+                "usr": "c:@M@AIBudsVideoStabilization@objc(cs)AIBudsBuiltInVideoStabilizationPlugin"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "VideoStabilizationConfiguration",
+                "printedName": "AIBudsVideoStabilization.VideoStabilizationConfiguration",
+                "usr": "c:@M@AIBudsVideoStabilization@objc(cs)AIBudsVideoStabilizationConfiguration"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@AIBudsVideoStabilization@objc(cs)AIBudsBuiltInVideoStabilizationPlugin(im)initWithConfiguration:",
+            "mangledName": "$s24AIBudsVideoStabilization07BuiltInbC6PluginC13configurationAcA0bC13ConfigurationC_tcfc",
+            "moduleName": "AIBudsVideoStabilization",
+            "objc_name": "initWithConfiguration:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "canProcess",
+            "printedName": "canProcess(_:metadata:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "VideoStabilizationCanProcessResult",
+                "printedName": "AIBudsFoundation.VideoStabilizationCanProcessResult",
+                "usr": "c:@M@AIBudsFoundation@E@AIBudsVideoStabilizationCanProcessResult"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MediaFileInfoModel",
+                "printedName": "AIBudsFoundation.MediaFileInfoModel",
+                "usr": "c:@M@AIBudsFoundation@objc(cs)AIBudsMediaFileInfoModel"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AIBudsVideoStabilization@objc(cs)AIBudsBuiltInVideoStabilizationPlugin(im)canProcessMediaFileURL:metadata:",
+            "mangledName": "$s24AIBudsVideoStabilization07BuiltInbC6PluginC10canProcess_8metadata0A10Foundation0bc3CanH6ResultO0J03URLV_AF18MediaFileInfoModelCtF",
+            "moduleName": "AIBudsVideoStabilization",
+            "objc_name": "canProcessMediaFileURL:metadata:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "processMediaFile",
+            "printedName": "processMediaFile(at:metadata:outputURL:progressHandler:completionHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MediaFileInfoModel",
+                "printedName": "AIBudsFoundation.MediaFileInfoModel",
+                "usr": "c:@M@AIBudsFoundation@objc(cs)AIBudsMediaFileInfoModel"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Double) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Foundation.URL?, Foundation.NSError?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Foundation.URL?, Foundation.NSError?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.URL?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "URL",
+                            "printedName": "Foundation.URL",
+                            "usr": "s:10Foundation3URLV"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.NSError?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "NSError",
+                            "printedName": "Foundation.NSError",
+                            "usr": "c:objc(cs)NSError"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AIBudsVideoStabilization@objc(cs)AIBudsBuiltInVideoStabilizationPlugin(im)processMediaFileAtURL:metadata:outputURL:progressHandler:completionHandler:",
+            "mangledName": "$s24AIBudsVideoStabilization07BuiltInbC6PluginC16processMediaFile2at8metadata9outputURL15progressHandler010completionO0y10Foundation0M0V_0aQ00hI9InfoModelCALySdcyALSg_So7NSErrorCSgtctF",
+            "moduleName": "AIBudsVideoStabilization",
+            "objc_name": "processMediaFileAtURL:metadata:outputURL:progressHandler:completionHandler:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "cancelAllProcessing",
+            "printedName": "cancelAllProcessing()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AIBudsVideoStabilization@objc(cs)AIBudsBuiltInVideoStabilizationPlugin(im)cancelAllProcessing",
+            "mangledName": "$s24AIBudsVideoStabilization07BuiltInbC6PluginC19cancelAllProcessingyyF",
+            "moduleName": "AIBudsVideoStabilization",
+            "objc_name": "cancelAllProcessing",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BuiltInVideoStabilizationPlugin",
+                "printedName": "AIBudsVideoStabilization.BuiltInVideoStabilizationPlugin",
+                "usr": "c:@M@AIBudsVideoStabilization@objc(cs)AIBudsBuiltInVideoStabilizationPlugin"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@AIBudsVideoStabilization@objc(cs)AIBudsBuiltInVideoStabilizationPlugin(im)init",
+            "mangledName": "$s24AIBudsVideoStabilization07BuiltInbC6PluginCACycfc",
+            "moduleName": "AIBudsVideoStabilization",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@AIBudsVideoStabilization@objc(cs)AIBudsBuiltInVideoStabilizationPlugin",
+        "mangledName": "$s24AIBudsVideoStabilization07BuiltInbC6PluginC",
+        "moduleName": "AIBudsVideoStabilization",
+        "objc_name": "AIBudsBuiltInVideoStabilizationPlugin",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "VideoStabilizationPlugin",
+            "printedName": "VideoStabilizationPlugin",
+            "usr": "c:@M@AIBuds@objc(pl)AIBudsVideoStabilizationPlugin",
+            "mangledName": "$s6AIBuds24VideoStabilizationPluginP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AIBudsVideoStabilization",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "VideoStabilizationSDK",
+        "printedName": "VideoStabilizationSDK",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "sdkVersion",
+            "printedName": "sdkVersion",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBudsVideoStabilization@objc(cs)AIBudsVideoStabilizationSDK(cpy)sdkVersion",
+            "mangledName": "$s24AIBudsVideoStabilization0bC3SDKC10sdkVersionSSvpZ",
+            "moduleName": "AIBudsVideoStabilization",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsVideoStabilization@objc(cs)AIBudsVideoStabilizationSDK(cm)sdkVersion",
+                "mangledName": "$s24AIBudsVideoStabilization0bC3SDKC10sdkVersionSSvgZ",
+                "moduleName": "AIBudsVideoStabilization",
+                "static": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "sdkBuild",
+            "printedName": "sdkBuild",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBudsVideoStabilization@objc(cs)AIBudsVideoStabilizationSDK(cpy)sdkBuild",
+            "mangledName": "$s24AIBudsVideoStabilization0bC3SDKC8sdkBuildSSvpZ",
+            "moduleName": "AIBudsVideoStabilization",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsVideoStabilization@objc(cs)AIBudsVideoStabilizationSDK(cm)sdkBuild",
+                "mangledName": "$s24AIBudsVideoStabilization0bC3SDKC8sdkBuildSSvgZ",
+                "moduleName": "AIBudsVideoStabilization",
+                "static": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "sdkReleaseDate",
+            "printedName": "sdkReleaseDate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBudsVideoStabilization@objc(cs)AIBudsVideoStabilizationSDK(cpy)sdkReleaseDate",
+            "mangledName": "$s24AIBudsVideoStabilization0bC3SDKC14sdkReleaseDateSSvpZ",
+            "moduleName": "AIBudsVideoStabilization",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsVideoStabilization@objc(cs)AIBudsVideoStabilizationSDK(cm)sdkReleaseDate",
+                "mangledName": "$s24AIBudsVideoStabilization0bC3SDKC14sdkReleaseDateSSvgZ",
+                "moduleName": "AIBudsVideoStabilization",
+                "static": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "sdkVersionDescription",
+            "printedName": "sdkVersionDescription",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBudsVideoStabilization@objc(cs)AIBudsVideoStabilizationSDK(cpy)sdkVersionDescription",
+            "mangledName": "$s24AIBudsVideoStabilization0bC3SDKC21sdkVersionDescriptionSSvpZ",
+            "moduleName": "AIBudsVideoStabilization",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsVideoStabilization@objc(cs)AIBudsVideoStabilizationSDK(cm)sdkVersionDescription",
+                "mangledName": "$s24AIBudsVideoStabilization0bC3SDKC21sdkVersionDescriptionSSvgZ",
+                "moduleName": "AIBudsVideoStabilization",
+                "static": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "thirdPartySDKVersionDescription",
+            "printedName": "thirdPartySDKVersionDescription",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBudsVideoStabilization@objc(cs)AIBudsVideoStabilizationSDK(cpy)thirdPartySDKVersionDescription",
+            "mangledName": "$s24AIBudsVideoStabilization0bC3SDKC31thirdPartySDKVersionDescriptionSSvpZ",
+            "moduleName": "AIBudsVideoStabilization",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsVideoStabilization@objc(cs)AIBudsVideoStabilizationSDK(cm)thirdPartySDKVersionDescription",
+                "mangledName": "$s24AIBudsVideoStabilization0bC3SDKC31thirdPartySDKVersionDescriptionSSvgZ",
+                "moduleName": "AIBudsVideoStabilization",
+                "static": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "ErrorDomain",
+            "printedName": "ErrorDomain",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBudsVideoStabilization@objc(cs)AIBudsVideoStabilizationSDK(cpy)ErrorDomain",
+            "mangledName": "$s24AIBudsVideoStabilization0bC3SDKC11ErrorDomainSSvpZ",
+            "moduleName": "AIBudsVideoStabilization",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsVideoStabilization@objc(cs)AIBudsVideoStabilizationSDK(cm)ErrorDomain",
+                "mangledName": "$s24AIBudsVideoStabilization0bC3SDKC11ErrorDomainSSvgZ",
+                "moduleName": "AIBudsVideoStabilization",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@AIBudsVideoStabilization@objc(cs)AIBudsVideoStabilizationSDK",
+        "mangledName": "$s24AIBudsVideoStabilization0bC3SDKC",
+        "moduleName": "AIBudsVideoStabilization",
+        "objc_name": "AIBudsVideoStabilizationSDK",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AIBudsVideoStabilization",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsVideoStabilization\/Internal\/VideoStabilizationOperation.swift",
+      "kind": "StringLiteral",
+      "offset": 609,
+      "length": 32,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsVideoStabilization\/Internal\/VideoStabilizationOperation.swift",
+      "kind": "StringLiteral",
+      "offset": 634,
+      "length": 1,
+      "value": "\".setup\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsVideoStabilization\/Internal\/VideoStabilizationOperation.swift",
+      "kind": "BooleanLiteral",
+      "offset": 842,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsVideoStabilization\/Internal\/VideoStabilizationOperation.swift",
+      "kind": "BooleanLiteral",
+      "offset": 910,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsVideoStabilization\/Internal\/VideoStabilizationOperation.swift",
+      "kind": "BooleanLiteral",
+      "offset": 944,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsVideoStabilization\/AIBudsVideoStabilization.swift",
+      "kind": "StringLiteral",
+      "offset": 312,
+      "length": 6,
+      "value": "\"🎥\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsVideoStabilization\/AIBudsVideoStabilization.swift",
+      "kind": "StringLiteral",
+      "offset": 382,
+      "length": 29,
+      "value": "\"AIBudsVideoStabilizationSDK\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsVideoStabilization\/AIBudsVideoStabilization.swift",
+      "kind": "StringLiteral",
+      "offset": 478,
+      "length": 45,
+      "value": "\"com.topstep.sdks.aibuds.video-stabilization\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsVideoStabilization\/AIBudsVideoStabilization.swift",
+      "kind": "StringLiteral",
+      "offset": 597,
+      "length": 14,
+      "value": "\"AWEISIMG_SDK\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsVideoStabilization\/AIBudsVideoStabilization.swift",
+      "kind": "StringLiteral",
+      "offset": 639,
+      "length": 10,
+      "value": "\"20260817\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsVideoStabilization\/AIBudsVideoStabilization.swift",
+      "kind": "StringLiteral",
+      "offset": 743,
+      "length": 24,
+      "value": "\"unavailable(simulator)\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsVideoStabilization\/AIBudsVideoStabilizationError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 255,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsVideoStabilization\/AIBudsVideoStabilizationError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 281,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsVideoStabilization\/AIBudsVideoStabilizationError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 315,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsVideoStabilization\/AIBudsVideoStabilizationError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 349,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsVideoStabilization\/AIBudsVideoStabilizationError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 392,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsVideoStabilization\/AIBudsVideoStabilizationError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 427,
+      "length": 1,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsVideoStabilization\/AIBudsVideoStabilizationError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 455,
+      "length": 1,
+      "value": "7"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsVideoStabilization\/AIBudsVideoStabilizationError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 478,
+      "length": 1,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsVideoStabilization\/AIBudsVideoStabilizationPlugin.swift",
+      "kind": "StringLiteral",
+      "offset": 624,
+      "length": 26,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsVideoStabilization\/AIBudsVideoStabilizationPlugin.swift",
+      "kind": "StringLiteral",
+      "offset": 649,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsVideoStabilization\/AIBudsVideoStabilizationPlugin.swift",
+      "kind": "Dictionary",
+      "offset": 822,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsVideoStabilization\/AIBudsVideoStabilizationSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 1158,
+      "length": 100,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsVideoStabilization\/AIBudsVideoStabilizationSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 1176,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsVideoStabilization\/AIBudsVideoStabilizationSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 1187,
+      "length": 1,
+      "value": "\" V\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsVideoStabilization\/AIBudsVideoStabilizationSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 1203,
+      "length": 1,
+      "value": "\" (Build\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsVideoStabilization\/AIBudsVideoStabilizationSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 1222,
+      "length": 1,
+      "value": "\") Release Date: \""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsVideoStabilization\/AIBudsVideoStabilizationSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 1257,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsVideoStabilization\/AIBudsVideoStabilizationSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 1424,
+      "length": 58,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsVideoStabilization\/AIBudsVideoStabilizationSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 1445,
+      "length": 1,
+      "value": "\"=\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsVideoStabilization\/AIBudsVideoStabilizationSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 1481,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsVideoStabilization\/AIBudsVideoStabilizationSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 1578,
+      "length": 38,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsVideoStabilization\/AIBudsVideoStabilizationSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 1603,
+      "length": 1,
+      "value": "\".errordomain\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/SDKBuildInfo\/SDK_Build_Info.swift",
+      "kind": "StringLiteral",
+      "offset": 257,
+      "length": 15,
+      "value": "\"1.0.0-beta.32\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/SDKBuildInfo\/SDK_Build_Info.swift",
+      "kind": "StringLiteral",
+      "offset": 388,
+      "length": 13,
+      "value": "\"20260819001\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/SDKBuildInfo\/SDK_Build_Info.swift",
+      "kind": "StringLiteral",
+      "offset": 503,
+      "length": 12,
+      "value": "\"2026-08-19\""
+    }
+  ]
+}

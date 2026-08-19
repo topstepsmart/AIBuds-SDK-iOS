@@ -196,6 +196,26 @@ extension AIBudsFoundation.EQSettingModel {
   @objc public init(bitrate: Swift.Int = 0, qualityFactor: Swift.Int = 0, iFrameInterval: Swift.Int = 0)
   @objc deinit
 }
+@objc(AIBudsImportedMediaFileModel) final public class ImportedMediaFileModel : ObjectiveC.NSObject, AIBudsFoundation.CustomDebugJsonStringConvertible {
+  @objc final public let metadata: AIBudsFoundation.MediaFileInfoModel
+  @objc final public let localFileURL: Foundation.URL?
+  @objc final public var stabilizedFileURL: Foundation.URL?
+  @objc final public var stabilizedFileName: Swift.String? {
+    @objc get
+  }
+  @objc final public var stabilizationStatus: AIBudsFoundation.StabilizationStatus
+  @objc final public var isStabilized: Swift.Bool {
+    @objc get
+  }
+  @objc(initWithMetadata:localFileURL:stabilizedFileURL:) public init(metadata: AIBudsFoundation.MediaFileInfoModel, localFileURL: Foundation.URL? = nil, stabilizedFileURL: Foundation.URL? = nil)
+  @objc override final public var description: Swift.String {
+    @objc get
+  }
+  @objc final public var debugJsonString: Swift.String {
+    @objc get
+  }
+  @objc deinit
+}
 @objc(AIBudsMediaCountInfoModel) final public class MediaCountInfoModel : ObjectiveC.NSObject {
   @objc final public let photoCount: Foundation.NSNumber
   @objc final public let videoCount: Foundation.NSNumber
@@ -1097,6 +1117,46 @@ extension AIBudsFoundation.MediaFileType : Swift.CustomStringConvertible {
 }
 extension AIBudsFoundation.MediaFileType : Swift.CustomDebugStringConvertible {
   public var debugDescription: Swift.String {
+    get
+  }
+}
+@objc(AIBudsMediaFileStabilizationStatus) public enum StabilizationStatus : Swift.Int {
+  case notRequired = 0
+  case pending = 1
+  case stabilized = 2
+  case pluginUnavailable = 3
+  case skipped = 4
+  case failed = 5
+  case disabled = 6
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+extension AIBudsFoundation.StabilizationStatus : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
+extension AIBudsFoundation.StabilizationStatus : Swift.CustomDebugStringConvertible {
+  public var debugDescription: Swift.String {
+    get
+  }
+}
+@objc(AIBudsVideoStabilizationCanProcessResult) public enum VideoStabilizationCanProcessResult : Swift.Int {
+  case canProcess
+  case unsupportedPlatform
+  case unsupportedFileType
+  case noSixAxisMetadata
+  case noSixAxisMagicInFile
+  case fileNotReadable
+  public var reasonDescription: Swift.String {
+    get
+  }
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
     get
   }
 }
@@ -4186,6 +4246,12 @@ extension AIBudsFoundation.LiveStreamingMode : Swift.RawRepresentable {}
 extension AIBudsFoundation.MediaFileType : Swift.Equatable {}
 extension AIBudsFoundation.MediaFileType : Swift.Hashable {}
 extension AIBudsFoundation.MediaFileType : Swift.RawRepresentable {}
+extension AIBudsFoundation.StabilizationStatus : Swift.Equatable {}
+extension AIBudsFoundation.StabilizationStatus : Swift.Hashable {}
+extension AIBudsFoundation.StabilizationStatus : Swift.RawRepresentable {}
+extension AIBudsFoundation.VideoStabilizationCanProcessResult : Swift.Equatable {}
+extension AIBudsFoundation.VideoStabilizationCanProcessResult : Swift.Hashable {}
+extension AIBudsFoundation.VideoStabilizationCanProcessResult : Swift.RawRepresentable {}
 extension AIBudsFoundation.MusicPlaySource : Swift.Equatable {}
 extension AIBudsFoundation.MusicPlaySource : Swift.Hashable {}
 extension AIBudsFoundation.MusicPlaySource : Swift.RawRepresentable {}

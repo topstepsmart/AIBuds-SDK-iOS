@@ -238,6 +238,7 @@
         NSLocalizedString(@"LocKey.CaptureModeCamera", comment:@"Camera"),
         NSLocalizedString(@"LocKey.CaptureModeAI", comment:@"AI")
     ]];
+    self.captureModeSegmentedControl.selectedSegmentIndex = 0;
     self.captureModeSegmentedControl.translatesAutoresizingMaskIntoConstraints = NO;
     [self.photoCardView addSubview:self.captureModeSegmentedControl];
     

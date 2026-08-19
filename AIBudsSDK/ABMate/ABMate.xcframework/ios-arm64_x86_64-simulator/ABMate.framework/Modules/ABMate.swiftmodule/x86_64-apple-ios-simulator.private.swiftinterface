@@ -5,10 +5,12 @@
 import AIBuds
 import AIBudsFoundation
 import AIBudsLog
+import AVFoundation
 import SystemConfiguration.CaptiveNetwork
 import CoreBluetooth
 import CoreImage
 import CoreLocation
+import CoreMedia
 import Darwin
 import Dispatch
 import Foundation
@@ -352,11 +354,11 @@ extension ABMate.ABMateSDK {
   case photoDataForSceneRecognitionTransferCanceledDueToSystemCaptureFailed = 5003
   case photoDataForSceneRecognitionTransferCanceledDueToBluetoothCommunicationError = 5004
   case fetchMediaFilesInfoFailedDueToLocalNetworkUsageDescMissing = 6000
-  case fileImportNotReady = 6001
-  case fileImportAlreadyInProgress = 6002
-  case fileImportNotInProgress = 6003
+  case mediaFileImportNotReady = 6001
+  case mediaFileImportAlreadyInProgress = 6002
+  case mediaFileImportNotInProgress = 6003
   case fetchMediaFileInfosFailedDueToHotspotConfigureError = 6004
-  case fileImportTaskPrepareFailedDueToEnterFileTransferModeFailed = 6005
+  case mediaFileImportTaskPrepareFailedDueToEnterFileTransferModeFailed = 6005
   case fetchMediaFileInfosFailedDueToHotspotConnectionFailure = 6006
   case fetchMediaFileInfosFailedDueToEmptyBaseUrl = 6007
   case fetchMediaFileInfosFailedDueToInvalidConfigUrl = 6008
@@ -364,10 +366,10 @@ extension ABMate.ABMateSDK {
   case fetchMediaFileInfosFailedDueToNetworkError = 6010
   case fetchMediaFileInfosFailedDueToInvalidResponse = 6011
   case fetchMediaFileInfosFailedDueToHttpError = 6012
-  case importFilesFailedDueToDeviceHotspotConnectionLost = 6013
-  case importFilesFailedDueToInvalidUrl = 6014
-  case importFilesFailedDueToHttpError = 6015
-  case importFilesFailedDueToNetworkError = 6016
+  case importMediaFilesFailedDueToDeviceHotspotConnectionLost = 6013
+  case importMediaFilesFailedDueToInvalidUrl = 6014
+  case importMediaFilesFailedDueToHttpError = 6015
+  case importMediaFilesFailedDueToNetworkError = 6016
   case fetchMediaFilesInfoFailedDueToAllowLocalNetworkingMissing = 6017
   case promptScriptInvalidOrEmpty = 7001
   case promptScriptIsSending = 7002

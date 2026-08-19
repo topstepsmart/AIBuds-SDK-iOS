@@ -1,0 +1,69 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.3.3 effective-5.10 (swiftlang-6.3.3.1.3 clang-2100.1.1.101)
+// swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name AIBudsVideoStabilization
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.3
+import AIBuds
+import AIBudsFoundation
+import AVFoundation
+import CoreMedia
+import CoreVideo
+import Foundation
+import Swift
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@_inheritsConvenienceInitializers @objc(AIBudsVideoStabilizationConfiguration) final public class VideoStabilizationConfiguration : ObjectiveC.NSObject, Foundation.NSCopying {
+  @objc final public var trimRatio: Swift.Double
+  @objc final public var averageBitRate: Swift.Int
+  @objc final public var licenseFileURL: Foundation.URL?
+  @objc override dynamic public init()
+  @objc public static func `default`() -> AIBudsVideoStabilization.VideoStabilizationConfiguration
+  @objc final public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
+  @objc deinit
+}
+@objc(AIBudsVideoStabilizationErrorCode) public enum VideoStabilizationErrorCode : Swift.Int {
+  case unsupportedPlatform = 1
+  case invalidInput = 2
+  case readerCreationFailed = 3
+  case writerCreationFailed = 4
+  case algorithmInitializationFailed = 5
+  case frameProcessingFailed = 6
+  case encodingFailed = 7
+  case cancelled = 8
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc(AIBudsBuiltInVideoStabilizationPlugin) final public class BuiltInVideoStabilizationPlugin : ObjectiveC.NSObject, AIBuds.VideoStabilizationPlugin {
+  @objc public static let shared: AIBudsVideoStabilization.BuiltInVideoStabilizationPlugin
+  @objc final public let identifier: Swift.String
+  @objc public init(configuration: AIBudsVideoStabilization.VideoStabilizationConfiguration)
+  @objc final public func canProcess(_ mediaFileURL: Foundation.URL, metadata: AIBudsFoundation.MediaFileInfoModel) -> AIBudsFoundation.VideoStabilizationCanProcessResult
+  @objc final public func processMediaFile(at inputURL: Foundation.URL, metadata: AIBudsFoundation.MediaFileInfoModel, outputURL: Foundation.URL, progressHandler: @escaping (Swift.Double) -> Swift.Void, completionHandler: @escaping (Foundation.URL?, Foundation.NSError?) -> Swift.Void)
+  @objc final public func cancelAllProcessing()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(AIBudsVideoStabilizationSDK) final public class VideoStabilizationSDK : ObjectiveC.NSObject {
+  @objc public static var sdkVersion: Swift.String {
+    @objc get
+  }
+  @objc public static var sdkBuild: Swift.String {
+    @objc get
+  }
+  @objc public static var sdkReleaseDate: Swift.String {
+    @objc get
+  }
+  @objc public static var sdkVersionDescription: Swift.String {
+    @objc get
+  }
+  @objc public static var thirdPartySDKVersionDescription: Swift.String {
+    @objc get
+  }
+  @objc public static let ErrorDomain: Swift.String
+  @objc deinit
+}
+extension AIBudsVideoStabilization.VideoStabilizationErrorCode : Swift.Equatable {}
+extension AIBudsVideoStabilization.VideoStabilizationErrorCode : Swift.Hashable {}
+extension AIBudsVideoStabilization.VideoStabilizationErrorCode : Swift.RawRepresentable {}

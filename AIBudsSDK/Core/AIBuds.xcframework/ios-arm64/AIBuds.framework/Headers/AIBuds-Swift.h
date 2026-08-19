@@ -499,6 +499,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 @protocol AIBudsStarBurstBridgePlugin;
 @protocol AIBudsMltCloudBridgePlugin;
 @protocol AIBudsOnDeviceVoiceAssistantBridgePlugin;
+@protocol AIBudsVideoStabilizationPlugin;
 @protocol AIBudsBleConnectSDK;
 @protocol AIBudsSDKDelegate;
 @class NSNumber;
@@ -574,6 +575,30 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) id <AIBudsOn
 /// \param plugin The OnDeviceVoiceAssistantBridgePlugin instance to be set.
 ///
 + (void)setOnDeviceVoiceAssistantPlugin:(id <AIBudsOnDeviceVoiceAssistantBridgePlugin> _Nonnull)plugin;
+/// The optional plugin used to post-process imported media files.
+/// When no plugin is installed, imported files are returned unchanged.
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) id <AIBudsVideoStabilizationPlugin> _Nullable videoStabilizationPlugin;)
++ (id <AIBudsVideoStabilizationPlugin> _Nullable)videoStabilizationPlugin SWIFT_WARN_UNUSED_RESULT;
+/// Installs or removes the plugin used to post-process imported media files.
+/// The concrete plugin may wrap a third-party implementation. Applications only
+/// interact with this AIBuds abstraction and never need to import that implementation.
+/// \param plugin The plugin to install, or <code>nil</code> to disable post-processing.
+///
++ (void)setVideoStabilizationPlugin:(id <AIBudsVideoStabilizationPlugin> _Nullable)plugin;
+/// Whether SDK-internal video stabilization is available for media file import.
+/// Returns <code>true</code> only when a plugin is registered AND stabilization is not
+/// explicitly disabled via <code>disableVideoStabilization()</code>.
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) BOOL isVideoStabilizationAvailable;)
++ (BOOL)isVideoStabilizationAvailable SWIFT_WARN_UNUSED_RESULT;
+/// Whether SDK-internal video stabilization has been explicitly disabled by the app.
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) BOOL isVideoStabilizationDisabled;)
++ (BOOL)isVideoStabilizationDisabled SWIFT_WARN_UNUSED_RESULT;
+/// Disables SDK-internal video stabilization.
+/// After calling this, imported six-axis files will be returned with
+/// <code>stabilizationStatus = .disabled</code>, allowing the app to handle stabilization itself.
++ (void)disableVideoStabilization;
+/// Re-enables SDK-internal video stabilization previously disabled by <code>disableVideoStabilization()</code>.
++ (void)enableVideoStabilization;
 /// Initializes the SDK with the specified configuration.
 /// note:
 /// This method must be called before any other SDK methods to ensure proper configuration.
@@ -1809,163 +1834,6 @@ SWIFT_PROTOCOL_NAMED("DeviceEqualizerAPI")
 - (void)setEqualizer:(AIBudsEQSettingModel * _Nonnull)equalizerSetting withCompletion:(AIBudsCompletionHandler _Nullable)completion;
 @end
 
-/// File import API
-SWIFT_PROTOCOL_NAMED("DeviceFileImportAPI")
-@protocol AIBudsDeviceFileImportAPI <AIBudsDeviceAPI>
-/// Fetch media files info from the device.
-/// \param configureHotspotStartingHandler A closure that is called when the hotspot configuration starts.
-///
-/// \param hotspotConfigureCompletionHandler A closure that is called when the hotspot configuration completes.
-///
-/// \param enterFileTransferModeStartingHandler A closure that is called when the file transfer mode entry starts.
-///
-/// \param enterFileTransferModeCompletedHandler A closure that is called when the file transfer mode entry completes.
-///
-/// \param waitingForHotspotOpenHandler A closure that is called when the device is waiting for the hotspot to open.
-///
-/// \param connectDeviceHotspotStartingHandler A closure that is called when the device hotspot connection starts.
-///
-/// \param deviceHotspotConnectCompletionHandler A closure that is called when the device hotspot connection completes.
-///
-/// \param completionHandler A closure that is called when the fetch media files info operation completes.
-/// <ul>
-///   <li>
-///     success: <code>true</code> if the operation was successful; otherwise <code>false</code>.
-///   </li>
-///   <li>
-///     mediaFiles: The media file info models to be imported.
-///   </li>
-///   <li>
-///     error: An <code>NSError</code> object that describes the error that occurred, or <code>nil</code> if the operation was successful.
-///   </li>
-/// </ul>
-///
-- (void)fetchMediaFilesInfoWithConfigureHotspotStartingHandler:(AIBudsFileImportConfigureHotspotStartingHandler _Nullable)configureHotspotStartingHandler hotspotConfigureCompletionHandler:(AIBudsFileImportHotspotConfigureCompletionHandler _Nullable)hotspotConfigureCompletionHandler enterFileTransferModeStartingHandler:(AIBudsEnterFileTransferModeStartingHandler _Nullable)enterFileTransferModeStartingHandler enterFileTransferModeCompletedHandler:(AIBudsEnterFileTransferModeCompletionHandler _Nullable)enterFileTransferModeCompletedHandler waitingForHotspotOpenHandler:(AIBudsFileImportStartingToWaitForHotspotOpenHandler _Nullable)waitingForHotspotOpenHandler connectDeviceHotspotStartingHandler:(AIBudsFileImportConnectDeviceHotspotStartingHandler _Nullable)connectDeviceHotspotStartingHandler deviceHotspotConnectCompletionHandler:(AIBudsFileImportDeviceHotspotConnectCompletionHandler _Nullable)deviceHotspotConnectCompletionHandler completionHandler:(AIBudsFileImportFetchMediaFilesInfoCompletionHandler _Nullable)completionHandler;
-/// Import files from the device.
-/// \param fileUrls The file URLs to be imported.
-///
-/// \param dataChunkHandler A closure that is called when the file data is available.
-/// <ul>
-///   <li>
-///     taskId: the task ID
-///   </li>
-///   <li>
-///     fileUrl: the URL of the file
-///   </li>
-///   <li>
-///     fileSize: the total size of the file
-///   </li>
-///   <li>
-///     transferredSize: the size of the data already transferred
-///   </li>
-///   <li>
-///     error: error information if failed
-///   </li>
-/// </ul>
-///
-/// \param singleTransferStartingHandler A closure that is called when the file import transfer starts.
-/// <ul>
-///   <li>
-///     fileUrl: the URL of the file that is being imported
-///   </li>
-/// </ul>
-///
-/// \param singleTransferCompletionHandler A closure that is called when the file import transfer completion.
-/// <ul>
-///   <li>
-///     fileUrl: the URL of the file that was imported
-///   </li>
-///   <li>
-///     success: whether the file import succeeded
-///   </li>
-/// </ul>
-///
-/// \param speedHandler A closure that is called when the file import speed changes.
-/// <ul>
-///   <li>
-///     speed: the current speed in bytes per second
-///   </li>
-/// </ul>
-///
-/// \param batchProgressHandler A closure that is called when the file import batch progress changes.
-/// <ul>
-///   <li>
-///     fileIndex: The index of the current file in the batch.
-///   </li>
-///   <li>
-///     totalFiles: The total number of files in the batch.
-///   </li>
-///   <li>
-///     transferredSize: The total size of the data already transferred.
-///   </li>
-///   <li>
-///     error: error information if failed
-///   </li>
-/// </ul>
-///
-/// \param completionHandler A closure that is called when the import files operation completes.
-/// <ul>
-///   <li>
-///     success: <code>true</code> if the operation was successful; otherwise <code>false</code>.
-///   </li>
-///   <li>
-///     statusCode: The status code returned by the device. <code>nil</code> if the operation failed.
-///   </li>
-///   <li>
-///     error: An <code>NSError</code> object that describes the error that occurred, or <code>nil</code> if the operation was successful.
-///   </li>
-/// </ul>
-///
-- (void)importFileWithUrls:(NSArray<NSString *> * _Nonnull)fileUrls dataChunkHandler:(AIBudsFileImportDataChunkHandler _Nullable)dataChunkHandler singleTransferStartingHandler:(AIBudsFileImportSingleTransferStartingHandler _Nullable)singleTransferStartingHandler singleTransferCompletionHandler:(AIBudsFileImportSingleTransferCompletionHandler _Nullable)singleTransferCompletionHandler speedHandler:(AIBudsFileImportSpeedHandler _Nullable)speedHandler batchProgressHandler:(AIBudsFileImportBatchProgressHandler _Nullable)batchProgressHandler completionHandler:(AIBudsStatusCodeCompletionHandler _Nullable)completionHandler;
-/// Cancel file import from the device.
-/// \param completion A closure that is called when the operation completes.
-/// <ul>
-///   <li>
-///     success: <code>true</code> if the operation was successful; otherwise <code>false</code>.
-///   </li>
-///   <li>
-///     statusCode: The status code returned by the device. <code>nil</code> if the operation failed.
-///   </li>
-///   <li>
-///     error: An <code>NSError</code> object that describes the error that occurred, or <code>nil</code> if the operation was successful.
-///   </li>
-/// </ul>
-///
-- (void)cancelFileImportWithCompletion:(AIBudsStatusCodeCompletionHandler _Nullable)completion;
-/// Requests the device to delete a specific file.
-/// \param fileName The name of the file to delete.
-///
-/// \param completion A closure that is called when the operation completes.
-/// <ul>
-///   <li>
-///     success: <code>true</code> if the operation was successful; otherwise <code>false</code>.
-///   </li>
-///   <li>
-///     statusCode: The status code returned by the device. <code>nil</code> if the operation failed.
-///   </li>
-///   <li>
-///     error: An <code>NSError</code> object that describes the error that occurred, or <code>nil</code> if the operation was successful.
-///   </li>
-/// </ul>
-///
-- (void)deleteFile:(NSString * _Nonnull)fileName completion:(AIBudsStatusCodeCompletionHandler _Nullable)completion;
-/// Requests the device to delete all files.
-/// \param completion A closure that is called when the operation completes.
-/// <ul>
-///   <li>
-///     success: <code>true</code> if the operation was successful; otherwise <code>false</code>.
-///   </li>
-///   <li>
-///     statusCode: The status code returned by the device. <code>nil</code> if the operation failed.
-///   </li>
-///   <li>
-///     error: An <code>NSError</code> object that describes the error that occurred, or <code>nil</code> if the operation was successful.
-///   </li>
-/// </ul>
-///
-- (void)deleteAllFilesWithCompletion:(AIBudsStatusCodeCompletionHandler _Nullable)completion;
-@end
-
 /// The protocol for device API that supports device discovery.
 SWIFT_PROTOCOL_NAMED("DeviceFindAPI")
 @protocol AIBudsDeviceFindAPI <AIBudsDeviceAPI>
@@ -2115,6 +1983,236 @@ SWIFT_PROTOCOL_NAMED("DeviceInfoAPI")
 /// \param error An <code>NSError</code> object that describes the error that occurred, or <code>nil</code> if the operation was successful.
 ///
 - (void)requestQueryMediaCountInfoWithCompletion:(AIBudsCompletionHandler _Nullable)completion;
+@end
+
+@class AIBudsMediaFileInfoModel;
+/// Media file import API.
+SWIFT_PROTOCOL_NAMED("DeviceMediaFileImportAPI")
+@protocol AIBudsDeviceMediaFileImportAPI <AIBudsDeviceAPI>
+/// Whether SDK-internal video stabilization is available for media file import.
+/// Returns <code>true</code> only when a stabilization plugin is registered AND stabilization
+/// is not explicitly disabled. When <code>false</code>, imported six-axis files will be
+/// returned with <code>stabilizationStatus = .disabled</code> (or <code>.pluginUnavailable</code>),
+/// allowing the app to handle stabilization itself.
+@property (nonatomic, readonly) BOOL isVideoStabilizationAvailable;
+/// Fetch media files info from the device.
+/// \param configureHotspotStartingHandler A closure that is called when the hotspot configuration starts.
+///
+/// \param hotspotConfigureCompletionHandler A closure that is called when the hotspot configuration completes.
+/// <ul>
+///   <li>
+///     success: <code>true</code> if the configuration succeeded; otherwise <code>false</code>.
+///   </li>
+///   <li>
+///     error: An <code>NSError</code> object that describes the error that occurred, or <code>nil</code> if the operation was successful.
+///   </li>
+/// </ul>
+///
+/// \param enterFileTransferModeStartingHandler A closure that is called when the file transfer mode entry starts.
+///
+/// \param enterFileTransferModeCompletedHandler A closure that is called when the file transfer mode entry completes.
+/// <ul>
+///   <li>
+///     success: <code>true</code> if entering file transfer mode succeeded; otherwise <code>false</code>.
+///   </li>
+///   <li>
+///     error: An <code>NSError</code> object that describes the error that occurred, or <code>nil</code> if the operation was successful.
+///   </li>
+/// </ul>
+///
+/// \param waitingForHotspotOpenHandler A closure that is called when the device is waiting for the hotspot to open.
+///
+/// \param connectDeviceHotspotStartingHandler A closure that is called when the device hotspot connection starts.
+/// <ul>
+///   <li>
+///     ssid: The SSID of the device hotspot.
+///   </li>
+/// </ul>
+///
+/// \param deviceHotspotConnectCompletionHandler A closure that is called when the device hotspot connection completes.
+/// <ul>
+///   <li>
+///     success: <code>true</code> if the connection succeeded; otherwise <code>false</code>.
+///   </li>
+///   <li>
+///     error: An <code>NSError</code> object that describes the error that occurred, or <code>nil</code> if the operation was successful.
+///   </li>
+/// </ul>
+///
+/// \param completionHandler A closure that is called when the fetch media files info operation completes.
+/// <ul>
+///   <li>
+///     success: <code>true</code> if the operation was successful; otherwise <code>false</code>.
+///   </li>
+///   <li>
+///     mediaFiles: The media file info models to be imported.
+///   </li>
+///   <li>
+///     error: An <code>NSError</code> object that describes the error that occurred, or <code>nil</code> if the operation was successful.
+///   </li>
+/// </ul>
+///
+- (void)fetchMediaFilesInfoWithConfigureHotspotStartingHandler:(AIBudsMediaFileImportConfigureHotspotStartingHandler _Nullable)configureHotspotStartingHandler hotspotConfigureCompletionHandler:(AIBudsMediaFileImportHotspotConfigureCompletionHandler _Nullable)hotspotConfigureCompletionHandler enterFileTransferModeStartingHandler:(AIBudsEnterMediaFileTransferModeStartingHandler _Nullable)enterFileTransferModeStartingHandler enterFileTransferModeCompletedHandler:(AIBudsEnterMediaFileTransferModeCompletionHandler _Nullable)enterFileTransferModeCompletedHandler waitingForHotspotOpenHandler:(AIBudsMediaFileImportStartingToWaitForHotspotOpenHandler _Nullable)waitingForHotspotOpenHandler connectDeviceHotspotStartingHandler:(AIBudsMediaFileImportConnectDeviceHotspotStartingHandler _Nullable)connectDeviceHotspotStartingHandler deviceHotspotConnectCompletionHandler:(AIBudsMediaFileImportDeviceHotspotConnectCompletionHandler _Nullable)deviceHotspotConnectCompletionHandler completionHandler:(AIBudsMediaFileImportFetchMediaFilesInfoCompletionHandler _Nullable)completionHandler;
+/// Import media files from the device.
+/// The import process consists of two phases: file transfer (downloading the media files
+/// from the device) followed by an optional video stabilization post-processing phase.
+/// Progress callbacks are provided for each phase so the caller can report status to the user.
+/// \param mediaFiles The media file info models to be imported.
+///
+/// \param dataChunkHandler A closure that is called whenever a data chunk is received during the file transfer.
+/// <ul>
+///   <li>
+///     dataChunk: The received data chunk; <code>nil</code> if an error occurred.
+///   </li>
+///   <li>
+///     taskId: The unique identifier for the current file import task.
+///   </li>
+///   <li>
+///     fileUrl: The URL of the file being imported.
+///   </li>
+///   <li>
+///     fileSize: The total size of the file in bytes.
+///   </li>
+///   <li>
+///     transferredSize: The number of bytes that have been transferred so far.
+///   </li>
+///   <li>
+///     error: An <code>NSError</code> object that describes the error that occurred, or <code>nil</code> if the operation was successful.
+///   </li>
+/// </ul>
+///
+/// \param singleTransferStartingHandler A closure that is called when a single file transfer starts.
+/// <ul>
+///   <li>
+///     mediaFile: The media file info model of the file that is starting to be imported.
+///   </li>
+/// </ul>
+///
+/// \param singleTransferCompletionHandler A closure that is called when a single file transfer completes.
+/// <ul>
+///   <li>
+///     success: <code>true</code> if the file transfer succeeded; otherwise <code>false</code>.
+///   </li>
+///   <li>
+///     importedMediaFile: The local result model for this transfer, including metadata, downloaded local URL, optional playable stabilized URL, and possible error.
+///   </li>
+///   <li>
+///     error: An <code>NSError</code> object that describes the error that occurred, or <code>nil</code> if the operation was successful.
+///   </li>
+/// </ul>
+///
+/// \param transferSpeedHandler A closure that is called when the file transfer speed changes.
+/// <ul>
+///   <li>
+///     speed: The current transfer speed in bytes per second.
+///   </li>
+/// </ul>
+///
+/// \param transferBatchProgressHandler A closure that is called when the file transfer batch progress changes.
+/// <ul>
+///   <li>
+///     fileIndex: The index of the current file in the batch.
+///   </li>
+///   <li>
+///     totalFileCount: The total number of files in the batch.
+///   </li>
+/// </ul>
+///
+/// \param videoStabilizationPhaseBeginHandler A closure that is called when the video stabilization post-processing phase begins.
+///
+/// \param videoStabilizationSingleFileProgressHandler A closure that is called to report progress during the stabilization of an individual video file.
+/// <ul>
+///   <li>
+///     mediaFile: The imported media file model representing the video being stabilized.
+///   </li>
+///   <li>
+///     progress: The current stabilization progress, in the range <code>0.0</code> to <code>1.0</code>.
+///   </li>
+/// </ul>
+///
+/// \param videoStabilizationSingleFileCompletionHandler A closure that is called when a single video file finishes stabilization (success or failure).
+/// <ul>
+///   <li>
+///     mediaFile: The imported media file model with updated stabilization status.
+///   </li>
+///   <li>
+///     success: Whether the stabilization succeeded for this file.
+///   </li>
+/// </ul>
+///
+/// \param videoStabilizationBatchProgressHandler A closure that is called to report batch progress when stabilizing multiple video files.
+/// <ul>
+///   <li>
+///     fileIndex: The zero-based index of the current file being processed in the batch.
+///   </li>
+///   <li>
+///     totalFileCount: The total number of files in the stabilization batch.
+///   </li>
+/// </ul>
+///
+/// \param videoStabilizationPhaseFinishHandler A closure that is called when the entire video stabilization post-processing phase finishes.
+///
+/// \param completionHandler A closure that is called when the import operation completes.
+/// <ul>
+///   <li>
+///     success: <code>true</code> if all requested files were downloaded successfully; otherwise <code>false</code>.
+///   </li>
+///   <li>
+///     mediaFiles: The successfully imported files. A post-processing failure falls back to the original file and is reported by the corresponding result model.
+///   </li>
+///   <li>
+///     error: An <code>NSError</code> object that describes the download or local-file error when <code>success</code> is <code>false</code>, or <code>nil</code> if the operation was successful.
+///   </li>
+/// </ul>
+///
+- (void)importMediaFiles:(NSArray<AIBudsMediaFileInfoModel *> * _Nonnull)mediaFiles dataChunkHandler:(AIBudsMediaFileImportDataChunkHandler _Nullable)dataChunkHandler singleTransferStartingHandler:(AIBudsMediaFileImportSingleTransferStartingHandler _Nullable)singleTransferStartingHandler singleTransferCompletionHandler:(AIBudsMediaFileImportSingleTransferCompletionHandler _Nullable)singleTransferCompletionHandler transferSpeedHandler:(AIBudsMediaFileImportTransferSpeedHandler _Nullable)transferSpeedHandler transferBatchProgressHandler:(AIBudsMediaFileImportTransferBatchProgressHandler _Nullable)transferBatchProgressHandler videoStabilizationPhaseBeginHandler:(AIBudsVideoStabilizationPhaseBeginHandler _Nullable)videoStabilizationPhaseBeginHandler videoStabilizationSingleFileProgressHandler:(AIBudsVideoStabilizationProgressHandler _Nullable)videoStabilizationSingleFileProgressHandler videoStabilizationSingleFileCompletionHandler:(AIBudsVideoStabilizationSingleFileCompletionHandler _Nullable)videoStabilizationSingleFileCompletionHandler videoStabilizationBatchProgressHandler:(AIBudsVideoStabilizationBatchProgressHandler _Nullable)videoStabilizationBatchProgressHandler videoStabilizationPhaseFinishHandler:(AIBudsVideoStabilizationPhaseFinishHandler _Nullable)videoStabilizationPhaseFinishHandler completionHandler:(AIBudsMediaFileImportCompletionHandler _Nullable)completionHandler;
+/// Cancel media file import from the device or cancel active post-processing.
+/// \param completion A closure that is called when the operation completes.
+/// <ul>
+///   <li>
+///     success: <code>true</code> if the operation was successful; otherwise <code>false</code>.
+///   </li>
+///   <li>
+///     statusCode: The status code returned by the device. <code>nil</code> if the operation failed.
+///   </li>
+///   <li>
+///     error: An <code>NSError</code> object that describes the error that occurred, or <code>nil</code> if the operation was successful.
+///   </li>
+/// </ul>
+///
+- (void)cancelMediaFileImportWithCompletion:(AIBudsStatusCodeCompletionHandler _Nullable)completion;
+/// Requests the device to delete a specific media file.
+/// \param fileName The name of the file to delete.
+///
+/// \param completion A closure that is called when the operation completes.
+/// <ul>
+///   <li>
+///     success: <code>true</code> if the operation was successful; otherwise <code>false</code>.
+///   </li>
+///   <li>
+///     statusCode: The status code returned by the device. <code>nil</code> if the operation failed.
+///   </li>
+///   <li>
+///     error: An <code>NSError</code> object that describes the error that occurred, or <code>nil</code> if the operation was successful.
+///   </li>
+/// </ul>
+///
+- (void)deleteMediaFile:(NSString * _Nonnull)fileName completion:(AIBudsStatusCodeCompletionHandler _Nullable)completion;
+/// Requests the device to delete all media files.
+/// \param completion A closure that is called when the operation completes.
+/// <ul>
+///   <li>
+///     success: <code>true</code> if the operation was successful; otherwise <code>false</code>.
+///   </li>
+///   <li>
+///     statusCode: The status code returned by the device. <code>nil</code> if the operation failed.
+///   </li>
+///   <li>
+///     error: An <code>NSError</code> object that describes the error that occurred, or <code>nil</code> if the operation was successful.
+///   </li>
+/// </ul>
+///
+- (void)deleteAllMediaFilesWithCompletion:(AIBudsStatusCodeCompletionHandler _Nullable)completion;
 @end
 
 /// The protocol for device music control API.
@@ -3400,16 +3498,16 @@ typedef SWIFT_ENUM_NAMED(NSInteger, AIBudsSdkErrorCode, "SdkErrorCode", open) {
   AIBudsSdkErrorCodePhotoDataForSceneRecognitionTransferCanceledDueToBluetoothCommunicationError = 5004,
 /// Fetch media files info failed due to local network usage description missing
   AIBudsSdkErrorCodeFetchMediaFilesInfoFailedDueToLocalNetworkUsageDescMissing = 6000,
-/// File import not ready
-  AIBudsSdkErrorCodeFileImportNotReady = 6001,
-/// File import already in progress
-  AIBudsSdkErrorCodeFileImportAlreadyInProgress = 6002,
-/// File import not in progress
-  AIBudsSdkErrorCodeFileImportNotInProgress = 6003,
+/// Media file import not ready
+  AIBudsSdkErrorCodeMediaFileImportNotReady = 6001,
+/// Media file import already in progress
+  AIBudsSdkErrorCodeMediaFileImportAlreadyInProgress = 6002,
+/// Media file import not in progress
+  AIBudsSdkErrorCodeMediaFileImportNotInProgress = 6003,
 /// Fetch media file infos failed due to hotspot configure error
   AIBudsSdkErrorCodeFetchMediaFileInfosFailedDueToHotspotConfigureError = 6004,
-/// File import task prepare failed due to enter file transfer mode failed
-  AIBudsSdkErrorCodeFileImportTaskPrepareFailedDueToEnterFileTransferModeFailed = 6005,
+/// Media file import task prepare failed due to enter file transfer mode failed
+  AIBudsSdkErrorCodeMediaFileImportTaskPrepareFailedDueToEnterFileTransferModeFailed = 6005,
 /// Fetch media file infos failed due to hotspot connection failure
   AIBudsSdkErrorCodeFetchMediaFileInfosFailedDueToHotspotConnectionFailure = 6006,
 /// Fetch media file infos failed due to empty base url
@@ -3424,14 +3522,14 @@ typedef SWIFT_ENUM_NAMED(NSInteger, AIBudsSdkErrorCode, "SdkErrorCode", open) {
   AIBudsSdkErrorCodeFetchMediaFileInfosFailedDueToInvalidResponse = 6011,
 /// Fetch media file infos failed due to HTTP error code not success range
   AIBudsSdkErrorCodeFetchMediaFileInfosFailedDueToHttpError = 6012,
-/// Import files failed due to device connection lost
-  AIBudsSdkErrorCodeImportFilesFailedDueToDeviceHotspotConnectionLost = 6013,
-/// Import files failed due to invalid url
-  AIBudsSdkErrorCodeImportFilesFailedDueToInvalidUrl = 6014,
-/// Import files failed due to HTTP error code not success range
-  AIBudsSdkErrorCodeImportFilesFailedDueToHttpError = 6015,
-/// Import files failed due to network error
-  AIBudsSdkErrorCodeImportFilesFailedDueToNetworkError = 6016,
+/// Import media files failed due to device connection lost
+  AIBudsSdkErrorCodeImportMediaFilesFailedDueToDeviceHotspotConnectionLost = 6013,
+/// Import media files failed due to invalid url
+  AIBudsSdkErrorCodeImportMediaFilesFailedDueToInvalidUrl = 6014,
+/// Import media files failed due to HTTP error code not success range
+  AIBudsSdkErrorCodeImportMediaFilesFailedDueToHttpError = 6015,
+/// Import media files failed due to network error
+  AIBudsSdkErrorCodeImportMediaFilesFailedDueToNetworkError = 6016,
 /// Fetch media files info failed due to allow local networking missing
   AIBudsSdkErrorCodeFetchMediaFilesInfoFailedDueToAllowLocalNetworkingMissing = 6017,
 /// Prompt script is invalid or empty
@@ -3749,6 +3847,26 @@ SWIFT_PROTOCOL_NAMED("TurnByTurnNavigationAPI")
 /// </ul>
 ///
 - (void)sendNavigationInfo:(AIBudsNavigationInfoModel * _Nonnull)info completion:(AIBudsStatusCodeCompletionHandler _Nullable)completion;
+@end
+
+@class NSURL;
+SWIFT_ENUM_FWD_DECL(NSInteger, AIBudsVideoStabilizationCanProcessResult)
+/// Optional plugin for post-processing a media file after it has been imported.
+/// Concrete implementations are delivered as separate modules. This protocol keeps
+/// third-party processing APIs out of the AIBuds public surface.
+SWIFT_PROTOCOL_NAMED("VideoStabilizationPlugin")
+@protocol AIBudsVideoStabilizationPlugin <NSObject>
+/// A stable identifier used in logs and result metadata.
+@property (nonatomic, readonly, copy) NSString * _Nonnull identifier;
+/// 判断插件能否处理指定文件，并返回具体原因。
+- (enum AIBudsVideoStabilizationCanProcessResult)canProcessMediaFileURL:(NSURL * _Nonnull)mediaFileURL metadata:(AIBudsMediaFileInfoModel * _Nonnull)metadata SWIFT_WARN_UNUSED_RESULT;
+/// Processes an imported local file and produces a new local file.
+/// The plugin must not replace or remove <code>inputURL</code>. On success it calls the
+/// completion handler with the final URL. On failure AIBuds keeps the original file.
+- (void)processMediaFileAtURL:(NSURL * _Nonnull)inputURL metadata:(AIBudsMediaFileInfoModel * _Nonnull)metadata outputURL:(NSURL * _Nonnull)outputURL progressHandler:(void (^ _Nonnull)(double))progressHandler completionHandler:(void (^ _Nonnull)(NSURL * _Nullable, NSError * _Nullable))completionHandler;
+@optional
+/// Cancels work currently owned by the plugin.
+- (void)cancelAllProcessing;
 @end
 
 #endif // defined(__OBJC__)

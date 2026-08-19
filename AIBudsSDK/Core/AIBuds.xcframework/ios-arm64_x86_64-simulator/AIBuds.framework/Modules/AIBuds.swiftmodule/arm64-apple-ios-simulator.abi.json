@@ -16,6 +16,16 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AIBuds",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "AIBudsFoundation",
         "printedName": "AIBudsFoundation",
         "declKind": "Import",
@@ -4063,8 +4073,8 @@
           },
           {
             "kind": "Var",
-            "name": "fileImportNotReady",
-            "printedName": "fileImportNotReady",
+            "name": "mediaFileImportNotReady",
+            "printedName": "mediaFileImportNotReady",
             "children": [
               {
                 "kind": "TypeFunc",
@@ -4094,8 +4104,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "c:@M@AIBuds@E@AIBudsSdkErrorCode@AIBudsSdkErrorCodeFileImportNotReady",
-            "mangledName": "$s6AIBuds12SdkErrorCodeO18fileImportNotReadyyA2CmF",
+            "usr": "c:@M@AIBuds@E@AIBudsSdkErrorCode@AIBudsSdkErrorCodeMediaFileImportNotReady",
+            "mangledName": "$s6AIBuds12SdkErrorCodeO23mediaFileImportNotReadyyA2CmF",
             "moduleName": "AIBuds",
             "declAttributes": [
               "RawDocComment",
@@ -4105,8 +4115,8 @@
           },
           {
             "kind": "Var",
-            "name": "fileImportAlreadyInProgress",
-            "printedName": "fileImportAlreadyInProgress",
+            "name": "mediaFileImportAlreadyInProgress",
+            "printedName": "mediaFileImportAlreadyInProgress",
             "children": [
               {
                 "kind": "TypeFunc",
@@ -4136,8 +4146,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "c:@M@AIBuds@E@AIBudsSdkErrorCode@AIBudsSdkErrorCodeFileImportAlreadyInProgress",
-            "mangledName": "$s6AIBuds12SdkErrorCodeO27fileImportAlreadyInProgressyA2CmF",
+            "usr": "c:@M@AIBuds@E@AIBudsSdkErrorCode@AIBudsSdkErrorCodeMediaFileImportAlreadyInProgress",
+            "mangledName": "$s6AIBuds12SdkErrorCodeO32mediaFileImportAlreadyInProgressyA2CmF",
             "moduleName": "AIBuds",
             "declAttributes": [
               "RawDocComment",
@@ -4147,8 +4157,8 @@
           },
           {
             "kind": "Var",
-            "name": "fileImportNotInProgress",
-            "printedName": "fileImportNotInProgress",
+            "name": "mediaFileImportNotInProgress",
+            "printedName": "mediaFileImportNotInProgress",
             "children": [
               {
                 "kind": "TypeFunc",
@@ -4178,8 +4188,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "c:@M@AIBuds@E@AIBudsSdkErrorCode@AIBudsSdkErrorCodeFileImportNotInProgress",
-            "mangledName": "$s6AIBuds12SdkErrorCodeO23fileImportNotInProgressyA2CmF",
+            "usr": "c:@M@AIBuds@E@AIBudsSdkErrorCode@AIBudsSdkErrorCodeMediaFileImportNotInProgress",
+            "mangledName": "$s6AIBuds12SdkErrorCodeO28mediaFileImportNotInProgressyA2CmF",
             "moduleName": "AIBuds",
             "declAttributes": [
               "RawDocComment",
@@ -4231,8 +4241,8 @@
           },
           {
             "kind": "Var",
-            "name": "fileImportTaskPrepareFailedDueToEnterFileTransferModeFailed",
-            "printedName": "fileImportTaskPrepareFailedDueToEnterFileTransferModeFailed",
+            "name": "mediaFileImportTaskPrepareFailedDueToEnterFileTransferModeFailed",
+            "printedName": "mediaFileImportTaskPrepareFailedDueToEnterFileTransferModeFailed",
             "children": [
               {
                 "kind": "TypeFunc",
@@ -4262,8 +4272,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "c:@M@AIBuds@E@AIBudsSdkErrorCode@AIBudsSdkErrorCodeFileImportTaskPrepareFailedDueToEnterFileTransferModeFailed",
-            "mangledName": "$s6AIBuds12SdkErrorCodeO053fileImportTaskPrepareFailedDueToEnterFileTransferModeI0yA2CmF",
+            "usr": "c:@M@AIBuds@E@AIBudsSdkErrorCode@AIBudsSdkErrorCodeMediaFileImportTaskPrepareFailedDueToEnterFileTransferModeFailed",
+            "mangledName": "$s6AIBuds12SdkErrorCodeO042mediaFileImportTaskPrepareFailedDueToEnterf12TransferModeJ0yA2CmF",
             "moduleName": "AIBuds",
             "declAttributes": [
               "RawDocComment",
@@ -4567,8 +4577,8 @@
           },
           {
             "kind": "Var",
-            "name": "importFilesFailedDueToDeviceHotspotConnectionLost",
-            "printedName": "importFilesFailedDueToDeviceHotspotConnectionLost",
+            "name": "importMediaFilesFailedDueToDeviceHotspotConnectionLost",
+            "printedName": "importMediaFilesFailedDueToDeviceHotspotConnectionLost",
             "children": [
               {
                 "kind": "TypeFunc",
@@ -4598,8 +4608,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "c:@M@AIBuds@E@AIBudsSdkErrorCode@AIBudsSdkErrorCodeImportFilesFailedDueToDeviceHotspotConnectionLost",
-            "mangledName": "$s6AIBuds12SdkErrorCodeO49importFilesFailedDueToDeviceHotspotConnectionLostyA2CmF",
+            "usr": "c:@M@AIBuds@E@AIBudsSdkErrorCode@AIBudsSdkErrorCodeImportMediaFilesFailedDueToDeviceHotspotConnectionLost",
+            "mangledName": "$s6AIBuds12SdkErrorCodeO54importMediaFilesFailedDueToDeviceHotspotConnectionLostyA2CmF",
             "moduleName": "AIBuds",
             "declAttributes": [
               "RawDocComment",
@@ -4609,8 +4619,8 @@
           },
           {
             "kind": "Var",
-            "name": "importFilesFailedDueToInvalidUrl",
-            "printedName": "importFilesFailedDueToInvalidUrl",
+            "name": "importMediaFilesFailedDueToInvalidUrl",
+            "printedName": "importMediaFilesFailedDueToInvalidUrl",
             "children": [
               {
                 "kind": "TypeFunc",
@@ -4640,8 +4650,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "c:@M@AIBuds@E@AIBudsSdkErrorCode@AIBudsSdkErrorCodeImportFilesFailedDueToInvalidUrl",
-            "mangledName": "$s6AIBuds12SdkErrorCodeO32importFilesFailedDueToInvalidUrlyA2CmF",
+            "usr": "c:@M@AIBuds@E@AIBudsSdkErrorCode@AIBudsSdkErrorCodeImportMediaFilesFailedDueToInvalidUrl",
+            "mangledName": "$s6AIBuds12SdkErrorCodeO37importMediaFilesFailedDueToInvalidUrlyA2CmF",
             "moduleName": "AIBuds",
             "declAttributes": [
               "RawDocComment",
@@ -4651,8 +4661,8 @@
           },
           {
             "kind": "Var",
-            "name": "importFilesFailedDueToHttpError",
-            "printedName": "importFilesFailedDueToHttpError",
+            "name": "importMediaFilesFailedDueToHttpError",
+            "printedName": "importMediaFilesFailedDueToHttpError",
             "children": [
               {
                 "kind": "TypeFunc",
@@ -4682,8 +4692,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "c:@M@AIBuds@E@AIBudsSdkErrorCode@AIBudsSdkErrorCodeImportFilesFailedDueToHttpError",
-            "mangledName": "$s6AIBuds12SdkErrorCodeO026importFilesFailedDueToHttpC0yA2CmF",
+            "usr": "c:@M@AIBuds@E@AIBudsSdkErrorCode@AIBudsSdkErrorCodeImportMediaFilesFailedDueToHttpError",
+            "mangledName": "$s6AIBuds12SdkErrorCodeO031importMediaFilesFailedDueToHttpC0yA2CmF",
             "moduleName": "AIBuds",
             "declAttributes": [
               "RawDocComment",
@@ -4693,8 +4703,8 @@
           },
           {
             "kind": "Var",
-            "name": "importFilesFailedDueToNetworkError",
-            "printedName": "importFilesFailedDueToNetworkError",
+            "name": "importMediaFilesFailedDueToNetworkError",
+            "printedName": "importMediaFilesFailedDueToNetworkError",
             "children": [
               {
                 "kind": "TypeFunc",
@@ -4724,8 +4734,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "c:@M@AIBuds@E@AIBudsSdkErrorCode@AIBudsSdkErrorCodeImportFilesFailedDueToNetworkError",
-            "mangledName": "$s6AIBuds12SdkErrorCodeO029importFilesFailedDueToNetworkC0yA2CmF",
+            "usr": "c:@M@AIBuds@E@AIBudsSdkErrorCode@AIBudsSdkErrorCodeImportMediaFilesFailedDueToNetworkError",
+            "mangledName": "$s6AIBuds12SdkErrorCodeO034importMediaFilesFailedDueToNetworkC0yA2CmF",
             "moduleName": "AIBuds",
             "declAttributes": [
               "RawDocComment",
@@ -21303,978 +21313,6 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "DeviceFileImportAPI",
-        "printedName": "DeviceFileImportAPI",
-        "children": [
-          {
-            "kind": "Function",
-            "name": "fetchMediaFilesInfo",
-            "printedName": "fetchMediaFilesInfo(configureHotspotStartingHandler:hotspotConfigureCompletionHandler:enterFileTransferModeStartingHandler:enterFileTransferModeCompletedHandler:waitingForHotspotOpenHandler:connectDeviceHotspotStartingHandler:deviceHotspotConnectCompletionHandler:completionHandler:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "(() -> ())?",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "() -> ()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      }
-                    ]
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "((Swift.Bool, (any Swift.Error)?) -> ())?",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(Swift.Bool, (any Swift.Error)?) -> ()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Tuple",
-                        "printedName": "(Swift.Bool, (any Swift.Error)?)",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Bool",
-                            "printedName": "Swift.Bool",
-                            "usr": "s:Sb"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Optional",
-                            "printedName": "(any Swift.Error)?",
-                            "children": [
-                              {
-                                "kind": "TypeNominal",
-                                "name": "Error",
-                                "printedName": "any Swift.Error",
-                                "usr": "s:s5ErrorP"
-                              }
-                            ],
-                            "usr": "s:Sq"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "(() -> ())?",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "() -> ()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      }
-                    ]
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "((Swift.Bool, (any Swift.Error)?) -> ())?",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(Swift.Bool, (any Swift.Error)?) -> ()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Tuple",
-                        "printedName": "(Swift.Bool, (any Swift.Error)?)",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Bool",
-                            "printedName": "Swift.Bool",
-                            "usr": "s:Sb"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Optional",
-                            "printedName": "(any Swift.Error)?",
-                            "children": [
-                              {
-                                "kind": "TypeNominal",
-                                "name": "Error",
-                                "printedName": "any Swift.Error",
-                                "usr": "s:s5ErrorP"
-                              }
-                            ],
-                            "usr": "s:Sq"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "(() -> ())?",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "() -> ()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      }
-                    ]
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "((Swift.String) -> ())?",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(Swift.String) -> ()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ]
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "((Swift.Bool, (any Swift.Error)?) -> ())?",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(Swift.Bool, (any Swift.Error)?) -> ()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Tuple",
-                        "printedName": "(Swift.Bool, (any Swift.Error)?)",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Bool",
-                            "printedName": "Swift.Bool",
-                            "usr": "s:Sb"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Optional",
-                            "printedName": "(any Swift.Error)?",
-                            "children": [
-                              {
-                                "kind": "TypeNominal",
-                                "name": "Error",
-                                "printedName": "any Swift.Error",
-                                "usr": "s:s5ErrorP"
-                              }
-                            ],
-                            "usr": "s:Sq"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "((Swift.Bool, [AIBudsFoundation.MediaFileInfoModel], (any Swift.Error)?) -> ())?",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(Swift.Bool, [AIBudsFoundation.MediaFileInfoModel], (any Swift.Error)?) -> ()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Tuple",
-                        "printedName": "(Swift.Bool, [AIBudsFoundation.MediaFileInfoModel], (any Swift.Error)?)",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Bool",
-                            "printedName": "Swift.Bool",
-                            "usr": "s:Sb"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Array",
-                            "printedName": "[AIBudsFoundation.MediaFileInfoModel]",
-                            "children": [
-                              {
-                                "kind": "TypeNominal",
-                                "name": "MediaFileInfoModel",
-                                "printedName": "AIBudsFoundation.MediaFileInfoModel",
-                                "usr": "c:@M@AIBudsFoundation@objc(cs)AIBudsMediaFileInfoModel"
-                              }
-                            ],
-                            "usr": "s:Sa"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Optional",
-                            "printedName": "(any Swift.Error)?",
-                            "children": [
-                              {
-                                "kind": "TypeNominal",
-                                "name": "Error",
-                                "printedName": "any Swift.Error",
-                                "usr": "s:s5ErrorP"
-                              }
-                            ],
-                            "usr": "s:Sq"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@AIBuds@objc(pl)AIBudsDeviceFileImportAPI(im)fetchMediaFilesInfoWithConfigureHotspotStartingHandler:hotspotConfigureCompletionHandler:enterFileTransferModeStartingHandler:enterFileTransferModeCompletedHandler:waitingForHotspotOpenHandler:connectDeviceHotspotStartingHandler:deviceHotspotConnectCompletionHandler:completionHandler:",
-            "mangledName": "$s6AIBuds19DeviceFileImportAPIP19fetchMediaFilesInfo31configureHotspotStartingHandler026hotspotConfigureCompletionM005enterc12TransferModelM00qcrs9CompletedM0010waitingFork4OpenM007connectbklM006devicek7ConnectpM0010completionM0yyycSg_ySb_s5Error_pSgtcSgAmpMySScSgAPySb_Say0A10Foundation0gcI5ModelCGAOtcSgtF",
-            "moduleName": "AIBuds",
-            "genericSig": "<τ_0_0 where τ_0_0 : AIBuds.DeviceFileImportAPI>",
-            "sugared_genericSig": "<Self where Self : AIBuds.DeviceFileImportAPI>",
-            "protocolReq": true,
-            "objc_name": "fetchMediaFilesInfoWithConfigureHotspotStartingHandler:hotspotConfigureCompletionHandler:enterFileTransferModeStartingHandler:enterFileTransferModeCompletedHandler:waitingForHotspotOpenHandler:connectDeviceHotspotStartingHandler:deviceHotspotConnectCompletionHandler:completionHandler:",
-            "declAttributes": [
-              "ObjC",
-              "RawDocComment"
-            ],
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "importFiles",
-            "printedName": "importFiles(_:dataChunkHandler:singleTransferStartingHandler:singleTransferCompletionHandler:speedHandler:batchProgressHandler:completionHandler:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[Swift.String]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sa"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "((Foundation.Data?, Swift.String, Swift.String, Swift.UInt64, Swift.UInt64, (any Swift.Error)?) -> ())?",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(Foundation.Data?, Swift.String, Swift.String, Swift.UInt64, Swift.UInt64, (any Swift.Error)?) -> ()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Tuple",
-                        "printedName": "(Foundation.Data?, Swift.String, Swift.String, Swift.UInt64, Swift.UInt64, (any Swift.Error)?)",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Optional",
-                            "printedName": "Foundation.Data?",
-                            "children": [
-                              {
-                                "kind": "TypeNominal",
-                                "name": "Data",
-                                "printedName": "Foundation.Data",
-                                "usr": "s:10Foundation4DataV"
-                              }
-                            ],
-                            "usr": "s:Sq"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "String",
-                            "printedName": "Swift.String",
-                            "usr": "s:SS"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "String",
-                            "printedName": "Swift.String",
-                            "usr": "s:SS"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "UInt64",
-                            "printedName": "Swift.UInt64",
-                            "usr": "s:s6UInt64V"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "UInt64",
-                            "printedName": "Swift.UInt64",
-                            "usr": "s:s6UInt64V"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Optional",
-                            "printedName": "(any Swift.Error)?",
-                            "children": [
-                              {
-                                "kind": "TypeNominal",
-                                "name": "Error",
-                                "printedName": "any Swift.Error",
-                                "usr": "s:s5ErrorP"
-                              }
-                            ],
-                            "usr": "s:Sq"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "((Swift.String) -> ())?",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(Swift.String) -> ()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ]
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "((Swift.String, Swift.Bool, (any Swift.Error)?) -> ())?",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(Swift.String, Swift.Bool, (any Swift.Error)?) -> ()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Tuple",
-                        "printedName": "(Swift.String, Swift.Bool, (any Swift.Error)?)",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "String",
-                            "printedName": "Swift.String",
-                            "usr": "s:SS"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Bool",
-                            "printedName": "Swift.Bool",
-                            "usr": "s:Sb"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Optional",
-                            "printedName": "(any Swift.Error)?",
-                            "children": [
-                              {
-                                "kind": "TypeNominal",
-                                "name": "Error",
-                                "printedName": "any Swift.Error",
-                                "usr": "s:s5ErrorP"
-                              }
-                            ],
-                            "usr": "s:Sq"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "((Swift.UInt64) -> ())?",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(Swift.UInt64) -> ()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "UInt64",
-                        "printedName": "Swift.UInt64",
-                        "usr": "s:s6UInt64V"
-                      }
-                    ]
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "((Swift.Int, Swift.Int) -> ())?",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(Swift.Int, Swift.Int) -> ()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Tuple",
-                        "printedName": "(Swift.Int, Swift.Int)",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Int",
-                            "printedName": "Swift.Int",
-                            "usr": "s:Si"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Int",
-                            "printedName": "Swift.Int",
-                            "usr": "s:Si"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "((Swift.Bool, Foundation.NSNumber?, (any Swift.Error)?) -> ())?",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(Swift.Bool, Foundation.NSNumber?, (any Swift.Error)?) -> ()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Tuple",
-                        "printedName": "(Swift.Bool, Foundation.NSNumber?, (any Swift.Error)?)",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Bool",
-                            "printedName": "Swift.Bool",
-                            "usr": "s:Sb"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Optional",
-                            "printedName": "Foundation.NSNumber?",
-                            "children": [
-                              {
-                                "kind": "TypeNominal",
-                                "name": "NSNumber",
-                                "printedName": "Foundation.NSNumber",
-                                "usr": "c:objc(cs)NSNumber"
-                              }
-                            ],
-                            "usr": "s:Sq"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Optional",
-                            "printedName": "(any Swift.Error)?",
-                            "children": [
-                              {
-                                "kind": "TypeNominal",
-                                "name": "Error",
-                                "printedName": "any Swift.Error",
-                                "usr": "s:s5ErrorP"
-                              }
-                            ],
-                            "usr": "s:Sq"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@AIBuds@objc(pl)AIBudsDeviceFileImportAPI(im)importFileWithUrls:dataChunkHandler:singleTransferStartingHandler:singleTransferCompletionHandler:speedHandler:batchProgressHandler:completionHandler:",
-            "mangledName": "$s6AIBuds19DeviceFileImportAPIP11importFiles_16dataChunkHandler022singleTransferStartingJ00kl10CompletionJ005speedJ0013batchProgressJ0010completionJ0ySaySSG_y10Foundation4DataVSg_S2Ss6UInt64VAQs5Error_pSgtcSgySScSgySS_SbAStcSgyAQcSgySi_SitcSgySb_So8NSNumberCSgAStcSgtF",
-            "moduleName": "AIBuds",
-            "genericSig": "<τ_0_0 where τ_0_0 : AIBuds.DeviceFileImportAPI>",
-            "sugared_genericSig": "<Self where Self : AIBuds.DeviceFileImportAPI>",
-            "protocolReq": true,
-            "objc_name": "importFileWithUrls:dataChunkHandler:singleTransferStartingHandler:singleTransferCompletionHandler:speedHandler:batchProgressHandler:completionHandler:",
-            "declAttributes": [
-              "ObjC",
-              "RawDocComment"
-            ],
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "cancelFileImport",
-            "printedName": "cancelFileImport(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "((Swift.Bool, Foundation.NSNumber?, (any Swift.Error)?) -> ())?",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(Swift.Bool, Foundation.NSNumber?, (any Swift.Error)?) -> ()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Tuple",
-                        "printedName": "(Swift.Bool, Foundation.NSNumber?, (any Swift.Error)?)",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Bool",
-                            "printedName": "Swift.Bool",
-                            "usr": "s:Sb"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Optional",
-                            "printedName": "Foundation.NSNumber?",
-                            "children": [
-                              {
-                                "kind": "TypeNominal",
-                                "name": "NSNumber",
-                                "printedName": "Foundation.NSNumber",
-                                "usr": "c:objc(cs)NSNumber"
-                              }
-                            ],
-                            "usr": "s:Sq"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Optional",
-                            "printedName": "(any Swift.Error)?",
-                            "children": [
-                              {
-                                "kind": "TypeNominal",
-                                "name": "Error",
-                                "printedName": "any Swift.Error",
-                                "usr": "s:s5ErrorP"
-                              }
-                            ],
-                            "usr": "s:Sq"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@AIBuds@objc(pl)AIBudsDeviceFileImportAPI(im)cancelFileImportWithCompletion:",
-            "mangledName": "$s6AIBuds19DeviceFileImportAPIP06cancelcD0yyySb_So8NSNumberCSgs5Error_pSgtcSgF",
-            "moduleName": "AIBuds",
-            "genericSig": "<τ_0_0 where τ_0_0 : AIBuds.DeviceFileImportAPI>",
-            "sugared_genericSig": "<Self where Self : AIBuds.DeviceFileImportAPI>",
-            "protocolReq": true,
-            "objc_name": "cancelFileImportWithCompletion:",
-            "declAttributes": [
-              "ObjC",
-              "RawDocComment"
-            ],
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "deleteFile",
-            "printedName": "deleteFile(_:completion:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "((Swift.Bool, Foundation.NSNumber?, (any Swift.Error)?) -> ())?",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(Swift.Bool, Foundation.NSNumber?, (any Swift.Error)?) -> ()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Tuple",
-                        "printedName": "(Swift.Bool, Foundation.NSNumber?, (any Swift.Error)?)",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Bool",
-                            "printedName": "Swift.Bool",
-                            "usr": "s:Sb"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Optional",
-                            "printedName": "Foundation.NSNumber?",
-                            "children": [
-                              {
-                                "kind": "TypeNominal",
-                                "name": "NSNumber",
-                                "printedName": "Foundation.NSNumber",
-                                "usr": "c:objc(cs)NSNumber"
-                              }
-                            ],
-                            "usr": "s:Sq"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Optional",
-                            "printedName": "(any Swift.Error)?",
-                            "children": [
-                              {
-                                "kind": "TypeNominal",
-                                "name": "Error",
-                                "printedName": "any Swift.Error",
-                                "usr": "s:s5ErrorP"
-                              }
-                            ],
-                            "usr": "s:Sq"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@AIBuds@objc(pl)AIBudsDeviceFileImportAPI(im)deleteFile:completion:",
-            "mangledName": "$s6AIBuds19DeviceFileImportAPIP06deleteC0_10completionySS_ySb_So8NSNumberCSgs5Error_pSgtcSgtF",
-            "moduleName": "AIBuds",
-            "genericSig": "<τ_0_0 where τ_0_0 : AIBuds.DeviceFileImportAPI>",
-            "sugared_genericSig": "<Self where Self : AIBuds.DeviceFileImportAPI>",
-            "protocolReq": true,
-            "objc_name": "deleteFile:completion:",
-            "declAttributes": [
-              "ObjC",
-              "RawDocComment"
-            ],
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "deleteAllFiles",
-            "printedName": "deleteAllFiles(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "((Swift.Bool, Foundation.NSNumber?, (any Swift.Error)?) -> ())?",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(Swift.Bool, Foundation.NSNumber?, (any Swift.Error)?) -> ()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Tuple",
-                        "printedName": "(Swift.Bool, Foundation.NSNumber?, (any Swift.Error)?)",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Bool",
-                            "printedName": "Swift.Bool",
-                            "usr": "s:Sb"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Optional",
-                            "printedName": "Foundation.NSNumber?",
-                            "children": [
-                              {
-                                "kind": "TypeNominal",
-                                "name": "NSNumber",
-                                "printedName": "Foundation.NSNumber",
-                                "usr": "c:objc(cs)NSNumber"
-                              }
-                            ],
-                            "usr": "s:Sq"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Optional",
-                            "printedName": "(any Swift.Error)?",
-                            "children": [
-                              {
-                                "kind": "TypeNominal",
-                                "name": "Error",
-                                "printedName": "any Swift.Error",
-                                "usr": "s:s5ErrorP"
-                              }
-                            ],
-                            "usr": "s:Sq"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@AIBuds@objc(pl)AIBudsDeviceFileImportAPI(im)deleteAllFilesWithCompletion:",
-            "mangledName": "$s6AIBuds19DeviceFileImportAPIP14deleteAllFilesyyySb_So8NSNumberCSgs5Error_pSgtcSgF",
-            "moduleName": "AIBuds",
-            "genericSig": "<τ_0_0 where τ_0_0 : AIBuds.DeviceFileImportAPI>",
-            "sugared_genericSig": "<Self where Self : AIBuds.DeviceFileImportAPI>",
-            "protocolReq": true,
-            "objc_name": "deleteAllFilesWithCompletion:",
-            "declAttributes": [
-              "ObjC",
-              "RawDocComment"
-            ],
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Protocol",
-        "usr": "c:@M@AIBuds@objc(pl)AIBudsDeviceFileImportAPI",
-        "mangledName": "$s6AIBuds19DeviceFileImportAPIP",
-        "moduleName": "AIBuds",
-        "genericSig": "<τ_0_0 : AIBuds.DeviceAPI>",
-        "sugared_genericSig": "<Self : AIBuds.DeviceAPI>",
-        "objc_name": "AIBudsDeviceFileImportAPI",
-        "declAttributes": [
-          "AccessControl",
-          "ObjC",
-          "RawDocComment"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "DeviceAPI",
-            "printedName": "DeviceAPI",
-            "usr": "c:@M@AIBuds@objc(pl)AIBudsDeviceAPI",
-            "mangledName": "$s6AIBuds9DeviceAPIP"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "AIBuds",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "TypeDecl",
         "name": "DeviceFindAPI",
         "printedName": "DeviceFindAPI",
         "children": [
@@ -23688,6 +22726,1194 @@
         "genericSig": "<τ_0_0 : AIBuds.DeviceAPI>",
         "sugared_genericSig": "<Self : AIBuds.DeviceAPI>",
         "objc_name": "AIBudsDeviceInfoAPI",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "DeviceAPI",
+            "printedName": "DeviceAPI",
+            "usr": "c:@M@AIBuds@objc(pl)AIBudsDeviceAPI",
+            "mangledName": "$s6AIBuds9DeviceAPIP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AIBuds",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "DeviceMediaFileImportAPI",
+        "printedName": "DeviceMediaFileImportAPI",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "isVideoStabilizationAvailable",
+            "printedName": "isVideoStabilizationAvailable",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBuds@objc(pl)AIBudsDeviceMediaFileImportAPI(py)isVideoStabilizationAvailable",
+            "mangledName": "$s6AIBuds24DeviceMediaFileImportAPIP29isVideoStabilizationAvailableSbvp",
+            "moduleName": "AIBuds",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBuds@objc(pl)AIBudsDeviceMediaFileImportAPI(im)isVideoStabilizationAvailable",
+                "mangledName": "$s6AIBuds24DeviceMediaFileImportAPIP29isVideoStabilizationAvailableSbvg",
+                "moduleName": "AIBuds",
+                "genericSig": "<τ_0_0 where τ_0_0 : AIBuds.DeviceMediaFileImportAPI>",
+                "sugared_genericSig": "<Self where Self : AIBuds.DeviceMediaFileImportAPI>",
+                "protocolReq": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "fetchMediaFilesInfo",
+            "printedName": "fetchMediaFilesInfo(configureHotspotStartingHandler:hotspotConfigureCompletionHandler:enterFileTransferModeStartingHandler:enterFileTransferModeCompletedHandler:waitingForHotspotOpenHandler:connectDeviceHotspotStartingHandler:deviceHotspotConnectCompletionHandler:completionHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(() -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "() -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Swift.Bool, (any Swift.Error)?) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Bool, (any Swift.Error)?) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(Swift.Bool, (any Swift.Error)?)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Bool",
+                            "printedName": "Swift.Bool",
+                            "usr": "s:Sb"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "(any Swift.Error)?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Error",
+                                "printedName": "any Swift.Error",
+                                "usr": "s:s5ErrorP"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(() -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "() -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Swift.Bool, (any Swift.Error)?) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Bool, (any Swift.Error)?) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(Swift.Bool, (any Swift.Error)?)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Bool",
+                            "printedName": "Swift.Bool",
+                            "usr": "s:Sb"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "(any Swift.Error)?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Error",
+                                "printedName": "any Swift.Error",
+                                "usr": "s:s5ErrorP"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(() -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "() -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Swift.String) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Swift.Bool, (any Swift.Error)?) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Bool, (any Swift.Error)?) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(Swift.Bool, (any Swift.Error)?)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Bool",
+                            "printedName": "Swift.Bool",
+                            "usr": "s:Sb"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "(any Swift.Error)?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Error",
+                                "printedName": "any Swift.Error",
+                                "usr": "s:s5ErrorP"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Swift.Bool, [AIBudsFoundation.MediaFileInfoModel], (any Swift.Error)?) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Bool, [AIBudsFoundation.MediaFileInfoModel], (any Swift.Error)?) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(Swift.Bool, [AIBudsFoundation.MediaFileInfoModel], (any Swift.Error)?)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Bool",
+                            "printedName": "Swift.Bool",
+                            "usr": "s:Sb"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Array",
+                            "printedName": "[AIBudsFoundation.MediaFileInfoModel]",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "MediaFileInfoModel",
+                                "printedName": "AIBudsFoundation.MediaFileInfoModel",
+                                "usr": "c:@M@AIBudsFoundation@objc(cs)AIBudsMediaFileInfoModel"
+                              }
+                            ],
+                            "usr": "s:Sa"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "(any Swift.Error)?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Error",
+                                "printedName": "any Swift.Error",
+                                "usr": "s:s5ErrorP"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AIBuds@objc(pl)AIBudsDeviceMediaFileImportAPI(im)fetchMediaFilesInfoWithConfigureHotspotStartingHandler:hotspotConfigureCompletionHandler:enterFileTransferModeStartingHandler:enterFileTransferModeCompletedHandler:waitingForHotspotOpenHandler:connectDeviceHotspotStartingHandler:deviceHotspotConnectCompletionHandler:completionHandler:",
+            "mangledName": "$s6AIBuds24DeviceMediaFileImportAPIP05fetchC9FilesInfo31configureHotspotStartingHandler026hotspotConfigureCompletionM005enterd12TransferModelM00qdrs9CompletedM0010waitingFork4OpenM007connectbklM006devicek7ConnectpM0010completionM0yyycSg_ySb_s5Error_pSgtcSgAmpMySScSgAPySb_Say0A10Foundation0cdI5ModelCGAOtcSgtF",
+            "moduleName": "AIBuds",
+            "genericSig": "<τ_0_0 where τ_0_0 : AIBuds.DeviceMediaFileImportAPI>",
+            "sugared_genericSig": "<Self where Self : AIBuds.DeviceMediaFileImportAPI>",
+            "protocolReq": true,
+            "objc_name": "fetchMediaFilesInfoWithConfigureHotspotStartingHandler:hotspotConfigureCompletionHandler:enterFileTransferModeStartingHandler:enterFileTransferModeCompletedHandler:waitingForHotspotOpenHandler:connectDeviceHotspotStartingHandler:deviceHotspotConnectCompletionHandler:completionHandler:",
+            "declAttributes": [
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "importMediaFiles",
+            "printedName": "importMediaFiles(_:dataChunkHandler:singleTransferStartingHandler:singleTransferCompletionHandler:transferSpeedHandler:transferBatchProgressHandler:videoStabilizationPhaseBeginHandler:videoStabilizationSingleFileProgressHandler:videoStabilizationSingleFileCompletionHandler:videoStabilizationBatchProgressHandler:videoStabilizationPhaseFinishHandler:completionHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[AIBudsFoundation.MediaFileInfoModel]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MediaFileInfoModel",
+                    "printedName": "AIBudsFoundation.MediaFileInfoModel",
+                    "usr": "c:@M@AIBudsFoundation@objc(cs)AIBudsMediaFileInfoModel"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Foundation.Data?, Swift.String, Swift.String, Swift.UInt64, Swift.UInt64, (any Swift.Error)?) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Foundation.Data?, Swift.String, Swift.String, Swift.UInt64, Swift.UInt64, (any Swift.Error)?) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(Foundation.Data?, Swift.String, Swift.String, Swift.UInt64, Swift.UInt64, (any Swift.Error)?)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "Foundation.Data?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Data",
+                                "printedName": "Foundation.Data",
+                                "usr": "s:10Foundation4DataV"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "UInt64",
+                            "printedName": "Swift.UInt64",
+                            "usr": "s:s6UInt64V"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "UInt64",
+                            "printedName": "Swift.UInt64",
+                            "usr": "s:s6UInt64V"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "(any Swift.Error)?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Error",
+                                "printedName": "any Swift.Error",
+                                "usr": "s:s5ErrorP"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((AIBudsFoundation.MediaFileInfoModel) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(AIBudsFoundation.MediaFileInfoModel) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MediaFileInfoModel",
+                        "printedName": "AIBudsFoundation.MediaFileInfoModel",
+                        "usr": "c:@M@AIBudsFoundation@objc(cs)AIBudsMediaFileInfoModel"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Swift.Bool, AIBudsFoundation.ImportedMediaFileModel, (any Swift.Error)?) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Bool, AIBudsFoundation.ImportedMediaFileModel, (any Swift.Error)?) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(Swift.Bool, AIBudsFoundation.ImportedMediaFileModel, (any Swift.Error)?)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Bool",
+                            "printedName": "Swift.Bool",
+                            "usr": "s:Sb"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ImportedMediaFileModel",
+                            "printedName": "AIBudsFoundation.ImportedMediaFileModel",
+                            "usr": "c:@M@AIBudsFoundation@objc(cs)AIBudsImportedMediaFileModel"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "(any Swift.Error)?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Error",
+                                "printedName": "any Swift.Error",
+                                "usr": "s:s5ErrorP"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Swift.UInt64) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.UInt64) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UInt64",
+                        "printedName": "Swift.UInt64",
+                        "usr": "s:s6UInt64V"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Swift.Int, Swift.Int) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Int, Swift.Int) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(Swift.Int, Swift.Int)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(() -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "() -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((AIBudsFoundation.ImportedMediaFileModel, Swift.Double) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(AIBudsFoundation.ImportedMediaFileModel, Swift.Double) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(AIBudsFoundation.ImportedMediaFileModel, Swift.Double)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ImportedMediaFileModel",
+                            "printedName": "AIBudsFoundation.ImportedMediaFileModel",
+                            "usr": "c:@M@AIBudsFoundation@objc(cs)AIBudsImportedMediaFileModel"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Double",
+                            "printedName": "Swift.Double",
+                            "usr": "s:Sd"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((AIBudsFoundation.ImportedMediaFileModel, Swift.Bool) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(AIBudsFoundation.ImportedMediaFileModel, Swift.Bool) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(AIBudsFoundation.ImportedMediaFileModel, Swift.Bool)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ImportedMediaFileModel",
+                            "printedName": "AIBudsFoundation.ImportedMediaFileModel",
+                            "usr": "c:@M@AIBudsFoundation@objc(cs)AIBudsImportedMediaFileModel"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Bool",
+                            "printedName": "Swift.Bool",
+                            "usr": "s:Sb"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Swift.Int, Swift.Int) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Int, Swift.Int) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(Swift.Int, Swift.Int)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(() -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "() -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Swift.Bool, [AIBudsFoundation.ImportedMediaFileModel], (any Swift.Error)?) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Bool, [AIBudsFoundation.ImportedMediaFileModel], (any Swift.Error)?) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(Swift.Bool, [AIBudsFoundation.ImportedMediaFileModel], (any Swift.Error)?)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Bool",
+                            "printedName": "Swift.Bool",
+                            "usr": "s:Sb"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Array",
+                            "printedName": "[AIBudsFoundation.ImportedMediaFileModel]",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "ImportedMediaFileModel",
+                                "printedName": "AIBudsFoundation.ImportedMediaFileModel",
+                                "usr": "c:@M@AIBudsFoundation@objc(cs)AIBudsImportedMediaFileModel"
+                              }
+                            ],
+                            "usr": "s:Sa"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "(any Swift.Error)?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Error",
+                                "printedName": "any Swift.Error",
+                                "usr": "s:s5ErrorP"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AIBuds@objc(pl)AIBudsDeviceMediaFileImportAPI(im)importMediaFiles:dataChunkHandler:singleTransferStartingHandler:singleTransferCompletionHandler:transferSpeedHandler:transferBatchProgressHandler:videoStabilizationPhaseBeginHandler:videoStabilizationSingleFileProgressHandler:videoStabilizationSingleFileCompletionHandler:videoStabilizationBatchProgressHandler:videoStabilizationPhaseFinishHandler:completionHandler:",
+            "mangledName": "$s6AIBuds24DeviceMediaFileImportAPIP06importC5Files_16dataChunkHandler022singleTransferStartingK00lm10CompletionK0013transferSpeedK00p13BatchProgressK0028videoStabilizationPhaseBeginK00tu6SingledsK00tuxdoK00tursK00tuv6FinishK0010completionK0ySay0A10Foundation0cD9InfoModelCG_y10Foundation4DataVSg_S2Ss6UInt64VAYs5Error_pSgtcSgyARcSgySb_AP08ImportedcD5ModelCA_tcSgyAYcSgySi_SitcSgyycSgyA3__SdtcSgyA3__SbtcSgA6_A7_ySb_SayA3_GA_tcSgtF",
+            "moduleName": "AIBuds",
+            "genericSig": "<τ_0_0 where τ_0_0 : AIBuds.DeviceMediaFileImportAPI>",
+            "sugared_genericSig": "<Self where Self : AIBuds.DeviceMediaFileImportAPI>",
+            "protocolReq": true,
+            "objc_name": "importMediaFiles:dataChunkHandler:singleTransferStartingHandler:singleTransferCompletionHandler:transferSpeedHandler:transferBatchProgressHandler:videoStabilizationPhaseBeginHandler:videoStabilizationSingleFileProgressHandler:videoStabilizationSingleFileCompletionHandler:videoStabilizationBatchProgressHandler:videoStabilizationPhaseFinishHandler:completionHandler:",
+            "declAttributes": [
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "cancelMediaFileImport",
+            "printedName": "cancelMediaFileImport(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Swift.Bool, Foundation.NSNumber?, (any Swift.Error)?) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Bool, Foundation.NSNumber?, (any Swift.Error)?) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(Swift.Bool, Foundation.NSNumber?, (any Swift.Error)?)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Bool",
+                            "printedName": "Swift.Bool",
+                            "usr": "s:Sb"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "Foundation.NSNumber?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "NSNumber",
+                                "printedName": "Foundation.NSNumber",
+                                "usr": "c:objc(cs)NSNumber"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "(any Swift.Error)?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Error",
+                                "printedName": "any Swift.Error",
+                                "usr": "s:s5ErrorP"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AIBuds@objc(pl)AIBudsDeviceMediaFileImportAPI(im)cancelMediaFileImportWithCompletion:",
+            "mangledName": "$s6AIBuds24DeviceMediaFileImportAPIP06cancelcdE0yyySb_So8NSNumberCSgs5Error_pSgtcSgF",
+            "moduleName": "AIBuds",
+            "genericSig": "<τ_0_0 where τ_0_0 : AIBuds.DeviceMediaFileImportAPI>",
+            "sugared_genericSig": "<Self where Self : AIBuds.DeviceMediaFileImportAPI>",
+            "protocolReq": true,
+            "objc_name": "cancelMediaFileImportWithCompletion:",
+            "declAttributes": [
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "deleteMediaFile",
+            "printedName": "deleteMediaFile(_:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Swift.Bool, Foundation.NSNumber?, (any Swift.Error)?) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Bool, Foundation.NSNumber?, (any Swift.Error)?) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(Swift.Bool, Foundation.NSNumber?, (any Swift.Error)?)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Bool",
+                            "printedName": "Swift.Bool",
+                            "usr": "s:Sb"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "Foundation.NSNumber?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "NSNumber",
+                                "printedName": "Foundation.NSNumber",
+                                "usr": "c:objc(cs)NSNumber"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "(any Swift.Error)?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Error",
+                                "printedName": "any Swift.Error",
+                                "usr": "s:s5ErrorP"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AIBuds@objc(pl)AIBudsDeviceMediaFileImportAPI(im)deleteMediaFile:completion:",
+            "mangledName": "$s6AIBuds24DeviceMediaFileImportAPIP06deletecD0_10completionySS_ySb_So8NSNumberCSgs5Error_pSgtcSgtF",
+            "moduleName": "AIBuds",
+            "genericSig": "<τ_0_0 where τ_0_0 : AIBuds.DeviceMediaFileImportAPI>",
+            "sugared_genericSig": "<Self where Self : AIBuds.DeviceMediaFileImportAPI>",
+            "protocolReq": true,
+            "objc_name": "deleteMediaFile:completion:",
+            "declAttributes": [
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "deleteAllMediaFiles",
+            "printedName": "deleteAllMediaFiles(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Swift.Bool, Foundation.NSNumber?, (any Swift.Error)?) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Bool, Foundation.NSNumber?, (any Swift.Error)?) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(Swift.Bool, Foundation.NSNumber?, (any Swift.Error)?)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Bool",
+                            "printedName": "Swift.Bool",
+                            "usr": "s:Sb"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "Foundation.NSNumber?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "NSNumber",
+                                "printedName": "Foundation.NSNumber",
+                                "usr": "c:objc(cs)NSNumber"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "(any Swift.Error)?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Error",
+                                "printedName": "any Swift.Error",
+                                "usr": "s:s5ErrorP"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AIBuds@objc(pl)AIBudsDeviceMediaFileImportAPI(im)deleteAllMediaFilesWithCompletion:",
+            "mangledName": "$s6AIBuds24DeviceMediaFileImportAPIP09deleteAllC5FilesyyySb_So8NSNumberCSgs5Error_pSgtcSgF",
+            "moduleName": "AIBuds",
+            "genericSig": "<τ_0_0 where τ_0_0 : AIBuds.DeviceMediaFileImportAPI>",
+            "sugared_genericSig": "<Self where Self : AIBuds.DeviceMediaFileImportAPI>",
+            "protocolReq": true,
+            "objc_name": "deleteAllMediaFilesWithCompletion:",
+            "declAttributes": [
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "c:@M@AIBuds@objc(pl)AIBudsDeviceMediaFileImportAPI",
+        "mangledName": "$s6AIBuds24DeviceMediaFileImportAPIP",
+        "moduleName": "AIBuds",
+        "genericSig": "<τ_0_0 : AIBuds.DeviceAPI>",
+        "sugared_genericSig": "<Self : AIBuds.DeviceAPI>",
+        "objc_name": "AIBudsDeviceMediaFileImportAPI",
         "declAttributes": [
           "AccessControl",
           "ObjC",
@@ -30673,6 +30899,281 @@
       },
       {
         "kind": "Import",
+        "name": "AIBudsFoundation",
+        "printedName": "AIBudsFoundation",
+        "declKind": "Import",
+        "moduleName": "AIBuds"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "VideoStabilizationPlugin",
+        "printedName": "VideoStabilizationPlugin",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "identifier",
+            "printedName": "identifier",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBuds@objc(pl)AIBudsVideoStabilizationPlugin(py)identifier",
+            "mangledName": "$s6AIBuds24VideoStabilizationPluginP10identifierSSvp",
+            "moduleName": "AIBuds",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBuds@objc(pl)AIBudsVideoStabilizationPlugin(im)identifier",
+                "mangledName": "$s6AIBuds24VideoStabilizationPluginP10identifierSSvg",
+                "moduleName": "AIBuds",
+                "genericSig": "<τ_0_0 where τ_0_0 : AIBuds.VideoStabilizationPlugin>",
+                "sugared_genericSig": "<Self where Self : AIBuds.VideoStabilizationPlugin>",
+                "protocolReq": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "canProcess",
+            "printedName": "canProcess(_:metadata:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "VideoStabilizationCanProcessResult",
+                "printedName": "AIBudsFoundation.VideoStabilizationCanProcessResult",
+                "usr": "c:@M@AIBudsFoundation@E@AIBudsVideoStabilizationCanProcessResult"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MediaFileInfoModel",
+                "printedName": "AIBudsFoundation.MediaFileInfoModel",
+                "usr": "c:@M@AIBudsFoundation@objc(cs)AIBudsMediaFileInfoModel"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AIBuds@objc(pl)AIBudsVideoStabilizationPlugin(im)canProcessMediaFileURL:metadata:",
+            "mangledName": "$s6AIBuds24VideoStabilizationPluginP10canProcess_8metadata0A10Foundation0bc3CanF6ResultO0H03URLV_AF18MediaFileInfoModelCtF",
+            "moduleName": "AIBuds",
+            "genericSig": "<τ_0_0 where τ_0_0 : AIBuds.VideoStabilizationPlugin>",
+            "sugared_genericSig": "<Self where Self : AIBuds.VideoStabilizationPlugin>",
+            "protocolReq": true,
+            "objc_name": "canProcessMediaFileURL:metadata:",
+            "declAttributes": [
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "processMediaFile",
+            "printedName": "processMediaFile(at:metadata:outputURL:progressHandler:completionHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MediaFileInfoModel",
+                "printedName": "AIBudsFoundation.MediaFileInfoModel",
+                "usr": "c:@M@AIBudsFoundation@objc(cs)AIBudsMediaFileInfoModel"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Double) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Foundation.URL?, Foundation.NSError?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Foundation.URL?, Foundation.NSError?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.URL?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "URL",
+                            "printedName": "Foundation.URL",
+                            "usr": "s:10Foundation3URLV"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.NSError?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "NSError",
+                            "printedName": "Foundation.NSError",
+                            "usr": "c:objc(cs)NSError"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AIBuds@objc(pl)AIBudsVideoStabilizationPlugin(im)processMediaFileAtURL:metadata:outputURL:progressHandler:completionHandler:",
+            "mangledName": "$s6AIBuds24VideoStabilizationPluginP16processMediaFile2at8metadata9outputURL15progressHandler010completionM0y10Foundation0K0V_0aO00fG9InfoModelCALySdcyALSg_So7NSErrorCSgtctF",
+            "moduleName": "AIBuds",
+            "genericSig": "<τ_0_0 where τ_0_0 : AIBuds.VideoStabilizationPlugin>",
+            "sugared_genericSig": "<Self where Self : AIBuds.VideoStabilizationPlugin>",
+            "protocolReq": true,
+            "objc_name": "processMediaFileAtURL:metadata:outputURL:progressHandler:completionHandler:",
+            "declAttributes": [
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "cancelAllProcessing",
+            "printedName": "cancelAllProcessing()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AIBuds@objc(pl)AIBudsVideoStabilizationPlugin(im)cancelAllProcessing",
+            "mangledName": "$s6AIBuds24VideoStabilizationPluginP19cancelAllProcessingyyF",
+            "moduleName": "AIBuds",
+            "genericSig": "<τ_0_0 where τ_0_0 : AIBuds.VideoStabilizationPlugin>",
+            "sugared_genericSig": "<Self where Self : AIBuds.VideoStabilizationPlugin>",
+            "protocolReq": true,
+            "declAttributes": [
+              "Optional",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "c:@M@AIBuds@objc(pl)AIBudsVideoStabilizationPlugin",
+        "mangledName": "$s6AIBuds24VideoStabilizationPluginP",
+        "moduleName": "AIBuds",
+        "genericSig": "<τ_0_0 : ObjectiveC.NSObjectProtocol>",
+        "sugared_genericSig": "<Self : ObjectiveC.NSObjectProtocol>",
+        "objc_name": "AIBudsVideoStabilizationPlugin",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AIBuds",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "AIBudsSDKRuntime",
         "printedName": "AIBudsSDKRuntime",
         "declKind": "Import",
@@ -31835,6 +32336,256 @@
             "funcSelfKind": "NonMutating"
           },
           {
+            "kind": "Var",
+            "name": "videoStabilizationPlugin",
+            "printedName": "videoStabilizationPlugin",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any AIBuds.VideoStabilizationPlugin)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VideoStabilizationPlugin",
+                    "printedName": "any AIBuds.VideoStabilizationPlugin",
+                    "usr": "c:@M@AIBuds@objc(pl)AIBudsVideoStabilizationPlugin"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBuds@objc(cs)AIBudsSDK(cpy)videoStabilizationPlugin",
+            "mangledName": "$s6AIBuds0A3SDKC24videoStabilizationPluginAA05VideodE0_pSgvpZ",
+            "moduleName": "AIBuds",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any AIBuds.VideoStabilizationPlugin)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "VideoStabilizationPlugin",
+                        "printedName": "any AIBuds.VideoStabilizationPlugin",
+                        "usr": "c:@M@AIBuds@objc(pl)AIBudsVideoStabilizationPlugin"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBuds@objc(cs)AIBudsSDK(cm)videoStabilizationPlugin",
+                "mangledName": "$s6AIBuds0A3SDKC24videoStabilizationPluginAA05VideodE0_pSgvgZ",
+                "moduleName": "AIBuds",
+                "static": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "setVideoStabilizationPlugin",
+            "printedName": "setVideoStabilizationPlugin(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any AIBuds.VideoStabilizationPlugin)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VideoStabilizationPlugin",
+                    "printedName": "any AIBuds.VideoStabilizationPlugin",
+                    "usr": "c:@M@AIBuds@objc(pl)AIBudsVideoStabilizationPlugin"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AIBuds@objc(cs)AIBudsSDK(cm)setVideoStabilizationPlugin:",
+            "mangledName": "$s6AIBuds0A3SDKC27setVideoStabilizationPluginyyAA0deF0_pSgFZ",
+            "moduleName": "AIBuds",
+            "static": true,
+            "objc_name": "setVideoStabilizationPlugin:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "isVideoStabilizationAvailable",
+            "printedName": "isVideoStabilizationAvailable",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBuds@objc(cs)AIBudsSDK(cpy)isVideoStabilizationAvailable",
+            "mangledName": "$s6AIBuds0A3SDKC29isVideoStabilizationAvailableSbvpZ",
+            "moduleName": "AIBuds",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBuds@objc(cs)AIBudsSDK(cm)isVideoStabilizationAvailable",
+                "mangledName": "$s6AIBuds0A3SDKC29isVideoStabilizationAvailableSbvgZ",
+                "moduleName": "AIBuds",
+                "static": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isVideoStabilizationDisabled",
+            "printedName": "isVideoStabilizationDisabled",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBuds@objc(cs)AIBudsSDK(cpy)isVideoStabilizationDisabled",
+            "mangledName": "$s6AIBuds0A3SDKC28isVideoStabilizationDisabledSbvpZ",
+            "moduleName": "AIBuds",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBuds@objc(cs)AIBudsSDK(cm)isVideoStabilizationDisabled",
+                "mangledName": "$s6AIBuds0A3SDKC28isVideoStabilizationDisabledSbvgZ",
+                "moduleName": "AIBuds",
+                "static": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "disableVideoStabilization",
+            "printedName": "disableVideoStabilization()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AIBuds@objc(cs)AIBudsSDK(cm)disableVideoStabilization",
+            "mangledName": "$s6AIBuds0A3SDKC25disableVideoStabilizationyyFZ",
+            "moduleName": "AIBuds",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "enableVideoStabilization",
+            "printedName": "enableVideoStabilization()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AIBuds@objc(cs)AIBudsSDK(cm)enableVideoStabilization",
+            "mangledName": "$s6AIBuds0A3SDKC24enableVideoStabilizationyyFZ",
+            "moduleName": "AIBuds",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
             "kind": "Function",
             "name": "initialize",
             "printedName": "initialize(_:delegate:)",
@@ -32715,16 +33466,6 @@
         ]
       },
       {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "AIBuds",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
         "kind": "TypeDecl",
         "name": "Name",
         "printedName": "Name",
@@ -33202,6 +33943,27 @@
   },
   "ConstValues": [
     {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/SDKBuildInfo\/SDK_Build_Info.swift",
+      "kind": "StringLiteral",
+      "offset": 257,
+      "length": 15,
+      "value": "\"1.0.0-beta.32\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/SDKBuildInfo\/SDK_Build_Info.swift",
+      "kind": "StringLiteral",
+      "offset": 388,
+      "length": 13,
+      "value": "\"20260819001\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/SDKBuildInfo\/SDK_Build_Info.swift",
+      "kind": "StringLiteral",
+      "offset": 503,
+      "length": 12,
+      "value": "\"2026-08-19\""
+    },
+    {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBuds\/Context(上下文)\/SDKContext.swift",
       "kind": "BooleanLiteral",
       "offset": 447,
@@ -33221,6 +33983,13 @@
       "offset": 874,
       "length": 3,
       "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBuds\/Context(上下文)\/SDKContext.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1483,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBuds\/DataModels(数据模型)\/SDKConfiguration.swift",
@@ -34121,147 +34890,147 @@
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBuds\/Defines(定义)\/SDKError(错误)\/Errors.swift",
       "kind": "IntegerLiteral",
-      "offset": 4105,
+      "offset": 4116,
       "length": 4,
       "value": "6001"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBuds\/Defines(定义)\/SDKError(错误)\/Errors.swift",
       "kind": "IntegerLiteral",
-      "offset": 4190,
+      "offset": 4212,
       "length": 4,
       "value": "6002"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBuds\/Defines(定义)\/SDKError(错误)\/Errors.swift",
       "kind": "IntegerLiteral",
-      "offset": 4267,
+      "offset": 4300,
       "length": 4,
       "value": "6003"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBuds\/Defines(定义)\/SDKError(错误)\/Errors.swift",
       "kind": "IntegerLiteral",
-      "offset": 4405,
+      "offset": 4438,
       "length": 4,
       "value": "6004"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBuds\/Defines(定义)\/SDKError(错误)\/Errors.swift",
       "kind": "IntegerLiteral",
-      "offset": 4561,
+      "offset": 4605,
       "length": 4,
       "value": "6005"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBuds\/Defines(定义)\/SDKError(错误)\/Errors.swift",
       "kind": "IntegerLiteral",
-      "offset": 4705,
+      "offset": 4749,
       "length": 4,
       "value": "6006"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBuds\/Defines(定义)\/SDKError(错误)\/Errors.swift",
       "kind": "IntegerLiteral",
-      "offset": 4825,
+      "offset": 4869,
       "length": 4,
       "value": "6007"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBuds\/Defines(定义)\/SDKError(错误)\/Errors.swift",
       "kind": "IntegerLiteral",
-      "offset": 4958,
+      "offset": 5002,
       "length": 4,
       "value": "6008"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBuds\/Defines(定义)\/SDKError(错误)\/Errors.swift",
       "kind": "IntegerLiteral",
-      "offset": 5088,
+      "offset": 5132,
       "length": 4,
       "value": "6009"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBuds\/Defines(定义)\/SDKError(错误)\/Errors.swift",
       "kind": "IntegerLiteral",
-      "offset": 5207,
+      "offset": 5251,
       "length": 4,
       "value": "6010"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBuds\/Defines(定义)\/SDKError(错误)\/Errors.swift",
       "kind": "IntegerLiteral",
-      "offset": 5336,
+      "offset": 5380,
       "length": 4,
       "value": "6011"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBuds\/Defines(定义)\/SDKError(错误)\/Errors.swift",
       "kind": "IntegerLiteral",
-      "offset": 5476,
+      "offset": 5520,
       "length": 4,
       "value": "6012"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBuds\/Defines(定义)\/SDKError(错误)\/Errors.swift",
       "kind": "IntegerLiteral",
-      "offset": 5601,
+      "offset": 5656,
       "length": 4,
       "value": "6013"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBuds\/Defines(定义)\/SDKError(错误)\/Errors.swift",
       "kind": "IntegerLiteral",
-      "offset": 5702,
+      "offset": 5768,
       "length": 4,
       "value": "6014"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBuds\/Defines(定义)\/SDKError(错误)\/Errors.swift",
       "kind": "IntegerLiteral",
-      "offset": 5820,
+      "offset": 5897,
       "length": 4,
       "value": "6015"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBuds\/Defines(定义)\/SDKError(错误)\/Errors.swift",
       "kind": "IntegerLiteral",
-      "offset": 5921,
+      "offset": 6009,
       "length": 4,
       "value": "6016"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBuds\/Defines(定义)\/SDKError(错误)\/Errors.swift",
       "kind": "IntegerLiteral",
-      "offset": 6072,
+      "offset": 6160,
       "length": 4,
       "value": "6017"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBuds\/Defines(定义)\/SDKError(错误)\/Errors.swift",
       "kind": "IntegerLiteral",
-      "offset": 6162,
+      "offset": 6250,
       "length": 4,
       "value": "7001"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBuds\/Defines(定义)\/SDKError(错误)\/Errors.swift",
       "kind": "IntegerLiteral",
-      "offset": 6238,
+      "offset": 6326,
       "length": 4,
       "value": "7002"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBuds\/Defines(定义)\/SDKError(错误)\/Errors.swift",
       "kind": "IntegerLiteral",
-      "offset": 6322,
+      "offset": 6410,
       "length": 4,
       "value": "7003"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBuds\/Defines(定义)\/SDKError(错误)\/Errors.swift",
       "kind": "IntegerLiteral",
-      "offset": 6450,
+      "offset": 6538,
       "length": 4,
       "value": "7004"
     },
@@ -35006,27 +35775,6 @@
       "offset": 1770,
       "length": 1,
       "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/SDKBuildInfo\/SDK_Build_Info.swift",
-      "kind": "StringLiteral",
-      "offset": 257,
-      "length": 15,
-      "value": "\"1.0.0-beta.31\""
-    },
-    {
-      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/SDKBuildInfo\/SDK_Build_Info.swift",
-      "kind": "StringLiteral",
-      "offset": 388,
-      "length": 13,
-      "value": "\"20260816001\""
-    },
-    {
-      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/SDKBuildInfo\/SDK_Build_Info.swift",
-      "kind": "StringLiteral",
-      "offset": 503,
-      "length": 12,
-      "value": "\"2026-08-16\""
     }
   ]
 }
