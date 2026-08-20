@@ -6,51 +6,51 @@
 	<dict>
 		<key>Headers/AIBudsAudio-Swift.h</key>
 		<data>
-		jtkHhbz6eU0M4NWDYT0CvBDTQ94=
+		hIH7HMN7VYcGCrdCMLR8NCbrKFE=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Dl7oZgytQ8Dsi+dnoZsEAGDEPCI=
+		7CT0PqcZ0FQHd3Kb0U8ONXhFKkA=
 		</data>
 		<key>Modules/AIBudsAudio.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		ccjDXGwlQSMiDXBqAA5OYC+s4ms=
+		0iOmJNjsGbtfaHecdNJO1hsexa4=
 		</data>
 		<key>Modules/AIBudsAudio.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		R81YGdXyO6foVasKOfc6fLIsGkA=
+		9lCXzVABdipEcr3oIE6d7z9weTw=
 		</data>
 		<key>Modules/AIBudsAudio.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		pDz2IKPQMxJQIntyQAf+m2u0ZvU=
+		TbZKYcF1AXGr+Xr8YiiOVV3uOS4=
 		</data>
 		<key>Modules/AIBudsAudio.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		R81YGdXyO6foVasKOfc6fLIsGkA=
+		9lCXzVABdipEcr3oIE6d7z9weTw=
 		</data>
 		<key>Modules/AIBudsAudio.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		FeJ7fKNqTJGna8phNJ517i1UHXU=
+		ShbJJibj/R96bHceW3MO0dtti6E=
 		</data>
 		<key>Modules/AIBudsAudio.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		ccjDXGwlQSMiDXBqAA5OYC+s4ms=
+		0iOmJNjsGbtfaHecdNJO1hsexa4=
 		</data>
 		<key>Modules/AIBudsAudio.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		o0AetYo75Ge71NtEkpr6lzbwYOs=
+		56+gqp/kvMxVJRO7INi1jIssGy8=
 		</data>
 		<key>Modules/AIBudsAudio.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		LWH3UgCO4jk30V8yKBOlxC/BeDk=
+		i3tkuZE4Fbs7WvHaZUfWnqDvVsQ=
 		</data>
 		<key>Modules/AIBudsAudio.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		o0AetYo75Ge71NtEkpr6lzbwYOs=
+		56+gqp/kvMxVJRO7INi1jIssGy8=
 		</data>
 		<key>Modules/AIBudsAudio.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		ISVdfIlxLuouRnLA7DTgzmjj9yA=
+		cpQ1w/XP1fjw8GWQJXrggGCdKww=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -59,77 +59,77 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			x8A4LbUvrroNCHbh5DYIh+xP1R657w3Uexd7aNq5M4E=
+			lYP64qhhnFSp8AwMbx58KLpBrlQvx/Z4QBocKGGHctQ=
 			</data>
 		</dict>
 		<key>Modules/AIBudsAudio.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			PvLP2W82u7AxjR8A63X0xzNPCjO+nVQifLfmNLB/sWc=
+			Nkm0aBLJgTF6yJ1I7I2BwxwcIg2iuOlTgat6Va0t4Yk=
 			</data>
 		</dict>
 		<key>Modules/AIBudsAudio.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			gQj8VfA5ofmy248ZZm9j0s1NAjK34gWDJ06JjPqXyrc=
+			WKrYR1wmE3l8+Ld6RUJ/edC2U7tyy2+SsB60tIX2zu4=
 			</data>
 		</dict>
 		<key>Modules/AIBudsAudio.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			JKzpiCArZmK/htPKBr5HrGwGHouMdN/4Iow4WbDMnsc=
+			J7rSLpWi/ac00rOtCxl/RrddNXaKk9Wnw00RCtkjd48=
 			</data>
 		</dict>
 		<key>Modules/AIBudsAudio.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			gQj8VfA5ofmy248ZZm9j0s1NAjK34gWDJ06JjPqXyrc=
+			WKrYR1wmE3l8+Ld6RUJ/edC2U7tyy2+SsB60tIX2zu4=
 			</data>
 		</dict>
 		<key>Modules/AIBudsAudio.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			qTQc8h4iVy1b0JbFDgMVJESgyv/tnSVVz8JTmURW8uU=
+			H1VKQy9cWQ1TR0VrKjvSKhMIXzBYCjPlhpnQRjtJrXY=
 			</data>
 		</dict>
 		<key>Modules/AIBudsAudio.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			PvLP2W82u7AxjR8A63X0xzNPCjO+nVQifLfmNLB/sWc=
+			Nkm0aBLJgTF6yJ1I7I2BwxwcIg2iuOlTgat6Va0t4Yk=
 			</data>
 		</dict>
 		<key>Modules/AIBudsAudio.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VCPx+5DkBRj7JzDqqu02mVAcWmMMsa+DgOGLwOLHILU=
+			2aXmaiJh9JBs6DMombZYFzQ//sGoY5KzvPoZi0XuT7o=
 			</data>
 		</dict>
 		<key>Modules/AIBudsAudio.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			bPMpCjhYM0QWkESkDYmaia1TJXhPDkwJBaSpLtIbSfM=
+			RbU6z1/cKomhYUjS6sIqwJyX6+YWzK7HVhmi5Rfkzt4=
 			</data>
 		</dict>
 		<key>Modules/AIBudsAudio.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VCPx+5DkBRj7JzDqqu02mVAcWmMMsa+DgOGLwOLHILU=
+			2aXmaiJh9JBs6DMombZYFzQ//sGoY5KzvPoZi0XuT7o=
 			</data>
 		</dict>
 		<key>Modules/AIBudsAudio.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3OqNpZkjg5wFG3RoKJcD2BIgUHABzAiJqmgL1lbqot0=
+			ELoIAL+3Y03NsfG0ytcF1QO+9KIt2SR38NUeoU4W7LE=
 			</data>
 		</dict>
 	</dict>

@@ -10,11 +10,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		09O3751POx6GDKAgc+LMKQ+NF88=
+		ipCd6JS4McsCpKP5kqLlfbfb8R4=
 		</data>
 		<key>Modules/AIBudsVoiceAssistant.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		9bH2PbyhjsJF7yZJJbZWcefQcAA=
+		ZyvL5ovErqBU0TNMg/xbzPg97zs=
 		</data>
 		<key>Modules/AIBudsVoiceAssistant.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>Modules/AIBudsVoiceAssistant.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		nXjDJnXItWcujQdBVgrsDIsMvB0=
+		VIdAXEPG/2L39NoAPcSi/ct5pH8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -50,7 +50,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			99Lhs62UIYEi9sYP3k9JeKgw8968vhxcpK+rQ9z9rj4=
+			uZhKsCNgf4UeXQos3sn1tgdAG3OmtqzLQpwa9cQJm0M=
 			</data>
 		</dict>
 		<key>Modules/AIBudsVoiceAssistant.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
@@ -78,7 +78,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			18CmFqQAVq30ex40fSKbk2CtuGx2c3I1i+zT0qZgVvI=
+			op0NihXkJsu77cpgJmqdimGX0GZLg6kuHFtHP8fQVLM=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

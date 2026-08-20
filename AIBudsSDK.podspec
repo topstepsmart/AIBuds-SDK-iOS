@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
   # ==================== Basic Information ====================
   # SDK name and version
   s.name         = "AIBudsSDK"
-  s.version      = "1.0.0-beta.32"
+  s.version      = "1.0.0-beta.33"
   s.summary      = "AIBuds SDK - An iOS framework for connecting AI devices"
   s.description  = <<-DESC
                     AIBuds SDK is a versatile framework for connecting iOS apps to AI devices. It provides modular components including core connectivity, Bluetooth management, voice assistant, AI capabilities, logging utilities, and foundation services.
@@ -74,6 +74,7 @@ Pod::Spec.new do |s|
     # StarburstSdk - Starburst AI service SDK
     thirdparty.subspec 'StarburstSdk' do |starburst_sdk|
       starburst_sdk.vendored_frameworks = 'AIBudsSDK/ThirdParty/StarBurst/StarburstSdk.framework'
+      starburst_sdk.resource = 'AIBudsSDK/ThirdParty/StarBurst/StarburstVadAssets.bundle'
       starburst_sdk.dependency 'SocketRocket'
       starburst_sdk.dependency 'AFNetworking', '~> 4.0'
     end

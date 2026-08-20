@@ -996,3 +996,29 @@
 
 "LocKey.StreamErrorFormat" = "Stream error: %@";
 "LocKey.ConnectionStatusErrorFormat" = "Error: %@";
+
+"LocKey.ConversationTranslationFeatureTitle" = "Conversation Translation";
+"LocKey.ConversationTranslationDemoTitle" = "Conversation Translation";
+"LocKey.ConversationMe" = "Me";
+"LocKey.ConversationPartner" = "Partner";
+"LocKey.ConversationISpeak" = "I speak";
+"LocKey.ConversationPartnerSpeaks" = "Partner speaks";
+"LocKey.ConversationChooseMyLanguage" = "Choose my language";
+"LocKey.ConversationChoosePartnerLanguage" = "Choose partner language";
+"LocKey.ConversationReady" = "Ready to talk";
+"LocKey.ConversationReadyHint" = "Choose who is speaking";
+"LocKey.ConversationListening" = "Listening";
+"LocKey.ConversationStartingDeviceMicrophone" = "Starting device microphone…";
+"LocKey.ConversationListeningToMe" = "Speak naturally";
+"LocKey.ConversationListeningToPartner" = "Move the phone closer to your partner";
+"LocKey.ConversationEndTurn" = "End this turn";
+"LocKey.ConversationFinishing" = "Finishing translation…";
+"LocKey.ConversationEmptyTitle" = "Talk face to face";
+"LocKey.ConversationEmptyDetail" = "Tap the button for whoever is speaking. The original and translated text will appear here as conversation bubbles.";
+"LocKey.ConversationPrivacyHint" = "The mic is active only during a turn · Translations play through the speaker";
+"LocKey.ConversationRecognizing" = "Recognizing…";
+"LocKey.ConversationTranslating" = "Translating…";
+"LocKey.ConversationAudioError" = "Audio error";
+"LocKey.ConversationTranslationError" = "Translation could not be completed";
+"LocKey.ConversationDeviceRecordingUnsupported" = "This device does not support AI recording, so external recording mode is unavailable.";
+"LocKey.ConversationDeviceRecordingStartFailed" = "The device microphone could not be started.";

@@ -179,7 +179,7 @@ extension AIBudsAudio.PlaybackStopReason : Swift.CustomDebugStringConvertible {
     get
   }
 }
-@_inheritsConvenienceInitializers @objc(AIBudsStreamingVoicePlayer) final public class StreamingVoicePlayer : ObjectiveC.NSObject {
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(AIBudsStreamingVoicePlayer) final public class StreamingVoicePlayer : ObjectiveC.NSObject {
   @objc final public let audioFormat: AVFAudio.AVAudioFormat?
   @objc final public var onVoicePlaybackDidStart: ((_ voiceId: Swift.String) -> Swift.Void)?
   @objc final public var onVoicePlaybackDidStop: ((_ voiceId: Swift.String, _ reason: AIBudsAudio.PlaybackStopReason, _ startTime: Foundation.Date, _ stopTime: Foundation.Date, _ error: Foundation.NSError?) -> Swift.Void)?
@@ -292,6 +292,32 @@ public enum DiarizerError : Swift.Error, Foundation.LocalizedError {
   public var errorDescription: Swift.String? {
     get
   }
+}
+@_inheritsConvenienceInitializers @objc(AIBudsDuplexVoiceAudioEngine) final public class DuplexVoiceAudioEngine : ObjectiveC.NSObject {
+  @objc final public var isRunning: Swift.Bool {
+    get
+  }
+  @objc final public var isVoiceProcessingEnabled: Swift.Bool {
+    @objc get
+  }
+  @objc final public var onAudioBuffer: ((AVFAudio.AVAudioPCMBuffer) -> Swift.Void)?
+  @objc final public var onAudioError: ((any Swift.Error) -> Swift.Void)?
+  @objc final public var onVoicePlaybackDidStart: ((_ voiceId: Swift.String) -> Swift.Void)? {
+    @objc get
+    @objc set
+  }
+  @objc final public var onVoicePlaybackDidStop: ((_ voiceId: Swift.String, _ reason: AIBudsAudio.PlaybackStopReason, _ startTime: Foundation.Date, _ stopTime: Foundation.Date, _ error: Foundation.NSError?) -> Swift.Void)? {
+    @objc get
+    @objc set
+  }
+  @objc override dynamic public init()
+  @objc deinit
+  @objc(startWithPreferSpeakerOutput:enableVoiceProcessing:error:) final public func start(preferSpeakerOutput: Swift.Bool, enableVoiceProcessing: Swift.Bool) throws
+  @discardableResult
+  @objc final public func stop() -> Swift.Bool
+  @objc final public func appendInt16PCM(_ pcmData: Foundation.Data, voiceId: Swift.String, isFinal: Swift.Bool)
+  @objc final public func interruptCurrentVoicePlayback()
+  @objc final public func isPlaying() -> Swift.Bool
 }
 @objc(AIBudsPCMAudioPlayer) public class PCMAudioPlayer : ObjectiveC.NSObject {
   @objc public var currentProgress: Swift.Double {

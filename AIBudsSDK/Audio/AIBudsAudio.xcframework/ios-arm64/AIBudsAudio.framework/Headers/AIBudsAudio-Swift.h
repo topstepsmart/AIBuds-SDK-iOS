@@ -779,6 +779,45 @@ SWIFT_CLASS_NAMED("BluetoothHFPInputDevice")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+@class NSDate;
+/// A full-duplex audio engine for scenarios that capture microphone audio while
+/// playing streamed voice.
+/// Unlike <code>AudioRecorder</code> and <code>StreamingVoicePlayer</code>, this type intentionally puts
+/// capture and playback in the same <code>AVAudioEngine</code>. This is required for Apple’s
+/// Voice Processing I/O unit to use SDK playback as the acoustic echo reference.
+SWIFT_CLASS_NAMED("DuplexVoiceAudioEngine")
+@interface AIBudsDuplexVoiceAudioEngine : NSObject
+/// Indicates whether the duplex engine is currently running.
+@property (nonatomic, readonly) BOOL isRunning;
+/// Indicates whether Apple Voice Processing I/O is active.
+@property (nonatomic, readonly) BOOL isVoiceProcessingEnabled;
+/// Processed microphone buffers. When voice processing is enabled these buffers
+/// have AEC, noise suppression, and automatic gain control applied by the system.
+@property (nonatomic, copy) void (^ _Nullable onAudioBuffer)(AVAudioPCMBuffer * _Nonnull);
+/// Reports capture, route, or engine failures.
+@property (nonatomic, copy) void (^ _Nullable onAudioError)(NSError * _Nonnull);
+/// Called when streamed playback begins.
+@property (nonatomic, copy) void (^ _Nullable onVoicePlaybackDidStart)(NSString * _Nonnull);
+/// Called when streamed playback ends.
+@property (nonatomic, copy) void (^ _Nullable onVoicePlaybackDidStop)(NSString * _Nonnull, enum AIBudsPlaybackStopReason, NSDate * _Nonnull, NSDate * _Nonnull, NSError * _Nullable);
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+/// Starts full-duplex capture and playback.
+/// \param preferSpeakerOutput Routes built-in output to the loudspeaker when <code>true</code>.
+///
+/// \param enableVoiceProcessing Enables Apple’s Voice Processing I/O. The engine is
+/// stopped before changing this setting, as required by AVAudioEngine.
+///
+- (BOOL)startWithPreferSpeakerOutput:(BOOL)preferSpeakerOutput enableVoiceProcessing:(BOOL)enableVoiceProcessing error:(NSError * _Nullable * _Nullable)error;
+/// Stops capture and playback and releases the duplex audio session.
+- (BOOL)stop;
+/// Appends 16 kHz, mono, signed 16-bit PCM to the shared playback path.
+- (void)appendInt16PCM:(NSData * _Nonnull)pcmData voiceId:(NSString * _Nonnull)voiceId isFinal:(BOOL)isFinal;
+/// Immediately interrupts the current streamed voice.
+- (void)interruptCurrentVoicePlayback;
+/// Returns whether streamed voice is active or waiting for more buffers.
+- (BOOL)isPlaying SWIFT_WARN_UNUSED_RESULT;
+@end
+
 /// Loop mode for audio playback.
 typedef SWIFT_ENUM_NAMED(NSInteger, AIBudsAudioFilePlayerLoopMode, "LoopMode", open) {
 /// No loop, play once. (loopCount = 1)
@@ -875,7 +914,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) AIBudsSCOAud
 - (void)stopCapturing;
 @end
 
-@class NSDate;
 /// A streaming voice player that plays incoming PCM audio data in real-time.
 /// Plays incoming PCM audio data in real-time, supporting interruption, switching, and lifecycle callbacks.
 SWIFT_CLASS_NAMED("StreamingVoicePlayer")

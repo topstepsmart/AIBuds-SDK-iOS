@@ -13,6 +13,7 @@
 #import "AIFeatureContext.h"
 #import "AIAudioRecordingContext.h"
 #import "SimultaneousInterpretationContext.h"
+#import "ConversationTranslationContext.h"
 
 
 @interface DeviceHomeViewController () <UITableViewDataSource, UITableViewDelegate, AIBudsDeviceDelegate>
@@ -666,6 +667,7 @@
             [DeviceFeatureModel modelWithIcon:@"icon_ai_summary" name:NSLocalizedString(@"LocKey.AiSummaryFeatureTitle", nil) classNameOfDemoVC:@"AISummaryDemoController"],
             [DeviceFeatureModel modelWithIcon:@"icon_ai_translation" name:NSLocalizedString(@"LocKey.AiTextTranslationFeatureTitle", nil) classNameOfDemoVC:@"AITextTranslationDemoController"],
             [DeviceFeatureModel modelWithIcon:@"icon_simultaneous_interpretation" name:NSLocalizedString(@"LocKey.SimultaneousInterpretationFeatureTitle", nil) classNameOfDemoVC:@"SimultaneousInterpretationDemoController"],
+            [DeviceFeatureModel modelWithIcon:@"icon_conversation_translation" name:NSLocalizedString(@"LocKey.ConversationTranslationFeatureTitle", nil) classNameOfDemoVC:@"ConversationTranslationDemoController"],
             [DeviceFeatureModel modelWithIcon:@"icon_ai_chat" name:NSLocalizedString(@"LocKey.AiChatFeatureTitle", nil) classNameOfDemoVC:@"AIChatDemoController"],
             [DeviceFeatureModel modelWithIcon:@"icon_aigc" name:NSLocalizedString(@"LocKey.AIGCFeatureTitle", nil) classNameOfDemoVC:@"AIGCDemoController"],
             [DeviceFeatureModel modelWithIcon:@"icon_ai_asking" name:NSLocalizedString(@"LocKey.AIAskingFeatureTitle", nil) classNameOfDemoVC:@"AIAskingDemoController"],
@@ -1105,9 +1107,14 @@
         {
             id<AIBudsAIAudioRecordingSessionConvertible> session = [AIAudioRecordingContext sharedInstance].currentSession;
             id<AIBudsSimultaneousInterpretationSessionConvertible> interpretationSession = [SimultaneousInterpretationContext sharedInstance].currentSession;
+            id<AIBudsSimultaneousInterpretationSessionConvertible> conversationSession = [ConversationTranslationContext sharedInstance].currentSession;
             if(session)
             {
                 [session appendInt16PCM:decodedPCMAudioData];
+            }
+            else if(conversationSession)
+            {
+                [conversationSession appendInt16PCM:decodedPCMAudioData isFinal:NO];
             }
             else if(interpretationSession)
             {

@@ -9252,21 +9252,21 @@
       "kind": "StringLiteral",
       "offset": 257,
       "length": 15,
-      "value": "\"1.0.0-beta.32\""
+      "value": "\"1.0.0-beta.33\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/SDKBuildInfo\/SDK_Build_Info.swift",
       "kind": "StringLiteral",
       "offset": 388,
       "length": 13,
-      "value": "\"20260819001\""
+      "value": "\"20260820001\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/SDKBuildInfo\/SDK_Build_Info.swift",
       "kind": "StringLiteral",
       "offset": 503,
       "length": 12,
-      "value": "\"2026-08-19\""
+      "value": "\"2026-08-20\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsStarBurst\/AIBudsStarBurst.swift",
@@ -10929,36 +10929,43 @@
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsStarBurst\/StarBurstSimultaneousInterpretationService.swift",
+      "kind": "BooleanLiteral",
+      "offset": 8727,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsStarBurst\/StarBurstSimultaneousInterpretationService.swift",
       "kind": "IntegerLiteral",
-      "offset": 9073,
+      "offset": 9585,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsStarBurst\/StarBurstSimultaneousInterpretationService.swift",
       "kind": "BooleanLiteral",
-      "offset": 9455,
+      "offset": 9967,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsStarBurst\/StarBurstSimultaneousInterpretationService.swift",
       "kind": "BooleanLiteral",
-      "offset": 9590,
+      "offset": 10102,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsStarBurst\/StarBurstSimultaneousInterpretationService.swift",
       "kind": "BooleanLiteral",
-      "offset": 14717,
+      "offset": 15229,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsStarBurst\/StarBurstSimultaneousInterpretationService.swift",
       "kind": "BooleanLiteral",
-      "offset": 14796,
+      "offset": 15308,
       "length": 4,
       "value": "true"
     },

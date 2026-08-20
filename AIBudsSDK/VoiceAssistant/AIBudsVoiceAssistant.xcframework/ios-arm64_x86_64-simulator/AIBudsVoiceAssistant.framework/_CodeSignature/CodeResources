@@ -10,11 +10,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		+ujbDig2/0C4cooGZXgDm9/I8gk=
+		xEqEGzyHyDtak4sphEfeloErV/I=
 		</data>
 		<key>Modules/AIBudsVoiceAssistant.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		9bH2PbyhjsJF7yZJJbZWcefQcAA=
+		ZyvL5ovErqBU0TNMg/xbzPg97zs=
 		</data>
 		<key>Modules/AIBudsVoiceAssistant.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/AIBudsVoiceAssistant.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		tJU9i/mMOlsO0a5e/wD4FhqU+DM=
+		9Hwxj5sEcl1h4adJX3YWK3tCC2E=
 		</data>
 		<key>Modules/AIBudsVoiceAssistant.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		9bH2PbyhjsJF7yZJJbZWcefQcAA=
+		ZyvL5ovErqBU0TNMg/xbzPg97zs=
 		</data>
 		<key>Modules/AIBudsVoiceAssistant.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Modules/AIBudsVoiceAssistant.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Ezt5lu4ZUrgBFQnsPeIUewoykE0=
+		krg8i1RyascyELGTeYDYEI333hQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -70,7 +70,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			99Lhs62UIYEi9sYP3k9JeKgw8968vhxcpK+rQ9z9rj4=
+			uZhKsCNgf4UeXQos3sn1tgdAG3OmtqzLQpwa9cQJm0M=
 			</data>
 		</dict>
 		<key>Modules/AIBudsVoiceAssistant.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -98,14 +98,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			SiecsvmZ4WhwFLs8iz90tMNkdWGUy2wNrQk187i8/Ck=
+			3ddh/GlHX6fwfGiHSuI4I1cHSlly06v7uNmPpjZSdfM=
 			</data>
 		</dict>
 		<key>Modules/AIBudsVoiceAssistant.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			99Lhs62UIYEi9sYP3k9JeKgw8968vhxcpK+rQ9z9rj4=
+			uZhKsCNgf4UeXQos3sn1tgdAG3OmtqzLQpwa9cQJm0M=
 			</data>
 		</dict>
 		<key>Modules/AIBudsVoiceAssistant.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -133,7 +133,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			rN3/+EtM5b+rrUqte9Tnk/Yjm+39Xi219JzjzSsNXVU=
+			KCI5buF40InwWrS/KFmBUEzw1AoRoIptQyET109o05Y=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
