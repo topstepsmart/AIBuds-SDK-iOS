@@ -292,10 +292,13 @@ typedef void(^MGCompletionHandler)(NSDictionary *result, NSError * _Nullable err
 - (void)getSupportedModelTypes;
 
 /// 同声传译v1
+/// 回调见- (void)didReceiveSimultInterpretationResult:(NSDictionary *)result error:(nullable NSError *)error;
 - (nullable IntlAudioInput *)simultInterpretationWithBody:(SimultInterpretationRequestBody *)body;
 
 /// 同声传译v4
+/// 回调见- (void)didReceiveSimultInterpretationResult:(NSDictionary *)result error:(nullable NSError *)error;
 - (nullable IntlAudioInput *)simultInterpretationV4WithBody:(SimultInterpretationV2RequestBody *)body;
+
 /// 同声传译 V5：MLuo 云端纯 WSS 链路。老接口不变，调用方显式选择 V5。
 /// TTS 流式分片通过 didReceiveSimultInterpretationResult 回调：
 /// mluoEvent=tts_chunk，ttsData=NSData，ttsLast=BOOL，index/messageId 用于顺序关联；

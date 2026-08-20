@@ -10,11 +10,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		aZ69dPmITV2TGntPbYYZ1YlWWPo=
+		YN6IP/zgfNf/JoEg6Kb+mxEVp3s=
 		</data>
 		<key>Modules/AIBudsLiveStreamFlutterPlugin.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		XKuLM4RetiZhOIAOhB4GJAasUrM=
+		NOi7wSgbWd8ZF2vik5aMa8Yzmnw=
 		</data>
 		<key>Modules/AIBudsLiveStreamFlutterPlugin.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/AIBudsLiveStreamFlutterPlugin.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		HQfGCpHxwBXBPR0y+hQ8pOKD5NY=
+		MZqbqR+axA883oTSvKO2z+hQ45c=
 		</data>
 		<key>Modules/AIBudsLiveStreamFlutterPlugin.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		XKuLM4RetiZhOIAOhB4GJAasUrM=
+		NOi7wSgbWd8ZF2vik5aMa8Yzmnw=
 		</data>
 		<key>Modules/AIBudsLiveStreamFlutterPlugin.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Modules/AIBudsLiveStreamFlutterPlugin.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		nsUtvaNQTw3iqPoJGdwxoDmoHjs=
+		T+BDFWYBMf91lwwZm1HBsfNUfiI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -70,7 +70,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			LqAsXdR1mFc880kr1QpM3Mjmaa0oy2VBpYh2GqXWc6k=
+			QRFnUREb/kNmVzhGeT6usvFDm7i8zyoOixsOs4fiEws=
 			</data>
 		</dict>
 		<key>Modules/AIBudsLiveStreamFlutterPlugin.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -98,14 +98,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			uBMKFBWuAPaUQYzG/UpvqW/nYV7/OxiDi9biave49Ow=
+			YVJBnWzSJ3MwUDDPFYb14aRg2AzXSA3SVf3aUyQjtiI=
 			</data>
 		</dict>
 		<key>Modules/AIBudsLiveStreamFlutterPlugin.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			LqAsXdR1mFc880kr1QpM3Mjmaa0oy2VBpYh2GqXWc6k=
+			QRFnUREb/kNmVzhGeT6usvFDm7i8zyoOixsOs4fiEws=
 			</data>
 		</dict>
 		<key>Modules/AIBudsLiveStreamFlutterPlugin.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -133,7 +133,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			zGFnboJdqTaTkacZhnMqxiJaJubkHT/3n0Te0BF9Ytc=
+			KZ/hu+LGGCQ2pexYZektxCQnxOa7awbkSYbjSoooM/8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
