@@ -696,7 +696,7 @@ extension AIBuds.AIBudsSDK {
   @objc public static let FoundDeviceKey: Swift.String
   @objc public static let ShouldTerminateDueToDeviceExceptionKey: Swift.String
 }
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class AIBudsSDK : ObjectiveC.NSObject {
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(AIBudsSDK) final public class AIBudsSDK : ObjectiveC.NSObject {
   @objc public static var sdkVersion: Swift.String {
     @objc get
   }

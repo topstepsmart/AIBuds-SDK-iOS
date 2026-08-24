@@ -880,6 +880,7 @@ typedef SWIFT_ENUM_NAMED(NSInteger, AIBudsDeviceState, "DeviceState", open) {
   AIBudsDeviceStateDisconnected = 6,
 };
 
+/// Identifies a volume channel exposed by an AIBuds device.
 typedef SWIFT_ENUM_NAMED(NSInteger, AIBudsDeviceVolumeType, "DeviceVolumeType", open) {
 /// system prompt volume
   AIBudsDeviceVolumeTypeSystemPrompt = 0,
@@ -892,6 +893,18 @@ typedef SWIFT_ENUM_NAMED(NSInteger, AIBudsDeviceVolumeType, "DeviceVolumeType", 
 /// A model representing a equalizer configuration.
 SWIFT_CLASS_NAMED("EQSettingModel")
 @interface AIBudsEQSettingModel : NSObject
+/// The default number of frequency bands used by the built-in presets.
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSInteger defaultBandCount;)
++ (NSInteger)defaultBandCount SWIFT_WARN_UNUSED_RESULT;
+/// The start index of custom equalizer modes.
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSInteger customModeStart;)
++ (NSInteger)customModeStart SWIFT_WARN_UNUSED_RESULT;
+/// The minimum supported gain, in dB.
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSInteger minimumGain;)
++ (NSInteger)minimumGain SWIFT_WARN_UNUSED_RESULT;
+/// The maximum supported gain, in dB.
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSInteger maximumGain;)
++ (NSInteger)maximumGain SWIFT_WARN_UNUSED_RESULT;
 /// The default equalizer setting.
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) AIBudsEQSettingModel * _Nonnull defaultEQ;)
 + (AIBudsEQSettingModel * _Nonnull)defaultEQ SWIFT_WARN_UNUSED_RESULT;
@@ -940,6 +953,23 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) AIBudsEQSett
 /// \param chineseName The Chinese name of the preset equalizer.
 ///
 - (nonnull instancetype)initWithMode:(NSInteger)mode gains:(NSArray<NSNumber *> * _Nonnull)gains name:(NSString * _Nullable)name chineseName:(NSString * _Nullable)chineseName OBJC_DESIGNATED_INITIALIZER;
+/// Creates a custom equalizer setting for the specified custom slot.
+/// Returns <code>nil</code> when the slot index or gains cannot be represented by the
+/// device protocol. The number of bands supported by a particular device
+/// must still be checked against the settings reported by that device.
+/// \param index The zero-based custom equalizer slot index.
+///
+/// \param gains Gain values for each frequency band, in dB.
+///
+///
+/// returns:
+/// A valid custom setting, or <code>nil</code> for invalid input.
++ (AIBudsEQSettingModel * _Nullable)customSettingWithIndex:(NSInteger)index gains:(NSArray<NSNumber *> * _Nonnull)gains SWIFT_WARN_UNUSED_RESULT;
+/// Whether this setting can be represented by the device protocol.
+/// Device-specific band counts and supported mode slots are not considered.
+@property (nonatomic, readonly) BOOL isValidForTransmission;
+/// Whether the gains can be represented by the device protocol.
++ (BOOL)areGainsValidForTransmission:(NSArray<NSNumber *> * _Nonnull)gains SWIFT_WARN_UNUSED_RESULT;
 /// A string representation of <code>EQSettingModel</code>.
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 @property (nonatomic, readonly, copy) NSString * _Nonnull debugDescription;
@@ -952,6 +982,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) AIBudsEQSett
 @property (nonatomic, readonly) NSUInteger hash;
 @end
 
+/// Identifies the side represented by an earbud.
 typedef SWIFT_ENUM_NAMED(NSInteger, AIBudsEarbudSide, "EarbudSide", open) {
 /// Unknown
   AIBudsEarbudSideUnknown = -1,
@@ -1205,6 +1236,7 @@ SWIFT_CLASS_NAMED("MediaFileInfoModel")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+/// Identifies the media category of a device file.
 typedef SWIFT_ENUM_NAMED(NSInteger, AIBudsMediaFileType, "MediaFileType", open) {
 /// Unknown file type
   AIBudsMediaFileTypeUnknown = -1,
@@ -1545,6 +1577,7 @@ typedef SWIFT_ENUM_NAMED(NSInteger, AIBudsRemoteShutterState, "RemoteShutterStat
   AIBudsRemoteShutterStatePhotoFailed = 3,
 };
 
+/// Identifies an AIBuds service that requires authorization.
 typedef SWIFT_ENUM_NAMED(NSInteger, AIBudsServiceAuthType, "ServiceAuthType", open) {
 /// StarBurst AI
   AIBudsServiceAuthTypeStarBurst = 1,
@@ -1739,6 +1772,7 @@ SWIFT_CLASS_NAMED("VolumesInfoModel")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+/// Describes the wear-detection capability supported by a device.
 typedef SWIFT_ENUM_NAMED(NSInteger, AIBudsWearDetectionCapability, "WearDetectionCapability", open) {
 /// Not supported
   AIBudsWearDetectionCapabilityNone = 0,
@@ -2710,6 +2744,7 @@ typedef SWIFT_ENUM_NAMED(NSInteger, AIBudsDeviceState, "DeviceState", open) {
   AIBudsDeviceStateDisconnected = 6,
 };
 
+/// Identifies a volume channel exposed by an AIBuds device.
 typedef SWIFT_ENUM_NAMED(NSInteger, AIBudsDeviceVolumeType, "DeviceVolumeType", open) {
 /// system prompt volume
   AIBudsDeviceVolumeTypeSystemPrompt = 0,
@@ -2722,6 +2757,18 @@ typedef SWIFT_ENUM_NAMED(NSInteger, AIBudsDeviceVolumeType, "DeviceVolumeType", 
 /// A model representing a equalizer configuration.
 SWIFT_CLASS_NAMED("EQSettingModel")
 @interface AIBudsEQSettingModel : NSObject
+/// The default number of frequency bands used by the built-in presets.
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSInteger defaultBandCount;)
++ (NSInteger)defaultBandCount SWIFT_WARN_UNUSED_RESULT;
+/// The start index of custom equalizer modes.
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSInteger customModeStart;)
++ (NSInteger)customModeStart SWIFT_WARN_UNUSED_RESULT;
+/// The minimum supported gain, in dB.
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSInteger minimumGain;)
++ (NSInteger)minimumGain SWIFT_WARN_UNUSED_RESULT;
+/// The maximum supported gain, in dB.
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSInteger maximumGain;)
++ (NSInteger)maximumGain SWIFT_WARN_UNUSED_RESULT;
 /// The default equalizer setting.
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) AIBudsEQSettingModel * _Nonnull defaultEQ;)
 + (AIBudsEQSettingModel * _Nonnull)defaultEQ SWIFT_WARN_UNUSED_RESULT;
@@ -2770,6 +2817,23 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) AIBudsEQSett
 /// \param chineseName The Chinese name of the preset equalizer.
 ///
 - (nonnull instancetype)initWithMode:(NSInteger)mode gains:(NSArray<NSNumber *> * _Nonnull)gains name:(NSString * _Nullable)name chineseName:(NSString * _Nullable)chineseName OBJC_DESIGNATED_INITIALIZER;
+/// Creates a custom equalizer setting for the specified custom slot.
+/// Returns <code>nil</code> when the slot index or gains cannot be represented by the
+/// device protocol. The number of bands supported by a particular device
+/// must still be checked against the settings reported by that device.
+/// \param index The zero-based custom equalizer slot index.
+///
+/// \param gains Gain values for each frequency band, in dB.
+///
+///
+/// returns:
+/// A valid custom setting, or <code>nil</code> for invalid input.
++ (AIBudsEQSettingModel * _Nullable)customSettingWithIndex:(NSInteger)index gains:(NSArray<NSNumber *> * _Nonnull)gains SWIFT_WARN_UNUSED_RESULT;
+/// Whether this setting can be represented by the device protocol.
+/// Device-specific band counts and supported mode slots are not considered.
+@property (nonatomic, readonly) BOOL isValidForTransmission;
+/// Whether the gains can be represented by the device protocol.
++ (BOOL)areGainsValidForTransmission:(NSArray<NSNumber *> * _Nonnull)gains SWIFT_WARN_UNUSED_RESULT;
 /// A string representation of <code>EQSettingModel</code>.
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 @property (nonatomic, readonly, copy) NSString * _Nonnull debugDescription;
@@ -2782,6 +2846,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) AIBudsEQSett
 @property (nonatomic, readonly) NSUInteger hash;
 @end
 
+/// Identifies the side represented by an earbud.
 typedef SWIFT_ENUM_NAMED(NSInteger, AIBudsEarbudSide, "EarbudSide", open) {
 /// Unknown
   AIBudsEarbudSideUnknown = -1,
@@ -3035,6 +3100,7 @@ SWIFT_CLASS_NAMED("MediaFileInfoModel")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+/// Identifies the media category of a device file.
 typedef SWIFT_ENUM_NAMED(NSInteger, AIBudsMediaFileType, "MediaFileType", open) {
 /// Unknown file type
   AIBudsMediaFileTypeUnknown = -1,
@@ -3375,6 +3441,7 @@ typedef SWIFT_ENUM_NAMED(NSInteger, AIBudsRemoteShutterState, "RemoteShutterStat
   AIBudsRemoteShutterStatePhotoFailed = 3,
 };
 
+/// Identifies an AIBuds service that requires authorization.
 typedef SWIFT_ENUM_NAMED(NSInteger, AIBudsServiceAuthType, "ServiceAuthType", open) {
 /// StarBurst AI
   AIBudsServiceAuthTypeStarBurst = 1,
@@ -3569,6 +3636,7 @@ SWIFT_CLASS_NAMED("VolumesInfoModel")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+/// Describes the wear-detection capability supported by a device.
 typedef SWIFT_ENUM_NAMED(NSInteger, AIBudsWearDetectionCapability, "WearDetectionCapability", open) {
 /// Not supported
   AIBudsWearDetectionCapabilityNone = 0,

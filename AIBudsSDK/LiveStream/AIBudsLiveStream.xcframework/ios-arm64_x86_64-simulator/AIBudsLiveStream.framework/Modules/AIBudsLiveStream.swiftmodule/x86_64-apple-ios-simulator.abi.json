@@ -1347,7 +1347,8 @@
         "declAttributes": [
           "Final",
           "AccessControl",
-          "ObjC"
+          "ObjC",
+          "RawDocComment"
         ],
         "superclassUsr": "c:objc(cs)NSObject",
         "hasMissingDesignatedInitializers": true,
@@ -15462,7 +15463,8 @@
           "Preconcurrency",
           "Custom",
           "AccessControl",
-          "ObjC"
+          "ObjC",
+          "RawDocComment"
         ],
         "superclassUsr": "c:objc(cs)UIView",
         "inheritsConvenienceInitializers": true,
@@ -16816,56 +16818,56 @@
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Performance\/LiveStreamPerformanceMonitor.swift",
       "kind": "StringLiteral",
-      "offset": 685,
+      "offset": 768,
       "length": 52,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Performance\/LiveStreamPerformanceMonitor.swift",
       "kind": "StringLiteral",
-      "offset": 710,
+      "offset": 793,
       "length": 1,
       "value": "\".performance.monitor.queue\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Performance\/LiveStreamPerformanceMonitor.swift",
       "kind": "Array",
-      "offset": 831,
+      "offset": 914,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Performance\/LiveStreamPerformanceMonitor.swift",
       "kind": "Array",
-      "offset": 868,
+      "offset": 951,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Performance\/LiveStreamPerformanceMonitor.swift",
       "kind": "IntegerLiteral",
-      "offset": 918,
+      "offset": 1001,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Performance\/LiveStreamPerformanceMonitor.swift",
       "kind": "FloatLiteral",
-      "offset": 1065,
+      "offset": 1148,
       "length": 5,
       "value": "0.050"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Performance\/LiveStreamPerformanceMonitor.swift",
       "kind": "FloatLiteral",
-      "offset": 1115,
+      "offset": 1198,
       "length": 5,
       "value": "0.250"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Performance\/LiveStreamPerformanceMonitor.swift",
       "kind": "BooleanLiteral",
-      "offset": 1149,
+      "offset": 1232,
       "length": 5,
       "value": "false"
     },
@@ -18923,126 +18925,126 @@
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/View\/VideoView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1263,
+      "offset": 1323,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/View\/VideoView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1432,
+      "offset": 1492,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/View\/VideoView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1473,
+      "offset": 1533,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/View\/VideoView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1514,
+      "offset": 1574,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/View\/VideoView.swift",
       "kind": "Array",
-      "offset": 1638,
+      "offset": 1698,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/View\/VideoView.swift",
       "kind": "FloatLiteral",
-      "offset": 1721,
+      "offset": 1781,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/View\/VideoView.swift",
       "kind": "Array",
-      "offset": 2340,
+      "offset": 2400,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/View\/VideoView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2455,
+      "offset": 2515,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/View\/VideoView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2758,
+      "offset": 2818,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/View\/VideoView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2822,
+      "offset": 2882,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/View\/VideoView.swift",
       "kind": "FloatLiteral",
-      "offset": 2889,
+      "offset": 2949,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/View\/VideoView.swift",
       "kind": "FloatLiteral",
-      "offset": 2895,
+      "offset": 2955,
       "length": 4,
       "value": "30.0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/View\/VideoView.swift",
       "kind": "StringLiteral",
-      "offset": 2959,
+      "offset": 3019,
       "length": 48,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/View\/VideoView.swift",
       "kind": "StringLiteral",
-      "offset": 2984,
+      "offset": 3044,
       "length": 1,
       "value": "\".renderer.warmup.queue\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/View\/VideoView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3125,
+      "offset": 3185,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/View\/VideoView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3164,
+      "offset": 3224,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/View\/VideoView.swift",
       "kind": "FloatLiteral",
-      "offset": 4089,
+      "offset": 4149,
       "length": 5,
       "value": "0.050"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/View\/VideoView.swift",
       "kind": "BooleanLiteral",
-      "offset": 4116,
+      "offset": 4176,
       "length": 4,
       "value": "true"
     },
@@ -20898,22 +20900,22 @@
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/SDKBuildInfo\/SDK_Build_Info.swift",
       "kind": "StringLiteral",
       "offset": 257,
-      "length": 15,
-      "value": "\"1.0.0-beta.34\""
+      "length": 7,
+      "value": "\"1.0.0\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/SDKBuildInfo\/SDK_Build_Info.swift",
       "kind": "StringLiteral",
-      "offset": 388,
+      "offset": 380,
       "length": 13,
-      "value": "\"20260820002\""
+      "value": "\"20260824001\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/SDKBuildInfo\/SDK_Build_Info.swift",
       "kind": "StringLiteral",
-      "offset": 503,
+      "offset": 495,
       "length": 12,
-      "value": "\"2026-08-20\""
+      "value": "\"2026-08-24\""
     }
   ]
 }

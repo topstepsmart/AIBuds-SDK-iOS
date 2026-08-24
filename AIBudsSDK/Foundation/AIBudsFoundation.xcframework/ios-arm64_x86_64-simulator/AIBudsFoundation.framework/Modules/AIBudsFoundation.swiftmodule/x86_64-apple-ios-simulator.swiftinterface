@@ -138,6 +138,10 @@ import _SwiftConcurrencyShims
   @objc deinit
 }
 @objc(AIBudsEQSettingModel) final public class EQSettingModel : ObjectiveC.NSObject {
+  @objc public static let defaultBandCount: Swift.Int
+  @objc public static let customModeStart: Swift.Int
+  @objc public static let minimumGain: Swift.Int
+  @objc public static let maximumGain: Swift.Int
   @objc(defaultEQ) public static let `default`: AIBudsFoundation.EQSettingModel
   @objc public static let pop: AIBudsFoundation.EQSettingModel
   @objc public static let rock: AIBudsFoundation.EQSettingModel
@@ -159,6 +163,11 @@ import _SwiftConcurrencyShims
   }
   @objc(initWithMode:gains:) public init(mode: Swift.Int, gains: [Swift.Int])
   @objc(initWithMode:gains:name:chineseName:) public init(mode: Swift.Int, gains: [Swift.Int], name: Swift.String?, chineseName: Swift.String?)
+  @objc(customSettingWithIndex:gains:) public static func customSetting(index: Swift.Int, gains: [Swift.Int]) -> AIBudsFoundation.EQSettingModel?
+  @objc final public var isValidForTransmission: Swift.Bool {
+    @objc get
+  }
+  @objc(areGainsValidForTransmission:) public static func areGainsValidForTransmission(_ gains: [Swift.Int]) -> Swift.Bool
   @objc override final public var description: Swift.String {
     @objc get
   }

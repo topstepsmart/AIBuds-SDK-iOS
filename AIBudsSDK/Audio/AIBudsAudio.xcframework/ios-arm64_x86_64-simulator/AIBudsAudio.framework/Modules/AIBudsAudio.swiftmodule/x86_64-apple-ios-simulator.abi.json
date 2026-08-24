@@ -8920,7 +8920,8 @@
         "mangledName": "$s11AIBudsAudio13DiarizerErrorO",
         "moduleName": "AIBudsAudio",
         "declAttributes": [
-          "AccessControl"
+          "AccessControl",
+          "RawDocComment"
         ],
         "conformances": [
           {
@@ -10749,7 +10750,8 @@
         "objc_name": "AIBudsPCMAudioPlayer",
         "declAttributes": [
           "AccessControl",
-          "ObjC"
+          "ObjC",
+          "RawDocComment"
         ],
         "superclassUsr": "c:objc(cs)NSObject",
         "superclassNames": [
@@ -10926,7 +10928,8 @@
         "objc_name": "AIBudsPCMConfig",
         "declAttributes": [
           "AccessControl",
-          "ObjC"
+          "ObjC",
+          "RawDocComment"
         ],
         "superclassUsr": "c:objc(cs)NSObject",
         "superclassNames": [
@@ -12266,7 +12269,8 @@
         "declAttributes": [
           "Final",
           "AccessControl",
-          "ObjC"
+          "ObjC",
+          "RawDocComment"
         ],
         "superclassUsr": "c:objc(cs)NSObject",
         "superclassNames": [
@@ -19183,22 +19187,22 @@
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/SDKBuildInfo\/SDK_Build_Info.swift",
       "kind": "StringLiteral",
       "offset": 257,
-      "length": 15,
-      "value": "\"1.0.0-beta.34\""
+      "length": 7,
+      "value": "\"1.0.0\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/SDKBuildInfo\/SDK_Build_Info.swift",
       "kind": "StringLiteral",
-      "offset": 388,
+      "offset": 380,
       "length": 13,
-      "value": "\"20260820002\""
+      "value": "\"20260824001\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/SDKBuildInfo\/SDK_Build_Info.swift",
       "kind": "StringLiteral",
-      "offset": 503,
+      "offset": 495,
       "length": 12,
-      "value": "\"2026-08-20\""
+      "value": "\"2026-08-24\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAudio\/ANEMemory\/ANEMemoryOptimizer.swift",
@@ -19259,112 +19263,112 @@
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAudio\/AudioConverter(音频转换器)\/AudioConverter.swift",
       "kind": "FloatLiteral",
-      "offset": 18083,
+      "offset": 18146,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAudio\/AudioConverter(音频转换器)\/AudioConverter.swift",
       "kind": "IntegerLiteral",
-      "offset": 18115,
+      "offset": 18178,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAudio\/AudioConverter(音频转换器)\/AudioConverter.swift",
       "kind": "FloatLiteral",
-      "offset": 18337,
+      "offset": 18400,
       "length": 4,
       "value": "-1.0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAudio\/AudioConverter(音频转换器)\/AudioConverter.swift",
       "kind": "FloatLiteral",
-      "offset": 18347,
+      "offset": 18410,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAudio\/AudioConverter(音频转换器)\/AudioConverter.swift",
       "kind": "IntegerLiteral",
-      "offset": 18392,
+      "offset": 18455,
       "length": 5,
       "value": "32767"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAudio\/AudioConverter(音频转换器)\/AudioConverter.swift",
       "kind": "StringLiteral",
-      "offset": 18621,
+      "offset": 18684,
       "length": 6,
       "value": "\"RIFF\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAudio\/AudioConverter(音频转换器)\/AudioConverter.swift",
       "kind": "IntegerLiteral",
-      "offset": 18680,
+      "offset": 18743,
       "length": 2,
       "value": "36"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAudio\/AudioConverter(音频转换器)\/AudioConverter.swift",
       "kind": "StringLiteral",
-      "offset": 18810,
+      "offset": 18873,
       "length": 6,
       "value": "\"WAVE\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAudio\/AudioConverter(音频转换器)\/AudioConverter.swift",
       "kind": "StringLiteral",
-      "offset": 18892,
+      "offset": 18955,
       "length": 6,
       "value": "\"fmt \""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAudio\/AudioConverter(音频转换器)\/AudioConverter.swift",
       "kind": "IntegerLiteral",
-      "offset": 18956,
+      "offset": 19019,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAudio\/AudioConverter(音频转换器)\/AudioConverter.swift",
       "kind": "IntegerLiteral",
-      "offset": 19089,
+      "offset": 19152,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAudio\/AudioConverter(音频转换器)\/AudioConverter.swift",
       "kind": "IntegerLiteral",
-      "offset": 19219,
+      "offset": 19282,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAudio\/AudioConverter(音频转换器)\/AudioConverter.swift",
       "kind": "IntegerLiteral",
-      "offset": 19464,
+      "offset": 19527,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAudio\/AudioConverter(音频转换器)\/AudioConverter.swift",
       "kind": "IntegerLiteral",
-      "offset": 19598,
+      "offset": 19661,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAudio\/AudioConverter(音频转换器)\/AudioConverter.swift",
       "kind": "IntegerLiteral",
-      "offset": 19721,
+      "offset": 19784,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAudio\/AudioConverter(音频转换器)\/AudioConverter.swift",
       "kind": "StringLiteral",
-      "offset": 19867,
+      "offset": 19930,
       "length": 6,
       "value": "\"data\""
     },
@@ -19826,42 +19830,42 @@
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAudio\/PCMAudioPlayer(PCM播放器)\/PCMAudioPlayer.swift",
       "kind": "IntegerLiteral",
-      "offset": 514,
+      "offset": 561,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAudio\/PCMAudioPlayer(PCM播放器)\/PCMAudioPlayer.swift",
       "kind": "Array",
-      "offset": 601,
+      "offset": 648,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAudio\/PCMAudioPlayer(PCM播放器)\/PCMAudioPlayer.swift",
       "kind": "IntegerLiteral",
-      "offset": 877,
+      "offset": 924,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAudio\/PCMAudioPlayer(PCM播放器)\/PCMAudioPlayer.swift",
       "kind": "IntegerLiteral",
-      "offset": 917,
+      "offset": 964,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAudio\/PCMAudioPlayer(PCM播放器)\/PCMAudioPlayer.swift",
       "kind": "BooleanLiteral",
-      "offset": 971,
+      "offset": 1018,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsAudio\/PCMAudioPlayer(PCM播放器)\/PCMAudioPlayer.swift",
       "kind": "IntegerLiteral",
-      "offset": 1192,
+      "offset": 1239,
       "length": 1,
       "value": "0"
     },

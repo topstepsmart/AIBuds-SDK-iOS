@@ -373,6 +373,7 @@ extern "C" {
 @protocol AIBudsOnDeviceVoiceAssistantDevice;
 @class NSString;
 @class NSData;
+/// Connects supported AIBuds devices to the on-device voice assistant service.
 SWIFT_CLASS_NAMED("OnDeviceVoiceAssistantPlugin")
 @interface AIBudsOnDeviceVoiceAssistantPlugin : NSObject <AIBudsOnDeviceVoiceAssistantBridgePlugin>
 /// The shared singleton instance of StarBurstAuthPlugin
@@ -839,6 +840,7 @@ extern "C" {
 @protocol AIBudsOnDeviceVoiceAssistantDevice;
 @class NSString;
 @class NSData;
+/// Connects supported AIBuds devices to the on-device voice assistant service.
 SWIFT_CLASS_NAMED("OnDeviceVoiceAssistantPlugin")
 @interface AIBudsOnDeviceVoiceAssistantPlugin : NSObject <AIBudsOnDeviceVoiceAssistantBridgePlugin>
 /// The shared singleton instance of StarBurstAuthPlugin

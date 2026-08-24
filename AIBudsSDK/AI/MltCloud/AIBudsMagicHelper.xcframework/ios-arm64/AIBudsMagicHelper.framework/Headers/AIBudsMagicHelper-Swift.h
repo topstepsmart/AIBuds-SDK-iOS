@@ -932,6 +932,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) AIBudsMltClo
 
 @class AIBudsMltCloudAuthEnv;
 @protocol AIBudsMltCloudDevice;
+/// Supplies MltCloud authentication to the AIBuds AI bridge.
 SWIFT_CLASS_NAMED("MltCloudAuthPlugin")
 @interface AIBudsMltCloudAuthPlugin : NSObject <AIBudsMltCloudBridgePlugin>
 /// The shared singleton instance of StarBurstAuthPlugin
@@ -1266,6 +1267,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) AIBudsMltClo
 - (void)synthesizeText:(NSString * _Nonnull)text config:(AIBudsTTSConfig * _Nonnull)config completion:(void (^ _Nullable)(NSString * _Nullable, BOOL, AIBudsTTSResultModel * _Nullable, NSError * _Nullable))completion;
 @end
 
+/// Implements text translation through the MltCloud service.
 SWIFT_CLASS_NAMED("MltCloudTextTranslationService")
 @interface AIBudsMltCloudTextTranslationService : NSObject <AIBudsAITextTranslationServiceAPI>
 /// The shared singleton instance of MltCloudTextTranslationService

@@ -3514,7 +3514,8 @@
         "objc_name": "ABMateDeviceBeaconModel",
         "declAttributes": [
           "AccessControl",
-          "ObjC"
+          "ObjC",
+          "RawDocComment"
         ],
         "superclassUsr": "c:objc(cs)NSObject",
         "superclassNames": [
@@ -5489,7 +5490,8 @@
         "objc_name": "ABMateDataPacketError",
         "declAttributes": [
           "AccessControl",
-          "ObjC"
+          "ObjC",
+          "RawDocComment"
         ],
         "enumRawTypeName": "Int",
         "conformances": [
@@ -13927,7 +13929,8 @@
         "declAttributes": [
           "Final",
           "AccessControl",
-          "ObjC"
+          "ObjC",
+          "RawDocComment"
         ],
         "superclassUsr": "c:objc(cs)NSObject",
         "hasMissingDesignatedInitializers": true,
@@ -15747,119 +15750,119 @@
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/CommManager\/CommManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1678,
+      "offset": 1940,
       "length": 3,
       "value": "135"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/CommManager\/CommManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1762,
+      "offset": 2024,
       "length": 3,
       "value": "158"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/CommManager\/CommManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1848,
+      "offset": 2110,
       "length": 3,
       "value": "185"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/CommManager\/CommManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1934,
+      "offset": 2196,
       "length": 3,
       "value": "247"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/CommManager\/CommManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 2074,
+      "offset": 2336,
       "length": 2,
       "value": "15"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/CommManager\/CommManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 2104,
+      "offset": 2366,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/CommManager\/CommManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 2029,
+      "offset": 2291,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/CommManager\/CommManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 3610,
+      "offset": 3872,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/CommManager\/CommManager.swift",
       "kind": "Dictionary",
-      "offset": 4032,
+      "offset": 4294,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/CommManager\/CommManager.swift",
       "kind": "StringLiteral",
-      "offset": 4103,
+      "offset": 4365,
       "length": 53,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/CommManager\/CommManager.swift",
       "kind": "StringLiteral",
-      "offset": 4128,
+      "offset": 4390,
       "length": 1,
       "value": "\".command.send.timeout.queue\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/CommManager\/CommManager.swift",
       "kind": "Dictionary",
-      "offset": 4259,
+      "offset": 4521,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/CommManager\/CommManager.swift",
       "kind": "Dictionary",
-      "offset": 4329,
+      "offset": 4591,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/CommManager\/CommManager.swift",
       "kind": "Dictionary",
-      "offset": 4408,
+      "offset": 4670,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/CommManager\/CommManager.swift",
       "kind": "Dictionary",
-      "offset": 4490,
+      "offset": 4752,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/CommManager\/CommManager.swift",
       "kind": "Dictionary",
-      "offset": 4564,
+      "offset": 4826,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/CommManager\/CommManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 4757,
+      "offset": 5019,
       "length": 1,
       "value": "5"
     },
@@ -15943,170 +15946,149 @@
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/DataModels(数据模型)\/Common(常用)\/DeviceBeaconModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 458,
+      "offset": 540,
       "length": 2,
       "value": "15"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/DataModels(数据模型)\/Common(常用)\/DeviceBeaconModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 539,
+      "offset": 621,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/DataModels(数据模型)\/Common(常用)\/DeviceBeaconModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 630,
+      "offset": 712,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/DataModels(数据模型)\/Common(常用)\/DeviceBeaconModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 811,
+      "offset": 893,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/DataModels(数据模型)\/Common(常用)\/DeviceBeaconModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 1018,
+      "offset": 1100,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/DataModels(数据模型)\/Common(常用)\/DeviceBeaconModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 1456,
+      "offset": 1538,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/DataModels(数据模型)\/Common(常用)\/DeviceBeaconModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 1582,
+      "offset": 1664,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/DataModels(数据模型)\/Common(常用)\/DeviceBeaconModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 2607,
+      "offset": 2689,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/DataModels(数据模型)\/Common(常用)\/DeviceBeaconModel.swift",
       "kind": "StringLiteral",
-      "offset": 8264,
+      "offset": 8346,
       "length": 1512,
       "value": "\"\n┌─────────── DeviceBeaconModel ───────────────────┐\n│ Vendor ID: \""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/DataModels(数据模型)\/Common(常用)\/DeviceBeaconModel.swift",
       "kind": "StringLiteral",
-      "offset": 8440,
+      "offset": 8522,
       "length": 8,
       "value": "\"0x%04X\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/DataModels(数据模型)\/Common(常用)\/DeviceBeaconModel.swift",
       "kind": "StringLiteral",
-      "offset": 8460,
+      "offset": 8542,
       "length": 3,
       "value": "\"\n│ Product: \""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/DataModels(数据模型)\/Common(常用)\/DeviceBeaconModel.swift",
       "kind": "StringLiteral",
-      "offset": 8492,
+      "offset": 8574,
       "length": 3,
       "value": "\"\n│ Protocol Ver: \""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/DataModels(数据模型)\/Common(常用)\/DeviceBeaconModel.swift",
       "kind": "StringLiteral",
-      "offset": 8537,
+      "offset": 8619,
       "length": 3,
       "value": "\"\n│ Product ID: \""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/DataModels(数据模型)\/Common(常用)\/DeviceBeaconModel.swift",
       "kind": "StringLiteral",
-      "offset": 8578,
+      "offset": 8660,
       "length": 8,
       "value": "\"0x%04X\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/DataModels(数据模型)\/Common(常用)\/DeviceBeaconModel.swift",
       "kind": "StringLiteral",
-      "offset": 8599,
+      "offset": 8681,
       "length": 3,
       "value": "\"\n│ MAC Address: \""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/DataModels(数据模型)\/Common(常用)\/DeviceBeaconModel.swift",
       "kind": "StringLiteral",
-      "offset": 8641,
+      "offset": 8723,
       "length": 5,
       "value": "\"nil\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/DataModels(数据模型)\/Common(常用)\/DeviceBeaconModel.swift",
       "kind": "StringLiteral",
-      "offset": 8647,
+      "offset": 8729,
       "length": 36,
       "value": "\"\n├─────────── Connection ────────────────────────────┤\n| Requirere Secure Authentication: \""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/DataModels(数据模型)\/Common(常用)\/DeviceBeaconModel.swift",
       "kind": "StringLiteral",
-      "offset": 8868,
+      "offset": 8950,
       "length": 5,
       "value": "\"YES\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/DataModels(数据模型)\/Common(常用)\/DeviceBeaconModel.swift",
       "kind": "StringLiteral",
-      "offset": 8876,
+      "offset": 8958,
       "length": 4,
       "value": "\"NO\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/DataModels(数据模型)\/Common(常用)\/DeviceBeaconModel.swift",
       "kind": "StringLiteral",
-      "offset": 8881,
+      "offset": 8963,
       "length": 3,
       "value": "\"\n│ Connection Channel: \""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/DataModels(数据模型)\/Common(常用)\/DeviceBeaconModel.swift",
       "kind": "StringLiteral",
-      "offset": 8934,
+      "offset": 9016,
       "length": 3,
       "value": "\"\n│ Support CTKD: \""
-    },
-    {
-      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/DataModels(数据模型)\/Common(常用)\/DeviceBeaconModel.swift",
-      "kind": "StringLiteral",
-      "offset": 8977,
-      "length": 5,
-      "value": "\"Yes\""
-    },
-    {
-      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/DataModels(数据模型)\/Common(常用)\/DeviceBeaconModel.swift",
-      "kind": "StringLiteral",
-      "offset": 8985,
-      "length": 4,
-      "value": "\"No\""
-    },
-    {
-      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/DataModels(数据模型)\/Common(常用)\/DeviceBeaconModel.swift",
-      "kind": "StringLiteral",
-      "offset": 8990,
-      "length": 3,
-      "value": "\"\n│ Classic BT Connected: \""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/DataModels(数据模型)\/Common(常用)\/DeviceBeaconModel.swift",
@@ -16127,75 +16109,96 @@
       "kind": "StringLiteral",
       "offset": 9072,
       "length": 3,
+      "value": "\"\n│ Classic BT Connected: \""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/DataModels(数据模型)\/Common(常用)\/DeviceBeaconModel.swift",
+      "kind": "StringLiteral",
+      "offset": 9141,
+      "length": 5,
+      "value": "\"Yes\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/DataModels(数据模型)\/Common(常用)\/DeviceBeaconModel.swift",
+      "kind": "StringLiteral",
+      "offset": 9149,
+      "length": 4,
+      "value": "\"No\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/DataModels(数据模型)\/Common(常用)\/DeviceBeaconModel.swift",
+      "kind": "StringLiteral",
+      "offset": 9154,
+      "length": 3,
       "value": "\"\n│ SPP UUID: \""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/DataModels(数据模型)\/Common(常用)\/DeviceBeaconModel.swift",
       "kind": "StringLiteral",
-      "offset": 9120,
+      "offset": 9202,
       "length": 5,
       "value": "\"nil\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/DataModels(数据模型)\/Common(常用)\/DeviceBeaconModel.swift",
       "kind": "StringLiteral",
-      "offset": 9126,
+      "offset": 9208,
       "length": 36,
       "value": "\"\n├─────────── Project Info ──────────────────────────┤\n│ Main Project: \""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/DataModels(数据模型)\/Common(常用)\/DeviceBeaconModel.swift",
       "kind": "StringLiteral",
-      "offset": 9309,
+      "offset": 9391,
       "length": 5,
       "value": "\"nil\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/DataModels(数据模型)\/Common(常用)\/DeviceBeaconModel.swift",
       "kind": "StringLiteral",
-      "offset": 9315,
+      "offset": 9397,
       "length": 3,
       "value": "\"\n│ Sub Project: \""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/DataModels(数据模型)\/Common(常用)\/DeviceBeaconModel.swift",
       "kind": "StringLiteral",
-      "offset": 9356,
+      "offset": 9438,
       "length": 5,
       "value": "\"nil\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/DataModels(数据模型)\/Common(常用)\/DeviceBeaconModel.swift",
       "kind": "StringLiteral",
-      "offset": 9362,
+      "offset": 9444,
       "length": 36,
       "value": "\"\n├─────────── Raw Beacon Data ───────────────────────┤\n│ Raw Data: \""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/DataModels(数据模型)\/Common(常用)\/DeviceBeaconModel.swift",
       "kind": "StringLiteral",
-      "offset": 9548,
+      "offset": 9630,
       "length": 8,
       "value": "\"0x%02X\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/DataModels(数据模型)\/Common(常用)\/DeviceBeaconModel.swift",
       "kind": "StringLiteral",
-      "offset": 9582,
+      "offset": 9664,
       "length": 3,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/DataModels(数据模型)\/Common(常用)\/DeviceBeaconModel.swift",
       "kind": "StringLiteral",
-      "offset": 9590,
+      "offset": 9672,
       "length": 5,
       "value": "\"nil\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/DataModels(数据模型)\/Common(常用)\/DeviceBeaconModel.swift",
       "kind": "StringLiteral",
-      "offset": 9596,
+      "offset": 9678,
       "length": 159,
       "value": "\"\n└───────────────────────────────────────────────────┘\""
     },
@@ -16475,28 +16478,28 @@
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Defines(定义)\/Bluetooth\/DataPacketError.swift",
       "kind": "IntegerLiteral",
-      "offset": 595,
+      "offset": 675,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Defines(定义)\/Bluetooth\/DataPacketError.swift",
       "kind": "IntegerLiteral",
-      "offset": 626,
+      "offset": 706,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Defines(定义)\/Bluetooth\/DataPacketError.swift",
       "kind": "IntegerLiteral",
-      "offset": 653,
+      "offset": 733,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Defines(定义)\/Bluetooth\/DataPacketError.swift",
       "kind": "IntegerLiteral",
-      "offset": 676,
+      "offset": 756,
       "length": 1,
       "value": "3"
     },
@@ -18484,56 +18487,56 @@
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/ABMateSDK.swift",
       "kind": "StringLiteral",
-      "offset": 1827,
+      "offset": 1900,
       "length": 100,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/ABMateSDK.swift",
       "kind": "StringLiteral",
-      "offset": 1845,
+      "offset": 1918,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/ABMateSDK.swift",
       "kind": "StringLiteral",
-      "offset": 1856,
+      "offset": 1929,
       "length": 1,
       "value": "\" V\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/ABMateSDK.swift",
       "kind": "StringLiteral",
-      "offset": 1872,
+      "offset": 1945,
       "length": 1,
       "value": "\" (Build\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/ABMateSDK.swift",
       "kind": "StringLiteral",
-      "offset": 1891,
+      "offset": 1964,
       "length": 1,
       "value": "\") Release Date: \""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/ABMateSDK.swift",
       "kind": "StringLiteral",
-      "offset": 1926,
+      "offset": 1999,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/ABMateSDK.swift",
       "kind": "StringLiteral",
-      "offset": 2070,
+      "offset": 2143,
       "length": 11,
       "value": "\"ABMateSDK\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/ABMateSDK.swift",
       "kind": "StringLiteral",
-      "offset": 2234,
+      "offset": 2307,
       "length": 9,
       "value": "\"topstep\""
     },
@@ -18541,22 +18544,22 @@
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/SDKBuildInfo\/SDK_Build_Info.swift",
       "kind": "StringLiteral",
       "offset": 257,
-      "length": 15,
-      "value": "\"1.0.0-beta.34\""
+      "length": 7,
+      "value": "\"1.0.0\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/SDKBuildInfo\/SDK_Build_Info.swift",
       "kind": "StringLiteral",
-      "offset": 388,
+      "offset": 380,
       "length": 13,
-      "value": "\"20260820002\""
+      "value": "\"20260824001\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/SDKBuildInfo\/SDK_Build_Info.swift",
       "kind": "StringLiteral",
-      "offset": 503,
+      "offset": 495,
       "length": 12,
-      "value": "\"2026-08-20\""
+      "value": "\"2026-08-24\""
     }
   ]
 }

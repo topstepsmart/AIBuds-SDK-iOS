@@ -4745,6 +4745,222 @@
         "children": [
           {
             "kind": "Var",
+            "name": "defaultBandCount",
+            "printedName": "defaultBandCount",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBudsFoundation@objc(cs)AIBudsEQSettingModel(cpy)defaultBandCount",
+            "mangledName": "$s16AIBudsFoundation14EQSettingModelC16defaultBandCountSivpZ",
+            "moduleName": "AIBudsFoundation",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsFoundation@objc(cs)AIBudsEQSettingModel(cm)defaultBandCount",
+                "mangledName": "$s16AIBudsFoundation14EQSettingModelC16defaultBandCountSivgZ",
+                "moduleName": "AIBudsFoundation",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "customModeStart",
+            "printedName": "customModeStart",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBudsFoundation@objc(cs)AIBudsEQSettingModel(cpy)customModeStart",
+            "mangledName": "$s16AIBudsFoundation14EQSettingModelC15customModeStartSivpZ",
+            "moduleName": "AIBudsFoundation",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsFoundation@objc(cs)AIBudsEQSettingModel(cm)customModeStart",
+                "mangledName": "$s16AIBudsFoundation14EQSettingModelC15customModeStartSivgZ",
+                "moduleName": "AIBudsFoundation",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "minimumGain",
+            "printedName": "minimumGain",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBudsFoundation@objc(cs)AIBudsEQSettingModel(cpy)minimumGain",
+            "mangledName": "$s16AIBudsFoundation14EQSettingModelC11minimumGainSivpZ",
+            "moduleName": "AIBudsFoundation",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsFoundation@objc(cs)AIBudsEQSettingModel(cm)minimumGain",
+                "mangledName": "$s16AIBudsFoundation14EQSettingModelC11minimumGainSivgZ",
+                "moduleName": "AIBudsFoundation",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "maximumGain",
+            "printedName": "maximumGain",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBudsFoundation@objc(cs)AIBudsEQSettingModel(cpy)maximumGain",
+            "mangledName": "$s16AIBudsFoundation14EQSettingModelC11maximumGainSivpZ",
+            "moduleName": "AIBudsFoundation",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsFoundation@objc(cs)AIBudsEQSettingModel(cm)maximumGain",
+                "mangledName": "$s16AIBudsFoundation14EQSettingModelC11maximumGainSivgZ",
+                "moduleName": "AIBudsFoundation",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "default",
             "printedName": "default",
             "children": [
@@ -5706,6 +5922,147 @@
               "RawDocComment"
             ],
             "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "customSetting",
+            "printedName": "customSetting(index:gains:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "AIBudsFoundation.EQSettingModel?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "EQSettingModel",
+                    "printedName": "AIBudsFoundation.EQSettingModel",
+                    "usr": "c:@M@AIBudsFoundation@objc(cs)AIBudsEQSettingModel"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.Int]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AIBudsFoundation@objc(cs)AIBudsEQSettingModel(cm)customSettingWithIndex:gains:",
+            "mangledName": "$s16AIBudsFoundation14EQSettingModelC13customSetting5index5gainsACSgSi_SaySiGtFZ",
+            "moduleName": "AIBudsFoundation",
+            "static": true,
+            "objc_name": "customSettingWithIndex:gains:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "isValidForTransmission",
+            "printedName": "isValidForTransmission",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBudsFoundation@objc(cs)AIBudsEQSettingModel(py)isValidForTransmission",
+            "mangledName": "$s16AIBudsFoundation14EQSettingModelC22isValidForTransmissionSbvp",
+            "moduleName": "AIBudsFoundation",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsFoundation@objc(cs)AIBudsEQSettingModel(im)isValidForTransmission",
+                "mangledName": "$s16AIBudsFoundation14EQSettingModelC22isValidForTransmissionSbvg",
+                "moduleName": "AIBudsFoundation",
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "areGainsValidForTransmission",
+            "printedName": "areGainsValidForTransmission(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.Int]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AIBudsFoundation@objc(cs)AIBudsEQSettingModel(cm)areGainsValidForTransmission:",
+            "mangledName": "$s16AIBudsFoundation14EQSettingModelC28areGainsValidForTransmissionySbSaySiGFZ",
+            "moduleName": "AIBudsFoundation",
+            "static": true,
+            "objc_name": "areGainsValidForTransmission:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
           },
           {
             "kind": "Var",
@@ -22642,7 +22999,8 @@
         "objc_name": "AIBudsEarbudSide",
         "declAttributes": [
           "AccessControl",
-          "ObjC"
+          "ObjC",
+          "RawDocComment"
         ],
         "enumRawTypeName": "Int",
         "conformances": [
@@ -29448,7 +29806,8 @@
         "objc_name": "AIBudsMediaFileType",
         "declAttributes": [
           "AccessControl",
-          "ObjC"
+          "ObjC",
+          "RawDocComment"
         ],
         "enumRawTypeName": "Int",
         "conformances": [
@@ -33948,7 +34307,8 @@
         "objc_name": "AIBudsServiceAuthType",
         "declAttributes": [
           "AccessControl",
-          "ObjC"
+          "ObjC",
+          "RawDocComment"
         ],
         "enumRawTypeName": "Int",
         "conformances": [
@@ -39640,7 +40000,8 @@
         "objc_name": "AIBudsDeviceVolumeType",
         "declAttributes": [
           "AccessControl",
-          "ObjC"
+          "ObjC",
+          "RawDocComment"
         ],
         "enumRawTypeName": "Int",
         "conformances": [
@@ -40965,7 +41326,8 @@
         "objc_name": "AIBudsWearDetectionCapability",
         "declAttributes": [
           "AccessControl",
-          "ObjC"
+          "ObjC",
+          "RawDocComment"
         ],
         "enumRawTypeName": "Int",
         "conformances": [
@@ -60017,7 +60379,8 @@
         "moduleName": "AIBudsFoundation",
         "isOpen": true,
         "declAttributes": [
-          "AccessControl"
+          "AccessControl",
+          "RawDocComment"
         ],
         "conformances": [
           {
@@ -72403,329 +72766,343 @@
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/DataModels(数据模型)\/EQ(均衡器)\/EQSettingModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 417,
+      "offset": 424,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/DataModels(数据模型)\/EQ(均衡器)\/EQSettingModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 525,
+      "offset": 530,
       "length": 4,
       "value": "0x20"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/DataModels(数据模型)\/EQ(均衡器)\/EQSettingModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 639,
+      "offset": 626,
+      "length": 3,
+      "value": "-12"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/DataModels(数据模型)\/EQ(均衡器)\/EQSettingModel.swift",
+      "kind": "IntegerLiteral",
+      "offset": 721,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/DataModels(数据模型)\/EQ(均衡器)\/EQSettingModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 762,
+      "offset": 844,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/DataModels(数据模型)\/EQ(均衡器)\/EQSettingModel.swift",
       "kind": "Array",
-      "offset": 772,
+      "offset": 854,
       "length": 33,
       "value": "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/DataModels(数据模型)\/EQ(均衡器)\/EQSettingModel.swift",
       "kind": "StringLiteral",
-      "offset": 813,
+      "offset": 895,
       "length": 9,
       "value": "\"Default\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/DataModels(数据模型)\/EQ(均衡器)\/EQSettingModel.swift",
       "kind": "StringLiteral",
-      "offset": 837,
+      "offset": 919,
       "length": 8,
       "value": "\"默认\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/DataModels(数据模型)\/EQ(均衡器)\/EQSettingModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 942,
+      "offset": 1024,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/DataModels(数据模型)\/EQ(均衡器)\/EQSettingModel.swift",
       "kind": "Array",
-      "offset": 952,
+      "offset": 1034,
       "length": 37,
       "value": "[3, 1, 0, -2, -4, -4, -2, 0, 1, 2]"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/DataModels(数据模型)\/EQ(均衡器)\/EQSettingModel.swift",
       "kind": "StringLiteral",
-      "offset": 997,
+      "offset": 1079,
       "length": 5,
       "value": "\"Pop\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/DataModels(数据模型)\/EQ(均衡器)\/EQSettingModel.swift",
       "kind": "StringLiteral",
-      "offset": 1017,
+      "offset": 1099,
       "length": 8,
       "value": "\"流行\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/DataModels(数据模型)\/EQ(均衡器)\/EQSettingModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 1124,
+      "offset": 1206,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/DataModels(数据模型)\/EQ(均衡器)\/EQSettingModel.swift",
       "kind": "Array",
-      "offset": 1134,
+      "offset": 1216,
       "length": 36,
       "value": "[-2, 0, 2, 4, -2, -2, 0, 0, 4, 4]"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/DataModels(数据模型)\/EQ(均衡器)\/EQSettingModel.swift",
       "kind": "StringLiteral",
-      "offset": 1178,
+      "offset": 1260,
       "length": 6,
       "value": "\"Rock\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/DataModels(数据模型)\/EQ(均衡器)\/EQSettingModel.swift",
       "kind": "StringLiteral",
-      "offset": 1199,
+      "offset": 1281,
       "length": 8,
       "value": "\"摇滚\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/DataModels(数据模型)\/EQ(均衡器)\/EQSettingModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 1306,
+      "offset": 1388,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/DataModels(数据模型)\/EQ(均衡器)\/EQSettingModel.swift",
       "kind": "Array",
-      "offset": 1316,
+      "offset": 1398,
       "length": 33,
       "value": "[0, 0, 0, 4, 4, 4, 0, 2, 3, 4]"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/DataModels(数据模型)\/EQ(均衡器)\/EQSettingModel.swift",
       "kind": "StringLiteral",
-      "offset": 1357,
+      "offset": 1439,
       "length": 6,
       "value": "\"Jazz\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/DataModels(数据模型)\/EQ(均衡器)\/EQSettingModel.swift",
       "kind": "StringLiteral",
-      "offset": 1378,
+      "offset": 1460,
       "length": 8,
       "value": "\"爵士\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/DataModels(数据模型)\/EQ(均衡器)\/EQSettingModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 1491,
+      "offset": 1573,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/DataModels(数据模型)\/EQ(均衡器)\/EQSettingModel.swift",
       "kind": "Array",
-      "offset": 1501,
+      "offset": 1583,
       "length": 33,
       "value": "[0, 8, 8, 4, 0, 0, 0, 0, 2, 2]"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/DataModels(数据模型)\/EQ(均衡器)\/EQSettingModel.swift",
       "kind": "StringLiteral",
-      "offset": 1542,
+      "offset": 1624,
       "length": 9,
       "value": "\"Classic\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/DataModels(数据模型)\/EQ(均衡器)\/EQSettingModel.swift",
       "kind": "StringLiteral",
-      "offset": 1566,
+      "offset": 1648,
       "length": 8,
       "value": "\"古典\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/DataModels(数据模型)\/EQ(均衡器)\/EQSettingModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 1679,
+      "offset": 1761,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/DataModels(数据模型)\/EQ(均衡器)\/EQSettingModel.swift",
       "kind": "Array",
-      "offset": 1689,
+      "offset": 1771,
       "length": 34,
       "value": "[-2, 0, 0, 2, 2, 0, 0, 0, 4, 4]"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/DataModels(数据模型)\/EQ(均衡器)\/EQSettingModel.swift",
       "kind": "StringLiteral",
-      "offset": 1731,
+      "offset": 1813,
       "length": 9,
       "value": "\"Country\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/DataModels(数据模型)\/EQ(均衡器)\/EQSettingModel.swift",
       "kind": "StringLiteral",
-      "offset": 1755,
+      "offset": 1837,
       "length": 8,
       "value": "\"乡村\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/DataModels(数据模型)\/EQ(均衡器)\/EQSettingModel.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4841,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/DataModels(数据模型)\/EQ(均衡器)\/EQSettingModel.swift",
       "kind": "StringLiteral",
-      "offset": 3746,
+      "offset": 5424,
       "length": 63,
       "value": "\"[EQSetting] bands=\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/DataModels(数据模型)\/EQ(均衡器)\/EQSettingModel.swift",
       "kind": "StringLiteral",
-      "offset": 3779,
+      "offset": 5457,
       "length": 4,
       "value": "\" mode=\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/DataModels(数据模型)\/EQ(均衡器)\/EQSettingModel.swift",
       "kind": "StringLiteral",
-      "offset": 3792,
+      "offset": 5470,
       "length": 1,
       "value": "\", gains=\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/DataModels(数据模型)\/EQ(均衡器)\/EQSettingModel.swift",
       "kind": "StringLiteral",
-      "offset": 3808,
+      "offset": 5486,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/DataModels(数据模型)\/EQ(均衡器)\/EQSettingModel.swift",
       "kind": "StringLiteral",
-      "offset": 3862,
+      "offset": 5540,
       "length": 15,
       "value": "\" name=\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/DataModels(数据模型)\/EQ(均衡器)\/EQSettingModel.swift",
       "kind": "StringLiteral",
-      "offset": 3876,
+      "offset": 5554,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/DataModels(数据模型)\/EQ(均衡器)\/EQSettingModel.swift",
       "kind": "StringLiteral",
-      "offset": 3954,
+      "offset": 5632,
       "length": 29,
       "value": "\" chineseName=\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/DataModels(数据模型)\/EQ(均衡器)\/EQSettingModel.swift",
       "kind": "StringLiteral",
-      "offset": 3982,
+      "offset": 5660,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/DataModels(数据模型)\/EQ(均衡器)\/EQSettingModel.swift",
       "kind": "StringLiteral",
-      "offset": 4039,
+      "offset": 5717,
       "length": 14,
       "value": "\" type=preset\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/DataModels(数据模型)\/EQ(均衡器)\/EQSettingModel.swift",
       "kind": "StringLiteral",
-      "offset": 4094,
+      "offset": 5772,
       "length": 14,
       "value": "\" type=custom\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/DataModels(数据模型)\/EQ(均衡器)\/EQSettingModel.swift",
       "kind": "StringLiteral",
-      "offset": 4243,
+      "offset": 5921,
       "length": 70,
       "value": "\"[EQSetting] 频段数=\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/DataModels(数据模型)\/EQ(均衡器)\/EQSettingModel.swift",
       "kind": "StringLiteral",
-      "offset": 4280,
+      "offset": 5958,
       "length": 6,
       "value": "\" 模式=\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/DataModels(数据模型)\/EQ(均衡器)\/EQSettingModel.swift",
       "kind": "StringLiteral",
-      "offset": 4295,
+      "offset": 5973,
       "length": 1,
       "value": "\", 增益=\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/DataModels(数据模型)\/EQ(均衡器)\/EQSettingModel.swift",
       "kind": "StringLiteral",
-      "offset": 4312,
+      "offset": 5990,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/DataModels(数据模型)\/EQ(均衡器)\/EQSettingModel.swift",
       "kind": "StringLiteral",
-      "offset": 4366,
+      "offset": 6044,
       "length": 17,
       "value": "\" 名称=\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/DataModels(数据模型)\/EQ(均衡器)\/EQSettingModel.swift",
       "kind": "StringLiteral",
-      "offset": 4382,
+      "offset": 6060,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/DataModels(数据模型)\/EQ(均衡器)\/EQSettingModel.swift",
       "kind": "StringLiteral",
-      "offset": 4460,
+      "offset": 6138,
       "length": 27,
       "value": "\" 中文名=\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/DataModels(数据模型)\/EQ(均衡器)\/EQSettingModel.swift",
       "kind": "StringLiteral",
-      "offset": 4486,
+      "offset": 6164,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/DataModels(数据模型)\/EQ(均衡器)\/EQSettingModel.swift",
       "kind": "StringLiteral",
-      "offset": 4543,
+      "offset": 6221,
       "length": 16,
       "value": "\" 类型=预设\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/DataModels(数据模型)\/EQ(均衡器)\/EQSettingModel.swift",
       "kind": "StringLiteral",
-      "offset": 4600,
+      "offset": 6278,
       "length": 19,
       "value": "\" 类型=自定义\""
     },
@@ -73936,21 +74313,21 @@
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/Defines(定义)\/Common(常用)\/EarbudSide.swift",
       "kind": "IntegerLiteral",
-      "offset": 254,
+      "offset": 304,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/Defines(定义)\/Common(常用)\/EarbudSide.swift",
       "kind": "IntegerLiteral",
-      "offset": 286,
+      "offset": 336,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/Defines(定义)\/Common(常用)\/EarbudSide.swift",
       "kind": "IntegerLiteral",
-      "offset": 319,
+      "offset": 369,
       "length": 1,
       "value": "1"
     },
@@ -74587,28 +74964,28 @@
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/Defines(定义)\/MediaInfo(媒体信息)\/MediaFileType.swift",
       "kind": "IntegerLiteral",
-      "offset": 273,
+      "offset": 325,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/Defines(定义)\/MediaInfo(媒体信息)\/MediaFileType.swift",
       "kind": "IntegerLiteral",
-      "offset": 322,
+      "offset": 374,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/Defines(定义)\/MediaInfo(媒体信息)\/MediaFileType.swift",
       "kind": "IntegerLiteral",
-      "offset": 373,
+      "offset": 425,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/Defines(定义)\/MediaInfo(媒体信息)\/MediaFileType.swift",
       "kind": "IntegerLiteral",
-      "offset": 425,
+      "offset": 477,
       "length": 1,
       "value": "3"
     },
@@ -74881,14 +75258,14 @@
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/Defines(定义)\/ServiceAuth(服务鉴权)\/ServiceAuthType.swift",
       "kind": "IntegerLiteral",
-      "offset": 286,
+      "offset": 348,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/Defines(定义)\/ServiceAuth(服务鉴权)\/ServiceAuthType.swift",
       "kind": "IntegerLiteral",
-      "offset": 358,
+      "offset": 420,
       "length": 1,
       "value": "2"
     },
@@ -75406,21 +75783,21 @@
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/Defines(定义)\/Volume(音量)\/DeviceVolumeType.swift",
       "kind": "IntegerLiteral",
-      "offset": 291,
+      "offset": 352,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/Defines(定义)\/Volume(音量)\/DeviceVolumeType.swift",
       "kind": "IntegerLiteral",
-      "offset": 340,
+      "offset": 401,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/Defines(定义)\/Volume(音量)\/DeviceVolumeType.swift",
       "kind": "IntegerLiteral",
-      "offset": 382,
+      "offset": 443,
       "length": 1,
       "value": "2"
     },
@@ -75462,21 +75839,21 @@
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/Defines(定义)\/WearDetection(佩戴检测)\/WearDetectionCapability.swift",
       "kind": "IntegerLiteral",
-      "offset": 296,
+      "offset": 363,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/Defines(定义)\/WearDetection(佩戴检测)\/WearDetectionCapability.swift",
       "kind": "IntegerLiteral",
-      "offset": 378,
+      "offset": 445,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/Defines(定义)\/WearDetection(佩戴检测)\/WearDetectionCapability.swift",
       "kind": "IntegerLiteral",
-      "offset": 456,
+      "offset": 523,
       "length": 1,
       "value": "2"
     },
@@ -77387,7 +77764,7 @@
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/Utils(工具类)\/ByteBuffer.swift",
       "kind": "IntegerLiteral",
-      "offset": 5813,
+      "offset": 5890,
       "length": 1,
       "value": "0"
     },
@@ -77416,22 +77793,22 @@
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/SDKBuildInfo\/SDK_Build_Info.swift",
       "kind": "StringLiteral",
       "offset": 257,
-      "length": 15,
-      "value": "\"1.0.0-beta.34\""
+      "length": 7,
+      "value": "\"1.0.0\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/SDKBuildInfo\/SDK_Build_Info.swift",
       "kind": "StringLiteral",
-      "offset": 388,
+      "offset": 380,
       "length": 13,
-      "value": "\"20260820002\""
+      "value": "\"20260824001\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/SDKBuildInfo\/SDK_Build_Info.swift",
       "kind": "StringLiteral",
-      "offset": 503,
+      "offset": 495,
       "length": 12,
-      "value": "\"2026-08-20\""
+      "value": "\"2026-08-24\""
     }
   ]
 }

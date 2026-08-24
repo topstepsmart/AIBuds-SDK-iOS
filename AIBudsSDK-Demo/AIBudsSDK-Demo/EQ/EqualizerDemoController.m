@@ -10,7 +10,7 @@
 
 @protocol EQGainsSliderViewDelegate <NSObject>
 
-- (void)eqGainsSliderView:(id)sliderView didUpdateGains:(NSArray *)gains;
+- (void)eqGainsSliderView:(id)sliderView didUpdateGains:(NSArray<NSNumber *> *)gains;
 
 @end
 
@@ -77,8 +77,8 @@
     ]];
     
     // 默认值
-    self.minValue = -12;
-    self.maxValue = 12;
+    self.minValue = AIBudsEQSettingModel.minimumGain;
+    self.maxValue = AIBudsEQSettingModel.maximumGain;
     self.value = 0;
     self.editable = YES;
 }
@@ -164,7 +164,7 @@
     _thumbView.center = CGPointMake(self.bounds.size.width / 2, thumbY);
     
     // 更新颜色 - 根据增益值使用渐变色效果
-    CGFloat absValue = ABS(self.value) / 12.0; // 归一化到 0-1
+    CGFloat absValue = ABS(self.value) / (CGFloat)AIBudsEQSettingModel.maximumGain; // 归一化到 0-1
     if (self.value > 0) {
         // 正值：从浅蓝到深蓝渐变
         _thumbView.backgroundColor = [UIColor colorWithHue:0.58 saturation:0.8 + (absValue * 0.2) brightness:0.9 + (absValue * 0.1) alpha:1.0];
@@ -187,8 +187,8 @@
 
 @interface EQGainsSliderView : UIView
 
-@property (nonatomic, strong) NSArray *gains;
-@property (nonatomic, strong) NSArray *frequencyLabels;
+@property (nonatomic, copy) NSArray<NSNumber *> *gains;
+@property (nonatomic, copy) NSArray<NSString *> *frequencyLabels;
 @property (nonatomic, weak) id<EQGainsSliderViewDelegate> delegate;
 @property (nonatomic, assign) BOOL editable;
 
@@ -198,10 +198,15 @@
     NSMutableArray *_sliders;
     NSMutableArray *_gainLabels;
     NSMutableArray *_freqLabels;
+    CGSize _lastLayoutSize;
 }
 
-- (void)setGains:(NSArray *)gains {
-    _gains = gains;
+- (void)setGains:(NSArray<NSNumber *> *)gains {
+    if ((_gains == gains) || [_gains isEqualToArray:gains]) {
+        return;
+    }
+    _gains = [gains copy];
+    _frequencyLabels = nil;
     [self setupSliders];
 }
 
@@ -227,7 +232,10 @@
 
 - (void)layoutSubviews {
     [super layoutSubviews];
-    [self setupSliders];
+    if (!CGSizeEqualToSize(_lastLayoutSize, self.bounds.size)) {
+        _lastLayoutSize = self.bounds.size;
+        [self setupSliders];
+    }
 }
 
 - (void)setupSliders {
@@ -253,8 +261,8 @@
     CGFloat sliderHeight = self.bounds.size.height - paddingTop - paddingBottom;
     CGFloat sliderWidth = (self.bounds.size.width - paddingLeft - paddingRight) / self.gains.count;
     
-    NSInteger maxGain = 12;
-    NSInteger minGain = -12;
+    NSInteger maxGain = AIBudsEQSettingModel.maximumGain;
+    NSInteger minGain = AIBudsEQSettingModel.minimumGain;
     
     // 确保宽度和高度有效
     if (sliderWidth <= 0 || sliderHeight <= 0) {
@@ -295,9 +303,10 @@
             gainLabel.text = [NSString stringWithFormat:@"%ld", (long)newValue];
             
             // 更新增益数组
-            NSMutableArray *updatedGains = [strongSelf.gains mutableCopy];
+            NSMutableArray<NSNumber *> *updatedGains = [strongSelf.gains mutableCopy];
             updatedGains[i] = @(newValue);
-            strongSelf.gains = updatedGains;
+            // Avoid rebuilding every slider while the user is dragging.
+            strongSelf->_gains = [updatedGains copy];
             
             // 通知代理
             if (strongSelf.delegate && [strongSelf.delegate respondsToSelector:@selector(eqGainsSliderView:didUpdateGains:)]) {
@@ -348,12 +357,16 @@
 @property (nonatomic, strong) UILabel *currentEQTypeLabel;
 @property (nonatomic, strong) EQGainsSliderView *currentEQGainsSliderView;
 @property (nonatomic, strong) AIBudsEQSettingModel *currentEQSetting;
+@property (nonatomic, copy) NSArray<NSNumber *> *pendingEQGains;
+@property (nonatomic, strong) NSTimer *eqUpdateDebounceTimer;
+@property (nonatomic, assign) BOOL eqUpdateInFlight;
 
 @end
 
 @implementation EqualizerDemoController
 
 - (void)dealloc {
+    [self.eqUpdateDebounceTimer invalidate];
     [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
@@ -532,7 +545,12 @@
 }
 
 - (void)loadEQSettings {
+    self.statusLabel.textColor = [UIColor systemGrayColor];
     if (!self.device) {
+        [self.eqUpdateDebounceTimer invalidate];
+        self.eqUpdateDebounceTimer = nil;
+        self.pendingEQGains = nil;
+        self.currentEQGainsSliderView.editable = NO;
         self.statusLabel.text = NSLocalizedString(@"LocKey.NoDeviceConnected", comment:@"No device connected");
         self.currentEQNameLabel.text = NSLocalizedString(@"LocKey.NoEQSettingActive", comment:@"No EQ setting active");
         self.currentEQTypeLabel.text = @"";
@@ -547,6 +565,14 @@
         [self.eqSettingsCollectionView reloadData];
         
         AIBudsEQSettingModel *currentSetting = eqDevice.eqSetting;
+        BOOL supportsCustomEQ = currentSetting.isCustom;
+        for (AIBudsEQSettingModel *setting in self.eqSettings) {
+            if (setting.isCustom) {
+                supportsCustomEQ = YES;
+                break;
+            }
+        }
+        self.currentEQGainsSliderView.editable = supportsCustomEQ;
         if (currentSetting) {
             // 保存当前均衡器设置
             self.currentEQSetting = currentSetting;
@@ -576,9 +602,9 @@
             }
             
             // 显示增益滑杆
-            if (currentSetting.gains && currentSetting.gains.count > 0) {
+            if (!self.eqUpdateInFlight && !self.pendingEQGains && currentSetting.gains.count > 0) {
                 self.currentEQGainsSliderView.gains = currentSetting.gains;
-            } else {
+            } else if (!self.eqUpdateInFlight && !self.pendingEQGains) {
                 self.currentEQGainsSliderView.gains = nil;
             }
             
@@ -591,6 +617,10 @@
             self.statusLabel.text = NSLocalizedString(@"LocKey.NoEQSettingActive", comment:@"No EQ setting active");
         }
     } else {
+        [self.eqUpdateDebounceTimer invalidate];
+        self.eqUpdateDebounceTimer = nil;
+        self.pendingEQGains = nil;
+        self.currentEQGainsSliderView.editable = NO;
         self.statusLabel.text = NSLocalizedString(@"LocKey.DeviceNotSupportEQ", comment:@"Device does not support equalizer");
         self.currentEQNameLabel.text = NSLocalizedString(@"LocKey.DeviceNotSupportEQ", comment:@"Device does not support equalizer");
         self.currentEQTypeLabel.text = @"";
@@ -676,6 +706,9 @@
     
     id<AIBudsDeviceEqualizerAPI> eqDevice = (id<AIBudsDeviceEqualizerAPI>)self.device;
     if ([eqDevice conformsToProtocol:@protocol(AIBudsDeviceEqualizerAPI)]) {
+        [self.eqUpdateDebounceTimer invalidate];
+        self.eqUpdateDebounceTimer = nil;
+        self.pendingEQGains = nil;
         AIBudsEQSettingModel *setting = self.eqSettings[indexPath.item];
         
         __weak typeof(self) weakSelf = self;
@@ -686,11 +719,12 @@
                     return;
                 }
                 if (success) {
+                    strongSelf.statusLabel.textColor = [UIColor systemGrayColor];
                     strongSelf.statusLabel.text = [NSString stringWithFormat:NSLocalizedString(@"LocKey.EQSettingAppliedFormat", comment:@"EQ setting applied: %@"), setting.name];
                     [strongSelf.eqSettingsCollectionView reloadData];
                     [strongSelf hideStatusLabelAfterDelay];
                 } else {
-                    strongSelf.statusLabel.text = [NSString stringWithFormat:@"%@", error.localizedDescription];
+                    strongSelf.statusLabel.text = error.localizedDescription ?: NSLocalizedString(@"LocKey.EQSettingUpdateFailed", comment:@"Failed to update EQ setting");
                     strongSelf.statusLabel.textColor = [UIColor systemRedColor];
                     [strongSelf hideStatusLabelAfterDelay];
                 }
@@ -718,35 +752,115 @@
 
 #pragma mark - EQGainsSliderViewDelegate
 
-- (void)eqGainsSliderView:(id)sliderView didUpdateGains:(NSArray *)gains {
+- (void)eqGainsSliderView:(id)sliderView didUpdateGains:(NSArray<NSNumber *> *)gains {
     if (!self.device || !self.currentEQSetting) {
         return;
     }
-    
-    id<AIBudsDeviceEqualizerAPI> eqDevice = (id<AIBudsDeviceEqualizerAPI>)self.device;
-    if ([eqDevice conformsToProtocol:@protocol(AIBudsDeviceEqualizerAPI)]) {
-        // 创建一个新的均衡器设置，使用更新后的增益值
-        NSInteger mode = 0x21;
-        AIBudsEQSettingModel *updatedSetting = [[AIBudsEQSettingModel alloc] initWithMode:mode gains:gains];
-        
-        __weak typeof(self) weakSelf = self;
-        [eqDevice setEqualizer:updatedSetting withCompletion:^(BOOL success, NSError * _Nullable error) {
-            dispatch_async(dispatch_get_main_queue(), ^{ 
-                __strong typeof(weakSelf) strongSelf = weakSelf;
-                if (!strongSelf) {
-                    return;
-                }
-                if (success) {
-                    strongSelf.statusLabel.text = NSLocalizedString(@"LocKey.EQSettingUpdatedSuccess", comment:@"EQ setting updated successfully");
-                    [strongSelf hideStatusLabelAfterDelay];
-                } else {
-                    strongSelf.statusLabel.text = [NSString stringWithFormat:@"%@", error.localizedDescription];
-                    strongSelf.statusLabel.textColor = [UIColor systemRedColor];
-                    [strongSelf hideStatusLabelAfterDelay];
-                }
-            });
-        }];
+
+    self.pendingEQGains = [gains copy];
+    [self schedulePendingEQUpdateAfterDelay:0.25];
+}
+
+- (void)schedulePendingEQUpdateAfterDelay:(NSTimeInterval)delay {
+    [self.eqUpdateDebounceTimer invalidate];
+    self.eqUpdateDebounceTimer = nil;
+
+    if (!self.pendingEQGains || self.eqUpdateInFlight) {
+        return;
     }
+
+    NSTimer *timer = [NSTimer timerWithTimeInterval:delay
+                                             target:self
+                                           selector:@selector(applyPendingEQUpdate)
+                                           userInfo:nil
+                                            repeats:NO];
+    self.eqUpdateDebounceTimer = timer;
+    [[NSRunLoop mainRunLoop] addTimer:timer forMode:NSRunLoopCommonModes];
+}
+
+- (AIBudsEQSettingModel *)customEQSlotForGains:(NSArray<NSNumber *> *)gains
+                                        device:(id<AIBudsDeviceEqualizerAPI>)eqDevice {
+    NSMutableArray<AIBudsEQSettingModel *> *customSlots = [NSMutableArray array];
+    for (AIBudsEQSettingModel *setting in eqDevice.allEQSettings) {
+        if (setting.isCustom && setting.gains.count == gains.count) {
+            [customSlots addObject:setting];
+            if (self.currentEQSetting.isCustom && setting.mode == self.currentEQSetting.mode) {
+                return setting;
+            }
+        }
+    }
+
+    if (customSlots.count > 0) {
+        return customSlots.firstObject;
+    }
+    if (self.currentEQSetting.isCustom && self.currentEQSetting.gains.count == gains.count) {
+        return self.currentEQSetting;
+    }
+    return nil;
+}
+
+- (void)applyPendingEQUpdate {
+    self.eqUpdateDebounceTimer = nil;
+    if (self.eqUpdateInFlight || !self.pendingEQGains) {
+        return;
+    }
+    if (!self.device) {
+        self.pendingEQGains = nil;
+        return;
+    }
+
+    id<AIBudsDeviceEqualizerAPI> eqDevice = (id<AIBudsDeviceEqualizerAPI>)self.device;
+    if (![eqDevice conformsToProtocol:@protocol(AIBudsDeviceEqualizerAPI)]) {
+        self.pendingEQGains = nil;
+        return;
+    }
+
+    NSArray<NSNumber *> *gains = self.pendingEQGains;
+    AIBudsEQSettingModel *customSlot = [self customEQSlotForGains:gains device:eqDevice];
+    NSNumber *customIndex = customSlot.customIndex;
+    if (!customIndex) {
+        self.pendingEQGains = nil;
+        self.statusLabel.text = NSLocalizedString(@"LocKey.DeviceNotSupportCustomEQ", comment:@"Device does not support custom EQ");
+        self.statusLabel.textColor = [UIColor systemRedColor];
+        return;
+    }
+
+    AIBudsEQSettingModel *updatedSetting = [AIBudsEQSettingModel customSettingWithIndex:customIndex.integerValue
+                                                                                 gains:gains];
+    if (!updatedSetting) {
+        self.pendingEQGains = nil;
+        self.statusLabel.text = NSLocalizedString(@"LocKey.InvalidEQSetting", comment:@"Invalid EQ setting");
+        self.statusLabel.textColor = [UIColor systemRedColor];
+        return;
+    }
+
+    self.pendingEQGains = nil;
+    self.eqUpdateInFlight = YES;
+    __weak typeof(self) weakSelf = self;
+    [eqDevice setEqualizer:updatedSetting withCompletion:^(BOOL success, NSError * _Nullable error) {
+        dispatch_async(dispatch_get_main_queue(), ^{
+            __strong typeof(weakSelf) strongSelf = weakSelf;
+            if (!strongSelf) {
+                return;
+            }
+
+            strongSelf.eqUpdateInFlight = NO;
+            if (success) {
+                strongSelf.currentEQSetting = updatedSetting;
+                strongSelf.statusLabel.textColor = [UIColor systemGrayColor];
+                strongSelf.statusLabel.text = NSLocalizedString(@"LocKey.EQSettingUpdatedSuccess", comment:@"EQ setting updated successfully");
+            } else {
+                strongSelf.statusLabel.text = error.localizedDescription ?: NSLocalizedString(@"LocKey.EQSettingUpdateFailed", comment:@"Failed to update EQ setting");
+                strongSelf.statusLabel.textColor = [UIColor systemRedColor];
+            }
+
+            if (strongSelf.pendingEQGains) {
+                [strongSelf schedulePendingEQUpdateAfterDelay:0.05];
+            } else {
+                [strongSelf hideStatusLabelAfterDelay];
+            }
+        });
+    }];
 }
 
 @end

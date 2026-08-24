@@ -626,6 +626,9 @@
 "LocKey.DeviceNotSupportEQ" = "设备不支持均衡器";
 "LocKey.EQSettingAppliedFormat" = "已应用 EQ 设置：%@";
 "LocKey.EQSettingUpdatedSuccess" = "EQ 设置更新成功";
+"LocKey.EQSettingUpdateFailed" = "EQ 设置更新失败";
+"LocKey.DeviceNotSupportCustomEQ" = "设备不支持自定义 EQ";
+"LocKey.InvalidEQSetting" = "EQ 设置无效";
 
 "LocKey.EQName.Default" = "默认";
 "LocKey.EQName.Pop" = "流行";

@@ -372,6 +372,7 @@ extern "C" {
 #if defined(__OBJC__)
 
 @protocol AIBudsSDKDelegate;
+/// Provides the ABMate Bluetooth implementation used by AIBuds devices.
 SWIFT_CLASS("_TtC6ABMate9ABMateSDK")
 @interface ABMateSDK : NSObject
 /// SDK delegate
@@ -548,6 +549,7 @@ typedef SWIFT_ENUM_NAMED(uint32_t, ABMateCustomLogSignature, "CustomLogSignature
   ABMateCustomLogSignatureEq = 0x51455145,
 };
 
+/// Describes errors encountered while parsing an ABMate Bluetooth data packet.
 typedef SWIFT_ENUM_NAMED(NSInteger, ABMateDataPacketError, "DataPacketError", open) {
   ABMateDataPacketErrorUnknown = 0,
   ABMateDataPacketErrorInvalidDataLength = 1,
@@ -575,6 +577,7 @@ typedef SWIFT_ENUM_NAMED(uint32_t, ABMateDebugLogCategory, "DebugLogCategory", o
 SWIFT_ENUM_FWD_DECL(NSInteger, AIBudsDeviceProduct)
 @class NSUUID;
 @class NSCoder;
+/// Represents the manufacturer advertisement data broadcast by an ABMate device.
 SWIFT_CLASS_NAMED("DeviceBeaconModel")
 @interface ABMateDeviceBeaconModel : NSObject <AIBudsDeviceBeaconConvertible>
 /// Protocol version

@@ -6,15 +6,15 @@
 	<dict>
 		<key>Headers/AIBudsVoiceAssistant-Swift.h</key>
 		<data>
-		ItIjnu6uie+cTTNfp8USDK/Lp+g=
+		zb2VsTYRkqGZKrztQY1g4X06cmA=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		WOSbAIzuZWBPfbSVwGLeCYwbHn4=
+		JeKy5CGBz1dp42DZ1soZjS2Pyqk=
 		</data>
 		<key>Modules/AIBudsVoiceAssistant.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		ztqgq7wSnQjeCEDl6gXYWbGXrGk=
+		GT/hEFFT8J1O60EDwll3QQwE6+4=
 		</data>
 		<key>Modules/AIBudsVoiceAssistant.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
@@ -22,7 +22,7 @@
 		</data>
 		<key>Modules/AIBudsVoiceAssistant.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		3gkmCSM9guwh99uLHZWEtVdFb+U=
+		QqKG3sL/rBbNmAbPGtSreeonAmA=
 		</data>
 		<key>Modules/AIBudsVoiceAssistant.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>Modules/AIBudsVoiceAssistant.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		TFP+DMe7Q68EUjhNYv6/x+AHHZo=
+		U7bgoQmyn0Trx/+PTN8afVz/drs=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -43,14 +43,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			MNLTQg7Me94nasK2V1ibnCM3H2n9evtIAVTMC8ZpfLE=
+			V+9fYdg8XlTZO2U8eVQQOM3Ei8Tekdc7YGdpH2gbiYk=
 			</data>
 		</dict>
 		<key>Modules/AIBudsVoiceAssistant.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			PpJdz6rFIQJDbpAhEltx2POsXsuWsQTi1he9JP0J6Ao=
+			ReZ62wL9b89n2VA+VWwwbESRNI2LK+z9XdJgcfi2GjY=
 			</data>
 		</dict>
 		<key>Modules/AIBudsVoiceAssistant.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
@@ -64,7 +64,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ePbC7oUuSXd10taWXr8cBx+h3Fzmdm9v3YLaxzCwTaI=
+			u4/0ja44rkVUm4wb3VQL+S9yeQz+CdfUmnkdpO2JjpM=
 			</data>
 		</dict>
 		<key>Modules/AIBudsVoiceAssistant.swiftmodule/arm64-apple-ios.swiftinterface</key>
@@ -78,7 +78,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			pA0zPAugCcbqy4A0fWjDTQN0UD9HGIiCqxm2K6zw2Sk=
+			oLwrx2zDMZFNv2rXp1aanE5W4wPOrhp60exyRw17o/U=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

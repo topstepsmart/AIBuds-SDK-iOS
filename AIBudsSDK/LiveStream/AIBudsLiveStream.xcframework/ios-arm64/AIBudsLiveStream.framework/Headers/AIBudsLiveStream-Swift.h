@@ -481,6 +481,7 @@ SWIFT_PROTOCOL_NAMED("GestureControllerDelegate")
 - (void)gestureController:(AIBudsGestureController * _Nonnull)controller didPinch:(UIPinchGestureRecognizer * _Nonnull)gesture scale:(CGFloat)scale;
 @end
 
+/// Records timing marks and runtime metrics for live-stream performance analysis.
 SWIFT_CLASS_NAMED("LiveStreamPerformanceMonitor")
 @interface AIBudsLiveStreamPerformanceMonitor : NSObject
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) AIBudsLiveStreamPerformanceMonitor * _Nonnull sharedMonitor;)
@@ -1283,6 +1284,7 @@ SWIFT_CLASS_NAMED("VideoSource")
 
 @protocol VideoViewDelegate;
 @class NSCoder;
+/// Displays video frames produced by a live-stream player.
 SWIFT_CLASS_NAMED("VideoView")
 @interface AIBudsVideoView : UIView
 @property (nonatomic, weak) AIBudsLiveStreamingPlayer * _Nullable player;

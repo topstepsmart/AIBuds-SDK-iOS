@@ -717,6 +717,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) AIBudsStarBu
 
 @class AIBudsStarBurstAuthEnv;
 @protocol AIBudsStarBurstDevice;
+/// Supplies StarBurst authentication to the AIBuds AI bridge.
 SWIFT_CLASS_NAMED("StarBurstAuthPlugin")
 @interface AIBudsStarBurstAuthPlugin : NSObject <AIBudsStarBurstBridgePlugin>
 /// The directory for log files. Default is “.aibuds/logs”.
@@ -1175,6 +1176,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) AIBudsStarBu
 - (void)synthesizeText:(NSString * _Nonnull)text config:(AIBudsTTSConfig * _Nonnull)config completion:(void (^ _Nullable)(NSString * _Nullable, BOOL, AIBudsTTSResultModel * _Nullable, NSError * _Nullable))completion;
 @end
 
+/// Implements text translation through the StarBurst service.
 SWIFT_CLASS_NAMED("StarBurstTextTranslationService")
 @interface AIBudsStarBurstTextTranslationService : NSObject <AIBudsAITextTranslationServiceAPI>
 /// The shared singleton instance of StarBurstTextTranslationService

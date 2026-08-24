@@ -628,6 +628,9 @@
 "LocKey.DeviceNotSupportEQ" = "Device does not support EQ";
 "LocKey.EQSettingAppliedFormat" = "EQ setting applied: %@";
 "LocKey.EQSettingUpdatedSuccess" = "EQ setting updated successfully";
+"LocKey.EQSettingUpdateFailed" = "Failed to update EQ setting";
+"LocKey.DeviceNotSupportCustomEQ" = "Device does not support custom EQ";
+"LocKey.InvalidEQSetting" = "Invalid EQ setting";
 
 
 "LocKey.EQName.Default" = "Default";

@@ -787,6 +787,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) AIBudsDefaul
 @end
 
 SWIFT_ENUM_FWD_DECL(NSInteger, AIBudsLogDestination)
+/// Configures log storage, rotation, and output behavior.
 SWIFT_CLASS_NAMED("LogConfiguration")
 @interface AIBudsLogConfiguration : NSObject
 /// The directory for log files. Default is “.aibuds/logs”.

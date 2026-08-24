@@ -829,6 +829,7 @@ typedef SWIFT_ENUM_NAMED(NSInteger, AIBudsAudioFilePlayerLoopMode, "LoopMode", o
 };
 
 @class AIBudsPCMConfig;
+/// Plays PCM audio data using an audio queue.
 SWIFT_CLASS_NAMED("PCMAudioPlayer")
 @interface AIBudsPCMAudioPlayer : NSObject
 @property (nonatomic, readonly) NSTimeInterval currentProgress;
@@ -844,6 +845,7 @@ SWIFT_CLASS_NAMED("PCMAudioPlayer")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+/// Describes the sample format used by a PCM audio player.
 SWIFT_CLASS_NAMED("PCMConfig")
 @interface AIBudsPCMConfig : NSObject
 - (nullable instancetype)initWithSampleRate:(double)sampleRate channelCount:(NSInteger)channelCount bitDepth:(NSInteger)bitDepth error:(NSError * _Nullable * _Nullable)error OBJC_DESIGNATED_INITIALIZER;
@@ -975,6 +977,7 @@ typedef SWIFT_ENUM_NAMED(NSInteger, AIBudsStreamingVoicePlayerErrorCode, "Stream
   AIBudsStreamingVoicePlayerErrorCodeWaitingMoreBufferTimeout = 1001,
 };
 
+/// Contains the probability and speech decision returned by voice activity detection.
 SWIFT_CLASS_NAMED("TenVadResult")
 @interface AIBudsTenVadResult : NSObject
 /// The probability of human voice presence, ranging from 0 to 1.
@@ -2157,6 +2160,7 @@ typedef SWIFT_ENUM_NAMED(NSInteger, AIBudsAudioFilePlayerLoopMode, "LoopMode", o
 };
 
 @class AIBudsPCMConfig;
+/// Plays PCM audio data using an audio queue.
 SWIFT_CLASS_NAMED("PCMAudioPlayer")
 @interface AIBudsPCMAudioPlayer : NSObject
 @property (nonatomic, readonly) NSTimeInterval currentProgress;
@@ -2172,6 +2176,7 @@ SWIFT_CLASS_NAMED("PCMAudioPlayer")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+/// Describes the sample format used by a PCM audio player.
 SWIFT_CLASS_NAMED("PCMConfig")
 @interface AIBudsPCMConfig : NSObject
 - (nullable instancetype)initWithSampleRate:(double)sampleRate channelCount:(NSInteger)channelCount bitDepth:(NSInteger)bitDepth error:(NSError * _Nullable * _Nullable)error OBJC_DESIGNATED_INITIALIZER;
@@ -2303,6 +2308,7 @@ typedef SWIFT_ENUM_NAMED(NSInteger, AIBudsStreamingVoicePlayerErrorCode, "Stream
   AIBudsStreamingVoicePlayerErrorCodeWaitingMoreBufferTimeout = 1001,
 };
 
+/// Contains the probability and speech decision returned by voice activity detection.
 SWIFT_CLASS_NAMED("TenVadResult")
 @interface AIBudsTenVadResult : NSObject
 /// The probability of human voice presence, ranging from 0 to 1.
