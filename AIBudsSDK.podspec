@@ -11,11 +11,11 @@ Pod::Spec.new do |s|
                    DESC
   
   # Metadata
-  s.homepage     = "https://github.com/pcjbird/AIBudsSDK"
+  s.homepage     = "https://github.com/topstepsmart/AIBuds-SDK-iOS"
   s.license      = { :type => "MIT", :file => "LICENSE" }
   s.author       = { "pcjbird" => "pcjbird@hotmail.com" }
   s.platform     = :ios, "13.0"
-  s.source       = { :git => "https://github.com/pcjbird/AIBudsSDK.git", :tag => s.version.to_s }
+  s.source       = { :git => "https://github.com/topstepsmart/AIBuds-SDK-iOS.git", :tag => s.version.to_s }
   
   # Default subspec - Core module will be installed by default
   s.default_subspec = 'Core'
