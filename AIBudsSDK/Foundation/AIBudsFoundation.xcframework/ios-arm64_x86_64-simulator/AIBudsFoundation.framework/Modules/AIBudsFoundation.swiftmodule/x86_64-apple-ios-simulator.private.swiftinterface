@@ -1846,6 +1846,9 @@ extension AIBudsFoundation.WorkState : Swift.CustomDebugStringConvertible {
 extension Swift.Array {
   public func toJSONString() -> Swift.String?
 }
+extension Swift.Array where Element == Swift.String {
+  public func bestMatchedLanguageCode(for languageCode: Swift.String) -> Swift.String?
+}
 extension Foundation.Data {
   public func joined(format: Swift.String = "%02x", _ separator: Swift.String = "") -> Swift.String
   public func reversedJoined(format: Swift.String = "%02x", _ separator: Swift.String = "") -> Swift.String

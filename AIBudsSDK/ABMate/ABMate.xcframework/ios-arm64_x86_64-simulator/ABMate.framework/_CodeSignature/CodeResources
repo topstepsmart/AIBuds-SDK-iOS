@@ -10,11 +10,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		W/4eTZ+HxjEpnx7WYP2Pdd6gJdo=
+		kx0r5J35F706rCEapQWfG9Non/Y=
 		</data>
 		<key>Modules/ABMate.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		4hbRRhpBl+Nu/iHySWreRank2kA=
+		d0iYs0Sl1ShCdwMq3GCRbYm6JSQ=
 		</data>
 		<key>Modules/ABMate.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/ABMate.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		bertdVU/CZUMYAlaWG6RFnozm+k=
+		PbZOQILG0MSJiR6f7Kc2h2v6/JM=
 		</data>
 		<key>Modules/ABMate.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		4hbRRhpBl+Nu/iHySWreRank2kA=
+		d0iYs0Sl1ShCdwMq3GCRbYm6JSQ=
 		</data>
 		<key>Modules/ABMate.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Modules/ABMate.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		y0vHbp3q7zcHoVKZcJiP+rUApsw=
+		u0B52ourdVD6EWRLn/0J5sAik9E=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>RELEASES.md</key>
 		<data>
-		pgazbxohBdTvnpX3NKhrp+WQ/Xs=
+		Chw/9rb8q7/QbUQ890erG21V6kI=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -74,7 +74,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			XZl/VB15ApzOpQMcI5/V6rXPIcVGnmHu9vj99UHJn3w=
+			QnIsdJjdabklhAjBbp6Aq8y6BRoCN1JHAAzuKG05AFY=
 			</data>
 		</dict>
 		<key>Modules/ABMate.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -102,14 +102,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			JeQlsFTiS00pBI4/XB6GsGpKuzmD7pQDYWfa05fYQWs=
+			5o/kl9nN6Z88igyg5F2i70zc7f3LCbQ6pGBCIVG8LQo=
 			</data>
 		</dict>
 		<key>Modules/ABMate.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XZl/VB15ApzOpQMcI5/V6rXPIcVGnmHu9vj99UHJn3w=
+			QnIsdJjdabklhAjBbp6Aq8y6BRoCN1JHAAzuKG05AFY=
 			</data>
 		</dict>
 		<key>Modules/ABMate.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -137,7 +137,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ARQmkZd1LZbxqFOm14t5cizDWABUAAFPxHH3C4f6GAM=
+			9M1/6hOtsLw3inqkjNdrz9yvQSfn14izC4xQTyJYehY=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -151,7 +151,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Mb/57mrFAAalrBjyDzPrvhy7HGH/u419jFnX0sdXZQM=
+			s58APLGoHmzl0MEto5RYUGnDJgWK53Aq3ve9DNd0+JQ=
 			</data>
 		</dict>
 	</dict>
