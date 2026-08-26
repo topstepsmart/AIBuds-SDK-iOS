@@ -44,17 +44,6 @@ extension AIBudsLiveStream.GestureController : UIKit.UIGestureRecognizerDelegate
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func gestureRecognizerShouldBegin(_ gestureRecognizer: UIKit.UIGestureRecognizer) -> Swift.Bool
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func gestureRecognizer(_ gestureRecognizer: UIKit.UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIKit.UIGestureRecognizer) -> Swift.Bool
 }
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(AIBudsLiveStreamPerformanceMonitor) final public class LiveStreamPerformanceMonitor : ObjectiveC.NSObject {
-  @objc(sharedMonitor) public static let sharedMonitor: AIBudsLiveStream.LiveStreamPerformanceMonitor
-  @objc final public func reset()
-  @objc final public func startMainThreadMonitoring()
-  @objc final public func startMainThreadMonitoring(interval: Foundation.TimeInterval, threshold: Foundation.TimeInterval)
-  @objc final public func stopMainThreadMonitoring()
-  @objc final public func mark(_ name: Swift.String)
-  @objc final public func logSummary(_ title: Swift.String)
-  @objc final public func summary(_ title: Swift.String) -> Swift.String
-  @objc deinit
-}
 @objc(AIBudsLiveStreamingDecoderType) public enum LiveStreamingDecoderType : Swift.Int, Swift.Sendable {
   case avPlayer = 0
   case ffmpeg = 1

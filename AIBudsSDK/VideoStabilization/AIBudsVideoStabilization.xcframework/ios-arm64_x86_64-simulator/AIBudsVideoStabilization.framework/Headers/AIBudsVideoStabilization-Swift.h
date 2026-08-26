@@ -346,7 +346,6 @@ extern "C" {
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
-@import AIBuds;
 @import Foundation;
 @import ObjectiveC;
 #endif
@@ -371,26 +370,7 @@ extern "C" {
 
 #if defined(__OBJC__)
 
-@class NSString;
-@class AIBudsVideoStabilizationConfiguration;
 @class NSURL;
-@class AIBudsMediaFileInfoModel;
-SWIFT_ENUM_FWD_DECL(NSInteger, AIBudsVideoStabilizationCanProcessResult)
-@class NSError;
-/// Optional AIBuds plugin that turns an imported compound recording into a stabilized MP4.
-SWIFT_CLASS_NAMED("BuiltInVideoStabilizationPlugin")
-@interface AIBudsBuiltInVideoStabilizationPlugin : NSObject <AIBudsVideoStabilizationPlugin>
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) AIBudsBuiltInVideoStabilizationPlugin * _Nonnull shared;)
-+ (AIBudsBuiltInVideoStabilizationPlugin * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
-@property (nonatomic, readonly, copy) NSString * _Nonnull identifier;
-- (nonnull instancetype)initWithConfiguration:(AIBudsVideoStabilizationConfiguration * _Nonnull)configuration OBJC_DESIGNATED_INITIALIZER;
-- (enum AIBudsVideoStabilizationCanProcessResult)canProcessMediaFileURL:(NSURL * _Nonnull)mediaFileURL metadata:(AIBudsMediaFileInfoModel * _Nonnull)metadata SWIFT_WARN_UNUSED_RESULT;
-- (void)processMediaFileAtURL:(NSURL * _Nonnull)inputURL metadata:(AIBudsMediaFileInfoModel * _Nonnull)metadata outputURL:(NSURL * _Nonnull)outputURL progressHandler:(void (^ _Nonnull)(double))progressHandler completionHandler:(void (^ _Nonnull)(NSURL * _Nullable, NSError * _Nullable))completionHandler;
-- (void)cancelAllProcessing;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
 /// Configuration for automatic video stabilization.
 SWIFT_CLASS_NAMED("VideoStabilizationConfiguration")
 @interface AIBudsVideoStabilizationConfiguration : NSObject <NSCopying>
@@ -416,6 +396,8 @@ typedef SWIFT_ENUM_NAMED(NSInteger, AIBudsVideoStabilizationErrorCode, "VideoSta
   AIBudsVideoStabilizationErrorCodeCancelled = 8,
 };
 
+@protocol AIBudsVideoStabilizationPlugin;
+@class NSString;
 /// SDK-level information for the optional video-stabilization module.
 /// Applications normally interact with the feature through <code>AIBudsSDK</code>. This type is
 /// provided for diagnostics and follows the version-information convention of the other
@@ -424,6 +406,11 @@ SWIFT_CLASS_NAMED("VideoStabilizationSDK")
 @interface AIBudsVideoStabilizationSDK : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+/// The built-in video-stabilization plugin.
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) id <AIBudsVideoStabilizationPlugin> _Nonnull plugin;)
++ (id <AIBudsVideoStabilizationPlugin> _Nonnull)plugin SWIFT_WARN_UNUSED_RESULT;
+/// Creates a video-stabilization plugin with custom configuration.
++ (id <AIBudsVideoStabilizationPlugin> _Nonnull)pluginWithConfiguration:(AIBudsVideoStabilizationConfiguration * _Nonnull)configuration SWIFT_WARN_UNUSED_RESULT;
 /// The semantic version shared by this AIBudsSDK release.
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull sdkVersion;)
 + (NSString * _Nonnull)sdkVersion SWIFT_WARN_UNUSED_RESULT;
@@ -800,7 +787,6 @@ extern "C" {
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
-@import AIBuds;
 @import Foundation;
 @import ObjectiveC;
 #endif
@@ -825,26 +811,7 @@ extern "C" {
 
 #if defined(__OBJC__)
 
-@class NSString;
-@class AIBudsVideoStabilizationConfiguration;
 @class NSURL;
-@class AIBudsMediaFileInfoModel;
-SWIFT_ENUM_FWD_DECL(NSInteger, AIBudsVideoStabilizationCanProcessResult)
-@class NSError;
-/// Optional AIBuds plugin that turns an imported compound recording into a stabilized MP4.
-SWIFT_CLASS_NAMED("BuiltInVideoStabilizationPlugin")
-@interface AIBudsBuiltInVideoStabilizationPlugin : NSObject <AIBudsVideoStabilizationPlugin>
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) AIBudsBuiltInVideoStabilizationPlugin * _Nonnull shared;)
-+ (AIBudsBuiltInVideoStabilizationPlugin * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
-@property (nonatomic, readonly, copy) NSString * _Nonnull identifier;
-- (nonnull instancetype)initWithConfiguration:(AIBudsVideoStabilizationConfiguration * _Nonnull)configuration OBJC_DESIGNATED_INITIALIZER;
-- (enum AIBudsVideoStabilizationCanProcessResult)canProcessMediaFileURL:(NSURL * _Nonnull)mediaFileURL metadata:(AIBudsMediaFileInfoModel * _Nonnull)metadata SWIFT_WARN_UNUSED_RESULT;
-- (void)processMediaFileAtURL:(NSURL * _Nonnull)inputURL metadata:(AIBudsMediaFileInfoModel * _Nonnull)metadata outputURL:(NSURL * _Nonnull)outputURL progressHandler:(void (^ _Nonnull)(double))progressHandler completionHandler:(void (^ _Nonnull)(NSURL * _Nullable, NSError * _Nullable))completionHandler;
-- (void)cancelAllProcessing;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
 /// Configuration for automatic video stabilization.
 SWIFT_CLASS_NAMED("VideoStabilizationConfiguration")
 @interface AIBudsVideoStabilizationConfiguration : NSObject <NSCopying>
@@ -870,6 +837,8 @@ typedef SWIFT_ENUM_NAMED(NSInteger, AIBudsVideoStabilizationErrorCode, "VideoSta
   AIBudsVideoStabilizationErrorCodeCancelled = 8,
 };
 
+@protocol AIBudsVideoStabilizationPlugin;
+@class NSString;
 /// SDK-level information for the optional video-stabilization module.
 /// Applications normally interact with the feature through <code>AIBudsSDK</code>. This type is
 /// provided for diagnostics and follows the version-information convention of the other
@@ -878,6 +847,11 @@ SWIFT_CLASS_NAMED("VideoStabilizationSDK")
 @interface AIBudsVideoStabilizationSDK : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+/// The built-in video-stabilization plugin.
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) id <AIBudsVideoStabilizationPlugin> _Nonnull plugin;)
++ (id <AIBudsVideoStabilizationPlugin> _Nonnull)plugin SWIFT_WARN_UNUSED_RESULT;
+/// Creates a video-stabilization plugin with custom configuration.
++ (id <AIBudsVideoStabilizationPlugin> _Nonnull)pluginWithConfiguration:(AIBudsVideoStabilizationConfiguration * _Nonnull)configuration SWIFT_WARN_UNUSED_RESULT;
 /// The semantic version shared by this AIBudsSDK release.
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull sdkVersion;)
 + (NSString * _Nonnull)sdkVersion SWIFT_WARN_UNUSED_RESULT;

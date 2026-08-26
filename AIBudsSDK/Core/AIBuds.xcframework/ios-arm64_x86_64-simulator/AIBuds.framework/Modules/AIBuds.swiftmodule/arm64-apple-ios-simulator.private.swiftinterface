@@ -522,6 +522,8 @@ extension Foundation.NSNotification.Name {
   @objc var mediaCountInfo: AIBudsFoundation.MediaCountInfoModel? { get }
   @objc var isSupportAdjustRecordDuration: Swift.Bool { get }
   @objc var aiSolutionCapabilities: AIBudsFoundation.AIBudsAISolutionCapabilities { get }
+  @objc var deviceCapabilities: AIBudsFoundation.DeviceCapabilities? { get }
+  @objc var hardwareConfiguration: AIBudsFoundation.DeviceHardwareConfiguration { get }
   @objc var coprocessorModel: AIBudsFoundation.CoprocessorModel { get }
   @objc(syncDeviceTimeWithCompletion:) func syncDeviceTime(_ completion: AIBuds.AIBudsStatusCodeCompletionHandler?)
   @objc(setDeviceTime:completion:) func setDeviceTime(to date: Foundation.Date, completion: AIBuds.AIBudsStatusCodeCompletionHandler?)

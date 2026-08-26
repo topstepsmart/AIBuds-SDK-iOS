@@ -175,36 +175,6 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(location:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "LocationContext",
-                "printedName": "AIBudsAI.LocationContext",
-                "usr": "c:@M@AIBudsAI@objc(cs)AIBudsLocationContext"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "CLLocation",
-                "printedName": "_LocationEssentials.CLLocation",
-                "usr": "c:objc(cs)CLLocation"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "c:@M@AIBudsAI@objc(cs)AIBudsLocationContext(im)initWithLocation:",
-            "mangledName": "$s8AIBudsAI15LocationContextC8locationACSo10CLLocationC_tcfc",
-            "moduleName": "AIBudsAI",
-            "objc_name": "initWithLocation:",
-            "declAttributes": [
-              "AccessControl",
-              "ObjC",
-              "RawDocComment"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
             "printedName": "init()",
             "children": [
               {
@@ -241,6 +211,7 @@
           "RawDocComment"
         ],
         "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
         "superclassNames": [
           "ObjectiveC.NSObject"
         ],
@@ -25246,14 +25217,14 @@
       "kind": "StringLiteral",
       "offset": 257,
       "length": 14,
-      "value": "\"1.0.1-beta.1\""
+      "value": "\"1.0.1-beta.2\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/SDKBuildInfo\/SDK_Build_Info.swift",
       "kind": "StringLiteral",
       "offset": 387,
       "length": 13,
-      "value": "\"20260826001\""
+      "value": "\"20260826002\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/SDKBuildInfo\/SDK_Build_Info.swift",

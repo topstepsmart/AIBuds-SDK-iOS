@@ -1929,6 +1929,8 @@ SWIFT_PROTOCOL_NAMED("DeviceHotspotAPI")
 - (void)configureHotspotWithMode:(enum AIBudsHotspotMode)mode channel:(NSInteger)channel ssid:(NSString * _Nonnull)ssid password:(NSString * _Nonnull)password completion:(AIBudsStatusCodeCompletionHandler _Nullable)completion;
 @end
 
+@class AIBudsDeviceCapabilities;
+@class AIBudsDeviceHardwareConfiguration;
 SWIFT_ENUM_FWD_DECL(NSInteger, AIBudsCoprocessorModel)
 /// The protocol for device information related API.
 SWIFT_PROTOCOL_NAMED("DeviceInfoAPI")
@@ -1949,6 +1951,10 @@ SWIFT_PROTOCOL_NAMED("DeviceInfoAPI")
 @property (nonatomic, readonly) BOOL isSupportAdjustRecordDuration;
 /// AI solution capabilities of the device.
 @property (nonatomic, readonly) AIBudsAISolutionCapabilities aiSolutionCapabilities;
+/// Device capabilities, or <code>nil</code> if no valid capability information has been received.
+@property (nonatomic, readonly, strong) AIBudsDeviceCapabilities * _Nullable deviceCapabilities;
+/// Physical hardware fitted to the device.
+@property (nonatomic, readonly, strong) AIBudsDeviceHardwareConfiguration * _Nonnull hardwareConfiguration;
 /// Co-processor model
 @property (nonatomic, readonly) enum AIBudsCoprocessorModel coprocessorModel;
 /// Synchronizes the device time with the current time.
@@ -5866,6 +5872,8 @@ SWIFT_PROTOCOL_NAMED("DeviceHotspotAPI")
 - (void)configureHotspotWithMode:(enum AIBudsHotspotMode)mode channel:(NSInteger)channel ssid:(NSString * _Nonnull)ssid password:(NSString * _Nonnull)password completion:(AIBudsStatusCodeCompletionHandler _Nullable)completion;
 @end
 
+@class AIBudsDeviceCapabilities;
+@class AIBudsDeviceHardwareConfiguration;
 SWIFT_ENUM_FWD_DECL(NSInteger, AIBudsCoprocessorModel)
 /// The protocol for device information related API.
 SWIFT_PROTOCOL_NAMED("DeviceInfoAPI")
@@ -5886,6 +5894,10 @@ SWIFT_PROTOCOL_NAMED("DeviceInfoAPI")
 @property (nonatomic, readonly) BOOL isSupportAdjustRecordDuration;
 /// AI solution capabilities of the device.
 @property (nonatomic, readonly) AIBudsAISolutionCapabilities aiSolutionCapabilities;
+/// Device capabilities, or <code>nil</code> if no valid capability information has been received.
+@property (nonatomic, readonly, strong) AIBudsDeviceCapabilities * _Nullable deviceCapabilities;
+/// Physical hardware fitted to the device.
+@property (nonatomic, readonly, strong) AIBudsDeviceHardwareConfiguration * _Nonnull hardwareConfiguration;
 /// Co-processor model
 @property (nonatomic, readonly) enum AIBudsCoprocessorModel coprocessorModel;
 /// Synchronizes the device time with the current time.

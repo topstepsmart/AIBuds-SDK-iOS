@@ -11,7 +11,7 @@ Connect smart glasses, earbuds, speakers, watches, badges, and other AI devices 
 [![SDK](https://img.shields.io/badge/SDK-AIBuds%20for%20iOS-7c3aed)](https://docs-aibuds.github.io/)
 [![Pod Version](https://img.shields.io/badge/Pod-1.0.0-7c3aed?logo=cocoapods&logoColor=white)](https://github.com/topstepsmart/AIBuds-SDK-iOS/releases/tag/1.0.0)
 [![Release](https://img.shields.io/badge/Release-v1.0.0-2563eb)](https://github.com/topstepsmart/AIBuds-SDK-iOS/releases/tag/1.0.0)
-[![Nightly](https://img.shields.io/badge/Nightly-v1.0.1--beta.1-22c55e)](https://github.com/topstepsmart/AIBuds-SDK-iOS)
+[![Nightly](https://img.shields.io/badge/Nightly-v1.0.1--beta.2-22c55e)](https://github.com/topstepsmart/AIBuds-SDK-iOS)
 
 [![Platform](https://img.shields.io/badge/Platform-iOS%2013%2B-111827?logo=apple)](https://docs-aibuds.github.io/docs/getting-started/installation)
 [![Languages](https://img.shields.io/badge/Swift%20%7C%20Objective--C-supported-f97316?logo=swift&logoColor=white)](https://docs-aibuds.github.io/docs/getting-started/quickstart)
@@ -233,7 +233,7 @@ CocoaPods integrates the SDK and its third-party dependencies into the generated
 ## 📄 Release and License
 
 - Latest stable release: `1.0.0` — August 24, 2026
-- Latest prerelease: `1.0.1-beta.1` — August 26, 2026
+- Latest prerelease: `1.0.1-beta.2` — August 26, 2026
 - Release notes: [CHANGELOG](./CHANGELOG/CHANGELOG.md) · [RELEASES](./RELEASES/RELEASES.md)
 - License: [MIT](./LICENSE)
 

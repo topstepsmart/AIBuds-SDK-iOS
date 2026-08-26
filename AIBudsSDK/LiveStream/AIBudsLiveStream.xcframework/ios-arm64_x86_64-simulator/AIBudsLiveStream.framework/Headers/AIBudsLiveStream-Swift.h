@@ -481,22 +481,6 @@ SWIFT_PROTOCOL_NAMED("GestureControllerDelegate")
 - (void)gestureController:(AIBudsGestureController * _Nonnull)controller didPinch:(UIPinchGestureRecognizer * _Nonnull)gesture scale:(CGFloat)scale;
 @end
 
-/// Records timing marks and runtime metrics for live-stream performance analysis.
-SWIFT_CLASS_NAMED("LiveStreamPerformanceMonitor")
-@interface AIBudsLiveStreamPerformanceMonitor : NSObject
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) AIBudsLiveStreamPerformanceMonitor * _Nonnull sharedMonitor;)
-+ (AIBudsLiveStreamPerformanceMonitor * _Nonnull)sharedMonitor SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-- (void)reset;
-- (void)startMainThreadMonitoring;
-- (void)startMainThreadMonitoringWithInterval:(NSTimeInterval)interval threshold:(NSTimeInterval)threshold;
-- (void)stopMainThreadMonitoring;
-- (void)mark:(NSString * _Nonnull)name;
-- (void)logSummary:(NSString * _Nonnull)title;
-- (NSString * _Nonnull)summary:(NSString * _Nonnull)title SWIFT_WARN_UNUSED_RESULT;
-@end
-
 @protocol AIBudsLiveStreamerDelegate;
 SWIFT_ENUM_FWD_DECL(NSInteger, AIBudsLiveStreamerState)
 @class NSURL;
@@ -1809,22 +1793,6 @@ SWIFT_PROTOCOL_NAMED("GestureControllerDelegate")
 /// \param scale The pinch scale factor
 ///
 - (void)gestureController:(AIBudsGestureController * _Nonnull)controller didPinch:(UIPinchGestureRecognizer * _Nonnull)gesture scale:(CGFloat)scale;
-@end
-
-/// Records timing marks and runtime metrics for live-stream performance analysis.
-SWIFT_CLASS_NAMED("LiveStreamPerformanceMonitor")
-@interface AIBudsLiveStreamPerformanceMonitor : NSObject
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) AIBudsLiveStreamPerformanceMonitor * _Nonnull sharedMonitor;)
-+ (AIBudsLiveStreamPerformanceMonitor * _Nonnull)sharedMonitor SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-- (void)reset;
-- (void)startMainThreadMonitoring;
-- (void)startMainThreadMonitoringWithInterval:(NSTimeInterval)interval threshold:(NSTimeInterval)threshold;
-- (void)stopMainThreadMonitoring;
-- (void)mark:(NSString * _Nonnull)name;
-- (void)logSummary:(NSString * _Nonnull)title;
-- (NSString * _Nonnull)summary:(NSString * _Nonnull)title SWIFT_WARN_UNUSED_RESULT;
 @end
 
 @protocol AIBudsLiveStreamerDelegate;

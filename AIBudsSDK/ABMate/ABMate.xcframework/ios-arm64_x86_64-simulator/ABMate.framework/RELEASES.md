@@ -1,13 +1,17 @@
 # RELEASES
 
-## V1.0.1-beta.1 (Build 20260826001)
+## V1.0.1-beta.2 (Build 20260826002)
 
 **Release date:** 2026-08-26
 
 ### Features
 
-- Improved speech-language matching for AI chat, AI audio recording, and streaming speech recognition, with better support for regional language variants.
-- Streaming speech recognition now uses the current system language when no input language is configured.
+- Improved language selection for AI chat, AI audio recording, and streaming speech recognition, so regional language codes are matched more reliably.
+- Streaming speech recognition now uses the device's current system language when no input language is specified.
+- Added support for over-ear headphones, including device recognition and battery status reporting.
+- Improved device capability reporting, helping apps determine which features are available on a connected device more accurately.
+- Added device hardware configuration information, enabling apps to adapt interactions to different device designs.
+- Improved overall SDK stability and reliability.
 
 ## V1.0.0 (Build 20260824001)
 

@@ -1094,335 +1094,6 @@
         ]
       },
       {
-        "kind": "TypeDecl",
-        "name": "LiveStreamPerformanceMonitor",
-        "printedName": "LiveStreamPerformanceMonitor",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "sharedMonitor",
-            "printedName": "sharedMonitor",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "LiveStreamPerformanceMonitor",
-                "printedName": "AIBudsLiveStream.LiveStreamPerformanceMonitor",
-                "usr": "c:@M@AIBudsLiveStream@objc(cs)AIBudsLiveStreamPerformanceMonitor"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@AIBudsLiveStream@objc(cs)AIBudsLiveStreamPerformanceMonitor(cpy)sharedMonitor",
-            "mangledName": "$s16AIBudsLiveStream0bC18PerformanceMonitorC06sharedE0ACvpZ",
-            "moduleName": "AIBudsLiveStream",
-            "static": true,
-            "objc_name": "sharedMonitor",
-            "declAttributes": [
-              "HasInitialValue",
-              "Final",
-              "HasStorage",
-              "AccessControl",
-              "ObjC"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "LiveStreamPerformanceMonitor",
-                    "printedName": "AIBudsLiveStream.LiveStreamPerformanceMonitor",
-                    "usr": "c:@M@AIBudsLiveStream@objc(cs)AIBudsLiveStreamPerformanceMonitor"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@AIBudsLiveStream@objc(cs)AIBudsLiveStreamPerformanceMonitor(cm)sharedMonitor",
-                "mangledName": "$s16AIBudsLiveStream0bC18PerformanceMonitorC06sharedE0ACvgZ",
-                "moduleName": "AIBudsLiveStream",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Final",
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Function",
-            "name": "reset",
-            "printedName": "reset()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@AIBudsLiveStream@objc(cs)AIBudsLiveStreamPerformanceMonitor(im)reset",
-            "mangledName": "$s16AIBudsLiveStream0bC18PerformanceMonitorC5resetyyF",
-            "moduleName": "AIBudsLiveStream",
-            "declAttributes": [
-              "Final",
-              "AccessControl",
-              "ObjC"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "startMainThreadMonitoring",
-            "printedName": "startMainThreadMonitoring()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@AIBudsLiveStream@objc(cs)AIBudsLiveStreamPerformanceMonitor(im)startMainThreadMonitoring",
-            "mangledName": "$s16AIBudsLiveStream0bC18PerformanceMonitorC25startMainThreadMonitoringyyF",
-            "moduleName": "AIBudsLiveStream",
-            "declAttributes": [
-              "Final",
-              "AccessControl",
-              "ObjC"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "startMainThreadMonitoring",
-            "printedName": "startMainThreadMonitoring(interval:threshold:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Double",
-                "printedName": "Swift.Double",
-                "usr": "s:Sd"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Double",
-                "printedName": "Swift.Double",
-                "usr": "s:Sd"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@AIBudsLiveStream@objc(cs)AIBudsLiveStreamPerformanceMonitor(im)startMainThreadMonitoringWithInterval:threshold:",
-            "mangledName": "$s16AIBudsLiveStream0bC18PerformanceMonitorC25startMainThreadMonitoring8interval9thresholdySd_SdtF",
-            "moduleName": "AIBudsLiveStream",
-            "objc_name": "startMainThreadMonitoringWithInterval:threshold:",
-            "declAttributes": [
-              "Final",
-              "AccessControl",
-              "ObjC"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "stopMainThreadMonitoring",
-            "printedName": "stopMainThreadMonitoring()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@AIBudsLiveStream@objc(cs)AIBudsLiveStreamPerformanceMonitor(im)stopMainThreadMonitoring",
-            "mangledName": "$s16AIBudsLiveStream0bC18PerformanceMonitorC24stopMainThreadMonitoringyyF",
-            "moduleName": "AIBudsLiveStream",
-            "declAttributes": [
-              "Final",
-              "AccessControl",
-              "ObjC"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "mark",
-            "printedName": "mark(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@AIBudsLiveStream@objc(cs)AIBudsLiveStreamPerformanceMonitor(im)mark:",
-            "mangledName": "$s16AIBudsLiveStream0bC18PerformanceMonitorC4markyySSF",
-            "moduleName": "AIBudsLiveStream",
-            "declAttributes": [
-              "Final",
-              "AccessControl",
-              "ObjC"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "logSummary",
-            "printedName": "logSummary(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@AIBudsLiveStream@objc(cs)AIBudsLiveStreamPerformanceMonitor(im)logSummary:",
-            "mangledName": "$s16AIBudsLiveStream0bC18PerformanceMonitorC10logSummaryyySSF",
-            "moduleName": "AIBudsLiveStream",
-            "declAttributes": [
-              "Final",
-              "AccessControl",
-              "ObjC"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "summary",
-            "printedName": "summary(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@AIBudsLiveStream@objc(cs)AIBudsLiveStreamPerformanceMonitor(im)summary:",
-            "mangledName": "$s16AIBudsLiveStream0bC18PerformanceMonitorC7summaryyS2SF",
-            "moduleName": "AIBudsLiveStream",
-            "declAttributes": [
-              "Final",
-              "AccessControl",
-              "ObjC"
-            ],
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "c:@M@AIBudsLiveStream@objc(cs)AIBudsLiveStreamPerformanceMonitor",
-        "mangledName": "$s16AIBudsLiveStream0bC18PerformanceMonitorC",
-        "moduleName": "AIBudsLiveStream",
-        "objc_name": "AIBudsLiveStreamPerformanceMonitor",
-        "declAttributes": [
-          "Final",
-          "AccessControl",
-          "ObjC",
-          "RawDocComment"
-        ],
-        "superclassUsr": "c:objc(cs)NSObject",
-        "hasMissingDesignatedInitializers": true,
-        "inheritsConvenienceInitializers": true,
-        "superclassNames": [
-          "ObjectiveC.NSObject"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          }
-        ]
-      },
-      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -16818,56 +16489,56 @@
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Performance\/LiveStreamPerformanceMonitor.swift",
       "kind": "StringLiteral",
-      "offset": 768,
+      "offset": 696,
       "length": 52,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Performance\/LiveStreamPerformanceMonitor.swift",
       "kind": "StringLiteral",
-      "offset": 793,
+      "offset": 721,
       "length": 1,
       "value": "\".performance.monitor.queue\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Performance\/LiveStreamPerformanceMonitor.swift",
       "kind": "Array",
-      "offset": 914,
+      "offset": 842,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Performance\/LiveStreamPerformanceMonitor.swift",
       "kind": "Array",
-      "offset": 951,
+      "offset": 879,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Performance\/LiveStreamPerformanceMonitor.swift",
       "kind": "IntegerLiteral",
-      "offset": 1001,
+      "offset": 929,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Performance\/LiveStreamPerformanceMonitor.swift",
       "kind": "FloatLiteral",
-      "offset": 1148,
+      "offset": 1076,
       "length": 5,
       "value": "0.050"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Performance\/LiveStreamPerformanceMonitor.swift",
       "kind": "FloatLiteral",
-      "offset": 1198,
+      "offset": 1126,
       "length": 5,
       "value": "0.250"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Performance\/LiveStreamPerformanceMonitor.swift",
       "kind": "BooleanLiteral",
-      "offset": 1232,
+      "offset": 1160,
       "length": 5,
       "value": "false"
     },
@@ -20901,14 +20572,14 @@
       "kind": "StringLiteral",
       "offset": 257,
       "length": 14,
-      "value": "\"1.0.1-beta.1\""
+      "value": "\"1.0.1-beta.2\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/SDKBuildInfo\/SDK_Build_Info.swift",
       "kind": "StringLiteral",
       "offset": 387,
       "length": 13,
-      "value": "\"20260826001\""
+      "value": "\"20260826002\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/SDKBuildInfo\/SDK_Build_Info.swift",

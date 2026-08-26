@@ -36,16 +36,11 @@ import _SwiftConcurrencyShims
     get
   }
 }
-@objc(AIBudsBuiltInVideoStabilizationPlugin) final public class BuiltInVideoStabilizationPlugin : ObjectiveC.NSObject, AIBuds.VideoStabilizationPlugin {
-  @objc public static let shared: AIBudsVideoStabilization.BuiltInVideoStabilizationPlugin
-  @objc final public let identifier: Swift.String
-  @objc public init(configuration: AIBudsVideoStabilization.VideoStabilizationConfiguration)
-  @objc final public func canProcess(_ mediaFileURL: Foundation.URL, metadata: AIBudsFoundation.MediaFileInfoModel) -> AIBudsFoundation.VideoStabilizationCanProcessResult
-  @objc final public func processMediaFile(at inputURL: Foundation.URL, metadata: AIBudsFoundation.MediaFileInfoModel, outputURL: Foundation.URL, progressHandler: @escaping (Swift.Double) -> Swift.Void, completionHandler: @escaping (Foundation.URL?, Foundation.NSError?) -> Swift.Void)
-  @objc final public func cancelAllProcessing()
-  @objc deinit
-}
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(AIBudsVideoStabilizationSDK) final public class VideoStabilizationSDK : ObjectiveC.NSObject {
+  @objc public static var plugin: any AIBuds.VideoStabilizationPlugin {
+    @objc get
+  }
+  @objc(pluginWithConfiguration:) public static func plugin(configuration: AIBudsVideoStabilization.VideoStabilizationConfiguration) -> any AIBuds.VideoStabilizationPlugin
   @objc public static var sdkVersion: Swift.String {
     @objc get
   }

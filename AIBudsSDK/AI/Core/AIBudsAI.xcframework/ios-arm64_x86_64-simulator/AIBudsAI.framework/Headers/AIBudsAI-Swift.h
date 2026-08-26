@@ -1856,10 +1856,6 @@ SWIFT_CLASS_NAMED("LocationContext")
 @property (nonatomic, readonly, strong) CLLocation * _Nonnull location;
 /// The poi data
 @property (nonatomic, readonly, copy) NSString * _Nullable poi;
-/// Initializes the location context with the specified location.
-/// \param location The location data to use for the context.
-///
-- (nonnull instancetype)initWithLocation:(CLLocation * _Nonnull)location OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -4095,10 +4091,6 @@ SWIFT_CLASS_NAMED("LocationContext")
 @property (nonatomic, readonly, strong) CLLocation * _Nonnull location;
 /// The poi data
 @property (nonatomic, readonly, copy) NSString * _Nullable poi;
-/// Initializes the location context with the specified location.
-/// \param location The location data to use for the context.
-///
-- (nonnull instancetype)initWithLocation:(CLLocation * _Nonnull)location OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end

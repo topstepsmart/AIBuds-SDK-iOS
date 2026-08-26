@@ -346,8 +346,6 @@ extern "C" {
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
-@import AIBudsLiveStream;
-@import CoreFoundation;
 @import Flutter;
 @import Foundation;
 @import ObjectiveC;
@@ -427,94 +425,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 /// Returns SDK and native dependency metadata for Flutter.
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSDictionary<NSString *, id> * _Nonnull sdkInfo;)
 + (NSDictionary<NSString *, id> * _Nonnull)sdkInfo SWIFT_WARN_UNUSED_RESULT;
-@end
-
-@class UIView;
-/// Native UIView wrapper displayed by Flutter.
-/// This object owns the player controller for the lifetime of the platform view
-/// and unregisters it when Flutter tears the view down.
-SWIFT_CLASS_NAMED("LiveStreamFlutterPlatformView")
-@interface AIBudsLiveStreamFlutterPlatformView : NSObject <FlutterPlatformView>
-- (UIView * _Nonnull)view SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-@protocol FlutterMessageCodec;
-@protocol NSObject;
-/// Flutter platform-view factory for native AIBuds live stream player views.
-/// Dart creates this view with <code>platformViewType</code>; the Flutter engine supplies
-/// the numeric <code>viewId</code>, which is then used by method and event channels to
-/// route player commands and delegate callbacks.
-SWIFT_CLASS_NAMED("LiveStreamFlutterPlatformViewFactory")
-@interface AIBudsLiveStreamFlutterPlatformViewFactory : NSObject <FlutterPlatformViewFactory>
-- (id <FlutterPlatformView> _Nonnull)createWithFrame:(CGRect)frame viewIdentifier:(int64_t)viewId arguments:(id _Nullable)args SWIFT_WARN_UNUSED_RESULT;
-- (id <FlutterMessageCodec, NSObject> _Nonnull)createArgsCodec SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-@class FlutterError;
-@class AIBudsLiveStreamingPlayer;
-SWIFT_ENUM_FWD_DECL(NSInteger, AIBudsLiveStreamingPlayerState)
-/// Bridges <code>LiveStreamingPlayer</code> to Flutter method calls and event streams.
-/// Commands arrive on the SDK method channel via the top-level <code>player</code> method:
-/// <code>{ viewId, method, arguments }</code>. Player delegate callbacks are emitted on
-/// <code>channelName/player_<viewId>/events</code> with an <code>event</code> field such as
-/// <code>stateChanged</code>, <code>progress</code>, <code>buffer</code>, <code>error</code>, <code>videoSizeChanged</code>, or
-/// <code>finished</code>.
-SWIFT_CLASS_NAMED("LiveStreamFlutterPlayerController")
-@interface AIBudsLiveStreamFlutterPlayerController : NSObject <AIBudsLiveStreamingPlayerDelegate, FlutterStreamHandler>
-- (FlutterError * _Nullable)onListenWithArguments:(id _Nullable)arguments eventSink:(FlutterEventSink _Nonnull)events SWIFT_WARN_UNUSED_RESULT;
-- (FlutterError * _Nullable)onCancelWithArguments:(id _Nullable)arguments SWIFT_WARN_UNUSED_RESULT;
-- (void)player:(AIBudsLiveStreamingPlayer * _Nonnull)player didChangeState:(enum AIBudsLiveStreamingPlayerState)oldState newState:(enum AIBudsLiveStreamingPlayerState)newState;
-- (void)player:(AIBudsLiveStreamingPlayer * _Nonnull)player didUpdateProgress:(NSTimeInterval)currentTime duration:(NSTimeInterval)duration;
-- (void)player:(AIBudsLiveStreamingPlayer * _Nonnull)player didUpdateBuffer:(NSTimeInterval)playableTime duration:(NSTimeInterval)duration;
-- (void)player:(AIBudsLiveStreamingPlayer * _Nonnull)player didEncounterError:(NSError * _Nonnull)error;
-- (void)player:(AIBudsLiveStreamingPlayer * _Nonnull)player didChangeVideoSize:(CGSize)size;
-- (void)playerDidFinish:(AIBudsLiveStreamingPlayer * _Nonnull)player;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-/// Thread-safe registry mapping Flutter platform-view IDs to native players.
-/// Flutter method calls only carry a <code>viewId</code>, so the SDK keeps this registry as
-/// the lookup point between the top-level method channel and per-view players.
-SWIFT_CLASS_NAMED("LiveStreamFlutterPlayerRegistry")
-@interface AIBudsLiveStreamFlutterPlayerRegistry : NSObject
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) AIBudsLiveStreamFlutterPlayerRegistry * _Nonnull shared;)
-+ (AIBudsLiveStreamFlutterPlayerRegistry * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-@class AIBudsLiveStreamer;
-SWIFT_ENUM_FWD_DECL(NSInteger, AIBudsLiveStreamerState)
-@class AIBudsLiveStreamingStats;
-/// Bridges <code>LiveStreamer</code> to Flutter method calls and event streams.
-/// The final Dart plugin controls streamers through the top-level <code>streamer</code>
-/// method using <code>{ streamerId, method, arguments }</code>. Each streamer has its own
-/// event channel at <code>channelName/streamer_<streamerId>/events</code>.
-SWIFT_CLASS_NAMED("LiveStreamFlutterStreamerController")
-@interface AIBudsLiveStreamFlutterStreamerController : NSObject <AIBudsLiveStreamerDelegate, FlutterStreamHandler>
-- (FlutterError * _Nullable)onListenWithArguments:(id _Nullable)arguments eventSink:(FlutterEventSink _Nonnull)events SWIFT_WARN_UNUSED_RESULT;
-- (FlutterError * _Nullable)onCancelWithArguments:(id _Nullable)arguments SWIFT_WARN_UNUSED_RESULT;
-- (void)streamer:(AIBudsLiveStreamer * _Nonnull)streamer didChangeState:(enum AIBudsLiveStreamerState)oldState newState:(enum AIBudsLiveStreamerState)newState;
-- (void)streamer:(AIBudsLiveStreamer * _Nonnull)streamer didEncounterError:(NSError * _Nonnull)error;
-- (void)streamer:(AIBudsLiveStreamer * _Nonnull)streamer didUpdateStats:(AIBudsLiveStreamingStats * _Nonnull)stats;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-/// Thread-safe registry for native streamer controllers.
-/// Streamers are not platform views, so they are created lazily when Dart sends
-/// a command with a new <code>streamerId</code> and disposed explicitly by <code>disposeStreamer</code>.
-SWIFT_CLASS_NAMED("LiveStreamFlutterStreamerRegistry")
-@interface AIBudsLiveStreamFlutterStreamerRegistry : NSObject
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) AIBudsLiveStreamFlutterStreamerRegistry * _Nonnull shared;)
-+ (AIBudsLiveStreamFlutterStreamerRegistry * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 #endif // defined(__OBJC__)
@@ -873,8 +783,6 @@ extern "C" {
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
-@import AIBudsLiveStream;
-@import CoreFoundation;
 @import Flutter;
 @import Foundation;
 @import ObjectiveC;
@@ -954,94 +862,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 /// Returns SDK and native dependency metadata for Flutter.
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSDictionary<NSString *, id> * _Nonnull sdkInfo;)
 + (NSDictionary<NSString *, id> * _Nonnull)sdkInfo SWIFT_WARN_UNUSED_RESULT;
-@end
-
-@class UIView;
-/// Native UIView wrapper displayed by Flutter.
-/// This object owns the player controller for the lifetime of the platform view
-/// and unregisters it when Flutter tears the view down.
-SWIFT_CLASS_NAMED("LiveStreamFlutterPlatformView")
-@interface AIBudsLiveStreamFlutterPlatformView : NSObject <FlutterPlatformView>
-- (UIView * _Nonnull)view SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-@protocol FlutterMessageCodec;
-@protocol NSObject;
-/// Flutter platform-view factory for native AIBuds live stream player views.
-/// Dart creates this view with <code>platformViewType</code>; the Flutter engine supplies
-/// the numeric <code>viewId</code>, which is then used by method and event channels to
-/// route player commands and delegate callbacks.
-SWIFT_CLASS_NAMED("LiveStreamFlutterPlatformViewFactory")
-@interface AIBudsLiveStreamFlutterPlatformViewFactory : NSObject <FlutterPlatformViewFactory>
-- (id <FlutterPlatformView> _Nonnull)createWithFrame:(CGRect)frame viewIdentifier:(int64_t)viewId arguments:(id _Nullable)args SWIFT_WARN_UNUSED_RESULT;
-- (id <FlutterMessageCodec, NSObject> _Nonnull)createArgsCodec SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-@class FlutterError;
-@class AIBudsLiveStreamingPlayer;
-SWIFT_ENUM_FWD_DECL(NSInteger, AIBudsLiveStreamingPlayerState)
-/// Bridges <code>LiveStreamingPlayer</code> to Flutter method calls and event streams.
-/// Commands arrive on the SDK method channel via the top-level <code>player</code> method:
-/// <code>{ viewId, method, arguments }</code>. Player delegate callbacks are emitted on
-/// <code>channelName/player_<viewId>/events</code> with an <code>event</code> field such as
-/// <code>stateChanged</code>, <code>progress</code>, <code>buffer</code>, <code>error</code>, <code>videoSizeChanged</code>, or
-/// <code>finished</code>.
-SWIFT_CLASS_NAMED("LiveStreamFlutterPlayerController")
-@interface AIBudsLiveStreamFlutterPlayerController : NSObject <AIBudsLiveStreamingPlayerDelegate, FlutterStreamHandler>
-- (FlutterError * _Nullable)onListenWithArguments:(id _Nullable)arguments eventSink:(FlutterEventSink _Nonnull)events SWIFT_WARN_UNUSED_RESULT;
-- (FlutterError * _Nullable)onCancelWithArguments:(id _Nullable)arguments SWIFT_WARN_UNUSED_RESULT;
-- (void)player:(AIBudsLiveStreamingPlayer * _Nonnull)player didChangeState:(enum AIBudsLiveStreamingPlayerState)oldState newState:(enum AIBudsLiveStreamingPlayerState)newState;
-- (void)player:(AIBudsLiveStreamingPlayer * _Nonnull)player didUpdateProgress:(NSTimeInterval)currentTime duration:(NSTimeInterval)duration;
-- (void)player:(AIBudsLiveStreamingPlayer * _Nonnull)player didUpdateBuffer:(NSTimeInterval)playableTime duration:(NSTimeInterval)duration;
-- (void)player:(AIBudsLiveStreamingPlayer * _Nonnull)player didEncounterError:(NSError * _Nonnull)error;
-- (void)player:(AIBudsLiveStreamingPlayer * _Nonnull)player didChangeVideoSize:(CGSize)size;
-- (void)playerDidFinish:(AIBudsLiveStreamingPlayer * _Nonnull)player;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-/// Thread-safe registry mapping Flutter platform-view IDs to native players.
-/// Flutter method calls only carry a <code>viewId</code>, so the SDK keeps this registry as
-/// the lookup point between the top-level method channel and per-view players.
-SWIFT_CLASS_NAMED("LiveStreamFlutterPlayerRegistry")
-@interface AIBudsLiveStreamFlutterPlayerRegistry : NSObject
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) AIBudsLiveStreamFlutterPlayerRegistry * _Nonnull shared;)
-+ (AIBudsLiveStreamFlutterPlayerRegistry * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-@class AIBudsLiveStreamer;
-SWIFT_ENUM_FWD_DECL(NSInteger, AIBudsLiveStreamerState)
-@class AIBudsLiveStreamingStats;
-/// Bridges <code>LiveStreamer</code> to Flutter method calls and event streams.
-/// The final Dart plugin controls streamers through the top-level <code>streamer</code>
-/// method using <code>{ streamerId, method, arguments }</code>. Each streamer has its own
-/// event channel at <code>channelName/streamer_<streamerId>/events</code>.
-SWIFT_CLASS_NAMED("LiveStreamFlutterStreamerController")
-@interface AIBudsLiveStreamFlutterStreamerController : NSObject <AIBudsLiveStreamerDelegate, FlutterStreamHandler>
-- (FlutterError * _Nullable)onListenWithArguments:(id _Nullable)arguments eventSink:(FlutterEventSink _Nonnull)events SWIFT_WARN_UNUSED_RESULT;
-- (FlutterError * _Nullable)onCancelWithArguments:(id _Nullable)arguments SWIFT_WARN_UNUSED_RESULT;
-- (void)streamer:(AIBudsLiveStreamer * _Nonnull)streamer didChangeState:(enum AIBudsLiveStreamerState)oldState newState:(enum AIBudsLiveStreamerState)newState;
-- (void)streamer:(AIBudsLiveStreamer * _Nonnull)streamer didEncounterError:(NSError * _Nonnull)error;
-- (void)streamer:(AIBudsLiveStreamer * _Nonnull)streamer didUpdateStats:(AIBudsLiveStreamingStats * _Nonnull)stats;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-/// Thread-safe registry for native streamer controllers.
-/// Streamers are not platform views, so they are created lazily when Dart sends
-/// a command with a new <code>streamerId</code> and disposed explicitly by <code>disposeStreamer</code>.
-SWIFT_CLASS_NAMED("LiveStreamFlutterStreamerRegistry")
-@interface AIBudsLiveStreamFlutterStreamerRegistry : NSObject
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) AIBudsLiveStreamFlutterStreamerRegistry * _Nonnull shared;)
-+ (AIBudsLiveStreamFlutterStreamerRegistry * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 #endif // defined(__OBJC__)
