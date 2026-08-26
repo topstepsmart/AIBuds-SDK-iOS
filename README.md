@@ -232,7 +232,8 @@ CocoaPods integrates the SDK and its third-party dependencies into the generated
 
 ## 📄 Release and License
 
-- Current release: `1.0.0` — August 24, 2026
+- Latest stable release: `1.0.0` — August 24, 2026
+- Latest prerelease: `1.0.1-beta.1` — August 26, 2026
 - Release notes: [CHANGELOG](./CHANGELOG/CHANGELOG.md) · [RELEASES](./RELEASES/RELEASES.md)
 - License: [MIT](./LICENSE)
 
