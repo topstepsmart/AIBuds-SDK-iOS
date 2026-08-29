@@ -754,6 +754,10 @@
 "LocKey.FileImportSpeedFormat" = "Import Speed: %@ %@";
 "LocKey.ReadyToImport" = "Ready to import";
 "LocKey.ImportedFiles" = "Imported Files";
+"LocKey.FileImportShareFiles" = "Export Imported Files (ZIP)";
+"LocKey.FileImportPackaging" = "Creating ZIP…";
+"LocKey.FileImportArchiveFailedFormat" = "Failed to create export archive: %@";
+"LocKey.FileImportNoFilesToShare" = "No imported files are available to share";
 "LocKey.NoFilesToImport" = "No files to import";
 "LocKey.ImportingBatchProgressFormat" = "Importing %d/%ld";
 "LocKey.TotalMediaCountFormat" = "Total media files: %ld";

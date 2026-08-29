@@ -10,6 +10,7 @@
 #import "FileImportVideoComparisonController.h"
 #import <AVFoundation/AVFoundation.h>
 #import <AVKit/AVKit.h>
+#import <ZipZap/ZipZap.h>
 
 static UIColor *FileImportColor(NSInteger red, NSInteger green, NSInteger blue) {
     return [UIColor colorWithRed:red / 255.0 green:green / 255.0 blue:blue / 255.0 alpha:1.0];
@@ -57,6 +58,7 @@ static UIColor *FileImportColor(NSInteger red, NSInteger green, NSInteger blue) 
 // 导入的文件列表
 @property (nonatomic, strong) UIView *importedFilesCardView;
 @property (nonatomic, strong) UICollectionView *filesCollectionView;
+@property (nonatomic, strong) UIButton *shareImportedFilesButton;
 @property (nonatomic, strong) NSMutableArray<ImportedFile*> *importedFiles;
 @property (nonatomic, strong) NSMutableSet<NSString*> *displayedFileNames;
 /// Serializes cache writes and owns `scheduledFileNames`.
@@ -323,6 +325,19 @@ static UIColor *FileImportColor(NSInteger red, NSInteger green, NSInteger blue) 
     titleLabel.textColor = [UIColor labelColor];
     titleLabel.translatesAutoresizingMaskIntoConstraints = NO;
     [self.importedFilesCardView addSubview:titleLabel];
+
+    self.shareImportedFilesButton = [UIButton buttonWithType:UIButtonTypeSystem];
+    self.shareImportedFilesButton.translatesAutoresizingMaskIntoConstraints = NO;
+    self.shareImportedFilesButton.enabled = NO;
+    self.shareImportedFilesButton.titleLabel.font = [UIFont systemFontOfSize:14 weight:UIFontWeightSemibold];
+    [self.shareImportedFilesButton setTitle:NSLocalizedString(@"LocKey.FileImportShareFiles", comment:@"Share imported files") forState:UIControlStateNormal];
+    [self.shareImportedFilesButton setImage:[UIImage systemImageNamed:@"square.and.arrow.up"] forState:UIControlStateNormal];
+    self.shareImportedFilesButton.backgroundColor = [FileImportColor(72, 86, 220) colorWithAlphaComponent:.10];
+    self.shareImportedFilesButton.layer.cornerRadius = 12;
+    self.shareImportedFilesButton.contentEdgeInsets = UIEdgeInsetsMake(0, 14, 0, 14);
+    self.shareImportedFilesButton.titleEdgeInsets = UIEdgeInsetsMake(0, 6, 0, 0);
+    [self.shareImportedFilesButton addTarget:self action:@selector(shareImportedFilesButtonTapped:) forControlEvents:UIControlEventTouchUpInside];
+    [self.importedFilesCardView addSubview:self.shareImportedFilesButton];
     
     // 集合视图布局
     UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
@@ -342,8 +357,14 @@ static UIColor *FileImportColor(NSInteger red, NSInteger green, NSInteger blue) 
     [NSLayoutConstraint activateConstraints:@[
         [titleLabel.topAnchor constraintEqualToAnchor:self.importedFilesCardView.topAnchor constant:20],
         [titleLabel.leadingAnchor constraintEqualToAnchor:self.importedFilesCardView.leadingAnchor constant:20],
+        [titleLabel.trailingAnchor constraintEqualToAnchor:self.importedFilesCardView.trailingAnchor constant:-20],
+
+        [self.shareImportedFilesButton.topAnchor constraintEqualToAnchor:titleLabel.bottomAnchor constant:14],
+        [self.shareImportedFilesButton.leadingAnchor constraintEqualToAnchor:self.importedFilesCardView.leadingAnchor constant:20],
+        [self.shareImportedFilesButton.trailingAnchor constraintEqualToAnchor:self.importedFilesCardView.trailingAnchor constant:-20],
+        [self.shareImportedFilesButton.heightAnchor constraintEqualToConstant:44],
         
-        [self.filesCollectionView.topAnchor constraintEqualToAnchor:titleLabel.bottomAnchor constant:15],
+        [self.filesCollectionView.topAnchor constraintEqualToAnchor:self.shareImportedFilesButton.bottomAnchor constant:15],
         [self.filesCollectionView.leadingAnchor constraintEqualToAnchor:self.importedFilesCardView.leadingAnchor constant:10],
         [self.filesCollectionView.trailingAnchor constraintEqualToAnchor:self.importedFilesCardView.trailingAnchor constant:-10],
         [self.filesCollectionView.bottomAnchor constraintEqualToAnchor:self.importedFilesCardView.bottomAnchor constant:-20],
@@ -421,6 +442,7 @@ static UIColor *FileImportColor(NSInteger red, NSInteger green, NSInteger blue) 
     // 清空之前的导入文件
     [self.importedFiles removeAllObjects];
     [self.displayedFileNames removeAllObjects];
+    self.shareImportedFilesButton.enabled = NO;
     dispatch_async(self.mediaFilePersistenceQueue, ^{
         [self.scheduledFileNames removeAllObjects];
     });
@@ -665,6 +687,7 @@ static UIColor *FileImportColor(NSInteger red, NSInteger green, NSInteger blue) 
                 if(!strongSelf) return;
                 [strongSelf.displayedFileNames addObject:fileName];
                 [strongSelf.importedFiles addObject:importedFile];
+                strongSelf.shareImportedFilesButton.enabled = strongSelf.importedFiles.count > 0;
                 [strongSelf.filesCollectionView reloadData];
             });
 
@@ -689,6 +712,153 @@ static UIColor *FileImportColor(NSInteger red, NSInteger green, NSInteger blue) 
     for (AIBudsImportedMediaFileModel *result in mediaFiles) {
         [self displaySingleImportedMediaFile:result];
     }
+}
+
+- (void)shareImportedFilesButtonTapped:(UIButton *)sender {
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    NSMutableArray<ImportedFile *> *filesToExport = [NSMutableArray arrayWithCapacity:self.importedFiles.count];
+    for (ImportedFile *importedFile in self.importedFiles) {
+        if (importedFile.localPath.length > 0 && [fileManager fileExistsAtPath:importedFile.localPath]) {
+            [filesToExport addObject:importedFile];
+        }
+    }
+
+    if (filesToExport.count == 0) {
+        [self showFileExportAlertWithMessage:NSLocalizedString(@"LocKey.FileImportNoFilesToShare", comment:@"No imported files are available to share")];
+        return;
+    }
+
+    sender.enabled = NO;
+    [sender setTitle:NSLocalizedString(@"LocKey.FileImportPackaging", comment:@"Packaging") forState:UIControlStateNormal];
+
+    __weak typeof(self) weakSelf = self;
+    dispatch_async(dispatch_get_global_queue(QOS_CLASS_USER_INITIATED, 0), ^{
+        NSError *archiveError = nil;
+        NSURL *archiveURL = [weakSelf createExportArchiveForImportedFiles:filesToExport error:&archiveError];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            __strong typeof(weakSelf) strongSelf = weakSelf;
+            if (!strongSelf) return;
+
+            [sender setTitle:NSLocalizedString(@"LocKey.FileImportShareFiles", comment:@"Share imported files") forState:UIControlStateNormal];
+            sender.enabled = strongSelf.importedFiles.count > 0;
+            if (!archiveURL) {
+                NSString *reason = archiveError.localizedDescription ?: NSLocalizedString(@"LocKey.UnknownError", nil);
+                NSString *message = [NSString stringWithFormat:NSLocalizedString(@"LocKey.FileImportArchiveFailedFormat", comment:@"Failed to create export archive: %@"), reason];
+                [strongSelf showFileExportAlertWithMessage:message];
+                return;
+            }
+
+            UIActivityViewController *activityViewController = [[UIActivityViewController alloc]
+                initWithActivityItems:@[archiveURL]
+                applicationActivities:nil];
+            UIPopoverPresentationController *popoverController = activityViewController.popoverPresentationController;
+            if (popoverController) {
+                popoverController.sourceView = sender;
+                popoverController.sourceRect = sender.bounds;
+            }
+            [strongSelf presentViewController:activityViewController animated:YES completion:nil];
+        });
+    });
+}
+
+- (NSString *)exportDirectoryNameForFileType:(AIBudsMediaFileType)fileType {
+    switch (fileType) {
+        case AIBudsMediaFileTypeImage:
+            return @"Images";
+        case AIBudsMediaFileTypeVideo:
+            return @"Videos";
+        case AIBudsMediaFileTypeAudio:
+            return @"Audio";
+        default:
+            return @"Other";
+    }
+}
+
+- (NSURL *)createExportArchiveForImportedFiles:(NSArray<ImportedFile *> *)importedFiles error:(NSError **)error {
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    dateFormatter.locale = [NSLocale localeWithLocaleIdentifier:@"en_US_POSIX"];
+    dateFormatter.calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
+    dateFormatter.dateFormat = @"yyyyMMdd-HHmmss-SSS";
+    NSString *archiveBaseName = [NSString stringWithFormat:@"AIBudsMediaImport-%@", [dateFormatter stringFromDate:[NSDate date]]];
+
+    NSURL *exportDirectoryURL = [[self persistentImportDirectoryURL] URLByAppendingPathComponent:@"Exports" isDirectory:YES];
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    if (![fileManager createDirectoryAtURL:exportDirectoryURL withIntermediateDirectories:YES attributes:nil error:error]) {
+        return nil;
+    }
+
+    NSURL *archiveURL = [exportDirectoryURL URLByAppendingPathComponent:[archiveBaseName stringByAppendingPathExtension:@"zip"]];
+    ZZArchive *archive = [[ZZArchive alloc] initWithURL:archiveURL
+                                               options:@{ZZOpenOptionsCreateIfMissingKey : @YES}
+                                                 error:error];
+    if (!archive) {
+        return nil;
+    }
+
+    NSMutableArray<ZZArchiveEntry *> *entries = [NSMutableArray array];
+    NSString *rootDirectory = [archiveBaseName stringByAppendingString:@"/"];
+    [entries addObject:[ZZArchiveEntry archiveEntryWithDirectoryName:rootDirectory]];
+
+    NSMutableSet<NSString *> *createdDirectories = [NSMutableSet set];
+    for (ImportedFile *importedFile in importedFiles) {
+        NSURL *fileURL = [NSURL fileURLWithPath:importedFile.localPath];
+        NSString *category = [self exportDirectoryNameForFileType:importedFile.fileType];
+        NSString *categoryDirectory = [NSString stringWithFormat:@"%@%@/", rootDirectory, category];
+        if (![createdDirectories containsObject:categoryDirectory]) {
+            [entries addObject:[ZZArchiveEntry archiveEntryWithDirectoryName:categoryDirectory]];
+            [createdDirectories addObject:categoryDirectory];
+        }
+
+        NSString *entryPath = [categoryDirectory stringByAppendingString:importedFile.fileName];
+        ZZArchiveEntry *entry = [ZZArchiveEntry
+            archiveEntryWithFileName:entryPath
+            compress:NO
+            streamBlock:^BOOL(NSOutputStream *outputStream, NSError **streamError) {
+                NSInputStream *inputStream = [NSInputStream inputStreamWithURL:fileURL];
+                [inputStream open];
+                uint8_t buffer[64 * 1024];
+                BOOL success = YES;
+                while (success) {
+                    NSInteger bytesRead = [inputStream read:buffer maxLength:sizeof(buffer)];
+                    if (bytesRead < 0) {
+                        if (streamError) *streamError = inputStream.streamError;
+                        success = NO;
+                        break;
+                    }
+                    if (bytesRead == 0) break;
+
+                    NSInteger offset = 0;
+                    while (offset < bytesRead) {
+                        NSInteger bytesWritten = [outputStream write:&buffer[offset] maxLength:(NSUInteger)(bytesRead - offset)];
+                        if (bytesWritten <= 0) {
+                            if (streamError) *streamError = outputStream.streamError;
+                            success = NO;
+                            break;
+                        }
+                        offset += bytesWritten;
+                    }
+                }
+                [inputStream close];
+                return success;
+            }];
+        [entries addObject:entry];
+    }
+
+    if (![archive updateEntries:entries error:error]) {
+        [fileManager removeItemAtURL:archiveURL error:nil];
+        return nil;
+    }
+    return archiveURL;
+}
+
+- (void)showFileExportAlertWithMessage:(NSString *)message {
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:nil
+                                                                   message:message
+                                                            preferredStyle:UIAlertControllerStyleAlert];
+    [alert addAction:[UIAlertAction actionWithTitle:NSLocalizedString(@"OKLocKey", comment:@"OK")
+                                              style:UIAlertActionStyleDefault
+                                            handler:nil]];
+    [self presentViewController:alert animated:YES completion:nil];
 }
 
 -(void) updateImportingFileName:(NSString*)fileName {

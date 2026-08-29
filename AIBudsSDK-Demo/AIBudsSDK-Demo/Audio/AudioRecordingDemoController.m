@@ -185,6 +185,7 @@
         NSLocalizedString(@"LocKey.SceneOnSite", comment:@"On-site Recording"),
         NSLocalizedString(@"LocKey.SceneCall", comment:@"Call Recording")
     ]];
+    self.aiSceneSegmentedControl.selectedSegmentIndex = 0;
     self.aiSceneSegmentedControl.translatesAutoresizingMaskIntoConstraints = NO;
     [self.aiRecordingCardView addSubview:self.aiSceneSegmentedControl];
     

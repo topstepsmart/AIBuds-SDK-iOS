@@ -751,6 +751,10 @@
 "LocKey.FileImportSpeedFormat" = "速度：%@ %@";
 "LocKey.ReadyToImport" = "文件导入已准备就绪";
 "LocKey.ImportedFiles" = "已导入文件";
+"LocKey.FileImportShareFiles" = "导出本次导入文件（ZIP）";
+"LocKey.FileImportPackaging" = "正在生成 ZIP…";
+"LocKey.FileImportArchiveFailedFormat" = "导出压缩包失败：%@";
+"LocKey.FileImportNoFilesToShare" = "没有可分享的已导入文件";
 "LocKey.NoFilesToImport" = "没有文件可导入";
 "LocKey.ImportingBatchProgressFormat" = "导入 %d/%ld";
 "LocKey.TotalMediaCountFormat" = "总媒体文件数：%ld";
