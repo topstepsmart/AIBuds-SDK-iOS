@@ -412,7 +412,7 @@
     int days = (int)self.daysSlider.value;
     
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{ 
-        [AIBudsDefaultLogger.shared purgeOldLogsWithMaxAge:days completion:nil];
+        [AIBudsLogSDK.logService purgeOldLogsWithMaxAge:days completion:nil];
         
         dispatch_async(dispatch_get_main_queue(), ^{ 
             [self.activityIndicator stopAnimating];

@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
   # ==================== Basic Information ====================
   # SDK name and version
   s.name         = "AIBudsSDK"
-  s.version      = "1.0.1-beta.2"
+  s.version      = "1.0.1-beta.3"
   s.summary      = "AIBuds SDK - An iOS framework for connecting AI devices"
   s.description  = <<-DESC
                     AIBuds SDK is a versatile framework for connecting iOS apps to AI devices. It provides modular components including core connectivity, Bluetooth management, voice assistant, AI capabilities, logging utilities, and foundation services.
@@ -138,9 +138,11 @@ Pod::Spec.new do |s|
   # Optional automatic post-processing for imported six-axis video recordings
   s.subspec 'VideoStabilization' do |video_stabilization|
     video_stabilization.vendored_frameworks = 'AIBudsSDK/VideoStabilization/AIBudsVideoStabilization.xcframework'
+    video_stabilization.resource = 'AIBudsSDK/VideoStabilization/AIBudsVideoStabilization.bundle'
     video_stabilization.dependency 'AIBudsSDK/Core'
     video_stabilization.dependency 'AIBudsSDK/ThirdParty/AWEISIMG'
-    video_stabilization.frameworks = 'Foundation', 'AVFoundation', 'CoreMedia', 'CoreVideo', 'VideoToolbox'
+    video_stabilization.dependency 'OpenCV', '3.4.6'
+    video_stabilization.frameworks = 'Foundation', 'AVFoundation', 'CoreMedia', 'CoreVideo', 'VideoToolbox', 'Metal', 'CoreGraphics'
     video_stabilization.pod_target_xcconfig = {
       'OTHER_LDFLAGS' => '$(inherited) -ObjC'
     }

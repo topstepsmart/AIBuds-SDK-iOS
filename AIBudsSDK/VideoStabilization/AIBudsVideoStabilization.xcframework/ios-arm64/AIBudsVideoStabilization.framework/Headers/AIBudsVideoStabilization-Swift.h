@@ -371,6 +371,8 @@ extern "C" {
 #if defined(__OBJC__)
 
 @class NSURL;
+SWIFT_ENUM_FWD_DECL(NSInteger, AIBudsVideoStabilizationEngine)
+@class NSString;
 /// Configuration for automatic video stabilization.
 SWIFT_CLASS_NAMED("VideoStabilizationConfiguration")
 @interface AIBudsVideoStabilizationConfiguration : NSObject <NSCopying>
@@ -380,10 +382,44 @@ SWIFT_CLASS_NAMED("VideoStabilizationConfiguration")
 @property (nonatomic) NSInteger averageBitRate;
 /// Optional algorithm license file. The default configuration searches the plugin bundle.
 @property (nonatomic, copy) NSURL * _Nullable licenseFileURL;
+/// Suppresses raw text written directly to stdout by the bundled AWEIS engine.
+/// Structured AIBuds logs and progress callbacks are not affected.
+@property (nonatomic) BOOL suppressAWEISConsoleOutput;
+/// Number of neighboring frames retained by AWEIS for motion smoothing.
+/// Larger values can smooth slower camera movement but increase memory usage
+/// roughly in proportion to the radius. Values are clamped to 1…120.
+@property (nonatomic) NSInteger stabilizationRadius;
+/// Stabilization implementation. Automatic prefers the low-memory gyro/Metal path.
+@property (nonatomic) enum AIBudsVideoStabilizationEngine engine;
+/// Allows automatic mode to use AWEIS when gyro metadata or Metal is unavailable.
+@property (nonatomic) BOOL allowsAWEISFallback;
+/// Time constant used to smooth the gyro orientation trajectory, in seconds.
+/// Larger values remove slower camera movement but require more crop margin.
+@property (nonatomic) double gyroscopeSmoothingDuration;
+/// Camera focal length in encoded pixels. Zero derives a conservative value
+/// from the encoded video width. Product calibration should set an exact value.
+@property (nonatomic) double cameraFocalLengthInPixels;
+/// Maps raw gyroscope columns to camera X/Y/Z axes. Examples: <code>x,y,z</code>,
+/// <code>-y,x,z</code>. This is intentionally configurable because IMU mounting differs
+/// between hardware revisions.
+@property (nonatomic, copy) NSString * _Nonnull gyroscopeCameraAxisMapping;
+/// Offset added to each video presentation timestamp before looking up gyro
+/// orientation. Product calibration can use this to compensate sensor latency.
+@property (nonatomic) double gyroscopeTimeOffset;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 + (AIBudsVideoStabilizationConfiguration * _Nonnull)default SWIFT_WARN_UNUSED_RESULT;
 - (id _Nonnull)copyWithZone:(struct _NSZone * _Nullable)zone SWIFT_WARN_UNUSED_RESULT;
 @end
+
+/// Video stabilization implementation selected for imported recordings.
+typedef SWIFT_ENUM_NAMED(NSInteger, AIBudsVideoStabilizationEngine, "VideoStabilizationEngine", open) {
+/// Prefer the gyro/Metal implementation and fall back to AWEIS when unavailable.
+  AIBudsVideoStabilizationEngineAutomatic = 0,
+/// Use the in-house gyro trajectory and Metal GPU renderer.
+  AIBudsVideoStabilizationEngineGyroscopeMetal = 1,
+/// Use the bundled AWEIS image stabilization implementation.
+  AIBudsVideoStabilizationEngineAweis = 2,
+};
 
 typedef SWIFT_ENUM_NAMED(NSInteger, AIBudsVideoStabilizationErrorCode, "VideoStabilizationErrorCode", open) {
   AIBudsVideoStabilizationErrorCodeUnsupportedPlatform = 1,
@@ -397,7 +433,6 @@ typedef SWIFT_ENUM_NAMED(NSInteger, AIBudsVideoStabilizationErrorCode, "VideoSta
 };
 
 @protocol AIBudsVideoStabilizationPlugin;
-@class NSString;
 /// SDK-level information for the optional video-stabilization module.
 /// Applications normally interact with the feature through <code>AIBudsSDK</code>. This type is
 /// provided for diagnostics and follows the version-information convention of the other
@@ -429,6 +464,25 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 /// The error domain used by this module.
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull ErrorDomain;)
 + (NSString * _Nonnull)ErrorDomain SWIFT_WARN_UNUSED_RESULT;
+@end
+
+/// A cancellable, single-file video stabilization task.
+SWIFT_CLASS_NAMED("VideoStabilizationTask")
+@interface AIBudsVideoStabilizationTask : NSObject
+/// Cancels decoding, stabilization, and encoding as soon as possible.
+- (void)cancel;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class NSError;
+/// Standalone entry point for stabilizing a local recording.
+/// Unlike the media-import plugin, this API does not require an AIBuds device or
+/// run a transfer. The returned task must be retained for the lifetime of the job.
+SWIFT_CLASS_NAMED("VideoStabilizer")
+@interface AIBudsVideoStabilizer : NSObject
+/// Stabilizes one local compound recording and writes an H.264 MP4 file.
++ (AIBudsVideoStabilizationTask * _Nonnull)processVideoAtURL:(NSURL * _Nonnull)inputURL outputURL:(NSURL * _Nonnull)outputURL configuration:(AIBudsVideoStabilizationConfiguration * _Nonnull)configuration progressHandler:(void (^ _Nonnull)(double))progressHandler completionHandler:(void (^ _Nonnull)(NSURL * _Nullable, NSError * _Nullable))completionHandler;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 #endif // defined(__OBJC__)

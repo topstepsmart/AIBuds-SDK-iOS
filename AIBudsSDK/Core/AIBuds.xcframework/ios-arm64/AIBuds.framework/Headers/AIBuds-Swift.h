@@ -1255,6 +1255,20 @@ SWIFT_PROTOCOL_NAMED("DeviceCommonAPI")
 /// </ul>
 ///
 - (void)powerOffWithCompletion:(AIBudsCompletionHandler _Nullable)completion;
+/// Formats the device media storage by deleting all media files.
+/// This operation does not introduce a separate device command. Internally
+/// it delegates to the existing delete-all-media-files API.
+/// \param completion Completion callback that returns the operation result.
+/// <ul>
+///   <li>
+///     success: <code>true</code> if the delete-all request was accepted; otherwise <code>false</code>.
+///   </li>
+///   <li>
+///     error: The underlying delete-all error, or <code>nil</code> on success.
+///   </li>
+/// </ul>
+///
+- (void)formatStorageWithCompletion:(AIBudsCompletionHandler _Nullable)completion;
 @end
 
 @class NSUUID;

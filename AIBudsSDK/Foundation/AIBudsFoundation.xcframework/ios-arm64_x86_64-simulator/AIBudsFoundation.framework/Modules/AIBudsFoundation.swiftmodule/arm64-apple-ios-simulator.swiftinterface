@@ -281,6 +281,9 @@ extension AIBudsFoundation.EQSettingModel {
   @objc final public let fileName: Swift.String
   @objc final public let baseUrl: Swift.String
   @objc final public let containsSixAxisDebounceInfo: Swift.Bool
+  @objc final public var deviceFileName: Swift.String {
+    @objc get
+  }
   @objc final public var fileUrl: Swift.String {
     @objc get
   }

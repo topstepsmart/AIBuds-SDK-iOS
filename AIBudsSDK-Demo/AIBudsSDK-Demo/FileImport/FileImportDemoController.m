@@ -7,11 +7,25 @@
 //
 
 #import "FileImportDemoController.h"
+#import "FileImportVideoComparisonController.h"
 #import <AVFoundation/AVFoundation.h>
 #import <AVKit/AVKit.h>
 
+static UIColor *FileImportColor(NSInteger red, NSInteger green, NSInteger blue) {
+    return [UIColor colorWithRed:red / 255.0 green:green / 255.0 blue:blue / 255.0 alpha:1.0];
+}
+
+@interface AIBudsGradientCardView : UIView
+@end
+@implementation AIBudsGradientCardView
++ (Class)layerClass { return CAGradientLayer.class; }
+- (instancetype)init { if ((self = [super init])) { CAGradientLayer *g = (CAGradientLayer *)self.layer; g.colors = @[(id)FileImportColor(47, 91, 234).CGColor, (id)FileImportColor(104, 75, 215).CGColor]; g.startPoint = CGPointMake(0, 0); g.endPoint = CGPointMake(1, 1); self.layer.cornerRadius = 22; self.layer.masksToBounds = YES; } return self; }
+@end
+
 @interface ImportedFile : NSObject
 @property (nonatomic, strong) NSString *localPath;
+@property (nonatomic, strong, nullable) NSString *originalPath;
+@property (nonatomic, strong, nullable) NSString *stabilizedPath;
 @property (nonatomic, strong) NSString *fileName;
 @property (nonatomic, assign) AIBudsMediaFileType fileType;
 @property (nonatomic, assign) BOOL containsSixAxisDebounceInfo;
@@ -22,7 +36,7 @@
 
 @end
 
-@interface FileImportDemoController () <UICollectionViewDelegate, UICollectionViewDataSource, AVAudioPlayerDelegate>
+@interface FileImportDemoController () <UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, AVAudioPlayerDelegate>
 
 @property (nonatomic, strong) UIScrollView *scrollView;
 @property (nonatomic, strong) UIStackView *mainStackView;
@@ -45,6 +59,11 @@
 @property (nonatomic, strong) UICollectionView *filesCollectionView;
 @property (nonatomic, strong) NSMutableArray<ImportedFile*> *importedFiles;
 @property (nonatomic, strong) NSMutableSet<NSString*> *displayedFileNames;
+/// Serializes cache writes and owns `scheduledFileNames`.
+@property (nonatomic, strong) dispatch_queue_t mediaFilePersistenceQueue;
+/// Files already queued for persistence. This closes the gap between scheduling a
+/// copy and updating `displayedFileNames` on the main queue.
+@property (nonatomic, strong) NSMutableSet<NSString*> *scheduledFileNames;
 
 @property (nonatomic, assign) NSInteger totalMediaCount;
 
@@ -95,7 +114,8 @@
 }
 
 - (void)setupUI {
-    self.view.backgroundColor = [UIColor systemGray6Color];
+    self.view.backgroundColor = UIColor.systemGroupedBackgroundColor;
+    self.navigationItem.largeTitleDisplayMode = UINavigationItemLargeTitleDisplayModeNever;
     
     // 滚动视图
     self.scrollView = [[UIScrollView alloc] init];
@@ -106,7 +126,7 @@
     // 主堆栈视图
     self.mainStackView = [[UIStackView alloc] init];
     self.mainStackView.axis = UILayoutConstraintAxisVertical;
-    self.mainStackView.spacing = 20;
+    self.mainStackView.spacing = 16;
     self.mainStackView.alignment = UIStackViewAlignmentFill;
     self.mainStackView.translatesAutoresizingMaskIntoConstraints = NO;
     [self.scrollView addSubview:self.mainStackView];
@@ -123,6 +143,8 @@
     // 初始化数据
     self.importedFiles = [NSMutableArray array];
     self.displayedFileNames = [NSMutableSet set];
+    self.scheduledFileNames = [NSMutableSet set];
+    self.mediaFilePersistenceQueue = dispatch_queue_create("com.aibuds.demo.media-file-persistence", DISPATCH_QUEUE_SERIAL);
     
     // 设置约束
     [NSLayoutConstraint activateConstraints:@[
@@ -131,47 +153,70 @@
         [self.scrollView.trailingAnchor constraintEqualToAnchor:self.view.trailingAnchor],
         [self.scrollView.bottomAnchor constraintEqualToAnchor:self.view.safeAreaLayoutGuide.bottomAnchor],
         
-        [self.mainStackView.topAnchor constraintEqualToAnchor:self.scrollView.topAnchor constant:20],
-        [self.mainStackView.leadingAnchor constraintEqualToAnchor:self.scrollView.leadingAnchor constant:20],
-        [self.mainStackView.trailingAnchor constraintEqualToAnchor:self.scrollView.trailingAnchor constant:-20],
-        [self.mainStackView.bottomAnchor constraintEqualToAnchor:self.scrollView.bottomAnchor constant:-20],
-        [self.mainStackView.widthAnchor constraintEqualToAnchor:self.scrollView.widthAnchor constant:-40]
+        [self.mainStackView.topAnchor constraintEqualToAnchor:self.scrollView.topAnchor constant:16],
+        [self.mainStackView.leadingAnchor constraintEqualToAnchor:self.scrollView.leadingAnchor constant:16],
+        [self.mainStackView.trailingAnchor constraintEqualToAnchor:self.scrollView.trailingAnchor constant:-16],
+        [self.mainStackView.bottomAnchor constraintEqualToAnchor:self.scrollView.bottomAnchor constant:-28],
+        [self.mainStackView.widthAnchor constraintEqualToAnchor:self.scrollView.widthAnchor constant:-32]
     ]];
 }
 
 - (void)createDeviceInfoCard {
-    self.deviceInfoCardView = [self createCardView];
+    self.deviceInfoCardView = [[AIBudsGradientCardView alloc] init];
+    self.deviceInfoCardView.translatesAutoresizingMaskIntoConstraints = NO;
+
+    UIView *iconBackground = [UIView new];
+    iconBackground.translatesAutoresizingMaskIntoConstraints = NO;
+    iconBackground.backgroundColor = [UIColor colorWithWhite:1 alpha:.13];
+    iconBackground.layer.cornerRadius = 24;
+    UIImageView *icon = [[UIImageView alloc] initWithImage:[UIImage systemImageNamed:@"externaldrive.fill.badge.wifi"]];
+    icon.translatesAutoresizingMaskIntoConstraints = NO; icon.tintColor = UIColor.whiteColor;
+    [iconBackground addSubview:icon]; [self.deviceInfoCardView addSubview:iconBackground];
+
+    UILabel *eyebrow = [UILabel new]; eyebrow.translatesAutoresizingMaskIntoConstraints = NO;
+    eyebrow.text = NSLocalizedString(@"LocKey.FileImportDeviceLibraryEyebrow", nil);
+    eyebrow.font = [UIFont systemFontOfSize:11 weight:UIFontWeightBold];
+    eyebrow.textColor = [UIColor colorWithWhite:1 alpha:.62];
+    [self.deviceInfoCardView addSubview:eyebrow];
     
     UILabel *titleLabel = [[UILabel alloc] init];
     titleLabel.text = NSLocalizedString(@"LocKey.DeviceMediaFiles", comment:@"Device Media Files");
-    titleLabel.font = [UIFont systemFontOfSize:18 weight:UIFontWeightSemibold];
-    titleLabel.textColor = [UIColor labelColor];
+    titleLabel.font = [UIFont systemFontOfSize:27 weight:UIFontWeightBold];
+    titleLabel.textColor = UIColor.whiteColor;
     titleLabel.translatesAutoresizingMaskIntoConstraints = NO;
     [self.deviceInfoCardView addSubview:titleLabel];
     
     self.mediaCountLabel = [[UILabel alloc] init];
     self.mediaCountLabel.text = NSLocalizedString(@"LocKey.LoadingMediaFiles", comment:@"Loading media files...");
-    self.mediaCountLabel.font = [UIFont systemFontOfSize:16];
-    self.mediaCountLabel.textColor = [UIColor secondaryLabelColor];
+    self.mediaCountLabel.font = [UIFont systemFontOfSize:14 weight:UIFontWeightMedium];
+    self.mediaCountLabel.textColor = [UIColor colorWithWhite:1 alpha:.72];
     self.mediaCountLabel.translatesAutoresizingMaskIntoConstraints = NO;
     [self.deviceInfoCardView addSubview:self.mediaCountLabel];
     
     self.importButton = [self createPrimaryButtonWithTitle:NSLocalizedString(@"LocKey.ImportButton", comment:@"Import Files")];
+    self.importButton.backgroundColor = UIColor.whiteColor;
+    [self.importButton setTitleColor:FileImportColor(72, 86, 220) forState:UIControlStateNormal];
+    [self.importButton setImage:[UIImage systemImageNamed:@"arrow.down.circle.fill"] forState:UIControlStateNormal];
+    self.importButton.tintColor = FileImportColor(72, 86, 220);
+    self.importButton.titleEdgeInsets = UIEdgeInsetsMake(0, 8, 0, 0);
     [self.importButton addTarget:self action:@selector(importButtonTapped) forControlEvents:UIControlEventTouchUpInside];
     [self.deviceInfoCardView addSubview:self.importButton];
     
     [NSLayoutConstraint activateConstraints:@[
-        [titleLabel.topAnchor constraintEqualToAnchor:self.deviceInfoCardView.topAnchor constant:20],
-        [titleLabel.leadingAnchor constraintEqualToAnchor:self.deviceInfoCardView.leadingAnchor constant:20],
+        [iconBackground.topAnchor constraintEqualToAnchor:self.deviceInfoCardView.topAnchor constant:20], [iconBackground.trailingAnchor constraintEqualToAnchor:self.deviceInfoCardView.trailingAnchor constant:-20], [iconBackground.widthAnchor constraintEqualToConstant:48], [iconBackground.heightAnchor constraintEqualToConstant:48],
+        [icon.centerXAnchor constraintEqualToAnchor:iconBackground.centerXAnchor], [icon.centerYAnchor constraintEqualToAnchor:iconBackground.centerYAnchor], [icon.widthAnchor constraintEqualToConstant:24], [icon.heightAnchor constraintEqualToConstant:24],
+        [eyebrow.topAnchor constraintEqualToAnchor:self.deviceInfoCardView.topAnchor constant:24], [eyebrow.leadingAnchor constraintEqualToAnchor:self.deviceInfoCardView.leadingAnchor constant:22],
+        [titleLabel.topAnchor constraintEqualToAnchor:eyebrow.bottomAnchor constant:5],
+        [titleLabel.leadingAnchor constraintEqualToAnchor:self.deviceInfoCardView.leadingAnchor constant:22],
         
-        [self.mediaCountLabel.topAnchor constraintEqualToAnchor:titleLabel.bottomAnchor constant:10],
-        [self.mediaCountLabel.leadingAnchor constraintEqualToAnchor:self.deviceInfoCardView.leadingAnchor constant:20],
+        [self.mediaCountLabel.topAnchor constraintEqualToAnchor:titleLabel.bottomAnchor constant:7],
+        [self.mediaCountLabel.leadingAnchor constraintEqualToAnchor:self.deviceInfoCardView.leadingAnchor constant:22],
         
-        [self.importButton.topAnchor constraintEqualToAnchor:self.mediaCountLabel.bottomAnchor constant:20],
-        [self.importButton.leadingAnchor constraintEqualToAnchor:self.deviceInfoCardView.leadingAnchor constant:20],
-        [self.importButton.trailingAnchor constraintEqualToAnchor:self.deviceInfoCardView.trailingAnchor constant:-20],
-        [self.importButton.bottomAnchor constraintEqualToAnchor:self.deviceInfoCardView.bottomAnchor constant:-20],
-        [self.importButton.heightAnchor constraintEqualToConstant:44]
+        [self.importButton.topAnchor constraintEqualToAnchor:self.mediaCountLabel.bottomAnchor constant:22],
+        [self.importButton.leadingAnchor constraintEqualToAnchor:self.deviceInfoCardView.leadingAnchor constant:22],
+        [self.importButton.trailingAnchor constraintEqualToAnchor:self.deviceInfoCardView.trailingAnchor constant:-22],
+        [self.importButton.bottomAnchor constraintEqualToAnchor:self.deviceInfoCardView.bottomAnchor constant:-22],
+        [self.importButton.heightAnchor constraintEqualToConstant:50]
     ]];
     
     [self.mainStackView addArrangedSubview:self.deviceInfoCardView];
@@ -184,20 +229,20 @@
     UIView *contentView = [[UIView alloc] init];
     contentView.translatesAutoresizingMaskIntoConstraints = NO;
     contentView.clipsToBounds = YES;
-    contentView.layer.cornerRadius = 12;
+    contentView.layer.cornerRadius = 20;
     [self.importStatusCardView addSubview:contentView];
 
     UILabel *titleLabel = [[UILabel alloc] init];
     titleLabel.text = NSLocalizedString(@"LocKey.ImportStatus", comment:@"Import Status");
-    titleLabel.font = [UIFont systemFontOfSize:18 weight:UIFontWeightSemibold];
+    titleLabel.font = [UIFont systemFontOfSize:20 weight:UIFontWeightBold];
     titleLabel.textColor = [UIColor labelColor];
     titleLabel.translatesAutoresizingMaskIntoConstraints = NO;
     [contentView addSubview:titleLabel];
 
     self.currentFileNameLabel = [[UILabel alloc] init];
     self.currentFileNameLabel.text = @"";
-    self.currentFileNameLabel.font = [UIFont systemFontOfSize:14];
-    self.currentFileNameLabel.textColor = [UIColor secondaryLabelColor];
+    self.currentFileNameLabel.font = [UIFont systemFontOfSize:14 weight:UIFontWeightSemibold];
+    self.currentFileNameLabel.textColor = [UIColor labelColor];
     self.currentFileNameLabel.numberOfLines = 2;
     self.currentFileNameLabel.translatesAutoresizingMaskIntoConstraints = NO;
     [contentView addSubview:self.currentFileNameLabel];
@@ -205,6 +250,9 @@
     self.importProgressView = [[UIProgressView alloc] init];
     self.importProgressView.progress = 0.0;
     self.importProgressView.clipsToBounds = YES;
+    self.importProgressView.layer.cornerRadius = 4;
+    self.importProgressView.trackTintColor = UIColor.tertiarySystemFillColor;
+    self.importProgressView.progressTintColor = FileImportColor(72, 86, 220);
     self.importProgressView.translatesAutoresizingMaskIntoConstraints = NO;
     [contentView addSubview:self.importProgressView];
 
@@ -218,7 +266,7 @@
     self.importStatusLabel = [[UILabel alloc] init];
     self.importStatusLabel.text = @"";
     self.importStatusLabel.font = [UIFont systemFontOfSize:14];
-    self.importStatusLabel.textColor = [UIColor systemBlueColor];
+    self.importStatusLabel.textColor = FileImportColor(72, 86, 220);
     self.importStatusLabel.translatesAutoresizingMaskIntoConstraints = NO;
     [contentView addSubview:self.importStatusLabel];
 
@@ -237,17 +285,17 @@
         [contentView.bottomAnchor constraintEqualToAnchor:self.importStatusCardView.bottomAnchor],
 
         // Inner subviews anchored to contentView
-        [titleLabel.topAnchor constraintEqualToAnchor:contentView.topAnchor constant:20],
-        [titleLabel.leadingAnchor constraintEqualToAnchor:contentView.leadingAnchor constant:20],
-        [titleLabel.trailingAnchor constraintEqualToAnchor:contentView.trailingAnchor constant:-20],
+        [titleLabel.topAnchor constraintEqualToAnchor:contentView.topAnchor constant:22],
+        [titleLabel.leadingAnchor constraintEqualToAnchor:contentView.leadingAnchor constant:22],
+        [titleLabel.trailingAnchor constraintEqualToAnchor:contentView.trailingAnchor constant:-22],
 
         [self.currentFileNameLabel.topAnchor constraintEqualToAnchor:titleLabel.bottomAnchor constant:15],
         [self.currentFileNameLabel.leadingAnchor constraintEqualToAnchor:contentView.leadingAnchor constant:20],
         [self.currentFileNameLabel.trailingAnchor constraintEqualToAnchor:contentView.trailingAnchor constant:-20],
 
-        [self.importProgressView.topAnchor constraintEqualToAnchor:self.currentFileNameLabel.bottomAnchor constant:15],
+        [self.importProgressView.topAnchor constraintEqualToAnchor:self.currentFileNameLabel.bottomAnchor constant:14],
         [self.importProgressView.leadingAnchor constraintEqualToAnchor:contentView.leadingAnchor constant:20],
-        [self.importProgressView.trailingAnchor constraintEqualToAnchor:contentView.trailingAnchor constant:-20],
+        [self.importProgressView.trailingAnchor constraintEqualToAnchor:contentView.trailingAnchor constant:-20], [self.importProgressView.heightAnchor constraintEqualToConstant:8],
 
         [self.importSpeedLabel.topAnchor constraintEqualToAnchor:self.importProgressView.bottomAnchor constant:10],
         [self.importSpeedLabel.leadingAnchor constraintEqualToAnchor:contentView.leadingAnchor constant:20],
@@ -271,14 +319,14 @@
     
     UILabel *titleLabel = [[UILabel alloc] init];
     titleLabel.text = NSLocalizedString(@"LocKey.ImportedFiles", comment:@"Imported Files");
-    titleLabel.font = [UIFont systemFontOfSize:18 weight:UIFontWeightSemibold];
+    titleLabel.font = [UIFont systemFontOfSize:20 weight:UIFontWeightBold];
     titleLabel.textColor = [UIColor labelColor];
     titleLabel.translatesAutoresizingMaskIntoConstraints = NO;
     [self.importedFilesCardView addSubview:titleLabel];
     
     // 集合视图布局
     UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
-    layout.itemSize = CGSizeMake((self.view.frame.size.width - 80) / 3, 120);
+    layout.itemSize = CGSizeMake(150, 154);
     layout.minimumInteritemSpacing = 10;
     layout.minimumLineSpacing = 10;
     
@@ -286,7 +334,7 @@
     self.filesCollectionView = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:layout];
     self.filesCollectionView.delegate = self;
     self.filesCollectionView.dataSource = self;
-    self.filesCollectionView.backgroundColor = [UIColor systemGray6Color];
+    self.filesCollectionView.backgroundColor = UIColor.clearColor;
     self.filesCollectionView.translatesAutoresizingMaskIntoConstraints = NO;
     [self.filesCollectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"FileCell"];
     [self.importedFilesCardView addSubview:self.filesCollectionView];
@@ -299,7 +347,7 @@
         [self.filesCollectionView.leadingAnchor constraintEqualToAnchor:self.importedFilesCardView.leadingAnchor constant:10],
         [self.filesCollectionView.trailingAnchor constraintEqualToAnchor:self.importedFilesCardView.trailingAnchor constant:-10],
         [self.filesCollectionView.bottomAnchor constraintEqualToAnchor:self.importedFilesCardView.bottomAnchor constant:-20],
-        [self.filesCollectionView.heightAnchor constraintEqualToConstant:220]
+        [self.filesCollectionView.heightAnchor constraintEqualToConstant:360]
     ]];
     
     [self.mainStackView addArrangedSubview:self.importedFilesCardView];
@@ -307,12 +355,12 @@
 
 - (UIView *)createCardView {
     UIView *cardView = [[UIView alloc] init];
-    cardView.backgroundColor = [UIColor whiteColor];
-    cardView.layer.cornerRadius = 12;
+    cardView.backgroundColor = UIColor.secondarySystemGroupedBackgroundColor;
+    cardView.layer.cornerRadius = 18;
     cardView.layer.shadowColor = [UIColor blackColor].CGColor;
     cardView.layer.shadowOffset = CGSizeMake(0, 2);
-    cardView.layer.shadowOpacity = 0.1;
-    cardView.layer.shadowRadius = 4;
+    cardView.layer.shadowOpacity = 0.04;
+    cardView.layer.shadowRadius = 8;
     cardView.translatesAutoresizingMaskIntoConstraints = NO;
     cardView.clipsToBounds = NO;
     return cardView;
@@ -322,8 +370,9 @@
     UIButton *button = [UIButton buttonWithType:UIButtonTypeSystem];
     [button setTitle:title forState:UIControlStateNormal];
     [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    button.backgroundColor = [UIColor systemBlueColor];
-    button.layer.cornerRadius = 8;
+    button.backgroundColor = FileImportColor(72, 86, 220);
+    button.titleLabel.font = [UIFont systemFontOfSize:16 weight:UIFontWeightSemibold];
+    button.layer.cornerRadius = 14;
     button.translatesAutoresizingMaskIntoConstraints = NO;
     return button;
 }
@@ -372,13 +421,16 @@
     // 清空之前的导入文件
     [self.importedFiles removeAllObjects];
     [self.displayedFileNames removeAllObjects];
+    dispatch_async(self.mediaFilePersistenceQueue, ^{
+        [self.scheduledFileNames removeAllObjects];
+    });
     [self.filesCollectionView reloadData];
     __weak typeof(self) weakSelf = self;
     id<AIBudsDeviceMediaFileImportAPI> device = (id<AIBudsDeviceMediaFileImportAPI>)self.device;
     if([device conformsToProtocol:@protocol(AIBudsDeviceMediaFileImportAPI)])
     {
         [device fetchMediaFilesInfoWithConfigureHotspotStartingHandler:^{
-            [weakSelf updateImportStatus:NSLocalizedString(@"LocKey.ConfiguringHotspot", comment:@"Configuring hotspot...") color:[UIColor systemBlueColor]];
+            [weakSelf updateImportStatus:NSLocalizedString(@"LocKey.ConfiguringHotspot", comment:@"Configuring hotspot...") color:FileImportColor(72, 86, 220)];
         } hotspotConfigureCompletionHandler:^(BOOL success, NSError * _Nullable error) {
             if(success)
             {
@@ -386,12 +438,12 @@
             }
             else
             {
-                NSString *errorMessage = error ? error.localizedDescription : @"Unknown error";
+                NSString *errorMessage = error ? error.localizedDescription : NSLocalizedString(@"LocKey.UnknownError", nil);
                 NSString* message = [NSString stringWithFormat:NSLocalizedString(@"LocKey.HotspotConfigurationFailedFormat", comment:@"Hotspot configuration failed: %@"), errorMessage];
                 [weakSelf updateImportStatus:message color:[UIColor systemRedColor]];
             }
         } enterFileTransferModeStartingHandler:^{
-            [weakSelf updateImportStatus:NSLocalizedString(@"LocKey.AboutToEnterFileTransferMode", comment:@"About to enter file transfer mode...") color:[UIColor systemBlueColor]];
+            [weakSelf updateImportStatus:NSLocalizedString(@"LocKey.AboutToEnterFileTransferMode", comment:@"About to enter file transfer mode...") color:FileImportColor(72, 86, 220)];
         } enterFileTransferModeCompletedHandler:^(BOOL success, NSError * _Nullable error) {
             if(success)
             {
@@ -399,14 +451,14 @@
             }
             else
             {
-                NSString *errorMessage = error ? error.localizedDescription : @"Unknown error";
+                NSString *errorMessage = error ? error.localizedDescription : NSLocalizedString(@"LocKey.UnknownError", nil);
                 NSString* message = [NSString stringWithFormat:NSLocalizedString(@"LocKey.FileTransferModeEnterFailedFormat", comment:@"File transfer mode enter failed: %@"), errorMessage];
                 [weakSelf updateImportStatus:message color:[UIColor systemRedColor]];
             }
         } waitingForHotspotOpenHandler:^{
-            [weakSelf updateImportStatus:NSLocalizedString(@"LocKey.WaitingForHotspotOpen", comment:@"Waiting for hotspot to open...") color:[UIColor systemBlueColor]];
+            [weakSelf updateImportStatus:NSLocalizedString(@"LocKey.WaitingForHotspotOpen", comment:@"Waiting for hotspot to open...") color:FileImportColor(72, 86, 220)];
         } connectDeviceHotspotStartingHandler:^(NSString * _Nonnull ssid) {
-            [weakSelf updateImportStatus:NSLocalizedString(@"LocKey.ConnectingToHotspot", comment:@"Connecting to hotspot...") color:[UIColor systemBlueColor]];
+            [weakSelf updateImportStatus:NSLocalizedString(@"LocKey.ConnectingToHotspot", comment:@"Connecting to hotspot...") color:FileImportColor(72, 86, 220)];
         } deviceHotspotConnectCompletionHandler:^(BOOL success, NSError * _Nullable error) {
             if(success)
             {
@@ -414,7 +466,7 @@
             }
             else
             {
-                NSString *errorMessage = error ? error.localizedDescription : @"Unknown error";
+                NSString *errorMessage = error ? error.localizedDescription : NSLocalizedString(@"LocKey.UnknownError", nil);
                 NSString* message = [NSString stringWithFormat:NSLocalizedString(@"LocKey.HotspotConnectionFailedFormat", comment:@"Hotspot connection failed: %@"), errorMessage];
                 [weakSelf updateImportStatus:message color:[UIColor systemRedColor]];
             }
@@ -428,7 +480,7 @@
             }
             else
             {
-                NSString *errorMessage = error ? error.localizedDescription : @"Unknown error";
+                NSString *errorMessage = error ? error.localizedDescription : NSLocalizedString(@"LocKey.UnknownError", nil);
                 NSString* message = [NSString stringWithFormat:NSLocalizedString(@"LocKey.FileImportFailedFormat", comment:@"File import failed: %@"), errorMessage];
                 [weakSelf updateImportStatus:message color:[UIColor systemRedColor]];
             }
@@ -477,7 +529,7 @@
         } singleTransferStartingHandler:^(AIBudsMediaFileInfoModel * _Nonnull mediaFile) {
             NSString *fileName = mediaFile.fileName.length > 0 ? mediaFile.fileName : mediaFile.fileUrl.lastPathComponent;
             [weakSelf updateImportingFileName:fileName];
-            [weakSelf updateImportingFileStatus:NSLocalizedString(@"Downloading media file...", comment:@"Media file download is running") color:[UIColor systemBlueColor]];
+            [weakSelf updateImportingFileStatus:NSLocalizedString(@"LocKey.FileImportDownloading", nil) color:FileImportColor(72, 86, 220)];
             [weakSelf updateCurrentImportingFileProgress:0];
         } singleTransferCompletionHandler:^(BOOL success, AIBudsImportedMediaFileModel * importedMediaFile, NSError * _Nullable error) {
             if (!success) {
@@ -492,7 +544,7 @@
         } transferBatchProgressHandler:^(NSInteger fileIndex, NSInteger totalFileCount) {
             [weakSelf updateBatchProgress:fileIndex totalFileCount:totalFileCount];
         } videoStabilizationPhaseBeginHandler:^{
-            [weakSelf updateImportingFileStatus:NSLocalizedString(@"Stabilizing media files...", comment:@"Video stabilization phase is running") color:[UIColor systemPurpleColor]];
+            [weakSelf updateImportingFileStatus:NSLocalizedString(@"LocKey.FileImportStabilizing", nil) color:FileImportColor(104, 75, 215)];
             [weakSelf updateCurrentImportingFileProgress:0];
         } videoStabilizationSingleFileProgressHandler:^(AIBudsImportedMediaFileModel * _Nonnull mediaFile, double progress) {
             NSString *fileName = mediaFile.metadata.fileName.length > 0 ? mediaFile.metadata.fileName : mediaFile.localFileURL.lastPathComponent;
@@ -516,7 +568,7 @@
             }
             else
             {
-                NSString *errorMessage = error ? error.localizedDescription : @"Unknown error";
+                NSString *errorMessage = error ? error.localizedDescription : NSLocalizedString(@"LocKey.UnknownError", nil);
                 NSString *message = [NSString stringWithFormat:NSLocalizedString(@"LocKey.FileImportFailedFormat", comment:@"Media file import failed: %@"), errorMessage];
                 [weakSelf updateImportStatus:message color:[UIColor systemRedColor]];
             }
@@ -534,14 +586,9 @@
 
 - (void)displaySingleImportedMediaFile:(AIBudsImportedMediaFileModel *)result {
     __weak typeof(self) weakSelf = self;
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+    dispatch_async(self.mediaFilePersistenceQueue, ^{
         __strong typeof(weakSelf) strongSelf = weakSelf;
         if(!strongSelf) return;
-        NSURL *destinationDir = [strongSelf persistentImportDirectoryURL];
-        [[NSFileManager defaultManager] createDirectoryAtURL:destinationDir
-                                  withIntermediateDirectories:YES
-                                                   attributes:nil
-                                                        error:nil];
 
         NSURL *sourceURL = result.stabilizedFileURL ?: result.localFileURL;
         if (!sourceURL) {
@@ -549,14 +596,67 @@
             return;
         }
         NSString *fileName = sourceURL.lastPathComponent.length > 0 ? sourceURL.lastPathComponent : result.metadata.fileName;
+        if (fileName.length == 0) {
+            XLOG_WARNING(@"Skipping media file with no file name: %@", sourceURL.path);
+            return;
+        }
+
+        // A result can arrive through both the per-file callback and the final batch
+        // callback. Reserve it before touching the filesystem so the second callback
+        // becomes a no-op even while the first copy is still running.
+        if ([strongSelf.scheduledFileNames containsObject:fileName]) {
+            XLOG_VERBOSE(@"Skipping duplicate imported media callback: %@", fileName);
+            return;
+        }
+        [strongSelf.scheduledFileNames addObject:fileName];
+
+        NSURL *destinationDir = [strongSelf persistentImportDirectoryURL];
+        NSFileManager *fileManager = [NSFileManager defaultManager];
+        NSError *directoryError = nil;
+        if (![fileManager createDirectoryAtURL:destinationDir
+                    withIntermediateDirectories:YES
+                                     attributes:nil
+                                          error:&directoryError]) {
+            [strongSelf.scheduledFileNames removeObject:fileName];
+            XLOG_ERROR(@"Failed to create imported media directory %@: %@",
+                       destinationDir.path,
+                       directoryError.localizedDescription);
+            return;
+        }
+
         NSURL *destURL = [destinationDir URLByAppendingPathComponent:fileName];
-        [[NSFileManager defaultManager] removeItemAtURL:destURL error:nil];
+        NSError *removeError = nil;
+        if ([fileManager fileExistsAtPath:destURL.path] &&
+            ![fileManager removeItemAtURL:destURL error:&removeError]) {
+            [strongSelf.scheduledFileNames removeObject:fileName];
+            XLOG_ERROR(@"Failed to replace existing imported media file at %@: %@",
+                       destURL.path,
+                       removeError.localizedDescription);
+            return;
+        }
+
         NSError *copyError = nil;
-        if ([[NSFileManager defaultManager] copyItemAtURL:sourceURL toURL:destURL error:&copyError]) {
+        if ([fileManager copyItemAtURL:sourceURL toURL:destURL error:&copyError]) {
             ImportedFile *importedFile = [ImportedFile new];
             importedFile.fileName = fileName;
             importedFile.fileType = result.metadata.fileType;
             importedFile.localPath = destURL.path;
+            importedFile.stabilizedPath = result.stabilizedFileURL ? destURL.path : nil;
+            if (result.stabilizedFileURL && result.localFileURL) {
+                NSURL *originalsDirectory = [destinationDir URLByAppendingPathComponent:@"Originals" isDirectory:YES];
+                [fileManager createDirectoryAtURL:originalsDirectory withIntermediateDirectories:YES attributes:nil error:nil];
+                NSString *originalName = result.localFileURL.lastPathComponent.length > 0 ? result.localFileURL.lastPathComponent : result.metadata.fileName;
+                NSURL *originalDestination = [originalsDirectory URLByAppendingPathComponent:originalName];
+                [fileManager removeItemAtURL:originalDestination error:nil];
+                NSError *originalCopyError = nil;
+                if ([fileManager copyItemAtURL:result.localFileURL toURL:originalDestination error:&originalCopyError]) {
+                    importedFile.originalPath = originalDestination.path;
+                } else {
+                    XLOG_ERROR(@"Failed to retain original video for comparison: source=%@ error=%@", result.localFileURL.path, originalCopyError.localizedDescription);
+                }
+            } else {
+                importedFile.originalPath = destURL.path;
+            }
             importedFile.containsSixAxisDebounceInfo = result.metadata.containsSixAxisDebounceInfo;
             importedFile.stabilizationStatus = result.stabilizationStatus;
 
@@ -568,11 +668,15 @@
                 [strongSelf.filesCollectionView reloadData];
             });
 
-            XLOG_INFO(@"Imported media file: source=%@, destination=%@, status=%ld",
+            XLOG_INFO(@"Imported media file: source=%@, destination=%@, original=%@, stabilized=%@, status=%ld",
                       sourceURL.path,
                       destURL.path,
+                      importedFile.originalPath ?: @"nil",
+                      importedFile.stabilizedPath ?: @"nil",
                       (long)result.stabilizationStatus);
         } else if (copyError) {
+            // Allow a later callback to retry a transient filesystem failure.
+            [strongSelf.scheduledFileNames removeObject:fileName];
             XLOG_ERROR(@"Failed to copy imported media file from %@ to %@: %@",
                        sourceURL.path,
                        destURL.path,
@@ -583,9 +687,6 @@
 
 - (void)displayImportedMediaFiles:(NSArray<AIBudsImportedMediaFileModel *> *)mediaFiles {
     for (AIBudsImportedMediaFileModel *result in mediaFiles) {
-        NSURL *sourceURL = result.stabilizedFileURL ?: result.localFileURL;
-        NSString *fileName = sourceURL.lastPathComponent.length > 0 ? sourceURL.lastPathComponent : result.metadata.fileName;
-        if ([self.displayedFileNames containsObject:fileName]) continue;
         [self displaySingleImportedMediaFile:result];
     }
 }
@@ -678,58 +779,74 @@
     ImportedFile *fileInfo = self.importedFiles[indexPath.item];
     NSString *fileName = fileInfo.fileName;
     AIBudsMediaFileType fileType = fileInfo.fileType;
+    NSString *statusText = NSLocalizedString(@"LocKey.FileImportStatusImported", nil);
+    UIColor *statusColor = [UIColor colorWithRed:.12 green:.55 blue:.42 alpha:1];
     if (fileInfo.stabilizationStatus == AIBudsMediaFileStabilizationStatusStabilized) {
-        fileName = [fileName stringByAppendingFormat:@"\n%@", NSLocalizedString(@"Stabilized", comment:@"Media file was stabilized")];
+        statusText = NSLocalizedString(@"LocKey.FileImportStatusStabilizedCompare", nil);
+        statusColor = FileImportColor(72, 86, 220);
     } else if (fileInfo.stabilizationStatus == AIBudsMediaFileStabilizationStatusFailed) {
-        fileName = [fileName stringByAppendingFormat:@"\n%@", NSLocalizedString(@"Stabilization Failed", comment:@"Media file stabilization failed")];
+        statusText = NSLocalizedString(@"LocKey.FileImportStatusStabilizationFailed", nil); statusColor = UIColor.systemRedColor;
     } else if (fileInfo.stabilizationStatus == AIBudsMediaFileStabilizationStatusPluginUnavailable) {
-        fileName = [fileName stringByAppendingFormat:@"\n%@", NSLocalizedString(@"No Stabilization Plugin", comment:@"No stabilization plugin available")];
+        statusText = NSLocalizedString(@"LocKey.FileImportStatusPluginUnavailable", nil); statusColor = UIColor.systemOrangeColor;
     } else if (fileInfo.stabilizationStatus == AIBudsMediaFileStabilizationStatusSkipped) {
-        fileName = [fileName stringByAppendingFormat:@"\n%@", NSLocalizedString(@"Stabilization Skipped", comment:@"Stabilization was skipped")];
+        statusText = NSLocalizedString(@"LocKey.FileImportStatusStabilizationSkipped", nil); statusColor = UIColor.systemOrangeColor;
     } else if (fileInfo.stabilizationStatus == AIBudsMediaFileStabilizationStatusDisabled) {
-        fileName = [fileName stringByAppendingFormat:@"\n%@", NSLocalizedString(@"Stabilization Disabled", comment:@"Stabilization was disabled by app")];
+        statusText = NSLocalizedString(@"LocKey.FileImportStatusStabilizationOff", nil); statusColor = UIColor.systemGrayColor;
     }
     
     // 创建文件类型图标
+    UIView *iconContainer = [UIView new]; iconContainer.translatesAutoresizingMaskIntoConstraints = NO;
+    iconContainer.layer.cornerRadius = 16; [cell.contentView addSubview:iconContainer];
     UIImageView *iconImageView = [[UIImageView alloc] init];
     iconImageView.translatesAutoresizingMaskIntoConstraints = NO;
-    iconImageView.layer.cornerRadius = 4;
+    iconImageView.layer.cornerRadius = 12;
     iconImageView.layer.masksToBounds = YES;
-    [cell.contentView addSubview:iconImageView];
+    iconImageView.contentMode = UIViewContentModeScaleAspectFit; [iconContainer addSubview:iconImageView];
+    cell.contentView.backgroundColor = UIColor.tertiarySystemBackgroundColor;
+    cell.contentView.layer.cornerRadius = 18;
+    cell.contentView.layer.shadowColor = UIColor.blackColor.CGColor;
+    cell.contentView.layer.shadowOffset = CGSizeMake(0, 5); cell.contentView.layer.shadowRadius = 12; cell.contentView.layer.shadowOpacity = .07;
     
     // 根据文件类型设置不同的图标
     if (fileType == AIBudsMediaFileTypeImage) {
-        iconImageView.image = [self createImageIcon];
+        iconImageView.image = [UIImage systemImageNamed:@"photo.fill"]; iconContainer.backgroundColor = [FileImportColor(104, 75, 215) colorWithAlphaComponent:.12]; iconImageView.tintColor = FileImportColor(104, 75, 215);
     } else if (fileType == AIBudsMediaFileTypeVideo) {
-        iconImageView.image = [self createVideoIcon];
+        iconImageView.image = [UIImage systemImageNamed:@"play.rectangle.fill"]; iconContainer.backgroundColor = [FileImportColor(72, 86, 220) colorWithAlphaComponent:.11]; iconImageView.tintColor = FileImportColor(72, 86, 220);
     } else if (fileType == AIBudsMediaFileTypeAudio) {
-        iconImageView.image = [self createAudioIcon];
+        iconImageView.image = [UIImage systemImageNamed:@"waveform"]; iconContainer.backgroundColor = [FileImportColor(47, 91, 234) colorWithAlphaComponent:.11]; iconImageView.tintColor = FileImportColor(47, 91, 234);
     }
     
     // 创建文件名标签
     UILabel *nameLabel = [[UILabel alloc] init];
     nameLabel.text = fileName;
-    nameLabel.font = [UIFont systemFontOfSize:12];
+    nameLabel.font = [UIFont systemFontOfSize:14 weight:UIFontWeightSemibold];
     nameLabel.textColor = [UIColor labelColor];
-    nameLabel.numberOfLines = 3;
-    nameLabel.textAlignment = NSTextAlignmentCenter;
+    nameLabel.numberOfLines = 2;
+    nameLabel.textAlignment = NSTextAlignmentLeft;
     nameLabel.translatesAutoresizingMaskIntoConstraints = NO;
     [cell.contentView addSubview:nameLabel];
+
+    UILabel *statusLabel = [UILabel new]; statusLabel.translatesAutoresizingMaskIntoConstraints = NO;
+    statusLabel.text = statusText; statusLabel.textColor = statusColor; statusLabel.font = [UIFont systemFontOfSize:10 weight:UIFontWeightBold]; [cell.contentView addSubview:statusLabel];
+    UIImageView *chevron = [[UIImageView alloc] initWithImage:[UIImage systemImageNamed:@"chevron.right"]]; chevron.translatesAutoresizingMaskIntoConstraints = NO; chevron.tintColor = UIColor.tertiaryLabelColor; [cell.contentView addSubview:chevron];
     
     // 设置约束
     [NSLayoutConstraint activateConstraints:@[
-        [iconImageView.topAnchor constraintEqualToAnchor:cell.contentView.topAnchor constant:10],
-        [iconImageView.centerXAnchor constraintEqualToAnchor:cell.contentView.centerXAnchor],
-        [iconImageView.widthAnchor constraintEqualToConstant:48],
-        [iconImageView.heightAnchor constraintEqualToConstant:48],
-        
-        [nameLabel.topAnchor constraintEqualToAnchor:iconImageView.bottomAnchor constant:10],
-        [nameLabel.leadingAnchor constraintEqualToAnchor:cell.contentView.leadingAnchor constant:5],
-        [nameLabel.trailingAnchor constraintEqualToAnchor:cell.contentView.trailingAnchor constant:-5],
-        [nameLabel.bottomAnchor constraintEqualToAnchor:cell.contentView.bottomAnchor constant:-5]
+        [iconContainer.leadingAnchor constraintEqualToAnchor:cell.contentView.leadingAnchor constant:14], [iconContainer.centerYAnchor constraintEqualToAnchor:cell.contentView.centerYAnchor], [iconContainer.widthAnchor constraintEqualToConstant:64], [iconContainer.heightAnchor constraintEqualToConstant:64],
+        [iconImageView.centerXAnchor constraintEqualToAnchor:iconContainer.centerXAnchor], [iconImageView.centerYAnchor constraintEqualToAnchor:iconContainer.centerYAnchor], [iconImageView.widthAnchor constraintEqualToConstant:29], [iconImageView.heightAnchor constraintEqualToConstant:29],
+        [nameLabel.leadingAnchor constraintEqualToAnchor:iconContainer.trailingAnchor constant:14], [nameLabel.trailingAnchor constraintEqualToAnchor:chevron.leadingAnchor constant:-10], [nameLabel.topAnchor constraintEqualToAnchor:cell.contentView.topAnchor constant:25],
+        [statusLabel.leadingAnchor constraintEqualToAnchor:nameLabel.leadingAnchor], [statusLabel.trailingAnchor constraintLessThanOrEqualToAnchor:chevron.leadingAnchor constant:-8], [statusLabel.topAnchor constraintEqualToAnchor:nameLabel.bottomAnchor constant:8],
+        [chevron.trailingAnchor constraintEqualToAnchor:cell.contentView.trailingAnchor constant:-15], [chevron.centerYAnchor constraintEqualToAnchor:cell.contentView.centerYAnchor], [chevron.widthAnchor constraintEqualToConstant:8]
     ]];
     
     return cell;
+}
+
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
+    CGFloat available = MAX(140, collectionView.bounds.size.width - 20);
+    NSInteger columns = available >= 700 ? 2 : 1;
+    CGFloat spacing = 10 * (columns - 1);
+    return CGSizeMake(floor((available - spacing) / columns), 104);
 }
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
@@ -743,8 +860,14 @@
         // 图片类型 - 显示大图预览
         [self showImagePreviewWithFilePath:filePath];
     } else if (fileType == AIBudsMediaFileTypeVideo) {
-        // 视频类型 - 播放视频
-        [self playVideoWithFilePath:filePath];
+        if (fileInfo.originalPath.length > 0 && fileInfo.stabilizedPath.length > 0) {
+            FileImportVideoComparisonController *comparison = [[FileImportVideoComparisonController alloc]
+                initWithOriginalURL:[NSURL fileURLWithPath:fileInfo.originalPath]
+                stabilizedURL:[NSURL fileURLWithPath:fileInfo.stabilizedPath]];
+            [self.navigationController pushViewController:comparison animated:YES];
+        } else {
+            [self playVideoWithFilePath:filePath];
+        }
     } else if (fileType == AIBudsMediaFileTypeAudio) {
         // 音频类型 - 播放音频
         //[self playAudioWithFilePath:filePath];
@@ -845,7 +968,7 @@
     // 添加播放/暂停按钮
     UIButton *playPauseButton = [UIButton buttonWithType:UIButtonTypeSystem];
     [playPauseButton setImage:[UIImage systemImageNamed:@"pause.circle.fill"] forState:UIControlStateNormal];
-    playPauseButton.tintColor = [UIColor systemBlueColor];
+    playPauseButton.tintColor = FileImportColor(72, 86, 220);
     playPauseButton.translatesAutoresizingMaskIntoConstraints = NO;
     [playPauseButton addTarget:self action:@selector(togglePlayPause:) forControlEvents:UIControlEventTouchUpInside];
     playPauseButton.tag = 1002;

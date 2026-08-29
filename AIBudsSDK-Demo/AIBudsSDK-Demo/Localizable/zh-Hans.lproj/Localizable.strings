@@ -30,9 +30,26 @@
 
 "LocKey.BasicFeaturesGroupTitle" = "基本功能";
 "LocKey.FactoryResetFeatureTitle" = "恢复出厂设置";
+"LocKey.FormatStorageFeatureTitle" = "格式化媒体存储";
+"LocKey.FormatStorageWarningMessage" = "该操作将删除设备中的所有照片、视频和录音，且无法恢复。是否继续？";
+"LocKey.FormatStorageConfirmAction" = "格式化";
+"LocKey.FormatStorageSuccessMessage" = "格式化请求已提交";
+"LocKey.FormatStorageFailedMessage" = "格式化失败";
 "LocKey.PowerOffFeatureTitle" = "关机";
 "LocKey.DeviceInfoGroupTitle" = "设备信息";
 "LocKey.DeviceInfoDetailsTitle" = "设备信息详情";
+"LocKey.HardwareConfiguration" = "硬件配置";
+"LocKey.DeviceCapabilities" = "设备能力";
+"LocKey.OnDeviceVoiceAssistantGuidance" = "需要离线语音助手指引";
+"LocKey.TouchInput" = "触控输入";
+"LocKey.PhysicalButtonInput" = "实体按键输入";
+"LocKey.SpatialAudio" = "空间音频";
+"LocKey.Multipoint" = "多点连接";
+"LocKey.OnDeviceVoiceAssistant" = "离线语音助手";
+"LocKey.BassEngine" = "低音引擎";
+"LocKey.LiveStreaming" = "直播";
+"LocKey.XimalayaApp" = "喜马拉雅 App";
+"LocKey.FactoryTestPromptToneChirp" = "工厂测试 Chirp 提示音";
 "LocKey.SyncDeviceTimeFeatureTitle" = "同步设备时间";
 "LocKey.SetDeviceTimeFeatureTitle" = "设置设备时间";
 "LocKey.SetDeviceLanguageFeatureTitle" = "设置设备语言";
@@ -739,6 +756,25 @@
 "LocKey.TotalMediaCountFormat" = "总媒体文件数：%ld";
 "LocKey.FileImportAllSuccess" = "所有文件导入成功";
 "LocKey.FileImportFailedFormat" = "文件导入失败：%@";
+"LocKey.FileImportDeviceLibraryEyebrow" = "设备媒体库";
+"LocKey.FileImportDownloading" = "正在下载媒体文件…";
+"LocKey.FileImportStabilizing" = "正在处理视频防抖…";
+"LocKey.FileImportStatusImported" = "已导入";
+"LocKey.FileImportStatusStabilizedCompare" = "已防抖 · 点击对比";
+"LocKey.FileImportStatusStabilizationFailed" = "防抖失败";
+"LocKey.FileImportStatusPluginUnavailable" = "防抖插件不可用";
+"LocKey.FileImportStatusStabilizationSkipped" = "已跳过防抖";
+"LocKey.FileImportStatusStabilizationOff" = "防抖已关闭";
+"LocKey.FileImportComparisonTitle" = "防抖效果对比";
+"LocKey.FileImportComparisonEyebrow" = "双路逐帧同步播放";
+"LocKey.FileImportComparisonOriginal" = "原片";
+"LocKey.FileImportComparisonStabilized" = "防抖后";
+"LocKey.FileImportComparisonReady" = "就绪 · 播放原片声音";
+"LocKey.FileImportComparisonPaused" = "已暂停";
+"LocKey.FileImportComparisonPreparing" = "正在准备播放…";
+"LocKey.FileImportComparisonSynchronizedFormat" = "已同步 · 偏差 %.0f 毫秒 · 播放原片声音";
+"LocKey.FileImportComparisonMediaInfoFormat" = "  %.0f×%.0f · %.2f 帧/秒 · %.1f 秒\n  %@  ";
+"LocKey.UnknownError" = "未知错误";
 
 
 

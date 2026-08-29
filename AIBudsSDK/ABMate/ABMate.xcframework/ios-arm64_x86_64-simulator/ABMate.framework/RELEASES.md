@@ -1,17 +1,18 @@
 # RELEASES
 
-## V1.0.1-beta.2 (Build 20260826002)
+## V1.0.1-beta.3 (Build 20260829001)
 
-**Release date:** 2026-08-26
+**Release date:** 2026-08-29
 
 ### Features
 
-- Improved language selection for AI chat, AI audio recording, and streaming speech recognition, so regional language codes are matched more reliably.
-- Streaming speech recognition now uses the device's current system language when no input language is specified.
-- Added support for over-ear headphones, including device recognition and battery status reporting.
-- Improved device capability reporting, helping apps determine which features are available on a connected device more accurately.
-- Added device hardware configuration information, enabling apps to adapt interactions to different device designs.
-- Improved overall SDK stability and reliability.
+- Improved speech input language selection for AI features by preferring an exact regional match, then another supported variant of the same language, and finally the service's default language. When no input language is specified, applicable services apply the same matching rules to the device's system language.
+- Added support for over-ear headphones, allowing them to be recognized and their battery levels to be interpreted correctly.
+- Refined device capability definitions and added information about the device’s hardware configuration.
+- Improved media file importing and video stabilization to reduce excessive memory and CPU usage and prevent related app crashes.
+- Enhanced the file import demo with a before-and-after view for comparing video stabilization results.
+- Added a new API to format device media storage by deleting all media files.
+- Improved SDK stability.
 
 ## V1.0.0 (Build 20260824001)
 

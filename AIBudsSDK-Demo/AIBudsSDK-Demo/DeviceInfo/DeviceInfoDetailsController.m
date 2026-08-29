@@ -107,6 +107,30 @@
         // 是否支持调整录制时长
         NSString *supportRecordDuration = device.isSupportAdjustRecordDuration ? NSLocalizedString(@"LocKey.Yes", comment:@"Yes") : NSLocalizedString(@"LocKey.No", comment:@"No");
         [self.deviceInfoItems addObject:[DeviceInfoItemModel modelWithName:NSLocalizedString(@"LocKey.SupportAdjustRecordDuration", comment:@"Support Adjust Record Duration") detailsInfo:supportRecordDuration isComplex:NO]];
+
+        // 设备硬件配置
+        AIBudsDeviceHardwareConfiguration *hardwareConfiguration = device.hardwareConfiguration;
+        NSString *hardwareDetails = [NSString stringWithFormat:@"%@: %@\n%@: %@\n%@: %@",
+            NSLocalizedString(@"LocKey.OnDeviceVoiceAssistantGuidance", comment:@"On-device Voice Assistant Guidance"), [self localizedBoolean:hardwareConfiguration.requiresOnDeviceVoiceAssistantGuidance],
+            NSLocalizedString(@"LocKey.TouchInput", comment:@"Touch Input"), [self localizedBoolean:hardwareConfiguration.hasTouchInput],
+            NSLocalizedString(@"LocKey.PhysicalButtonInput", comment:@"Physical Button Input"), [self localizedBoolean:hardwareConfiguration.hasPhysicalButtonInput]
+        ];
+        [self.deviceInfoItems addObject:[DeviceInfoItemModel modelWithName:NSLocalizedString(@"LocKey.HardwareConfiguration", comment:@"Hardware Configuration") detailsInfo:hardwareDetails isComplex:YES]];
+
+        // 设备能力
+        AIBudsDeviceCapabilities *deviceCapabilities = device.deviceCapabilities;
+        NSString *capabilityDetails = deviceCapabilities ? [NSString stringWithFormat:@"TWS: %@\n%@: %@\n%@: %@\nANC: %@\n%@: %@\n%@: %@\n%@: %@\n%@: %@\n%@: %@",
+            [self localizedBoolean:deviceCapabilities.supportsTWS],
+            NSLocalizedString(@"LocKey.SpatialAudio", comment:@"Spatial Audio"), [self localizedBoolean:deviceCapabilities.supportsSpatialAudio],
+            NSLocalizedString(@"LocKey.Multipoint", comment:@"Multipoint"), [self localizedBoolean:deviceCapabilities.supportsMultipoint],
+            [self localizedBoolean:deviceCapabilities.supportsANC],
+            NSLocalizedString(@"LocKey.OnDeviceVoiceAssistant", comment:@"On-device Voice Assistant"), [self localizedBoolean:deviceCapabilities.supportsOnDeviceVoiceAssistant],
+            NSLocalizedString(@"LocKey.BassEngine", comment:@"Bass Engine"), [self localizedBoolean:deviceCapabilities.supportsBassEngine],
+            NSLocalizedString(@"LocKey.LiveStreaming", comment:@"Live Streaming"), [self localizedBoolean:deviceCapabilities.supportsLiveStreaming],
+            NSLocalizedString(@"LocKey.XimalayaApp", comment:@"Ximalaya App"), [self localizedBoolean:deviceCapabilities.supportsXimalayaApp],
+            NSLocalizedString(@"LocKey.FactoryTestPromptToneChirp", comment:@"Factory Test Prompt Tone Chirp"), [self localizedBoolean:deviceCapabilities.supportsFactoryTestPromptToneChirp]
+        ] : NSLocalizedString(@"LocKey.NA", comment:@"N/A");
+        [self.deviceInfoItems addObject:[DeviceInfoItemModel modelWithName:NSLocalizedString(@"LocKey.DeviceCapabilities", comment:@"Device Capabilities") detailsInfo:capabilityDetails isComplex:YES]];
     }
     
     // Connection Information
@@ -124,6 +148,10 @@
     [self.deviceInfoItems addObject:[DeviceInfoItemModel modelWithName:NSLocalizedString(@"LocKey.ScreenName", comment:@"Screen Name") detailsInfo:self.device.screenName ?: NSLocalizedString(@"LocKey.NA", comment:@"N/A") isComplex:NO]];
     [self.deviceInfoItems addObject:[DeviceInfoItemModel modelWithName:NSLocalizedString(@"LocKey.CustomContent", comment:@"Custom Content") detailsInfo:self.device.customContent ?: NSLocalizedString(@"LocKey.NA", comment:@"N/A") isComplex:YES]];
 
+}
+
+- (NSString *)localizedBoolean:(BOOL)value {
+    return value ? NSLocalizedString(@"LocKey.Yes", comment:@"Yes") : NSLocalizedString(@"LocKey.No", comment:@"No");
 }
 
 - (NSString *)callStatusString:(AIBudsCallStatus)callStatus {

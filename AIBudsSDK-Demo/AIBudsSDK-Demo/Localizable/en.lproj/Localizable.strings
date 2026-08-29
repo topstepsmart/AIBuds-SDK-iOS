@@ -28,9 +28,26 @@
 
 "LocKey.BasicFeaturesGroupTitle" = "Basic Features";
 "LocKey.FactoryResetFeatureTitle" = "Factory Reset";
+"LocKey.FormatStorageFeatureTitle" = "Format Media Storage";
+"LocKey.FormatStorageWarningMessage" = "This deletes every photo, video, and recording on the device and cannot be undone. Continue?";
+"LocKey.FormatStorageConfirmAction" = "Format";
+"LocKey.FormatStorageSuccessMessage" = "Format request submitted";
+"LocKey.FormatStorageFailedMessage" = "Format failed";
 "LocKey.PowerOffFeatureTitle" = "Power Off";
 "LocKey.DeviceInfoGroupTitle" = "Device Info";
 "LocKey.DeviceInfoDetailsTitle" = "Device Info Details";
+"LocKey.HardwareConfiguration" = "Hardware Configuration";
+"LocKey.DeviceCapabilities" = "Device Capabilities";
+"LocKey.OnDeviceVoiceAssistantGuidance" = "On-device Voice Assistant Guidance Required";
+"LocKey.TouchInput" = "Touch Input";
+"LocKey.PhysicalButtonInput" = "Physical Button Input";
+"LocKey.SpatialAudio" = "Spatial Audio";
+"LocKey.Multipoint" = "Multipoint";
+"LocKey.OnDeviceVoiceAssistant" = "On-device Voice Assistant";
+"LocKey.BassEngine" = "Bass Engine";
+"LocKey.LiveStreaming" = "Live Streaming";
+"LocKey.XimalayaApp" = "Ximalaya App";
+"LocKey.FactoryTestPromptToneChirp" = "Factory Test Prompt Tone Chirp";
 "LocKey.SyncDeviceTimeFeatureTitle" = "Sync Device Time";
 "LocKey.SetDeviceTimeFeatureTitle" = "Set Device Time";
 "LocKey.SetDeviceLanguageFeatureTitle" = "Set Device Language";
@@ -742,6 +759,25 @@
 "LocKey.TotalMediaCountFormat" = "Total media files: %ld";
 "LocKey.FileImportAllSuccess" = "All files import success";
 "LocKey.FileImportFailedFormat" = "File import failed: %@";
+"LocKey.FileImportDeviceLibraryEyebrow" = "DEVICE MEDIA LIBRARY";
+"LocKey.FileImportDownloading" = "Downloading media file…";
+"LocKey.FileImportStabilizing" = "Stabilizing video…";
+"LocKey.FileImportStatusImported" = "IMPORTED";
+"LocKey.FileImportStatusStabilizedCompare" = "STABILIZED · COMPARE";
+"LocKey.FileImportStatusStabilizationFailed" = "STABILIZATION FAILED";
+"LocKey.FileImportStatusPluginUnavailable" = "PLUGIN UNAVAILABLE";
+"LocKey.FileImportStatusStabilizationSkipped" = "STABILIZATION SKIPPED";
+"LocKey.FileImportStatusStabilizationOff" = "STABILIZATION OFF";
+"LocKey.FileImportComparisonTitle" = "Stabilization Comparison";
+"LocKey.FileImportComparisonEyebrow" = "SYNCHRONIZED A/B PLAYBACK";
+"LocKey.FileImportComparisonOriginal" = "Original";
+"LocKey.FileImportComparisonStabilized" = "Stabilized";
+"LocKey.FileImportComparisonReady" = "Ready · original audio";
+"LocKey.FileImportComparisonPaused" = "Paused";
+"LocKey.FileImportComparisonPreparing" = "Preparing playback…";
+"LocKey.FileImportComparisonSynchronizedFormat" = "Synchronized · drift %.0f ms · original audio";
+"LocKey.FileImportComparisonMediaInfoFormat" = "  %.0f×%.0f · %.2f fps · %.1f s\n  %@  ";
+"LocKey.UnknownError" = "Unknown error";
 
 
 

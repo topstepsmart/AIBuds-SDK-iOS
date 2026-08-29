@@ -5,17 +5,41 @@
 import AIBuds
 import AIBudsFoundation
 import AVFoundation
+import CoreGraphics
 import CoreMedia
 import CoreVideo
+import Darwin
 import Foundation
+import Metal
 import Swift
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
+import os.log
+import os
+import simd
+@objc(AIBudsVideoStabilizationEngine) public enum VideoStabilizationEngine : Swift.Int {
+  case automatic = 0
+  case gyroscopeMetal = 1
+  case aweis = 2
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
 @_inheritsConvenienceInitializers @objc(AIBudsVideoStabilizationConfiguration) final public class VideoStabilizationConfiguration : ObjectiveC.NSObject, Foundation.NSCopying {
   @objc final public var trimRatio: Swift.Double
   @objc final public var averageBitRate: Swift.Int
   @objc final public var licenseFileURL: Foundation.URL?
+  @objc final public var suppressAWEISConsoleOutput: Swift.Bool
+  @objc final public var stabilizationRadius: Swift.Int
+  @objc final public var engine: AIBudsVideoStabilization.VideoStabilizationEngine
+  @objc final public var allowsAWEISFallback: Swift.Bool
+  @objc final public var gyroscopeSmoothingDuration: Swift.Double
+  @objc final public var cameraFocalLengthInPixels: Swift.Double
+  @objc final public var gyroscopeCameraAxisMapping: Swift.String
+  @objc final public var gyroscopeTimeOffset: Swift.Double
   @objc override dynamic public init()
   @objc public static func `default`() -> AIBudsVideoStabilization.VideoStabilizationConfiguration
   @objc final public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
@@ -59,6 +83,20 @@ import _SwiftConcurrencyShims
   @objc public static let ErrorDomain: Swift.String
   @objc deinit
 }
+@_inheritsConvenienceInitializers @objc(AIBudsVideoStabilizationTask) final public class VideoStabilizationTask : ObjectiveC.NSObject {
+  @objc final public func cancel()
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc(AIBudsVideoStabilizer) final public class VideoStabilizer : ObjectiveC.NSObject {
+  @discardableResult
+  @objc(processVideoAtURL:outputURL:configuration:progressHandler:completionHandler:) public static func processVideo(at inputURL: Foundation.URL, outputURL: Foundation.URL, configuration: AIBudsVideoStabilization.VideoStabilizationConfiguration = .default(), progressHandler: @escaping (Swift.Double) -> Swift.Void, completionHandler: @escaping (Foundation.URL?, Foundation.NSError?) -> Swift.Void) -> AIBudsVideoStabilization.VideoStabilizationTask
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension AIBudsVideoStabilization.VideoStabilizationEngine : Swift.Equatable {}
+extension AIBudsVideoStabilization.VideoStabilizationEngine : Swift.Hashable {}
+extension AIBudsVideoStabilization.VideoStabilizationEngine : Swift.RawRepresentable {}
 extension AIBudsVideoStabilization.VideoStabilizationErrorCode : Swift.Equatable {}
 extension AIBudsVideoStabilization.VideoStabilizationErrorCode : Swift.Hashable {}
 extension AIBudsVideoStabilization.VideoStabilizationErrorCode : Swift.RawRepresentable {}

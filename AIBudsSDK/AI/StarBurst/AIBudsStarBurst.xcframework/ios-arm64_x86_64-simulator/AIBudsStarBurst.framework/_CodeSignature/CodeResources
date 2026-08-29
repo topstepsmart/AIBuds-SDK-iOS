@@ -10,11 +10,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		fsj6OqzpqjRDBXSxpY0cmsIOLIQ=
+		d3j3aV8CURiQW3vlRSkCG3dO7M4=
 		</data>
 		<key>Modules/AIBudsStarBurst.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		3CpVheU7gORckcGrdAhHT6uqdT4=
+		Ya+FBKms0IY3MzkJSdsLiJbS/P0=
 		</data>
 		<key>Modules/AIBudsStarBurst.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/AIBudsStarBurst.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		tjiKWSaOOoFvOxbOGQH1d2FgHtQ=
+		xcVB/s+Oezl2vqso06akxbew104=
 		</data>
 		<key>Modules/AIBudsStarBurst.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		3CpVheU7gORckcGrdAhHT6uqdT4=
+		Ya+FBKms0IY3MzkJSdsLiJbS/P0=
 		</data>
 		<key>Modules/AIBudsStarBurst.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -50,11 +50,19 @@
 		</data>
 		<key>Modules/AIBudsStarBurst.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		652JhXl41pM5m9tfT6dbDRVmH9Q=
+		RL8InF9l5qAeCQbBP1uPrL73DFQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		KYVwORLPNuedhWbKhfaAaocDEUA=
+		</data>
+		<key>StarburstVadAssets.bundle/model.onnx</key>
+		<data>
+		QKm7Q7rwge4Z2jiTNaqpO2O3Ing=
+		</data>
+		<key>StarburstVadAssets.bundle/vad.mvn</key>
+		<data>
+		lGTw18czcdMOAZDbTcLCS9sU0a4=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -70,7 +78,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			pF9Dk5sHC3GGOuxSQcW7WxWelUGvLtHIvX4AhXudXgo=
+			MiCXcfj0DlZYJLn4QsIjMkijsOeDiS+/CO/DLAjaV2g=
 			</data>
 		</dict>
 		<key>Modules/AIBudsStarBurst.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -98,14 +106,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			WcFOewwb/g4Vg23SIi7r0/OTQO44evv6Fr40dKj0hig=
+			4YFAAXVaH+8Sgr+B5V0w/WyqP7zRK0XmnwNRNYTEI6o=
 			</data>
 		</dict>
 		<key>Modules/AIBudsStarBurst.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			pF9Dk5sHC3GGOuxSQcW7WxWelUGvLtHIvX4AhXudXgo=
+			MiCXcfj0DlZYJLn4QsIjMkijsOeDiS+/CO/DLAjaV2g=
 			</data>
 		</dict>
 		<key>Modules/AIBudsStarBurst.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -133,7 +141,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			zCU2N/BkPyHofEXgwJ4kbcfKAUeBJ/xrrEjFM//qlLc=
+			McnagUDr7wy6KjTV2PVjgsLionexauPCjCfHjOffSFA=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -141,6 +149,20 @@
 			<key>hash2</key>
 			<data>
 			ERTwQPJfJipctyl2maeBqy8v56m66xd9S6fZFE1B5aY=
+			</data>
+		</dict>
+		<key>StarburstVadAssets.bundle/model.onnx</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			QzkERum+qnKY8aHN2MXNuHXyYpXhZt+WPCibJNqBMIk=
+			</data>
+		</dict>
+		<key>StarburstVadAssets.bundle/vad.mvn</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			aCD++Wh3CMT8P6slMBecj86mJi2qJVFDgAVs2PbrF1Q=
 			</data>
 		</dict>
 	</dict>

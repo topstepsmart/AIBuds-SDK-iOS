@@ -137,6 +137,7 @@
         @{@"code": @"en-US", @"name": NSLocalizedString(@"LocKey.English", comment:@"English language")},
         @{@"code": @"ja-JP", @"name": NSLocalizedString(@"LocKey.Japanese", comment:@"Japanese language")},
         @{@"code": @"ko-KR", @"name": NSLocalizedString(@"LocKey.Korean", comment:@"Korean language")},
+        @{@"code": @"vi", @"name": NSLocalizedString(@"LocKey.Vietnamese", comment:@"Vietnamese language")},
         @{@"code": @"fr-FR", @"name": NSLocalizedString(@"LocKey.French", comment:@"French language")},
         @{@"code": @"de-DE", @"name": NSLocalizedString(@"LocKey.German", comment:@"German language")},
     ];

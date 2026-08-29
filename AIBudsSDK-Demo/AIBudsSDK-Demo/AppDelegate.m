@@ -37,9 +37,9 @@
     if(!success) {
         XLOG_ERROR(@"%@", APP_LOG_STRING(@"%@", @"AIBudsSDK initialize failed."));
     }
-    [AIBudsSDK setStarBurstAIPlugin:[AIBudsStarBurstAuthPlugin shared]];
-    [AIBudsSDK setMltCloudAIPlugin:[AIBudsMltCloudAuthPlugin shared]];
-    [AIBudsSDK setOnDeviceVoiceAssistantPlugin:[AIBudsOnDeviceVoiceAssistantPlugin shared]];
+    [AIBudsSDK setStarBurstAIPlugin:AIBudsStarBurstSDK.bridgePlugin];
+    [AIBudsSDK setMltCloudAIPlugin:AIBudsMagicHelperSDK.bridgePlugin];
+    [AIBudsSDK setOnDeviceVoiceAssistantPlugin:AIBudsVoiceAssistantSDK.bridgePlugin];
     
     success = [AIBudsAISDK initWithAISDKs:@[[AIBudsStarBurstSDK shared],
                                             [AIBudsMagicHelperSDK shared]]];

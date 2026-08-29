@@ -427,6 +427,34 @@
                     }];
                 }
             }],
+            [DeviceFeatureModel modelWithIcon:@"icon_file_import" name:NSLocalizedString(@"LocKey.FormatStorageFeatureTitle", nil) handler:^{
+                __strong typeof(self) strongSelf = weakSelf;
+                if(!strongSelf) return;
+                UIAlertController *alert = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"LocKey.FormatStorageFeatureTitle", nil)
+                                                                                message:NSLocalizedString(@"LocKey.FormatStorageWarningMessage", nil)
+                                                                         preferredStyle:UIAlertControllerStyleAlert];
+                [alert addAction:[UIAlertAction actionWithTitle:NSLocalizedString(@"LocKey.Cancel", nil)
+                                                          style:UIAlertActionStyleCancel
+                                                        handler:nil]];
+                [alert addAction:[UIAlertAction actionWithTitle:NSLocalizedString(@"LocKey.FormatStorageConfirmAction", nil)
+                                                          style:UIAlertActionStyleDestructive
+                                                        handler:^(UIAlertAction * _Nonnull action) {
+                    id<AIBudsDeviceCommonAPI> device = (id<AIBudsDeviceCommonAPI>)strongSelf.device;
+                    if([device conformsToProtocol:@protocol(AIBudsDeviceCommonAPI)]) {
+                        [device formatStorageWithCompletion:^(BOOL success, NSError * _Nullable error) {
+                            NSString *message = success
+                                ? NSLocalizedString(@"LocKey.FormatStorageSuccessMessage", nil)
+                                : [NSString stringWithFormat:@"%@\n%@",
+                                   NSLocalizedString(@"LocKey.FormatStorageFailedMessage", nil),
+                                   error.localizedDescription ?: @""];
+                            dispatch_async(dispatch_get_main_queue(), ^{
+                                [strongSelf.view makeToast:message duration:3.0 position:CSToastPositionTop];
+                            });
+                        }];
+                    }
+                }]];
+                [strongSelf presentViewController:alert animated:YES completion:nil];
+            }],
             [DeviceFeatureModel modelWithIcon:@"icon_power_off" name:NSLocalizedString(@"LocKey.PowerOffFeatureTitle", nil) handler:^{
                 id<AIBudsDeviceCommonAPI> device = (id<AIBudsDeviceCommonAPI>)self.device;
                 if([device conformsToProtocol:@protocol(AIBudsDeviceCommonAPI)]) {
