@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## V1.0.1-beta.4 build20260830001 (2026-08-30)
+
+- Added support for determining whether the connected device supports the find-device feature.
+- Added support for retrieving the following device information:
+  - Image-enhancement post-processing algorithm currently in use.
+  - Recommended maximum recording durations for video and audio.
+  - Minimum battery level required for taking photos, recording video or audio, and transferring files.
+
 ## V1.0.1-beta.3 build20260829001 (2026-08-29)
 
 - Improved media file importing and video stabilization to reduce excessive memory and CPU usage and prevent related app crashes.

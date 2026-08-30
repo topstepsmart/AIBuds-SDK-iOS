@@ -10,11 +10,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		nJU4isCzcUSRioovlJctBDjfhuQ=
+		nIqklk+SiokY4ZmZoevFvYA/q7w=
 		</data>
 		<key>Modules/ABMate.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		vRwdO+dZPYoX+/MTkyzyfVnZlFs=
+		pb7Z5lcAafrbiOcWreCy/vlfEvE=
 		</data>
 		<key>Modules/ABMate.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/ABMate.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		4+wGBsCk1cklg5/3A8zLLdFYVLM=
+		BFKfbacziBB9bnUtJC2SieJPg8E=
 		</data>
 		<key>Modules/ABMate.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		vRwdO+dZPYoX+/MTkyzyfVnZlFs=
+		pb7Z5lcAafrbiOcWreCy/vlfEvE=
 		</data>
 		<key>Modules/ABMate.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -50,15 +50,11 @@
 		</data>
 		<key>Modules/ABMate.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		kiuQlp7S2IDNq+tHZmhFUeP1CtU=
+		inM2+dM7zQjCmPA5HqqTPJdvKdY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		YchpWVT48030TcyxHOxI7jWzm+A=
-		</data>
-		<key>RELEASES.md</key>
-		<data>
-		gz34yqC2mmiGN6bNcK7+SoIIHNw=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -74,7 +70,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			sJdIcn5a90M8TOsELGsthmp8WB5B05ELV2SyhG0PzyU=
+			FvcK3UEa/hyuqFMeSOeBg7j/AQRoaaoxUYHA6OntlSw=
 			</data>
 		</dict>
 		<key>Modules/ABMate.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -102,14 +98,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			15VWF2bvNSKgFEckMjOjZpnYnblPXclo0yjEpAa/vg4=
+			SBJJzaobzYCUDK+M7N8QqHkE6j2sZO1pJ+n46hkDOK0=
 			</data>
 		</dict>
 		<key>Modules/ABMate.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			sJdIcn5a90M8TOsELGsthmp8WB5B05ELV2SyhG0PzyU=
+			FvcK3UEa/hyuqFMeSOeBg7j/AQRoaaoxUYHA6OntlSw=
 			</data>
 		</dict>
 		<key>Modules/ABMate.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -137,7 +133,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			QBCIjFeJ/gy6+0UXiB/YaAXhTbFqPyubvkaH2lmy1KU=
+			BQB+z5GNQ5gep73t5AJvCwEQU37Ah6tRWdIM57xi0iw=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -145,13 +141,6 @@
 			<key>hash2</key>
 			<data>
 			dptaGmPGBylx5q6Clcexn/8vr85lqlH+kJNx2lKaB7A=
-			</data>
-		</dict>
-		<key>RELEASES.md</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			tHHgGS7PoF3esE16Y7oG+TRORDycc27YuYZdt5Geu+8=
 			</data>
 		</dict>
 	</dict>

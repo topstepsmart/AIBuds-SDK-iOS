@@ -10,11 +10,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		73Qrdds8WKLkNp6tkPE/KkaxpJw=
+		+JAdgNjvuswv9x4JdADMHn6PgsE=
 		</data>
 		<key>Modules/AIBudsVideoStabilization.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		eXLVLgp9923Fxax4jEb9vmBqJ9o=
+		5hZicrGNWcJs3TJc8nS64pojgOU=
 		</data>
 		<key>Modules/AIBudsVideoStabilization.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/AIBudsVideoStabilization.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		HiEcQR5acqUFmvMsvxvhxdWIbBE=
+		7J+udkKt//ATODBMHteZ0M0QI28=
 		</data>
 		<key>Modules/AIBudsVideoStabilization.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		eXLVLgp9923Fxax4jEb9vmBqJ9o=
+		5hZicrGNWcJs3TJc8nS64pojgOU=
 		</data>
 		<key>Modules/AIBudsVideoStabilization.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Modules/AIBudsVideoStabilization.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		vEcFY+r0fDRRNQ1JJvPdJzTJpXA=
+		eWVnmwpEkqGcgZpvw64lOOswsLg=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -70,7 +70,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			mFU+D/xNXToTihVOlq3A9jHoubuYF3yx+th5O4sKvko=
+			I/6uDzEdcR8Fmbbv0Ql3R+eJ4cTlNPA0acnL84jXE8U=
 			</data>
 		</dict>
 		<key>Modules/AIBudsVideoStabilization.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -98,14 +98,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			L9dQv+6yFPnupLe5T/2p1D5SXU3vWI7J7XS9sNzygRM=
+			NDmO61dNCtGMkc1XPTkKdXTXotUg+7NE/qd5EScHOLo=
 			</data>
 		</dict>
 		<key>Modules/AIBudsVideoStabilization.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			mFU+D/xNXToTihVOlq3A9jHoubuYF3yx+th5O4sKvko=
+			I/6uDzEdcR8Fmbbv0Ql3R+eJ4cTlNPA0acnL84jXE8U=
 			</data>
 		</dict>
 		<key>Modules/AIBudsVideoStabilization.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -133,7 +133,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			kCl7eQJ76feDiBKyUKj1U4nJWvXbu4Ol0QqpoBWb3V8=
+			f+f8bLCSwSC/PxoWJjhV2dM8+r3AM2tKdTuRuMRcAXk=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

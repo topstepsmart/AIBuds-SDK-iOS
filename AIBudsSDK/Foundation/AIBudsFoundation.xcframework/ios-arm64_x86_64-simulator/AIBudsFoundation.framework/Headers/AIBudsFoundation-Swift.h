@@ -1106,6 +1106,16 @@ typedef SWIFT_ENUM_NAMED(NSInteger, AIBudsHotspotState, "HotspotState", open) {
   AIBudsHotspotStateWifiDirectTimeout = 5,
 };
 
+/// The image-enhancement post-processing algorithm used by the device.
+typedef SWIFT_ENUM_NAMED(NSInteger, AIBudsImageEnhancementPostProcessingAlgorithm, "ImageEnhancementPostProcessingAlgorithm", open) {
+/// The in-house general-purpose post-processing algorithm.
+  AIBudsImageEnhancementPostProcessingAlgorithmGeneral = 0,
+/// Allwinner post-processing algorithm, parameter configuration 1.
+  AIBudsImageEnhancementPostProcessingAlgorithmAllwinnerConfiguration1 = 1,
+/// Allwinner post-processing algorithm, parameter configuration 2.
+  AIBudsImageEnhancementPostProcessingAlgorithmAllwinnerConfiguration2 = 2,
+};
+
 @class AIBudsMediaFileInfoModel;
 @class NSURL;
 SWIFT_ENUM_FWD_DECL(NSInteger, AIBudsMediaFileStabilizationStatus)
@@ -2959,6 +2969,16 @@ typedef SWIFT_ENUM_NAMED(NSInteger, AIBudsHotspotState, "HotspotState", open) {
   AIBudsHotspotStateWifiDirectFailed = 4,
 /// Wi-Fi connection timeout
   AIBudsHotspotStateWifiDirectTimeout = 5,
+};
+
+/// The image-enhancement post-processing algorithm used by the device.
+typedef SWIFT_ENUM_NAMED(NSInteger, AIBudsImageEnhancementPostProcessingAlgorithm, "ImageEnhancementPostProcessingAlgorithm", open) {
+/// The in-house general-purpose post-processing algorithm.
+  AIBudsImageEnhancementPostProcessingAlgorithmGeneral = 0,
+/// Allwinner post-processing algorithm, parameter configuration 1.
+  AIBudsImageEnhancementPostProcessingAlgorithmAllwinnerConfiguration1 = 1,
+/// Allwinner post-processing algorithm, parameter configuration 2.
+  AIBudsImageEnhancementPostProcessingAlgorithmAllwinnerConfiguration2 = 2,
 };
 
 @class AIBudsMediaFileInfoModel;

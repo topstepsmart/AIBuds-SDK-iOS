@@ -7,6 +7,7 @@
 //
 
 #import "DeviceHomeViewController.h"
+#import "DemoNotifications.h"
 #import "DeviceFeatureGroupModel.h"
 #import "FeatureDemoBaseController.h"
 #import "AIChatContext.h"
@@ -30,6 +31,7 @@
 @property (nonatomic, strong) DeviceFeatureModel* wearDetectionCapabilityFeature;
 @property (nonatomic, strong) DeviceFeatureModel* wearDetectionEnabledFeature;
 @property (nonatomic, strong) DeviceFeatureModel* volumeSetCapabilityFeature;
+@property (nonatomic, strong) DeviceFeatureModel* findDeviceSupportedFeature;
 @property (nonatomic, strong) DeviceFeatureModel* twsSupportedFeature;
 @property (nonatomic, strong) DeviceFeatureModel* twsConnectionFeature;
 @end
@@ -304,6 +306,11 @@
     return connected ? NSLocalizedString(@"LocKey.TWSConnected", nil) : NSLocalizedString(@"LocKey.TWSNotConnected", nil);
 }
 
+-(NSString*)findDeviceSupportedStringOf:(BOOL)supported
+{
+    return supported ? NSLocalizedString(@"LocKey.FindDeviceSupported", nil) : NSLocalizedString(@"LocKey.FindDeviceNotSupported", nil);
+}
+
 
 
 - (NSArray<DeviceFeatureGroupModel*>*)featureGroups
@@ -410,6 +417,64 @@
         self.twsConnectionFeature.valueText = NSLocalizedString(@"LocKey.NotSupported", nil);
     }
 
+    self.findDeviceSupportedFeature = [DeviceFeatureModel modelWithIcon:@"icon_find_device" name:NSLocalizedString(@"LocKey.SupportsFindDevice", nil) handler:^{
+
+    }];
+    id<AIBudsDeviceFindAPI> findDevice = (id<AIBudsDeviceFindAPI>)self.device;
+    if ([findDevice conformsToProtocol:@protocol(AIBudsDeviceFindAPI)]) {
+        self.findDeviceSupportedFeature.valueText = [self findDeviceSupportedStringOf:findDevice.supportsFindDevice];
+    } else {
+        self.findDeviceSupportedFeature.valueText = NSLocalizedString(@"LocKey.NotSupported", nil);
+    }
+
+    NSMutableArray<DeviceFeatureModel *> *findFeatures = [NSMutableArray arrayWithObject:self.findDeviceSupportedFeature];
+    [findFeatures addObject:[DeviceFeatureModel modelWithIcon:@"icon_find_device" name:NSLocalizedString(@"LocKey.FindDeviceFeatureTitle", nil) handler:^{
+        __strong typeof(weakSelf) strongSelf = weakSelf;
+        if (!strongSelf) return;
+        id<AIBudsDeviceFindAPI> device = (id<AIBudsDeviceFindAPI>)strongSelf.device;
+        if ([device conformsToProtocol:@protocol(AIBudsDeviceFindAPI)]) {
+            [device findDeviceWithCompletion:^(BOOL success, NSError * _Nullable error) {
+                NSString *message = success
+                    ? NSLocalizedString(@"LocKey.FindDeviceSuccessMessage", nil)
+                    : [NSString stringWithFormat:@"%@\n%@", NSLocalizedString(@"LocKey.FindDeviceFailedMessage", nil), error.localizedDescription ?: @""];
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    [strongSelf.view makeToast:message duration:3.0 position:CSToastPositionTop];
+                });
+            }];
+        }
+    }]];
+
+    [findFeatures addObject:[DeviceFeatureModel modelWithIcon:@"icon_stop_find_device" name:NSLocalizedString(@"LocKey.StopFindDeviceFeatureTitle", nil) handler:^{
+        __strong typeof(weakSelf) strongSelf = weakSelf;
+        if (!strongSelf) return;
+        id<AIBudsDeviceFindAPI> device = (id<AIBudsDeviceFindAPI>)strongSelf.device;
+        if ([device conformsToProtocol:@protocol(AIBudsDeviceFindAPI)]) {
+            [device stopFindDeviceWithCompletion:^(BOOL success, NSError * _Nullable error) {
+                NSString *message = success
+                    ? NSLocalizedString(@"LocKey.StopFindDeviceSuccessMessage", nil)
+                    : [NSString stringWithFormat:@"%@\n%@", NSLocalizedString(@"LocKey.StopFindDeviceFailedMessage", nil), error.localizedDescription ?: @""];
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    [strongSelf.view makeToast:message duration:3.0 position:CSToastPositionTop];
+                });
+            }];
+        }
+    }]];
+
+    [findFeatures addObject:[DeviceFeatureModel modelWithIcon:@"icon_phone_found" name:NSLocalizedString(@"LocKey.NotifyPhoneFoundFeatureTitle", nil) handler:^{
+        __strong typeof(weakSelf) strongSelf = weakSelf;
+        if (!strongSelf) return;
+        id<AIBudsFindPhoneStateReportingAPI> device = (id<AIBudsFindPhoneStateReportingAPI>)strongSelf.device;
+        if ([device conformsToProtocol:@protocol(AIBudsFindPhoneStateReportingAPI)]) {
+            [device notifyPhoneFoundWithCompletion:^(BOOL success, NSError * _Nullable error) {
+                NSString *message = success
+                    ? NSLocalizedString(@"LocKey.NotifyPhoneFoundSuccessMessage", nil)
+                    : [NSString stringWithFormat:@"%@\n%@", NSLocalizedString(@"LocKey.NotifyPhoneFoundFailedMessage", nil), error.localizedDescription ?: @""];
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    [strongSelf.view makeToast:message duration:3.0 position:CSToastPositionTop];
+                });
+            }];
+        }
+    }]];
 
     
     return @[
@@ -552,47 +617,7 @@
                 }
             }],
         ]],
-        [DeviceFeatureGroupModel modelWithIcon:@"icon_find_device" name:NSLocalizedString(@"LocKey.FindFeatureGroupTitle", nil) features:@[
-            [DeviceFeatureModel modelWithIcon:@"icon_find_device" name:NSLocalizedString(@"LocKey.FindDeviceFeatureTitle", nil) handler:^{
-                id<AIBudsDeviceFindAPI> device = (id<AIBudsDeviceFindAPI>)self.device;
-                if([device conformsToProtocol:@protocol(AIBudsDeviceFindAPI)]) {
-                    [device findDeviceWithCompletion:^(BOOL success, NSError * _Nullable error) {
-                        __strong typeof(self) strongSelf = weakSelf;
-                        if(!strongSelf) return;
-                        NSString* message = success? NSLocalizedString(@"LocKey.FindDeviceSuccessMessage", nil) : [NSString stringWithFormat:@"%@\n%@", NSLocalizedString(@"LocKey.FindDeviceFailedMessage", nil), error.localizedDescription];
-                        dispatch_async(dispatch_get_main_queue(), ^{
-                            [strongSelf.view makeToast:message duration:3.0 position:CSToastPositionTop];
-                        });
-                    }];
-                }
-            }],
-            [DeviceFeatureModel modelWithIcon:@"icon_stop_find_device" name:NSLocalizedString(@"LocKey.StopFindDeviceFeatureTitle", nil) handler:^{
-                id<AIBudsDeviceFindAPI> device = (id<AIBudsDeviceFindAPI>)self.device;
-                if([device conformsToProtocol:@protocol(AIBudsDeviceFindAPI)]) {
-                    [device stopFindDeviceWithCompletion:^(BOOL success, NSError * _Nullable error) {
-                        __strong typeof(self) strongSelf = weakSelf;
-                        if(!strongSelf) return;
-                        NSString* message = success? NSLocalizedString(@"LocKey.StopFindDeviceSuccessMessage", nil) : [NSString stringWithFormat:@"%@\n%@", NSLocalizedString(@"LocKey.StopFindDeviceFailedMessage", nil), error.localizedDescription];
-                        dispatch_async(dispatch_get_main_queue(), ^{
-                            [strongSelf.view makeToast:message duration:3.0 position:CSToastPositionTop];
-                        });
-                    }];
-                }
-            }],
-            [DeviceFeatureModel modelWithIcon:@"icon_phone_found" name:NSLocalizedString(@"LocKey.NotifyPhoneFoundFeatureTitle", nil) handler:^{
-                id<AIBudsFindPhoneStateReportingAPI> device = (id<AIBudsFindPhoneStateReportingAPI>)self.device;
-                if([device conformsToProtocol:@protocol(AIBudsFindPhoneStateReportingAPI)]) {
-                    [device notifyPhoneFoundWithCompletion:^(BOOL success, NSError * _Nullable error) {
-                        __strong typeof(self) strongSelf = weakSelf;
-                        if(!strongSelf) return;
-                        NSString* message = success? NSLocalizedString(@"LocKey.NotifyPhoneFoundSuccessMessage", nil) : [NSString stringWithFormat:@"%@\n%@", NSLocalizedString(@"LocKey.NotifyPhoneFoundFailedMessage", nil), error.localizedDescription];
-                        dispatch_async(dispatch_get_main_queue(), ^{
-                            [strongSelf.view makeToast:message duration:3.0 position:CSToastPositionTop];
-                        });
-                    }];
-                }
-            }],
-        ]],
+        [DeviceFeatureGroupModel modelWithIcon:@"icon_find_device" name:NSLocalizedString(@"LocKey.FindFeatureGroupTitle", nil) features:findFeatures],
         [DeviceFeatureGroupModel modelWithIcon:@"icon_firmware" name:NSLocalizedString(@"LocKey.FirmwareGroupTitle", nil) features:@[
             self.firmwareVersionFeature,
         ]],
@@ -984,6 +1009,8 @@
 }
 
 - (void)deviceDidReady:(id<AIBudsDeviceConvertible>)device {
+
+    [[NSNotificationCenter defaultCenter] postNotificationName:AIBudsDemoDeviceDidReadyNotification object:device];
     
     AIBudsDeviceProduct product = device.product;
     NSString* name = device.name;

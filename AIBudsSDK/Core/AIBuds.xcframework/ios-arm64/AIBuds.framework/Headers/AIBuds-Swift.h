@@ -1875,6 +1875,9 @@ SWIFT_PROTOCOL_NAMED("DeviceEqualizerAPI")
 /// <code>FindPhoneStateReportingAPI</code>.
 SWIFT_PROTOCOL_NAMED("DeviceFindAPI")
 @protocol AIBudsDeviceFindAPI <AIBudsDeviceAPI>
+/// Indicates whether the device supports the find-device feature.
+/// Defaults to <code>false</code> when the device does not report this capability.
+@property (nonatomic, readonly) BOOL supportsFindDevice;
 /// Requests that the connected device start its locate-device indication.
 /// The completion reports whether the command was accepted and executed by
 /// the device. It does not report whether the user has located the device.
@@ -1943,6 +1946,7 @@ SWIFT_PROTOCOL_NAMED("DeviceHotspotAPI")
 - (void)configureHotspotWithMode:(enum AIBudsHotspotMode)mode channel:(NSInteger)channel ssid:(NSString * _Nonnull)ssid password:(NSString * _Nonnull)password completion:(AIBudsStatusCodeCompletionHandler _Nullable)completion;
 @end
 
+SWIFT_ENUM_FWD_DECL(NSInteger, AIBudsImageEnhancementPostProcessingAlgorithm)
 @class AIBudsDeviceCapabilities;
 @class AIBudsDeviceHardwareConfiguration;
 SWIFT_ENUM_FWD_DECL(NSInteger, AIBudsCoprocessorModel)
@@ -1965,6 +1969,15 @@ SWIFT_PROTOCOL_NAMED("DeviceInfoAPI")
 @property (nonatomic, readonly) BOOL isSupportAdjustRecordDuration;
 /// AI solution capabilities of the device.
 @property (nonatomic, readonly) AIBudsAISolutionCapabilities aiSolutionCapabilities;
+/// Image-enhancement post-processing algorithm. Defaults to <code>.general</code>.
+@property (nonatomic, readonly) enum AIBudsImageEnhancementPostProcessingAlgorithm imageEnhancementPostProcessingAlgorithm;
+/// Recommended maximum video-recording duration levels, in minutes. Defaults to <code>[1, 3, 9, 12]</code>.
+@property (nonatomic, readonly, copy) NSArray<NSNumber *> * _Nonnull recommendedMaxVideoRecordingDurations;
+/// Recommended maximum audio-recording duration levels, in minutes. Defaults to <code>[30, 60, 120]</code>.
+@property (nonatomic, readonly, copy) NSArray<NSNumber *> * _Nonnull recommendedMaxAudioRecordingDurations;
+/// Minimum battery percentage required for photo, video, audio, and file-transfer operations. Defaults to <code>30</code>.
+/// OTA operations are not controlled by this value.
+@property (nonatomic, readonly) NSInteger minimumBatteryLevelForMediaOperations;
 /// Device capabilities, or <code>nil</code> if no valid capability information has been received.
 @property (nonatomic, readonly, strong) AIBudsDeviceCapabilities * _Nullable deviceCapabilities;
 /// Physical hardware fitted to the device.

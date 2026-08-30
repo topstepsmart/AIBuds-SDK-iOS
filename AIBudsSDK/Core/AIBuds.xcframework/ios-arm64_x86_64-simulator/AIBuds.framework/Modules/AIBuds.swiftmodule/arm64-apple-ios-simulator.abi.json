@@ -21395,6 +21395,55 @@
         "printedName": "DeviceFindAPI",
         "children": [
           {
+            "kind": "Var",
+            "name": "supportsFindDevice",
+            "printedName": "supportsFindDevice",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBuds@objc(pl)AIBudsDeviceFindAPI(py)supportsFindDevice",
+            "mangledName": "$s6AIBuds13DeviceFindAPIP08supportscB0Sbvp",
+            "moduleName": "AIBuds",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBuds@objc(pl)AIBudsDeviceFindAPI(im)supportsFindDevice",
+                "mangledName": "$s6AIBuds13DeviceFindAPIP08supportscB0Sbvg",
+                "moduleName": "AIBuds",
+                "genericSig": "<τ_0_0 where τ_0_0 : AIBuds.DeviceFindAPI>",
+                "sugared_genericSig": "<Self where Self : AIBuds.DeviceFindAPI>",
+                "protocolReq": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
             "kind": "Function",
             "name": "findDevice",
             "printedName": "findDevice(_:)",
@@ -22330,6 +22379,234 @@
                 "declKind": "Accessor",
                 "usr": "c:@M@AIBuds@objc(pl)AIBudsDeviceInfoAPI(im)aiSolutionCapabilities",
                 "mangledName": "$s6AIBuds13DeviceInfoAPIP22aiSolutionCapabilitiesSo0a10AISolutionG0Vvg",
+                "moduleName": "AIBuds",
+                "genericSig": "<τ_0_0 where τ_0_0 : AIBuds.DeviceInfoAPI>",
+                "sugared_genericSig": "<Self where Self : AIBuds.DeviceInfoAPI>",
+                "protocolReq": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "imageEnhancementPostProcessingAlgorithm",
+            "printedName": "imageEnhancementPostProcessingAlgorithm",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ImageEnhancementPostProcessingAlgorithm",
+                "printedName": "AIBudsFoundation.ImageEnhancementPostProcessingAlgorithm",
+                "usr": "c:@M@AIBudsFoundation@E@AIBudsImageEnhancementPostProcessingAlgorithm"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBuds@objc(pl)AIBudsDeviceInfoAPI(py)imageEnhancementPostProcessingAlgorithm",
+            "mangledName": "$s6AIBuds13DeviceInfoAPIP39imageEnhancementPostProcessingAlgorithm0A10Foundation05ImagefghI0Ovp",
+            "moduleName": "AIBuds",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ImageEnhancementPostProcessingAlgorithm",
+                    "printedName": "AIBudsFoundation.ImageEnhancementPostProcessingAlgorithm",
+                    "usr": "c:@M@AIBudsFoundation@E@AIBudsImageEnhancementPostProcessingAlgorithm"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBuds@objc(pl)AIBudsDeviceInfoAPI(im)imageEnhancementPostProcessingAlgorithm",
+                "mangledName": "$s6AIBuds13DeviceInfoAPIP39imageEnhancementPostProcessingAlgorithm0A10Foundation05ImagefghI0Ovg",
+                "moduleName": "AIBuds",
+                "genericSig": "<τ_0_0 where τ_0_0 : AIBuds.DeviceInfoAPI>",
+                "sugared_genericSig": "<Self where Self : AIBuds.DeviceInfoAPI>",
+                "protocolReq": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "recommendedMaxVideoRecordingDurations",
+            "printedName": "recommendedMaxVideoRecordingDurations",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Foundation.NSNumber]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSNumber",
+                    "printedName": "Foundation.NSNumber",
+                    "usr": "c:objc(cs)NSNumber"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBuds@objc(pl)AIBudsDeviceInfoAPI(py)recommendedMaxVideoRecordingDurations",
+            "mangledName": "$s6AIBuds13DeviceInfoAPIP37recommendedMaxVideoRecordingDurationsSaySo8NSNumberCGvp",
+            "moduleName": "AIBuds",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Foundation.NSNumber]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NSNumber",
+                        "printedName": "Foundation.NSNumber",
+                        "usr": "c:objc(cs)NSNumber"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBuds@objc(pl)AIBudsDeviceInfoAPI(im)recommendedMaxVideoRecordingDurations",
+                "mangledName": "$s6AIBuds13DeviceInfoAPIP37recommendedMaxVideoRecordingDurationsSaySo8NSNumberCGvg",
+                "moduleName": "AIBuds",
+                "genericSig": "<τ_0_0 where τ_0_0 : AIBuds.DeviceInfoAPI>",
+                "sugared_genericSig": "<Self where Self : AIBuds.DeviceInfoAPI>",
+                "protocolReq": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "recommendedMaxAudioRecordingDurations",
+            "printedName": "recommendedMaxAudioRecordingDurations",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Foundation.NSNumber]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSNumber",
+                    "printedName": "Foundation.NSNumber",
+                    "usr": "c:objc(cs)NSNumber"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBuds@objc(pl)AIBudsDeviceInfoAPI(py)recommendedMaxAudioRecordingDurations",
+            "mangledName": "$s6AIBuds13DeviceInfoAPIP37recommendedMaxAudioRecordingDurationsSaySo8NSNumberCGvp",
+            "moduleName": "AIBuds",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Foundation.NSNumber]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NSNumber",
+                        "printedName": "Foundation.NSNumber",
+                        "usr": "c:objc(cs)NSNumber"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBuds@objc(pl)AIBudsDeviceInfoAPI(im)recommendedMaxAudioRecordingDurations",
+                "mangledName": "$s6AIBuds13DeviceInfoAPIP37recommendedMaxAudioRecordingDurationsSaySo8NSNumberCGvg",
+                "moduleName": "AIBuds",
+                "genericSig": "<τ_0_0 where τ_0_0 : AIBuds.DeviceInfoAPI>",
+                "sugared_genericSig": "<Self where Self : AIBuds.DeviceInfoAPI>",
+                "protocolReq": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "minimumBatteryLevelForMediaOperations",
+            "printedName": "minimumBatteryLevelForMediaOperations",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBuds@objc(pl)AIBudsDeviceInfoAPI(py)minimumBatteryLevelForMediaOperations",
+            "mangledName": "$s6AIBuds13DeviceInfoAPIP37minimumBatteryLevelForMediaOperationsSivp",
+            "moduleName": "AIBuds",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBuds@objc(pl)AIBudsDeviceInfoAPI(im)minimumBatteryLevelForMediaOperations",
+                "mangledName": "$s6AIBuds13DeviceInfoAPIP37minimumBatteryLevelForMediaOperationsSivg",
                 "moduleName": "AIBuds",
                 "genericSig": "<τ_0_0 where τ_0_0 : AIBuds.DeviceInfoAPI>",
                 "sugared_genericSig": "<Self where Self : AIBuds.DeviceInfoAPI>",
@@ -34140,21 +34417,21 @@
       "kind": "StringLiteral",
       "offset": 257,
       "length": 14,
-      "value": "\"1.0.1-beta.3\""
+      "value": "\"1.0.1-beta.4\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/SDKBuildInfo\/SDK_Build_Info.swift",
       "kind": "StringLiteral",
       "offset": 387,
       "length": 13,
-      "value": "\"20260829001\""
+      "value": "\"20260830001\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/SDKBuildInfo\/SDK_Build_Info.swift",
       "kind": "StringLiteral",
       "offset": 502,
       "length": 12,
-      "value": "\"2026-08-29\""
+      "value": "\"2026-08-30\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBuds\/Context(上下文)\/SDKContext.swift",

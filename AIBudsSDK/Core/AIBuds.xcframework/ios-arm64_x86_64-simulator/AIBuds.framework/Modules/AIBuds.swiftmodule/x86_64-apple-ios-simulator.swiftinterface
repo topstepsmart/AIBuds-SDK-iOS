@@ -505,6 +505,7 @@ extension Foundation.NSNotification.Name {
   @objc(setEqualizer:withCompletion:) func setEqualizer(_ equalizerSetting: AIBudsFoundation.EQSettingModel, completion: AIBuds.AIBudsCompletionHandler?)
 }
 @objc(AIBudsDeviceFindAPI) public protocol DeviceFindAPI : AIBuds.DeviceAPI {
+  @objc var supportsFindDevice: Swift.Bool { get }
   @objc(findDeviceWithCompletion:) func findDevice(_ completion: AIBuds.AIBudsCompletionHandler?)
   @objc(stopFindDeviceWithCompletion:) func stopFindDevice(_ completion: AIBuds.AIBudsCompletionHandler?)
 }
@@ -523,6 +524,10 @@ extension Foundation.NSNotification.Name {
   @objc var mediaCountInfo: AIBudsFoundation.MediaCountInfoModel? { get }
   @objc var isSupportAdjustRecordDuration: Swift.Bool { get }
   @objc var aiSolutionCapabilities: AIBudsFoundation.AIBudsAISolutionCapabilities { get }
+  @objc var imageEnhancementPostProcessingAlgorithm: AIBudsFoundation.ImageEnhancementPostProcessingAlgorithm { get }
+  @objc var recommendedMaxVideoRecordingDurations: [Foundation.NSNumber] { get }
+  @objc var recommendedMaxAudioRecordingDurations: [Foundation.NSNumber] { get }
+  @objc var minimumBatteryLevelForMediaOperations: Swift.Int { get }
   @objc var deviceCapabilities: AIBudsFoundation.DeviceCapabilities? { get }
   @objc var hardwareConfiguration: AIBudsFoundation.DeviceHardwareConfiguration { get }
   @objc var coprocessorModel: AIBudsFoundation.CoprocessorModel { get }

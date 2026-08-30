@@ -8,6 +8,7 @@
 
 #import "DeviceInfoDetailsController.h"
 #import "DeviceInfoItemModel.h"
+#import "DemoNotifications.h"
 
 @interface DeviceInfoDetailsController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -22,7 +23,31 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setupUI];
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(deviceDidBecomeReady:)
+                                                 name:AIBudsDemoDeviceDidReadyNotification
+                                               object:self.device];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self reloadDeviceInfo];
+}
+
+- (void)dealloc {
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
+- (void)deviceDidBecomeReady:(NSNotification *)notification {
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [self reloadDeviceInfo];
+    });
+}
+
+- (void)reloadDeviceInfo {
     [self setupDeviceInfoItems];
+    [self.expandedIndexPaths removeAllObjects];
+    [self.tableView reloadData];
 }
 
 - (void)setupUI {
@@ -108,6 +133,21 @@
         NSString *supportRecordDuration = device.isSupportAdjustRecordDuration ? NSLocalizedString(@"LocKey.Yes", comment:@"Yes") : NSLocalizedString(@"LocKey.No", comment:@"No");
         [self.deviceInfoItems addObject:[DeviceInfoItemModel modelWithName:NSLocalizedString(@"LocKey.SupportAdjustRecordDuration", comment:@"Support Adjust Record Duration") detailsInfo:supportRecordDuration isComplex:NO]];
 
+        // 图像增强后期处理算法
+        NSString *imageAlgorithm = [self imageEnhancementPostProcessingAlgorithmString:device.imageEnhancementPostProcessingAlgorithm];
+        [self.deviceInfoItems addObject:[DeviceInfoItemModel modelWithName:NSLocalizedString(@"LocKey.ImageEnhancementPostProcessingAlgorithm", comment:@"Image Enhancement Post-Processing Algorithm") detailsInfo:imageAlgorithm isComplex:NO]];
+
+        // 录像和录音最大时长推荐档位
+        NSString *videoDurations = [self recordingDurationsString:device.recommendedMaxVideoRecordingDurations];
+        [self.deviceInfoItems addObject:[DeviceInfoItemModel modelWithName:NSLocalizedString(@"LocKey.RecommendedMaxVideoRecordingDurations", comment:@"Recommended Maximum Video Recording Durations") detailsInfo:videoDurations isComplex:NO]];
+
+        NSString *audioDurations = [self recordingDurationsString:device.recommendedMaxAudioRecordingDurations];
+        [self.deviceInfoItems addObject:[DeviceInfoItemModel modelWithName:NSLocalizedString(@"LocKey.RecommendedMaxAudioRecordingDurations", comment:@"Recommended Maximum Audio Recording Durations") detailsInfo:audioDurations isComplex:NO]];
+
+        // 拍照、录像、录音和文件传输的最低电量（不影响 OTA）
+        NSString *minimumBatteryLevel = [NSString stringWithFormat:@"%ld%%", (long)device.minimumBatteryLevelForMediaOperations];
+        [self.deviceInfoItems addObject:[DeviceInfoItemModel modelWithName:NSLocalizedString(@"LocKey.MinimumBatteryLevelForMediaOperations", comment:@"Minimum Battery Level for Media Operations") detailsInfo:minimumBatteryLevel isComplex:NO]];
+
         // 设备硬件配置
         AIBudsDeviceHardwareConfiguration *hardwareConfiguration = device.hardwareConfiguration;
         NSString *hardwareDetails = [NSString stringWithFormat:@"%@: %@\n%@: %@\n%@: %@",
@@ -132,7 +172,7 @@
         ] : NSLocalizedString(@"LocKey.NA", comment:@"N/A");
         [self.deviceInfoItems addObject:[DeviceInfoItemModel modelWithName:NSLocalizedString(@"LocKey.DeviceCapabilities", comment:@"Device Capabilities") detailsInfo:capabilityDetails isComplex:YES]];
     }
-    
+
     // Connection Information
     [self.deviceInfoItems addObject:[DeviceInfoItemModel modelWithName:NSLocalizedString(@"LocKey.LastConnectTime", comment:@"Last Connect Time") detailsInfo:[self formatDate:self.device.lastConnectTime] isComplex:NO]];
     [self.deviceInfoItems addObject:[DeviceInfoItemModel modelWithName:NSLocalizedString(@"LocKey.BindUserID", comment:@"Bind User ID") detailsInfo:self.device.bindUserId ? [NSString stringWithFormat:@"%@", self.device.bindUserId] : NSLocalizedString(@"LocKey.NA", comment:@"N/A") isComplex:NO]];
@@ -152,6 +192,28 @@
 
 - (NSString *)localizedBoolean:(BOOL)value {
     return value ? NSLocalizedString(@"LocKey.Yes", comment:@"Yes") : NSLocalizedString(@"LocKey.No", comment:@"No");
+}
+
+- (NSString *)recordingDurationsString:(NSArray<NSNumber *> *)durations {
+    NSMutableArray<NSString *> *formattedDurations = [NSMutableArray arrayWithCapacity:durations.count];
+    NSString *minuteUnit = NSLocalizedString(@"LocKey.MinuteUnit", comment:@"Minutes unit");
+    for (NSNumber *duration in durations) {
+        [formattedDurations addObject:[NSString stringWithFormat:@"%@ %@", duration, minuteUnit]];
+    }
+    return [formattedDurations componentsJoinedByString:@", "];
+}
+
+- (NSString *)imageEnhancementPostProcessingAlgorithmString:(AIBudsImageEnhancementPostProcessingAlgorithm)algorithm {
+    switch (algorithm) {
+        case AIBudsImageEnhancementPostProcessingAlgorithmGeneral:
+            return NSLocalizedString(@"LocKey.ImageAlgorithmGeneral", comment:@"In-house general image algorithm");
+        case AIBudsImageEnhancementPostProcessingAlgorithmAllwinnerConfiguration1:
+            return NSLocalizedString(@"LocKey.ImageAlgorithmAllwinnerConfiguration1", comment:@"Allwinner image algorithm configuration 1");
+        case AIBudsImageEnhancementPostProcessingAlgorithmAllwinnerConfiguration2:
+            return NSLocalizedString(@"LocKey.ImageAlgorithmAllwinnerConfiguration2", comment:@"Allwinner image algorithm configuration 2");
+        default:
+            return NSLocalizedString(@"LocKey.Unknown", comment:@"Unknown");
+    }
 }
 
 - (NSString *)callStatusString:(AIBudsCallStatus)callStatus {
@@ -302,10 +364,10 @@
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:cellIdentifier];
     }
-    
+
     DeviceInfoItemModel *item = self.deviceInfoItems[indexPath.row];
     cell.textLabel.text = item.name;
-    
+
     if (item.isComplex) {
         cell.detailTextLabel.text = NSLocalizedString(@"LocKey.TapToViewDetails", comment:@"Tap to view details");
         cell.accessoryType = UITableViewCellAccessoryNone;
@@ -360,7 +422,7 @@
 - (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
     DeviceInfoItemModel *item = self.deviceInfoItems[indexPath.row];
     NSNumber *indexPathNumber = [NSNumber numberWithInteger:indexPath.row];
-    
+
     if (item.isComplex && [self.expandedIndexPaths containsObject:indexPathNumber]) {
         // Remove any existing subviews
         for (UIView *subview in cell.contentView.subviews) {
@@ -368,7 +430,7 @@
                 [subview removeFromSuperview];
             }
         }
-        
+
         // Adjust textLabel to top alignment
         cell.textLabel.contentMode = UIViewContentModeTop;
         cell.textLabel.translatesAutoresizingMaskIntoConstraints = NO;
@@ -377,10 +439,10 @@
             [cell.textLabel.leadingAnchor constraintEqualToAnchor:cell.contentView.leadingAnchor constant:15],
             [cell.textLabel.trailingAnchor constraintEqualToAnchor:cell.contentView.trailingAnchor constant:-150],
         ]];
-        
+
         // Hide detailTextLabel
         cell.detailTextLabel.hidden = YES;
-        
+
         // Add text view for complex details
         UITextView *textView = [[UITextView alloc] init];
         textView.text = item.detailsInfo;
@@ -390,7 +452,7 @@
         textView.layer.cornerRadius = 8.0;
         textView.translatesAutoresizingMaskIntoConstraints = NO;
         [cell.contentView addSubview:textView];
-        
+
         [NSLayoutConstraint activateConstraints:@[
             [textView.topAnchor constraintEqualToAnchor:cell.textLabel.bottomAnchor constant:8],
             [textView.leadingAnchor constraintEqualToAnchor:cell.contentView.leadingAnchor constant:15],

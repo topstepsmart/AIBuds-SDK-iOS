@@ -40,6 +40,15 @@
 "LocKey.DeviceInfoDetailsTitle" = "设备信息详情";
 "LocKey.HardwareConfiguration" = "硬件配置";
 "LocKey.DeviceCapabilities" = "设备能力";
+"LocKey.SupportsFindDevice" = "是否支持查找设备";
+"LocKey.ImageEnhancementPostProcessingAlgorithm" = "图像增强后期处理算法";
+"LocKey.RecommendedMaxVideoRecordingDurations" = "录像最大时长推荐档位";
+"LocKey.RecommendedMaxAudioRecordingDurations" = "录音最大时长推荐档位";
+"LocKey.MinimumBatteryLevelForMediaOperations" = "拍照、录制和文件传输最低电量";
+"LocKey.MinuteUnit" = "分钟";
+"LocKey.ImageAlgorithmGeneral" = "自研通用后期处理算法";
+"LocKey.ImageAlgorithmAllwinnerConfiguration1" = "全志后期处理算法（参数配置方案 1）";
+"LocKey.ImageAlgorithmAllwinnerConfiguration2" = "全志后期处理算法（参数配置方案 2）";
 "LocKey.OnDeviceVoiceAssistantGuidance" = "需要离线语音助手指引";
 "LocKey.TouchInput" = "触控输入";
 "LocKey.PhysicalButtonInput" = "实体按键输入";
@@ -57,6 +66,8 @@
 "LocKey.QueryMediaCountInfoFeatureTitle" = "查询媒体文件数量";
 "LocKey.FindFeatureGroupTitle" = "查找";
 "LocKey.FindDeviceFeatureTitle" = "查找设备";
+"LocKey.FindDeviceSupported" = "支持";
+"LocKey.FindDeviceNotSupported" = "不支持";
 "LocKey.StopFindDeviceFeatureTitle" = "停止查找设备";
 "LocKey.NotifyPhoneFoundFeatureTitle" = "通知外设手机已找到";
 "LocKey.FirmwareGroupTitle" = "固件";
