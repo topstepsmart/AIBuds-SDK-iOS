@@ -28,10 +28,6 @@
 		<data>
 		0jC7zRKAwqVK4fMBJ92uZpENW2Y=
 		</data>
-		<key>Modules/AIBudsVideoStabilization.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
-		<data>
-		7J+udkKt//ATODBMHteZ0M0QI28=
-		</data>
 		<key>Modules/AIBudsVideoStabilization.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
 		5hZicrGNWcJs3TJc8nS64pojgOU=
@@ -47,10 +43,6 @@
 		<key>Modules/AIBudsVideoStabilization.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
 		K60/pg2XKARqvtXqezUpi9Ueme0=
-		</data>
-		<key>Modules/AIBudsVideoStabilization.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
-		<data>
-		eWVnmwpEkqGcgZpvw64lOOswsLg=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -94,13 +86,6 @@
 			lzGAmyUD4w0tQm0mJ88Ase4r/tWVJxyfG50sYXjzMpk=
 			</data>
 		</dict>
-		<key>Modules/AIBudsVideoStabilization.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			NDmO61dNCtGMkc1XPTkKdXTXotUg+7NE/qd5EScHOLo=
-			</data>
-		</dict>
 		<key>Modules/AIBudsVideoStabilization.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
@@ -127,13 +112,6 @@
 			<key>hash2</key>
 			<data>
 			f9U1faV/w/ylhuFG5QCbhlwDqmQHOsbbnkHyLWE+aI8=
-			</data>
-		</dict>
-		<key>Modules/AIBudsVideoStabilization.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			f+f8bLCSwSC/PxoWJjhV2dM8+r3AM2tKdTuRuMRcAXk=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

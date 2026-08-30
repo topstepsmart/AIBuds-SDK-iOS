@@ -42,8 +42,8 @@
 "LocKey.DeviceCapabilities" = "设备能力";
 "LocKey.SupportsFindDevice" = "是否支持查找设备";
 "LocKey.ImageEnhancementPostProcessingAlgorithm" = "图像增强后期处理算法";
-"LocKey.RecommendedMaxVideoRecordingDurations" = "录像最大时长推荐档位";
-"LocKey.RecommendedMaxAudioRecordingDurations" = "录音最大时长推荐档位";
+"LocKey.RecommendedMaxVideoRecordingDurationOptions" = "视频最大录制时长推荐档位";
+"LocKey.RecommendedMaxAudioRecordingDurationOptions" = "音频最大录制时长推荐档位";
 "LocKey.MinimumBatteryLevelForMediaOperations" = "拍照、录制和文件传输最低电量";
 "LocKey.MinuteUnit" = "分钟";
 "LocKey.ImageAlgorithmGeneral" = "自研通用后期处理算法";

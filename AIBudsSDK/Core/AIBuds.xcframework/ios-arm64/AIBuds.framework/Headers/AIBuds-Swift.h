@@ -1971,10 +1971,10 @@ SWIFT_PROTOCOL_NAMED("DeviceInfoAPI")
 @property (nonatomic, readonly) AIBudsAISolutionCapabilities aiSolutionCapabilities;
 /// Image-enhancement post-processing algorithm. Defaults to <code>.general</code>.
 @property (nonatomic, readonly) enum AIBudsImageEnhancementPostProcessingAlgorithm imageEnhancementPostProcessingAlgorithm;
-/// Recommended maximum video-recording duration levels, in minutes. Defaults to <code>[1, 3, 9, 12]</code>.
-@property (nonatomic, readonly, copy) NSArray<NSNumber *> * _Nonnull recommendedMaxVideoRecordingDurations;
-/// Recommended maximum audio-recording duration levels, in minutes. Defaults to <code>[30, 60, 120]</code>.
-@property (nonatomic, readonly, copy) NSArray<NSNumber *> * _Nonnull recommendedMaxAudioRecordingDurations;
+/// Recommended maximum video-recording duration options, in minutes. Defaults to <code>[1, 3, 9, 12]</code>.
+@property (nonatomic, readonly, copy) NSArray<NSNumber *> * _Nonnull recommendedMaxVideoRecordingDurationOptions;
+/// Recommended maximum audio-recording duration options, in minutes. Defaults to <code>[30, 60, 120]</code>.
+@property (nonatomic, readonly, copy) NSArray<NSNumber *> * _Nonnull recommendedMaxAudioRecordingDurationOptions;
 /// Minimum battery percentage required for photo, video, audio, and file-transfer operations. Defaults to <code>30</code>.
 /// OTA operations are not controlled by this value.
 @property (nonatomic, readonly) NSInteger minimumBatteryLevelForMediaOperations;

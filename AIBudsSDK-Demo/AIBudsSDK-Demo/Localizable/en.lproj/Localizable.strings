@@ -40,8 +40,8 @@
 "LocKey.DeviceCapabilities" = "Device Capabilities";
 "LocKey.SupportsFindDevice" = "Supports Find Device";
 "LocKey.ImageEnhancementPostProcessingAlgorithm" = "Image Enhancement Post-Processing Algorithm";
-"LocKey.RecommendedMaxVideoRecordingDurations" = "Recommended Maximum Video Recording Durations";
-"LocKey.RecommendedMaxAudioRecordingDurations" = "Recommended Maximum Audio Recording Durations";
+"LocKey.RecommendedMaxVideoRecordingDurationOptions" = "Recommended Maximum Video Recording Duration Options";
+"LocKey.RecommendedMaxAudioRecordingDurationOptions" = "Recommended Maximum Audio Recording Duration Options";
 "LocKey.MinimumBatteryLevelForMediaOperations" = "Minimum Battery for Photo, Recording, and File Transfer";
 "LocKey.MinuteUnit" = "min";
 "LocKey.ImageAlgorithmGeneral" = "In-house General Algorithm";

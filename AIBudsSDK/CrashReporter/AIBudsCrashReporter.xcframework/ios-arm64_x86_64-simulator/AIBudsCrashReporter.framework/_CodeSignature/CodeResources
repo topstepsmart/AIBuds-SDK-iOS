@@ -32,10 +32,6 @@
 		<data>
 		9OyhV4itz/7RNHk0EcMeFnCeOVc=
 		</data>
-		<key>Modules/AIBudsCrashReporter.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
-		<data>
-		/RAfPFkpo4a3h5GVmU8YZmZl3kk=
-		</data>
 		<key>Modules/AIBudsCrashReporter.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
 		/QgjZs1dGcKvRLW+ST3IqbCZKTI=
@@ -51,10 +47,6 @@
 		<key>Modules/AIBudsCrashReporter.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
 		gBYkwztnmLOUrMGse2sXsltWqlc=
-		</data>
-		<key>Modules/AIBudsCrashReporter.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
-		<data>
-		9jxJ2WOO5y9590flQ6WWjh+8si0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -105,13 +97,6 @@
 			c0diPfHuy6o4jfZ5QUxv6TOz7oDSa8W2uZ+Em1Fi6tM=
 			</data>
 		</dict>
-		<key>Modules/AIBudsCrashReporter.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			EBfjE7blnCj3GSSd7uEj+vcTVoSeGDMA2MFmI/RD9ug=
-			</data>
-		</dict>
 		<key>Modules/AIBudsCrashReporter.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
@@ -138,13 +123,6 @@
 			<key>hash2</key>
 			<data>
 			hC7bkibWQM9IluhKcjwigoBKI2ttyN5XJK4f7v9NwkA=
-			</data>
-		</dict>
-		<key>Modules/AIBudsCrashReporter.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			ihwFY5Foc0GMxJ6rhxaX2BH4KhK3fIHLdlkg1rvOSUU=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

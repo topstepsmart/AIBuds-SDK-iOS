@@ -22442,8 +22442,8 @@
           },
           {
             "kind": "Var",
-            "name": "recommendedMaxVideoRecordingDurations",
-            "printedName": "recommendedMaxVideoRecordingDurations",
+            "name": "recommendedMaxVideoRecordingDurationOptions",
+            "printedName": "recommendedMaxVideoRecordingDurationOptions",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -22461,8 +22461,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@AIBuds@objc(pl)AIBudsDeviceInfoAPI(py)recommendedMaxVideoRecordingDurations",
-            "mangledName": "$s6AIBuds13DeviceInfoAPIP37recommendedMaxVideoRecordingDurationsSaySo8NSNumberCGvp",
+            "usr": "c:@M@AIBuds@objc(pl)AIBudsDeviceInfoAPI(py)recommendedMaxVideoRecordingDurationOptions",
+            "mangledName": "$s6AIBuds13DeviceInfoAPIP43recommendedMaxVideoRecordingDurationOptionsSaySo8NSNumberCGvp",
             "moduleName": "AIBuds",
             "protocolReq": true,
             "declAttributes": [
@@ -22491,8 +22491,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@AIBuds@objc(pl)AIBudsDeviceInfoAPI(im)recommendedMaxVideoRecordingDurations",
-                "mangledName": "$s6AIBuds13DeviceInfoAPIP37recommendedMaxVideoRecordingDurationsSaySo8NSNumberCGvg",
+                "usr": "c:@M@AIBuds@objc(pl)AIBudsDeviceInfoAPI(im)recommendedMaxVideoRecordingDurationOptions",
+                "mangledName": "$s6AIBuds13DeviceInfoAPIP43recommendedMaxVideoRecordingDurationOptionsSaySo8NSNumberCGvg",
                 "moduleName": "AIBuds",
                 "genericSig": "<τ_0_0 where τ_0_0 : AIBuds.DeviceInfoAPI>",
                 "sugared_genericSig": "<Self where Self : AIBuds.DeviceInfoAPI>",
@@ -22507,8 +22507,8 @@
           },
           {
             "kind": "Var",
-            "name": "recommendedMaxAudioRecordingDurations",
-            "printedName": "recommendedMaxAudioRecordingDurations",
+            "name": "recommendedMaxAudioRecordingDurationOptions",
+            "printedName": "recommendedMaxAudioRecordingDurationOptions",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -22526,8 +22526,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@AIBuds@objc(pl)AIBudsDeviceInfoAPI(py)recommendedMaxAudioRecordingDurations",
-            "mangledName": "$s6AIBuds13DeviceInfoAPIP37recommendedMaxAudioRecordingDurationsSaySo8NSNumberCGvp",
+            "usr": "c:@M@AIBuds@objc(pl)AIBudsDeviceInfoAPI(py)recommendedMaxAudioRecordingDurationOptions",
+            "mangledName": "$s6AIBuds13DeviceInfoAPIP43recommendedMaxAudioRecordingDurationOptionsSaySo8NSNumberCGvp",
             "moduleName": "AIBuds",
             "protocolReq": true,
             "declAttributes": [
@@ -22556,8 +22556,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@AIBuds@objc(pl)AIBudsDeviceInfoAPI(im)recommendedMaxAudioRecordingDurations",
-                "mangledName": "$s6AIBuds13DeviceInfoAPIP37recommendedMaxAudioRecordingDurationsSaySo8NSNumberCGvg",
+                "usr": "c:@M@AIBuds@objc(pl)AIBudsDeviceInfoAPI(im)recommendedMaxAudioRecordingDurationOptions",
+                "mangledName": "$s6AIBuds13DeviceInfoAPIP43recommendedMaxAudioRecordingDurationOptionsSaySo8NSNumberCGvg",
                 "moduleName": "AIBuds",
                 "genericSig": "<τ_0_0 where τ_0_0 : AIBuds.DeviceInfoAPI>",
                 "sugared_genericSig": "<Self where Self : AIBuds.DeviceInfoAPI>",

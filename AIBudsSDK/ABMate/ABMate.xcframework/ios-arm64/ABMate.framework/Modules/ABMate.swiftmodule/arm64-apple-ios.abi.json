@@ -10729,42 +10729,42 @@
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Commands(指令)\/Defines(定义)\/DeviceInfoType.swift",
       "kind": "IntegerLiteral",
-      "offset": 5757,
+      "offset": 5764,
       "length": 4,
       "value": "0xA6"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Commands(指令)\/Defines(定义)\/DeviceInfoType.swift",
       "kind": "IntegerLiteral",
-      "offset": 5890,
+      "offset": 5904,
       "length": 4,
       "value": "0xA7"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Commands(指令)\/Defines(定义)\/DeviceInfoType.swift",
       "kind": "IntegerLiteral",
-      "offset": 6030,
+      "offset": 6044,
       "length": 4,
       "value": "0xA8"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Commands(指令)\/Defines(定义)\/DeviceInfoType.swift",
       "kind": "IntegerLiteral",
-      "offset": 6152,
+      "offset": 6166,
       "length": 4,
       "value": "0xFD"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Commands(指令)\/Defines(定义)\/DeviceInfoType.swift",
       "kind": "IntegerLiteral",
-      "offset": 6217,
+      "offset": 6231,
       "length": 4,
       "value": "0xFE"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Commands(指令)\/Defines(定义)\/DeviceInfoType.swift",
       "kind": "IntegerLiteral",
-      "offset": 6294,
+      "offset": 6308,
       "length": 4,
       "value": "0xFF"
     },
@@ -13578,28 +13578,28 @@
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "Array",
-      "offset": 206663,
+      "offset": 206724,
       "length": 13,
       "value": "[1, 3, 9, 12]"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "Array",
-      "offset": 206968,
+      "offset": 207042,
       "length": 13,
       "value": "[30, 60, 120]"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "IntegerLiteral",
-      "offset": 207265,
+      "offset": 207339,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "BooleanLiteral",
-      "offset": 226072,
+      "offset": 226146,
       "length": 5,
       "value": "false"
     },

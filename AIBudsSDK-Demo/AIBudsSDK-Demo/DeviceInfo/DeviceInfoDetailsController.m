@@ -137,12 +137,12 @@
         NSString *imageAlgorithm = [self imageEnhancementPostProcessingAlgorithmString:device.imageEnhancementPostProcessingAlgorithm];
         [self.deviceInfoItems addObject:[DeviceInfoItemModel modelWithName:NSLocalizedString(@"LocKey.ImageEnhancementPostProcessingAlgorithm", comment:@"Image Enhancement Post-Processing Algorithm") detailsInfo:imageAlgorithm isComplex:NO]];
 
-        // 录像和录音最大时长推荐档位
-        NSString *videoDurations = [self recordingDurationsString:device.recommendedMaxVideoRecordingDurations];
-        [self.deviceInfoItems addObject:[DeviceInfoItemModel modelWithName:NSLocalizedString(@"LocKey.RecommendedMaxVideoRecordingDurations", comment:@"Recommended Maximum Video Recording Durations") detailsInfo:videoDurations isComplex:NO]];
+        // 视频和音频最大录制时长推荐档位
+        NSString *videoDurations = [self recordingDurationsString:device.recommendedMaxVideoRecordingDurationOptions];
+        [self.deviceInfoItems addObject:[DeviceInfoItemModel modelWithName:NSLocalizedString(@"LocKey.RecommendedMaxVideoRecordingDurationOptions", comment:@"Recommended Maximum Video Recording Duration Options") detailsInfo:videoDurations isComplex:NO]];
 
-        NSString *audioDurations = [self recordingDurationsString:device.recommendedMaxAudioRecordingDurations];
-        [self.deviceInfoItems addObject:[DeviceInfoItemModel modelWithName:NSLocalizedString(@"LocKey.RecommendedMaxAudioRecordingDurations", comment:@"Recommended Maximum Audio Recording Durations") detailsInfo:audioDurations isComplex:NO]];
+        NSString *audioDurations = [self recordingDurationsString:device.recommendedMaxAudioRecordingDurationOptions];
+        [self.deviceInfoItems addObject:[DeviceInfoItemModel modelWithName:NSLocalizedString(@"LocKey.RecommendedMaxAudioRecordingDurationOptions", comment:@"Recommended Maximum Audio Recording Duration Options") detailsInfo:audioDurations isComplex:NO]];
 
         // 拍照、录像、录音和文件传输的最低电量（不影响 OTA）
         NSString *minimumBatteryLevel = [NSString stringWithFormat:@"%ld%%", (long)device.minimumBatteryLevelForMediaOperations];

@@ -525,8 +525,8 @@ extension Foundation.NSNotification.Name {
   @objc var isSupportAdjustRecordDuration: Swift.Bool { get }
   @objc var aiSolutionCapabilities: AIBudsFoundation.AIBudsAISolutionCapabilities { get }
   @objc var imageEnhancementPostProcessingAlgorithm: AIBudsFoundation.ImageEnhancementPostProcessingAlgorithm { get }
-  @objc var recommendedMaxVideoRecordingDurations: [Foundation.NSNumber] { get }
-  @objc var recommendedMaxAudioRecordingDurations: [Foundation.NSNumber] { get }
+  @objc var recommendedMaxVideoRecordingDurationOptions: [Foundation.NSNumber] { get }
+  @objc var recommendedMaxAudioRecordingDurationOptions: [Foundation.NSNumber] { get }
   @objc var minimumBatteryLevelForMediaOperations: Swift.Int { get }
   @objc var deviceCapabilities: AIBudsFoundation.DeviceCapabilities? { get }
   @objc var hardwareConfiguration: AIBudsFoundation.DeviceHardwareConfiguration { get }
