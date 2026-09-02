@@ -2,7 +2,7 @@
 
 ## V1.0.1-beta.5 build20260902001 (2026-09-02)
 
-- Enhanced AI chat capabilities.
+- Enhanced AI Asking capabilities.
 - Improved AI service compatibility.
 - Bundled ZipZap with the SDK to address security vulnerabilities in the upstream ZipZap SDK.
 

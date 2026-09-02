@@ -17,7 +17,7 @@
     - Image-enhancement post-processing algorithm currently in use.
     - Recommended maximum recording duration options for video and audio.
     - Minimum battery level required for taking photos, recording video or audio, and transferring files.
-- Enhanced AI chat capabilities.
+- Enhanced AI Asking capabilities.
 - Improved AI service compatibility.
 - Bundled ZipZap with the SDK to address security vulnerabilities in the upstream ZipZap SDK.
 - Improved SDK stability.
