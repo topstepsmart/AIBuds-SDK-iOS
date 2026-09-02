@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
   # ==================== Basic Information ====================
   # SDK name and version
   s.name         = "AIBudsSDK"
-  s.version      = "1.0.1-beta.5"
+  s.version      = "1.0.1-beta.6"
   s.summary      = "AIBuds SDK - An iOS framework for connecting AI devices"
   s.description  = <<-DESC
                     AIBuds SDK is a versatile framework for connecting iOS apps to AI devices. It provides modular components including core connectivity, Bluetooth management, voice assistant, AI capabilities, logging utilities, and foundation services.
@@ -57,6 +57,21 @@ Pod::Spec.new do |s|
     abmate.dependency 'AIBudsSDK/Core'
     abmate.dependency 'AIBudsSDK/ThirdParty/GCDWebServer'
     abmate.dependency 'libopus', '1.1'
+  end
+
+  # Optional FitCloud Pro OTA protocol plugin
+  s.subspec 'FitCloudProOTA' do |fitcloud_pro_ota|
+    fitcloud_pro_ota.vendored_frameworks = 'AIBudsSDK/OTA/FitCloudPro/AIBudsFitCloudProOTA.xcframework'
+    fitcloud_pro_ota.dependency 'AIBudsSDK/Core'
+    fitcloud_pro_ota.frameworks = 'Foundation', 'CoreBluetooth'
+  end
+
+  # Optional Jieli single-bank OTA protocol plugin
+  s.subspec 'JieliOTA' do |jieli_ota|
+    jieli_ota.vendored_frameworks = 'AIBudsSDK/OTA/Jieli/AIBudsJieliOTA.xcframework'
+    jieli_ota.dependency 'AIBudsSDK/Core'
+    jieli_ota.dependency 'AIBudsSDK/ThirdParty/JieliOTA'
+    jieli_ota.frameworks = 'Foundation', 'CoreBluetooth'
   end
 
   # Third-party libraries collection
@@ -139,6 +154,16 @@ Pod::Spec.new do |s|
     # AWEISIMG - Private implementation used by the optional video stabilization plugin
     thirdparty.subspec 'AWEISIMG' do |aweisimg|
       aweisimg.vendored_frameworks = 'AIBudsSDK/ThirdParty/AWEISIMG/AWEISIMG_SDK.xcframework'
+    end
+
+
+    # Jieli OTA SDK 2.5.0 - manually updated together as one release bundle
+    thirdparty.subspec 'JieliOTA' do |jieli_ota|
+      jieli_ota.vendored_frameworks = 'AIBudsSDK/ThirdParty/Jieli/JL_OTALib.xcframework',
+                                       'AIBudsSDK/ThirdParty/Jieli/JL_AdvParse.xcframework',
+                                       'AIBudsSDK/ThirdParty/Jieli/JL_HashPair.xcframework',
+                                       'AIBudsSDK/ThirdParty/Jieli/JLLogHelper.xcframework'
+      jieli_ota.frameworks = 'Foundation', 'CoreBluetooth'
     end
   end
 
@@ -243,6 +268,8 @@ Pod::Spec.new do |s|
     all_in_one.vendored_frameworks = 'AIBudsSDK/AllInOne/AIBudsAllInOne.xcframework'
     all_in_one.dependency 'AIBudsSDK/Log'
     all_in_one.dependency 'AIBudsSDK/ABMate'
+    all_in_one.dependency 'AIBudsSDK/FitCloudProOTA'
+    all_in_one.dependency 'AIBudsSDK/JieliOTA'
     all_in_one.dependency 'AIBudsSDK/AI'
     all_in_one.dependency 'AIBudsSDK/VoiceAssistant'
     all_in_one.dependency 'AIBudsSDK/CrashReporter'

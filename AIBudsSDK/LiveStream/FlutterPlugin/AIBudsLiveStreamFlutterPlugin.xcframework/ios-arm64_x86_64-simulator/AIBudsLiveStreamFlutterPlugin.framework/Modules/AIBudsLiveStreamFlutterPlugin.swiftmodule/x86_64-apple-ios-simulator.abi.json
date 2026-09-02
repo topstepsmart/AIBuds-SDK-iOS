@@ -19,7 +19,10 @@
         "name": "Dispatch",
         "printedName": "Dispatch",
         "declKind": "Import",
-        "moduleName": "AIBudsLiveStreamFlutterPlugin"
+        "moduleName": "AIBudsLiveStreamFlutterPlugin",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -53,7 +56,10 @@
         "name": "AIBudsLiveStream",
         "printedName": "AIBudsLiveStream",
         "declKind": "Import",
-        "moduleName": "AIBudsLiveStreamFlutterPlugin"
+        "moduleName": "AIBudsLiveStreamFlutterPlugin",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -634,7 +640,10 @@
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
-        "moduleName": "AIBudsLiveStreamFlutterPlugin"
+        "moduleName": "AIBudsLiveStreamFlutterPlugin",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -648,7 +657,10 @@
         "name": "AIBudsLiveStream",
         "printedName": "AIBudsLiveStream",
         "declKind": "Import",
-        "moduleName": "AIBudsLiveStreamFlutterPlugin"
+        "moduleName": "AIBudsLiveStreamFlutterPlugin",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -682,7 +694,10 @@
         "name": "AIBudsLiveStream",
         "printedName": "AIBudsLiveStream",
         "declKind": "Import",
-        "moduleName": "AIBudsLiveStreamFlutterPlugin"
+        "moduleName": "AIBudsLiveStreamFlutterPlugin",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -711,224 +726,224 @@
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStreamFlutterPlugin\/AIBudsLiveStreamFlutterPlugin.swift",
       "kind": "StringLiteral",
-      "offset": 333,
+      "offset": 342,
       "length": 6,
       "value": "\"🍡\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStreamFlutterPlugin\/AIBudsLiveStreamFlutterPlugin.swift",
       "kind": "StringLiteral",
-      "offset": 425,
+      "offset": 434,
       "length": 34,
       "value": "\"AIBudsLiveStreamFlutterPluginSDK\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStreamFlutterPlugin\/AIBudsLiveStreamFlutterPlugin.swift",
       "kind": "StringLiteral",
-      "offset": 532,
+      "offset": 541,
       "length": 52,
       "value": "\"com.topstep.sdks.aibuds.live-stream.flutter-plugin\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStreamFlutterPlugin\/AIBudsLiveStreamFlutterPlugin.swift",
       "kind": "StringLiteral",
-      "offset": 770,
+      "offset": 779,
       "length": 21,
       "value": "\"CFBundleDisplayName\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStreamFlutterPlugin\/AIBudsLiveStreamFlutterPlugin.swift",
       "kind": "StringLiteral",
-      "offset": 847,
+      "offset": 856,
       "length": 14,
       "value": "\"CFBundleName\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStreamFlutterPlugin\/AIBudsLiveStreamFlutterPlugin.swift",
       "kind": "StringLiteral",
-      "offset": 877,
+      "offset": 886,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStreamFlutterPlugin\/AIBudsLiveStreamFlutterPlugin.swift",
       "kind": "StringLiteral",
-      "offset": 1002,
+      "offset": 1011,
       "length": 28,
       "value": "\"CFBundleShortVersionString\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStreamFlutterPlugin\/AIBudsLiveStreamFlutterPlugin.swift",
       "kind": "StringLiteral",
-      "offset": 1046,
+      "offset": 1055,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStreamFlutterPlugin\/AIBudsLiveStreamFlutterPlugin.swift",
       "kind": "StringLiteral",
-      "offset": 1168,
+      "offset": 1177,
       "length": 17,
       "value": "\"CFBundleVersion\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStreamFlutterPlugin\/AIBudsLiveStreamFlutterPlugin.swift",
       "kind": "StringLiteral",
-      "offset": 1201,
+      "offset": 1210,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStreamFlutterPlugin\/AIBudsLiveStreamFlutterPluginSDK.swift",
       "kind": "StringLiteral",
-      "offset": 672,
+      "offset": 681,
       "length": 52,
       "value": "\"com.topstep.sdks.aibuds.live-stream.flutter-plugin\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStreamFlutterPlugin\/AIBudsLiveStreamFlutterPluginSDK.swift",
       "kind": "StringLiteral",
-      "offset": 861,
+      "offset": 870,
       "length": 64,
       "value": "\"com.topstep.sdks.aibuds.live-stream.flutter-plugin\/player-view\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStreamFlutterPlugin\/AIBudsLiveStreamFlutterPluginSDK.swift",
       "kind": "StringLiteral",
-      "offset": 7630,
+      "offset": 7639,
       "length": 100,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStreamFlutterPlugin\/AIBudsLiveStreamFlutterPluginSDK.swift",
       "kind": "StringLiteral",
-      "offset": 7648,
+      "offset": 7657,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStreamFlutterPlugin\/AIBudsLiveStreamFlutterPluginSDK.swift",
       "kind": "StringLiteral",
-      "offset": 7659,
+      "offset": 7668,
       "length": 1,
       "value": "\" V\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStreamFlutterPlugin\/AIBudsLiveStreamFlutterPluginSDK.swift",
       "kind": "StringLiteral",
-      "offset": 7675,
+      "offset": 7684,
       "length": 1,
       "value": "\" (Build\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStreamFlutterPlugin\/AIBudsLiveStreamFlutterPluginSDK.swift",
       "kind": "StringLiteral",
-      "offset": 7694,
+      "offset": 7703,
       "length": 1,
       "value": "\") Release Date: \""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStreamFlutterPlugin\/AIBudsLiveStreamFlutterPluginSDK.swift",
       "kind": "StringLiteral",
-      "offset": 7729,
+      "offset": 7738,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStreamFlutterPlugin\/AIBudsLiveStreamFlutterPluginSDK.swift",
       "kind": "StringLiteral",
-      "offset": 7888,
+      "offset": 7897,
       "length": 6,
       "value": "\"name\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStreamFlutterPlugin\/AIBudsLiveStreamFlutterPluginSDK.swift",
       "kind": "StringLiteral",
-      "offset": 7918,
+      "offset": 7927,
       "length": 9,
       "value": "\"version\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStreamFlutterPlugin\/AIBudsLiveStreamFlutterPluginSDK.swift",
       "kind": "StringLiteral",
-      "offset": 7954,
+      "offset": 7963,
       "length": 7,
       "value": "\"build\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStreamFlutterPlugin\/AIBudsLiveStreamFlutterPluginSDK.swift",
       "kind": "StringLiteral",
-      "offset": 7986,
+      "offset": 7995,
       "length": 13,
       "value": "\"releaseDate\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStreamFlutterPlugin\/AIBudsLiveStreamFlutterPluginSDK.swift",
       "kind": "StringLiteral",
-      "offset": 8031,
+      "offset": 8040,
       "length": 18,
       "value": "\"bundleIdentifier\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStreamFlutterPlugin\/AIBudsLiveStreamFlutterPluginSDK.swift",
       "kind": "StringLiteral",
-      "offset": 8086,
+      "offset": 8095,
       "length": 13,
       "value": "\"channelName\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStreamFlutterPlugin\/AIBudsLiveStreamFlutterPluginSDK.swift",
       "kind": "StringLiteral",
-      "offset": 8126,
+      "offset": 8135,
       "length": 18,
       "value": "\"platformViewType\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStreamFlutterPlugin\/AIBudsLiveStreamFlutterPluginSDK.swift",
       "kind": "StringLiteral",
-      "offset": 8176,
+      "offset": 8185,
       "length": 18,
       "value": "\"aibudsLiveStream\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStreamFlutterPlugin\/AIBudsLiveStreamFlutterPluginSDK.swift",
       "kind": "StringLiteral",
-      "offset": 8214,
+      "offset": 8223,
       "length": 9,
       "value": "\"version\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStreamFlutterPlugin\/AIBudsLiveStreamFlutterPluginSDK.swift",
       "kind": "StringLiteral",
-      "offset": 8273,
+      "offset": 8282,
       "length": 7,
       "value": "\"build\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStreamFlutterPlugin\/AIBudsLiveStreamFlutterPluginSDK.swift",
       "kind": "StringLiteral",
-      "offset": 8328,
+      "offset": 8337,
       "length": 13,
       "value": "\"releaseDate\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStreamFlutterPlugin\/AIBudsLiveStreamFlutterPluginSDK.swift",
       "kind": "StringLiteral",
-      "offset": 8395,
+      "offset": 8404,
       "length": 13,
       "value": "\"description\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStreamFlutterPlugin\/LiveStreamFlutterPlatformView.swift",
       "kind": "Dictionary",
-      "offset": 14425,
+      "offset": 14443,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStreamFlutterPlugin\/LiveStreamFlutterStreamer.swift",
       "kind": "Dictionary",
-      "offset": 9029,
+      "offset": 9038,
       "length": 3,
       "value": "[]"
     },
@@ -937,14 +952,14 @@
       "kind": "StringLiteral",
       "offset": 257,
       "length": 14,
-      "value": "\"1.0.1-beta.5\""
+      "value": "\"1.0.1-beta.6\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/SDKBuildInfo\/SDK_Build_Info.swift",
       "kind": "StringLiteral",
       "offset": 387,
       "length": 13,
-      "value": "\"20260902001\""
+      "value": "\"20260902002\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/SDKBuildInfo\/SDK_Build_Info.swift",

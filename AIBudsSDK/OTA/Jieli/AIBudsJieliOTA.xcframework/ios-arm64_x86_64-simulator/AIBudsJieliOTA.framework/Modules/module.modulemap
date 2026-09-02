@@ -1,0 +1,3 @@
+framework module AIBudsJieliOTA {
+  header "AIBudsJieliOTA-Swift.h"
+}

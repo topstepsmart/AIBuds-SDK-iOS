@@ -1081,7 +1081,10 @@
         "name": "QuartzCore",
         "printedName": "QuartzCore",
         "declKind": "Import",
-        "moduleName": "AIBudsLiveStream"
+        "moduleName": "AIBudsLiveStream",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -2810,6 +2813,7 @@
         "declKind": "Import",
         "moduleName": "AIBudsLiveStream",
         "declAttributes": [
+          "AccessControl",
           "RawDocComment"
         ]
       },
@@ -9565,14 +9569,20 @@
         "name": "Metal",
         "printedName": "Metal",
         "declKind": "Import",
-        "moduleName": "AIBudsLiveStream"
+        "moduleName": "AIBudsLiveStream",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
         "name": "simd",
         "printedName": "simd",
         "declKind": "Import",
-        "moduleName": "AIBudsLiveStream"
+        "moduleName": "AIBudsLiveStream",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -9586,14 +9596,20 @@
         "name": "Metal",
         "printedName": "Metal",
         "declKind": "Import",
-        "moduleName": "AIBudsLiveStream"
+        "moduleName": "AIBudsLiveStream",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
         "name": "simd",
         "printedName": "simd",
         "declKind": "Import",
-        "moduleName": "AIBudsLiveStream"
+        "moduleName": "AIBudsLiveStream",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -9607,14 +9623,20 @@
         "name": "Metal",
         "printedName": "Metal",
         "declKind": "Import",
-        "moduleName": "AIBudsLiveStream"
+        "moduleName": "AIBudsLiveStream",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
         "name": "simd",
         "printedName": "simd",
         "declKind": "Import",
-        "moduleName": "AIBudsLiveStream"
+        "moduleName": "AIBudsLiveStream",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -9628,28 +9650,40 @@
         "name": "Metal",
         "printedName": "Metal",
         "declKind": "Import",
-        "moduleName": "AIBudsLiveStream"
+        "moduleName": "AIBudsLiveStream",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
         "name": "CoreVideo",
         "printedName": "CoreVideo",
         "declKind": "Import",
-        "moduleName": "AIBudsLiveStream"
+        "moduleName": "AIBudsLiveStream",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
         "name": "simd",
         "printedName": "simd",
         "declKind": "Import",
-        "moduleName": "AIBudsLiveStream"
+        "moduleName": "AIBudsLiveStream",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
         "name": "QuartzCore",
         "printedName": "QuartzCore",
         "declKind": "Import",
-        "moduleName": "AIBudsLiveStream"
+        "moduleName": "AIBudsLiveStream",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -9673,28 +9707,40 @@
         "name": "Metal",
         "printedName": "Metal",
         "declKind": "Import",
-        "moduleName": "AIBudsLiveStream"
+        "moduleName": "AIBudsLiveStream",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
         "name": "CoreVideo",
         "printedName": "CoreVideo",
         "declKind": "Import",
-        "moduleName": "AIBudsLiveStream"
+        "moduleName": "AIBudsLiveStream",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
         "name": "simd",
         "printedName": "simd",
         "declKind": "Import",
-        "moduleName": "AIBudsLiveStream"
+        "moduleName": "AIBudsLiveStream",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
         "name": "QuartzCore",
         "printedName": "QuartzCore",
         "declKind": "Import",
-        "moduleName": "AIBudsLiveStream"
+        "moduleName": "AIBudsLiveStream",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -9708,28 +9754,40 @@
         "name": "Metal",
         "printedName": "Metal",
         "declKind": "Import",
-        "moduleName": "AIBudsLiveStream"
+        "moduleName": "AIBudsLiveStream",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
         "name": "CoreVideo",
         "printedName": "CoreVideo",
         "declKind": "Import",
-        "moduleName": "AIBudsLiveStream"
+        "moduleName": "AIBudsLiveStream",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
         "name": "simd",
         "printedName": "simd",
         "declKind": "Import",
-        "moduleName": "AIBudsLiveStream"
+        "moduleName": "AIBudsLiveStream",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
         "name": "QuartzCore",
         "printedName": "QuartzCore",
         "declKind": "Import",
-        "moduleName": "AIBudsLiveStream"
+        "moduleName": "AIBudsLiveStream",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -9743,28 +9801,40 @@
         "name": "Metal",
         "printedName": "Metal",
         "declKind": "Import",
-        "moduleName": "AIBudsLiveStream"
+        "moduleName": "AIBudsLiveStream",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
         "name": "CoreVideo",
         "printedName": "CoreVideo",
         "declKind": "Import",
-        "moduleName": "AIBudsLiveStream"
+        "moduleName": "AIBudsLiveStream",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
         "name": "simd",
         "printedName": "simd",
         "declKind": "Import",
-        "moduleName": "AIBudsLiveStream"
+        "moduleName": "AIBudsLiveStream",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
         "name": "QuartzCore",
         "printedName": "QuartzCore",
         "declKind": "Import",
-        "moduleName": "AIBudsLiveStream"
+        "moduleName": "AIBudsLiveStream",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -9778,28 +9848,40 @@
         "name": "Metal",
         "printedName": "Metal",
         "declKind": "Import",
-        "moduleName": "AIBudsLiveStream"
+        "moduleName": "AIBudsLiveStream",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
         "name": "CoreVideo",
         "printedName": "CoreVideo",
         "declKind": "Import",
-        "moduleName": "AIBudsLiveStream"
+        "moduleName": "AIBudsLiveStream",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
         "name": "simd",
         "printedName": "simd",
         "declKind": "Import",
-        "moduleName": "AIBudsLiveStream"
+        "moduleName": "AIBudsLiveStream",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
         "name": "QuartzCore",
         "printedName": "QuartzCore",
         "declKind": "Import",
-        "moduleName": "AIBudsLiveStream"
+        "moduleName": "AIBudsLiveStream",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -9813,146 +9895,19 @@
         "name": "Metal",
         "printedName": "Metal",
         "declKind": "Import",
-        "moduleName": "AIBudsLiveStream"
+        "moduleName": "AIBudsLiveStream",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
         "name": "CoreVideo",
         "printedName": "CoreVideo",
         "declKind": "Import",
-        "moduleName": "AIBudsLiveStream"
-      },
-      {
-        "kind": "Import",
-        "name": "simd",
-        "printedName": "simd",
-        "declKind": "Import",
-        "moduleName": "AIBudsLiveStream"
-      },
-      {
-        "kind": "Import",
-        "name": "CoreGraphics",
-        "printedName": "CoreGraphics",
-        "declKind": "Import",
-        "moduleName": "AIBudsLiveStream"
-      },
-      {
-        "kind": "Import",
-        "name": "Metal",
-        "printedName": "Metal",
-        "declKind": "Import",
-        "moduleName": "AIBudsLiveStream"
-      },
-      {
-        "kind": "Import",
-        "name": "simd",
-        "printedName": "simd",
-        "declKind": "Import",
-        "moduleName": "AIBudsLiveStream"
-      },
-      {
-        "kind": "Import",
-        "name": "CoreGraphics",
-        "printedName": "CoreGraphics",
-        "declKind": "Import",
-        "moduleName": "AIBudsLiveStream"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "AIBudsLiveStream"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
         "moduleName": "AIBudsLiveStream",
         "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Metal",
-        "printedName": "Metal",
-        "declKind": "Import",
-        "moduleName": "AIBudsLiveStream"
-      },
-      {
-        "kind": "Import",
-        "name": "QuartzCore",
-        "printedName": "QuartzCore",
-        "declKind": "Import",
-        "moduleName": "AIBudsLiveStream"
-      },
-      {
-        "kind": "Import",
-        "name": "simd",
-        "printedName": "simd",
-        "declKind": "Import",
-        "moduleName": "AIBudsLiveStream"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "AIBudsLiveStream",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "AIBudsLiveStream",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "AIBudsLiveStream",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "AIBudsLiveStream",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "AIBudsLiveStream",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "AIBudsLiveStream",
-        "declAttributes": [
-          "RawDocComment"
+          "AccessControl"
         ]
       },
       {
@@ -9960,36 +9915,9 @@
         "name": "simd",
         "printedName": "simd",
         "declKind": "Import",
-        "moduleName": "AIBudsLiveStream"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
         "moduleName": "AIBudsLiveStream",
         "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "AIBudsLiveStream",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "AIBudsLiveStream",
-        "declAttributes": [
-          "RawDocComment"
+          "AccessControl"
         ]
       },
       {
@@ -9999,6 +9927,194 @@
         "declKind": "Import",
         "moduleName": "AIBudsLiveStream",
         "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Metal",
+        "printedName": "Metal",
+        "declKind": "Import",
+        "moduleName": "AIBudsLiveStream",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "simd",
+        "printedName": "simd",
+        "declKind": "Import",
+        "moduleName": "AIBudsLiveStream",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreGraphics",
+        "printedName": "CoreGraphics",
+        "declKind": "Import",
+        "moduleName": "AIBudsLiveStream",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AIBudsLiveStream"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AIBudsLiveStream",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Metal",
+        "printedName": "Metal",
+        "declKind": "Import",
+        "moduleName": "AIBudsLiveStream",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "QuartzCore",
+        "printedName": "QuartzCore",
+        "declKind": "Import",
+        "moduleName": "AIBudsLiveStream",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "simd",
+        "printedName": "simd",
+        "declKind": "Import",
+        "moduleName": "AIBudsLiveStream",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AIBudsLiveStream",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AIBudsLiveStream",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AIBudsLiveStream",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AIBudsLiveStream",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AIBudsLiveStream",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AIBudsLiveStream",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "simd",
+        "printedName": "simd",
+        "declKind": "Import",
+        "moduleName": "AIBudsLiveStream",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AIBudsLiveStream",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AIBudsLiveStream",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AIBudsLiveStream",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreGraphics",
+        "printedName": "CoreGraphics",
+        "declKind": "Import",
+        "moduleName": "AIBudsLiveStream",
+        "declAttributes": [
+          "AccessControl",
           "RawDocComment"
         ]
       },
@@ -10016,6 +10132,7 @@
         "declKind": "Import",
         "moduleName": "AIBudsLiveStream",
         "declAttributes": [
+          "AccessControl",
           "RawDocComment"
         ]
       },
@@ -10088,7 +10205,10 @@
         "name": "CoreGraphics",
         "printedName": "CoreGraphics",
         "declKind": "Import",
-        "moduleName": "AIBudsLiveStream"
+        "moduleName": "AIBudsLiveStream",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -10105,7 +10225,10 @@
         "name": "CoreGraphics",
         "printedName": "CoreGraphics",
         "declKind": "Import",
-        "moduleName": "AIBudsLiveStream"
+        "moduleName": "AIBudsLiveStream",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -10122,7 +10245,10 @@
         "name": "CoreGraphics",
         "printedName": "CoreGraphics",
         "declKind": "Import",
-        "moduleName": "AIBudsLiveStream"
+        "moduleName": "AIBudsLiveStream",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -10139,7 +10265,10 @@
         "name": "CoreGraphics",
         "printedName": "CoreGraphics",
         "declKind": "Import",
-        "moduleName": "AIBudsLiveStream"
+        "moduleName": "AIBudsLiveStream",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -10156,75 +10285,10 @@
         "name": "CoreGraphics",
         "printedName": "CoreGraphics",
         "declKind": "Import",
-        "moduleName": "AIBudsLiveStream"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
         "moduleName": "AIBudsLiveStream",
         "declAttributes": [
-          "RawDocComment"
+          "AccessControl"
         ]
-      },
-      {
-        "kind": "Import",
-        "name": "simd",
-        "printedName": "simd",
-        "declKind": "Import",
-        "moduleName": "AIBudsLiveStream"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "AIBudsLiveStream",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "simd",
-        "printedName": "simd",
-        "declKind": "Import",
-        "moduleName": "AIBudsLiveStream"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "AIBudsLiveStream",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "CoreGraphics",
-        "printedName": "CoreGraphics",
-        "declKind": "Import",
-        "moduleName": "AIBudsLiveStream"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "AIBudsLiveStream",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "CoreGraphics",
-        "printedName": "CoreGraphics",
-        "declKind": "Import",
-        "moduleName": "AIBudsLiveStream"
       },
       {
         "kind": "Import",
@@ -10243,6 +10307,87 @@
         "declKind": "Import",
         "moduleName": "AIBudsLiveStream",
         "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AIBudsLiveStream",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "simd",
+        "printedName": "simd",
+        "declKind": "Import",
+        "moduleName": "AIBudsLiveStream",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AIBudsLiveStream",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreGraphics",
+        "printedName": "CoreGraphics",
+        "declKind": "Import",
+        "moduleName": "AIBudsLiveStream",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AIBudsLiveStream",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreGraphics",
+        "printedName": "CoreGraphics",
+        "declKind": "Import",
+        "moduleName": "AIBudsLiveStream",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AIBudsLiveStream",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "simd",
+        "printedName": "simd",
+        "declKind": "Import",
+        "moduleName": "AIBudsLiveStream",
+        "declAttributes": [
+          "AccessControl",
           "RawDocComment"
         ]
       },
@@ -10261,14 +10406,20 @@
         "name": "CoreGraphics",
         "printedName": "CoreGraphics",
         "declKind": "Import",
-        "moduleName": "AIBudsLiveStream"
+        "moduleName": "AIBudsLiveStream",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
         "name": "simd",
         "printedName": "simd",
         "declKind": "Import",
-        "moduleName": "AIBudsLiveStream"
+        "moduleName": "AIBudsLiveStream",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -10285,14 +10436,20 @@
         "name": "CoreGraphics",
         "printedName": "CoreGraphics",
         "declKind": "Import",
-        "moduleName": "AIBudsLiveStream"
+        "moduleName": "AIBudsLiveStream",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
         "name": "simd",
         "printedName": "simd",
         "declKind": "Import",
-        "moduleName": "AIBudsLiveStream"
+        "moduleName": "AIBudsLiveStream",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -10316,7 +10473,10 @@
         "name": "CoreMotion",
         "printedName": "CoreMotion",
         "declKind": "Import",
-        "moduleName": "AIBudsLiveStream"
+        "moduleName": "AIBudsLiveStream",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -10333,7 +10493,10 @@
         "name": "AVFoundation",
         "printedName": "AVFoundation",
         "declKind": "Import",
-        "moduleName": "AIBudsLiveStream"
+        "moduleName": "AIBudsLiveStream",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -14115,35 +14278,50 @@
         "name": "AVFoundation",
         "printedName": "AVFoundation",
         "declKind": "Import",
-        "moduleName": "AIBudsLiveStream"
+        "moduleName": "AIBudsLiveStream",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
         "name": "Metal",
         "printedName": "Metal",
         "declKind": "Import",
-        "moduleName": "AIBudsLiveStream"
+        "moduleName": "AIBudsLiveStream",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
         "name": "QuartzCore",
         "printedName": "QuartzCore",
         "declKind": "Import",
-        "moduleName": "AIBudsLiveStream"
+        "moduleName": "AIBudsLiveStream",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
         "name": "CoreImage",
         "printedName": "CoreImage",
         "declKind": "Import",
-        "moduleName": "AIBudsLiveStream"
+        "moduleName": "AIBudsLiveStream",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
         "name": "simd",
         "printedName": "simd",
         "declKind": "Import",
-        "moduleName": "AIBudsLiveStream"
+        "moduleName": "AIBudsLiveStream",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -15538,7 +15716,10 @@
         "name": "Accelerate",
         "printedName": "Accelerate",
         "declKind": "Import",
-        "moduleName": "AIBudsLiveStream"
+        "moduleName": "AIBudsLiveStream",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -15575,7 +15756,10 @@
         "name": "AVFoundation",
         "printedName": "AVFoundation",
         "declKind": "Import",
-        "moduleName": "AIBudsLiveStream"
+        "moduleName": "AIBudsLiveStream",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -15602,54 +15786,16 @@
         "name": "AVFoundation",
         "printedName": "AVFoundation",
         "declKind": "Import",
-        "moduleName": "AIBudsLiveStream"
+        "moduleName": "AIBudsLiveStream",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
         "name": "Accelerate",
         "printedName": "Accelerate",
         "declKind": "Import",
-        "moduleName": "AIBudsLiveStream"
-      },
-      {
-        "kind": "Import",
-        "name": "AIBudsLog",
-        "printedName": "AIBudsLog",
-        "declKind": "Import",
-        "moduleName": "AIBudsLiveStream",
-        "declAttributes": [
-          "AccessControl"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "AIBudsLiveStream",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "CoreGraphics",
-        "printedName": "CoreGraphics",
-        "declKind": "Import",
-        "moduleName": "AIBudsLiveStream"
-      },
-      {
-        "kind": "Import",
-        "name": "AVFoundation",
-        "printedName": "AVFoundation",
-        "declKind": "Import",
-        "moduleName": "AIBudsLiveStream"
-      },
-      {
-        "kind": "Import",
-        "name": "FFMpeg",
-        "printedName": "FFMpeg",
-        "declKind": "Import",
         "moduleName": "AIBudsLiveStream",
         "declAttributes": [
           "AccessControl"
@@ -15680,183 +15826,9 @@
         "name": "CoreGraphics",
         "printedName": "CoreGraphics",
         "declKind": "Import",
-        "moduleName": "AIBudsLiveStream"
-      },
-      {
-        "kind": "Import",
-        "name": "FFMpeg",
-        "printedName": "FFMpeg",
-        "declKind": "Import",
         "moduleName": "AIBudsLiveStream",
         "declAttributes": [
           "AccessControl"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "AIBudsLog",
-        "printedName": "AIBudsLog",
-        "declKind": "Import",
-        "moduleName": "AIBudsLiveStream",
-        "declAttributes": [
-          "AccessControl"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "AIBudsLiveStream",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "FFMpeg",
-        "printedName": "FFMpeg",
-        "declKind": "Import",
-        "moduleName": "AIBudsLiveStream",
-        "declAttributes": [
-          "AccessControl"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "AIBudsLiveStream",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "AIBudsLiveStream",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "FFMpeg",
-        "printedName": "FFMpeg",
-        "declKind": "Import",
-        "moduleName": "AIBudsLiveStream",
-        "declAttributes": [
-          "AccessControl"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "AIBudsLiveStream",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "FFMpeg",
-        "printedName": "FFMpeg",
-        "declKind": "Import",
-        "moduleName": "AIBudsLiveStream",
-        "declAttributes": [
-          "AccessControl"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "AIBudsLiveStream",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "FFMpeg",
-        "printedName": "FFMpeg",
-        "declKind": "Import",
-        "moduleName": "AIBudsLiveStream",
-        "declAttributes": [
-          "AccessControl"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "AIBudsLiveStream",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "FFMpeg",
-        "printedName": "FFMpeg",
-        "declKind": "Import",
-        "moduleName": "AIBudsLiveStream",
-        "declAttributes": [
-          "AccessControl"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "AIBudsLog",
-        "printedName": "AIBudsLog",
-        "declKind": "Import",
-        "moduleName": "AIBudsLiveStream",
-        "declAttributes": [
-          "AccessControl"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "AIBudsLiveStream",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "CoreGraphics",
-        "printedName": "CoreGraphics",
-        "declKind": "Import",
-        "moduleName": "AIBudsLiveStream"
-      },
-      {
-        "kind": "Import",
-        "name": "FFMpeg",
-        "printedName": "FFMpeg",
-        "declKind": "Import",
-        "moduleName": "AIBudsLiveStream",
-        "declAttributes": [
-          "AccessControl"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "AIBudsLiveStream",
-        "declAttributes": [
-          "RawDocComment"
         ]
       },
       {
@@ -15864,14 +15836,250 @@
         "name": "AVFoundation",
         "printedName": "AVFoundation",
         "declKind": "Import",
-        "moduleName": "AIBudsLiveStream"
+        "moduleName": "AIBudsLiveStream",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "FFMpeg",
+        "printedName": "FFMpeg",
+        "declKind": "Import",
+        "moduleName": "AIBudsLiveStream",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AIBudsLog",
+        "printedName": "AIBudsLog",
+        "declKind": "Import",
+        "moduleName": "AIBudsLiveStream",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AIBudsLiveStream",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreGraphics",
+        "printedName": "CoreGraphics",
+        "declKind": "Import",
+        "moduleName": "AIBudsLiveStream",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "FFMpeg",
+        "printedName": "FFMpeg",
+        "declKind": "Import",
+        "moduleName": "AIBudsLiveStream",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AIBudsLog",
+        "printedName": "AIBudsLog",
+        "declKind": "Import",
+        "moduleName": "AIBudsLiveStream",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AIBudsLiveStream",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "FFMpeg",
+        "printedName": "FFMpeg",
+        "declKind": "Import",
+        "moduleName": "AIBudsLiveStream",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AIBudsLiveStream",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AIBudsLiveStream",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "FFMpeg",
+        "printedName": "FFMpeg",
+        "declKind": "Import",
+        "moduleName": "AIBudsLiveStream",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AIBudsLiveStream",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "FFMpeg",
+        "printedName": "FFMpeg",
+        "declKind": "Import",
+        "moduleName": "AIBudsLiveStream",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AIBudsLiveStream",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "FFMpeg",
+        "printedName": "FFMpeg",
+        "declKind": "Import",
+        "moduleName": "AIBudsLiveStream",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AIBudsLiveStream",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "FFMpeg",
+        "printedName": "FFMpeg",
+        "declKind": "Import",
+        "moduleName": "AIBudsLiveStream",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AIBudsLog",
+        "printedName": "AIBudsLog",
+        "declKind": "Import",
+        "moduleName": "AIBudsLiveStream",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AIBudsLiveStream",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreGraphics",
+        "printedName": "CoreGraphics",
+        "declKind": "Import",
+        "moduleName": "AIBudsLiveStream",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "FFMpeg",
+        "printedName": "FFMpeg",
+        "declKind": "Import",
+        "moduleName": "AIBudsLiveStream",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AIBudsLiveStream",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AVFoundation",
+        "printedName": "AVFoundation",
+        "declKind": "Import",
+        "moduleName": "AIBudsLiveStream",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
         "name": "ImageIO",
         "printedName": "ImageIO",
         "declKind": "Import",
-        "moduleName": "AIBudsLiveStream"
+        "moduleName": "AIBudsLiveStream",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -15908,14 +16116,20 @@
         "name": "CoreGraphics",
         "printedName": "CoreGraphics",
         "declKind": "Import",
-        "moduleName": "AIBudsLiveStream"
+        "moduleName": "AIBudsLiveStream",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
         "name": "CoreVideo",
         "printedName": "CoreVideo",
         "declKind": "Import",
-        "moduleName": "AIBudsLiveStream"
+        "moduleName": "AIBudsLiveStream",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -15929,7 +16143,10 @@
         "name": "Metal",
         "printedName": "Metal",
         "declKind": "Import",
-        "moduleName": "AIBudsLiveStream"
+        "moduleName": "AIBudsLiveStream",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -15986,7 +16203,10 @@
         "name": "VideoToolbox",
         "printedName": "VideoToolbox",
         "declKind": "Import",
-        "moduleName": "AIBudsLiveStream"
+        "moduleName": "AIBudsLiveStream",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -16027,7 +16247,10 @@
         "name": "CoreGraphics",
         "printedName": "CoreGraphics",
         "declKind": "Import",
-        "moduleName": "AIBudsLiveStream"
+        "moduleName": "AIBudsLiveStream",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -16054,7 +16277,10 @@
         "name": "Dispatch",
         "printedName": "Dispatch",
         "declKind": "Import",
-        "moduleName": "AIBudsLiveStream"
+        "moduleName": "AIBudsLiveStream",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -16489,56 +16715,56 @@
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Performance\/LiveStreamPerformanceMonitor.swift",
       "kind": "StringLiteral",
-      "offset": 696,
+      "offset": 705,
       "length": 52,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Performance\/LiveStreamPerformanceMonitor.swift",
       "kind": "StringLiteral",
-      "offset": 721,
+      "offset": 730,
       "length": 1,
       "value": "\".performance.monitor.queue\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Performance\/LiveStreamPerformanceMonitor.swift",
       "kind": "Array",
-      "offset": 842,
+      "offset": 851,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Performance\/LiveStreamPerformanceMonitor.swift",
       "kind": "Array",
-      "offset": 879,
+      "offset": 888,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Performance\/LiveStreamPerformanceMonitor.swift",
       "kind": "IntegerLiteral",
-      "offset": 929,
+      "offset": 938,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Performance\/LiveStreamPerformanceMonitor.swift",
       "kind": "FloatLiteral",
-      "offset": 1076,
+      "offset": 1085,
       "length": 5,
       "value": "0.050"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Performance\/LiveStreamPerformanceMonitor.swift",
       "kind": "FloatLiteral",
-      "offset": 1126,
+      "offset": 1135,
       "length": 5,
       "value": "0.250"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Performance\/LiveStreamPerformanceMonitor.swift",
       "kind": "BooleanLiteral",
-      "offset": 1160,
+      "offset": 1169,
       "length": 5,
       "value": "false"
     },
@@ -16608,245 +16834,245 @@
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Player\/LiveStreamingPlayer.swift",
       "kind": "IntegerLiteral",
-      "offset": 7550,
+      "offset": 7559,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Player\/LiveStreamingPlayer.swift",
       "kind": "IntegerLiteral",
-      "offset": 8252,
+      "offset": 8261,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Player\/LiveStreamingPlayer.swift",
       "kind": "IntegerLiteral",
-      "offset": 8852,
+      "offset": 8861,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Player\/LiveStreamingPlayer.swift",
       "kind": "FloatLiteral",
-      "offset": 9690,
+      "offset": 9699,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Player\/LiveStreamingPlayer.swift",
       "kind": "BooleanLiteral",
-      "offset": 10069,
+      "offset": 10078,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Player\/LiveStreamingPlayer.swift",
       "kind": "BooleanLiteral",
-      "offset": 11734,
+      "offset": 11743,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Player\/LiveStreamingPlayer.swift",
       "kind": "Array",
-      "offset": 12073,
+      "offset": 12082,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Player\/LiveStreamingPlayer.swift",
       "kind": "Array",
-      "offset": 12410,
+      "offset": 12419,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Player\/LiveStreamingPlayer.swift",
       "kind": "BooleanLiteral",
-      "offset": 13585,
+      "offset": 13594,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Player\/LiveStreamingPlayer.swift",
       "kind": "BooleanLiteral",
-      "offset": 14427,
+      "offset": 14436,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Player\/LiveStreamingPlayer.swift",
       "kind": "BooleanLiteral",
-      "offset": 16263,
+      "offset": 16272,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Player\/LiveStreamingPlayer.swift",
       "kind": "BooleanLiteral",
-      "offset": 16404,
+      "offset": 16413,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Player\/LiveStreamingPlayer.swift",
       "kind": "BooleanLiteral",
-      "offset": 16528,
+      "offset": 16537,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Player\/LiveStreamingPlayer.swift",
       "kind": "StringLiteral",
-      "offset": 16662,
+      "offset": 16671,
       "length": 47,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Player\/LiveStreamingPlayer.swift",
       "kind": "StringLiteral",
-      "offset": 16687,
+      "offset": 16696,
       "length": 1,
       "value": "\".player.control.queue\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Player\/LiveStreamingPlayer.swift",
       "kind": "StringLiteral",
-      "offset": 16883,
+      "offset": 16892,
       "length": 45,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Player\/LiveStreamingPlayer.swift",
       "kind": "StringLiteral",
-      "offset": 16908,
+      "offset": 16917,
       "length": 1,
       "value": "\".player.event.queue\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Player\/LiveStreamingPlayer.swift",
       "kind": "IntegerLiteral",
-      "offset": 17085,
+      "offset": 17094,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Player\/LiveStreamingPlayer.swift",
       "kind": "StringLiteral",
-      "offset": 17222,
+      "offset": 17231,
       "length": 49,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Player\/LiveStreamingPlayer.swift",
       "kind": "StringLiteral",
-      "offset": 17247,
+      "offset": 17256,
       "length": 1,
       "value": "\".player.lifecycle.queue\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Player\/LiveStreamingPlayer.swift",
       "kind": "StringLiteral",
-      "offset": 17413,
+      "offset": 17422,
       "length": 53,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Player\/LiveStreamingPlayer.swift",
       "kind": "StringLiteral",
-      "offset": 17438,
+      "offset": 17447,
       "length": 1,
       "value": "\".player.decoder-setup.queue\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Player\/LiveStreamingPlayer.swift",
       "kind": "StringLiteral",
-      "offset": 17622,
+      "offset": 17631,
       "length": 55,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Player\/LiveStreamingPlayer.swift",
       "kind": "StringLiteral",
-      "offset": 17647,
+      "offset": 17656,
       "length": 1,
       "value": "\".player.decoder-control.queue\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Player\/LiveStreamingPlayer.swift",
       "kind": "IntegerLiteral",
-      "offset": 17834,
+      "offset": 17843,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Player\/LiveStreamingPlayer.swift",
       "kind": "BooleanLiteral",
-      "offset": 17954,
+      "offset": 17963,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Player\/LiveStreamingPlayer.swift",
       "kind": "BooleanLiteral",
-      "offset": 18062,
+      "offset": 18071,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Player\/LiveStreamingPlayer.swift",
       "kind": "BooleanLiteral",
-      "offset": 18204,
+      "offset": 18213,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Player\/LiveStreamingPlayer.swift",
       "kind": "BooleanLiteral",
-      "offset": 18408,
+      "offset": 18417,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Player\/LiveStreamingPlayer.swift",
       "kind": "IntegerLiteral",
-      "offset": 18474,
+      "offset": 18483,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Player\/LiveStreamingPlayer.swift",
       "kind": "IntegerLiteral",
-      "offset": 18620,
+      "offset": 18629,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Player\/LiveStreamingPlayer.swift",
       "kind": "FloatLiteral",
-      "offset": 18681,
+      "offset": 18690,
       "length": 4,
       "value": "0.45"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Player\/LiveStreamingPlayer.swift",
       "kind": "FloatLiteral",
-      "offset": 18749,
+      "offset": 18758,
       "length": 4,
       "value": "0.75"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Player\/LiveStreamingPlayer.swift",
       "kind": "IntegerLiteral",
-      "offset": 56272,
+      "offset": 56281,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Player\/LiveStreamingPlayer.swift",
       "kind": "FloatLiteral",
-      "offset": 56401,
+      "offset": 56410,
       "length": 7,
       "value": "44100.0"
     },
@@ -17112,357 +17338,357 @@
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Metal\/MetalDistortionMesh.swift",
       "kind": "IntegerLiteral",
-      "offset": 153,
+      "offset": 171,
       "length": 5,
       "value": "1"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Metal\/MetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 1933,
+      "offset": 1969,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Metal\/MetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 1983,
+      "offset": 2019,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Metal\/MetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 1995,
+      "offset": 2031,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Metal\/MetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 2027,
+      "offset": 2063,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Metal\/MetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 2044,
+      "offset": 2080,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Metal\/MetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 2076,
+      "offset": 2112,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Metal\/MetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 2126,
+      "offset": 2162,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Metal\/MetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 2202,
+      "offset": 2238,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Metal\/MetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 2219,
+      "offset": 2255,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Metal\/MetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 2248,
+      "offset": 2284,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Metal\/MetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 2296,
+      "offset": 2332,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Metal\/MetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 2325,
+      "offset": 2361,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Metal\/MetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 2534,
+      "offset": 2570,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Metal\/MetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 2584,
+      "offset": 2620,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Metal\/MetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 2658,
+      "offset": 2694,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Metal\/MetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 2690,
+      "offset": 2726,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Metal\/MetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 2707,
+      "offset": 2743,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Metal\/MetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 2739,
+      "offset": 2775,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Metal\/MetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 2788,
+      "offset": 2824,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Metal\/MetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 2862,
+      "offset": 2898,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Metal\/MetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 2894,
+      "offset": 2930,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Metal\/MetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 2911,
+      "offset": 2947,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Metal\/MetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 2943,
+      "offset": 2979,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Metal\/MetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 2993,
+      "offset": 3029,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Metal\/MetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 3070,
+      "offset": 3106,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Metal\/MetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 3102,
+      "offset": 3138,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Metal\/MetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 3119,
+      "offset": 3155,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Metal\/MetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 3151,
+      "offset": 3187,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Metal\/MetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 3201,
+      "offset": 3237,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Metal\/MetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 3280,
+      "offset": 3316,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Metal\/MetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 3312,
+      "offset": 3348,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Metal\/MetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 3329,
+      "offset": 3365,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Metal\/MetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 3361,
+      "offset": 3397,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Metal\/MetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 3411,
+      "offset": 3447,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Metal\/MetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 3489,
+      "offset": 3525,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Metal\/MetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 3521,
+      "offset": 3557,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Metal\/MetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 3538,
+      "offset": 3574,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Metal\/MetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 3567,
+      "offset": 3603,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Metal\/MetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 3649,
+      "offset": 3685,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Metal\/MetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 3850,
+      "offset": 3886,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Metal\/MetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 3900,
+      "offset": 3936,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Metal\/MetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 3912,
+      "offset": 3948,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Metal\/MetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 3944,
+      "offset": 3980,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Metal\/MetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 3961,
+      "offset": 3997,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Metal\/MetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 3993,
+      "offset": 4029,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Metal\/MetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 4043,
+      "offset": 4079,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Metal\/MetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 4119,
+      "offset": 4155,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Metal\/MetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 4136,
+      "offset": 4172,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Metal\/MetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 4165,
+      "offset": 4201,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Metal\/MetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 4249,
+      "offset": 4285,
       "length": 1,
       "value": "0"
     },
@@ -17476,126 +17702,126 @@
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Mode\/RenderMode.swift",
       "kind": "StringLiteral",
-      "offset": 2815,
+      "offset": 2842,
       "length": 17,
       "value": "\"setDefaultScale\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Mode\/RenderMode.swift",
       "kind": "StringLiteral",
-      "offset": 2859,
+      "offset": 2886,
       "length": 16,
       "value": "\"setWideDegreeX\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Mode\/RenderMode.swift",
       "kind": "StringLiteral",
-      "offset": 2902,
+      "offset": 2929,
       "length": 16,
       "value": "\"setWideDegreeY\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Mode\/RenderMode.swift",
       "kind": "StringLiteral",
-      "offset": 2945,
+      "offset": 2972,
       "length": 16,
       "value": "\"setContentMode\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Mode\/RenderMode.swift",
       "kind": "StringLiteral",
-      "offset": 2987,
+      "offset": 3014,
       "length": 15,
       "value": "\"setScaleRange\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Mode\/RenderMode.swift",
       "kind": "StringLiteral",
-      "offset": 3028,
+      "offset": 3055,
       "length": 15,
       "value": "\"setScopeRange\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Mode\/RenderMode.swift",
       "kind": "FloatLiteral",
-      "offset": 3266,
+      "offset": 3293,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Mode\/RenderMode.swift",
       "kind": "FloatLiteral",
-      "offset": 3430,
+      "offset": 3457,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Mode\/RenderMode.swift",
       "kind": "FloatLiteral",
-      "offset": 3595,
+      "offset": 3622,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Mode\/RenderMode.swift",
       "kind": "FloatLiteral",
-      "offset": 3755,
+      "offset": 3782,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Mode\/RenderMode.swift",
       "kind": "StringLiteral",
-      "offset": 4329,
+      "offset": 4356,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Mode\/RenderMode.swift",
       "kind": "Array",
-      "offset": 4520,
+      "offset": 4547,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Params\/Fish2PanoShaderParams.swift",
       "kind": "IntegerLiteral",
-      "offset": 220,
+      "offset": 229,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Params\/Fish2PanoShaderParams.swift",
       "kind": "IntegerLiteral",
-      "offset": 248,
+      "offset": 257,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Params\/Fish2PanoShaderParams.swift",
       "kind": "IntegerLiteral",
-      "offset": 275,
+      "offset": 284,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Params\/Fish2PanoShaderParams.swift",
       "kind": "IntegerLiteral",
-      "offset": 303,
+      "offset": 312,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Params\/Fish2PanoShaderParams.swift",
       "kind": "IntegerLiteral",
-      "offset": 330,
+      "offset": 339,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Params\/Fish2PanoShaderParams.swift",
       "kind": "IntegerLiteral",
-      "offset": 357,
+      "offset": 366,
       "length": 1,
       "value": "0"
     },
@@ -17777,250 +18003,110 @@
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Program\/ProgramMulti.swift",
       "kind": "BooleanLiteral",
-      "offset": 1226,
+      "offset": 1235,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Program\/ProgramMulti4P.swift",
       "kind": "IntegerLiteral",
-      "offset": 245,
+      "offset": 254,
       "length": 13,
       "value": "1"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Projection\/ProjectionEquirectangular.swift",
       "kind": "FloatLiteral",
-      "offset": 191,
+      "offset": 200,
       "length": 5,
       "value": "800.0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Projection\/ProjectionEquirectangular.swift",
       "kind": "IntegerLiteral",
-      "offset": 217,
+      "offset": 226,
       "length": 3,
       "value": "180"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Projection\/ProjectionEquirectangular.swift",
       "kind": "IntegerLiteral",
-      "offset": 253,
+      "offset": 262,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Projection\/ProjectionEquirectangular.swift",
       "kind": "FloatLiteral",
-      "offset": 278,
+      "offset": 287,
       "length": 4,
       "value": "85.0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Projection\/ProjectionEquirectangular.swift",
       "kind": "IntegerLiteral",
-      "offset": 604,
+      "offset": 613,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Projection\/ProjectionEquirectangular.swift",
       "kind": "IntegerLiteral",
-      "offset": 639,
+      "offset": 648,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Projection\/ProjectionEquirectangular.swift",
       "kind": "IntegerLiteral",
-      "offset": 791,
+      "offset": 800,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Projection\/ProjectionEquirectangular.swift",
       "kind": "IntegerLiteral",
-      "offset": 821,
+      "offset": 830,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Projection\/ProjectionEquirectangular.swift",
       "kind": "IntegerLiteral",
-      "offset": 851,
+      "offset": 860,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Projection\/ProjectionEquirectangular.swift",
       "kind": "IntegerLiteral",
-      "offset": 923,
+      "offset": 932,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Projection\/ProjectionEquirectangular.swift",
-      "kind": "IntegerLiteral",
-      "offset": 953,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Projection\/ProjectionEquirectangular.swift",
-      "kind": "IntegerLiteral",
-      "offset": 983,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Projection\/ProjectionEquirectangular.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1013,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Projection\/ProjectionEquirectangular.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1043,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Scope\/Scope.swift",
-      "kind": "IntegerLiteral",
-      "offset": 175,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Scope\/Scope.swift",
-      "kind": "IntegerLiteral",
-      "offset": 194,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Scope\/Scope.swift",
-      "kind": "IntegerLiteral",
-      "offset": 221,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Scope\/Scope.swift",
-      "kind": "IntegerLiteral",
-      "offset": 248,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Scope\/Scope.swift",
-      "kind": "IntegerLiteral",
-      "offset": 274,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Scope\/Scope.swift",
-      "kind": "IntegerLiteral",
-      "offset": 300,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Scope\/Scope.swift",
-      "kind": "IntegerLiteral",
-      "offset": 325,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Scope\/Scope.swift",
-      "kind": "IntegerLiteral",
-      "offset": 337,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Scope\/Scope.swift",
-      "kind": "IntegerLiteral",
-      "offset": 580,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Scope\/Scope.swift",
-      "kind": "IntegerLiteral",
-      "offset": 630,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Scope\/Scope.swift",
-      "kind": "IntegerLiteral",
-      "offset": 705,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Scope\/Scope.swift",
-      "kind": "IntegerLiteral",
-      "offset": 755,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Scope\/Scope.swift",
-      "kind": "IntegerLiteral",
-      "offset": 842,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Scope\/Scope.swift",
-      "kind": "IntegerLiteral",
-      "offset": 871,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Scope\/Scope.swift",
-      "kind": "IntegerLiteral",
-      "offset": 900,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Scope\/Scope.swift",
-      "kind": "IntegerLiteral",
-      "offset": 929,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Scope\/Scope.swift",
       "kind": "IntegerLiteral",
       "offset": 962,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Scope\/Scope.swift",
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Projection\/ProjectionEquirectangular.swift",
       "kind": "IntegerLiteral",
-      "offset": 995,
+      "offset": 992,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Scope\/Scope.swift",
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Projection\/ProjectionEquirectangular.swift",
       "kind": "IntegerLiteral",
-      "offset": 1030,
+      "offset": 1022,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Scope\/Scope.swift",
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Projection\/ProjectionEquirectangular.swift",
       "kind": "IntegerLiteral",
       "offset": 1052,
       "length": 1,
@@ -18029,1225 +18115,1365 @@
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Scope\/Scope.swift",
       "kind": "IntegerLiteral",
-      "offset": 1084,
+      "offset": 184,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Scope\/Scope.swift",
       "kind": "IntegerLiteral",
-      "offset": 1106,
+      "offset": 203,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Scope\/Scope.swift",
       "kind": "IntegerLiteral",
-      "offset": 1142,
+      "offset": 230,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Scope\/Scope.swift",
       "kind": "IntegerLiteral",
-      "offset": 1168,
+      "offset": 257,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Scope\/Scope.swift",
+      "kind": "IntegerLiteral",
+      "offset": 283,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Scope\/Scope.swift",
+      "kind": "IntegerLiteral",
+      "offset": 309,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Scope\/Scope.swift",
+      "kind": "IntegerLiteral",
+      "offset": 334,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Scope\/Scope.swift",
+      "kind": "IntegerLiteral",
+      "offset": 346,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Scope\/Scope.swift",
+      "kind": "IntegerLiteral",
+      "offset": 589,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Scope\/Scope.swift",
+      "kind": "IntegerLiteral",
+      "offset": 639,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Scope\/Scope.swift",
+      "kind": "IntegerLiteral",
+      "offset": 714,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Scope\/Scope.swift",
+      "kind": "IntegerLiteral",
+      "offset": 764,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Scope\/Scope.swift",
+      "kind": "IntegerLiteral",
+      "offset": 851,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Scope\/Scope.swift",
+      "kind": "IntegerLiteral",
+      "offset": 880,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Scope\/Scope.swift",
+      "kind": "IntegerLiteral",
+      "offset": 909,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Scope\/Scope.swift",
+      "kind": "IntegerLiteral",
+      "offset": 938,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Scope\/Scope.swift",
+      "kind": "IntegerLiteral",
+      "offset": 971,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Scope\/Scope.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1004,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Scope\/Scope.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1039,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Scope\/Scope.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1061,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Scope\/Scope.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1093,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Scope\/Scope.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1115,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Scope\/Scope.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1151,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Scope\/Scope.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1177,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Scope\/Scope2D.swift",
       "kind": "IntegerLiteral",
-      "offset": 231,
+      "offset": 240,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Scope\/Scope2D.swift",
       "kind": "IntegerLiteral",
-      "offset": 281,
+      "offset": 290,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Scope\/Scope2D.swift",
       "kind": "IntegerLiteral",
-      "offset": 365,
+      "offset": 374,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Scope\/Scope2D.swift",
       "kind": "IntegerLiteral",
-      "offset": 415,
+      "offset": 424,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Transform\/TransformController.swift",
       "kind": "IntegerLiteral",
-      "offset": 793,
+      "offset": 811,
       "length": 10,
       "value": "1"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Transform\/TransformController.swift",
       "kind": "IntegerLiteral",
-      "offset": 817,
+      "offset": 835,
       "length": 8,
       "value": "2"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Transform\/TransformController.swift",
       "kind": "IntegerLiteral",
-      "offset": 839,
+      "offset": 857,
       "length": 4,
       "value": "3"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Transform\/TransformController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1157,
+      "offset": 1175,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Transform\/TransformController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1199,
+      "offset": 1217,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Transform\/TransformController2D.swift",
       "kind": "FloatLiteral",
-      "offset": 257,
+      "offset": 275,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Transform\/TransformController2D.swift",
       "kind": "FloatLiteral",
-      "offset": 292,
+      "offset": 310,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Transform\/TransformController2D.swift",
       "kind": "FloatLiteral",
-      "offset": 324,
+      "offset": 342,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Transform\/TransformController2D.swift",
       "kind": "FloatLiteral",
-      "offset": 356,
+      "offset": 374,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Transform\/TransformController2D.swift",
       "kind": "FloatLiteral",
-      "offset": 463,
+      "offset": 481,
       "length": 4,
       "value": "-1.0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Transform\/TransformController2D.swift",
       "kind": "FloatLiteral",
-      "offset": 469,
+      "offset": 487,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Transform\/TransformController2D.swift",
       "kind": "FloatLiteral",
-      "offset": 474,
+      "offset": 492,
       "length": 4,
       "value": "-1.0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Transform\/TransformController2D.swift",
       "kind": "FloatLiteral",
-      "offset": 480,
+      "offset": 498,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Transform\/TransformController2D.swift",
       "kind": "FloatLiteral",
-      "offset": 485,
+      "offset": 503,
       "length": 4,
       "value": "-1.0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Transform\/TransformController2D.swift",
       "kind": "FloatLiteral",
-      "offset": 491,
+      "offset": 509,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Transform\/TransformController2D.swift",
       "kind": "IntegerLiteral",
-      "offset": 527,
+      "offset": 545,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Renderer\/Transform\/TransformController2D.swift",
       "kind": "IntegerLiteral",
-      "offset": 560,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Streamer\/LiveStreamer.swift",
-      "kind": "IntegerLiteral",
-      "offset": 472,
+      "offset": 578,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Streamer\/LiveStreamer.swift",
       "kind": "IntegerLiteral",
-      "offset": 576,
+      "offset": 481,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Streamer\/LiveStreamer.swift",
+      "kind": "IntegerLiteral",
+      "offset": 585,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Streamer\/LiveStreamer.swift",
       "kind": "IntegerLiteral",
-      "offset": 685,
+      "offset": 694,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Streamer\/LiveStreamer.swift",
       "kind": "IntegerLiteral",
-      "offset": 778,
+      "offset": 787,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Streamer\/LiveStreamer.swift",
       "kind": "IntegerLiteral",
-      "offset": 873,
+      "offset": 882,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Streamer\/LiveStreamer.swift",
       "kind": "IntegerLiteral",
-      "offset": 943,
+      "offset": 952,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Streamer\/LiveStreamer.swift",
       "kind": "IntegerLiteral",
-      "offset": 2277,
+      "offset": 2286,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Streamer\/LiveStreamer.swift",
       "kind": "IntegerLiteral",
-      "offset": 2395,
+      "offset": 2404,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Streamer\/LiveStreamer.swift",
       "kind": "IntegerLiteral",
-      "offset": 2504,
+      "offset": 2513,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Streamer\/LiveStreamer.swift",
       "kind": "IntegerLiteral",
-      "offset": 2596,
+      "offset": 2605,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Streamer\/LiveStreamer.swift",
       "kind": "FloatLiteral",
-      "offset": 2742,
+      "offset": 2751,
       "length": 5,
       "value": "0.001"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Streamer\/LiveStreamer.swift",
       "kind": "IntegerLiteral",
-      "offset": 2766,
+      "offset": 2775,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Streamer\/LiveStreamer.swift",
       "kind": "IntegerLiteral",
-      "offset": 2782,
+      "offset": 2791,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Streamer\/LiveStreamer.swift",
       "kind": "FloatLiteral",
-      "offset": 2834,
+      "offset": 2843,
       "length": 3,
       "value": "8.0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Streamer\/LiveStreamer.swift",
       "kind": "FloatLiteral",
-      "offset": 2852,
+      "offset": 2861,
       "length": 6,
       "value": "1000.0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Streamer\/LiveStreamer.swift",
       "kind": "IntegerLiteral",
-      "offset": 2901,
+      "offset": 2910,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Streamer\/LiveStreamer.swift",
       "kind": "IntegerLiteral",
-      "offset": 2917,
+      "offset": 2926,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Streamer\/LiveStreamer.swift",
       "kind": "IntegerLiteral",
-      "offset": 3217,
+      "offset": 3226,
       "length": 4,
       "value": "1200"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Streamer\/LiveStreamer.swift",
       "kind": "IntegerLiteral",
-      "offset": 3324,
+      "offset": 3333,
       "length": 3,
       "value": "128"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Streamer\/LiveStreamer.swift",
       "kind": "IntegerLiteral",
-      "offset": 3431,
+      "offset": 3440,
       "length": 3,
       "value": "960"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Streamer\/LiveStreamer.swift",
       "kind": "IntegerLiteral",
-      "offset": 3540,
+      "offset": 3549,
       "length": 3,
       "value": "540"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Streamer\/LiveStreamer.swift",
       "kind": "IntegerLiteral",
-      "offset": 3859,
+      "offset": 3868,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Streamer\/LiveStreamer.swift",
       "kind": "IntegerLiteral",
-      "offset": 3984,
+      "offset": 3993,
       "length": 5,
       "value": "44100"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Streamer\/LiveStreamer.swift",
       "kind": "IntegerLiteral",
-      "offset": 4113,
+      "offset": 4122,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Streamer\/LiveStreamer.swift",
       "kind": "BooleanLiteral",
-      "offset": 4214,
+      "offset": 4223,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Streamer\/LiveStreamer.swift",
       "kind": "FloatLiteral",
-      "offset": 4346,
+      "offset": 4355,
       "length": 3,
       "value": "5.0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Streamer\/LiveStreamer.swift",
       "kind": "BooleanLiteral",
-      "offset": 4464,
+      "offset": 4473,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Streamer\/LiveStreamer.swift",
       "kind": "IntegerLiteral",
-      "offset": 4589,
+      "offset": 4598,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Streamer\/LiveStreamer.swift",
       "kind": "FloatLiteral",
-      "offset": 4698,
+      "offset": 4707,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Streamer\/LiveStreamer.swift",
       "kind": "BooleanLiteral",
-      "offset": 5101,
+      "offset": 5110,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Streamer\/LiveStreamer.swift",
       "kind": "IntegerLiteral",
-      "offset": 8100,
+      "offset": 8109,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Streamer\/LiveStreamer.swift",
       "kind": "StringLiteral",
-      "offset": 8155,
+      "offset": 8164,
       "length": 35,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Streamer\/LiveStreamer.swift",
       "kind": "StringLiteral",
-      "offset": 8180,
+      "offset": 8189,
       "length": 1,
       "value": "\".streamer\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Streamer\/LiveStreamer.swift",
       "kind": "BooleanLiteral",
-      "offset": 8275,
+      "offset": 8284,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Streamer\/LiveStreamer.swift",
       "kind": "BooleanLiteral",
-      "offset": 8312,
+      "offset": 8321,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Streamer\/LiveStreamer.swift",
       "kind": "BooleanLiteral",
-      "offset": 8358,
+      "offset": 8367,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Streamer\/LiveStreamer.swift",
       "kind": "IntegerLiteral",
-      "offset": 8444,
+      "offset": 8453,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Streamer\/LiveStreamer.swift",
       "kind": "IntegerLiteral",
-      "offset": 8484,
+      "offset": 8493,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Streamer\/LiveStreamer.swift",
       "kind": "IntegerLiteral",
-      "offset": 8538,
+      "offset": 8547,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Streamer\/LiveStreamer.swift",
       "kind": "BooleanLiteral",
-      "offset": 8577,
+      "offset": 8586,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Streamer\/LiveStreamer.swift",
       "kind": "FloatLiteral",
-      "offset": 8635,
+      "offset": 8644,
       "length": 4,
       "value": "0.25"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Streamer\/LiveStreamer.swift",
       "kind": "IntegerLiteral",
-      "offset": 8771,
+      "offset": 8780,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Streamer\/LiveStreamer.swift",
       "kind": "IntegerLiteral",
-      "offset": 8823,
+      "offset": 8832,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Streamer\/LiveStreamer.swift",
       "kind": "BooleanLiteral",
-      "offset": 56289,
+      "offset": 56298,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Streamer\/LiveStreamer.swift",
       "kind": "BooleanLiteral",
-      "offset": 63984,
+      "offset": 63993,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Streamer\/LiveStreamer.swift",
       "kind": "IntegerLiteral",
-      "offset": 70227,
+      "offset": 70236,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Streamer\/LiveStreamer.swift",
       "kind": "IntegerLiteral",
-      "offset": 70331,
+      "offset": 70340,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Streamer\/LiveStreamer.swift",
       "kind": "IntegerLiteral",
-      "offset": 70551,
+      "offset": 70560,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Streamer\/LiveStreamer.swift",
       "kind": "IntegerLiteral",
-      "offset": 71760,
+      "offset": 71769,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Streamer\/LiveStreamer.swift",
       "kind": "StringLiteral",
-      "offset": 88286,
+      "offset": 88295,
       "length": 30,
       "value": "\"AIBudsStreamerStateDidChange\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Streamer\/LiveStreamer.swift",
       "kind": "StringLiteral",
-      "offset": 88444,
+      "offset": 88453,
       "length": 33,
       "value": "\"AIBudsStreamerDidEncounterError\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Streamer\/LiveStreamer.swift",
       "kind": "StringLiteral",
-      "offset": 88601,
+      "offset": 88610,
       "length": 30,
       "value": "\"AIBudsStreamerStatsDidUpdate\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Streamer\/LiveStreamer.swift",
       "kind": "StringLiteral",
-      "offset": 88809,
+      "offset": 88818,
       "length": 15,
       "value": "\"previousState\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Streamer\/LiveStreamer.swift",
       "kind": "StringLiteral",
-      "offset": 88902,
+      "offset": 88911,
       "length": 14,
       "value": "\"currentState\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Streamer\/LiveStreamer.swift",
       "kind": "StringLiteral",
-      "offset": 88986,
+      "offset": 88995,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Streamer\/LiveStreamer.swift",
       "kind": "StringLiteral",
-      "offset": 89068,
+      "offset": 89077,
       "length": 7,
       "value": "\"stats\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/View\/VideoView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1323,
+      "offset": 1368,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/View\/VideoView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1492,
+      "offset": 1537,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/View\/VideoView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1533,
+      "offset": 1578,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/View\/VideoView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1574,
+      "offset": 1619,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/View\/VideoView.swift",
       "kind": "Array",
-      "offset": 1698,
+      "offset": 1743,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/View\/VideoView.swift",
       "kind": "FloatLiteral",
-      "offset": 1781,
+      "offset": 1826,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/View\/VideoView.swift",
       "kind": "Array",
-      "offset": 2400,
+      "offset": 2445,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/View\/VideoView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2515,
+      "offset": 2560,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/View\/VideoView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2818,
+      "offset": 2863,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/View\/VideoView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2882,
+      "offset": 2927,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/View\/VideoView.swift",
       "kind": "FloatLiteral",
-      "offset": 2949,
+      "offset": 2994,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/View\/VideoView.swift",
       "kind": "FloatLiteral",
-      "offset": 2955,
+      "offset": 3000,
       "length": 4,
       "value": "30.0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/View\/VideoView.swift",
       "kind": "StringLiteral",
-      "offset": 3019,
+      "offset": 3064,
       "length": 48,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/View\/VideoView.swift",
       "kind": "StringLiteral",
-      "offset": 3044,
+      "offset": 3089,
       "length": 1,
       "value": "\".renderer.warmup.queue\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/View\/VideoView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3185,
+      "offset": 3230,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/View\/VideoView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3224,
+      "offset": 3269,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/View\/VideoView.swift",
       "kind": "FloatLiteral",
-      "offset": 4149,
+      "offset": 4194,
       "length": 5,
       "value": "0.050"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/View\/VideoView.swift",
       "kind": "BooleanLiteral",
-      "offset": 4176,
+      "offset": 4221,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFAudioDecoder.swift",
       "kind": "IntegerLiteral",
-      "offset": 885,
+      "offset": 894,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFAudioDecoder.swift",
       "kind": "IntegerLiteral",
-      "offset": 953,
+      "offset": 962,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFAudioDecoder.swift",
       "kind": "IntegerLiteral",
-      "offset": 1195,
+      "offset": 1204,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFAudioFrame.swift",
       "kind": "IntegerLiteral",
-      "offset": 471,
+      "offset": 480,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFAudioFrame.swift",
       "kind": "IntegerLiteral",
-      "offset": 532,
+      "offset": 541,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFAudioFrame.swift",
       "kind": "IntegerLiteral",
-      "offset": 601,
+      "offset": 610,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFAudioFrame.swift",
       "kind": "IntegerLiteral",
-      "offset": 675,
+      "offset": 684,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFAudioFrame.swift",
       "kind": "IntegerLiteral",
-      "offset": 754,
+      "offset": 763,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFAudioFrame.swift",
       "kind": "IntegerLiteral",
-      "offset": 827,
+      "offset": 836,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFAudioManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 301,
+      "offset": 319,
       "length": 5,
       "value": "1"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFAudioManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 379,
+      "offset": 397,
       "length": 12,
       "value": "1"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFAudioManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 1056,
+      "offset": 1074,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFAudioManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 1323,
+      "offset": 1341,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFAudioManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 23629,
+      "offset": 23647,
       "length": 4,
       "value": "4096"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFAudioManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 23667,
+      "offset": 23685,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFAudioManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 24088,
+      "offset": 24106,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFDecoder.swift",
       "kind": "BooleanLiteral",
-      "offset": 6786,
+      "offset": 6804,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFDecoder.swift",
       "kind": "IntegerLiteral",
-      "offset": 7327,
+      "offset": 7345,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFDecoder.swift",
       "kind": "BooleanLiteral",
-      "offset": 8010,
+      "offset": 8028,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFDecoder.swift",
       "kind": "IntegerLiteral",
-      "offset": 7576,
+      "offset": 7594,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFDecoder.swift",
       "kind": "BooleanLiteral",
-      "offset": 8148,
+      "offset": 8166,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFDecoder.swift",
       "kind": "BooleanLiteral",
-      "offset": 8396,
+      "offset": 8414,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFDecoder.swift",
       "kind": "BooleanLiteral",
-      "offset": 8661,
+      "offset": 8679,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFDecoder.swift",
       "kind": "BooleanLiteral",
-      "offset": 8731,
+      "offset": 8749,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFDecoder.swift",
       "kind": "BooleanLiteral",
-      "offset": 8793,
+      "offset": 8811,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFDecoder.swift",
       "kind": "BooleanLiteral",
-      "offset": 8857,
+      "offset": 8875,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFDecoder.swift",
       "kind": "BooleanLiteral",
-      "offset": 8939,
+      "offset": 8957,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFDecoder.swift",
       "kind": "IntegerLiteral",
-      "offset": 9014,
+      "offset": 9032,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFDecoder.swift",
       "kind": "IntegerLiteral",
-      "offset": 9087,
+      "offset": 9105,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFDecoder.swift",
       "kind": "BooleanLiteral",
-      "offset": 9252,
+      "offset": 9270,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFDecoder.swift",
       "kind": "IntegerLiteral",
-      "offset": 9341,
+      "offset": 9359,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFDecoder.swift",
       "kind": "IntegerLiteral",
-      "offset": 9560,
+      "offset": 9578,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFDecoder.swift",
       "kind": "IntegerLiteral",
-      "offset": 9617,
+      "offset": 9635,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFDecoder.swift",
       "kind": "IntegerLiteral",
-      "offset": 9701,
+      "offset": 9719,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFDecoder.swift",
       "kind": "BooleanLiteral",
-      "offset": 9778,
+      "offset": 9796,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFDecoder.swift",
       "kind": "IntegerLiteral",
-      "offset": 9866,
+      "offset": 9884,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFDecoder.swift",
       "kind": "BooleanLiteral",
-      "offset": 9918,
+      "offset": 9936,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFDecoder.swift",
       "kind": "BooleanLiteral",
-      "offset": 9983,
+      "offset": 10001,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFDecoder.swift",
       "kind": "IntegerLiteral",
-      "offset": 10076,
+      "offset": 10094,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFDecoder.swift",
       "kind": "FloatLiteral",
-      "offset": 10131,
+      "offset": 10149,
       "length": 3,
       "value": "2.0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFDecoder.swift",
       "kind": "FloatLiteral",
-      "offset": 10193,
+      "offset": 10211,
       "length": 3,
       "value": "0.3"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFDecoder.swift",
       "kind": "FloatLiteral",
-      "offset": 10260,
+      "offset": 10278,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFDecoder.swift",
       "kind": "FloatLiteral",
-      "offset": 10329,
+      "offset": 10347,
       "length": 5,
       "value": "0.015"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFDecoder.swift",
       "kind": "FloatLiteral",
-      "offset": 10399,
+      "offset": 10417,
       "length": 4,
       "value": "0.12"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFDecoder.swift",
       "kind": "FloatLiteral",
-      "offset": 10471,
+      "offset": 10489,
       "length": 4,
       "value": "0.25"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFDecoder.swift",
       "kind": "FloatLiteral",
-      "offset": 10548,
+      "offset": 10566,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFDecoder.swift",
       "kind": "IntegerLiteral",
-      "offset": 10612,
+      "offset": 10630,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFDecoder.swift",
       "kind": "IntegerLiteral",
-      "offset": 10675,
+      "offset": 10693,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFDecoder.swift",
       "kind": "IntegerLiteral",
-      "offset": 43174,
+      "offset": 43192,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFDecoder.swift",
       "kind": "IntegerLiteral",
-      "offset": 43179,
+      "offset": 43197,
       "length": 4,
       "value": "1024"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFDecoder.swift",
       "kind": "IntegerLiteral",
-      "offset": 43186,
+      "offset": 43204,
       "length": 4,
       "value": "1024"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFDecoder.swift",
       "kind": "BooleanLiteral",
-      "offset": 44446,
+      "offset": 44464,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFDecoder.swift",
       "kind": "BooleanLiteral",
-      "offset": 45899,
+      "offset": 45917,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFFormatContext.swift",
       "kind": "Dictionary",
-      "offset": 1472,
+      "offset": 1481,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFFormatContext.swift",
       "kind": "BooleanLiteral",
-      "offset": 1970,
+      "offset": 1979,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFFormatContext.swift",
       "kind": "BooleanLiteral",
-      "offset": 2055,
+      "offset": 2064,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFFormatContext.swift",
       "kind": "Array",
-      "offset": 2271,
+      "offset": 2280,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFFormatContext.swift",
       "kind": "Array",
-      "offset": 2350,
+      "offset": 2359,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFFormatContext.swift",
       "kind": "IntegerLiteral",
-      "offset": 2432,
+      "offset": 2441,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFFormatContext.swift",
       "kind": "IntegerLiteral",
-      "offset": 2503,
+      "offset": 2512,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFFormatContext.swift",
       "kind": "IntegerLiteral",
-      "offset": 2677,
+      "offset": 2686,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFFormatContext.swift",
       "kind": "IntegerLiteral",
-      "offset": 2758,
+      "offset": 2767,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFFormatContext.swift",
       "kind": "IntegerLiteral",
-      "offset": 2838,
+      "offset": 2847,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFFormatContext.swift",
       "kind": "IntegerLiteral",
-      "offset": 2913,
+      "offset": 2922,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFFormatContext.swift",
       "kind": "BooleanLiteral",
-      "offset": 3033,
+      "offset": 3042,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFFormatContext.swift",
       "kind": "Array",
-      "offset": 22976,
+      "offset": 22985,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFFormatContext.swift",
       "kind": "IntegerLiteral",
-      "offset": 23012,
+      "offset": 23021,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFFormatContext.swift",
       "kind": "BooleanLiteral",
-      "offset": 23039,
+      "offset": 23048,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFFormatContext.swift",
       "kind": "IntegerLiteral",
-      "offset": 23141,
+      "offset": 23150,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFFormatContext.swift",
       "kind": "IntegerLiteral",
-      "offset": 23180,
+      "offset": 23189,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFFormatContext.swift",
       "kind": "BooleanLiteral",
-      "offset": 27350,
+      "offset": 27359,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFFormatContext.swift",
       "kind": "Dictionary",
-      "offset": 27486,
+      "offset": 27495,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFFormatContext.swift",
       "kind": "BooleanLiteral",
-      "offset": 27522,
+      "offset": 27531,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFFormatContext.swift",
       "kind": "BooleanLiteral",
-      "offset": 27554,
+      "offset": 27563,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFFormatContext.swift",
       "kind": "Dictionary",
-      "offset": 33926,
+      "offset": 33935,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFFormatContext.swift",
       "kind": "BooleanLiteral",
-      "offset": 34049,
+      "offset": 34058,
       "length": 4,
       "value": "true"
     },
@@ -19681,476 +19907,476 @@
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFTrack.swift",
       "kind": "IntegerLiteral",
-      "offset": 279,
+      "offset": 288,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFTrack.swift",
       "kind": "IntegerLiteral",
-      "offset": 298,
+      "offset": 307,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFTrack.swift",
       "kind": "IntegerLiteral",
-      "offset": 317,
+      "offset": 326,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFTrack.swift",
       "kind": "IntegerLiteral",
-      "offset": 339,
+      "offset": 348,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFTrack.swift",
       "kind": "IntegerLiteral",
-      "offset": 466,
+      "offset": 475,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFTrack.swift",
       "kind": "StringLiteral",
-      "offset": 521,
+      "offset": 530,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFTrack.swift",
       "kind": "IntegerLiteral",
-      "offset": 643,
+      "offset": 652,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFTrack.swift",
       "kind": "IntegerLiteral",
-      "offset": 770,
+      "offset": 779,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFTrack.swift",
       "kind": "IntegerLiteral",
-      "offset": 826,
+      "offset": 835,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFTrack.swift",
       "kind": "StringLiteral",
-      "offset": 886,
+      "offset": 895,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFTrack.swift",
       "kind": "IntegerLiteral",
-      "offset": 950,
+      "offset": 959,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFTrack.swift",
       "kind": "IntegerLiteral",
-      "offset": 1003,
+      "offset": 1012,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFTrack.swift",
       "kind": "IntegerLiteral",
-      "offset": 1064,
+      "offset": 1073,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFTrack.swift",
       "kind": "IntegerLiteral",
-      "offset": 1127,
+      "offset": 1136,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFTrack.swift",
       "kind": "IntegerLiteral",
-      "offset": 1201,
+      "offset": 1210,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFTrack.swift",
       "kind": "IntegerLiteral",
-      "offset": 1270,
+      "offset": 1279,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFTrack.swift",
       "kind": "IntegerLiteral",
-      "offset": 1342,
+      "offset": 1351,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFTrack.swift",
       "kind": "IntegerLiteral",
-      "offset": 1417,
+      "offset": 1426,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFTrack.swift",
       "kind": "IntegerLiteral",
-      "offset": 1607,
+      "offset": 1616,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFVideoDecoder.swift",
       "kind": "BooleanLiteral",
-      "offset": 1794,
+      "offset": 1812,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFVideoDecoder.swift",
       "kind": "BooleanLiteral",
-      "offset": 1921,
+      "offset": 1939,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFVideoDecoder.swift",
       "kind": "BooleanLiteral",
-      "offset": 2149,
+      "offset": 2167,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFVideoDecoder.swift",
       "kind": "FloatLiteral",
-      "offset": 2233,
+      "offset": 2251,
       "length": 3,
       "value": "2.0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFVideoDecoder.swift",
       "kind": "BooleanLiteral",
-      "offset": 2419,
+      "offset": 2437,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFVideoDecoder.swift",
       "kind": "IntegerLiteral",
-      "offset": 2619,
+      "offset": 2637,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFVideoDecoder.swift",
       "kind": "IntegerLiteral",
-      "offset": 2670,
+      "offset": 2688,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFVideoDecoder.swift",
       "kind": "IntegerLiteral",
-      "offset": 2724,
+      "offset": 2742,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFVideoDecoder.swift",
       "kind": "BooleanLiteral",
-      "offset": 2782,
+      "offset": 2800,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFVideoDecoder.swift",
       "kind": "IntegerLiteral",
-      "offset": 3027,
+      "offset": 3045,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFVideoDecoder.swift",
       "kind": "IntegerLiteral",
-      "offset": 3075,
+      "offset": 3093,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFVideoDecoder.swift",
       "kind": "IntegerLiteral",
-      "offset": 3136,
+      "offset": 3154,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFVideoDecoder.swift",
       "kind": "IntegerLiteral",
-      "offset": 3184,
+      "offset": 3202,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFVideoDecoder.swift",
       "kind": "IntegerLiteral",
-      "offset": 3244,
+      "offset": 3262,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFVideoDecoder.swift",
       "kind": "BooleanLiteral",
-      "offset": 3308,
+      "offset": 3326,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFVideoDecoder.swift",
       "kind": "BooleanLiteral",
-      "offset": 3374,
+      "offset": 3392,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFVideoDecoder.swift",
       "kind": "BooleanLiteral",
-      "offset": 3433,
+      "offset": 3451,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFVideoDecoder.swift",
       "kind": "BooleanLiteral",
-      "offset": 3498,
+      "offset": 3516,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFVideoDecoder.swift",
       "kind": "BooleanLiteral",
-      "offset": 3563,
+      "offset": 3581,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFVideoDecoder.swift",
       "kind": "IntegerLiteral",
-      "offset": 3622,
+      "offset": 3640,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFVideoDecoder.swift",
       "kind": "BooleanLiteral",
-      "offset": 3683,
+      "offset": 3701,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFVideoDecoder.swift",
       "kind": "IntegerLiteral",
-      "offset": 3745,
+      "offset": 3763,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFVideoDecoder.swift",
       "kind": "FloatLiteral",
-      "offset": 3865,
+      "offset": 3883,
       "length": 4,
       "value": "0.12"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFVideoDecoder.swift",
       "kind": "IntegerLiteral",
-      "offset": 3918,
+      "offset": 3936,
       "length": 14,
       "value": "-1094995529"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFVideoDecoder.swift",
       "kind": "IntegerLiteral",
-      "offset": 3983,
+      "offset": 4001,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFVideoDecoder.swift",
       "kind": "IntegerLiteral",
-      "offset": 4041,
+      "offset": 4059,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFVideoDecoder.swift",
       "kind": "BooleanLiteral",
-      "offset": 4091,
+      "offset": 4109,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFVideoDecoder.swift",
       "kind": "BooleanLiteral",
-      "offset": 4153,
+      "offset": 4171,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFVideoDecoder.swift",
       "kind": "FloatLiteral",
-      "offset": 38085,
+      "offset": 38103,
       "length": 3,
       "value": "0.1"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFVideoDecoder.swift",
       "kind": "FloatLiteral",
-      "offset": 38171,
+      "offset": 38189,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFVideoFrame.swift",
       "kind": "IntegerLiteral",
-      "offset": 379,
+      "offset": 406,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFVideoFrame.swift",
       "kind": "IntegerLiteral",
-      "offset": 400,
+      "offset": 427,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFVideoFrame.swift",
       "kind": "IntegerLiteral",
-      "offset": 421,
+      "offset": 448,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFVideoFrame.swift",
       "kind": "IntegerLiteral",
-      "offset": 440,
+      "offset": 467,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFVideoFrame.swift",
       "kind": "IntegerLiteral",
-      "offset": 582,
+      "offset": 609,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFVideoFrame.swift",
       "kind": "IntegerLiteral",
-      "offset": 645,
+      "offset": 672,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFVideoFrame.swift",
       "kind": "IntegerLiteral",
-      "offset": 726,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFVideoFrame.swift",
-      "kind": "BooleanLiteral",
-      "offset": 809,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFVideoFrame.swift",
-      "kind": "IntegerLiteral",
-      "offset": 883,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFVideoFrame.swift",
-      "kind": "IntegerLiteral",
-      "offset": 949,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFVideoFrame.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1013,
+      "offset": 753,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFVideoFrame.swift",
       "kind": "BooleanLiteral",
-      "offset": 1496,
+      "offset": 836,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFVideoFrame.swift",
       "kind": "IntegerLiteral",
-      "offset": 1579,
+      "offset": 910,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFVideoFrame.swift",
       "kind": "IntegerLiteral",
-      "offset": 1652,
+      "offset": 976,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFVideoFrame.swift",
       "kind": "IntegerLiteral",
-      "offset": 3565,
+      "offset": 1040,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFVideoFrame.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1523,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFVideoFrame.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1606,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFVideoFrame.swift",
       "kind": "IntegerLiteral",
-      "offset": 3641,
+      "offset": 1679,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFVideoFrame.swift",
       "kind": "IntegerLiteral",
-      "offset": 3717,
+      "offset": 3592,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFVideoFrame.swift",
       "kind": "IntegerLiteral",
-      "offset": 3787,
+      "offset": 3668,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFVideoFrame.swift",
       "kind": "IntegerLiteral",
-      "offset": 11828,
+      "offset": 3744,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFVideoFrame.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3814,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFVideoFrame.swift",
+      "kind": "IntegerLiteral",
+      "offset": 11855,
       "length": 1,
       "value": "0"
     },
@@ -20171,357 +20397,357 @@
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFVideoToolBox.swift",
       "kind": "IntegerLiteral",
-      "offset": 345,
+      "offset": 354,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFVideoToolBox.swift",
       "kind": "IntegerLiteral",
-      "offset": 372,
+      "offset": 381,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFVideoToolBox.swift",
       "kind": "IntegerLiteral",
-      "offset": 409,
+      "offset": 418,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFVideoToolBox.swift",
       "kind": "IntegerLiteral",
-      "offset": 436,
+      "offset": 445,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFVideoToolBox.swift",
       "kind": "IntegerLiteral",
-      "offset": 466,
+      "offset": 475,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFVideoToolBox.swift",
       "kind": "IntegerLiteral",
-      "offset": 2643,
+      "offset": 2652,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFVideoToolBox.swift",
       "kind": "IntegerLiteral",
-      "offset": 2686,
+      "offset": 2695,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFVideoToolBox.swift",
       "kind": "IntegerLiteral",
-      "offset": 2731,
+      "offset": 2740,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFVideoToolBox.swift",
       "kind": "IntegerLiteral",
-      "offset": 2789,
+      "offset": 2798,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFVideoToolBox.swift",
       "kind": "IntegerLiteral",
-      "offset": 2836,
+      "offset": 2845,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFVideoToolBox.swift",
       "kind": "IntegerLiteral",
-      "offset": 2893,
+      "offset": 2902,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFVideoToolBox.swift",
       "kind": "IntegerLiteral",
-      "offset": 2942,
+      "offset": 2951,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFVideoToolBox.swift",
       "kind": "FloatLiteral",
-      "offset": 3002,
+      "offset": 3011,
       "length": 4,
       "value": "0.25"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFVideoToolBox.swift",
       "kind": "FloatLiteral",
-      "offset": 3067,
+      "offset": 3076,
       "length": 4,
       "value": "0.25"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFVideoToolBox.swift",
       "kind": "Array",
-      "offset": 3167,
+      "offset": 3176,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFVideoToolBox.swift",
       "kind": "IntegerLiteral",
-      "offset": 3210,
+      "offset": 3219,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFVideoToolBox.swift",
       "kind": "IntegerLiteral",
-      "offset": 3255,
+      "offset": 3264,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFVideoToolBox.swift",
       "kind": "IntegerLiteral",
-      "offset": 3299,
+      "offset": 3308,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFVideoToolBox.swift",
       "kind": "IntegerLiteral",
-      "offset": 3351,
+      "offset": 3360,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFVideoToolBox.swift",
       "kind": "BooleanLiteral",
-      "offset": 3414,
+      "offset": 3423,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFVideoToolBox.swift",
       "kind": "BooleanLiteral",
-      "offset": 3501,
+      "offset": 3510,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFVideoToolBox.swift",
       "kind": "IntegerLiteral",
-      "offset": 3766,
+      "offset": 3775,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFVideoToolBox.swift",
       "kind": "IntegerLiteral",
-      "offset": 3807,
+      "offset": 3816,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFVideoToolBox.swift",
       "kind": "BooleanLiteral",
-      "offset": 12524,
+      "offset": 12533,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFVideoToolBox.swift",
       "kind": "BooleanLiteral",
-      "offset": 12578,
+      "offset": 12587,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFVideoToolBox.swift",
       "kind": "BooleanLiteral",
-      "offset": 12651,
+      "offset": 12660,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFVideoToolBox.swift",
       "kind": "IntegerLiteral",
-      "offset": 12708,
+      "offset": 12717,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFVideoToolBox.swift",
       "kind": "IntegerLiteral",
-      "offset": 12762,
+      "offset": 12771,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFVideoToolBox.swift",
       "kind": "IntegerLiteral",
-      "offset": 50092,
+      "offset": 50101,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFVideoToolBox.swift",
       "kind": "BooleanLiteral",
-      "offset": 50405,
+      "offset": 50414,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFVideoToolBox.swift",
       "kind": "IntegerLiteral",
-      "offset": 50661,
+      "offset": 50670,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFVideoToolBox.swift",
       "kind": "IntegerLiteral",
-      "offset": 50774,
+      "offset": 50783,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFVideoToolBox.swift",
       "kind": "IntegerLiteral",
-      "offset": 50919,
+      "offset": 50928,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFVideoToolBox.swift",
       "kind": "IntegerLiteral",
-      "offset": 51533,
+      "offset": 51542,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFVideoToolBox.swift",
       "kind": "IntegerLiteral",
-      "offset": 51665,
+      "offset": 51674,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFVideoToolBox.swift",
       "kind": "IntegerLiteral",
-      "offset": 51717,
+      "offset": 51726,
       "length": 3,
       "value": "120"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFVideoToolBox.swift",
       "kind": "IntegerLiteral",
-      "offset": 51724,
+      "offset": 51733,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFVideoToolBox.swift",
       "kind": "StringLiteral",
-      "offset": 51767,
+      "offset": 51776,
       "length": 249,
       "value": "\"VideoToolBox performance: callback delay=\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFVideoToolBox.swift",
       "kind": "StringLiteral",
-      "offset": 51826,
+      "offset": 51835,
       "length": 6,
       "value": "\"%.3f\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFVideoToolBox.swift",
       "kind": "StringLiteral",
-      "offset": 51849,
+      "offset": 51858,
       "length": 1,
       "value": "\"s, status=\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFVideoToolBox.swift",
       "kind": "StringLiteral",
-      "offset": 51868,
+      "offset": 51877,
       "length": 1,
       "value": "\", hasImage=\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFVideoToolBox.swift",
       "kind": "StringLiteral",
-      "offset": 51900,
+      "offset": 51909,
       "length": 1,
       "value": "\", flags=\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFVideoToolBox.swift",
       "kind": "StringLiteral",
-      "offset": 51929,
+      "offset": 51938,
       "length": 1,
       "value": "\", currentGeneration=\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFVideoToolBox.swift",
       "kind": "StringLiteral",
-      "offset": 51971,
+      "offset": 51980,
       "length": 1,
       "value": "\", count=\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/FFMpeg\/FFVideoToolBox.swift",
       "kind": "StringLiteral",
-      "offset": 52014,
+      "offset": 52023,
       "length": 1,
       "value": "\".\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/AIBudsLiveStream.swift",
       "kind": "StringLiteral",
-      "offset": 307,
+      "offset": 316,
       "length": 6,
       "value": "\"💐\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/AIBudsLiveStream.swift",
       "kind": "StringLiteral",
-      "offset": 399,
+      "offset": 408,
       "length": 18,
       "value": "\"AIBudsLiveStream\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/AIBudsLiveStream.swift",
       "kind": "StringLiteral",
-      "offset": 498,
+      "offset": 507,
       "length": 37,
       "value": "\"com.topstep.sdks.aibuds.live-stream\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/AIBudsLiveStream.swift",
       "kind": "StringLiteral",
-      "offset": 633,
+      "offset": 642,
       "length": 6,
       "value": "\"🔅\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/AIBudsLiveStream.swift",
       "kind": "StringLiteral",
-      "offset": 739,
+      "offset": 748,
       "length": 8,
       "value": "\"FFmpeg\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/AIBudsLiveStream.swift",
       "kind": "StringLiteral",
-      "offset": 861,
+      "offset": 870,
       "length": 5,
       "value": "\"6.0\""
     },
@@ -20572,14 +20798,14 @@
       "kind": "StringLiteral",
       "offset": 257,
       "length": 14,
-      "value": "\"1.0.1-beta.5\""
+      "value": "\"1.0.1-beta.6\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/SDKBuildInfo\/SDK_Build_Info.swift",
       "kind": "StringLiteral",
       "offset": 387,
       "length": 13,
-      "value": "\"20260902001\""
+      "value": "\"20260902002\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/SDKBuildInfo\/SDK_Build_Info.swift",

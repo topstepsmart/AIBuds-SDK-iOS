@@ -73,6 +73,9 @@ static UIColor *FileImportColor(NSInteger red, NSInteger green, NSInteger blue) 
 @property (nonatomic, strong) UIViewController *audioPlayerViewController;
 @property (nonatomic, strong) NSTimer *audioProgressTimer;
 
+- (void)clearImportSpeed;
+- (void)updateVideoStabilizationProgress:(double)progress;
+
 @end
 
 @implementation FileImportDemoController
@@ -442,6 +445,7 @@ static UIColor *FileImportColor(NSInteger red, NSInteger green, NSInteger blue) 
     // 清空之前的导入文件
     [self.importedFiles removeAllObjects];
     [self.displayedFileNames removeAllObjects];
+    [self clearImportSpeed];
     self.shareImportedFilesButton.enabled = NO;
     dispatch_async(self.mediaFilePersistenceQueue, ^{
         [self.scheduledFileNames removeAllObjects];
@@ -566,12 +570,13 @@ static UIColor *FileImportColor(NSInteger red, NSInteger green, NSInteger blue) 
         } transferBatchProgressHandler:^(NSInteger fileIndex, NSInteger totalFileCount) {
             [weakSelf updateBatchProgress:fileIndex totalFileCount:totalFileCount];
         } videoStabilizationPhaseBeginHandler:^{
+            // 下载阶段已结束，将速度位切换为防抖百分比。
             [weakSelf updateImportingFileStatus:NSLocalizedString(@"LocKey.FileImportStabilizing", nil) color:FileImportColor(104, 75, 215)];
-            [weakSelf updateCurrentImportingFileProgress:0];
+            [weakSelf updateVideoStabilizationProgress:0];
         } videoStabilizationSingleFileProgressHandler:^(AIBudsImportedMediaFileModel * _Nonnull mediaFile, double progress) {
             NSString *fileName = mediaFile.metadata.fileName.length > 0 ? mediaFile.metadata.fileName : mediaFile.localFileURL.lastPathComponent;
             [weakSelf updateImportingFileName:fileName];
-            [weakSelf updateCurrentImportingFileProgress:progress];
+            [weakSelf updateVideoStabilizationProgress:progress];
             XLOG_INFO(@"Stabilization progress: %@ %.2f", fileName, progress);
         } videoStabilizationSingleFileCompletionHandler:^(AIBudsImportedMediaFileModel * _Nonnull mediaFile, BOOL success) {
             NSString *fileName = mediaFile.metadata.fileName.length > 0 ? mediaFile.metadata.fileName : mediaFile.localFileURL.lastPathComponent;
@@ -581,8 +586,9 @@ static UIColor *FileImportColor(NSInteger red, NSInteger green, NSInteger blue) 
         } videoStabilizationBatchProgressHandler:^(NSInteger fileIndex, NSInteger totalFileCount) {
             [weakSelf updatePostProcessBatchProgress:fileIndex totalFileCount:totalFileCount];
         } videoStabilizationPhaseFinishHandler:^{
-            [weakSelf updateCurrentImportingFileProgress:1];
+            [weakSelf updateVideoStabilizationProgress:1];
         } completionHandler:^(BOOL success, NSArray<AIBudsImportedMediaFileModel *> * _Nonnull importedMediaFiles, NSError * _Nullable error) {
+            [weakSelf clearImportSpeed];
             [weakSelf displayImportedMediaFiles:importedMediaFiles];
             if(success)
             {
@@ -887,9 +893,26 @@ static UIColor *FileImportColor(NSInteger red, NSInteger green, NSInteger blue) 
         if(!strongSelf) return;
         strongSelf.importStatusLabel.text = status;
         strongSelf.importStatusLabel.textColor = color;
-        if ([color isEqual:[UIColor systemPurpleColor]]) {
-            strongSelf.importSpeedLabel.text = @"";
-        }
+    });
+}
+
+-(void)clearImportSpeed {
+    __weak typeof(self) weakSelf = self;
+    dispatch_async(dispatch_get_main_queue(), ^{
+        __strong typeof(weakSelf) strongSelf = weakSelf;
+        if(!strongSelf) return;
+        strongSelf.importSpeedLabel.text = @"";
+    });
+}
+
+-(void)updateVideoStabilizationProgress:(double)progress {
+    __weak typeof(self) weakSelf = self;
+    dispatch_async(dispatch_get_main_queue(), ^{
+        __strong typeof(weakSelf) strongSelf = weakSelf;
+        if(!strongSelf) return;
+        double normalizedProgress = MIN(1.0, MAX(0.0, progress));
+        [strongSelf.importProgressView setProgress:(float)normalizedProgress animated:YES];
+        strongSelf.importSpeedLabel.text = [NSString stringWithFormat:@"%.0f%%", normalizedProgress * 100];
     });
 }
 

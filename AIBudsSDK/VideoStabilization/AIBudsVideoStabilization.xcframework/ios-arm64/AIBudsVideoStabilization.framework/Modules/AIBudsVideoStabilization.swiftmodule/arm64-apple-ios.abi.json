@@ -21,6 +21,7 @@
         "declKind": "Import",
         "moduleName": "AIBudsVideoStabilization",
         "declAttributes": [
+          "AccessControl",
           "RawDocComment"
         ]
       },
@@ -29,14 +30,20 @@
         "name": "CoreMedia",
         "printedName": "CoreMedia",
         "declKind": "Import",
-        "moduleName": "AIBudsVideoStabilization"
+        "moduleName": "AIBudsVideoStabilization",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
         "name": "CoreVideo",
         "printedName": "CoreVideo",
         "declKind": "Import",
-        "moduleName": "AIBudsVideoStabilization"
+        "moduleName": "AIBudsVideoStabilization",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -50,14 +57,20 @@
         "name": "Metal",
         "printedName": "Metal",
         "declKind": "Import",
-        "moduleName": "AIBudsVideoStabilization"
+        "moduleName": "AIBudsVideoStabilization",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
         "name": "simd",
         "printedName": "simd",
         "declKind": "Import",
-        "moduleName": "AIBudsVideoStabilization"
+        "moduleName": "AIBudsVideoStabilization",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -74,7 +87,10 @@
         "name": "simd",
         "printedName": "simd",
         "declKind": "Import",
-        "moduleName": "AIBudsVideoStabilization"
+        "moduleName": "AIBudsVideoStabilization",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -91,7 +107,10 @@
         "name": "simd",
         "printedName": "simd",
         "declKind": "Import",
-        "moduleName": "AIBudsVideoStabilization"
+        "moduleName": "AIBudsVideoStabilization",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -100,6 +119,7 @@
         "declKind": "Import",
         "moduleName": "AIBudsVideoStabilization",
         "declAttributes": [
+          "AccessControl",
           "RawDocComment"
         ]
       },
@@ -108,21 +128,30 @@
         "name": "CoreMedia",
         "printedName": "CoreMedia",
         "declKind": "Import",
-        "moduleName": "AIBudsVideoStabilization"
+        "moduleName": "AIBudsVideoStabilization",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
         "name": "CoreVideo",
         "printedName": "CoreVideo",
         "declKind": "Import",
-        "moduleName": "AIBudsVideoStabilization"
+        "moduleName": "AIBudsVideoStabilization",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
         "name": "Darwin",
         "printedName": "Darwin",
         "declKind": "Import",
-        "moduleName": "AIBudsVideoStabilization"
+        "moduleName": "AIBudsVideoStabilization",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -136,7 +165,10 @@
         "name": "os.log",
         "printedName": "os.log",
         "declKind": "Import",
-        "moduleName": "AIBudsVideoStabilization"
+        "moduleName": "AIBudsVideoStabilization",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -155,6 +187,7 @@
         "declKind": "Import",
         "moduleName": "AIBudsVideoStabilization",
         "declAttributes": [
+          "AccessControl",
           "RawDocComment"
         ]
       },
@@ -163,7 +196,10 @@
         "name": "CoreGraphics",
         "printedName": "CoreGraphics",
         "declKind": "Import",
-        "moduleName": "AIBudsVideoStabilization"
+        "moduleName": "AIBudsVideoStabilization",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -2271,7 +2307,10 @@
         "name": "AIBudsFoundation",
         "printedName": "AIBudsFoundation",
         "declKind": "Import",
-        "moduleName": "AIBudsVideoStabilization"
+        "moduleName": "AIBudsVideoStabilization",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -3150,14 +3189,14 @@
       "kind": "StringLiteral",
       "offset": 257,
       "length": 14,
-      "value": "\"1.0.1-beta.5\""
+      "value": "\"1.0.1-beta.6\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/SDKBuildInfo\/SDK_Build_Info.swift",
       "kind": "StringLiteral",
       "offset": 387,
       "length": 13,
-      "value": "\"20260902001\""
+      "value": "\"20260902002\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/SDKBuildInfo\/SDK_Build_Info.swift",
@@ -3169,147 +3208,147 @@
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsVideoStabilization\/Internal\/GyroscopeMetalStabilizer.swift",
       "kind": "FloatLiteral",
-      "offset": 1087,
+      "offset": 1132,
       "length": 4,
       "value": "1.12"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsVideoStabilization\/Internal\/GyroscopeMetalStabilizer.swift",
       "kind": "IntegerLiteral",
-      "offset": 1136,
+      "offset": 1181,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsVideoStabilization\/Internal\/GyroscopeMetalStabilizer.swift",
       "kind": "BooleanLiteral",
-      "offset": 1381,
+      "offset": 1426,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsVideoStabilization\/Internal\/GyroscopeMotionTrajectory.swift",
       "kind": "IntegerLiteral",
-      "offset": 2504,
+      "offset": 2513,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsVideoStabilization\/Internal\/SixAxisRecordingParser.swift",
       "kind": "StringLiteral",
-      "offset": 675,
+      "offset": 684,
       "length": 10,
       "value": "\"Thisadir\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsVideoStabilization\/Internal\/SixAxisRecordingParser.swift",
       "kind": "IntegerLiteral",
-      "offset": 732,
+      "offset": 741,
       "length": 2,
       "value": "40"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsVideoStabilization\/Internal\/SixAxisRecordingParser.swift",
       "kind": "IntegerLiteral",
-      "offset": 782,
+      "offset": 791,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsVideoStabilization\/Internal\/VideoStabilizationOperation.swift",
       "kind": "StringLiteral",
-      "offset": 1710,
+      "offset": 1755,
       "length": 18,
       "value": "\"PointsOfInterest\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsVideoStabilization\/Internal\/VideoStabilizationOperation.swift",
       "kind": "StringLiteral",
-      "offset": 2168,
+      "offset": 2213,
       "length": 32,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsVideoStabilization\/Internal\/VideoStabilizationOperation.swift",
       "kind": "StringLiteral",
-      "offset": 2193,
+      "offset": 2238,
       "length": 1,
       "value": "\".setup\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsVideoStabilization\/Internal\/VideoStabilizationOperation.swift",
       "kind": "BooleanLiteral",
-      "offset": 2401,
+      "offset": 2446,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsVideoStabilization\/Internal\/VideoStabilizationOperation.swift",
       "kind": "BooleanLiteral",
-      "offset": 2469,
+      "offset": 2514,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsVideoStabilization\/Internal\/VideoStabilizationOperation.swift",
       "kind": "BooleanLiteral",
-      "offset": 2503,
+      "offset": 2548,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsVideoStabilization\/Internal\/VideoStabilizationOperation.swift",
       "kind": "StringLiteral",
-      "offset": 2546,
+      "offset": 2591,
       "length": 9,
       "value": "\"unknown\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsVideoStabilization\/Internal\/VideoStabilizationOperation.swift",
       "kind": "IntegerLiteral",
-      "offset": 2599,
+      "offset": 2644,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsVideoStabilization\/Internal\/VideoStabilizationOperation.swift",
       "kind": "IntegerLiteral",
-      "offset": 2661,
+      "offset": 2706,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsVideoStabilization\/Internal\/VideoStabilizationOperation.swift",
       "kind": "IntegerLiteral",
-      "offset": 2713,
+      "offset": 2758,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsVideoStabilization\/Internal\/VisualMotionTrajectory.swift",
       "kind": "IntegerLiteral",
-      "offset": 626,
+      "offset": 644,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsVideoStabilization\/Internal\/VisualMotionTrajectory.swift",
       "kind": "IntegerLiteral",
-      "offset": 719,
+      "offset": 737,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsVideoStabilization\/Internal\/VisualMotionTrajectory.swift",
       "kind": "IntegerLiteral",
-      "offset": 758,
+      "offset": 776,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsVideoStabilization\/Internal\/VisualMotionTrajectory.swift",
       "kind": "BooleanLiteral",
-      "offset": 919,
+      "offset": 937,
       "length": 5,
       "value": "false"
     },
@@ -3442,21 +3481,21 @@
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsVideoStabilization\/AIBudsVideoStabilizationPlugin.swift",
       "kind": "StringLiteral",
-      "offset": 581,
+      "offset": 590,
       "length": 26,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsVideoStabilization\/AIBudsVideoStabilizationPlugin.swift",
       "kind": "StringLiteral",
-      "offset": 606,
+      "offset": 615,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsVideoStabilization\/AIBudsVideoStabilizationPlugin.swift",
       "kind": "Dictionary",
-      "offset": 779,
+      "offset": 788,
       "length": 3,
       "value": "[]"
     },

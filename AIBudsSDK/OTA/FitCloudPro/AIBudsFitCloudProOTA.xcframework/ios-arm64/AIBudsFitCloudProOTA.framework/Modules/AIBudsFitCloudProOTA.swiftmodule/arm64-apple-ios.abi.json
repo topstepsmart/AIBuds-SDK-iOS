@@ -1,0 +1,3348 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "AIBudsFitCloudProOTA",
+    "printedName": "AIBudsFitCloudProOTA",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AIBudsFitCloudProOTA",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AIBuds",
+        "printedName": "AIBuds",
+        "declKind": "Import",
+        "moduleName": "AIBudsFitCloudProOTA"
+      },
+      {
+        "kind": "Import",
+        "name": "AIBudsLog",
+        "printedName": "AIBudsLog",
+        "declKind": "Import",
+        "moduleName": "AIBudsFitCloudProOTA",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AIBudsFitCloudProOTA",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AIBudsLog",
+        "printedName": "AIBudsLog",
+        "declKind": "Import",
+        "moduleName": "AIBudsFitCloudProOTA",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AIBudsFitCloudProOTA",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AIBuds",
+        "printedName": "AIBuds",
+        "declKind": "Import",
+        "moduleName": "AIBudsFitCloudProOTA"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "FitCloudProOtaSDK",
+        "printedName": "FitCloudProOtaSDK",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "FitCloudProOtaSDK",
+                "printedName": "AIBudsFitCloudProOTA.FitCloudProOtaSDK",
+                "usr": "c:@M@AIBudsFitCloudProOTA@objc(cs)AIBudsFitCloudProOtaSDK"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBudsFitCloudProOTA@objc(cs)AIBudsFitCloudProOtaSDK(cpy)shared",
+            "mangledName": "$s20AIBudsFitCloudProOTA0bcD6OtaSDKC6sharedACvpZ",
+            "moduleName": "AIBudsFitCloudProOTA",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FitCloudProOtaSDK",
+                    "printedName": "AIBudsFitCloudProOTA.FitCloudProOtaSDK",
+                    "usr": "c:@M@AIBudsFitCloudProOTA@objc(cs)AIBudsFitCloudProOtaSDK"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsFitCloudProOTA@objc(cs)AIBudsFitCloudProOtaSDK(cm)shared",
+                "mangledName": "$s20AIBudsFitCloudProOTA0bcD6OtaSDKC6sharedACvgZ",
+                "moduleName": "AIBudsFitCloudProOTA",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "otaPlugin",
+            "printedName": "otaPlugin",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OtaPlugin",
+                "printedName": "any AIBuds.OtaPlugin",
+                "usr": "c:@M@AIBuds@objc(pl)AIBudsOtaPlugin"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBudsFitCloudProOTA@objc(cs)AIBudsFitCloudProOtaSDK(cpy)otaPlugin",
+            "mangledName": "$s20AIBudsFitCloudProOTA0bcD6OtaSDKC9otaPlugin0A00fI0_pvpZ",
+            "moduleName": "AIBudsFitCloudProOTA",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OtaPlugin",
+                    "printedName": "any AIBuds.OtaPlugin",
+                    "usr": "c:@M@AIBuds@objc(pl)AIBudsOtaPlugin"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsFitCloudProOTA@objc(cs)AIBudsFitCloudProOtaSDK(cm)otaPlugin",
+                "mangledName": "$s20AIBudsFitCloudProOTA0bcD6OtaSDKC9otaPlugin0A00fI0_pvgZ",
+                "moduleName": "AIBudsFitCloudProOTA",
+                "static": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "sdkVersion",
+            "printedName": "sdkVersion",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBudsFitCloudProOTA@objc(cs)AIBudsFitCloudProOtaSDK(py)sdkVersion",
+            "mangledName": "$s20AIBudsFitCloudProOTA0bcD6OtaSDKC10sdkVersionSSvp",
+            "moduleName": "AIBudsFitCloudProOTA",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsFitCloudProOTA@objc(cs)AIBudsFitCloudProOtaSDK(im)sdkVersion",
+                "mangledName": "$s20AIBudsFitCloudProOTA0bcD6OtaSDKC10sdkVersionSSvg",
+                "moduleName": "AIBudsFitCloudProOTA",
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "sdkBuild",
+            "printedName": "sdkBuild",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBudsFitCloudProOTA@objc(cs)AIBudsFitCloudProOtaSDK(py)sdkBuild",
+            "mangledName": "$s20AIBudsFitCloudProOTA0bcD6OtaSDKC8sdkBuildSSvp",
+            "moduleName": "AIBudsFitCloudProOTA",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsFitCloudProOTA@objc(cs)AIBudsFitCloudProOtaSDK(im)sdkBuild",
+                "mangledName": "$s20AIBudsFitCloudProOTA0bcD6OtaSDKC8sdkBuildSSvg",
+                "moduleName": "AIBudsFitCloudProOTA",
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "sdkReleaseDate",
+            "printedName": "sdkReleaseDate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBudsFitCloudProOTA@objc(cs)AIBudsFitCloudProOtaSDK(py)sdkReleaseDate",
+            "mangledName": "$s20AIBudsFitCloudProOTA0bcD6OtaSDKC14sdkReleaseDateSSvp",
+            "moduleName": "AIBudsFitCloudProOTA",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsFitCloudProOTA@objc(cs)AIBudsFitCloudProOtaSDK(im)sdkReleaseDate",
+                "mangledName": "$s20AIBudsFitCloudProOTA0bcD6OtaSDKC14sdkReleaseDateSSvg",
+                "moduleName": "AIBudsFitCloudProOTA",
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "sdkVersionDescription",
+            "printedName": "sdkVersionDescription",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBudsFitCloudProOTA@objc(cs)AIBudsFitCloudProOtaSDK(py)sdkVersionDescription",
+            "mangledName": "$s20AIBudsFitCloudProOTA0bcD6OtaSDKC21sdkVersionDescriptionSSvp",
+            "moduleName": "AIBudsFitCloudProOTA",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsFitCloudProOTA@objc(cs)AIBudsFitCloudProOtaSDK(im)sdkVersionDescription",
+                "mangledName": "$s20AIBudsFitCloudProOTA0bcD6OtaSDKC21sdkVersionDescriptionSSvg",
+                "moduleName": "AIBudsFitCloudProOTA",
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "sdkName",
+            "printedName": "sdkName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBudsFitCloudProOTA@objc(cs)AIBudsFitCloudProOtaSDK(py)sdkName",
+            "mangledName": "$s20AIBudsFitCloudProOTA0bcD6OtaSDKC7sdkNameSSvp",
+            "moduleName": "AIBudsFitCloudProOTA",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsFitCloudProOTA@objc(cs)AIBudsFitCloudProOtaSDK(im)sdkName",
+                "mangledName": "$s20AIBudsFitCloudProOTA0bcD6OtaSDKC7sdkNameSSvg",
+                "moduleName": "AIBudsFitCloudProOTA",
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "ErrorDomain",
+            "printedName": "ErrorDomain",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@AIBudsFitCloudProOTA@objc(cs)AIBudsFitCloudProOtaSDK(cpy)ErrorDomain",
+            "mangledName": "$s20AIBudsFitCloudProOTA0bcD6OtaSDKC11ErrorDomainSSvpZ",
+            "moduleName": "AIBudsFitCloudProOTA",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@AIBudsFitCloudProOTA@objc(cs)AIBudsFitCloudProOtaSDK(cm)ErrorDomain",
+                "mangledName": "$s20AIBudsFitCloudProOTA0bcD6OtaSDKC11ErrorDomainSSvgZ",
+                "moduleName": "AIBudsFitCloudProOTA",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "ErrorKey",
+            "printedName": "ErrorKey",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@AIBudsFitCloudProOTA@objc(cs)AIBudsFitCloudProOtaSDK(cpy)ErrorKey",
+            "mangledName": "$s20AIBudsFitCloudProOTA0bcD6OtaSDKC8ErrorKeySSvpZ",
+            "moduleName": "AIBudsFitCloudProOTA",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@AIBudsFitCloudProOTA@objc(cs)AIBudsFitCloudProOtaSDK(cm)ErrorKey",
+                "mangledName": "$s20AIBudsFitCloudProOTA0bcD6OtaSDKC8ErrorKeySSvgZ",
+                "moduleName": "AIBudsFitCloudProOTA",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@AIBudsFitCloudProOTA@objc(cs)AIBudsFitCloudProOtaSDK",
+        "mangledName": "$s20AIBudsFitCloudProOTA0bcD6OtaSDKC",
+        "moduleName": "AIBudsFitCloudProOTA",
+        "objc_name": "AIBudsFitCloudProOtaSDK",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AIBudsFitCloudProOTA",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "FitCloudProOtaErrorCode",
+        "printedName": "FitCloudProOtaErrorCode",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "commandInvalid",
+            "printedName": "commandInvalid",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AIBudsFitCloudProOTA.FitCloudProOtaErrorCode.Type) -> AIBudsFitCloudProOTA.FitCloudProOtaErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FitCloudProOtaErrorCode",
+                    "printedName": "AIBudsFitCloudProOTA.FitCloudProOtaErrorCode",
+                    "usr": "c:@M@AIBudsFitCloudProOTA@E@AIBudsFitCloudProOtaErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AIBudsFitCloudProOTA.FitCloudProOtaErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FitCloudProOtaErrorCode",
+                        "printedName": "AIBudsFitCloudProOTA.FitCloudProOtaErrorCode",
+                        "usr": "c:@M@AIBudsFitCloudProOTA@E@AIBudsFitCloudProOtaErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AIBudsFitCloudProOTA@E@AIBudsFitCloudProOtaErrorCode@AIBudsFitCloudProOtaErrorCodeCommandInvalid",
+            "mangledName": "$s20AIBudsFitCloudProOTA0bcD12OtaErrorCodeO14commandInvalidyA2CmF",
+            "moduleName": "AIBudsFitCloudProOTA",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "badOffset",
+            "printedName": "badOffset",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AIBudsFitCloudProOTA.FitCloudProOtaErrorCode.Type) -> AIBudsFitCloudProOTA.FitCloudProOtaErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FitCloudProOtaErrorCode",
+                    "printedName": "AIBudsFitCloudProOTA.FitCloudProOtaErrorCode",
+                    "usr": "c:@M@AIBudsFitCloudProOTA@E@AIBudsFitCloudProOtaErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AIBudsFitCloudProOTA.FitCloudProOtaErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FitCloudProOtaErrorCode",
+                        "printedName": "AIBudsFitCloudProOTA.FitCloudProOtaErrorCode",
+                        "usr": "c:@M@AIBudsFitCloudProOTA@E@AIBudsFitCloudProOtaErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AIBudsFitCloudProOTA@E@AIBudsFitCloudProOtaErrorCode@AIBudsFitCloudProOtaErrorCodeBadOffset",
+            "mangledName": "$s20AIBudsFitCloudProOTA0bcD12OtaErrorCodeO9badOffsetyA2CmF",
+            "moduleName": "AIBudsFitCloudProOTA",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Var",
+            "name": "badCRC",
+            "printedName": "badCRC",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AIBudsFitCloudProOTA.FitCloudProOtaErrorCode.Type) -> AIBudsFitCloudProOTA.FitCloudProOtaErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FitCloudProOtaErrorCode",
+                    "printedName": "AIBudsFitCloudProOTA.FitCloudProOtaErrorCode",
+                    "usr": "c:@M@AIBudsFitCloudProOTA@E@AIBudsFitCloudProOtaErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AIBudsFitCloudProOTA.FitCloudProOtaErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FitCloudProOtaErrorCode",
+                        "printedName": "AIBudsFitCloudProOTA.FitCloudProOtaErrorCode",
+                        "usr": "c:@M@AIBudsFitCloudProOTA@E@AIBudsFitCloudProOtaErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AIBudsFitCloudProOTA@E@AIBudsFitCloudProOtaErrorCode@AIBudsFitCloudProOtaErrorCodeBadCRC",
+            "mangledName": "$s20AIBudsFitCloudProOTA0bcD12OtaErrorCodeO6badCRCyA2CmF",
+            "moduleName": "AIBudsFitCloudProOTA",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 2
+          },
+          {
+            "kind": "Var",
+            "name": "badLength",
+            "printedName": "badLength",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AIBudsFitCloudProOTA.FitCloudProOtaErrorCode.Type) -> AIBudsFitCloudProOTA.FitCloudProOtaErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FitCloudProOtaErrorCode",
+                    "printedName": "AIBudsFitCloudProOTA.FitCloudProOtaErrorCode",
+                    "usr": "c:@M@AIBudsFitCloudProOTA@E@AIBudsFitCloudProOtaErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AIBudsFitCloudProOTA.FitCloudProOtaErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FitCloudProOtaErrorCode",
+                        "printedName": "AIBudsFitCloudProOTA.FitCloudProOtaErrorCode",
+                        "usr": "c:@M@AIBudsFitCloudProOTA@E@AIBudsFitCloudProOtaErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AIBudsFitCloudProOTA@E@AIBudsFitCloudProOtaErrorCode@AIBudsFitCloudProOtaErrorCodeBadLength",
+            "mangledName": "$s20AIBudsFitCloudProOTA0bcD12OtaErrorCodeO9badLengthyA2CmF",
+            "moduleName": "AIBudsFitCloudProOTA",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 3
+          },
+          {
+            "kind": "Var",
+            "name": "badManufacturerFlag",
+            "printedName": "badManufacturerFlag",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AIBudsFitCloudProOTA.FitCloudProOtaErrorCode.Type) -> AIBudsFitCloudProOTA.FitCloudProOtaErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FitCloudProOtaErrorCode",
+                    "printedName": "AIBudsFitCloudProOTA.FitCloudProOtaErrorCode",
+                    "usr": "c:@M@AIBudsFitCloudProOTA@E@AIBudsFitCloudProOtaErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AIBudsFitCloudProOTA.FitCloudProOtaErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FitCloudProOtaErrorCode",
+                        "printedName": "AIBudsFitCloudProOTA.FitCloudProOtaErrorCode",
+                        "usr": "c:@M@AIBudsFitCloudProOTA@E@AIBudsFitCloudProOtaErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AIBudsFitCloudProOTA@E@AIBudsFitCloudProOtaErrorCode@AIBudsFitCloudProOtaErrorCodeBadManufacturerFlag",
+            "mangledName": "$s20AIBudsFitCloudProOTA0bcD12OtaErrorCodeO19badManufacturerFlagyA2CmF",
+            "moduleName": "AIBudsFitCloudProOTA",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 4
+          },
+          {
+            "kind": "Var",
+            "name": "projectNotMatch",
+            "printedName": "projectNotMatch",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AIBudsFitCloudProOTA.FitCloudProOtaErrorCode.Type) -> AIBudsFitCloudProOTA.FitCloudProOtaErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FitCloudProOtaErrorCode",
+                    "printedName": "AIBudsFitCloudProOTA.FitCloudProOtaErrorCode",
+                    "usr": "c:@M@AIBudsFitCloudProOTA@E@AIBudsFitCloudProOtaErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AIBudsFitCloudProOTA.FitCloudProOtaErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FitCloudProOtaErrorCode",
+                        "printedName": "AIBudsFitCloudProOTA.FitCloudProOtaErrorCode",
+                        "usr": "c:@M@AIBudsFitCloudProOTA@E@AIBudsFitCloudProOtaErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AIBudsFitCloudProOTA@E@AIBudsFitCloudProOtaErrorCode@AIBudsFitCloudProOtaErrorCodeProjectNotMatch",
+            "mangledName": "$s20AIBudsFitCloudProOTA0bcD12OtaErrorCodeO15projectNotMatchyA2CmF",
+            "moduleName": "AIBudsFitCloudProOTA",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 5
+          },
+          {
+            "kind": "Var",
+            "name": "protocolVersionNotMatch",
+            "printedName": "protocolVersionNotMatch",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AIBudsFitCloudProOTA.FitCloudProOtaErrorCode.Type) -> AIBudsFitCloudProOTA.FitCloudProOtaErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FitCloudProOtaErrorCode",
+                    "printedName": "AIBudsFitCloudProOTA.FitCloudProOtaErrorCode",
+                    "usr": "c:@M@AIBudsFitCloudProOTA@E@AIBudsFitCloudProOtaErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AIBudsFitCloudProOTA.FitCloudProOtaErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FitCloudProOtaErrorCode",
+                        "printedName": "AIBudsFitCloudProOTA.FitCloudProOtaErrorCode",
+                        "usr": "c:@M@AIBudsFitCloudProOTA@E@AIBudsFitCloudProOtaErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AIBudsFitCloudProOTA@E@AIBudsFitCloudProOtaErrorCode@AIBudsFitCloudProOtaErrorCodeProtocolVersionNotMatch",
+            "mangledName": "$s20AIBudsFitCloudProOTA0bcD12OtaErrorCodeO23protocolVersionNotMatchyA2CmF",
+            "moduleName": "AIBudsFitCloudProOTA",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 6
+          },
+          {
+            "kind": "Var",
+            "name": "badFileItem",
+            "printedName": "badFileItem",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AIBudsFitCloudProOTA.FitCloudProOtaErrorCode.Type) -> AIBudsFitCloudProOTA.FitCloudProOtaErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FitCloudProOtaErrorCode",
+                    "printedName": "AIBudsFitCloudProOTA.FitCloudProOtaErrorCode",
+                    "usr": "c:@M@AIBudsFitCloudProOTA@E@AIBudsFitCloudProOtaErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AIBudsFitCloudProOTA.FitCloudProOtaErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FitCloudProOtaErrorCode",
+                        "printedName": "AIBudsFitCloudProOTA.FitCloudProOtaErrorCode",
+                        "usr": "c:@M@AIBudsFitCloudProOTA@E@AIBudsFitCloudProOtaErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AIBudsFitCloudProOTA@E@AIBudsFitCloudProOtaErrorCode@AIBudsFitCloudProOtaErrorCodeBadFileItem",
+            "mangledName": "$s20AIBudsFitCloudProOTA0bcD12OtaErrorCodeO11badFileItemyA2CmF",
+            "moduleName": "AIBudsFitCloudProOTA",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 7
+          },
+          {
+            "kind": "Var",
+            "name": "badFileType",
+            "printedName": "badFileType",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AIBudsFitCloudProOTA.FitCloudProOtaErrorCode.Type) -> AIBudsFitCloudProOTA.FitCloudProOtaErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FitCloudProOtaErrorCode",
+                    "printedName": "AIBudsFitCloudProOTA.FitCloudProOtaErrorCode",
+                    "usr": "c:@M@AIBudsFitCloudProOTA@E@AIBudsFitCloudProOtaErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AIBudsFitCloudProOTA.FitCloudProOtaErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FitCloudProOtaErrorCode",
+                        "printedName": "AIBudsFitCloudProOTA.FitCloudProOtaErrorCode",
+                        "usr": "c:@M@AIBudsFitCloudProOTA@E@AIBudsFitCloudProOtaErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AIBudsFitCloudProOTA@E@AIBudsFitCloudProOtaErrorCode@AIBudsFitCloudProOtaErrorCodeBadFileType",
+            "mangledName": "$s20AIBudsFitCloudProOTA0bcD12OtaErrorCodeO11badFileTypeyA2CmF",
+            "moduleName": "AIBudsFitCloudProOTA",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 8
+          },
+          {
+            "kind": "Var",
+            "name": "badPackType",
+            "printedName": "badPackType",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AIBudsFitCloudProOTA.FitCloudProOtaErrorCode.Type) -> AIBudsFitCloudProOTA.FitCloudProOtaErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FitCloudProOtaErrorCode",
+                    "printedName": "AIBudsFitCloudProOTA.FitCloudProOtaErrorCode",
+                    "usr": "c:@M@AIBudsFitCloudProOTA@E@AIBudsFitCloudProOtaErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AIBudsFitCloudProOTA.FitCloudProOtaErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FitCloudProOtaErrorCode",
+                        "printedName": "AIBudsFitCloudProOTA.FitCloudProOtaErrorCode",
+                        "usr": "c:@M@AIBudsFitCloudProOTA@E@AIBudsFitCloudProOtaErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AIBudsFitCloudProOTA@E@AIBudsFitCloudProOtaErrorCode@AIBudsFitCloudProOtaErrorCodeBadPackType",
+            "mangledName": "$s20AIBudsFitCloudProOTA0bcD12OtaErrorCodeO11badPackTypeyA2CmF",
+            "moduleName": "AIBudsFitCloudProOTA",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 9
+          },
+          {
+            "kind": "Var",
+            "name": "badFileSize",
+            "printedName": "badFileSize",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AIBudsFitCloudProOTA.FitCloudProOtaErrorCode.Type) -> AIBudsFitCloudProOTA.FitCloudProOtaErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FitCloudProOtaErrorCode",
+                    "printedName": "AIBudsFitCloudProOTA.FitCloudProOtaErrorCode",
+                    "usr": "c:@M@AIBudsFitCloudProOTA@E@AIBudsFitCloudProOtaErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AIBudsFitCloudProOTA.FitCloudProOtaErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FitCloudProOtaErrorCode",
+                        "printedName": "AIBudsFitCloudProOTA.FitCloudProOtaErrorCode",
+                        "usr": "c:@M@AIBudsFitCloudProOTA@E@AIBudsFitCloudProOtaErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AIBudsFitCloudProOTA@E@AIBudsFitCloudProOtaErrorCode@AIBudsFitCloudProOtaErrorCodeBadFileSize",
+            "mangledName": "$s20AIBudsFitCloudProOTA0bcD12OtaErrorCodeO11badFileSizeyA2CmF",
+            "moduleName": "AIBudsFitCloudProOTA",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 10
+          },
+          {
+            "kind": "Var",
+            "name": "badFileOffset",
+            "printedName": "badFileOffset",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AIBudsFitCloudProOTA.FitCloudProOtaErrorCode.Type) -> AIBudsFitCloudProOTA.FitCloudProOtaErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FitCloudProOtaErrorCode",
+                    "printedName": "AIBudsFitCloudProOTA.FitCloudProOtaErrorCode",
+                    "usr": "c:@M@AIBudsFitCloudProOTA@E@AIBudsFitCloudProOtaErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AIBudsFitCloudProOTA.FitCloudProOtaErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FitCloudProOtaErrorCode",
+                        "printedName": "AIBudsFitCloudProOTA.FitCloudProOtaErrorCode",
+                        "usr": "c:@M@AIBudsFitCloudProOTA@E@AIBudsFitCloudProOtaErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AIBudsFitCloudProOTA@E@AIBudsFitCloudProOtaErrorCode@AIBudsFitCloudProOtaErrorCodeBadFileOffset",
+            "mangledName": "$s20AIBudsFitCloudProOTA0bcD12OtaErrorCodeO13badFileOffsetyA2CmF",
+            "moduleName": "AIBudsFitCloudProOTA",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 11
+          },
+          {
+            "kind": "Var",
+            "name": "badFileAddress",
+            "printedName": "badFileAddress",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AIBudsFitCloudProOTA.FitCloudProOtaErrorCode.Type) -> AIBudsFitCloudProOTA.FitCloudProOtaErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FitCloudProOtaErrorCode",
+                    "printedName": "AIBudsFitCloudProOTA.FitCloudProOtaErrorCode",
+                    "usr": "c:@M@AIBudsFitCloudProOTA@E@AIBudsFitCloudProOtaErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AIBudsFitCloudProOTA.FitCloudProOtaErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FitCloudProOtaErrorCode",
+                        "printedName": "AIBudsFitCloudProOTA.FitCloudProOtaErrorCode",
+                        "usr": "c:@M@AIBudsFitCloudProOTA@E@AIBudsFitCloudProOtaErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AIBudsFitCloudProOTA@E@AIBudsFitCloudProOtaErrorCode@AIBudsFitCloudProOtaErrorCodeBadFileAddress",
+            "mangledName": "$s20AIBudsFitCloudProOTA0bcD12OtaErrorCodeO14badFileAddressyA2CmF",
+            "moduleName": "AIBudsFitCloudProOTA",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 12
+          },
+          {
+            "kind": "Var",
+            "name": "badFileName",
+            "printedName": "badFileName",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AIBudsFitCloudProOTA.FitCloudProOtaErrorCode.Type) -> AIBudsFitCloudProOTA.FitCloudProOtaErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FitCloudProOtaErrorCode",
+                    "printedName": "AIBudsFitCloudProOTA.FitCloudProOtaErrorCode",
+                    "usr": "c:@M@AIBudsFitCloudProOTA@E@AIBudsFitCloudProOtaErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AIBudsFitCloudProOTA.FitCloudProOtaErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FitCloudProOtaErrorCode",
+                        "printedName": "AIBudsFitCloudProOTA.FitCloudProOtaErrorCode",
+                        "usr": "c:@M@AIBudsFitCloudProOTA@E@AIBudsFitCloudProOtaErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AIBudsFitCloudProOTA@E@AIBudsFitCloudProOtaErrorCode@AIBudsFitCloudProOtaErrorCodeBadFileName",
+            "mangledName": "$s20AIBudsFitCloudProOTA0bcD12OtaErrorCodeO11badFileNameyA2CmF",
+            "moduleName": "AIBudsFitCloudProOTA",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 13
+          },
+          {
+            "kind": "Var",
+            "name": "badFileItemLength",
+            "printedName": "badFileItemLength",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AIBudsFitCloudProOTA.FitCloudProOtaErrorCode.Type) -> AIBudsFitCloudProOTA.FitCloudProOtaErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FitCloudProOtaErrorCode",
+                    "printedName": "AIBudsFitCloudProOTA.FitCloudProOtaErrorCode",
+                    "usr": "c:@M@AIBudsFitCloudProOTA@E@AIBudsFitCloudProOtaErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AIBudsFitCloudProOTA.FitCloudProOtaErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FitCloudProOtaErrorCode",
+                        "printedName": "AIBudsFitCloudProOTA.FitCloudProOtaErrorCode",
+                        "usr": "c:@M@AIBudsFitCloudProOTA@E@AIBudsFitCloudProOtaErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AIBudsFitCloudProOTA@E@AIBudsFitCloudProOtaErrorCode@AIBudsFitCloudProOtaErrorCodeBadFileItemLength",
+            "mangledName": "$s20AIBudsFitCloudProOTA0bcD12OtaErrorCodeO17badFileItemLengthyA2CmF",
+            "moduleName": "AIBudsFitCloudProOTA",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 14
+          },
+          {
+            "kind": "Var",
+            "name": "timeout",
+            "printedName": "timeout",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AIBudsFitCloudProOTA.FitCloudProOtaErrorCode.Type) -> AIBudsFitCloudProOTA.FitCloudProOtaErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FitCloudProOtaErrorCode",
+                    "printedName": "AIBudsFitCloudProOTA.FitCloudProOtaErrorCode",
+                    "usr": "c:@M@AIBudsFitCloudProOTA@E@AIBudsFitCloudProOtaErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AIBudsFitCloudProOTA.FitCloudProOtaErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FitCloudProOtaErrorCode",
+                        "printedName": "AIBudsFitCloudProOTA.FitCloudProOtaErrorCode",
+                        "usr": "c:@M@AIBudsFitCloudProOTA@E@AIBudsFitCloudProOtaErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AIBudsFitCloudProOTA@E@AIBudsFitCloudProOtaErrorCode@AIBudsFitCloudProOtaErrorCodeTimeout",
+            "mangledName": "$s20AIBudsFitCloudProOTA0bcD12OtaErrorCodeO7timeoutyA2CmF",
+            "moduleName": "AIBudsFitCloudProOTA",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 15
+          },
+          {
+            "kind": "Var",
+            "name": "lowBattery",
+            "printedName": "lowBattery",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AIBudsFitCloudProOTA.FitCloudProOtaErrorCode.Type) -> AIBudsFitCloudProOTA.FitCloudProOtaErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FitCloudProOtaErrorCode",
+                    "printedName": "AIBudsFitCloudProOTA.FitCloudProOtaErrorCode",
+                    "usr": "c:@M@AIBudsFitCloudProOTA@E@AIBudsFitCloudProOtaErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AIBudsFitCloudProOTA.FitCloudProOtaErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FitCloudProOtaErrorCode",
+                        "printedName": "AIBudsFitCloudProOTA.FitCloudProOtaErrorCode",
+                        "usr": "c:@M@AIBudsFitCloudProOTA@E@AIBudsFitCloudProOtaErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AIBudsFitCloudProOTA@E@AIBudsFitCloudProOtaErrorCode@AIBudsFitCloudProOtaErrorCodeLowBattery",
+            "mangledName": "$s20AIBudsFitCloudProOTA0bcD12OtaErrorCodeO10lowBatteryyA2CmF",
+            "moduleName": "AIBudsFitCloudProOTA",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 16
+          },
+          {
+            "kind": "Var",
+            "name": "sliceResend",
+            "printedName": "sliceResend",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AIBudsFitCloudProOTA.FitCloudProOtaErrorCode.Type) -> AIBudsFitCloudProOTA.FitCloudProOtaErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FitCloudProOtaErrorCode",
+                    "printedName": "AIBudsFitCloudProOTA.FitCloudProOtaErrorCode",
+                    "usr": "c:@M@AIBudsFitCloudProOTA@E@AIBudsFitCloudProOtaErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AIBudsFitCloudProOTA.FitCloudProOtaErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FitCloudProOtaErrorCode",
+                        "printedName": "AIBudsFitCloudProOTA.FitCloudProOtaErrorCode",
+                        "usr": "c:@M@AIBudsFitCloudProOTA@E@AIBudsFitCloudProOtaErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AIBudsFitCloudProOTA@E@AIBudsFitCloudProOtaErrorCode@AIBudsFitCloudProOtaErrorCodeSliceResend",
+            "mangledName": "$s20AIBudsFitCloudProOTA0bcD12OtaErrorCodeO11sliceResendyA2CmF",
+            "moduleName": "AIBudsFitCloudProOTA",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 17
+          },
+          {
+            "kind": "Var",
+            "name": "deviceReportedOther",
+            "printedName": "deviceReportedOther",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AIBudsFitCloudProOTA.FitCloudProOtaErrorCode.Type) -> AIBudsFitCloudProOTA.FitCloudProOtaErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FitCloudProOtaErrorCode",
+                    "printedName": "AIBudsFitCloudProOTA.FitCloudProOtaErrorCode",
+                    "usr": "c:@M@AIBudsFitCloudProOTA@E@AIBudsFitCloudProOtaErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AIBudsFitCloudProOTA.FitCloudProOtaErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FitCloudProOtaErrorCode",
+                        "printedName": "AIBudsFitCloudProOTA.FitCloudProOtaErrorCode",
+                        "usr": "c:@M@AIBudsFitCloudProOTA@E@AIBudsFitCloudProOtaErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AIBudsFitCloudProOTA@E@AIBudsFitCloudProOtaErrorCode@AIBudsFitCloudProOtaErrorCodeDeviceReportedOther",
+            "mangledName": "$s20AIBudsFitCloudProOTA0bcD12OtaErrorCodeO19deviceReportedOtheryA2CmF",
+            "moduleName": "AIBudsFitCloudProOTA",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 18
+          },
+          {
+            "kind": "Var",
+            "name": "deviceNotReady",
+            "printedName": "deviceNotReady",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AIBudsFitCloudProOTA.FitCloudProOtaErrorCode.Type) -> AIBudsFitCloudProOTA.FitCloudProOtaErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FitCloudProOtaErrorCode",
+                    "printedName": "AIBudsFitCloudProOTA.FitCloudProOtaErrorCode",
+                    "usr": "c:@M@AIBudsFitCloudProOTA@E@AIBudsFitCloudProOtaErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AIBudsFitCloudProOTA.FitCloudProOtaErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FitCloudProOtaErrorCode",
+                        "printedName": "AIBudsFitCloudProOTA.FitCloudProOtaErrorCode",
+                        "usr": "c:@M@AIBudsFitCloudProOTA@E@AIBudsFitCloudProOtaErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AIBudsFitCloudProOTA@E@AIBudsFitCloudProOtaErrorCode@AIBudsFitCloudProOtaErrorCodeDeviceNotReady",
+            "mangledName": "$s20AIBudsFitCloudProOTA0bcD12OtaErrorCodeO14deviceNotReadyyA2CmF",
+            "moduleName": "AIBudsFitCloudProOTA",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 19
+          },
+          {
+            "kind": "Var",
+            "name": "deviceNotSupported",
+            "printedName": "deviceNotSupported",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AIBudsFitCloudProOTA.FitCloudProOtaErrorCode.Type) -> AIBudsFitCloudProOTA.FitCloudProOtaErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FitCloudProOtaErrorCode",
+                    "printedName": "AIBudsFitCloudProOTA.FitCloudProOtaErrorCode",
+                    "usr": "c:@M@AIBudsFitCloudProOTA@E@AIBudsFitCloudProOtaErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AIBudsFitCloudProOTA.FitCloudProOtaErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FitCloudProOtaErrorCode",
+                        "printedName": "AIBudsFitCloudProOTA.FitCloudProOtaErrorCode",
+                        "usr": "c:@M@AIBudsFitCloudProOTA@E@AIBudsFitCloudProOtaErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AIBudsFitCloudProOTA@E@AIBudsFitCloudProOtaErrorCode@AIBudsFitCloudProOtaErrorCodeDeviceNotSupported",
+            "mangledName": "$s20AIBudsFitCloudProOTA0bcD12OtaErrorCodeO18deviceNotSupportedyA2CmF",
+            "moduleName": "AIBudsFitCloudProOTA",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 20
+          },
+          {
+            "kind": "Var",
+            "name": "fileNotFound",
+            "printedName": "fileNotFound",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AIBudsFitCloudProOTA.FitCloudProOtaErrorCode.Type) -> AIBudsFitCloudProOTA.FitCloudProOtaErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FitCloudProOtaErrorCode",
+                    "printedName": "AIBudsFitCloudProOTA.FitCloudProOtaErrorCode",
+                    "usr": "c:@M@AIBudsFitCloudProOTA@E@AIBudsFitCloudProOtaErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AIBudsFitCloudProOTA.FitCloudProOtaErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FitCloudProOtaErrorCode",
+                        "printedName": "AIBudsFitCloudProOTA.FitCloudProOtaErrorCode",
+                        "usr": "c:@M@AIBudsFitCloudProOTA@E@AIBudsFitCloudProOtaErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AIBudsFitCloudProOTA@E@AIBudsFitCloudProOtaErrorCode@AIBudsFitCloudProOtaErrorCodeFileNotFound",
+            "mangledName": "$s20AIBudsFitCloudProOTA0bcD12OtaErrorCodeO12fileNotFoundyA2CmF",
+            "moduleName": "AIBudsFitCloudProOTA",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 21
+          },
+          {
+            "kind": "Var",
+            "name": "fileReadFailed",
+            "printedName": "fileReadFailed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AIBudsFitCloudProOTA.FitCloudProOtaErrorCode.Type) -> AIBudsFitCloudProOTA.FitCloudProOtaErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FitCloudProOtaErrorCode",
+                    "printedName": "AIBudsFitCloudProOTA.FitCloudProOtaErrorCode",
+                    "usr": "c:@M@AIBudsFitCloudProOTA@E@AIBudsFitCloudProOtaErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AIBudsFitCloudProOTA.FitCloudProOtaErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FitCloudProOtaErrorCode",
+                        "printedName": "AIBudsFitCloudProOTA.FitCloudProOtaErrorCode",
+                        "usr": "c:@M@AIBudsFitCloudProOTA@E@AIBudsFitCloudProOtaErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AIBudsFitCloudProOTA@E@AIBudsFitCloudProOtaErrorCode@AIBudsFitCloudProOtaErrorCodeFileReadFailed",
+            "mangledName": "$s20AIBudsFitCloudProOTA0bcD12OtaErrorCodeO14fileReadFailedyA2CmF",
+            "moduleName": "AIBudsFitCloudProOTA",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 22
+          },
+          {
+            "kind": "Var",
+            "name": "invalidMTU",
+            "printedName": "invalidMTU",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AIBudsFitCloudProOTA.FitCloudProOtaErrorCode.Type) -> AIBudsFitCloudProOTA.FitCloudProOtaErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FitCloudProOtaErrorCode",
+                    "printedName": "AIBudsFitCloudProOTA.FitCloudProOtaErrorCode",
+                    "usr": "c:@M@AIBudsFitCloudProOTA@E@AIBudsFitCloudProOtaErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AIBudsFitCloudProOTA.FitCloudProOtaErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FitCloudProOtaErrorCode",
+                        "printedName": "AIBudsFitCloudProOTA.FitCloudProOtaErrorCode",
+                        "usr": "c:@M@AIBudsFitCloudProOTA@E@AIBudsFitCloudProOtaErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AIBudsFitCloudProOTA@E@AIBudsFitCloudProOtaErrorCode@AIBudsFitCloudProOtaErrorCodeInvalidMTU",
+            "mangledName": "$s20AIBudsFitCloudProOTA0bcD12OtaErrorCodeO10invalidMTUyA2CmF",
+            "moduleName": "AIBudsFitCloudProOTA",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 23
+          },
+          {
+            "kind": "Var",
+            "name": "invalidSliceSize",
+            "printedName": "invalidSliceSize",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AIBudsFitCloudProOTA.FitCloudProOtaErrorCode.Type) -> AIBudsFitCloudProOTA.FitCloudProOtaErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FitCloudProOtaErrorCode",
+                    "printedName": "AIBudsFitCloudProOTA.FitCloudProOtaErrorCode",
+                    "usr": "c:@M@AIBudsFitCloudProOTA@E@AIBudsFitCloudProOtaErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AIBudsFitCloudProOTA.FitCloudProOtaErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FitCloudProOtaErrorCode",
+                        "printedName": "AIBudsFitCloudProOTA.FitCloudProOtaErrorCode",
+                        "usr": "c:@M@AIBudsFitCloudProOTA@E@AIBudsFitCloudProOtaErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AIBudsFitCloudProOTA@E@AIBudsFitCloudProOtaErrorCode@AIBudsFitCloudProOtaErrorCodeInvalidSliceSize",
+            "mangledName": "$s20AIBudsFitCloudProOTA0bcD12OtaErrorCodeO16invalidSliceSizeyA2CmF",
+            "moduleName": "AIBudsFitCloudProOTA",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 24
+          },
+          {
+            "kind": "Var",
+            "name": "malformedPacket",
+            "printedName": "malformedPacket",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AIBudsFitCloudProOTA.FitCloudProOtaErrorCode.Type) -> AIBudsFitCloudProOTA.FitCloudProOtaErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FitCloudProOtaErrorCode",
+                    "printedName": "AIBudsFitCloudProOTA.FitCloudProOtaErrorCode",
+                    "usr": "c:@M@AIBudsFitCloudProOTA@E@AIBudsFitCloudProOtaErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AIBudsFitCloudProOTA.FitCloudProOtaErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FitCloudProOtaErrorCode",
+                        "printedName": "AIBudsFitCloudProOTA.FitCloudProOtaErrorCode",
+                        "usr": "c:@M@AIBudsFitCloudProOTA@E@AIBudsFitCloudProOtaErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AIBudsFitCloudProOTA@E@AIBudsFitCloudProOtaErrorCode@AIBudsFitCloudProOtaErrorCodeMalformedPacket",
+            "mangledName": "$s20AIBudsFitCloudProOTA0bcD12OtaErrorCodeO15malformedPacketyA2CmF",
+            "moduleName": "AIBudsFitCloudProOTA",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 25
+          },
+          {
+            "kind": "Var",
+            "name": "unexpectedCommand",
+            "printedName": "unexpectedCommand",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AIBudsFitCloudProOTA.FitCloudProOtaErrorCode.Type) -> AIBudsFitCloudProOTA.FitCloudProOtaErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FitCloudProOtaErrorCode",
+                    "printedName": "AIBudsFitCloudProOTA.FitCloudProOtaErrorCode",
+                    "usr": "c:@M@AIBudsFitCloudProOTA@E@AIBudsFitCloudProOtaErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AIBudsFitCloudProOTA.FitCloudProOtaErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FitCloudProOtaErrorCode",
+                        "printedName": "AIBudsFitCloudProOTA.FitCloudProOtaErrorCode",
+                        "usr": "c:@M@AIBudsFitCloudProOTA@E@AIBudsFitCloudProOtaErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AIBudsFitCloudProOTA@E@AIBudsFitCloudProOtaErrorCode@AIBudsFitCloudProOtaErrorCodeUnexpectedCommand",
+            "mangledName": "$s20AIBudsFitCloudProOTA0bcD12OtaErrorCodeO17unexpectedCommandyA2CmF",
+            "moduleName": "AIBudsFitCloudProOTA",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 26
+          },
+          {
+            "kind": "Var",
+            "name": "busy",
+            "printedName": "busy",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AIBudsFitCloudProOTA.FitCloudProOtaErrorCode.Type) -> AIBudsFitCloudProOTA.FitCloudProOtaErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FitCloudProOtaErrorCode",
+                    "printedName": "AIBudsFitCloudProOTA.FitCloudProOtaErrorCode",
+                    "usr": "c:@M@AIBudsFitCloudProOTA@E@AIBudsFitCloudProOtaErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AIBudsFitCloudProOTA.FitCloudProOtaErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FitCloudProOtaErrorCode",
+                        "printedName": "AIBudsFitCloudProOTA.FitCloudProOtaErrorCode",
+                        "usr": "c:@M@AIBudsFitCloudProOTA@E@AIBudsFitCloudProOtaErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AIBudsFitCloudProOTA@E@AIBudsFitCloudProOtaErrorCode@AIBudsFitCloudProOtaErrorCodeBusy",
+            "mangledName": "$s20AIBudsFitCloudProOTA0bcD12OtaErrorCodeO4busyyA2CmF",
+            "moduleName": "AIBudsFitCloudProOTA",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 27
+          },
+          {
+            "kind": "Var",
+            "name": "transportUnavailable",
+            "printedName": "transportUnavailable",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AIBudsFitCloudProOTA.FitCloudProOtaErrorCode.Type) -> AIBudsFitCloudProOTA.FitCloudProOtaErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FitCloudProOtaErrorCode",
+                    "printedName": "AIBudsFitCloudProOTA.FitCloudProOtaErrorCode",
+                    "usr": "c:@M@AIBudsFitCloudProOTA@E@AIBudsFitCloudProOtaErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AIBudsFitCloudProOTA.FitCloudProOtaErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FitCloudProOtaErrorCode",
+                        "printedName": "AIBudsFitCloudProOTA.FitCloudProOtaErrorCode",
+                        "usr": "c:@M@AIBudsFitCloudProOTA@E@AIBudsFitCloudProOtaErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AIBudsFitCloudProOTA@E@AIBudsFitCloudProOtaErrorCode@AIBudsFitCloudProOtaErrorCodeTransportUnavailable",
+            "mangledName": "$s20AIBudsFitCloudProOTA0bcD12OtaErrorCodeO20transportUnavailableyA2CmF",
+            "moduleName": "AIBudsFitCloudProOTA",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 28
+          },
+          {
+            "kind": "Var",
+            "name": "disconnected",
+            "printedName": "disconnected",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AIBudsFitCloudProOTA.FitCloudProOtaErrorCode.Type) -> AIBudsFitCloudProOTA.FitCloudProOtaErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FitCloudProOtaErrorCode",
+                    "printedName": "AIBudsFitCloudProOTA.FitCloudProOtaErrorCode",
+                    "usr": "c:@M@AIBudsFitCloudProOTA@E@AIBudsFitCloudProOtaErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AIBudsFitCloudProOTA.FitCloudProOtaErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FitCloudProOtaErrorCode",
+                        "printedName": "AIBudsFitCloudProOTA.FitCloudProOtaErrorCode",
+                        "usr": "c:@M@AIBudsFitCloudProOTA@E@AIBudsFitCloudProOtaErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AIBudsFitCloudProOTA@E@AIBudsFitCloudProOtaErrorCode@AIBudsFitCloudProOtaErrorCodeDisconnected",
+            "mangledName": "$s20AIBudsFitCloudProOTA0bcD12OtaErrorCodeO12disconnectedyA2CmF",
+            "moduleName": "AIBudsFitCloudProOTA",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 29
+          },
+          {
+            "kind": "Var",
+            "name": "cancelled",
+            "printedName": "cancelled",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AIBudsFitCloudProOTA.FitCloudProOtaErrorCode.Type) -> AIBudsFitCloudProOTA.FitCloudProOtaErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FitCloudProOtaErrorCode",
+                    "printedName": "AIBudsFitCloudProOTA.FitCloudProOtaErrorCode",
+                    "usr": "c:@M@AIBudsFitCloudProOTA@E@AIBudsFitCloudProOtaErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AIBudsFitCloudProOTA.FitCloudProOtaErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FitCloudProOtaErrorCode",
+                        "printedName": "AIBudsFitCloudProOTA.FitCloudProOtaErrorCode",
+                        "usr": "c:@M@AIBudsFitCloudProOTA@E@AIBudsFitCloudProOtaErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AIBudsFitCloudProOTA@E@AIBudsFitCloudProOtaErrorCode@AIBudsFitCloudProOtaErrorCodeCancelled",
+            "mangledName": "$s20AIBudsFitCloudProOTA0bcD12OtaErrorCodeO9cancelledyA2CmF",
+            "moduleName": "AIBudsFitCloudProOTA",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 30
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "AIBudsFitCloudProOTA.FitCloudProOtaErrorCode?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FitCloudProOtaErrorCode",
+                    "printedName": "AIBudsFitCloudProOTA.FitCloudProOtaErrorCode",
+                    "usr": "c:@M@AIBudsFitCloudProOTA@E@AIBudsFitCloudProOtaErrorCode"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:20AIBudsFitCloudProOTA0bcD12OtaErrorCodeO8rawValueACSgSi_tcfc",
+            "mangledName": "$s20AIBudsFitCloudProOTA0bcD12OtaErrorCodeO8rawValueACSgSi_tcfc",
+            "moduleName": "AIBudsFitCloudProOTA",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20AIBudsFitCloudProOTA0bcD12OtaErrorCodeO8rawValueSivp",
+            "mangledName": "$s20AIBudsFitCloudProOTA0bcD12OtaErrorCodeO8rawValueSivp",
+            "moduleName": "AIBudsFitCloudProOTA",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20AIBudsFitCloudProOTA0bcD12OtaErrorCodeO8rawValueSivg",
+                "mangledName": "$s20AIBudsFitCloudProOTA0bcD12OtaErrorCodeO8rawValueSivg",
+                "moduleName": "AIBudsFitCloudProOTA",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "c:@M@AIBudsFitCloudProOTA@E@AIBudsFitCloudProOtaErrorCode",
+        "mangledName": "$s20AIBudsFitCloudProOTA0bcD12OtaErrorCodeO",
+        "moduleName": "AIBudsFitCloudProOTA",
+        "objc_name": "AIBudsFitCloudProOtaErrorCode",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AIBudsFitCloudProOTA",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AIBuds",
+        "printedName": "AIBuds",
+        "declKind": "Import",
+        "moduleName": "AIBudsFitCloudProOTA"
+      },
+      {
+        "kind": "Import",
+        "name": "AIBudsFoundation",
+        "printedName": "AIBudsFoundation",
+        "declKind": "Import",
+        "moduleName": "AIBudsFitCloudProOTA"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "FitCloudProOtaPlugin",
+        "printedName": "FitCloudProOtaPlugin",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "FitCloudProOtaPlugin",
+                "printedName": "AIBudsFitCloudProOTA.FitCloudProOtaPlugin",
+                "usr": "c:@M@AIBudsFitCloudProOTA@objc(cs)AIBudsFitCloudProOtaPlugin"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBudsFitCloudProOTA@objc(cs)AIBudsFitCloudProOtaPlugin(cpy)shared",
+            "mangledName": "$s20AIBudsFitCloudProOTA0bcD9OtaPluginC6sharedACvpZ",
+            "moduleName": "AIBudsFitCloudProOTA",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FitCloudProOtaPlugin",
+                    "printedName": "AIBudsFitCloudProOTA.FitCloudProOtaPlugin",
+                    "usr": "c:@M@AIBudsFitCloudProOTA@objc(cs)AIBudsFitCloudProOtaPlugin"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsFitCloudProOTA@objc(cs)AIBudsFitCloudProOtaPlugin(cm)shared",
+                "mangledName": "$s20AIBudsFitCloudProOTA0bcD9OtaPluginC6sharedACvgZ",
+                "moduleName": "AIBudsFitCloudProOTA",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "identifier",
+            "printedName": "identifier",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBudsFitCloudProOTA@objc(cs)AIBudsFitCloudProOtaPlugin(py)identifier",
+            "mangledName": "$s20AIBudsFitCloudProOTA0bcD9OtaPluginC10identifierSSvp",
+            "moduleName": "AIBudsFitCloudProOTA",
+            "objc_name": "identifier",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "ObjC",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsFitCloudProOTA@objc(cs)AIBudsFitCloudProOtaPlugin(im)identifier",
+                "mangledName": "$s20AIBudsFitCloudProOTA0bcD9OtaPluginC10identifierSSvg",
+                "moduleName": "AIBudsFitCloudProOTA",
+                "implicit": true,
+                "objc_name": "identifier",
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "protocolKind",
+            "printedName": "protocolKind",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OtaProtocolKind",
+                "printedName": "AIBudsFoundation.OtaProtocolKind",
+                "usr": "c:@M@AIBudsFoundation@E@AIBudsOtaProtocolKind"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBudsFitCloudProOTA@objc(cs)AIBudsFitCloudProOtaPlugin(py)protocolKind",
+            "mangledName": "$s20AIBudsFitCloudProOTA0bcD9OtaPluginC12protocolKind0A10Foundation0f8ProtocolI0Ovp",
+            "moduleName": "AIBudsFitCloudProOTA",
+            "objc_name": "protocolKind",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "ObjC",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OtaProtocolKind",
+                    "printedName": "AIBudsFoundation.OtaProtocolKind",
+                    "usr": "c:@M@AIBudsFoundation@E@AIBudsOtaProtocolKind"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsFitCloudProOTA@objc(cs)AIBudsFitCloudProOtaPlugin(im)protocolKind",
+                "mangledName": "$s20AIBudsFitCloudProOTA0bcD9OtaPluginC12protocolKind0A10Foundation0f8ProtocolI0Ovg",
+                "moduleName": "AIBudsFitCloudProOTA",
+                "implicit": true,
+                "objc_name": "protocolKind",
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "serviceUUID",
+            "printedName": "serviceUUID",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBudsFitCloudProOTA@objc(cs)AIBudsFitCloudProOtaPlugin(py)serviceUUID",
+            "mangledName": "$s20AIBudsFitCloudProOTA0bcD9OtaPluginC11serviceUUIDSSvp",
+            "moduleName": "AIBudsFitCloudProOTA",
+            "objc_name": "serviceUUID",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "ObjC",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsFitCloudProOTA@objc(cs)AIBudsFitCloudProOtaPlugin(im)serviceUUID",
+                "mangledName": "$s20AIBudsFitCloudProOTA0bcD9OtaPluginC11serviceUUIDSSvg",
+                "moduleName": "AIBudsFitCloudProOTA",
+                "implicit": true,
+                "objc_name": "serviceUUID",
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "writeCharacteristicUUID",
+            "printedName": "writeCharacteristicUUID",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBudsFitCloudProOTA@objc(cs)AIBudsFitCloudProOtaPlugin(py)writeCharacteristicUUID",
+            "mangledName": "$s20AIBudsFitCloudProOTA0bcD9OtaPluginC23writeCharacteristicUUIDSSvp",
+            "moduleName": "AIBudsFitCloudProOTA",
+            "objc_name": "writeCharacteristicUUID",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "ObjC",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsFitCloudProOTA@objc(cs)AIBudsFitCloudProOtaPlugin(im)writeCharacteristicUUID",
+                "mangledName": "$s20AIBudsFitCloudProOTA0bcD9OtaPluginC23writeCharacteristicUUIDSSvg",
+                "moduleName": "AIBudsFitCloudProOTA",
+                "implicit": true,
+                "objc_name": "writeCharacteristicUUID",
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "notifyCharacteristicUUID",
+            "printedName": "notifyCharacteristicUUID",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBudsFitCloudProOTA@objc(cs)AIBudsFitCloudProOtaPlugin(py)notifyCharacteristicUUID",
+            "mangledName": "$s20AIBudsFitCloudProOTA0bcD9OtaPluginC24notifyCharacteristicUUIDSSvp",
+            "moduleName": "AIBudsFitCloudProOTA",
+            "objc_name": "notifyCharacteristicUUID",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "ObjC",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsFitCloudProOTA@objc(cs)AIBudsFitCloudProOtaPlugin(im)notifyCharacteristicUUID",
+                "mangledName": "$s20AIBudsFitCloudProOTA0bcD9OtaPluginC24notifyCharacteristicUUIDSSvg",
+                "moduleName": "AIBudsFitCloudProOTA",
+                "implicit": true,
+                "objc_name": "notifyCharacteristicUUID",
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isRunning",
+            "printedName": "isRunning",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBudsFitCloudProOTA@objc(cs)AIBudsFitCloudProOtaPlugin(py)isRunning",
+            "mangledName": "$s20AIBudsFitCloudProOTA0bcD9OtaPluginC9isRunningSbvp",
+            "moduleName": "AIBudsFitCloudProOTA",
+            "objc_name": "isRunning",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsFitCloudProOTA@objc(cs)AIBudsFitCloudProOtaPlugin(im)isRunning",
+                "mangledName": "$s20AIBudsFitCloudProOTA0bcD9OtaPluginC9isRunningSbvg",
+                "moduleName": "AIBudsFitCloudProOTA",
+                "objc_name": "isRunning",
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "start",
+            "printedName": "start(withFilePath:transport:startHandler:progressHandler:completionHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "OtaPluginTransport",
+                "printedName": "any AIBuds.OtaPluginTransport",
+                "usr": "c:@M@AIBuds@objc(pl)AIBudsOtaPluginTransport"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Swift.Bool, (any Swift.Error)?) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Bool, (any Swift.Error)?) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(Swift.Bool, (any Swift.Error)?)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Bool",
+                            "printedName": "Swift.Bool",
+                            "usr": "s:Sb"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "(any Swift.Error)?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Error",
+                                "printedName": "any Swift.Error",
+                                "usr": "s:s5ErrorP"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((CoreGraphics.CGFloat) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(CoreGraphics.CGFloat) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CGFloat",
+                        "printedName": "CoreGraphics.CGFloat",
+                        "usr": "s:14CoreFoundation7CGFloatV"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Swift.Bool, CoreGraphics.CGFloat, (any Swift.Error)?) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Bool, CoreGraphics.CGFloat, (any Swift.Error)?) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(Swift.Bool, CoreGraphics.CGFloat, (any Swift.Error)?)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Bool",
+                            "printedName": "Swift.Bool",
+                            "usr": "s:Sb"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "CGFloat",
+                            "printedName": "CoreGraphics.CGFloat",
+                            "usr": "s:14CoreFoundation7CGFloatV"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "(any Swift.Error)?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Error",
+                                "printedName": "any Swift.Error",
+                                "usr": "s:s5ErrorP"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AIBudsFitCloudProOTA@objc(cs)AIBudsFitCloudProOtaPlugin(im)startWithFilePath:transport:startHandler:progressHandler:completionHandler:",
+            "mangledName": "$s20AIBudsFitCloudProOTA0bcD9OtaPluginC5start12withFilePath9transport0H7Handler08progressM0010completionM0ySS_0A00fG9Transport_pySb_s5Error_pSgtcSgy12CoreGraphics7CGFloatVcSgySb_AqMtcSgtF",
+            "moduleName": "AIBudsFitCloudProOTA",
+            "objc_name": "startWithFilePath:transport:startHandler:progressHandler:completionHandler:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "receive",
+            "printedName": "receive(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AIBudsFitCloudProOTA@objc(cs)AIBudsFitCloudProOtaPlugin(im)receiveData:",
+            "mangledName": "$s20AIBudsFitCloudProOTA0bcD9OtaPluginC7receiveyy10Foundation4DataVF",
+            "moduleName": "AIBudsFitCloudProOTA",
+            "objc_name": "receiveData:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "cancel",
+            "printedName": "cancel(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Swift.Bool, Foundation.NSError?) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Bool, Foundation.NSError?) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(Swift.Bool, Foundation.NSError?)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Bool",
+                            "printedName": "Swift.Bool",
+                            "usr": "s:Sb"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "Foundation.NSError?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "NSError",
+                                "printedName": "Foundation.NSError",
+                                "usr": "c:objc(cs)NSError"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AIBudsFitCloudProOTA@objc(cs)AIBudsFitCloudProOtaPlugin(im)cancelWithCompletion:",
+            "mangledName": "$s20AIBudsFitCloudProOTA0bcD9OtaPluginC6cancel10completionyySb_So7NSErrorCSgtcSg_tF",
+            "moduleName": "AIBudsFitCloudProOTA",
+            "objc_name": "cancelWithCompletion:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "handleDisconnect",
+            "printedName": "handleDisconnect(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.NSError?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSError",
+                    "printedName": "Foundation.NSError",
+                    "usr": "c:objc(cs)NSError"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AIBudsFitCloudProOTA@objc(cs)AIBudsFitCloudProOtaPlugin(im)handleDisconnectWithError:",
+            "mangledName": "$s20AIBudsFitCloudProOTA0bcD9OtaPluginC16handleDisconnectyySo7NSErrorCSgF",
+            "moduleName": "AIBudsFitCloudProOTA",
+            "objc_name": "handleDisconnectWithError:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@AIBudsFitCloudProOTA@objc(cs)AIBudsFitCloudProOtaPlugin",
+        "mangledName": "$s20AIBudsFitCloudProOTA0bcD9OtaPluginC",
+        "moduleName": "AIBudsFitCloudProOTA",
+        "objc_name": "AIBudsFitCloudProOtaPlugin",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "OtaPlugin",
+            "printedName": "OtaPlugin",
+            "usr": "c:@M@AIBuds@objc(pl)AIBudsOtaPlugin",
+            "mangledName": "$s6AIBuds9OtaPluginP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AIBudsFitCloudProOTA",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFitCloudProOTA\/Internal\/FitCloudProOtaEngine.swift",
+      "kind": "IntegerLiteral",
+      "offset": 320,
+      "length": 4,
+      "value": "0x01"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFitCloudProOTA\/Internal\/FitCloudProOtaEngine.swift",
+      "kind": "IntegerLiteral",
+      "offset": 347,
+      "length": 4,
+      "value": "0x02"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFitCloudProOTA\/Internal\/FitCloudProOtaEngine.swift",
+      "kind": "IntegerLiteral",
+      "offset": 372,
+      "length": 4,
+      "value": "0x03"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFitCloudProOTA\/Internal\/FitCloudProOtaEngine.swift",
+      "kind": "IntegerLiteral",
+      "offset": 396,
+      "length": 4,
+      "value": "0x04"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFitCloudProOTA\/Internal\/FitCloudProOtaEngine.swift",
+      "kind": "IntegerLiteral",
+      "offset": 422,
+      "length": 4,
+      "value": "0x05"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFitCloudProOTA\/Internal\/FitCloudProOtaEngine.swift",
+      "kind": "IntegerLiteral",
+      "offset": 451,
+      "length": 4,
+      "value": "0x81"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFitCloudProOTA\/Internal\/FitCloudProOtaEngine.swift",
+      "kind": "IntegerLiteral",
+      "offset": 481,
+      "length": 4,
+      "value": "0x82"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFitCloudProOTA\/Internal\/FitCloudProOtaEngine.swift",
+      "kind": "IntegerLiteral",
+      "offset": 509,
+      "length": 4,
+      "value": "0x83"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFitCloudProOTA\/Internal\/FitCloudProOtaEngine.swift",
+      "kind": "IntegerLiteral",
+      "offset": 536,
+      "length": 4,
+      "value": "0x84"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFitCloudProOTA\/Internal\/FitCloudProOtaEngine.swift",
+      "kind": "IntegerLiteral",
+      "offset": 565,
+      "length": 4,
+      "value": "0x85"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFitCloudProOTA\/Internal\/FitCloudProOtaEngine.swift",
+      "kind": "IntegerLiteral",
+      "offset": 594,
+      "length": 4,
+      "value": "0xA0"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFitCloudProOTA\/Internal\/FitCloudProOtaEngine.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1167,
+      "length": 2,
+      "value": "12"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFitCloudProOTA\/Internal\/FitCloudProOtaEngine.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1216,
+      "length": 4,
+      "value": "1024"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFitCloudProOTA\/Internal\/FitCloudProOtaEngine.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1276,
+      "length": 2,
+      "value": "15"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFitCloudProOTA\/Internal\/FitCloudProOtaEngine.swift",
+      "kind": "FloatLiteral",
+      "offset": 1333,
+      "length": 5,
+      "value": "0.015"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFitCloudProOTA\/Internal\/FitCloudProOtaEngine.swift",
+      "kind": "StringLiteral",
+      "offset": 1382,
+      "length": 9,
+      "value": "\"TOPSTEP\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFitCloudProOTA\/Internal\/FitCloudProOtaEngine.swift",
+      "kind": "StringLiteral",
+      "offset": 1453,
+      "length": 39,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFitCloudProOTA\/Internal\/FitCloudProOtaEngine.swift",
+      "kind": "StringLiteral",
+      "offset": 1478,
+      "length": 1,
+      "value": "\".engine.queue\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFitCloudProOTA\/Internal\/FitCloudProOtaEngine.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1587,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFitCloudProOTA\/Internal\/FitCloudProOtaEngine.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1758,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFitCloudProOTA\/Internal\/FitCloudProOtaEngine.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1794,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFitCloudProOTA\/Internal\/FitCloudProOtaEngine.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1830,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFitCloudProOTA\/Internal\/FitCloudProOtaEngine.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2038,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFitCloudProOTA\/Internal\/FitCloudProOtaEngine.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2147,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFitCloudProOTA\/Internal\/FitCloudProOtaEngine.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2197,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFitCloudProOTA\/AIBudsFitCloudProOTA.swift",
+      "kind": "StringLiteral",
+      "offset": 300,
+      "length": 6,
+      "value": "\"📦\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFitCloudProOTA\/AIBudsFitCloudProOTA.swift",
+      "kind": "StringLiteral",
+      "offset": 393,
+      "length": 25,
+      "value": "\"AIBudsFitCloudProOTASDK\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFitCloudProOTA\/AIBudsFitCloudProOTA.swift",
+      "kind": "StringLiteral",
+      "offset": 492,
+      "length": 42,
+      "value": "\"com.topstep.sdks.aibuds.ota.fitcloud_pro\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFitCloudProOTA\/AIBudsFitCloudProOTASDK.swift",
+      "kind": "StringLiteral",
+      "offset": 1173,
+      "length": 100,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFitCloudProOTA\/AIBudsFitCloudProOTASDK.swift",
+      "kind": "StringLiteral",
+      "offset": 1191,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFitCloudProOTA\/AIBudsFitCloudProOTASDK.swift",
+      "kind": "StringLiteral",
+      "offset": 1202,
+      "length": 1,
+      "value": "\" V\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFitCloudProOTA\/AIBudsFitCloudProOTASDK.swift",
+      "kind": "StringLiteral",
+      "offset": 1218,
+      "length": 1,
+      "value": "\" (Build\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFitCloudProOTA\/AIBudsFitCloudProOTASDK.swift",
+      "kind": "StringLiteral",
+      "offset": 1237,
+      "length": 1,
+      "value": "\") Release Date: \""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFitCloudProOTA\/AIBudsFitCloudProOTASDK.swift",
+      "kind": "StringLiteral",
+      "offset": 1272,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFitCloudProOTA\/FitCloudProOtaError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 228,
+      "length": 5,
+      "value": "10001"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFitCloudProOTA\/FitCloudProOtaError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 255,
+      "length": 5,
+      "value": "10002"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFitCloudProOTA\/FitCloudProOtaError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 279,
+      "length": 5,
+      "value": "10003"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFitCloudProOTA\/FitCloudProOtaError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 306,
+      "length": 5,
+      "value": "10004"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFitCloudProOTA\/FitCloudProOtaError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 343,
+      "length": 5,
+      "value": "10005"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFitCloudProOTA\/FitCloudProOtaError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 376,
+      "length": 5,
+      "value": "10006"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFitCloudProOTA\/FitCloudProOtaError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 417,
+      "length": 5,
+      "value": "10007"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFitCloudProOTA\/FitCloudProOtaError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 446,
+      "length": 5,
+      "value": "10008"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFitCloudProOTA\/FitCloudProOtaError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 475,
+      "length": 5,
+      "value": "10009"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFitCloudProOTA\/FitCloudProOtaError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 504,
+      "length": 5,
+      "value": "10010"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFitCloudProOTA\/FitCloudProOtaError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 533,
+      "length": 5,
+      "value": "10011"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFitCloudProOTA\/FitCloudProOtaError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 564,
+      "length": 5,
+      "value": "10012"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFitCloudProOTA\/FitCloudProOtaError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 596,
+      "length": 5,
+      "value": "10013"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFitCloudProOTA\/FitCloudProOtaError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 625,
+      "length": 5,
+      "value": "10014"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFitCloudProOTA\/FitCloudProOtaError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 660,
+      "length": 5,
+      "value": "10015"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFitCloudProOTA\/FitCloudProOtaError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 685,
+      "length": 5,
+      "value": "10020"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFitCloudProOTA\/FitCloudProOtaError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 713,
+      "length": 5,
+      "value": "10021"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFitCloudProOTA\/FitCloudProOtaError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 742,
+      "length": 5,
+      "value": "10022"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFitCloudProOTA\/FitCloudProOtaError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 779,
+      "length": 5,
+      "value": "10128"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFitCloudProOTA\/FitCloudProOtaError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 811,
+      "length": 5,
+      "value": "20001"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFitCloudProOTA\/FitCloudProOtaError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 847,
+      "length": 5,
+      "value": "20002"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFitCloudProOTA\/FitCloudProOtaError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 877,
+      "length": 5,
+      "value": "20003"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFitCloudProOTA\/FitCloudProOtaError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 909,
+      "length": 5,
+      "value": "20004"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFitCloudProOTA\/FitCloudProOtaError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 937,
+      "length": 5,
+      "value": "20005"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFitCloudProOTA\/FitCloudProOtaError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 971,
+      "length": 5,
+      "value": "20006"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFitCloudProOTA\/FitCloudProOtaError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1004,
+      "length": 5,
+      "value": "20007"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFitCloudProOTA\/FitCloudProOtaError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1039,
+      "length": 5,
+      "value": "20008"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFitCloudProOTA\/FitCloudProOtaError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1061,
+      "length": 5,
+      "value": "20009"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFitCloudProOTA\/FitCloudProOtaError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1099,
+      "length": 5,
+      "value": "20010"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFitCloudProOTA\/FitCloudProOtaError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1129,
+      "length": 5,
+      "value": "20011"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFitCloudProOTA\/FitCloudProOtaError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1156,
+      "length": 5,
+      "value": "20012"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFitCloudProOTA\/FitCloudProOtaError.swift",
+      "kind": "StringLiteral",
+      "offset": 1303,
+      "length": 38,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFitCloudProOTA\/FitCloudProOtaError.swift",
+      "kind": "StringLiteral",
+      "offset": 1328,
+      "length": 1,
+      "value": "\".errordomain\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFitCloudProOTA\/FitCloudProOtaError.swift",
+      "kind": "StringLiteral",
+      "offset": 1445,
+      "length": 33,
+      "value": "\"AIBudsFitCloudProOtaSdkErrorKey\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFitCloudProOTA\/FitCloudProOtaPlugin.swift",
+      "kind": "StringLiteral",
+      "offset": 604,
+      "length": 38,
+      "value": "\"00009966-3C17-D293-8E48-14FE2E4DA212\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFitCloudProOTA\/FitCloudProOtaPlugin.swift",
+      "kind": "StringLiteral",
+      "offset": 690,
+      "length": 6,
+      "value": "\"FFB1\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFitCloudProOTA\/FitCloudProOtaPlugin.swift",
+      "kind": "StringLiteral",
+      "offset": 745,
+      "length": 6,
+      "value": "\"FFB2\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/SDKBuildInfo\/SDK_Build_Info.swift",
+      "kind": "StringLiteral",
+      "offset": 257,
+      "length": 14,
+      "value": "\"1.0.1-beta.6\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/SDKBuildInfo\/SDK_Build_Info.swift",
+      "kind": "StringLiteral",
+      "offset": 387,
+      "length": 13,
+      "value": "\"20260902002\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/SDKBuildInfo\/SDK_Build_Info.swift",
+      "kind": "StringLiteral",
+      "offset": 502,
+      "length": 12,
+      "value": "\"2026-09-02\""
+    }
+  ]
+}

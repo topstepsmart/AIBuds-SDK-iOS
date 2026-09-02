@@ -127,6 +127,13 @@
 "LocKey.OtaStatusFailedFormat" = "升级失败：%@";
 "LocKey.OtaStatusCopyFailed" = "文件复制失败";
 "LocKey.OtaStatusNoFirmwareSelected" = "未选择文件";
+"LocKey.OtaProtocolTitle" = "升级方式";
+"LocKey.OtaHeroEyebrow" = "设备固件";
+"LocKey.OtaFirmwareSectionTitle" = "固件包";
+"LocKey.OtaProgressSectionTitle" = "升级进度";
+"LocKey.OtaProtocolSelectedFormat" = "已选择 OTA 升级方式：%@";
+"LocKey.OtaStatusUnsupported" = "当前设备未提供 OTA 升级接口";
+"LocKey.OtaStatusPluginUnavailable" = "当前升级方式所需的 OTA 插件尚未注册";
 "LocKey.CameraOtaGroupTitle" = "Camera OTA";
 "LocKey.CameraOtaFeatureTitle" = "摄像头固件更新（OTA）";
 "LocKey.CameraOtaDemoTitle" = "摄像头 OTA 升级演示";

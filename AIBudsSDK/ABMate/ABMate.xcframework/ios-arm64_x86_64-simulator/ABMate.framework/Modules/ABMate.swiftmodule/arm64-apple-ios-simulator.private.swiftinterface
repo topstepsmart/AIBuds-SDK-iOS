@@ -4,20 +4,9 @@
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.3
 import AIBuds
 @_spi(AIBudsInternal) import AIBudsFoundation
-import AIBudsLog
-import AVFoundation
-import SystemConfiguration.CaptiveNetwork
 import CoreBluetooth
-import CoreImage
-import CoreLocation
-import CoreMedia
-import Darwin
-import Dispatch
 import Foundation
-import Network
-import NetworkExtension
 import Swift
-import SystemConfiguration
 import UIKit
 import _Concurrency
 import _StringProcessing

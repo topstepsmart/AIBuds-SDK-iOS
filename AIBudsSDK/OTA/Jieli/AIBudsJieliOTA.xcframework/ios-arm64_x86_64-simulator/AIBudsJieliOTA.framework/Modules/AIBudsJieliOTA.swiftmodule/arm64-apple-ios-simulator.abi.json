@@ -1,0 +1,2246 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "AIBudsJieliOTA",
+    "printedName": "AIBudsJieliOTA",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AIBudsJieliOTA",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AIBudsJieliOTA",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AIBudsLog",
+        "printedName": "AIBudsLog",
+        "declKind": "Import",
+        "moduleName": "AIBudsJieliOTA",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "JLLogHelper",
+        "printedName": "JLLogHelper",
+        "declKind": "Import",
+        "moduleName": "AIBudsJieliOTA",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AIBudsJieliOTA",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AIBuds",
+        "printedName": "AIBuds",
+        "declKind": "Import",
+        "moduleName": "AIBudsJieliOTA"
+      },
+      {
+        "kind": "Import",
+        "name": "AIBudsLog",
+        "printedName": "AIBudsLog",
+        "declKind": "Import",
+        "moduleName": "AIBudsJieliOTA",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "JL_OTALib",
+        "printedName": "JL_OTALib",
+        "declKind": "Import",
+        "moduleName": "AIBudsJieliOTA",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "JL_HashPair",
+        "printedName": "JL_HashPair",
+        "declKind": "Import",
+        "moduleName": "AIBudsJieliOTA",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AIBudsJieliOTA",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AIBudsLog",
+        "printedName": "AIBudsLog",
+        "declKind": "Import",
+        "moduleName": "AIBudsJieliOTA",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AIBudsJieliOTA",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AIBuds",
+        "printedName": "AIBuds",
+        "declKind": "Import",
+        "moduleName": "AIBudsJieliOTA"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "JieliOtaSDK",
+        "printedName": "JieliOtaSDK",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "JieliOtaSDK",
+                "printedName": "AIBudsJieliOTA.JieliOtaSDK",
+                "usr": "c:@M@AIBudsJieliOTA@objc(cs)AIBudsJieliOtaSDK"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBudsJieliOTA@objc(cs)AIBudsJieliOtaSDK(cpy)shared",
+            "mangledName": "$s14AIBudsJieliOTA0B6OtaSDKC6sharedACvpZ",
+            "moduleName": "AIBudsJieliOTA",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "JieliOtaSDK",
+                    "printedName": "AIBudsJieliOTA.JieliOtaSDK",
+                    "usr": "c:@M@AIBudsJieliOTA@objc(cs)AIBudsJieliOtaSDK"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsJieliOTA@objc(cs)AIBudsJieliOtaSDK(cm)shared",
+                "mangledName": "$s14AIBudsJieliOTA0B6OtaSDKC6sharedACvgZ",
+                "moduleName": "AIBudsJieliOTA",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "otaPlugin",
+            "printedName": "otaPlugin",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OtaPlugin",
+                "printedName": "any AIBuds.OtaPlugin",
+                "usr": "c:@M@AIBuds@objc(pl)AIBudsOtaPlugin"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBudsJieliOTA@objc(cs)AIBudsJieliOtaSDK(cpy)otaPlugin",
+            "mangledName": "$s14AIBudsJieliOTA0B6OtaSDKC9otaPlugin0A00dG0_pvpZ",
+            "moduleName": "AIBudsJieliOTA",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OtaPlugin",
+                    "printedName": "any AIBuds.OtaPlugin",
+                    "usr": "c:@M@AIBuds@objc(pl)AIBudsOtaPlugin"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsJieliOTA@objc(cs)AIBudsJieliOtaSDK(cm)otaPlugin",
+                "mangledName": "$s14AIBudsJieliOTA0B6OtaSDKC9otaPlugin0A00dG0_pvgZ",
+                "moduleName": "AIBudsJieliOTA",
+                "static": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "sdkVersion",
+            "printedName": "sdkVersion",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBudsJieliOTA@objc(cs)AIBudsJieliOtaSDK(py)sdkVersion",
+            "mangledName": "$s14AIBudsJieliOTA0B6OtaSDKC10sdkVersionSSvp",
+            "moduleName": "AIBudsJieliOTA",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsJieliOTA@objc(cs)AIBudsJieliOtaSDK(im)sdkVersion",
+                "mangledName": "$s14AIBudsJieliOTA0B6OtaSDKC10sdkVersionSSvg",
+                "moduleName": "AIBudsJieliOTA",
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "sdkBuild",
+            "printedName": "sdkBuild",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBudsJieliOTA@objc(cs)AIBudsJieliOtaSDK(py)sdkBuild",
+            "mangledName": "$s14AIBudsJieliOTA0B6OtaSDKC8sdkBuildSSvp",
+            "moduleName": "AIBudsJieliOTA",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsJieliOTA@objc(cs)AIBudsJieliOtaSDK(im)sdkBuild",
+                "mangledName": "$s14AIBudsJieliOTA0B6OtaSDKC8sdkBuildSSvg",
+                "moduleName": "AIBudsJieliOTA",
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "sdkReleaseDate",
+            "printedName": "sdkReleaseDate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBudsJieliOTA@objc(cs)AIBudsJieliOtaSDK(py)sdkReleaseDate",
+            "mangledName": "$s14AIBudsJieliOTA0B6OtaSDKC14sdkReleaseDateSSvp",
+            "moduleName": "AIBudsJieliOTA",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsJieliOTA@objc(cs)AIBudsJieliOtaSDK(im)sdkReleaseDate",
+                "mangledName": "$s14AIBudsJieliOTA0B6OtaSDKC14sdkReleaseDateSSvg",
+                "moduleName": "AIBudsJieliOTA",
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "sdkVersionDescription",
+            "printedName": "sdkVersionDescription",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBudsJieliOTA@objc(cs)AIBudsJieliOtaSDK(py)sdkVersionDescription",
+            "mangledName": "$s14AIBudsJieliOTA0B6OtaSDKC21sdkVersionDescriptionSSvp",
+            "moduleName": "AIBudsJieliOTA",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsJieliOTA@objc(cs)AIBudsJieliOtaSDK(im)sdkVersionDescription",
+                "mangledName": "$s14AIBudsJieliOTA0B6OtaSDKC21sdkVersionDescriptionSSvg",
+                "moduleName": "AIBudsJieliOTA",
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "sdkName",
+            "printedName": "sdkName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBudsJieliOTA@objc(cs)AIBudsJieliOtaSDK(py)sdkName",
+            "mangledName": "$s14AIBudsJieliOTA0B6OtaSDKC7sdkNameSSvp",
+            "moduleName": "AIBudsJieliOTA",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsJieliOTA@objc(cs)AIBudsJieliOtaSDK(im)sdkName",
+                "mangledName": "$s14AIBudsJieliOTA0B6OtaSDKC7sdkNameSSvg",
+                "moduleName": "AIBudsJieliOTA",
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "jieliOtaSDKVersion",
+            "printedName": "jieliOtaSDKVersion",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBudsJieliOTA@objc(cs)AIBudsJieliOtaSDK(py)jieliOtaSDKVersion",
+            "mangledName": "$s14AIBudsJieliOTA0B6OtaSDKC05jieliD10SDKVersionSSvp",
+            "moduleName": "AIBudsJieliOTA",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsJieliOTA@objc(cs)AIBudsJieliOtaSDK(im)jieliOtaSDKVersion",
+                "mangledName": "$s14AIBudsJieliOTA0B6OtaSDKC05jieliD10SDKVersionSSvg",
+                "moduleName": "AIBudsJieliOTA",
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "ErrorDomain",
+            "printedName": "ErrorDomain",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@AIBudsJieliOTA@objc(cs)AIBudsJieliOtaSDK(cpy)ErrorDomain",
+            "mangledName": "$s14AIBudsJieliOTA0B6OtaSDKC11ErrorDomainSSvpZ",
+            "moduleName": "AIBudsJieliOTA",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@AIBudsJieliOTA@objc(cs)AIBudsJieliOtaSDK(cm)ErrorDomain",
+                "mangledName": "$s14AIBudsJieliOTA0B6OtaSDKC11ErrorDomainSSvgZ",
+                "moduleName": "AIBudsJieliOTA",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "ErrorKey",
+            "printedName": "ErrorKey",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@AIBudsJieliOTA@objc(cs)AIBudsJieliOtaSDK(cpy)ErrorKey",
+            "mangledName": "$s14AIBudsJieliOTA0B6OtaSDKC8ErrorKeySSvpZ",
+            "moduleName": "AIBudsJieliOTA",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@AIBudsJieliOTA@objc(cs)AIBudsJieliOtaSDK(cm)ErrorKey",
+                "mangledName": "$s14AIBudsJieliOTA0B6OtaSDKC8ErrorKeySSvgZ",
+                "moduleName": "AIBudsJieliOTA",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@AIBudsJieliOTA@objc(cs)AIBudsJieliOtaSDK",
+        "mangledName": "$s14AIBudsJieliOTA0B6OtaSDKC",
+        "moduleName": "AIBudsJieliOTA",
+        "objc_name": "AIBudsJieliOtaSDK",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AIBudsJieliOTA",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "JL_OTALib",
+        "printedName": "JL_OTALib",
+        "declKind": "Import",
+        "moduleName": "AIBudsJieliOTA",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "JieliOtaErrorCode",
+        "printedName": "JieliOtaErrorCode",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "busy",
+            "printedName": "busy",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AIBudsJieliOTA.JieliOtaErrorCode.Type) -> AIBudsJieliOTA.JieliOtaErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "JieliOtaErrorCode",
+                    "printedName": "AIBudsJieliOTA.JieliOtaErrorCode",
+                    "usr": "c:@M@AIBudsJieliOTA@E@AIBudsJieliOtaErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AIBudsJieliOTA.JieliOtaErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "JieliOtaErrorCode",
+                        "printedName": "AIBudsJieliOTA.JieliOtaErrorCode",
+                        "usr": "c:@M@AIBudsJieliOTA@E@AIBudsJieliOtaErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AIBudsJieliOTA@E@AIBudsJieliOtaErrorCode@AIBudsJieliOtaErrorCodeBusy",
+            "mangledName": "$s14AIBudsJieliOTA0B12OtaErrorCodeO4busyyA2CmF",
+            "moduleName": "AIBudsJieliOTA",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "fileNotFound",
+            "printedName": "fileNotFound",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AIBudsJieliOTA.JieliOtaErrorCode.Type) -> AIBudsJieliOTA.JieliOtaErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "JieliOtaErrorCode",
+                    "printedName": "AIBudsJieliOTA.JieliOtaErrorCode",
+                    "usr": "c:@M@AIBudsJieliOTA@E@AIBudsJieliOtaErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AIBudsJieliOTA.JieliOtaErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "JieliOtaErrorCode",
+                        "printedName": "AIBudsJieliOTA.JieliOtaErrorCode",
+                        "usr": "c:@M@AIBudsJieliOTA@E@AIBudsJieliOtaErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AIBudsJieliOTA@E@AIBudsJieliOtaErrorCode@AIBudsJieliOtaErrorCodeFileNotFound",
+            "mangledName": "$s14AIBudsJieliOTA0B12OtaErrorCodeO12fileNotFoundyA2CmF",
+            "moduleName": "AIBudsJieliOTA",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Var",
+            "name": "fileReadFailed",
+            "printedName": "fileReadFailed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AIBudsJieliOTA.JieliOtaErrorCode.Type) -> AIBudsJieliOTA.JieliOtaErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "JieliOtaErrorCode",
+                    "printedName": "AIBudsJieliOTA.JieliOtaErrorCode",
+                    "usr": "c:@M@AIBudsJieliOTA@E@AIBudsJieliOtaErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AIBudsJieliOTA.JieliOtaErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "JieliOtaErrorCode",
+                        "printedName": "AIBudsJieliOTA.JieliOtaErrorCode",
+                        "usr": "c:@M@AIBudsJieliOTA@E@AIBudsJieliOtaErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AIBudsJieliOTA@E@AIBudsJieliOtaErrorCode@AIBudsJieliOtaErrorCodeFileReadFailed",
+            "mangledName": "$s14AIBudsJieliOTA0B12OtaErrorCodeO14fileReadFailedyA2CmF",
+            "moduleName": "AIBudsJieliOTA",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 2
+          },
+          {
+            "kind": "Var",
+            "name": "transportUnavailable",
+            "printedName": "transportUnavailable",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AIBudsJieliOTA.JieliOtaErrorCode.Type) -> AIBudsJieliOTA.JieliOtaErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "JieliOtaErrorCode",
+                    "printedName": "AIBudsJieliOTA.JieliOtaErrorCode",
+                    "usr": "c:@M@AIBudsJieliOTA@E@AIBudsJieliOtaErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AIBudsJieliOTA.JieliOtaErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "JieliOtaErrorCode",
+                        "printedName": "AIBudsJieliOTA.JieliOtaErrorCode",
+                        "usr": "c:@M@AIBudsJieliOTA@E@AIBudsJieliOtaErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AIBudsJieliOTA@E@AIBudsJieliOtaErrorCode@AIBudsJieliOtaErrorCodeTransportUnavailable",
+            "mangledName": "$s14AIBudsJieliOTA0B12OtaErrorCodeO20transportUnavailableyA2CmF",
+            "moduleName": "AIBudsJieliOTA",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 3
+          },
+          {
+            "kind": "Var",
+            "name": "authenticationFailed",
+            "printedName": "authenticationFailed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AIBudsJieliOTA.JieliOtaErrorCode.Type) -> AIBudsJieliOTA.JieliOtaErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "JieliOtaErrorCode",
+                    "printedName": "AIBudsJieliOTA.JieliOtaErrorCode",
+                    "usr": "c:@M@AIBudsJieliOTA@E@AIBudsJieliOtaErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AIBudsJieliOTA.JieliOtaErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "JieliOtaErrorCode",
+                        "printedName": "AIBudsJieliOTA.JieliOtaErrorCode",
+                        "usr": "c:@M@AIBudsJieliOTA@E@AIBudsJieliOtaErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AIBudsJieliOTA@E@AIBudsJieliOtaErrorCode@AIBudsJieliOtaErrorCodeAuthenticationFailed",
+            "mangledName": "$s14AIBudsJieliOTA0B12OtaErrorCodeO20authenticationFailedyA2CmF",
+            "moduleName": "AIBudsJieliOTA",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 4
+          },
+          {
+            "kind": "Var",
+            "name": "disconnected",
+            "printedName": "disconnected",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AIBudsJieliOTA.JieliOtaErrorCode.Type) -> AIBudsJieliOTA.JieliOtaErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "JieliOtaErrorCode",
+                    "printedName": "AIBudsJieliOTA.JieliOtaErrorCode",
+                    "usr": "c:@M@AIBudsJieliOTA@E@AIBudsJieliOtaErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AIBudsJieliOTA.JieliOtaErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "JieliOtaErrorCode",
+                        "printedName": "AIBudsJieliOTA.JieliOtaErrorCode",
+                        "usr": "c:@M@AIBudsJieliOTA@E@AIBudsJieliOtaErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AIBudsJieliOTA@E@AIBudsJieliOtaErrorCode@AIBudsJieliOtaErrorCodeDisconnected",
+            "mangledName": "$s14AIBudsJieliOTA0B12OtaErrorCodeO12disconnectedyA2CmF",
+            "moduleName": "AIBudsJieliOTA",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 5
+          },
+          {
+            "kind": "Var",
+            "name": "cancelled",
+            "printedName": "cancelled",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AIBudsJieliOTA.JieliOtaErrorCode.Type) -> AIBudsJieliOTA.JieliOtaErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "JieliOtaErrorCode",
+                    "printedName": "AIBudsJieliOTA.JieliOtaErrorCode",
+                    "usr": "c:@M@AIBudsJieliOTA@E@AIBudsJieliOtaErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AIBudsJieliOTA.JieliOtaErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "JieliOtaErrorCode",
+                        "printedName": "AIBudsJieliOTA.JieliOtaErrorCode",
+                        "usr": "c:@M@AIBudsJieliOTA@E@AIBudsJieliOtaErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AIBudsJieliOTA@E@AIBudsJieliOtaErrorCode@AIBudsJieliOtaErrorCodeCancelled",
+            "mangledName": "$s14AIBudsJieliOTA0B12OtaErrorCodeO9cancelledyA2CmF",
+            "moduleName": "AIBudsJieliOTA",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 6
+          },
+          {
+            "kind": "Var",
+            "name": "jieliSDKFailure",
+            "printedName": "jieliSDKFailure",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AIBudsJieliOTA.JieliOtaErrorCode.Type) -> AIBudsJieliOTA.JieliOtaErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "JieliOtaErrorCode",
+                    "printedName": "AIBudsJieliOTA.JieliOtaErrorCode",
+                    "usr": "c:@M@AIBudsJieliOTA@E@AIBudsJieliOtaErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AIBudsJieliOTA.JieliOtaErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "JieliOtaErrorCode",
+                        "printedName": "AIBudsJieliOTA.JieliOtaErrorCode",
+                        "usr": "c:@M@AIBudsJieliOTA@E@AIBudsJieliOtaErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AIBudsJieliOTA@E@AIBudsJieliOtaErrorCode@AIBudsJieliOtaErrorCodeJieliSDKFailure",
+            "mangledName": "$s14AIBudsJieliOTA0B12OtaErrorCodeO15jieliSDKFailureyA2CmF",
+            "moduleName": "AIBudsJieliOTA",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 7
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "AIBudsJieliOTA.JieliOtaErrorCode?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "JieliOtaErrorCode",
+                    "printedName": "AIBudsJieliOTA.JieliOtaErrorCode",
+                    "usr": "c:@M@AIBudsJieliOTA@E@AIBudsJieliOtaErrorCode"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:14AIBudsJieliOTA0B12OtaErrorCodeO8rawValueACSgSi_tcfc",
+            "mangledName": "$s14AIBudsJieliOTA0B12OtaErrorCodeO8rawValueACSgSi_tcfc",
+            "moduleName": "AIBudsJieliOTA",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14AIBudsJieliOTA0B12OtaErrorCodeO8rawValueSivp",
+            "mangledName": "$s14AIBudsJieliOTA0B12OtaErrorCodeO8rawValueSivp",
+            "moduleName": "AIBudsJieliOTA",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14AIBudsJieliOTA0B12OtaErrorCodeO8rawValueSivg",
+                "mangledName": "$s14AIBudsJieliOTA0B12OtaErrorCodeO8rawValueSivg",
+                "moduleName": "AIBudsJieliOTA",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "c:@M@AIBudsJieliOTA@E@AIBudsJieliOtaErrorCode",
+        "mangledName": "$s14AIBudsJieliOTA0B12OtaErrorCodeO",
+        "moduleName": "AIBudsJieliOTA",
+        "objc_name": "AIBudsJieliOtaErrorCode",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AIBudsJieliOTA",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AIBuds",
+        "printedName": "AIBuds",
+        "declKind": "Import",
+        "moduleName": "AIBudsJieliOTA"
+      },
+      {
+        "kind": "Import",
+        "name": "AIBudsFoundation",
+        "printedName": "AIBudsFoundation",
+        "declKind": "Import",
+        "moduleName": "AIBudsJieliOTA"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "JieliOtaPlugin",
+        "printedName": "JieliOtaPlugin",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "JieliOtaPlugin",
+                "printedName": "AIBudsJieliOTA.JieliOtaPlugin",
+                "usr": "c:@M@AIBudsJieliOTA@objc(cs)AIBudsJieliOtaPlugin"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBudsJieliOTA@objc(cs)AIBudsJieliOtaPlugin(cpy)shared",
+            "mangledName": "$s14AIBudsJieliOTA0B9OtaPluginC6sharedACvpZ",
+            "moduleName": "AIBudsJieliOTA",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "JieliOtaPlugin",
+                    "printedName": "AIBudsJieliOTA.JieliOtaPlugin",
+                    "usr": "c:@M@AIBudsJieliOTA@objc(cs)AIBudsJieliOtaPlugin"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsJieliOTA@objc(cs)AIBudsJieliOtaPlugin(cm)shared",
+                "mangledName": "$s14AIBudsJieliOTA0B9OtaPluginC6sharedACvgZ",
+                "moduleName": "AIBudsJieliOTA",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "identifier",
+            "printedName": "identifier",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBudsJieliOTA@objc(cs)AIBudsJieliOtaPlugin(py)identifier",
+            "mangledName": "$s14AIBudsJieliOTA0B9OtaPluginC10identifierSSvp",
+            "moduleName": "AIBudsJieliOTA",
+            "objc_name": "identifier",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "ObjC",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsJieliOTA@objc(cs)AIBudsJieliOtaPlugin(im)identifier",
+                "mangledName": "$s14AIBudsJieliOTA0B9OtaPluginC10identifierSSvg",
+                "moduleName": "AIBudsJieliOTA",
+                "implicit": true,
+                "objc_name": "identifier",
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "protocolKind",
+            "printedName": "protocolKind",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OtaProtocolKind",
+                "printedName": "AIBudsFoundation.OtaProtocolKind",
+                "usr": "c:@M@AIBudsFoundation@E@AIBudsOtaProtocolKind"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBudsJieliOTA@objc(cs)AIBudsJieliOtaPlugin(py)protocolKind",
+            "mangledName": "$s14AIBudsJieliOTA0B9OtaPluginC12protocolKind0A10Foundation0d8ProtocolG0Ovp",
+            "moduleName": "AIBudsJieliOTA",
+            "objc_name": "protocolKind",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "ObjC",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OtaProtocolKind",
+                    "printedName": "AIBudsFoundation.OtaProtocolKind",
+                    "usr": "c:@M@AIBudsFoundation@E@AIBudsOtaProtocolKind"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsJieliOTA@objc(cs)AIBudsJieliOtaPlugin(im)protocolKind",
+                "mangledName": "$s14AIBudsJieliOTA0B9OtaPluginC12protocolKind0A10Foundation0d8ProtocolG0Ovg",
+                "moduleName": "AIBudsJieliOTA",
+                "implicit": true,
+                "objc_name": "protocolKind",
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "serviceUUID",
+            "printedName": "serviceUUID",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBudsJieliOTA@objc(cs)AIBudsJieliOtaPlugin(py)serviceUUID",
+            "mangledName": "$s14AIBudsJieliOTA0B9OtaPluginC11serviceUUIDSSvp",
+            "moduleName": "AIBudsJieliOTA",
+            "objc_name": "serviceUUID",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "ObjC",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsJieliOTA@objc(cs)AIBudsJieliOtaPlugin(im)serviceUUID",
+                "mangledName": "$s14AIBudsJieliOTA0B9OtaPluginC11serviceUUIDSSvg",
+                "moduleName": "AIBudsJieliOTA",
+                "implicit": true,
+                "objc_name": "serviceUUID",
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "writeCharacteristicUUID",
+            "printedName": "writeCharacteristicUUID",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBudsJieliOTA@objc(cs)AIBudsJieliOtaPlugin(py)writeCharacteristicUUID",
+            "mangledName": "$s14AIBudsJieliOTA0B9OtaPluginC23writeCharacteristicUUIDSSvp",
+            "moduleName": "AIBudsJieliOTA",
+            "objc_name": "writeCharacteristicUUID",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "ObjC",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsJieliOTA@objc(cs)AIBudsJieliOtaPlugin(im)writeCharacteristicUUID",
+                "mangledName": "$s14AIBudsJieliOTA0B9OtaPluginC23writeCharacteristicUUIDSSvg",
+                "moduleName": "AIBudsJieliOTA",
+                "implicit": true,
+                "objc_name": "writeCharacteristicUUID",
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "notifyCharacteristicUUID",
+            "printedName": "notifyCharacteristicUUID",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBudsJieliOTA@objc(cs)AIBudsJieliOtaPlugin(py)notifyCharacteristicUUID",
+            "mangledName": "$s14AIBudsJieliOTA0B9OtaPluginC24notifyCharacteristicUUIDSSvp",
+            "moduleName": "AIBudsJieliOTA",
+            "objc_name": "notifyCharacteristicUUID",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "ObjC",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsJieliOTA@objc(cs)AIBudsJieliOtaPlugin(im)notifyCharacteristicUUID",
+                "mangledName": "$s14AIBudsJieliOTA0B9OtaPluginC24notifyCharacteristicUUIDSSvg",
+                "moduleName": "AIBudsJieliOTA",
+                "implicit": true,
+                "objc_name": "notifyCharacteristicUUID",
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isRunning",
+            "printedName": "isRunning",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBudsJieliOTA@objc(cs)AIBudsJieliOtaPlugin(py)isRunning",
+            "mangledName": "$s14AIBudsJieliOTA0B9OtaPluginC9isRunningSbvp",
+            "moduleName": "AIBudsJieliOTA",
+            "objc_name": "isRunning",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsJieliOTA@objc(cs)AIBudsJieliOtaPlugin(im)isRunning",
+                "mangledName": "$s14AIBudsJieliOTA0B9OtaPluginC9isRunningSbvg",
+                "moduleName": "AIBudsJieliOTA",
+                "objc_name": "isRunning",
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "start",
+            "printedName": "start(withFilePath:transport:startHandler:progressHandler:completionHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "OtaPluginTransport",
+                "printedName": "any AIBuds.OtaPluginTransport",
+                "usr": "c:@M@AIBuds@objc(pl)AIBudsOtaPluginTransport"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Swift.Bool, (any Swift.Error)?) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Bool, (any Swift.Error)?) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(Swift.Bool, (any Swift.Error)?)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Bool",
+                            "printedName": "Swift.Bool",
+                            "usr": "s:Sb"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "(any Swift.Error)?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Error",
+                                "printedName": "any Swift.Error",
+                                "usr": "s:s5ErrorP"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((CoreGraphics.CGFloat) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(CoreGraphics.CGFloat) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CGFloat",
+                        "printedName": "CoreGraphics.CGFloat",
+                        "usr": "s:14CoreFoundation7CGFloatV"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Swift.Bool, CoreGraphics.CGFloat, (any Swift.Error)?) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Bool, CoreGraphics.CGFloat, (any Swift.Error)?) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(Swift.Bool, CoreGraphics.CGFloat, (any Swift.Error)?)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Bool",
+                            "printedName": "Swift.Bool",
+                            "usr": "s:Sb"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "CGFloat",
+                            "printedName": "CoreGraphics.CGFloat",
+                            "usr": "s:14CoreFoundation7CGFloatV"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "(any Swift.Error)?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Error",
+                                "printedName": "any Swift.Error",
+                                "usr": "s:s5ErrorP"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AIBudsJieliOTA@objc(cs)AIBudsJieliOtaPlugin(im)startWithFilePath:transport:startHandler:progressHandler:completionHandler:",
+            "mangledName": "$s14AIBudsJieliOTA0B9OtaPluginC5start12withFilePath9transport0F7Handler08progressK0010completionK0ySS_0A00dE9Transport_pySb_s5Error_pSgtcSgy12CoreGraphics7CGFloatVcSgySb_AqMtcSgtF",
+            "moduleName": "AIBudsJieliOTA",
+            "objc_name": "startWithFilePath:transport:startHandler:progressHandler:completionHandler:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "receive",
+            "printedName": "receive(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AIBudsJieliOTA@objc(cs)AIBudsJieliOtaPlugin(im)receiveData:",
+            "mangledName": "$s14AIBudsJieliOTA0B9OtaPluginC7receiveyy10Foundation4DataVF",
+            "moduleName": "AIBudsJieliOTA",
+            "objc_name": "receiveData:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "cancel",
+            "printedName": "cancel(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Swift.Bool, Foundation.NSError?) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Bool, Foundation.NSError?) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(Swift.Bool, Foundation.NSError?)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Bool",
+                            "printedName": "Swift.Bool",
+                            "usr": "s:Sb"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "Foundation.NSError?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "NSError",
+                                "printedName": "Foundation.NSError",
+                                "usr": "c:objc(cs)NSError"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AIBudsJieliOTA@objc(cs)AIBudsJieliOtaPlugin(im)cancelWithCompletion:",
+            "mangledName": "$s14AIBudsJieliOTA0B9OtaPluginC6cancel10completionyySb_So7NSErrorCSgtcSg_tF",
+            "moduleName": "AIBudsJieliOTA",
+            "objc_name": "cancelWithCompletion:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "handleDisconnect",
+            "printedName": "handleDisconnect(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.NSError?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSError",
+                    "printedName": "Foundation.NSError",
+                    "usr": "c:objc(cs)NSError"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AIBudsJieliOTA@objc(cs)AIBudsJieliOtaPlugin(im)handleDisconnectWithError:",
+            "mangledName": "$s14AIBudsJieliOTA0B9OtaPluginC16handleDisconnectyySo7NSErrorCSgF",
+            "moduleName": "AIBudsJieliOTA",
+            "objc_name": "handleDisconnectWithError:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@AIBudsJieliOTA@objc(cs)AIBudsJieliOtaPlugin",
+        "mangledName": "$s14AIBudsJieliOTA0B9OtaPluginC",
+        "moduleName": "AIBudsJieliOTA",
+        "objc_name": "AIBudsJieliOtaPlugin",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "OtaPlugin",
+            "printedName": "OtaPlugin",
+            "usr": "c:@M@AIBuds@objc(pl)AIBudsOtaPlugin",
+            "mangledName": "$s6AIBuds9OtaPluginP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/SDKBuildInfo\/SDK_Build_Info.swift",
+      "kind": "StringLiteral",
+      "offset": 257,
+      "length": 14,
+      "value": "\"1.0.1-beta.6\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/SDKBuildInfo\/SDK_Build_Info.swift",
+      "kind": "StringLiteral",
+      "offset": 387,
+      "length": 13,
+      "value": "\"20260902002\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/SDKBuildInfo\/SDK_Build_Info.swift",
+      "kind": "StringLiteral",
+      "offset": 502,
+      "length": 12,
+      "value": "\"2026-09-02\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsJieliOTA\/Internal\/JieliLogBridge.swift",
+      "kind": "BooleanLiteral",
+      "offset": 341,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsJieliOTA\/Internal\/JieliOtaEngine.swift",
+      "kind": "StringLiteral",
+      "offset": 558,
+      "length": 39,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsJieliOTA\/Internal\/JieliOtaEngine.swift",
+      "kind": "StringLiteral",
+      "offset": 583,
+      "length": 1,
+      "value": "\".engine.queue\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsJieliOTA\/Internal\/JieliOtaEngine.swift",
+      "kind": "BooleanLiteral",
+      "offset": 692,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsJieliOTA\/Internal\/JieliOtaEngine.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1245,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsJieliOTA\/Internal\/JieliOtaEngine.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1295,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsJieliOTA\/Internal\/JieliOtaEngine.swift",
+      "kind": "BooleanLiteral",
+      "offset": 9391,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsJieliOTA\/AIBudsJieliOTA.swift",
+      "kind": "StringLiteral",
+      "offset": 288,
+      "length": 6,
+      "value": "\"📦\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsJieliOTA\/AIBudsJieliOTA.swift",
+      "kind": "StringLiteral",
+      "offset": 381,
+      "length": 19,
+      "value": "\"AIBudsJieliOTASDK\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsJieliOTA\/AIBudsJieliOTA.swift",
+      "kind": "StringLiteral",
+      "offset": 474,
+      "length": 35,
+      "value": "\"com.topstep.sdks.aibuds.ota.jieli\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsJieliOTA\/AIBudsJieliOTA.swift",
+      "kind": "StringLiteral",
+      "offset": 617,
+      "length": 6,
+      "value": "\"🍧\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsJieliOTA\/AIBudsJieliOTA.swift",
+      "kind": "StringLiteral",
+      "offset": 701,
+      "length": 10,
+      "value": "\"JieliOTA\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsJieliOTA\/AIBudsJieliOTA.swift",
+      "kind": "StringLiteral",
+      "offset": 953,
+      "length": 7,
+      "value": "\"2.5.0\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsJieliOTA\/AIBudsJieliOTASDK.swift",
+      "kind": "StringLiteral",
+      "offset": 1147,
+      "length": 100,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsJieliOTA\/AIBudsJieliOTASDK.swift",
+      "kind": "StringLiteral",
+      "offset": 1165,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsJieliOTA\/AIBudsJieliOTASDK.swift",
+      "kind": "StringLiteral",
+      "offset": 1176,
+      "length": 1,
+      "value": "\" V\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsJieliOTA\/AIBudsJieliOTASDK.swift",
+      "kind": "StringLiteral",
+      "offset": 1192,
+      "length": 1,
+      "value": "\" (Build\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsJieliOTA\/AIBudsJieliOTASDK.swift",
+      "kind": "StringLiteral",
+      "offset": 1211,
+      "length": 1,
+      "value": "\") Release Date: \""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsJieliOTA\/AIBudsJieliOTASDK.swift",
+      "kind": "StringLiteral",
+      "offset": 1246,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsJieliOTA\/JieliOtaError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 220,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsJieliOTA\/JieliOtaError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 246,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsJieliOTA\/JieliOtaError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 274,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsJieliOTA\/JieliOtaError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 308,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsJieliOTA\/JieliOtaError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 342,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsJieliOTA\/JieliOtaError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 368,
+      "length": 1,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsJieliOTA\/JieliOtaError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 391,
+      "length": 1,
+      "value": "7"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsJieliOTA\/JieliOtaError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 420,
+      "length": 1,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsJieliOTA\/JieliOtaError.swift",
+      "kind": "StringLiteral",
+      "offset": 551,
+      "length": 38,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsJieliOTA\/JieliOtaError.swift",
+      "kind": "StringLiteral",
+      "offset": 576,
+      "length": 1,
+      "value": "\".errordomain\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsJieliOTA\/JieliOtaError.swift",
+      "kind": "StringLiteral",
+      "offset": 687,
+      "length": 27,
+      "value": "\"AIBudsJieliOtaSdkErrorKey\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsJieliOTA\/JieliOtaPlugin.swift",
+      "kind": "StringLiteral",
+      "offset": 569,
+      "length": 6,
+      "value": "\"AE00\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsJieliOTA\/JieliOtaPlugin.swift",
+      "kind": "StringLiteral",
+      "offset": 623,
+      "length": 6,
+      "value": "\"AE01\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsJieliOTA\/JieliOtaPlugin.swift",
+      "kind": "StringLiteral",
+      "offset": 678,
+      "length": 6,
+      "value": "\"AE02\""
+    }
+  ]
+}

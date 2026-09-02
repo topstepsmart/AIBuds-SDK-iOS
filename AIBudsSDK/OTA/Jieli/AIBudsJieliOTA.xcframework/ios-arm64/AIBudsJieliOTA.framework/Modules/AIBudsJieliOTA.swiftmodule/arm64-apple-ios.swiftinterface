@@ -1,0 +1,74 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.3.3 effective-5.10 (swiftlang-6.3.3.1.3 clang-2100.1.1.101)
+// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name AIBudsJieliOTA
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.3
+import AIBuds
+import AIBudsFoundation
+import Foundation
+import Swift
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(AIBudsJieliOtaSDK) final public class JieliOtaSDK : ObjectiveC.NSObject {
+  @objc public static let shared: AIBudsJieliOTA.JieliOtaSDK
+  @objc public static var otaPlugin: any AIBuds.OtaPlugin {
+    @objc get
+  }
+  @objc final public var sdkVersion: Swift.String {
+    @objc get
+  }
+  @objc final public var sdkBuild: Swift.String {
+    @objc get
+  }
+  @objc final public var sdkReleaseDate: Swift.String {
+    @objc get
+  }
+  @objc final public var sdkVersionDescription: Swift.String {
+    @objc get
+  }
+  @objc final public var sdkName: Swift.String {
+    @objc get
+  }
+  @objc final public var jieliOtaSDKVersion: Swift.String {
+    @objc get
+  }
+  @objc deinit
+}
+@objc(AIBudsJieliOtaErrorCode) public enum JieliOtaErrorCode : Swift.Int {
+  case busy = 1
+  case fileNotFound = 2
+  case fileReadFailed = 3
+  case transportUnavailable = 4
+  case authenticationFailed = 5
+  case disconnected = 6
+  case cancelled = 7
+  case jieliSDKFailure = 8
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+extension AIBudsJieliOTA.JieliOtaSDK {
+  @objc public static let ErrorDomain: Swift.String
+  @objc public static let ErrorKey: Swift.String
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(AIBudsJieliOtaPlugin) final public class JieliOtaPlugin : ObjectiveC.NSObject, AIBuds.OtaPlugin {
+  @objc public static let shared: AIBudsJieliOTA.JieliOtaPlugin
+  @objc final public let identifier: Swift.String
+  @objc final public let protocolKind: AIBudsFoundation.OtaProtocolKind
+  @objc final public let serviceUUID: Swift.String
+  @objc final public let writeCharacteristicUUID: Swift.String
+  @objc final public let notifyCharacteristicUUID: Swift.String
+  @objc final public var isRunning: Swift.Bool {
+    @objc get
+  }
+  @objc(startWithFilePath:transport:startHandler:progressHandler:completionHandler:) final public func start(withFilePath filePath: Swift.String, transport: any AIBuds.OtaPluginTransport, startHandler: AIBuds.AIBudsOtaStartCompletionHandler?, progressHandler: AIBuds.AIBudsOtaProgressHandler?, completionHandler: AIBuds.AIBudsOtaCompletionHandler?)
+  @objc(receiveData:) final public func receive(_ data: Foundation.Data)
+  @objc(cancelWithCompletion:) final public func cancel(completion: ((Swift.Bool, Foundation.NSError?) -> Swift.Void)?)
+  @objc(handleDisconnectWithError:) final public func handleDisconnect(_ error: Foundation.NSError?)
+  @objc deinit
+}
+extension AIBudsJieliOTA.JieliOtaErrorCode : Swift.Equatable {}
+extension AIBudsJieliOTA.JieliOtaErrorCode : Swift.Hashable {}
+extension AIBudsJieliOTA.JieliOtaErrorCode : Swift.RawRepresentable {}

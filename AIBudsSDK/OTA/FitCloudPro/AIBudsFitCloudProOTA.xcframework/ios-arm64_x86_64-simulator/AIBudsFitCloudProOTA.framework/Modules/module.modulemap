@@ -1,0 +1,3 @@
+framework module AIBudsFitCloudProOTA {
+  header "AIBudsFitCloudProOTA-Swift.h"
+}

@@ -14,15 +14,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		hQY8qsTsi0AJxrjzbx73VNnJ7vM=
+		ozLOygrJHeN5NeXxq2vSpeV6RQs=
 		</data>
 		<key>Modules/AIBudsCrashReporter.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		PTb2a+vBln0V9ZkXb4pE1AqrEMc=
+		TjAp18eNLXfZc6BtXgHCY6rif0k=
 		</data>
 		<key>Modules/AIBudsCrashReporter.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		pdj5GQzTarld99bgFbnuCf/2oxM=
+		qTluJdGvlczOckzDq5C/50CsYhY=
 		</data>
 		<key>Modules/AIBudsCrashReporter.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/AIBudsCrashReporter.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		pdj5GQzTarld99bgFbnuCf/2oxM=
+		qTluJdGvlczOckzDq5C/50CsYhY=
 		</data>
 		<key>Modules/AIBudsCrashReporter.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		k75cZ8v0Q1sWlfwnHr/MFzj7ijI=
+		jHbEZ9VlU31C++ykm21NZ9nnNLw=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -61,14 +61,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			qq0a6aQKFd0OVW1sUmNn7vLODrzyTx6Y7L0knErS8JI=
+			A+ZQDLOymDdFiPCo8C1QLRTjqY6zaKPLA7/SIIblg+M=
 			</data>
 		</dict>
 		<key>Modules/AIBudsCrashReporter.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			2NOirEhzGmjwG3x8t3tTHCwXCpgkqSM51OMSA/NrJUU=
+			NhoUJmZ5ZXgf3FZ4/5g4EgB9umfk2TrAj5eLQdeT7P8=
 			</data>
 		</dict>
 		<key>Modules/AIBudsCrashReporter.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -82,14 +82,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			2NOirEhzGmjwG3x8t3tTHCwXCpgkqSM51OMSA/NrJUU=
+			NhoUJmZ5ZXgf3FZ4/5g4EgB9umfk2TrAj5eLQdeT7P8=
 			</data>
 		</dict>
 		<key>Modules/AIBudsCrashReporter.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			kbKtT9nSP5DxynKZb/WgAy3GJWvqIl9l9kcwq5oFuZw=
+			wN9Q0yRr61uNg77r2VXcsOYUBRPPC+5wmN4GYGUVmP4=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

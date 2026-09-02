@@ -125,6 +125,13 @@
 "LocKey.OtaStatusFailedFormat" = "Upgrade Failed: %@";
 "LocKey.OtaStatusCopyFailed" = "File Copy Failed";
 "LocKey.OtaStatusNoFirmwareSelected" = "No firmware file selected.";
+"LocKey.OtaProtocolTitle" = "Method";
+"LocKey.OtaHeroEyebrow" = "DEVICE FIRMWARE";
+"LocKey.OtaFirmwareSectionTitle" = "Firmware Package";
+"LocKey.OtaProgressSectionTitle" = "Upgrade Progress";
+"LocKey.OtaProtocolSelectedFormat" = "Selected OTA method: %@.";
+"LocKey.OtaStatusUnsupported" = "This device does not expose the OTA API.";
+"LocKey.OtaStatusPluginUnavailable" = "The required OTA plugin is not registered.";
 "LocKey.CameraOtaGroupTitle" = "Camera OTA";
 "LocKey.CameraOtaFeatureTitle" = "Camera Firmware Update (OTA)";
 "LocKey.CameraOtaDemoTitle" = "Camera OTA Upgrade Demo";
