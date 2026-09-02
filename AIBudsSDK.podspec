@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
   # ==================== Basic Information ====================
   # SDK name and version
   s.name         = "AIBudsSDK"
-  s.version      = "1.0.1-beta.4"
+  s.version      = "1.0.1-beta.5"
   s.summary      = "AIBuds SDK - An iOS framework for connecting AI devices"
   s.description  = <<-DESC
                     AIBuds SDK is a versatile framework for connecting iOS apps to AI devices. It provides modular components including core connectivity, Bluetooth management, voice assistant, AI capabilities, logging utilities, and foundation services.
@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
   s.subspec 'Log' do |log|
     log.subspec 'Core' do |log_core|
       log_core.vendored_frameworks = 'AIBudsSDK/Log/Core/AIBudsLog.xcframework'
-      log_core.dependency 'zipzap'
+      log_core.dependency 'AIBudsSDK/ThirdParty/ZipZap'
       log_core.frameworks = 'Foundation'
     end
 
@@ -61,6 +61,13 @@ Pod::Spec.new do |s|
 
   # Third-party libraries collection
   s.subspec 'ThirdParty' do |thirdparty|
+    # ZipZap - ZIP archive support maintained as an AIBuds binary dependency
+    thirdparty.subspec 'ZipZap' do |zipzap|
+      zipzap.vendored_frameworks = 'AIBudsSDK/ThirdParty/ZipZap/ZipZap.xcframework'
+      zipzap.frameworks = 'Foundation', 'ImageIO'
+      zipzap.libraries = 'z'
+    end
+
     # LAME - MP3 encoding library
     thirdparty.subspec 'Lame' do |lame|
       lame.vendored_frameworks = 'AIBudsSDK/ThirdParty/LAME/LAME.xcframework'

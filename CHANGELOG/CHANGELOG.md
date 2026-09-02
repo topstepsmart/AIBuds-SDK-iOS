@@ -1,11 +1,17 @@
 # CHANGELOG
 
+## V1.0.1-beta.5 build20260902001 (2026-09-02)
+
+- Enhanced AI chat capabilities.
+- Improved AI service compatibility.
+- Bundled ZipZap with the SDK to address security vulnerabilities in the upstream ZipZap SDK.
+
 ## V1.0.1-beta.4 build20260830001 (2026-08-30)
 
-- Added support for determining whether the connected device supports the find-device feature.
-- Added support for retrieving the following device information:
+- Apps can now check whether the connected device supports the find-device feature.
+- Added the following device information:
   - Image-enhancement post-processing algorithm currently in use.
-  - Recommended maximum recording durations for video and audio.
+  - Recommended maximum recording duration options for video and audio.
   - Minimum battery level required for taking photos, recording video or audio, and transferring files.
 
 ## V1.0.1-beta.3 build20260829001 (2026-08-29)
