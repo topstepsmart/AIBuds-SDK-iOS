@@ -2,7 +2,7 @@
 
 ## V1.0.1-beta.6 build20260902002 (2026-09-02)
 
-- Added support for FitCloudPro and Jieli OTA workflows.
+- Added support for the FitCloud Pro and Jieli OTA protocols.
 - Improved Swift 6 compatibility for the Live Stream Flutter plugin.
 
 ## V1.0.1-beta.5 build20260902001 (2026-09-02)

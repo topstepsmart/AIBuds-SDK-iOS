@@ -20,7 +20,7 @@
 - Enhanced AI Asking capabilities.
 - Improved AI service compatibility.
 - Bundled ZipZap with the SDK to address security vulnerabilities in the upstream ZipZap SDK.
-- Added support for FitCloudPro and Jieli OTA workflows.
+- Added support for the FitCloud Pro and Jieli OTA protocols.
 - Improved Swift 6 compatibility for the Live Stream Flutter plugin.
 - Improved SDK stability.
 
