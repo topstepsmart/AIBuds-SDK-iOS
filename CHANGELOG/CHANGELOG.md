@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## V1.0.1-beta.7 build20260903001 (2026-09-03)
+
+- Fixed an issue where voice data callbacks were not invoked during AI chat sessions.
+
 ## V1.0.1-beta.6 build20260902002 (2026-09-02)
 
 - Added support for the FitCloud Pro and Jieli OTA protocols.

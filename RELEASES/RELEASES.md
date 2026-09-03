@@ -1,8 +1,8 @@
 # RELEASES
 
-## V1.0.1-beta.6 (Build 20260902002)
+## V1.0.1-beta.7 (Build 20260903001)
 
-**Release date:** 2026-09-02
+**Release date:** 2026-09-03
 
 ### Features
 
@@ -22,6 +22,7 @@
 - Bundled ZipZap with the SDK to address security vulnerabilities in the upstream ZipZap SDK.
 - Added support for the FitCloud Pro and Jieli OTA protocols.
 - Improved Swift 6 compatibility for the Live Stream Flutter plugin.
+- Fixed an issue where voice data callbacks were not invoked during AI chat sessions.
 - Improved SDK stability.
 
 ## V1.0.0 (Build 20260824001)

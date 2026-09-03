@@ -10,11 +10,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		trcOue7+yGvYXmkobPqMQrVNi6w=
+		G8yFTZwZFtxhauJsXmjp6BBShdo=
 		</data>
 		<key>Modules/AIBudsFitCloudProOTA.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		gKT3SX8Zw3R9IBS/gAc7QsWaONI=
+		rT8kgEqXBd45bh7LbfY+VOmUi0Y=
 		</data>
 		<key>Modules/AIBudsFitCloudProOTA.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>Modules/AIBudsFitCloudProOTA.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		gKT3SX8Zw3R9IBS/gAc7QsWaONI=
+		rT8kgEqXBd45bh7LbfY+VOmUi0Y=
 		</data>
 		<key>Modules/AIBudsFitCloudProOTA.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -62,7 +62,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			oNxtgIK7xeJ0fmvfHbNhJjTYFO1c29kMmxOixXk068k=
+			xVtoPuxpQnWJZl1VzckNRspBHBTUeL6NQLfigTL82k0=
 			</data>
 		</dict>
 		<key>Modules/AIBudsFitCloudProOTA.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -90,7 +90,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			oNxtgIK7xeJ0fmvfHbNhJjTYFO1c29kMmxOixXk068k=
+			xVtoPuxpQnWJZl1VzckNRspBHBTUeL6NQLfigTL82k0=
 			</data>
 		</dict>
 		<key>Modules/AIBudsFitCloudProOTA.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
