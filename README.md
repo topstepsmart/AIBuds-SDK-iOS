@@ -8,23 +8,23 @@
 
 Connect smart glasses, earbuds, speakers, watches, badges, and other AI devices with a unified device, media, voice, and AI stack.
 
-[![SDK](https://img.shields.io/badge/SDK-AIBuds%20for%20iOS-7c3aed)](https://docs-aibuds.github.io/)
-[![Pod Version](https://img.shields.io/badge/Pod-1.0.0-7c3aed?logo=cocoapods&logoColor=white)](https://github.com/topstepsmart/AIBuds-SDK-iOS/releases/tag/1.0.0)
-[![Release](https://img.shields.io/badge/Release-v1.0.0-2563eb)](https://github.com/topstepsmart/AIBuds-SDK-iOS/releases/tag/1.0.0)
-[![Nightly](https://img.shields.io/badge/Nightly-v1.0.1--beta.7-22c55e)](https://github.com/topstepsmart/AIBuds-SDK-iOS)
+<a href="https://docs-aibuds.github.io/" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/SDK-AIBuds%20for%20iOS-7c3aed" alt="AIBuds SDK" /></a>
+<a href="https://github.com/topstepsmart/AIBuds-SDK-iOS/releases/tag/1.0.0" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/Pod-1.0.0-7c3aed?logo=cocoapods&amp;logoColor=white" alt="Pod version 1.0.0" /></a>
+<a href="https://github.com/topstepsmart/AIBuds-SDK-iOS/releases/tag/1.0.0" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/Release-v1.0.0-2563eb" alt="Release v1.0.0" /></a>
+<a href="https://github.com/topstepsmart/AIBuds-SDK-iOS" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/Nightly-v1.0.1--beta.7-22c55e" alt="Nightly v1.0.1-beta.7" /></a>
 
-[![Platform](https://img.shields.io/badge/Platform-iOS%2013%2B-111827?logo=apple)](https://docs-aibuds.github.io/docs/getting-started/installation)
-[![Languages](https://img.shields.io/badge/Swift%20%7C%20Objective--C-supported-f97316?logo=swift&logoColor=white)](https://docs-aibuds.github.io/docs/getting-started/quickstart)
-[![CocoaPods](https://img.shields.io/badge/CocoaPods-1.16%2B-ee3322?logo=cocoapods&logoColor=white)](https://cocoapods.org/)
-[![Release Date](https://img.shields.io/badge/Released-2026.08.24-10b981)](./RELEASES/RELEASES.md)
+<a href="https://docs-aibuds.github.io/docs/getting-started/installation" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/Platform-iOS%2013%2B-111827?logo=apple" alt="Platform iOS 13+" /></a>
+<a href="https://docs-aibuds.github.io/docs/getting-started/quickstart" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/Swift%20%7C%20Objective--C-supported-f97316?logo=swift&amp;logoColor=white" alt="Swift and Objective-C supported" /></a>
+<a href="https://cocoapods.org/" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/CocoaPods-1.16%2B-ee3322?logo=cocoapods&amp;logoColor=white" alt="CocoaPods 1.16+" /></a>
+<a href="./RELEASES/RELEASES.md" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/Released-2026.08.24-10b981" alt="Released 2026.08.24" /></a>
 
-[![Last Commit](https://img.shields.io/github/last-commit/topstepsmart/AIBuds-SDK-iOS)](https://github.com/topstepsmart/AIBuds-SDK-iOS/commits)
+<a href="https://github.com/topstepsmart/AIBuds-SDK-iOS/commits" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/github/last-commit/topstepsmart/AIBuds-SDK-iOS" alt="Last commit" /></a>
 [![License](https://img.shields.io/github/license/topstepsmart/AIBuds-SDK-iOS?color=10b981)](LICENSE)
-[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/topstepsmart/AIBuds-SDK-iOS)
+<a href="https://deepwiki.com/topstepsmart/AIBuds-SDK-iOS" target="_blank" rel="noopener noreferrer"><img src="https://deepwiki.com/badge.svg" alt="Ask DeepWiki" /></a>
 
-[Get Started](#-quick-start) · [Explore Features](#-features) · [Choose Modules](#-modules) · [Documentation](https://docs-aibuds.github.io/) · [API Reference](https://docs-aibuds.github.io/api-reference)
+[Get Started](#-quick-start) · <a href="https://docs-aibuds.github.io/" target="_blank" rel="noopener noreferrer">Documentation</a> · <a href="https://docs-aibuds.github.io/api-reference" target="_blank" rel="noopener noreferrer">API Reference</a> · <a href="./CHANGELOG/CHANGELOG.md" target="_blank" rel="noopener noreferrer">Changelog</a> · <a href="./RELEASES/RELEASES.md" target="_blank" rel="noopener noreferrer">Releases</a>
 
-English · [简体中文文档](https://docs-aibuds.github.io/zh-Hans/)
+English · <a href="https://docs-aibuds.github.io/zh-Hans/" target="_blank" rel="noopener noreferrer">简体中文文档</a>
 
 </div>
 
@@ -37,11 +37,11 @@ AIBuds SDK is a modular framework for discovering, connecting, and interacting w
 - **Unified connectivity** — Device discovery, connection lifecycle, persistent device records, and Bluetooth communication.
 - **Built for AI wearables** — Smart glasses, earbuds, earrings, speakers, watches, electronic badges, and more.
 - **Rich device capabilities** — Device information, controls, audio, recording, camera, media transfer, live streaming, and firmware updates.
-- **End-to-end AI experiences** — AI chat, streaming ASR, TTS, summaries, translation, simultaneous interpretation, image generation, and Q&A.
+- **Integrated AI capabilities** — AI chat, streaming speech recognition, text-to-speech, summaries, translation, simultaneous interpretation, image generation, and Q&A.
 - **Flexible architecture** — Use the complete SDK or compose a smaller integration from independent modules.
 - **Production tooling** — Structured logs, crash reports, a local AI dashboard, video stabilization, and a comprehensive demo app.
 
-> Availability depends on the connected device, installed SDK modules, and service configuration. Refer to the [documentation](https://docs-aibuds.github.io/docs/intro) and your target device capabilities.
+> Availability depends on the connected device, installed SDK modules, and service configuration. Refer to the <a href="https://docs-aibuds.github.io/docs/intro" target="_blank" rel="noopener noreferrer">documentation</a> and your target device capabilities.
 
 ## 🧩 Features
 
@@ -100,7 +100,7 @@ Use a local checkout while developing the SDK and app together:
 pod 'AIBudsSDK/AllInOne', :path => '../AIBuds-SDK-iOS'
 ```
 
-> AIBuds SDK requires additional Podfile hooks for dynamic frameworks, private-header compatibility, and binary distribution. Copy the complete hooks from the [installation guide](https://docs-aibuds.github.io/docs/getting-started/installation) to avoid dependency or archive failures.
+> AIBuds SDK requires additional Podfile hooks for dynamic frameworks, private-header compatibility, and binary distribution. Copy the complete hooks from the <a href="https://docs-aibuds.github.io/docs/getting-started/installation" target="_blank" rel="noopener noreferrer">installation guide</a> to avoid dependency or archive failures.
 
 Install the dependencies and open the generated workspace:
 
@@ -120,7 +120,7 @@ Add both usage descriptions to the application target's `Info.plist`. SDK initia
 <string>This app uses Bluetooth to communicate with AIBuds devices.</string>
 ```
 
-Microphone, local network, Bonjour, background modes, Wi-Fi information, and hotspot entitlements are required only for the features that use them. See [Permissions and Entitlements](https://docs-aibuds.github.io/docs/getting-started/installation) for complete configuration snippets.
+Microphone, local network, Bonjour, background modes, Wi-Fi information, and hotspot entitlements are required only for the features that use them. See <a href="https://docs-aibuds.github.io/docs/getting-started/installation" target="_blank" rel="noopener noreferrer">Permissions and Entitlements</a> for complete configuration snippets.
 
 ### 3. Initialize
 
@@ -158,7 +158,7 @@ AIBudsSDK.startScanning(
 )
 ```
 
-Convert a discovery result with `makeStorableDeviceFromDiscovered(_:)`, persist it with `StoredDevicesMgr`, and connect using `ConnectParams`. The [Quick Start guide](https://docs-aibuds.github.io/docs/getting-started/quickstart) covers enrollment, connection, commands, delegate callbacks, and disconnection in both Swift and Objective-C.
+Convert a discovery result with `makeStorableDeviceFromDiscovered(_:)`, persist it with `StoredDevicesMgr`, and connect using `ConnectParams`. The <a href="https://docs-aibuds.github.io/docs/getting-started/quickstart" target="_blank" rel="noopener noreferrer">Quick Start guide</a> covers enrollment, connection, commands, delegate callbacks, and disconnection in both Swift and Objective-C.
 
 ## 📦 Modules
 
@@ -179,7 +179,7 @@ Convert a discovery result with `makeStorableDeviceFromDiscovered(_:)`, persist 
 | `AIBudsSDK/Log/XLFacility` | Persistent logs and local log browser | Development and field diagnostics |
 | `AIBudsSDK/CrashReporter` | Crash capture and persisted reports | Stability diagnostics |
 
-Installing only `pod 'AIBudsSDK'` selects `Core`; it does not include ABMate, an AI provider, or optional features. See the [module reference](https://docs-aibuds.github.io/docs/getting-started/installation) for the complete dependency graph.
+Installing only `pod 'AIBudsSDK'` selects `Core`; it does not include ABMate, an AI provider, or optional features. See the <a href="https://docs-aibuds.github.io/docs/getting-started/installation" target="_blank" rel="noopener noreferrer">module reference</a> for the complete dependency graph.
 
 ## 🧪 Demo App
 
@@ -201,13 +201,13 @@ Before running the app:
 
 | Resource | Description |
 | --- | --- |
-| [Documentation](https://docs-aibuds.github.io/) | Installation, configuration, concepts, and feature guides |
-| [Quick Start](https://docs-aibuds.github.io/docs/getting-started/quickstart) | Initialization, discovery, enrollment, connection, and commands |
-| [API Reference](https://docs-aibuds.github.io/api-reference) | Framework, type, and method reference |
-| [Core Features](https://docs-aibuds.github.io/docs/core/basic-features/overview) | Device control, media, live streaming, and OTA |
-| [AI Services](https://docs-aibuds.github.io/docs/ai/overview) | Providers, sessions, and AI capabilities |
-| [Troubleshooting](https://docs-aibuds.github.io/docs/troubleshooting/common-issues) | Installation, initialization, discovery, and connection issues |
-| [中文文档](https://docs-aibuds.github.io/zh-Hans/) | Complete Simplified Chinese documentation |
+| <a href="https://docs-aibuds.github.io/" target="_blank" rel="noopener noreferrer">Documentation</a> | Installation, configuration, concepts, and feature guides |
+| <a href="https://docs-aibuds.github.io/docs/getting-started/quickstart" target="_blank" rel="noopener noreferrer">Quick Start</a> | Initialization, discovery, enrollment, connection, and commands |
+| <a href="https://docs-aibuds.github.io/api-reference" target="_blank" rel="noopener noreferrer">API Reference</a> | Framework, type, and method reference |
+| <a href="https://docs-aibuds.github.io/docs/core/basic-features/overview" target="_blank" rel="noopener noreferrer">Core Features</a> | Device control, media, live streaming, and OTA |
+| <a href="https://docs-aibuds.github.io/docs/ai/overview" target="_blank" rel="noopener noreferrer">AI Services</a> | Providers, sessions, and AI capabilities |
+| <a href="https://docs-aibuds.github.io/docs/troubleshooting/common-issues" target="_blank" rel="noopener noreferrer">Troubleshooting</a> | Installation, initialization, discovery, and connection issues |
+| <a href="https://docs-aibuds.github.io/zh-Hans/" target="_blank" rel="noopener noreferrer">中文文档</a> | Complete Simplified Chinese documentation |
 
 ## 🛠️ FAQ
 
@@ -236,7 +236,7 @@ CocoaPods integrates the SDK and its third-party dependencies into the generated
 
 - Latest stable release: `1.0.0` — August 24, 2026
 - Latest prerelease: `1.0.1-beta.7` — September 3, 2026
-- Release notes: [CHANGELOG](./CHANGELOG/CHANGELOG.md) · [RELEASES](./RELEASES/RELEASES.md)
+- Release notes: <a href="./CHANGELOG/CHANGELOG.md" target="_blank" rel="noopener noreferrer">CHANGELOG</a> · <a href="./RELEASES/RELEASES.md" target="_blank" rel="noopener noreferrer">RELEASES</a>
 - License: [MIT](./LICENSE)
 
 ---
@@ -245,6 +245,6 @@ CocoaPods integrates the SDK and its third-party dependencies into the generated
 
 If AIBuds SDK helps your project, consider giving the repository a ⭐️ and following future releases.
 
-[Read the Docs](https://docs-aibuds.github.io/) · [Report an Issue](https://github.com/topstepsmart/AIBuds-SDK-iOS/issues)
+<a href="https://docs-aibuds.github.io/" target="_blank" rel="noopener noreferrer">Read the Docs</a> · <a href="https://github.com/topstepsmart/AIBuds-SDK-iOS/issues" target="_blank" rel="noopener noreferrer">Report an Issue</a>
 
 </div>
