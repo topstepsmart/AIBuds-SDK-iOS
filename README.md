@@ -11,7 +11,7 @@ Connect smart glasses, earbuds, speakers, watches, badges, and other AI devices 
 <a href="https://docs-aibuds.github.io/" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/SDK-AIBuds%20for%20iOS-7c3aed" alt="AIBuds SDK" /></a>
 <a href="https://github.com/topstepsmart/AIBuds-SDK-iOS/releases/tag/1.0.0" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/Pod-1.0.0-7c3aed?logo=cocoapods&amp;logoColor=white" alt="Pod version 1.0.0" /></a>
 <a href="https://github.com/topstepsmart/AIBuds-SDK-iOS/releases/tag/1.0.0" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/Release-v1.0.0-2563eb" alt="Release v1.0.0" /></a>
-<a href="https://github.com/topstepsmart/AIBuds-SDK-iOS" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/Nightly-v1.0.1--beta.7-22c55e" alt="Nightly v1.0.1-beta.7" /></a>
+<a href="https://github.com/topstepsmart/AIBuds-SDK-iOS" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/Nightly-v1.0.1--beta.8-22c55e" alt="Nightly v1.0.1-beta.8" /></a>
 
 <a href="https://docs-aibuds.github.io/docs/getting-started/installation" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/Platform-iOS%2013%2B-111827?logo=apple" alt="Platform iOS 13+" /></a>
 <a href="https://docs-aibuds.github.io/docs/getting-started/quickstart" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/Swift%20%7C%20Objective--C-supported-f97316?logo=swift&amp;logoColor=white" alt="Swift and Objective-C supported" /></a>
@@ -235,7 +235,7 @@ CocoaPods integrates the SDK and its third-party dependencies into the generated
 ## 📄 Release and License
 
 - Latest stable release: `1.0.0` — August 24, 2026
-- Latest prerelease: `1.0.1-beta.7` — September 3, 2026
+- Latest prerelease: `1.0.1-beta.8` — September 7, 2026
 - Release notes: <a href="./CHANGELOG/CHANGELOG.md" target="_blank" rel="noopener noreferrer">CHANGELOG</a> · <a href="./RELEASES/RELEASES.md" target="_blank" rel="noopener noreferrer">RELEASES</a>
 - License: [MIT](./LICENSE)
 

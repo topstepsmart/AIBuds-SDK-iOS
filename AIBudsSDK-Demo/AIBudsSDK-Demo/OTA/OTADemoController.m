@@ -452,12 +452,12 @@ static UIColor *OtaDemoColor(NSInteger red, NSInteger green, NSInteger blue) {
 - (NSString *)titleForOtaProtocol:(AIBudsOtaProtocolKind)protocolKind {
     switch (protocolKind) {
         case AIBudsOtaProtocolKindFitcloudPro:
-            return @"FitCloud Pro";
+            return NSLocalizedString(@"LocKey.OtaProtocolFitCloudPro", nil);
         case AIBudsOtaProtocolKindJieli:
-            return @"Jieli";
+            return NSLocalizedString(@"LocKey.OtaProtocolJieli", nil);
         case AIBudsOtaProtocolKindAbmate:
         default:
-            return @"ABMate";
+            return NSLocalizedString(@"LocKey.OtaProtocolABMate", nil);
     }
 }
 

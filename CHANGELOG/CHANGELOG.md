@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## V1.0.1-beta.8 build20260907001 (2026-09-07)
+
+- Fixed an issue that could cause apps to crash during Jieli OTA updates.
+- Improved media file importing so hotspot disconnections during an import now terminate the operation and invoke the completion callback with an error.
+
 ## V1.0.1-beta.7 build20260903001 (2026-09-03)
 
 - Fixed an issue where voice data callbacks were not invoked during AI chat sessions.

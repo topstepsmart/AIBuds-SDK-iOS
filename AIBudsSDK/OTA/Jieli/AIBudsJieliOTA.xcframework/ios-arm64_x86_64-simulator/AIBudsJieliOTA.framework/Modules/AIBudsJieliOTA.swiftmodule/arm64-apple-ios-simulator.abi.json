@@ -56,6 +56,13 @@
       },
       {
         "kind": "Import",
+        "name": "CoreBluetooth",
+        "printedName": "CoreBluetooth",
+        "declKind": "Import",
+        "moduleName": "AIBudsJieliOTA"
+      },
+      {
+        "kind": "Import",
         "name": "AIBuds",
         "printedName": "AIBuds",
         "declKind": "Import",
@@ -85,6 +92,16 @@
         "kind": "Import",
         "name": "JL_HashPair",
         "printedName": "JL_HashPair",
+        "declKind": "Import",
+        "moduleName": "AIBudsJieliOTA",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "JL_AdvParse",
+        "printedName": "JL_AdvParse",
         "declKind": "Import",
         "moduleName": "AIBudsJieliOTA",
         "declAttributes": [
@@ -1995,21 +2012,21 @@
       "kind": "StringLiteral",
       "offset": 257,
       "length": 14,
-      "value": "\"1.0.1-beta.7\""
+      "value": "\"1.0.1-beta.8\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/SDKBuildInfo\/SDK_Build_Info.swift",
       "kind": "StringLiteral",
       "offset": 387,
       "length": 13,
-      "value": "\"20260903001\""
+      "value": "\"20260907001\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/SDKBuildInfo\/SDK_Build_Info.swift",
       "kind": "StringLiteral",
       "offset": 502,
       "length": 12,
-      "value": "\"2026-09-03\""
+      "value": "\"2026-09-07\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsJieliOTA\/Internal\/JieliLogBridge.swift",
@@ -2021,42 +2038,49 @@
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsJieliOTA\/Internal\/JieliOtaEngine.swift",
       "kind": "StringLiteral",
-      "offset": 558,
+      "offset": 786,
       "length": 39,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsJieliOTA\/Internal\/JieliOtaEngine.swift",
       "kind": "StringLiteral",
-      "offset": 583,
+      "offset": 811,
       "length": 1,
       "value": "\".engine.queue\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsJieliOTA\/Internal\/JieliOtaEngine.swift",
       "kind": "BooleanLiteral",
-      "offset": 692,
+      "offset": 920,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsJieliOTA\/Internal\/JieliOtaEngine.swift",
       "kind": "BooleanLiteral",
-      "offset": 1245,
+      "offset": 1473,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsJieliOTA\/Internal\/JieliOtaEngine.swift",
       "kind": "BooleanLiteral",
-      "offset": 1295,
+      "offset": 1523,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsJieliOTA\/Internal\/JieliOtaEngine.swift",
       "kind": "BooleanLiteral",
-      "offset": 9391,
+      "offset": 1912,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsJieliOTA\/Internal\/JieliOtaEngine.swift",
+      "kind": "BooleanLiteral",
+      "offset": 12896,
       "length": 5,
       "value": "false"
     },

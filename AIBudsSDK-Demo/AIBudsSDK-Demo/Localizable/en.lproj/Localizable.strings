@@ -126,6 +126,9 @@
 "LocKey.OtaStatusCopyFailed" = "File Copy Failed";
 "LocKey.OtaStatusNoFirmwareSelected" = "No firmware file selected.";
 "LocKey.OtaProtocolTitle" = "Method";
+"LocKey.OtaProtocolFitCloudPro" = "FitCloudPro OTA";
+"LocKey.OtaProtocolJieli" = "Jieli OTA";
+"LocKey.OtaProtocolABMate" = "ABMate OTA";
 "LocKey.OtaHeroEyebrow" = "DEVICE FIRMWARE";
 "LocKey.OtaFirmwareSectionTitle" = "Firmware Package";
 "LocKey.OtaProgressSectionTitle" = "Upgrade Progress";

@@ -9959,21 +9959,21 @@
       "kind": "StringLiteral",
       "offset": 257,
       "length": 14,
-      "value": "\"1.0.1-beta.7\""
+      "value": "\"1.0.1-beta.8\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/SDKBuildInfo\/SDK_Build_Info.swift",
       "kind": "StringLiteral",
       "offset": 387,
       "length": 13,
-      "value": "\"20260903001\""
+      "value": "\"20260907001\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/SDKBuildInfo\/SDK_Build_Info.swift",
       "kind": "StringLiteral",
       "offset": 502,
       "length": 12,
-      "value": "\"2026-09-03\""
+      "value": "\"2026-09-07\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/CameraOTA(摄像头固件升级)\/CameraOtaPhase.swift",
@@ -14184,78 +14184,106 @@
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/MediaFileImport(媒体文件导入)\/MediaFileImportTask.swift",
+      "kind": "BooleanLiteral",
+      "offset": 668,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/MediaFileImport(媒体文件导入)\/MediaFileImportTask.swift",
       "kind": "StringLiteral",
-      "offset": 514,
+      "offset": 1049,
       "length": 13,
       "value": "\"k9#mY2@pL7!\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/MediaFileImport(媒体文件导入)\/MediaFileImportTask.swift",
       "kind": "StringLiteral",
-      "offset": 721,
+      "offset": 1256,
       "length": 18,
       "value": "\"^video-\\d{17}$\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/MediaFileImport(媒体文件导入)\/MediaFileImportTask.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1516,
+      "length": 2,
+      "value": "12"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/MediaFileImport(媒体文件导入)\/MediaFileImportTask.swift",
       "kind": "StringLiteral",
-      "offset": 846,
+      "offset": 1624,
       "length": 60,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/MediaFileImport(媒体文件导入)\/MediaFileImportTask.swift",
       "kind": "StringLiteral",
-      "offset": 871,
+      "offset": 1649,
       "length": 1,
       "value": "\".file_import.timer.scheduler.queue\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/MediaFileImport(媒体文件导入)\/MediaFileImportTask.swift",
       "kind": "BooleanLiteral",
-      "offset": 1411,
+      "offset": 2189,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/MediaFileImport(媒体文件导入)\/MediaFileImportTask.swift",
       "kind": "BooleanLiteral",
-      "offset": 1537,
+      "offset": 2315,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/MediaFileImport(媒体文件导入)\/MediaFileImportTask.swift",
       "kind": "BooleanLiteral",
-      "offset": 1706,
+      "offset": 2484,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/MediaFileImport(媒体文件导入)\/MediaFileImportTask.swift",
       "kind": "BooleanLiteral",
-      "offset": 1765,
+      "offset": 2543,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/MediaFileImport(媒体文件导入)\/MediaFileImportTask.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3064,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/MediaFileImport(媒体文件导入)\/MediaFileImportTask.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3427,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/MediaFileImport(媒体文件导入)\/MediaFileImportTask.swift",
       "kind": "Array",
-      "offset": 3565,
+      "offset": 4717,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/MediaFileImport(媒体文件导入)\/MediaFileImportTask.swift",
       "kind": "IntegerLiteral",
-      "offset": 22318,
+      "offset": 25628,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/MediaFileImport(媒体文件导入)\/MediaFileImportTask.swift",
       "kind": "IntegerLiteral",
-      "offset": 22341,
+      "offset": 25651,
       "length": 2,
       "value": "10"
     },

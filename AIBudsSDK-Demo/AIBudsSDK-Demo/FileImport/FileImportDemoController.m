@@ -419,7 +419,14 @@ static UIColor *FileImportColor(NSInteger red, NSInteger green, NSInteger blue) 
         {
             self.mediaCountLabel.text = NSLocalizedString(@"LocKey.LoadingMediaFiles", comment:@"Loading media files...");
             [device requestQueryMediaCountInfoWithCompletion:^(BOOL success, NSError * _Nullable error) {
-                            
+                if (success) {
+                    XLOG_INFO(@"Media count query completed: success=YES");
+                } else {
+                    XLOG_ERROR(@"Media count query completed: success=NO, errorDomain=%@, errorCode=%ld, error=%@",
+                               error.domain ?: @"<none>",
+                               (long)error.code,
+                               error.localizedDescription ?: @"<none>");
+                }
             }];
             self.importButton.enabled = NO;
             self.totalMediaCount = 0;
@@ -442,6 +449,7 @@ static UIColor *FileImportColor(NSInteger red, NSInteger green, NSInteger blue) 
 }
 
 - (void)startImportingFiles {
+    XLOG_INFO(@"Starting media file info fetch");
     // 清空之前的导入文件
     [self.importedFiles removeAllObjects];
     [self.displayedFileNames removeAllObjects];
@@ -456,52 +464,87 @@ static UIColor *FileImportColor(NSInteger red, NSInteger green, NSInteger blue) 
     if([device conformsToProtocol:@protocol(AIBudsDeviceMediaFileImportAPI)])
     {
         [device fetchMediaFilesInfoWithConfigureHotspotStartingHandler:^{
+            XLOG_INFO(@"Media import setup: configuring device hotspot");
             [weakSelf updateImportStatus:NSLocalizedString(@"LocKey.ConfiguringHotspot", comment:@"Configuring hotspot...") color:FileImportColor(72, 86, 220)];
         } hotspotConfigureCompletionHandler:^(BOOL success, NSError * _Nullable error) {
             if(success)
             {
+                XLOG_INFO(@"Media import setup: device hotspot configuration completed, success=YES");
                 [weakSelf updateImportStatus:NSLocalizedString(@"LocKey.HotspotConfigured", comment:@"Hotspot configured") color:[UIColor systemGreenColor]];
             }
             else
             {
+                XLOG_ERROR(@"Media import setup: device hotspot configuration completed, success=NO, errorDomain=%@, errorCode=%ld, error=%@",
+                           error.domain ?: @"<none>",
+                           (long)error.code,
+                           error.localizedDescription ?: @"<none>");
                 NSString *errorMessage = error ? error.localizedDescription : NSLocalizedString(@"LocKey.UnknownError", nil);
                 NSString* message = [NSString stringWithFormat:NSLocalizedString(@"LocKey.HotspotConfigurationFailedFormat", comment:@"Hotspot configuration failed: %@"), errorMessage];
                 [weakSelf updateImportStatus:message color:[UIColor systemRedColor]];
             }
         } enterFileTransferModeStartingHandler:^{
+            XLOG_INFO(@"Media import setup: entering file transfer mode");
             [weakSelf updateImportStatus:NSLocalizedString(@"LocKey.AboutToEnterFileTransferMode", comment:@"About to enter file transfer mode...") color:FileImportColor(72, 86, 220)];
         } enterFileTransferModeCompletedHandler:^(BOOL success, NSError * _Nullable error) {
             if(success)
             {
+                XLOG_INFO(@"Media import setup: file transfer mode entry completed, success=YES");
                 [weakSelf updateImportStatus:NSLocalizedString(@"LocKey.FileTransferModeEntered", comment:@"File transfer mode entered") color:[UIColor systemGreenColor]];
             }
             else
             {
+                XLOG_ERROR(@"Media import setup: file transfer mode entry completed, success=NO, errorDomain=%@, errorCode=%ld, error=%@",
+                           error.domain ?: @"<none>",
+                           (long)error.code,
+                           error.localizedDescription ?: @"<none>");
                 NSString *errorMessage = error ? error.localizedDescription : NSLocalizedString(@"LocKey.UnknownError", nil);
                 NSString* message = [NSString stringWithFormat:NSLocalizedString(@"LocKey.FileTransferModeEnterFailedFormat", comment:@"File transfer mode enter failed: %@"), errorMessage];
                 [weakSelf updateImportStatus:message color:[UIColor systemRedColor]];
             }
         } waitingForHotspotOpenHandler:^{
+            XLOG_INFO(@"Media import setup: waiting for device hotspot to open");
             [weakSelf updateImportStatus:NSLocalizedString(@"LocKey.WaitingForHotspotOpen", comment:@"Waiting for hotspot to open...") color:FileImportColor(72, 86, 220)];
         } connectDeviceHotspotStartingHandler:^(NSString * _Nonnull ssid) {
+            XLOG_INFO(@"Media import setup: connecting to device hotspot, ssid=%@", ssid);
             [weakSelf updateImportStatus:NSLocalizedString(@"LocKey.ConnectingToHotspot", comment:@"Connecting to hotspot...") color:FileImportColor(72, 86, 220)];
         } deviceHotspotConnectCompletionHandler:^(BOOL success, NSError * _Nullable error) {
             if(success)
             {
+                XLOG_INFO(@"Media import setup: device hotspot connection completed, success=YES");
                 [weakSelf updateImportStatus:NSLocalizedString(@"LocKey.HotspotConnected", comment:@"Hotspot connected") color:[UIColor systemGreenColor]];
             }
             else
             {
+                XLOG_ERROR(@"Media import setup: device hotspot connection completed, success=NO, errorDomain=%@, errorCode=%ld, error=%@",
+                           error.domain ?: @"<none>",
+                           (long)error.code,
+                           error.localizedDescription ?: @"<none>");
                 NSString *errorMessage = error ? error.localizedDescription : NSLocalizedString(@"LocKey.UnknownError", nil);
                 NSString* message = [NSString stringWithFormat:NSLocalizedString(@"LocKey.HotspotConnectionFailedFormat", comment:@"Hotspot connection failed: %@"), errorMessage];
                 [weakSelf updateImportStatus:message color:[UIColor systemRedColor]];
             }
         } completionHandler:^(BOOL success, NSArray<AIBudsMediaFileInfoModel *> * _Nonnull mediaFiles, NSError * _Nullable error) {
+            if (success) {
+                XLOG_INFO(@"Media file info fetch completed: success=YES, fileCount=%lu", (unsigned long)mediaFiles.count);
+            } else {
+                XLOG_ERROR(@"Media file info fetch completed: success=NO, fileCount=%lu, errorDomain=%@, errorCode=%ld, error=%@",
+                           (unsigned long)mediaFiles.count,
+                           error.domain ?: @"<none>",
+                           (long)error.code,
+                           error.localizedDescription ?: @"<none>");
+            }
             if(success)
             {
                 [weakSelf updateImportStatus:NSLocalizedString(@"LocKey.ReadyToImport", comment:@"Ready to import") color:[UIColor systemGreenColor]];
+                XLOG_INFO(@"Scheduling media file import: fileCount=%lu, delay=0.5s", (unsigned long)mediaFiles.count);
                 dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-                    [weakSelf importMediaFiles:mediaFiles];
+                    __strong typeof(weakSelf) strongSelf = weakSelf;
+                    if (!strongSelf) {
+                        XLOG_WARNING(@"Skipping scheduled media file import because the controller was released: fileCount=%lu", (unsigned long)mediaFiles.count);
+                        return;
+                    }
+                    XLOG_INFO(@"Starting scheduled media file import: fileCount=%lu", (unsigned long)mediaFiles.count);
+                    [strongSelf importMediaFiles:mediaFiles];
                 });
             }
             else
@@ -511,6 +554,8 @@ static UIColor *FileImportColor(NSInteger red, NSInteger green, NSInteger blue) 
                 [weakSelf updateImportStatus:message color:[UIColor systemRedColor]];
             }
         }];
+    } else {
+        XLOG_ERROR(@"Cannot start media file info fetch: device does not conform to AIBudsDeviceMediaFileImportAPI");
     }
     
 }
@@ -526,7 +571,7 @@ static UIColor *FileImportColor(NSInteger red, NSInteger green, NSInteger blue) 
 }
 
 - (void)importMediaFiles:(NSArray<AIBudsMediaFileInfoModel *> *)mediaFiles {
-    XLOG_INFO(@"importMediaFiles: %@", mediaFiles);
+    XLOG_INFO(@"Starting media file import request: fileCount=%lu", (unsigned long)mediaFiles.count);
     __weak typeof(self) weakSelf = self;
     id<AIBudsDeviceMediaFileImportAPI> device = (id<AIBudsDeviceMediaFileImportAPI>)self.device;
     if([device conformsToProtocol:@protocol(AIBudsDeviceMediaFileImportAPI)])
@@ -554,22 +599,35 @@ static UIColor *FileImportColor(NSInteger red, NSInteger green, NSInteger blue) 
             }
         } singleTransferStartingHandler:^(AIBudsMediaFileInfoModel * _Nonnull mediaFile) {
             NSString *fileName = mediaFile.fileName.length > 0 ? mediaFile.fileName : mediaFile.fileUrl.lastPathComponent;
+            XLOG_INFO(@"Media file transfer started: file=%@, url=%@", fileName ?: @"<unknown>", mediaFile.fileUrl ?: @"<none>");
             [weakSelf updateImportingFileName:fileName];
             [weakSelf updateImportingFileStatus:NSLocalizedString(@"LocKey.FileImportDownloading", nil) color:FileImportColor(72, 86, 220)];
             [weakSelf updateCurrentImportingFileProgress:0];
         } singleTransferCompletionHandler:^(BOOL success, AIBudsImportedMediaFileModel * importedMediaFile, NSError * _Nullable error) {
+            NSString *fileName = importedMediaFile.metadata.fileName.length > 0 ? importedMediaFile.metadata.fileName : importedMediaFile.localFileURL.lastPathComponent;
             if (!success) {
-                XLOG_ERROR(@"Media file transfer failed: %@, error: %@", importedMediaFile.metadata.fileName, error);
+                XLOG_ERROR(@"Media file transfer completed: success=NO, file=%@, errorDomain=%@, errorCode=%ld, error=%@",
+                           fileName ?: @"<unknown>",
+                           error.domain ?: @"<none>",
+                           (long)error.code,
+                           error.localizedDescription ?: @"<none>");
             } else if (importedMediaFile.stabilizationStatus != AIBudsMediaFileStabilizationStatusPending) {
+                XLOG_INFO(@"Media file transfer completed: success=YES, file=%@, stabilizationStatus=%ld",
+                          fileName ?: @"<unknown>",
+                          (long)importedMediaFile.stabilizationStatus);
                 // 无需防抖或防抖已确定的文件，立即显示
                 [weakSelf displaySingleImportedMediaFile:importedMediaFile];
+            } else {
+                XLOG_INFO(@"Media file transfer completed: success=YES, file=%@, stabilizationStatus=pending", fileName ?: @"<unknown>");
             }
             [weakSelf updateCurrentImportingFileProgress:1];
         } transferSpeedHandler:^(uint64_t speed) {
             [weakSelf updateSpeed:speed];
         } transferBatchProgressHandler:^(NSInteger fileIndex, NSInteger totalFileCount) {
+            XLOG_INFO(@"Media file transfer batch progress: fileIndex=%ld, totalFileCount=%ld", (long)fileIndex, (long)totalFileCount);
             [weakSelf updateBatchProgress:fileIndex totalFileCount:totalFileCount];
         } videoStabilizationPhaseBeginHandler:^{
+            XLOG_INFO(@"Media file stabilization phase started");
             // 下载阶段已结束，将速度位切换为防抖百分比。
             [weakSelf updateImportingFileStatus:NSLocalizedString(@"LocKey.FileImportStabilizing", nil) color:FileImportColor(104, 75, 215)];
             [weakSelf updateVideoStabilizationProgress:0];
@@ -584,10 +642,21 @@ static UIColor *FileImportColor(NSInteger red, NSInteger green, NSInteger blue) 
             // 防抖完成后立即显示到列表，避免所有文件都处理完才刷新
             [weakSelf displaySingleImportedMediaFile:mediaFile];
         } videoStabilizationBatchProgressHandler:^(NSInteger fileIndex, NSInteger totalFileCount) {
+            XLOG_INFO(@"Media file stabilization batch progress: fileIndex=%ld, totalFileCount=%ld", (long)fileIndex, (long)totalFileCount);
             [weakSelf updatePostProcessBatchProgress:fileIndex totalFileCount:totalFileCount];
         } videoStabilizationPhaseFinishHandler:^{
+            XLOG_INFO(@"Media file stabilization phase finished");
             [weakSelf updateVideoStabilizationProgress:1];
         } completionHandler:^(BOOL success, NSArray<AIBudsImportedMediaFileModel *> * _Nonnull importedMediaFiles, NSError * _Nullable error) {
+            if (success) {
+                XLOG_INFO(@"Media file import completion received: success=YES, resultCount=%lu", (unsigned long)importedMediaFiles.count);
+            } else {
+                XLOG_ERROR(@"Media file import completion received: success=NO, resultCount=%lu, errorDomain=%@, errorCode=%ld, error=%@",
+                           (unsigned long)importedMediaFiles.count,
+                           error.domain ?: @"<none>",
+                           (long)error.code,
+                           error.localizedDescription ?: @"<none>");
+            }
             [weakSelf clearImportSpeed];
             [weakSelf displayImportedMediaFiles:importedMediaFiles];
             if(success)
@@ -601,6 +670,8 @@ static UIColor *FileImportColor(NSInteger red, NSInteger green, NSInteger blue) 
                 [weakSelf updateImportStatus:message color:[UIColor systemRedColor]];
             }
         }];
+    } else {
+        XLOG_ERROR(@"Cannot start media file import: device does not conform to AIBudsDeviceMediaFileImportAPI");
     }
 }
 

@@ -125,6 +125,7 @@
     titleLabel.text = NSLocalizedString(@"LocKey.CameraInfoTitle", comment:@"Camera Info");
     titleLabel.font = [UIFont systemFontOfSize:18 weight:UIFontWeightSemibold];
     titleLabel.textColor = [UIColor labelColor];
+    titleLabel.numberOfLines = 0;
     titleLabel.translatesAutoresizingMaskIntoConstraints = NO;
     [self.cameraInfoCardView addSubview:titleLabel];
     
@@ -170,6 +171,7 @@
     titleLabel.text = NSLocalizedString(@"LocKey.MaxVideoRecordingDurationTitle", comment:@"Max Video Recording Duration");
     titleLabel.font = [UIFont systemFontOfSize:18 weight:UIFontWeightSemibold];
     titleLabel.textColor = [UIColor labelColor];
+    titleLabel.numberOfLines = 0;
     titleLabel.translatesAutoresizingMaskIntoConstraints = NO;
     [self.maxDurationCardView addSubview:titleLabel];
     
@@ -230,6 +232,7 @@
     titleLabel.text = NSLocalizedString(@"LocKey.PhotoTakingTitle", comment:@"Photo Taking");
     titleLabel.font = [UIFont systemFontOfSize:18 weight:UIFontWeightSemibold];
     titleLabel.textColor = [UIColor labelColor];
+    titleLabel.numberOfLines = 0;
     titleLabel.translatesAutoresizingMaskIntoConstraints = NO;
     [self.photoCardView addSubview:titleLabel];
     
@@ -248,13 +251,14 @@
     self.photoStatusLabel.font = [UIFont systemFontOfSize:16];
     self.photoStatusLabel.textAlignment = NSTextAlignmentCenter;
     self.photoStatusLabel.textColor = [UIColor systemBlueColor];
+    self.photoStatusLabel.numberOfLines = 0;
     self.photoStatusLabel.translatesAutoresizingMaskIntoConstraints = NO;
     [self.photoCardView addSubview:self.photoStatusLabel];
     
     // 按钮栈视图
     UIStackView *buttonStackView = [[UIStackView alloc] init];
     buttonStackView.axis = UILayoutConstraintAxisHorizontal;
-    buttonStackView.spacing = 20;
+    buttonStackView.spacing = 12;
     buttonStackView.alignment = UIStackViewAlignmentFill;
     buttonStackView.distribution = UIStackViewDistributionFillEqually;
     buttonStackView.translatesAutoresizingMaskIntoConstraints = NO;
@@ -283,12 +287,14 @@
         
         [self.photoStatusLabel.topAnchor constraintEqualToAnchor:self.captureModeSegmentedControl.bottomAnchor constant:20],
         [self.photoStatusLabel.centerXAnchor constraintEqualToAnchor:self.photoCardView.centerXAnchor],
+        [self.photoStatusLabel.leadingAnchor constraintGreaterThanOrEqualToAnchor:self.photoCardView.leadingAnchor constant:20],
+        [self.photoStatusLabel.trailingAnchor constraintLessThanOrEqualToAnchor:self.photoCardView.trailingAnchor constant:-20],
         
         [buttonStackView.topAnchor constraintEqualToAnchor:self.photoStatusLabel.bottomAnchor constant:20],
         [buttonStackView.leadingAnchor constraintEqualToAnchor:self.photoCardView.leadingAnchor constant:20],
         [buttonStackView.trailingAnchor constraintEqualToAnchor:self.photoCardView.trailingAnchor constant:-20],
         [buttonStackView.bottomAnchor constraintEqualToAnchor:self.photoCardView.bottomAnchor constant:-20],
-        [buttonStackView.heightAnchor constraintEqualToConstant:50]
+        [buttonStackView.heightAnchor constraintEqualToConstant:56]
     ]];
     
     [self.mainStackView addArrangedSubview:self.photoCardView];
@@ -302,6 +308,7 @@
     titleLabel.text = NSLocalizedString(@"LocKey.VideoRecordingTitle", comment:@"Video Recording");
     titleLabel.font = [UIFont systemFontOfSize:18 weight:UIFontWeightSemibold];
     titleLabel.textColor = [UIColor labelColor];
+    titleLabel.numberOfLines = 0;
     titleLabel.translatesAutoresizingMaskIntoConstraints = NO;
     [self.videoCardView addSubview:titleLabel];
     
@@ -311,13 +318,14 @@
     self.videoStatusLabel.font = [UIFont systemFontOfSize:16];
     self.videoStatusLabel.textAlignment = NSTextAlignmentCenter;
     self.videoStatusLabel.textColor = [UIColor systemRedColor];
+    self.videoStatusLabel.numberOfLines = 0;
     self.videoStatusLabel.translatesAutoresizingMaskIntoConstraints = NO;
     [self.videoCardView addSubview:self.videoStatusLabel];
     
     // 按钮栈视图
     UIStackView *buttonStackView = [[UIStackView alloc] init];
     buttonStackView.axis = UILayoutConstraintAxisHorizontal;
-    buttonStackView.spacing = 20;
+    buttonStackView.spacing = 12;
     buttonStackView.alignment = UIStackViewAlignmentFill;
     buttonStackView.distribution = UIStackViewDistributionFillEqually;
     buttonStackView.translatesAutoresizingMaskIntoConstraints = NO;
@@ -342,12 +350,14 @@
         
         [self.videoStatusLabel.topAnchor constraintEqualToAnchor:titleLabel.bottomAnchor constant:20],
         [self.videoStatusLabel.centerXAnchor constraintEqualToAnchor:self.videoCardView.centerXAnchor],
+        [self.videoStatusLabel.leadingAnchor constraintGreaterThanOrEqualToAnchor:self.videoCardView.leadingAnchor constant:20],
+        [self.videoStatusLabel.trailingAnchor constraintLessThanOrEqualToAnchor:self.videoCardView.trailingAnchor constant:-20],
         
         [buttonStackView.topAnchor constraintEqualToAnchor:self.videoStatusLabel.bottomAnchor constant:20],
         [buttonStackView.leadingAnchor constraintEqualToAnchor:self.videoCardView.leadingAnchor constant:20],
         [buttonStackView.trailingAnchor constraintEqualToAnchor:self.videoCardView.trailingAnchor constant:-20],
         [buttonStackView.bottomAnchor constraintEqualToAnchor:self.videoCardView.bottomAnchor constant:-20],
-        [buttonStackView.heightAnchor constraintEqualToConstant:50]
+        [buttonStackView.heightAnchor constraintEqualToConstant:56]
     ]];
     
     [self.mainStackView addArrangedSubview:self.videoCardView];
@@ -369,6 +379,11 @@
     UIButton *button = [UIButton buttonWithType:UIButtonTypeSystem];
     [button setTitle:title forState:UIControlStateNormal];
     button.titleLabel.font = [UIFont systemFontOfSize:16 weight:UIFontWeightSemibold];
+    button.titleLabel.numberOfLines = 2;
+    button.titleLabel.lineBreakMode = NSLineBreakByWordWrapping;
+    button.titleLabel.textAlignment = NSTextAlignmentCenter;
+    button.titleLabel.adjustsFontSizeToFitWidth = YES;
+    button.titleLabel.minimumScaleFactor = 0.8;
     button.backgroundColor = [UIColor systemBlueColor];
     [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     button.layer.cornerRadius = 12;
@@ -380,6 +395,11 @@
     UIButton *button = [UIButton buttonWithType:UIButtonTypeSystem];
     [button setTitle:title forState:UIControlStateNormal];
     button.titleLabel.font = [UIFont systemFontOfSize:16 weight:UIFontWeightSemibold];
+    button.titleLabel.numberOfLines = 2;
+    button.titleLabel.lineBreakMode = NSLineBreakByWordWrapping;
+    button.titleLabel.textAlignment = NSTextAlignmentCenter;
+    button.titleLabel.adjustsFontSizeToFitWidth = YES;
+    button.titleLabel.minimumScaleFactor = 0.8;
     button.backgroundColor = [UIColor systemGray2Color];
     [button setTitleColor:[UIColor labelColor] forState:UIControlStateNormal];
     button.layer.cornerRadius = 12;

@@ -1,8 +1,8 @@
 # RELEASES
 
-## V1.0.1-beta.7 (Build 20260903001)
+## V1.0.1-beta.8 (Build 20260907001)
 
-**Release date:** 2026-09-03
+**Release date:** 2026-09-07
 
 ### Features
 
@@ -23,6 +23,8 @@
 - Added support for the FitCloud Pro and Jieli OTA protocols.
 - Improved Swift 6 compatibility for the Live Stream Flutter plugin.
 - Fixed an issue where voice data callbacks were not invoked during AI chat sessions.
+- Fixed an issue that could cause apps to crash during Jieli OTA updates.
+- Improved media file importing so hotspot disconnections during an import now terminate the operation and invoke the completion callback with an error.
 - Improved SDK stability.
 
 ## V1.0.0 (Build 20260824001)

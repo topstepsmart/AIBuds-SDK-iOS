@@ -4,6 +4,7 @@
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.3
 import AIBuds
 import AIBudsFoundation
+import CoreBluetooth
 import Foundation
 import Swift
 import _Concurrency
@@ -60,6 +61,7 @@ extension AIBudsJieliOTA.JieliOtaSDK {
   @objc final public let serviceUUID: Swift.String
   @objc final public let writeCharacteristicUUID: Swift.String
   @objc final public let notifyCharacteristicUUID: Swift.String
+  @objc deinit
   @objc final public var isRunning: Swift.Bool {
     @objc get
   }
@@ -67,7 +69,6 @@ extension AIBudsJieliOTA.JieliOtaSDK {
   @objc(receiveData:) final public func receive(_ data: Foundation.Data)
   @objc(cancelWithCompletion:) final public func cancel(completion: ((Swift.Bool, Foundation.NSError?) -> Swift.Void)?)
   @objc(handleDisconnectWithError:) final public func handleDisconnect(_ error: Foundation.NSError?)
-  @objc deinit
 }
 extension AIBudsJieliOTA.JieliOtaErrorCode : Swift.Equatable {}
 extension AIBudsJieliOTA.JieliOtaErrorCode : Swift.Hashable {}
