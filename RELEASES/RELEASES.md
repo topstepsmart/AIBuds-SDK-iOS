@@ -1,8 +1,8 @@
 # RELEASES
 
-## V1.0.1-beta.8 (Build 20260907001)
+## V1.0.1-beta.9 (Build 20260909001)
 
-**Release date:** 2026-09-07
+**Release date:** 2026-09-09
 
 ### Features
 
@@ -25,6 +25,7 @@
 - Fixed an issue where voice data callbacks were not invoked during AI chat sessions.
 - Fixed an issue that could cause apps to crash during Jieli OTA updates.
 - Improved media file importing so hotspot disconnections during an import now terminate the operation and invoke the completion callback with an error.
+- Bump MagicHelper SDK to 2.13.1.
 - Improved SDK stability.
 
 ## V1.0.0 (Build 20260824001)

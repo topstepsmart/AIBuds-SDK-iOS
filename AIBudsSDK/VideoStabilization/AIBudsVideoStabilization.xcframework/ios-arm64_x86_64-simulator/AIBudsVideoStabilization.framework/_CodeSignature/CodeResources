@@ -10,11 +10,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		UGzmWWtX5lnUWI57eoi5N/BnmO8=
+		X2PEIHVbNR7Bp7E999IoO2NddWE=
 		</data>
 		<key>Modules/AIBudsVideoStabilization.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		1Reso08qJ5nDFP8Pqk/2DPvth3Q=
+		MFj54P/D8uDpp+V+Iy5pgo5ImYg=
 		</data>
 		<key>Modules/AIBudsVideoStabilization.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>Modules/AIBudsVideoStabilization.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		1Reso08qJ5nDFP8Pqk/2DPvth3Q=
+		MFj54P/D8uDpp+V+Iy5pgo5ImYg=
 		</data>
 		<key>Modules/AIBudsVideoStabilization.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -62,7 +62,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			lpl9JKgJUFk1DOgdzyvcyilP4eyi3nNc2W1oWUv3Fow=
+			sUybnGFJJe3gFtsncoREffPtvTUK1VbslM3Uai0AMAU=
 			</data>
 		</dict>
 		<key>Modules/AIBudsVideoStabilization.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -90,7 +90,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			lpl9JKgJUFk1DOgdzyvcyilP4eyi3nNc2W1oWUv3Fow=
+			sUybnGFJJe3gFtsncoREffPtvTUK1VbslM3Uai0AMAU=
 			</data>
 		</dict>
 		<key>Modules/AIBudsVideoStabilization.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>

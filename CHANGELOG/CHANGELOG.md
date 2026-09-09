@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## V1.0.1-beta.9 build20260909001 (2026-09-09)
+
+- Bump MagicHelper SDK to 2.13.1.
+
 ## V1.0.1-beta.8 build20260907001 (2026-09-07)
 
 - Fixed an issue that could cause apps to crash during Jieli OTA updates.
