@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## V1.0.1-beta.10 build20260922001 (2026-09-22)
+
+- Raised the minimum supported iOS version to 15.0 for Xcode 27 compatibility; integrating apps must update their deployment target accordingly.
+- Added support for Jieli glasses without onboard storage, including receiving captured photos directly over Bluetooth.
+- Fixed device type recognition for audio glasses.
+- Added support for JPEG live streams with audio on compatible devices, providing both Opus audio and decoded PCM data.
+- Updated the JPEG live streaming start API to include `opusDataReceivedHandler`; existing calls must supply this argument, using `nil` if audio is not needed.
+- Added RTMP publishing from JPEG frames and PCM audio through the Live Stream SDK and the iOS Flutter plugin bridge.
+- Bump MagicHelper SDK to 2.13.2 to fix a crash in the SDK.
+
 ## V1.0.1-beta.9 build20260909001 (2026-09-09)
 
 - Bump MagicHelper SDK to 2.13.1.

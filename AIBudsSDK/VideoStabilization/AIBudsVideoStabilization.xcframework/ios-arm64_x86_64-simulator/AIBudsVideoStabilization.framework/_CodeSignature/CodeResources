@@ -6,43 +6,43 @@
 	<dict>
 		<key>Headers/AIBudsVideoStabilization-Swift.h</key>
 		<data>
-		CNwVb2QgFCK4gcY0ux5S6fUJaac=
+		J1n6j/amJ2sOk/vJ9kNrLjOd/PM=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		X2PEIHVbNR7Bp7E999IoO2NddWE=
+		+ioXbrSx00LCTBvAUinTWq4wucI=
 		</data>
 		<key>Modules/AIBudsVideoStabilization.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		MFj54P/D8uDpp+V+Iy5pgo5ImYg=
+		of2w3YIGUl29e9Y0zCVZZ0M9yYY=
 		</data>
 		<key>Modules/AIBudsVideoStabilization.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		wfJ994gP+5tWnE9vyhH4v1TQxAo=
+		Otk3xa/G9Yh5MK7LDHlKzZTnDx4=
 		</data>
 		<key>Modules/AIBudsVideoStabilization.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		T5neV+9nfJLsABxxoyPRKZx/BYs=
+		5UJwZRnG87Jh5yBS+/2jTmK8zKY=
 		</data>
 		<key>Modules/AIBudsVideoStabilization.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		wfJ994gP+5tWnE9vyhH4v1TQxAo=
+		Otk3xa/G9Yh5MK7LDHlKzZTnDx4=
 		</data>
 		<key>Modules/AIBudsVideoStabilization.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		MFj54P/D8uDpp+V+Iy5pgo5ImYg=
+		of2w3YIGUl29e9Y0zCVZZ0M9yYY=
 		</data>
 		<key>Modules/AIBudsVideoStabilization.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		MQb0WhrE86JVDsvnuUecCzAQkqA=
+		4VYHtmy1om5KIEYj2EIdnZrnwMk=
 		</data>
 		<key>Modules/AIBudsVideoStabilization.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		JXauUnUqPUfy1EPI3tfcTAQJsPA=
+		JKROtB/0NfJpos47Y2bmjjkVMf0=
 		</data>
 		<key>Modules/AIBudsVideoStabilization.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		MQb0WhrE86JVDsvnuUecCzAQkqA=
+		4VYHtmy1om5KIEYj2EIdnZrnwMk=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -55,63 +55,63 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			TTx8ApDuoImtHK3AehLzJEerWNptUNkBmy7uHdK2qM8=
+			W3Twqx/hQmHWvVQF9BAKNVG58h1ewpouDUe9Dkn/jeo=
 			</data>
 		</dict>
 		<key>Modules/AIBudsVideoStabilization.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			sUybnGFJJe3gFtsncoREffPtvTUK1VbslM3Uai0AMAU=
+			RYKUaLHpzJzXgYRAAo87vBK1HlmoHU7oomZgbduXg8s=
 			</data>
 		</dict>
 		<key>Modules/AIBudsVideoStabilization.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Txqrf8RcCHwpOhN2TEDm55gxQfqC2IyHVOXJvvlWOMI=
+			nQ8OFT7XYbF+pYS/9gl0JsL/SdF/rP0//7EdlvFthws=
 			</data>
 		</dict>
 		<key>Modules/AIBudsVideoStabilization.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			G8ycahWfBR+4y8HNVWD37AGGvKNTO1qEnRkHSIJJRPM=
+			vq8hH3CAGxz60pqaVpTGPVnHmG4NEBcpWsUj7m/2kgk=
 			</data>
 		</dict>
 		<key>Modules/AIBudsVideoStabilization.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Txqrf8RcCHwpOhN2TEDm55gxQfqC2IyHVOXJvvlWOMI=
+			nQ8OFT7XYbF+pYS/9gl0JsL/SdF/rP0//7EdlvFthws=
 			</data>
 		</dict>
 		<key>Modules/AIBudsVideoStabilization.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			sUybnGFJJe3gFtsncoREffPtvTUK1VbslM3Uai0AMAU=
+			RYKUaLHpzJzXgYRAAo87vBK1HlmoHU7oomZgbduXg8s=
 			</data>
 		</dict>
 		<key>Modules/AIBudsVideoStabilization.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			gvMZm5rE4prJF/BQU+6fjkFAWbFfaKDPGQrq+TaL8sY=
+			72bv4xvFBUmfOgV8mcuJBaNz0wgNU9u1q2WCf7Mciso=
 			</data>
 		</dict>
 		<key>Modules/AIBudsVideoStabilization.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ohz4ydel3r79AH1le4wFqiY5GbTALI6Z9y1zxw9NFD0=
+			nTDDiIerIKHm9m2kfRq8UEUmA6XiCB49GfbqchB08sY=
 			</data>
 		</dict>
 		<key>Modules/AIBudsVideoStabilization.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			gvMZm5rE4prJF/BQU+6fjkFAWbFfaKDPGQrq+TaL8sY=
+			72bv4xvFBUmfOgV8mcuJBaNz0wgNU9u1q2WCf7Mciso=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

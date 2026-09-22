@@ -10490,6 +10490,36 @@
       },
       {
         "kind": "Import",
+        "name": "FFMpeg",
+        "printedName": "FFMpeg",
+        "declKind": "Import",
+        "moduleName": "AIBudsLiveStream",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AIBudsLog",
+        "printedName": "AIBudsLog",
+        "declKind": "Import",
+        "moduleName": "AIBudsLiveStream",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AIBudsLiveStream",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "AVFoundation",
         "printedName": "AVFoundation",
         "declKind": "Import",
@@ -12280,6 +12310,194 @@
           },
           {
             "kind": "Var",
+            "name": "inputAudioSampleRate",
+            "printedName": "inputAudioSampleRate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UInt32",
+                "printedName": "Swift.UInt32",
+                "usr": "s:s6UInt32V"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBudsLiveStream@objc(cs)AIBudsLiveStreamerConfig(py)inputAudioSampleRate",
+            "mangledName": "$s16AIBudsLiveStream0B14StreamerConfigC20inputAudioSampleRates6UInt32Vvp",
+            "moduleName": "AIBudsLiveStream",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UInt32",
+                    "printedName": "Swift.UInt32",
+                    "usr": "s:s6UInt32V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsLiveStream@objc(cs)AIBudsLiveStreamerConfig(im)inputAudioSampleRate",
+                "mangledName": "$s16AIBudsLiveStream0B14StreamerConfigC20inputAudioSampleRates6UInt32Vvg",
+                "moduleName": "AIBudsLiveStream",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UInt32",
+                    "printedName": "Swift.UInt32",
+                    "usr": "s:s6UInt32V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsLiveStream@objc(cs)AIBudsLiveStreamerConfig(im)setInputAudioSampleRate:",
+                "mangledName": "$s16AIBudsLiveStream0B14StreamerConfigC20inputAudioSampleRates6UInt32Vvs",
+                "moduleName": "AIBudsLiveStream",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16AIBudsLiveStream0B14StreamerConfigC20inputAudioSampleRates6UInt32VvM",
+                "mangledName": "$s16AIBudsLiveStream0B14StreamerConfigC20inputAudioSampleRates6UInt32VvM",
+                "moduleName": "AIBudsLiveStream",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "inputAudioChannels",
+            "printedName": "inputAudioChannels",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UInt32",
+                "printedName": "Swift.UInt32",
+                "usr": "s:s6UInt32V"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBudsLiveStream@objc(cs)AIBudsLiveStreamerConfig(py)inputAudioChannels",
+            "mangledName": "$s16AIBudsLiveStream0B14StreamerConfigC18inputAudioChannelss6UInt32Vvp",
+            "moduleName": "AIBudsLiveStream",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UInt32",
+                    "printedName": "Swift.UInt32",
+                    "usr": "s:s6UInt32V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsLiveStream@objc(cs)AIBudsLiveStreamerConfig(im)inputAudioChannels",
+                "mangledName": "$s16AIBudsLiveStream0B14StreamerConfigC18inputAudioChannelss6UInt32Vvg",
+                "moduleName": "AIBudsLiveStream",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UInt32",
+                    "printedName": "Swift.UInt32",
+                    "usr": "s:s6UInt32V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsLiveStream@objc(cs)AIBudsLiveStreamerConfig(im)setInputAudioChannels:",
+                "mangledName": "$s16AIBudsLiveStream0B14StreamerConfigC18inputAudioChannelss6UInt32Vvs",
+                "moduleName": "AIBudsLiveStream",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16AIBudsLiveStream0B14StreamerConfigC18inputAudioChannelss6UInt32VvM",
+                "mangledName": "$s16AIBudsLiveStream0B14StreamerConfigC18inputAudioChannelss6UInt32VvM",
+                "moduleName": "AIBudsLiveStream",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "publishAudio",
             "printedName": "publishAudio",
             "children": [
@@ -13608,42 +13826,6 @@
           {
             "kind": "Function",
             "name": "configure",
-            "printedName": "configure(url:config:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "LiveStreamerConfig",
-                "printedName": "AIBudsLiveStream.LiveStreamerConfig",
-                "hasDefaultArg": true,
-                "usr": "c:@M@AIBudsLiveStream@objc(cs)AIBudsLiveStreamerConfig"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@AIBudsLiveStream@objc(cs)AIBudsLiveStreamer(im)configureWithUrl:config:",
-            "mangledName": "$s16AIBudsLiveStream0B8StreamerC9configure3url6configySS_AA0bD6ConfigCtF",
-            "moduleName": "AIBudsLiveStream",
-            "objc_name": "configureWithUrl:config:",
-            "declAttributes": [
-              "AccessControl",
-              "ObjC",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "configure",
             "printedName": "configure(inputURL:outputURL:config:)",
             "children": [
               {
@@ -13676,6 +13858,42 @@
             "mangledName": "$s16AIBudsLiveStream0B8StreamerC9configure8inputURL06outputG06configySS_SSAA0bD6ConfigCtF",
             "moduleName": "AIBudsLiveStream",
             "objc_name": "configureWithInputURL:outputURL:config:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "configure",
+            "printedName": "configure(outputURL:config:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "LiveStreamerConfig",
+                "printedName": "AIBudsLiveStream.LiveStreamerConfig",
+                "hasDefaultArg": true,
+                "usr": "c:@M@AIBudsLiveStream@objc(cs)AIBudsLiveStreamerConfig"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AIBudsLiveStream@objc(cs)AIBudsLiveStreamer(im)configureWithOutputURL:config:",
+            "mangledName": "$s16AIBudsLiveStream0B8StreamerC9configure9outputURL6configySS_AA0bD6ConfigCtF",
+            "moduleName": "AIBudsLiveStream",
+            "objc_name": "configureWithOutputURL:config:",
             "declAttributes": [
               "AccessControl",
               "ObjC",
@@ -13775,6 +13993,62 @@
             "declKind": "Func",
             "usr": "c:@M@AIBudsLiveStream@objc(cs)AIBudsLiveStreamer(im)sendAudioFrame:",
             "mangledName": "$s16AIBudsLiveStream0B8StreamerC14sendAudioFrameyy10Foundation4DataVF",
+            "moduleName": "AIBudsLiveStream",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "pushJpegFrame",
+            "printedName": "pushJpegFrame(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AIBudsLiveStream@objc(cs)AIBudsLiveStreamer(im)pushJpegFrame:",
+            "mangledName": "$s16AIBudsLiveStream0B8StreamerC13pushJpegFrameyy10Foundation4DataVF",
+            "moduleName": "AIBudsLiveStream",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "pushPcmAudio",
+            "printedName": "pushPcmAudio(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AIBudsLiveStream@objc(cs)AIBudsLiveStreamer(im)pushPcmAudio:",
+            "mangledName": "$s16AIBudsLiveStream0B8StreamerC12pushPcmAudioyy10Foundation4DataVF",
             "moduleName": "AIBudsLiveStream",
             "declAttributes": [
               "AccessControl",
@@ -14261,6 +14535,36 @@
             "usr": "s:s9EscapableP",
             "mangledName": "$ss9EscapableP"
           }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AIBudsLiveStream",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "FFMpeg",
+        "printedName": "FFMpeg",
+        "declKind": "Import",
+        "moduleName": "AIBudsLiveStream",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AIBudsLog",
+        "printedName": "AIBudsLog",
+        "declKind": "Import",
+        "moduleName": "AIBudsLiveStream",
+        "declAttributes": [
+          "AccessControl"
         ]
       },
       {
@@ -18428,6 +18732,27 @@
       "value": "0"
     },
     {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Streamer\/JpegVideoEncoder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1916,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Streamer\/JpegVideoEncoder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2336,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Streamer\/JpegVideoEncoder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2441,
+      "length": 1,
+      "value": "0"
+    },
+    {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Streamer\/LiveStreamer.swift",
       "kind": "IntegerLiteral",
       "offset": 481,
@@ -18597,227 +18922,283 @@
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Streamer\/LiveStreamer.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4425,
+      "length": 5,
+      "value": "16000"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Streamer\/LiveStreamer.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4539,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Streamer\/LiveStreamer.swift",
       "kind": "BooleanLiteral",
-      "offset": 4223,
+      "offset": 4640,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Streamer\/LiveStreamer.swift",
       "kind": "FloatLiteral",
-      "offset": 4355,
+      "offset": 4772,
       "length": 3,
       "value": "5.0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Streamer\/LiveStreamer.swift",
       "kind": "BooleanLiteral",
-      "offset": 4473,
+      "offset": 4890,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Streamer\/LiveStreamer.swift",
       "kind": "IntegerLiteral",
-      "offset": 4598,
+      "offset": 5015,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Streamer\/LiveStreamer.swift",
       "kind": "FloatLiteral",
-      "offset": 4707,
+      "offset": 5124,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Streamer\/LiveStreamer.swift",
       "kind": "BooleanLiteral",
-      "offset": 5110,
+      "offset": 5527,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Streamer\/LiveStreamer.swift",
       "kind": "IntegerLiteral",
-      "offset": 8109,
+      "offset": 8526,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Streamer\/LiveStreamer.swift",
       "kind": "StringLiteral",
-      "offset": 8164,
+      "offset": 8581,
       "length": 35,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Streamer\/LiveStreamer.swift",
       "kind": "StringLiteral",
-      "offset": 8189,
+      "offset": 8606,
       "length": 1,
       "value": "\".streamer\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Streamer\/LiveStreamer.swift",
       "kind": "BooleanLiteral",
-      "offset": 8284,
+      "offset": 8701,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Streamer\/LiveStreamer.swift",
       "kind": "BooleanLiteral",
-      "offset": 8321,
+      "offset": 8738,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Streamer\/LiveStreamer.swift",
       "kind": "BooleanLiteral",
-      "offset": 8367,
+      "offset": 8784,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Streamer\/LiveStreamer.swift",
       "kind": "IntegerLiteral",
-      "offset": 8453,
+      "offset": 8870,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Streamer\/LiveStreamer.swift",
       "kind": "IntegerLiteral",
-      "offset": 8493,
+      "offset": 8910,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Streamer\/LiveStreamer.swift",
       "kind": "IntegerLiteral",
-      "offset": 8547,
+      "offset": 8964,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Streamer\/LiveStreamer.swift",
       "kind": "BooleanLiteral",
-      "offset": 8586,
+      "offset": 9003,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Streamer\/LiveStreamer.swift",
       "kind": "FloatLiteral",
-      "offset": 8644,
+      "offset": 9061,
       "length": 4,
       "value": "0.25"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Streamer\/LiveStreamer.swift",
       "kind": "IntegerLiteral",
-      "offset": 8780,
+      "offset": 9197,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Streamer\/LiveStreamer.swift",
       "kind": "IntegerLiteral",
-      "offset": 8832,
+      "offset": 9249,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Streamer\/LiveStreamer.swift",
       "kind": "BooleanLiteral",
-      "offset": 56298,
+      "offset": 9466,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Streamer\/LiveStreamer.swift",
+      "kind": "IntegerLiteral",
+      "offset": 10288,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Streamer\/LiveStreamer.swift",
+      "kind": "IntegerLiteral",
+      "offset": 10430,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Streamer\/LiveStreamer.swift",
+      "kind": "BooleanLiteral",
+      "offset": 10544,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Streamer\/LiveStreamer.swift",
       "kind": "BooleanLiteral",
-      "offset": 63993,
+      "offset": 73299,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Streamer\/LiveStreamer.swift",
+      "kind": "BooleanLiteral",
+      "offset": 80994,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Streamer\/LiveStreamer.swift",
       "kind": "IntegerLiteral",
-      "offset": 70236,
+      "offset": 87851,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Streamer\/LiveStreamer.swift",
       "kind": "IntegerLiteral",
-      "offset": 70340,
+      "offset": 87955,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Streamer\/LiveStreamer.swift",
       "kind": "IntegerLiteral",
-      "offset": 70560,
+      "offset": 88175,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Streamer\/LiveStreamer.swift",
       "kind": "IntegerLiteral",
-      "offset": 71769,
+      "offset": 89384,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Streamer\/LiveStreamer.swift",
       "kind": "StringLiteral",
-      "offset": 88295,
+      "offset": 105910,
       "length": 30,
       "value": "\"AIBudsStreamerStateDidChange\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Streamer\/LiveStreamer.swift",
       "kind": "StringLiteral",
-      "offset": 88453,
+      "offset": 106068,
       "length": 33,
       "value": "\"AIBudsStreamerDidEncounterError\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Streamer\/LiveStreamer.swift",
       "kind": "StringLiteral",
-      "offset": 88610,
+      "offset": 106225,
       "length": 30,
       "value": "\"AIBudsStreamerStatsDidUpdate\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Streamer\/LiveStreamer.swift",
       "kind": "StringLiteral",
-      "offset": 88818,
+      "offset": 106433,
       "length": 15,
       "value": "\"previousState\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Streamer\/LiveStreamer.swift",
       "kind": "StringLiteral",
-      "offset": 88911,
+      "offset": 106526,
       "length": 14,
       "value": "\"currentState\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Streamer\/LiveStreamer.swift",
       "kind": "StringLiteral",
-      "offset": 88995,
+      "offset": 106610,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Streamer\/LiveStreamer.swift",
       "kind": "StringLiteral",
-      "offset": 89077,
+      "offset": 106692,
       "length": 7,
       "value": "\"stats\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Streamer\/PcmAudioEncoder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1488,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/Streamer\/PcmAudioEncoder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1591,
+      "length": 1,
+      "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsLiveStream\/Core\/View\/VideoView.swift",
@@ -20797,22 +21178,22 @@
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/SDKBuildInfo\/SDK_Build_Info.swift",
       "kind": "StringLiteral",
       "offset": 257,
-      "length": 14,
-      "value": "\"1.0.1-beta.9\""
+      "length": 15,
+      "value": "\"1.0.1-beta.10\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/SDKBuildInfo\/SDK_Build_Info.swift",
       "kind": "StringLiteral",
-      "offset": 387,
+      "offset": 388,
       "length": 13,
-      "value": "\"20260909001\""
+      "value": "\"20260922001\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/SDKBuildInfo\/SDK_Build_Info.swift",
       "kind": "StringLiteral",
-      "offset": 502,
+      "offset": 503,
       "length": 12,
-      "value": "\"2026-09-09\""
+      "value": "\"2026-09-22\""
     }
   ]
 }

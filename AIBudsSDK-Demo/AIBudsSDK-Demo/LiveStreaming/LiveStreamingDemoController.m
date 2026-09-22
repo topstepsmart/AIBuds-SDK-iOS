@@ -7,6 +7,7 @@
 //
 
 #import "LiveStreamingDemoController.h"
+#import <AVFoundation/AVFoundation.h>
 
 typedef NS_ENUM(NSInteger, LiveStreamingMode) {
     LiveStreamingModeRTSP = 0,
@@ -55,12 +56,18 @@ typedef NS_ENUM(NSInteger, LiveStreamingMode) {
 @property (nonatomic, assign) BOOL isStreaming;
 @property (nonatomic, assign) BOOL isPushingStream;
 @property (nonatomic, assign) BOOL isUsingTestRtsp;
+@property (nonatomic, assign) BOOL isJpegPushingStream;
 @property (nonatomic, strong) NSString *currentRtspAddress;
 @property (nonatomic, copy) NSString *savedTestRtspUrl;
 @property (nonatomic, copy) NSString *savedRtmpUrl;
 @property (nonatomic, strong) AIBudsLiveStreamer *liveStreamer;
 @property (nonatomic, assign) NSUInteger jpegFrameCount;
 @property (nonatomic, strong) NSDate *startTime;
+
+// Audio Playback (JPEG live streaming level-2: oggMjpegOpus)
+@property (nonatomic, strong) AVAudioEngine *audioEngine;
+@property (nonatomic, strong) AVAudioPlayerNode *audioPlayerNode;
+@property (nonatomic, strong) AVAudioFormat *pcmAudioFormat;
 
 @end
 
@@ -82,6 +89,7 @@ typedef NS_ENUM(NSInteger, LiveStreamingMode) {
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     [self updateStreamingButton];
+    [self updateModeDependentUI];
 
 }
 
@@ -113,6 +121,32 @@ typedef NS_ENUM(NSInteger, LiveStreamingMode) {
         [self.closeStreamingButton setTitle:NSLocalizedString(@"LocKey.StartLiveStreaming", @"Start Live Streaming") forState:UIControlStateNormal];
         self.closeStreamingButton.backgroundColor = [UIColor systemGreenColor];
     }
+}
+
+- (void)updateModeDependentUI {
+    BOOL isRTSPMode = (self.liveStreamingMode == LiveStreamingModeRTSP);
+
+    // Test RTSP section — only available in RTSP mode
+    self.testRtspUrlLabel.enabled = isRTSPMode;
+    self.testRtspUrlLabel.alpha = isRTSPMode ? 1.0 : 0.5;
+    self.testRtspUrlTextField.enabled = isRTSPMode;
+    self.testRtspUrlTextField.alpha = isRTSPMode ? 1.0 : 0.5;
+    self.saveTestRtspUrlButton.enabled = isRTSPMode;
+    self.saveTestRtspUrlButton.alpha = isRTSPMode ? 1.0 : 0.5;
+    self.connectTestRtspButton.enabled = isRTSPMode;
+    self.connectTestRtspButton.alpha = isRTSPMode ? 1.0 : 0.5;
+
+    // RTMP/Push section — supported in both modes:
+    // - RTSP mode: relay RTSP→RTMP via the existing URL-based API
+    // - JPEG mode: raw feed push via pushJpegFrame/pushPcmAudio
+    self.rtmpUrlLabel.enabled = YES;
+    self.rtmpUrlLabel.alpha = 1.0;
+    self.rtmpUrlTextField.enabled = YES;
+    self.rtmpUrlTextField.alpha = 1.0;
+    self.saveRtmpUrlButton.enabled = YES;
+    self.saveRtmpUrlButton.alpha = 1.0;
+
+    [self updatePushStreamButton];
 }
 
 - (void)setupUI {
@@ -567,6 +601,9 @@ typedef NS_ENUM(NSInteger, LiveStreamingMode) {
         [self stopPushStream];
     }
 
+    // Stop audio playback (JPEG level-2)
+    [self stopAudioPlayback];
+
     // Stop playback
     [self.mediaPlayer stop];
 
@@ -591,13 +628,13 @@ typedef NS_ENUM(NSInteger, LiveStreamingMode) {
 
 - (void)startJPEGLiveStreaming {
     id<AIBudsLiveStreamingAPI> device = (id<AIBudsLiveStreamingAPI>)self.device;
-    
+
     if(!self.device.isConnectedAndReady) {
         XLOG_ERROR(@"%@", APP_LOG_STRING(@"Device is not connected and ready"));
         self.deviceStatusLabel.text = NSLocalizedString(@"LocKey.DeviceNotConnected", @"Device is not connected");
         return;
     }
-    
+
     if (!device.supportsJPEGImageLiveStreaming) {
         XLOG_ERROR(@"%@", APP_LOG_STRING(@"Device does not support JPEG live streaming"));
         self.deviceStatusLabel.text = NSLocalizedString(@"LocKey.DeviceNotSupportJPEG", @"Device does not support JPEG");
@@ -613,6 +650,10 @@ typedef NS_ENUM(NSInteger, LiveStreamingMode) {
     self.startTime = [NSDate date];
     self.frameRateLabel.text = @"";
 
+    // Set up audio playback for level-2 (oggMjpegOpus) streams. The opus decoder
+    // produces PCM S16LE @ 16kHz mono; AVAudioEngine plays it back with low latency.
+    [self setupAudioPlayback];
+
     __weak typeof(self) weakSelf = self;
     [device startJPEGImageLiveStreamingWithSessionStartCompletionHandler:^(BOOL success, NSError * _Nullable error) {
         dispatch_async(dispatch_get_main_queue(), ^{
@@ -622,25 +663,45 @@ typedef NS_ENUM(NSInteger, LiveStreamingMode) {
                 weakSelf.deviceStatusLabel.text = NSLocalizedString(@"LocKey.LiveStreamingStarted", @"Live streaming started");
                 weakSelf.connectionStatusLabel.text = NSLocalizedString(@"LocKey.ConnectionStatusConnected", @"Connected");
                 weakSelf.connectionStatusLabel.textColor = [UIColor systemGreenColor];
+
+                // Start audio engine after session starts so playback is ready
+                // when the first opus packet arrives.
+                [weakSelf startAudioPlayback];
             } else {
                 weakSelf.isStreaming = NO;
                 [weakSelf updateStreamingButton];
                 weakSelf.deviceStatusLabel.text = NSLocalizedString(@"LocKey.LiveStreamingFailed", @"Live streaming failed");
                 weakSelf.connectionStatusLabel.text = NSLocalizedString(@"LocKey.ConnectionStatusFailed", @"Connection failed");
                 weakSelf.connectionStatusLabel.textColor = [UIColor systemRedColor];
+                [weakSelf stopAudioPlayback];
             }
         });
     } jpegDataReceivedHandler:^(NSData * _Nonnull jpegData) {
         dispatch_async(dispatch_get_main_queue(), ^{
             [weakSelf handleJpegData:jpegData];
         });
+    } opusDataReceivedHandler:^(NSData * _Nonnull opusData, NSData * _Nullable decodedPcmAudioData) {
+        // Play PCM locally and feed to the streamer when pushing in JPEG mode.
+        // Both operations must happen off the main queue to avoid blocking UI;
+        // audio playback uses a copy because the buffer is consumed asynchronously.
+        if (decodedPcmAudioData.length == 0) return;
+        NSData *pcmData = [decodedPcmAudioData copy];
+        __weak typeof(weakSelf) innerWeak = weakSelf;
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [innerWeak playPcmAudioData:pcmData];
+        });
+        if (weakSelf.isJpegPushingStream && weakSelf.liveStreamer) {
+            [weakSelf.liveStreamer pushPcmAudio:pcmData];
+        }
     } sessionFinishHandler:^(BOOL isUserInitiatedStop, NSError * _Nullable error) {
         dispatch_async(dispatch_get_main_queue(), ^{
             weakSelf.isStreaming = NO;
             weakSelf.isPushingStream = NO;
+            weakSelf.isJpegPushingStream = NO;
             [weakSelf updatePushStreamButton];
             [weakSelf updateStreamingButton];
-            
+            [weakSelf stopAudioPlayback];
+
             if (isUserInitiatedStop) {
                 weakSelf.connectionStatusLabel.text = NSLocalizedString(@"LocKey.ConnectionStatusStopped", @"Stopped");
                 weakSelf.connectionStatusLabel.textColor = [UIColor systemGrayColor];
@@ -676,11 +737,6 @@ typedef NS_ENUM(NSInteger, LiveStreamingMode) {
 }
 
 - (void)startPushStream {
-    if (!self.currentRtspAddress) {
-        XLOG_WARNING(@"%@", APP_LOG_STRING(@"Cannot start push stream: RTSP address not available"));
-        return;
-    }
-
     if (!self.savedRtmpUrl || self.savedRtmpUrl.length == 0) {
         XLOG_WARNING(@"%@", APP_LOG_STRING(@"Cannot start push stream: RTMP URL not configured"));
         self.rtmpUrlTextField.layer.borderColor = [UIColor systemRedColor].CGColor;
@@ -692,18 +748,52 @@ typedef NS_ENUM(NSInteger, LiveStreamingMode) {
     self.isPushingStream = YES;
     [self updatePushStreamButton];
 
-    XLOG_INFO(@"%@", APP_LOG_STRING(@"Starting push stream to RTMP: %@", self.savedRtmpUrl));
+    if (self.liveStreamingMode == LiveStreamingModeRTSP) {
+        [self startRTSPPushStream];
+    } else {
+        [self startJPEGPushStream];
+    }
+}
+
+- (void)startRTSPPushStream {
+    if (!self.currentRtspAddress) {
+        XLOG_WARNING(@"%@", APP_LOG_STRING(@"Cannot start RTSP push stream: RTSP address not available"));
+        self.isPushingStream = NO;
+        [self updatePushStreamButton];
+        return;
+    }
+
+    XLOG_INFO(@"%@", APP_LOG_STRING(@"Starting RTSP push stream to RTMP: %@", self.savedRtmpUrl));
     XLOG_INFO(@"%@", APP_LOG_STRING(@"Source RTSP: %@", self.currentRtspAddress));
 
-    AIBudsLiveStreamer* streamer = [AIBudsLiveStreamer new];
+    AIBudsLiveStreamer *streamer = [AIBudsLiveStreamer new];
     streamer.delegate = self;
-    AIBudsLiveStreamerConfig* configuration = [AIBudsLiveStreamerConfig defaultConfig];
+    AIBudsLiveStreamerConfig *configuration = [AIBudsLiveStreamerConfig defaultConfig];
     [streamer configureWithInputURL:self.currentRtspAddress outputURL:self.savedRtmpUrl config:configuration];
     self.liveStreamer = streamer;
     [streamer startStreaming];
 }
 
+- (void)startJPEGPushStream {
+    XLOG_INFO(@"%@", APP_LOG_STRING(@"Starting JPEG raw feed push stream to RTMP: %@", self.savedRtmpUrl));
+
+    AIBudsLiveStreamer *streamer = [AIBudsLiveStreamer new];
+    streamer.delegate = self;
+    AIBudsLiveStreamerConfig *configuration = [AIBudsLiveStreamerConfig defaultConfig];
+    // JPEG frames are pushed at their natural cadence; let the encoder derive the
+    // output frame rate from the source instead of forcing a fixed value.
+    configuration.frameRate = 0;
+    // Match the ABMate Opus decoder output (16 kHz mono S16LE).
+    configuration.inputAudioSampleRate = 16000;
+    configuration.inputAudioChannels = 1;
+    [streamer configureWithOutputURL:self.savedRtmpUrl config:configuration];
+    self.liveStreamer = streamer;
+    self.isJpegPushingStream = YES;
+    [streamer startStreaming];
+}
+
 - (void)stopPushStream {
+    self.isJpegPushingStream = NO;
     [self.liveStreamer stopStreaming];
     self.liveStreamer = nil;
 
@@ -740,9 +830,11 @@ typedef NS_ENUM(NSInteger, LiveStreamingMode) {
         self.pushStreamButton.backgroundColor = [UIColor systemBlueColor];
     }
 
-    // Disable if not streaming
-    self.pushStreamButton.enabled = self.isStreaming;
-    self.pushStreamButton.alpha = self.isStreaming ? 1.0 : 0.5;
+    // Push streaming is supported in both RTSP (relay) and JPEG (raw feed) modes,
+    // but requires an active streaming session.
+    BOOL canPush = self.isStreaming;
+    self.pushStreamButton.enabled = canPush;
+    self.pushStreamButton.alpha = canPush ? 1.0 : 0.5;
 }
 
 #pragma mark - URL Management
@@ -896,7 +988,7 @@ typedef NS_ENUM(NSInteger, LiveStreamingMode) {
     }
     
     self.liveStreamingMode = newMode;
-    
+
     // 更新 UI 显示（未开始直播时显示提示）
     if (self.liveStreamingMode == LiveStreamingModeRTSP) {
         self.rtspAddressLabel.hidden = NO;
@@ -905,26 +997,101 @@ typedef NS_ENUM(NSInteger, LiveStreamingMode) {
         self.rtspAddressLabel.hidden = YES;
         self.frameRateLabel.hidden = NO;
     }
-    
+
+    [self updateModeDependentUI];
 }
 
 - (void)handleJpegData:(NSData *)jpegData {
     if (!self.isStreaming || self.liveStreamingMode != LiveStreamingModeJPEG) {
         return;
     }
-    
+
     self.jpegFrameCount++;
     UIImage *image = [UIImage imageWithData:jpegData];
     if (image) {
         self.jpegImageView.image = image;
     }
-    
+
     // 更新帧率显示
     NSTimeInterval elapsed = [[NSDate date] timeIntervalSinceDate:self.startTime];
     if (elapsed > 0) {
         double fps = self.jpegFrameCount / elapsed;
         self.frameRateLabel.text = [NSString stringWithFormat:NSLocalizedString(@"LocKey.FrameRateFormat", @"FPS: %.1f (%@ frames)"), fps, @(self.jpegFrameCount)];
     }
+
+    // Feed JPEG frame to the raw feed streamer when pushing in JPEG mode.
+    if (self.isJpegPushingStream && self.liveStreamer) {
+        [self.liveStreamer pushJpegFrame:jpegData];
+    }
+}
+
+#pragma mark - Audio Playback
+
+- (void)setupAudioPlayback {
+    [self stopAudioPlayback];
+
+    AVAudioEngine *engine = [[AVAudioEngine alloc] init];
+    AVAudioPlayerNode *playerNode = [[AVAudioPlayerNode alloc] init];
+    [engine attachNode:playerNode];
+
+    // PCM S16LE @ 16kHz mono — matches ABMateOpusDecoder output.
+    AVAudioFormat *format = [[AVAudioFormat alloc] initWithCommonFormat:AVAudioPCMFormatInt16
+                                                             sampleRate:16000
+                                                               channels:1
+                                                            interleaved:YES];
+    self.pcmAudioFormat = format;
+    [engine connect:playerNode to:engine.outputNode format:format];
+    self.audioEngine = engine;
+    self.audioPlayerNode = playerNode;
+}
+
+- (void)startAudioPlayback {
+    if (!self.audioEngine || !self.audioPlayerNode) {
+        [self setupAudioPlayback];
+    }
+    if (!self.audioEngine.isRunning) {
+        NSError *engineError = nil;
+        BOOL started = [self.audioEngine startAndReturnError:&engineError];
+        if (!started) {
+            XLOG_ERROR(@"%@", APP_LOG_STRING(@"Failed to start AVAudioEngine: %@", engineError.localizedDescription));
+            return;
+        }
+    }
+    if (!self.audioPlayerNode.isPlaying) {
+        [self.audioPlayerNode play];
+    }
+}
+
+- (void)stopAudioPlayback {
+    if (self.audioPlayerNode) {
+        if (self.audioPlayerNode.isPlaying) {
+            [self.audioPlayerNode stop];
+        }
+        self.audioPlayerNode = nil;
+    }
+    if (self.audioEngine) {
+        if (self.audioEngine.isRunning) {
+            [self.audioEngine stop];
+        }
+        self.audioEngine = nil;
+    }
+    self.pcmAudioFormat = nil;
+}
+
+- (void)playPcmAudioData:(NSData *)pcmData {
+    if (!self.audioEngine || !self.audioPlayerNode || !self.pcmAudioFormat) return;
+    if (pcmData.length == 0) return;
+
+    // 16-bit samples, so frameCapacity is byteLength / 2.
+    AVAudioFrameCount frameCapacity = (AVAudioFrameCount)(pcmData.length / 2);
+    if (frameCapacity == 0) return;
+
+    AVAudioPCMBuffer *buffer = [[AVAudioPCMBuffer alloc] initWithPCMFormat:self.pcmAudioFormat
+                                                              frameCapacity:frameCapacity];
+    if (!buffer) return;
+    buffer.frameLength = frameCapacity;
+    memcpy(buffer.int16ChannelData[0], pcmData.bytes, pcmData.length);
+    [self.audioPlayerNode scheduleBuffer:buffer completionHandler:nil];
 }
 
 #pragma mark - Cleanup

@@ -1,41 +1,41 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.3.3 effective-5.10 (swiftlang-6.3.3.1.3 clang-2100.1.1.101)
-// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name AIBudsVideoStabilization
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.3
+// swift-compiler-version: Apple Swift version 6.4 effective-5.10 (swiftlang-6.4.0.34.1 clang-2100.3.34.1)
+// swift-module-flags: -target x86_64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -language-mode 5 -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name AIBudsVideoStabilization
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.4
 import AIBuds
 import Foundation
 import Swift
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-@objc(AIBudsVideoStabilizationEngine) public enum VideoStabilizationEngine : Swift.Int {
+@objc(AIBudsVideoStabilizationEngine) public enum VideoStabilizationEngine : Swift::Int {
   case automatic = 0
   case gyroscopeMetal = 1
   case aweis = 2
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
+  public init?(rawValue: Swift::Int)
+  public typealias RawValue = Swift::Int
+  public var rawValue: Swift::Int {
     get
   }
 }
-@_inheritsConvenienceInitializers @objc(AIBudsVideoStabilizationConfiguration) final public class VideoStabilizationConfiguration : ObjectiveC.NSObject, Foundation.NSCopying {
-  @objc final public var trimRatio: Swift.Double
-  @objc final public var averageBitRate: Swift.Int
-  @objc final public var licenseFileURL: Foundation.URL?
-  @objc final public var suppressAWEISConsoleOutput: Swift.Bool
-  @objc final public var stabilizationRadius: Swift.Int
-  @objc final public var engine: AIBudsVideoStabilization.VideoStabilizationEngine
-  @objc final public var allowsAWEISFallback: Swift.Bool
-  @objc final public var gyroscopeSmoothingDuration: Swift.Double
-  @objc final public var cameraFocalLengthInPixels: Swift.Double
-  @objc final public var gyroscopeCameraAxisMapping: Swift.String
-  @objc final public var gyroscopeTimeOffset: Swift.Double
+@_inheritsConvenienceInitializers @objc(AIBudsVideoStabilizationConfiguration) final public class VideoStabilizationConfiguration : ObjectiveC::NSObject, Foundation::NSCopying {
+  @objc final public var trimRatio: Swift::Double
+  @objc final public var averageBitRate: Swift::Int
+  @objc final public var licenseFileURL: Foundation::URL?
+  @objc final public var suppressAWEISConsoleOutput: Swift::Bool
+  @objc final public var stabilizationRadius: Swift::Int
+  @objc final public var engine: AIBudsVideoStabilization::VideoStabilizationEngine
+  @objc final public var allowsAWEISFallback: Swift::Bool
+  @objc final public var gyroscopeSmoothingDuration: Swift::Double
+  @objc final public var cameraFocalLengthInPixels: Swift::Double
+  @objc final public var gyroscopeCameraAxisMapping: Swift::String
+  @objc final public var gyroscopeTimeOffset: Swift::Double
   @objc override dynamic public init()
-  @objc public static func `default`() -> AIBudsVideoStabilization.VideoStabilizationConfiguration
-  @objc final public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
+  @objc public static func `default`() -> AIBudsVideoStabilization::VideoStabilizationConfiguration
+  @objc final public func copy(with zone: ObjectiveC::NSZone? = nil) -> Any
   @objc deinit
 }
-@objc(AIBudsVideoStabilizationErrorCode) public enum VideoStabilizationErrorCode : Swift.Int {
+@objc(AIBudsVideoStabilizationErrorCode) public enum VideoStabilizationErrorCode : Swift::Int {
   case unsupportedPlatform = 1
   case invalidInput = 2
   case readerCreationFailed = 3
@@ -44,49 +44,49 @@ import _SwiftConcurrencyShims
   case frameProcessingFailed = 6
   case encodingFailed = 7
   case cancelled = 8
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
+  public init?(rawValue: Swift::Int)
+  public typealias RawValue = Swift::Int
+  public var rawValue: Swift::Int {
     get
   }
 }
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(AIBudsVideoStabilizationSDK) final public class VideoStabilizationSDK : ObjectiveC.NSObject {
-  @objc public static var plugin: any AIBuds.VideoStabilizationPlugin {
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(AIBudsVideoStabilizationSDK) final public class VideoStabilizationSDK : ObjectiveC::NSObject {
+  @objc public static var plugin: any AIBuds::VideoStabilizationPlugin {
     @objc get
   }
-  @objc(pluginWithConfiguration:) public static func plugin(configuration: AIBudsVideoStabilization.VideoStabilizationConfiguration) -> any AIBuds.VideoStabilizationPlugin
-  @objc public static var sdkVersion: Swift.String {
+  @objc(pluginWithConfiguration:) public static func plugin(configuration: AIBudsVideoStabilization::VideoStabilizationConfiguration) -> any AIBuds::VideoStabilizationPlugin
+  @objc public static var sdkVersion: Swift::String {
     @objc get
   }
-  @objc public static var sdkBuild: Swift.String {
+  @objc public static var sdkBuild: Swift::String {
     @objc get
   }
-  @objc public static var sdkReleaseDate: Swift.String {
+  @objc public static var sdkReleaseDate: Swift::String {
     @objc get
   }
-  @objc public static var sdkVersionDescription: Swift.String {
+  @objc public static var sdkVersionDescription: Swift::String {
     @objc get
   }
-  @objc public static var thirdPartySDKVersionDescription: Swift.String {
+  @objc public static var thirdPartySDKVersionDescription: Swift::String {
     @objc get
   }
-  @objc public static let ErrorDomain: Swift.String
+  @objc public static let ErrorDomain: Swift::String
   @objc deinit
 }
-@_inheritsConvenienceInitializers @objc(AIBudsVideoStabilizationTask) final public class VideoStabilizationTask : ObjectiveC.NSObject {
+@_inheritsConvenienceInitializers @objc(AIBudsVideoStabilizationTask) final public class VideoStabilizationTask : ObjectiveC::NSObject {
   @objc final public func cancel()
   @objc override dynamic public init()
   @objc deinit
 }
-@_inheritsConvenienceInitializers @objc(AIBudsVideoStabilizer) final public class VideoStabilizer : ObjectiveC.NSObject {
+@_inheritsConvenienceInitializers @objc(AIBudsVideoStabilizer) final public class VideoStabilizer : ObjectiveC::NSObject {
   @discardableResult
-  @objc(processVideoAtURL:outputURL:configuration:progressHandler:completionHandler:) public static func processVideo(at inputURL: Foundation.URL, outputURL: Foundation.URL, configuration: AIBudsVideoStabilization.VideoStabilizationConfiguration = .default(), progressHandler: @escaping (Swift.Double) -> Swift.Void, completionHandler: @escaping (Foundation.URL?, Foundation.NSError?) -> Swift.Void) -> AIBudsVideoStabilization.VideoStabilizationTask
+  @objc(processVideoAtURL:outputURL:configuration:progressHandler:completionHandler:) public static func processVideo(at inputURL: Foundation::URL, outputURL: Foundation::URL, configuration: AIBudsVideoStabilization::VideoStabilizationConfiguration = .default(), progressHandler: @escaping (Swift::Double) -> Swift::Void, completionHandler: @escaping (Foundation::URL?, Foundation::NSError?) -> Swift::Void) -> AIBudsVideoStabilization::VideoStabilizationTask
   @objc override dynamic public init()
   @objc deinit
 }
-extension AIBudsVideoStabilization.VideoStabilizationEngine : Swift.Equatable {}
-extension AIBudsVideoStabilization.VideoStabilizationEngine : Swift.Hashable {}
-extension AIBudsVideoStabilization.VideoStabilizationEngine : Swift.RawRepresentable {}
-extension AIBudsVideoStabilization.VideoStabilizationErrorCode : Swift.Equatable {}
-extension AIBudsVideoStabilization.VideoStabilizationErrorCode : Swift.Hashable {}
-extension AIBudsVideoStabilization.VideoStabilizationErrorCode : Swift.RawRepresentable {}
+extension AIBudsVideoStabilization::VideoStabilizationEngine : Swift::Equatable {}
+extension AIBudsVideoStabilization::VideoStabilizationEngine : Swift::Hashable {}
+extension AIBudsVideoStabilization::VideoStabilizationEngine : Swift::RawRepresentable {}
+extension AIBudsVideoStabilization::VideoStabilizationErrorCode : Swift::Equatable {}
+extension AIBudsVideoStabilization::VideoStabilizationErrorCode : Swift::Hashable {}
+extension AIBudsVideoStabilization::VideoStabilizationErrorCode : Swift::RawRepresentable {}

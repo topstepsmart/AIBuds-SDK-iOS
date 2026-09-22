@@ -691,6 +691,9 @@
         [DeviceFeatureGroupModel modelWithIcon:@"icon_remote_shutter" name:NSLocalizedString(@"LocKey.RemoteShutterGroupTitle", nil) features:@[
             [DeviceFeatureModel modelWithIcon:@"icon_remote_shutter" name:NSLocalizedString(@"LocKey.RemoteShutterFeatureTitle", nil) classNameOfDemoVC:@"RemoteShutterDemoController"],
         ]],
+        [DeviceFeatureGroupModel modelWithIcon:@"icon_instant_photo" name:NSLocalizedString(@"LocKey.InstantPhotoGroupTitle", nil) features:@[
+            [DeviceFeatureModel modelWithIcon:@"icon_instant_photo" name:NSLocalizedString(@"LocKey.InstantPhotoFeatureTitle", nil) classNameOfDemoVC:@"InstantPhotoDemoController"],
+        ]],
         [DeviceFeatureGroupModel modelWithIcon:@"icon_file_import" name:NSLocalizedString(@"LocKey.FileImportGroupTitle", nil) features:@[
             [DeviceFeatureModel modelWithIcon:@"icon_file_import" name:NSLocalizedString(@"LocKey.FileImportFeatureTitle", nil) classNameOfDemoVC:@"FileImportDemoController"],
         ]],
@@ -1397,6 +1400,13 @@
     {
         [session sendImageForPhotoUnderstanding:[UIImage imageWithData:photoData] prompt:nil];
     }
+}
+
+- (void)device:(id<AIBudsDeviceConvertible>)device didReceiveInstantPhotoData:(NSData *)photoData error:(NSError *)error {
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"InstantPhotoReceived" object:nil
+        userInfo:@{@"photoData": photoData ?: NSNull.null,
+                   @"error": error ?: NSNull.null,
+                   @"timestamp": [NSDate date]}];
 }
 
 - (void)device:(id<AIBudsDeviceConvertible>)device didEQSettingChanged:(AIBudsEQSettingModel *)eqSetting {

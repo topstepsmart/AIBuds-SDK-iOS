@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
   # ==================== Basic Information ====================
   # SDK name and version
   s.name         = "AIBudsSDK"
-  s.version      = "1.0.1-beta.9"
+  s.version      = "1.0.1-beta.10"
   s.summary      = "AIBuds SDK - An iOS framework for connecting AI devices"
   s.description  = <<-DESC
                     AIBuds SDK is a versatile framework for connecting iOS apps to AI devices. It provides modular components including core connectivity, Bluetooth management, voice assistant, AI capabilities, logging utilities, and foundation services.
@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   s.homepage     = "https://github.com/topstepsmart/AIBuds-SDK-iOS"
   s.license      = { :type => "MIT", :file => "LICENSE" }
   s.author       = { "pcjbird" => "pcjbird@hotmail.com" }
-  s.platform     = :ios, "13.0"
+  s.platform     = :ios, "15.0"
   s.source       = { :git => "https://github.com/topstepsmart/AIBuds-SDK-iOS.git", :tag => s.version.to_s }
   
   # Default subspec - Core module will be installed by default

@@ -757,6 +757,16 @@
 "LocKey.VideoRecordingStopFailed" = "Failed to stop video recording";
 
 "LocKey.RemoteShutterFeatureTitle" = "Remote Shutter";
+"LocKey.InstantPhotoGroupTitle" = "Instant Photo";
+"LocKey.InstantPhotoFeatureTitle" = "Instant Photo";
+"LocKey.InstantPhotoWaiting" = "Waiting for device to push photos...";
+"LocKey.InstantPhotoNoPhotos" = "No photos yet. Trigger a capture on the device.";
+"LocKey.InstantPhotoCompleted" = "Completed";
+"LocKey.InstantPhotoFailed" = "Failed";
+"LocKey.InstantPhotoSaveToAlbum" = "Save to Album";
+"LocKey.InstantPhotoSaved" = "Saved to Album";
+"LocKey.InstantPhotoSaveFailed" = "Save Failed";
+"LocKey.InstantPhotoPhotoCount" = "%d photos";
 "LocKey.PhotoTakingTitle" = "Photo Taking";
 "LocKey.CameraPermissionDenied" = "Camera permission denied";
 "LocKey.CameraError" = "Camera error";

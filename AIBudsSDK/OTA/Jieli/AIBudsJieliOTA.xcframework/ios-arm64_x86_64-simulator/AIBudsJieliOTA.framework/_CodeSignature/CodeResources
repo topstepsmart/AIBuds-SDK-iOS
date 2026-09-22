@@ -6,43 +6,43 @@
 	<dict>
 		<key>Headers/AIBudsJieliOTA-Swift.h</key>
 		<data>
-		U9luwbtKGI73S/QH5ocnAifNQH8=
+		A/+jRLtos3TFkzbHun7mdhGdMU4=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		bEtlR2ZwMEfRK4dg4c5KKrwL7pM=
+		XFSyqJHzJLmvyMaZuJnAIhxi78E=
 		</data>
 		<key>Modules/AIBudsJieliOTA.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		H0fhODysoq6/d+OSXmCymyo2rOM=
+		erigq60BAC1p0CdmKs6U4XDmF/U=
 		</data>
 		<key>Modules/AIBudsJieliOTA.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		I3jBWkRGKWNN1piUfd/HoXMKqvk=
+		h/RC8ZYZVk+oti6I63Giup4p7XM=
 		</data>
 		<key>Modules/AIBudsJieliOTA.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		r10lmWAMaI5xxlJA9HKdMJ6Lufc=
+		7v6CSovRx5q2bEIF/oj4ed1bKEM=
 		</data>
 		<key>Modules/AIBudsJieliOTA.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		I3jBWkRGKWNN1piUfd/HoXMKqvk=
+		h/RC8ZYZVk+oti6I63Giup4p7XM=
 		</data>
 		<key>Modules/AIBudsJieliOTA.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		H0fhODysoq6/d+OSXmCymyo2rOM=
+		erigq60BAC1p0CdmKs6U4XDmF/U=
 		</data>
 		<key>Modules/AIBudsJieliOTA.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		N4oUNXrfhSetDSsHVQ0LMQKE4yk=
+		QDmvgTLHC1YN4dY+30mUfR5K71Q=
 		</data>
 		<key>Modules/AIBudsJieliOTA.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		F60CA2BojQMvMJY8M+R9mPmw5L4=
+		ptOvllyd2MZzFiEmt16/cg06iJo=
 		</data>
 		<key>Modules/AIBudsJieliOTA.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		N4oUNXrfhSetDSsHVQ0LMQKE4yk=
+		QDmvgTLHC1YN4dY+30mUfR5K71Q=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -55,63 +55,63 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			rRJ9k72x1UcurvEMGBNSWeUc537m3NvSgCVRiqQyRjk=
+			KJOFHrH48UcUeGZ1yBzlZeFxrdVcQLKqREm0ISWb/+E=
 			</data>
 		</dict>
 		<key>Modules/AIBudsJieliOTA.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			cY0wKxzzk3Z/iSqht3SUl50DUDnUe8So4yBmSswEfls=
+			sGpxcuO8vXK/LgeTrjzdCQUcxVmHXvpx10AcEaS+ETc=
 			</data>
 		</dict>
 		<key>Modules/AIBudsJieliOTA.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			07Jkbmzn8HMYrxNq1bgbcroIV6vPhkgJ9pFm9jhWl9U=
+			X5WJVoWGNgaa6fli8sAg1MZGBrdP7R0/nSmfuFjh6qE=
 			</data>
 		</dict>
 		<key>Modules/AIBudsJieliOTA.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5lpi5qmXeYafnNS+6WuvDVQ0AP8al/BZpYCSpXCagvw=
+			Pykuyc9ycsIJNaeBiOpaRCIHM9oIryqSeO6ySskjicw=
 			</data>
 		</dict>
 		<key>Modules/AIBudsJieliOTA.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			07Jkbmzn8HMYrxNq1bgbcroIV6vPhkgJ9pFm9jhWl9U=
+			X5WJVoWGNgaa6fli8sAg1MZGBrdP7R0/nSmfuFjh6qE=
 			</data>
 		</dict>
 		<key>Modules/AIBudsJieliOTA.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			cY0wKxzzk3Z/iSqht3SUl50DUDnUe8So4yBmSswEfls=
+			sGpxcuO8vXK/LgeTrjzdCQUcxVmHXvpx10AcEaS+ETc=
 			</data>
 		</dict>
 		<key>Modules/AIBudsJieliOTA.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1ZclRqPotsO5husnaCUtwQqy0clui9Z7O23ZBGHSs1s=
+			qzq1YDXoc2yjcU2lo1sngFyPNYoJfiNCL4uRKrQystc=
 			</data>
 		</dict>
 		<key>Modules/AIBudsJieliOTA.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			T+N7NVXyXPT9ZFRA1YiN9+/j6vE6ZXiGGejkY3JweD4=
+			O3YddNP/ztk6i5o4CXaCBwas4n5oXLD72NCuBSRmkY0=
 			</data>
 		</dict>
 		<key>Modules/AIBudsJieliOTA.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1ZclRqPotsO5husnaCUtwQqy0clui9Z7O23ZBGHSs1s=
+			qzq1YDXoc2yjcU2lo1sngFyPNYoJfiNCL4uRKrQystc=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

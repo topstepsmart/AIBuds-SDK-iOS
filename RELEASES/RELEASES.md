@@ -1,8 +1,8 @@
 # RELEASES
 
-## V1.0.1-beta.9 (Build 20260909001)
+## V1.0.1-beta.10 (Build 20260922001)
 
-**Release date:** 2026-09-09
+**Release date:** 2026-09-22
 
 ### Features
 
@@ -25,7 +25,12 @@
 - Fixed an issue where voice data callbacks were not invoked during AI chat sessions.
 - Fixed an issue that could cause apps to crash during Jieli OTA updates.
 - Improved media file importing so hotspot disconnections during an import now terminate the operation and invoke the completion callback with an error.
-- Bump MagicHelper SDK to 2.13.1.
+- Bump MagicHelper SDK to 2.13.2 to fix a crash in the SDK.
+- Raised the minimum supported iOS version to 15.0 for Xcode 27 compatibility; integrating apps must update their deployment target accordingly.
+- Added support for Jieli glasses without onboard storage, including receiving captured photos directly over Bluetooth.
+- Fixed device type recognition for audio glasses.
+- Added audio support for JPEG live streaming on compatible devices; existing calls to the JPEG live streaming start API must supply the new `opusDataReceivedHandler` argument, using `nil` if audio is not needed.
+- Added RTMP publishing from JPEG frames and PCM audio through the Live Stream SDK and the iOS Flutter plugin bridge.
 - Improved SDK stability.
 
 ## V1.0.0 (Build 20260824001)

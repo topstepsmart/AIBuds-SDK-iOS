@@ -11,9 +11,9 @@ Connect smart glasses, earbuds, speakers, watches, badges, and other AI devices 
 <a href="https://docs-aibuds.github.io/" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/SDK-AIBuds%20for%20iOS-7c3aed" alt="AIBuds SDK" /></a>
 <a href="https://github.com/topstepsmart/AIBuds-SDK-iOS/releases/tag/1.0.0" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/Pod-1.0.0-7c3aed?logo=cocoapods&amp;logoColor=white" alt="Pod version 1.0.0" /></a>
 <a href="https://github.com/topstepsmart/AIBuds-SDK-iOS/releases/tag/1.0.0" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/Release-v1.0.0-2563eb" alt="Release v1.0.0" /></a>
-<a href="https://github.com/topstepsmart/AIBuds-SDK-iOS" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/Nightly-v1.0.1--beta.9-22c55e" alt="Nightly v1.0.1-beta.9" /></a>
+<a href="https://github.com/topstepsmart/AIBuds-SDK-iOS" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/Nightly-v1.0.1--beta.10-22c55e" alt="Nightly v1.0.1-beta.10" /></a>
 
-<a href="https://docs-aibuds.github.io/docs/getting-started/installation" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/Platform-iOS%2013%2B-111827?logo=apple" alt="Platform iOS 13+" /></a>
+<a href="https://docs-aibuds.github.io/docs/getting-started/installation" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/Platform-iOS%2015%2B-111827?logo=apple" alt="Platform iOS 15+" /></a>
 <a href="https://docs-aibuds.github.io/docs/getting-started/quickstart" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/Swift%20%7C%20Objective--C-supported-f97316?logo=swift&amp;logoColor=white" alt="Swift and Objective-C supported" /></a>
 <a href="https://cocoapods.org/" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/CocoaPods-1.16%2B-ee3322?logo=cocoapods&amp;logoColor=white" alt="CocoaPods 1.16+" /></a>
 <a href="./RELEASES/RELEASES.md" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/Released-2026.08.24-10b981" alt="Released 2026.08.24" /></a>
@@ -49,7 +49,7 @@ AIBuds SDK is a modular framework for discovering, connecting, and interacting w
 | --- | --- |
 | Device connectivity | BLE discovery, device enrollment, connection management, auto-reconnect, and persistence |
 | Device control | Device information, time sync, volume, EQ, ANC, wear detection, and input mapping |
-| Audio and media | Audio recording, file import, photo/video management, RTSP playback, and RTMP publishing |
+| Audio and media | Audio recording, file import, Bluetooth photo transfer, RTSP and JPEG live streaming with audio, and RTMP publishing |
 | AI services | AI chat, AI recording, streaming ASR, TTS, summaries, translation, interpretation, and AIGC |
 | Voice assistant | Service authorization, wake and command handling, capability and mode management |
 | Device maintenance | Firmware OTA, camera OTA, device apps, storage information, and factory reset |
@@ -61,16 +61,18 @@ AIBuds SDK is a modular framework for discovering, connecting, and interacting w
 
 | Tool | Minimum version |
 | --- | --- |
-| iOS | 13.0 |
+| iOS | 15.0 |
 | Xcode | 26.0 |
 | CocoaPods | 1.16.0 |
+
+> Starting with `1.0.1-beta.10`, applications must target iOS 15.0 or later. The JPEG live streaming start API also requires the new `opusDataReceivedHandler` argument; pass `nil` when Opus audio is not needed.
 
 ### 1. Install the SDK
 
 Use the complete package when you are evaluating the SDK or need most capabilities:
 
 ```ruby
-platform :ios, '13.0'
+platform :ios, '15.0'
 
 target 'YourTargetName' do
   pod 'AIBudsSDK/AllInOne',
@@ -174,7 +176,7 @@ Convert a discovery result with `makeStorableDeviceFromDiscovered(_:)`, persist 
 | `AIBudsSDK/AI/MltCloud` | MltCloud AI provider | Products using MltCloud services |
 | `AIBudsSDK/AI/Dashboard` | Local AI session dashboard | AI diagnostics and report inspection |
 | `AIBudsSDK/VoiceAssistant` | On-device assistant authorization bridge | Offline voice assistants |
-| `AIBudsSDK/LiveStream` | RTSP playback and RTMP publishing | Real-time audio/video experiences |
+| `AIBudsSDK/LiveStream` | RTSP playback, JPEG live streaming with Opus/PCM audio, and RTMP publishing | Real-time audio/video experiences |
 | `AIBudsSDK/VideoStabilization` | Six-axis imported video processing | Stabilizing smart-glasses recordings |
 | `AIBudsSDK/Log/XLFacility` | Persistent logs and local log browser | Development and field diagnostics |
 | `AIBudsSDK/CrashReporter` | Crash capture and persisted reports | Stability diagnostics |
@@ -235,7 +237,7 @@ CocoaPods integrates the SDK and its third-party dependencies into the generated
 ## 📄 Release and License
 
 - Latest stable release: `1.0.0` — August 24, 2026
-- Latest prerelease: `1.0.1-beta.9` — September 9, 2026
+- Latest prerelease: `1.0.1-beta.10` — September 22, 2026
 - Release notes: <a href="./CHANGELOG/CHANGELOG.md" target="_blank" rel="noopener noreferrer">CHANGELOG</a> · <a href="./RELEASES/RELEASES.md" target="_blank" rel="noopener noreferrer">RELEASES</a>
 - License: [MIT](./LICENSE)
 

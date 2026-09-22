@@ -754,6 +754,16 @@
 "LocKey.VideoRecordingStopFailed" = "视频录制停止失败";
 
 "LocKey.RemoteShutterFeatureTitle" = "遥控拍照";
+"LocKey.InstantPhotoGroupTitle" = "即时拍照";
+"LocKey.InstantPhotoFeatureTitle" = "即时拍照";
+"LocKey.InstantPhotoWaiting" = "等待设备推送照片...";
+"LocKey.InstantPhotoNoPhotos" = "暂无照片，请在设备端触发拍照";
+"LocKey.InstantPhotoCompleted" = "已完成";
+"LocKey.InstantPhotoFailed" = "接收失败";
+"LocKey.InstantPhotoSaveToAlbum" = "保存到相册";
+"LocKey.InstantPhotoSaved" = "已保存到相册";
+"LocKey.InstantPhotoSaveFailed" = "保存失败";
+"LocKey.InstantPhotoPhotoCount" = "%d 张照片";
 "LocKey.PhotoTakingTitle" = "拍照";
 "LocKey.CameraPermissionDenied" = "相机权限被拒绝";
 "LocKey.CameraError" = "相机错误";
