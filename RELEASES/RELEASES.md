@@ -1,8 +1,8 @@
 # RELEASES
 
-## V1.0.1-beta.10 (Build 20260922001)
+## V1.0.1-beta.11 (Build 20260928001)
 
-**Release date:** 2026-09-22
+**Release date:** 2026-09-28
 
 ### Features
 
@@ -31,6 +31,7 @@
 - Fixed device type recognition for audio glasses.
 - Added audio support for JPEG live streaming on compatible devices; existing calls to the JPEG live streaming start API must supply the new `opusDataReceivedHandler` argument, using `nil` if audio is not needed.
 - Added RTMP publishing from JPEG frames and PCM audio through the Live Stream SDK and the iOS Flutter plugin bridge.
+- Fixed an issue where an AI response containing no playable voice data could leave the playback state active and prevent subsequent user speech from starting a new question.
 - Improved SDK stability.
 
 ## V1.0.0 (Build 20260824001)

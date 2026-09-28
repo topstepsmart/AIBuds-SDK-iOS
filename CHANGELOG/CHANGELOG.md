@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## V1.0.1-beta.11 build20260928001 (2026-09-28)
+
+- Fixed an issue where an AI response containing no playable voice data could leave the playback state active and prevent subsequent user speech from starting a new question.
+
 ## V1.0.1-beta.10 build20260922001 (2026-09-22)
 
 - Raised the minimum supported iOS version to 15.0 for Xcode 27 compatibility; integrating apps must update their deployment target accordingly.
