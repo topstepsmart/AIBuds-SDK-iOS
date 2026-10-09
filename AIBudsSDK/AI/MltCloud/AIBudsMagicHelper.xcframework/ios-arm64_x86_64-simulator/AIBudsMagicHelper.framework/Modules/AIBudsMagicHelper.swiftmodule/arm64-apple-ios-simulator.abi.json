@@ -9981,21 +9981,21 @@
       "kind": "StringLiteral",
       "offset": 257,
       "length": 15,
-      "value": "\"1.0.1-beta.11\""
+      "value": "\"1.0.1-beta.12\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/SDKBuildInfo\/SDK_Build_Info.swift",
       "kind": "StringLiteral",
       "offset": 388,
       "length": 13,
-      "value": "\"20260928001\""
+      "value": "\"20261009001\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/SDKBuildInfo\/SDK_Build_Info.swift",
       "kind": "StringLiteral",
       "offset": 503,
       "length": 12,
-      "value": "\"2026-09-28\""
+      "value": "\"2026-10-09\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsMagicHelper\/AIBudsMagicHelper.swift",

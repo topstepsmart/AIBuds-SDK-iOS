@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## V1.0.1-beta.12 build20261009001 (2026-10-09)
+
+- Added support for mapping StarBurst music pause intents to stop-playback intents.
+
 ## V1.0.1-beta.11 build20260928001 (2026-09-28)
 
 - Fixed an issue where an AI response containing no playable voice data could leave the playback state active and prevent subsequent user speech from starting a new question.

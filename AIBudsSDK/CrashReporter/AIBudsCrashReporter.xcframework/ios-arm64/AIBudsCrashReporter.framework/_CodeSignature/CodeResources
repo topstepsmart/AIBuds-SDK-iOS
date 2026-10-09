@@ -14,11 +14,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		8iqMERUYCRR5WctCuI6A1j2jhYE=
+		asgzmEEayjX1mfACuAqUyfNvoUI=
 		</data>
 		<key>Modules/AIBudsCrashReporter.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		UnwFUZhaQAI1p9lM6lMt98wHa2o=
+		VYXLTYaONSAb23T8OezMsqZeHSE=
 		</data>
 		<key>Modules/AIBudsCrashReporter.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>Modules/AIBudsCrashReporter.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		hfplap4UJ37vdjWCyG/3ckYoI/4=
+		aziBw8TmJBTGG0IFftUQNH9rAtE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -61,7 +61,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			f7uPMcDuSJICN4v31W989SkbIHvFAIbK1jX13soghHY=
+			c0M7+YBZrjyNauilWzxnl6TRxx6vZI507Gpdw5rRX7g=
 			</data>
 		</dict>
 		<key>Modules/AIBudsCrashReporter.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
@@ -89,7 +89,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			1qMMiF/UJAcqOUEqtKiwg8OLXcDQTHlSXcx4cQo8uWc=
+			KQpGVPiJNHNySu2UvuU5n6l8ZoDdho/AS6I+uWSqcho=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

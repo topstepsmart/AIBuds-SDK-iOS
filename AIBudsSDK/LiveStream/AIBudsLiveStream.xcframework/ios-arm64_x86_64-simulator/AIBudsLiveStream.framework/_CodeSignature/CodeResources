@@ -10,11 +10,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		a39OYMgGF1/N/+Hvv6UU1aieQ4Y=
+		MGM5dMfZ+Nxksq1fFsYpdM3GW3M=
 		</data>
 		<key>Modules/AIBudsLiveStream.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		DpvRmPq97hwy2qpxyo5rVZgQFGg=
+		DxWtrICKUuhUTXalN7sy14sNjgU=
 		</data>
 		<key>Modules/AIBudsLiveStream.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>Modules/AIBudsLiveStream.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		DpvRmPq97hwy2qpxyo5rVZgQFGg=
+		DxWtrICKUuhUTXalN7sy14sNjgU=
 		</data>
 		<key>Modules/AIBudsLiveStream.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -62,7 +62,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			YjRA/WwzXMbX1OYJth4iO0ESZ7aLuMjA9PDLHKnuvvI=
+			PlUJ/ENgQO2bVGTnjy/jgPPwbkz9myKy4eqtw4nheVg=
 			</data>
 		</dict>
 		<key>Modules/AIBudsLiveStream.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -90,7 +90,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			YjRA/WwzXMbX1OYJth4iO0ESZ7aLuMjA9PDLHKnuvvI=
+			PlUJ/ENgQO2bVGTnjy/jgPPwbkz9myKy4eqtw4nheVg=
 			</data>
 		</dict>
 		<key>Modules/AIBudsLiveStream.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
