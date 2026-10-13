@@ -1,8 +1,8 @@
 # RELEASES
 
-## V1.0.1-beta.12 (Build 20261009001)
+## V1.0.1-beta.13 (Build 20261013001)
 
-**Release date:** 2026-10-09
+**Release date:** 2026-10-13
 
 ### Features
 
@@ -33,6 +33,7 @@
 - Added RTMP publishing from JPEG frames and PCM audio through the Live Stream SDK and the iOS Flutter plugin bridge.
 - Fixed an issue where an AI response containing no playable voice data could leave the playback state active and prevent subsequent user speech from starting a new question.
 - Added support for mapping StarBurst music pause intents to stop-playback intents.
+- Added support for mapping StarBurst Spanish recording intents to start-audio-recording intents and video recording intents to start-video-recording intents.
 - Improved SDK stability.
 
 ## V1.0.0 (Build 20260824001)
