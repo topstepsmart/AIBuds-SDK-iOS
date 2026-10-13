@@ -2,7 +2,7 @@
 
 ## V1.0.1-beta.13 build20261013001 (2026-10-13)
 
-- Added support for mapping StarBurst Spanish recording intents to start-audio-recording intents and video recording intents to start-video-recording intents.
+- Added support for mapping specific StarBurst audio-recording and video-recording intents in Spanish-language contexts to the existing intent command set.
 
 ## V1.0.1-beta.12 build20261009001 (2026-10-09)
 
