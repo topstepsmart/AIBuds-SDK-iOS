@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/AIBudsCrashReporter-Swift.h</key>
 		<data>
-		G75QR/gDqSGxof+PFgshrSkJ9Y4=
+		vZEWiYu/KdNVT2tutH5D3W499qk=
 		</data>
 		<key>Headers/AIBudsCrashReporter.h</key>
 		<data>
@@ -14,39 +14,39 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		soNrCmnFwbsjoFsKlwuv+OysDHk=
+		Q0pwLjlLP5bmqYbnACEjZcz8vVU=
 		</data>
 		<key>Modules/AIBudsCrashReporter.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		LJnDjOGCoSoukm09DkIyDrsVWWo=
+		rRo9LwUGlEyHECCMJbOHGRVCvlg=
 		</data>
 		<key>Modules/AIBudsCrashReporter.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		ogC26/3sf77Zy2ZgyAifZU2Xgw0=
+		qPS4UqeS8NLNrKFmVWdlH2czYuY=
 		</data>
 		<key>Modules/AIBudsCrashReporter.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		87DHND4i9/Mf78AxPzqJdgzomkg=
+		ci97iBzbdeizOZl2CDqDts5RucA=
 		</data>
 		<key>Modules/AIBudsCrashReporter.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		ogC26/3sf77Zy2ZgyAifZU2Xgw0=
+		qPS4UqeS8NLNrKFmVWdlH2czYuY=
 		</data>
 		<key>Modules/AIBudsCrashReporter.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		LJnDjOGCoSoukm09DkIyDrsVWWo=
+		rRo9LwUGlEyHECCMJbOHGRVCvlg=
 		</data>
 		<key>Modules/AIBudsCrashReporter.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		iLePYfWVrJ13HwHqsEb8e2w/46Y=
+		d0S7sSiI6SeVHRlx8NsgBzsW0+E=
 		</data>
 		<key>Modules/AIBudsCrashReporter.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		VZeHuujQC3ORd9SdsyjnKEmF6l4=
+		aSWrc/hnZbiSxYTybQFmCv5IDyE=
 		</data>
 		<key>Modules/AIBudsCrashReporter.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		iLePYfWVrJ13HwHqsEb8e2w/46Y=
+		d0S7sSiI6SeVHRlx8NsgBzsW0+E=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -59,7 +59,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ftoRPvdhC8XepsorjMB6UTM8UbKdmbKnDLQjunaPNB4=
+			U5Fd6nTVxRLVWTDbuITnQr5pSVTt9SGleDp37rDY2fY=
 			</data>
 		</dict>
 		<key>Headers/AIBudsCrashReporter.h</key>
@@ -73,56 +73,56 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			06WNkPqOEFFSJtr1rGazc+6lAUy2oxIhGDeABZp15vc=
+			ALqihK+6TCoA93G0IoXKNGj7jQTTuZmCY4kmWuclaX0=
 			</data>
 		</dict>
 		<key>Modules/AIBudsCrashReporter.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+U3dCguUGapyAUBH2LN6NnvL6NScZpQ4N4fOy1+O1pI=
+			505qTvJIEUBimLnJh48XqCU0dBtrfuKCqcMmJHHftUc=
 			</data>
 		</dict>
 		<key>Modules/AIBudsCrashReporter.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			UG0Rr7Rhu8ZmuDOAfSMX7Z+OgW6ZNXQ0Z1oPATUv8kg=
+			jEwZxKt/S0mboUEhwC21NBkjjyiJGTejZG+4G3GH7yM=
 			</data>
 		</dict>
 		<key>Modules/AIBudsCrashReporter.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+U3dCguUGapyAUBH2LN6NnvL6NScZpQ4N4fOy1+O1pI=
+			505qTvJIEUBimLnJh48XqCU0dBtrfuKCqcMmJHHftUc=
 			</data>
 		</dict>
 		<key>Modules/AIBudsCrashReporter.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			06WNkPqOEFFSJtr1rGazc+6lAUy2oxIhGDeABZp15vc=
+			ALqihK+6TCoA93G0IoXKNGj7jQTTuZmCY4kmWuclaX0=
 			</data>
 		</dict>
 		<key>Modules/AIBudsCrashReporter.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			hINwI3guiwLVFCuqlAPylfAbOT+QWGWlBpc8oc5rv/I=
+			i8VMHPQtDGEURoEveIi6Cs8qsueOTybrcm7GryxFKyA=
 			</data>
 		</dict>
 		<key>Modules/AIBudsCrashReporter.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+6RMMBiLS97ZzITv7clVZzy1obyvVueg//oo9mPC3u8=
+			O9ovXjzLu2MYJU+WUEce5CSwqKirxWSTSfxAU/hDDoc=
 			</data>
 		</dict>
 		<key>Modules/AIBudsCrashReporter.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			hINwI3guiwLVFCuqlAPylfAbOT+QWGWlBpc8oc5rv/I=
+			i8VMHPQtDGEURoEveIi6Cs8qsueOTybrcm7GryxFKyA=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

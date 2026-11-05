@@ -15375,6 +15375,150 @@
           },
           {
             "kind": "Var",
+            "name": "watchfun",
+            "printedName": "watchfun",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AISolutionCapabilities",
+                "printedName": "AIBudsFoundation.AISolutionCapabilities",
+                "usr": "s:16AIBudsFoundation22AISolutionCapabilitiesV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16AIBudsFoundation22AISolutionCapabilitiesV8watchfunACvpZ",
+            "mangledName": "$s16AIBudsFoundation22AISolutionCapabilitiesV8watchfunACvpZ",
+            "moduleName": "AIBudsFoundation",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AISolutionCapabilities",
+                    "printedName": "AIBudsFoundation.AISolutionCapabilities",
+                    "usr": "s:16AIBudsFoundation22AISolutionCapabilitiesV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16AIBudsFoundation22AISolutionCapabilitiesV8watchfunACvgZ",
+                "mangledName": "$s16AIBudsFoundation22AISolutionCapabilitiesV8watchfunACvgZ",
+                "moduleName": "AIBudsFoundation",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "xksmart",
+            "printedName": "xksmart",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AISolutionCapabilities",
+                "printedName": "AIBudsFoundation.AISolutionCapabilities",
+                "usr": "s:16AIBudsFoundation22AISolutionCapabilitiesV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16AIBudsFoundation22AISolutionCapabilitiesV7xksmartACvpZ",
+            "mangledName": "$s16AIBudsFoundation22AISolutionCapabilitiesV7xksmartACvpZ",
+            "moduleName": "AIBudsFoundation",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AISolutionCapabilities",
+                    "printedName": "AIBudsFoundation.AISolutionCapabilities",
+                    "usr": "s:16AIBudsFoundation22AISolutionCapabilitiesV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16AIBudsFoundation22AISolutionCapabilitiesV7xksmartACvgZ",
+                "mangledName": "$s16AIBudsFoundation22AISolutionCapabilitiesV7xksmartACvgZ",
+                "moduleName": "AIBudsFoundation",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "topstep",
+            "printedName": "topstep",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AISolutionCapabilities",
+                "printedName": "AIBudsFoundation.AISolutionCapabilities",
+                "usr": "s:16AIBudsFoundation22AISolutionCapabilitiesV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16AIBudsFoundation22AISolutionCapabilitiesV7topstepACvpZ",
+            "mangledName": "$s16AIBudsFoundation22AISolutionCapabilitiesV7topstepACvpZ",
+            "moduleName": "AIBudsFoundation",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AISolutionCapabilities",
+                    "printedName": "AIBudsFoundation.AISolutionCapabilities",
+                    "usr": "s:16AIBudsFoundation22AISolutionCapabilitiesV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16AIBudsFoundation22AISolutionCapabilitiesV7topstepACvgZ",
+                "mangledName": "$s16AIBudsFoundation22AISolutionCapabilitiesV7topstepACvgZ",
+                "moduleName": "AIBudsFoundation",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "all",
             "printedName": "all",
             "children": [
@@ -75613,30 +75757,72 @@
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/Defines(定义)\/AISolution(AI方案)\/AISolutionCapabilities.swift",
       "kind": "IntegerLiteral",
-      "offset": 591,
+      "offset": 606,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/Defines(定义)\/AISolution(AI方案)\/AISolutionCapabilities.swift",
       "kind": "IntegerLiteral",
-      "offset": 596,
+      "offset": 611,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/Defines(定义)\/AISolution(AI方案)\/AISolutionCapabilities.swift",
       "kind": "IntegerLiteral",
-      "offset": 709,
+      "offset": 736,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/Defines(定义)\/AISolution(AI方案)\/AISolutionCapabilities.swift",
       "kind": "IntegerLiteral",
-      "offset": 714,
+      "offset": 741,
       "length": 1,
       "value": "1"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/Defines(定义)\/AISolution(AI方案)\/AISolutionCapabilities.swift",
+      "kind": "IntegerLiteral",
+      "offset": 862,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/Defines(定义)\/AISolution(AI方案)\/AISolutionCapabilities.swift",
+      "kind": "IntegerLiteral",
+      "offset": 867,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/Defines(定义)\/AISolution(AI方案)\/AISolutionCapabilities.swift",
+      "kind": "IntegerLiteral",
+      "offset": 984,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/Defines(定义)\/AISolution(AI方案)\/AISolutionCapabilities.swift",
+      "kind": "IntegerLiteral",
+      "offset": 989,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/Defines(定义)\/AISolution(AI方案)\/AISolutionCapabilities.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1113,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/Defines(定义)\/AISolution(AI方案)\/AISolutionCapabilities.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1118,
+      "length": 1,
+      "value": "5"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/Defines(定义)\/ANCMode(主动降噪模式)\/ANCMode.swift",
@@ -79745,21 +79931,21 @@
       "kind": "StringLiteral",
       "offset": 257,
       "length": 15,
-      "value": "\"1.0.1-beta.13\""
+      "value": "\"1.0.1-beta.14\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/SDKBuildInfo\/SDK_Build_Info.swift",
       "kind": "StringLiteral",
       "offset": 388,
       "length": 13,
-      "value": "\"20261013001\""
+      "value": "\"20261105001\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/SDKBuildInfo\/SDK_Build_Info.swift",
       "kind": "StringLiteral",
       "offset": 503,
       "length": 12,
-      "value": "\"2026-10-13\""
+      "value": "\"2026-11-05\""
     }
   ]
 }

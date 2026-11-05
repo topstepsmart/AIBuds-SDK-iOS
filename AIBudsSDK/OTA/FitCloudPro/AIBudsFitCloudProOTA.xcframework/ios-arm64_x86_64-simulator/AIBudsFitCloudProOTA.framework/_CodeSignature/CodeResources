@@ -6,43 +6,43 @@
 	<dict>
 		<key>Headers/AIBudsFitCloudProOTA-Swift.h</key>
 		<data>
-		hcx3hHcvwSYPoWy08jU6G3B5xgo=
+		6DwVp8xzQo8yeSyYeFlGfFW0JtI=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		TpUl+7Xzb1MXcyuNJNMWtCO/+Cw=
+		aDY0DReBRuzih8doEsBFLrrMq7I=
 		</data>
 		<key>Modules/AIBudsFitCloudProOTA.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		bsAyfXRRK6GGGiFuWeetNQUMI9U=
+		+bhe09r/z71zT6vFQTTKqPhrNR0=
 		</data>
 		<key>Modules/AIBudsFitCloudProOTA.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		9SxFwtrG4am7WKXzS2pnBTQD4Bs=
+		zcSL33pintTIN4sj2VIoSmyaB0M=
 		</data>
 		<key>Modules/AIBudsFitCloudProOTA.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		jH7f4AqPblW6JQg5062FQAcGvS8=
+		i4vPD9A9+9SKI4/TML0hw7U7teU=
 		</data>
 		<key>Modules/AIBudsFitCloudProOTA.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		9SxFwtrG4am7WKXzS2pnBTQD4Bs=
+		zcSL33pintTIN4sj2VIoSmyaB0M=
 		</data>
 		<key>Modules/AIBudsFitCloudProOTA.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		bsAyfXRRK6GGGiFuWeetNQUMI9U=
+		+bhe09r/z71zT6vFQTTKqPhrNR0=
 		</data>
 		<key>Modules/AIBudsFitCloudProOTA.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		+VtDHMD5JvJDRG8jIggQNRMo1Dk=
+		52Q67918eaMzSFsbY2xPG17l0N4=
 		</data>
 		<key>Modules/AIBudsFitCloudProOTA.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		YwRXz5sajiIFXsTZZ54ePI3J8Nw=
+		P3arcfAa3yBCcOg6b/ojBv7HON4=
 		</data>
 		<key>Modules/AIBudsFitCloudProOTA.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		+VtDHMD5JvJDRG8jIggQNRMo1Dk=
+		52Q67918eaMzSFsbY2xPG17l0N4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -55,63 +55,63 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			QF1Vyc9qSggQqeJhiNlhMUtE7C+BdkIvUccK6hUmvAg=
+			jtJmJiiscmFid3svE6OrEElMskuvY+OOwle+GtPwWTc=
 			</data>
 		</dict>
 		<key>Modules/AIBudsFitCloudProOTA.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			rrEy7EpJxiNk91rIjR8L8aMfXynpJiPod/n/QWgVmOM=
+			v4hAd0VM6K+4szcFCapbyd51zs5+llmJdR6KxDuxElU=
 			</data>
 		</dict>
 		<key>Modules/AIBudsFitCloudProOTA.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Q32F3pYQmoigvDFMN0N5pRutZXfZd+lornw9yGOpyUU=
+			TTxbbYI0zQDJhZa7RKOrJnhtTgIm6Ny9DX2eEHa6bDo=
 			</data>
 		</dict>
 		<key>Modules/AIBudsFitCloudProOTA.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ACH0ykYc9NugEP/YaonByIUk+2Sn9EVS2AFrxDV5Uh8=
+			a9F92htRxmu00KuAS7/eMBYeNiYSIntN9ezbQhs/Wzk=
 			</data>
 		</dict>
 		<key>Modules/AIBudsFitCloudProOTA.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Q32F3pYQmoigvDFMN0N5pRutZXfZd+lornw9yGOpyUU=
+			TTxbbYI0zQDJhZa7RKOrJnhtTgIm6Ny9DX2eEHa6bDo=
 			</data>
 		</dict>
 		<key>Modules/AIBudsFitCloudProOTA.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			rrEy7EpJxiNk91rIjR8L8aMfXynpJiPod/n/QWgVmOM=
+			v4hAd0VM6K+4szcFCapbyd51zs5+llmJdR6KxDuxElU=
 			</data>
 		</dict>
 		<key>Modules/AIBudsFitCloudProOTA.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			jp50iDWpABPzu0dpJun0Vt12Ni06IWkloQ04Gk2lKsg=
+			dgSqKGZwGBDg6VVdVYPkZX/A05WzEHR26XeszTBn6Bk=
 			</data>
 		</dict>
 		<key>Modules/AIBudsFitCloudProOTA.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			U9SqvANoHxdO+wPKclXMxt36lTsDxflM7Jkj3t7sHas=
+			4Ki97viOArt9HikkwUHFqziAVtw/UdwB4cbpYwsa0yo=
 			</data>
 		</dict>
 		<key>Modules/AIBudsFitCloudProOTA.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			jp50iDWpABPzu0dpJun0Vt12Ni06IWkloQ04Gk2lKsg=
+			dgSqKGZwGBDg6VVdVYPkZX/A05WzEHR26XeszTBn6Bk=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

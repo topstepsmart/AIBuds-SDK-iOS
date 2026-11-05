@@ -6,43 +6,43 @@
 	<dict>
 		<key>Headers/AIBudsLiveStreamFlutterPlugin-Swift.h</key>
 		<data>
-		qiavEhniD+JqpeUZS4pS5minqio=
+		WoUcHgXKY25hWwnCW2d9nQIfGUU=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		1fydCFGe4DhGmA+ZlRCmhU6H8co=
+		EfNqqUbPPYApkvL+8ENpZ/08WJA=
 		</data>
 		<key>Modules/AIBudsLiveStreamFlutterPlugin.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		D/vYYVjie3xRN078lI19suXZGDg=
+		oWMW59chqNBNlvPyXx70CVsRja4=
 		</data>
 		<key>Modules/AIBudsLiveStreamFlutterPlugin.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		/ur+7Qblw68TFexSyoQaiyW5E6I=
+		mO1mjVVLsuiUHGgL/rILPT6CS7Y=
 		</data>
 		<key>Modules/AIBudsLiveStreamFlutterPlugin.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		O7d0XO1Udh3wMzFH7Qd8H5IEGoo=
+		FA83oFqYufr8PUhgsLaninUVUf4=
 		</data>
 		<key>Modules/AIBudsLiveStreamFlutterPlugin.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		/ur+7Qblw68TFexSyoQaiyW5E6I=
+		mO1mjVVLsuiUHGgL/rILPT6CS7Y=
 		</data>
 		<key>Modules/AIBudsLiveStreamFlutterPlugin.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		D/vYYVjie3xRN078lI19suXZGDg=
+		oWMW59chqNBNlvPyXx70CVsRja4=
 		</data>
 		<key>Modules/AIBudsLiveStreamFlutterPlugin.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		sTKhG0smXerN6BOR0QE8U1nw+g8=
+		9rUdu99zHafdrAJdaoUK8NDAX60=
 		</data>
 		<key>Modules/AIBudsLiveStreamFlutterPlugin.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		vdhq1mEY7xzZlHaeG82Rz9f17AQ=
+		nHeBs5vUctBPwFW/vf6GGJmneGw=
 		</data>
 		<key>Modules/AIBudsLiveStreamFlutterPlugin.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		sTKhG0smXerN6BOR0QE8U1nw+g8=
+		9rUdu99zHafdrAJdaoUK8NDAX60=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -55,63 +55,63 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			eO7Q9G8ySviS7YrjDk/kZ1rmy9AaImP+8xcLDXijEnM=
+			iKHrQOCm6Jrcwyd6urI+yU6nR9wYwt/7hEFEoQr+KSs=
 			</data>
 		</dict>
 		<key>Modules/AIBudsLiveStreamFlutterPlugin.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Re0NTvyy4CY4Wct0XE8B2Brma51haAQcdmtOF6VyeMg=
+			ohPkfA+62u3pSLSMP/rTqojlx0DRdU9Q5QBAcI/gcNU=
 			</data>
 		</dict>
 		<key>Modules/AIBudsLiveStreamFlutterPlugin.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3vhIlizzvV2i3I9/mRoKADFlmjZRTl8bFDt0creLYoI=
+			i9jAWmlR3LlimL7vQep78aT/cPMJLxsROJdCopgaOQ4=
 			</data>
 		</dict>
 		<key>Modules/AIBudsLiveStreamFlutterPlugin.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			QMvfXpQ8U08NddDPAw42fWxDRYAgWx7pZoHlujdMA3Q=
+			IZuhC50Cd6Ms3xH9h255STDCIWtHhSfM2EsZQFFa3IA=
 			</data>
 		</dict>
 		<key>Modules/AIBudsLiveStreamFlutterPlugin.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3vhIlizzvV2i3I9/mRoKADFlmjZRTl8bFDt0creLYoI=
+			i9jAWmlR3LlimL7vQep78aT/cPMJLxsROJdCopgaOQ4=
 			</data>
 		</dict>
 		<key>Modules/AIBudsLiveStreamFlutterPlugin.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Re0NTvyy4CY4Wct0XE8B2Brma51haAQcdmtOF6VyeMg=
+			ohPkfA+62u3pSLSMP/rTqojlx0DRdU9Q5QBAcI/gcNU=
 			</data>
 		</dict>
 		<key>Modules/AIBudsLiveStreamFlutterPlugin.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			PGtA/UwKOMwUvkoGKMmHOmHBOyCiYB1JlqlE9u2kS2g=
+			OVGZ9ZNCGTki6q746a4J2hIQ1cJ82FIgU2YQDH2X3Y4=
 			</data>
 		</dict>
 		<key>Modules/AIBudsLiveStreamFlutterPlugin.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XDznf4fQmO35osupiBMD4nFUDwkqO5otVJG0tCIot6A=
+			GsWMY1lWqC5/UtOhZJwozuzr5cJxKzGlgxvNWVpbk+s=
 			</data>
 		</dict>
 		<key>Modules/AIBudsLiveStreamFlutterPlugin.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			PGtA/UwKOMwUvkoGKMmHOmHBOyCiYB1JlqlE9u2kS2g=
+			OVGZ9ZNCGTki6q746a4J2hIQ1cJ82FIgU2YQDH2X3Y4=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

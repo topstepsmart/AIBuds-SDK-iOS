@@ -1,8 +1,8 @@
 # RELEASES
 
-## V1.0.1-beta.13 (Build 20261013001)
+## V1.0.1-beta.14 (Build 20261105001)
 
-**Release date:** 2026-10-13
+**Release date:** 2026-11-05
 
 ### Features
 
@@ -34,6 +34,8 @@
 - Fixed an issue where an AI response containing no playable voice data could leave the playback state active and prevent subsequent user speech from starting a new question.
 - Added support for mapping StarBurst music pause intents to stop-playback intents.
 - Added support for mapping specific StarBurst audio-recording and video-recording intents in Spanish-language contexts to the existing intent command set.
+- Added device AI solution capability flags for WatchFun (WoQi), XKSmart (YanJie), and TopStep, including Objective-C definitions and diagnostic descriptions.
+- Fixed the casing of the StarBurst `music.pause` intent alias so pause commands map correctly to stop playback.
 - Improved SDK stability.
 
 ## V1.0.0 (Build 20260824001)
