@@ -1289,6 +1289,7 @@ SWIFT_PROTOCOL_NAMED("DeviceCommonAPI")
 @class NSDate;
 @class UIImage;
 SWIFT_ENUM_FWD_DECL(NSInteger, AIBudsDeviceProduct)
+SWIFT_ENUM_FWD_DECL(NSInteger, AIBudsDeviceShape)
 SWIFT_ENUM_FWD_DECL(NSInteger, AIBudsDeviceState)
 @protocol AIBudsDeviceDelegate;
 @class AIBudsConnectParams;
@@ -1326,6 +1327,8 @@ SWIFT_PROTOCOL_NAMED("DeviceConvertible")
 @property (nonatomic, readonly, strong) id <AIBudsDeviceBeaconConvertible> _Nullable beaconData;
 /// Device product type
 @property (nonatomic, readonly) enum AIBudsDeviceProduct product;
+/// Explicitly advertised shape; unknown for legacy or unspecified devices.
+@property (nonatomic, readonly) enum AIBudsDeviceShape shape;
 /// The bluetooth name of the AI device.
 @property (nonatomic, readonly, copy) NSString * _Nullable bluetoothName;
 /// The MAC address of the AI device.
@@ -2793,6 +2796,8 @@ SWIFT_PROTOCOL_NAMED("FoundDeviceConvertible")
 @property (nonatomic, strong) NSNumber * _Nullable RSSI;
 /// Device type
 @property (nonatomic, readonly) enum AIBudsDeviceProduct product;
+/// Explicitly advertised shape; unknown for legacy or unspecified devices.
+@property (nonatomic, readonly) enum AIBudsDeviceShape shape;
 /// The MAC address of the AI device.
 @property (nonatomic, readonly, copy) NSString * _Nullable macAddress;
 /// Bluetooth data communication protocol type
@@ -5360,6 +5365,7 @@ SWIFT_PROTOCOL_NAMED("DeviceCommonAPI")
 @class NSDate;
 @class UIImage;
 SWIFT_ENUM_FWD_DECL(NSInteger, AIBudsDeviceProduct)
+SWIFT_ENUM_FWD_DECL(NSInteger, AIBudsDeviceShape)
 SWIFT_ENUM_FWD_DECL(NSInteger, AIBudsDeviceState)
 @protocol AIBudsDeviceDelegate;
 @class AIBudsConnectParams;
@@ -5397,6 +5403,8 @@ SWIFT_PROTOCOL_NAMED("DeviceConvertible")
 @property (nonatomic, readonly, strong) id <AIBudsDeviceBeaconConvertible> _Nullable beaconData;
 /// Device product type
 @property (nonatomic, readonly) enum AIBudsDeviceProduct product;
+/// Explicitly advertised shape; unknown for legacy or unspecified devices.
+@property (nonatomic, readonly) enum AIBudsDeviceShape shape;
 /// The bluetooth name of the AI device.
 @property (nonatomic, readonly, copy) NSString * _Nullable bluetoothName;
 /// The MAC address of the AI device.
@@ -6864,6 +6872,8 @@ SWIFT_PROTOCOL_NAMED("FoundDeviceConvertible")
 @property (nonatomic, strong) NSNumber * _Nullable RSSI;
 /// Device type
 @property (nonatomic, readonly) enum AIBudsDeviceProduct product;
+/// Explicitly advertised shape; unknown for legacy or unspecified devices.
+@property (nonatomic, readonly) enum AIBudsDeviceShape shape;
 /// The MAC address of the AI device.
 @property (nonatomic, readonly, copy) NSString * _Nullable macAddress;
 /// Bluetooth data communication protocol type

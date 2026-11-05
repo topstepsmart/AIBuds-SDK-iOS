@@ -416,6 +416,7 @@ extension Foundation::NSNotification.Foundation::Name {
   @objc var advertisementRawData: Foundation::Data? { get }
   @objc var beaconData: (any AIBuds::DeviceBeaconConvertible)? { get }
   @objc var product: AIBudsFoundation::DeviceProduct { get }
+  @objc var shape: AIBudsFoundation::DeviceShape { get }
   @objc var bluetoothName: Swift::String? { get }
   @objc var macAddress: Swift::String? { get }
   @objc var deviceModel: Swift::String? { get }
@@ -449,6 +450,7 @@ extension Foundation::NSNotification.Foundation::Name {
   @objc var advertisementData: [Swift::String : Any]? { get set }
   @objc var RSSI: Foundation::NSNumber? { get set }
   @objc var product: AIBudsFoundation::DeviceProduct { get }
+  @objc var shape: AIBudsFoundation::DeviceShape { get }
   @objc var macAddress: Swift::String? { get }
   @objc var protocolKind: AIBudsFoundation::BleProtocolKind { get }
   @objc static func create(central: CoreBluetooth::CBCentralManager, peripheral: CoreBluetooth::CBPeripheral, advertisementData: [Swift::String : Any]?, rssi: Foundation::NSNumber?) -> (any AIBuds::FoundDeviceConvertible)?

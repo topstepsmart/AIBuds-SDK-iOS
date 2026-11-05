@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## V1.0.1-beta.15 build20261106001 (2026-11-06)
+
+- Added support for recognizing more ABMate devices.
+
 ## V1.0.1-beta.14 build20261105001 (2026-11-05)
 
 - ABMate devices now support three additional AI solutions: WatchFun (WoQi), XKSmart (YanJie), and TopStep.

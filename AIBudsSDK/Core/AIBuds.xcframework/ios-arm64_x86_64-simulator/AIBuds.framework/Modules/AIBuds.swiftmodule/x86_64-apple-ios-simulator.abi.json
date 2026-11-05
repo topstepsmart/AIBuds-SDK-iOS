@@ -15530,6 +15530,55 @@
           },
           {
             "kind": "Var",
+            "name": "shape",
+            "printedName": "shape",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DeviceShape",
+                "printedName": "AIBudsFoundation.DeviceShape",
+                "usr": "c:@M@AIBudsFoundation@E@AIBudsDeviceShape"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBuds@objc(pl)AIBudsDeviceConvertible(py)shape",
+            "mangledName": "$s6AIBuds17DeviceConvertibleP5shape0A10Foundation0B5ShapeOvp",
+            "moduleName": "AIBuds",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DeviceShape",
+                    "printedName": "AIBudsFoundation.DeviceShape",
+                    "usr": "c:@M@AIBudsFoundation@E@AIBudsDeviceShape"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBuds@objc(pl)AIBudsDeviceConvertible(im)shape",
+                "mangledName": "$s6AIBuds17DeviceConvertibleP5shape0A10Foundation0B5ShapeOvg",
+                "moduleName": "AIBuds",
+                "genericSig": "<τ_0_0 where τ_0_0 : AIBuds.DeviceConvertible>",
+                "sugared_genericSig": "<Self where Self : AIBuds.DeviceConvertible>",
+                "protocolReq": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "bluetoothName",
             "printedName": "bluetoothName",
             "children": [
@@ -17535,6 +17584,55 @@
                 "declKind": "Accessor",
                 "usr": "c:@M@AIBuds@objc(pl)AIBudsFoundDeviceConvertible(im)product",
                 "mangledName": "$s6AIBuds22FoundDeviceConvertibleP7product0A10Foundation0C7ProductOvg",
+                "moduleName": "AIBuds",
+                "genericSig": "<τ_0_0 where τ_0_0 : AIBuds.FoundDeviceConvertible>",
+                "sugared_genericSig": "<Self where Self : AIBuds.FoundDeviceConvertible>",
+                "protocolReq": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "shape",
+            "printedName": "shape",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DeviceShape",
+                "printedName": "AIBudsFoundation.DeviceShape",
+                "usr": "c:@M@AIBudsFoundation@E@AIBudsDeviceShape"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBuds@objc(pl)AIBudsFoundDeviceConvertible(py)shape",
+            "mangledName": "$s6AIBuds22FoundDeviceConvertibleP5shape0A10Foundation0C5ShapeOvp",
+            "moduleName": "AIBuds",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DeviceShape",
+                    "printedName": "AIBudsFoundation.DeviceShape",
+                    "usr": "c:@M@AIBudsFoundation@E@AIBudsDeviceShape"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBuds@objc(pl)AIBudsFoundDeviceConvertible(im)shape",
+                "mangledName": "$s6AIBuds22FoundDeviceConvertibleP5shape0A10Foundation0C5ShapeOvg",
                 "moduleName": "AIBuds",
                 "genericSig": "<τ_0_0 where τ_0_0 : AIBuds.FoundDeviceConvertible>",
                 "sugared_genericSig": "<Self where Self : AIBuds.FoundDeviceConvertible>",
@@ -37883,21 +37981,21 @@
       "kind": "StringLiteral",
       "offset": 257,
       "length": 15,
-      "value": "\"1.0.1-beta.14\""
+      "value": "\"1.0.1-beta.15\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/SDKBuildInfo\/SDK_Build_Info.swift",
       "kind": "StringLiteral",
       "offset": 388,
       "length": 13,
-      "value": "\"20261105001\""
+      "value": "\"20261106001\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/SDKBuildInfo\/SDK_Build_Info.swift",
       "kind": "StringLiteral",
       "offset": 503,
       "length": 12,
-      "value": "\"2026-11-05\""
+      "value": "\"2026-11-06\""
     }
   ]
 }

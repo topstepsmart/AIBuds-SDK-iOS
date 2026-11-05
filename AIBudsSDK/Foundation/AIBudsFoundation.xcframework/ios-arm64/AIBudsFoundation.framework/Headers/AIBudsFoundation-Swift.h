@@ -470,6 +470,8 @@ typedef SWIFT_ENUM_NAMED(NSInteger, AIBudsBatteryComponent, "BatteryComponent", 
   AIBudsBatteryComponentSideSpeaker = 5,
 /// Headphones
   AIBudsBatteryComponentHeadphones = 6,
+/// Main battery of a single-battery wearable device.
+  AIBudsBatteryComponentMainDevice = 7,
 };
 
 @class NSNumber;
@@ -878,6 +880,26 @@ typedef SWIFT_ENUM_NAMED(NSInteger, AIBudsDeviceProduct, "DeviceProduct", open) 
   AIBudsDeviceProductSpeaker = 5,
 /// headphones
   AIBudsDeviceProductHeadphones = 6,
+/// band without a screen
+  AIBudsDeviceProductScreenlessBand = 7,
+/// band with a screen
+  AIBudsDeviceProductScreenBand = 8,
+/// eye mask
+  AIBudsDeviceProductEyeMask = 9,
+/// earrings
+  AIBudsDeviceProductEarrings = 10,
+/// electronic badge
+  AIBudsDeviceProductElectronicBadge = 11,
+};
+
+/// Explicitly advertised device shape, independent of the product category.
+typedef SWIFT_ENUM_NAMED(NSInteger, AIBudsDeviceShape, "DeviceShape", open) {
+/// No shape information is available.
+  AIBudsDeviceShapeUnknown = -1,
+/// Round display or enclosure.
+  AIBudsDeviceShapeRound = 0,
+/// Square display or enclosure.
+  AIBudsDeviceShapeSquare = 1,
 };
 
 /// AIBuds device state enumeration
