@@ -2,7 +2,7 @@
 
 ## V1.0.1-beta.14 build20261105001 (2026-11-05)
 
-- Added device AI solution capability flags for WatchFun (WoQi), XKSmart (YanJie), and TopStep, including Objective-C definitions and diagnostic descriptions.
+- ABMate devices now support three additional AI solutions: WatchFun (WoQi), XKSmart (YanJie), and TopStep.
 - Fixed the casing of the StarBurst `music.pause` intent alias so pause commands map correctly to stop playback.
 
 ## V1.0.1-beta.13 build20261013001 (2026-10-13)

@@ -34,7 +34,7 @@
 - Fixed an issue where an AI response containing no playable voice data could leave the playback state active and prevent subsequent user speech from starting a new question.
 - Added support for mapping StarBurst music pause intents to stop-playback intents.
 - Added support for mapping specific StarBurst audio-recording and video-recording intents in Spanish-language contexts to the existing intent command set.
-- Added device AI solution capability flags for WatchFun (WoQi), XKSmart (YanJie), and TopStep, including Objective-C definitions and diagnostic descriptions.
+- ABMate devices now support three additional AI solutions: WatchFun (WoQi), XKSmart (YanJie), and TopStep.
 - Fixed the casing of the StarBurst `music.pause` intent alias so pause commands map correctly to stop playback.
 - Improved SDK stability.
 
