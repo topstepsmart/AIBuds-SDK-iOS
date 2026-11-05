@@ -36,7 +36,7 @@
 - Added support for mapping specific StarBurst audio-recording and video-recording intents in Spanish-language contexts to the existing intent command set.
 - ABMate devices now support three additional AI solutions: WatchFun (WoQi), XKSmart (YanJie), and TopStep.
 - Fixed the casing of the StarBurst `music.pause` intent alias so pause commands map correctly to stop playback.
-- Added support for recognizing more ABMate devices.
+- Added support for additional ABMate devices.
 - Improved SDK stability.
 
 ## V1.0.0 (Build 20260824001)

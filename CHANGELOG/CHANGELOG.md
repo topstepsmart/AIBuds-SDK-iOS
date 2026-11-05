@@ -2,7 +2,7 @@
 
 ## V1.0.1-beta.15 build20261106001 (2026-11-06)
 
-- Added support for recognizing more ABMate devices.
+- Added support for additional ABMate devices.
 
 ## V1.0.1-beta.14 build20261105001 (2026-11-05)
 
