@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## V1.0.1-beta.16 build20261114001 (2026-11-14)
+
+- Added support for setting AI recognition photo resolution, 12/24-hour time display, and video recording orientation on compatible ABMate devices.
+
 ## V1.0.1-beta.15 build20261106001 (2026-11-06)
 
 - Added support for additional ABMate devices.

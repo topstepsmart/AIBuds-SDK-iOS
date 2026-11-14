@@ -20018,6 +20018,13 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "AIBudsFoundation",
+        "printedName": "AIBudsFoundation",
+        "declKind": "Import",
+        "moduleName": "AIBuds"
+      },
+      {
         "kind": "TypeDecl",
         "name": "DeviceCameraAPI",
         "printedName": "DeviceCameraAPI",
@@ -20224,6 +20231,164 @@
             "sugared_genericSig": "<Self where Self : AIBuds.DeviceCameraAPI>",
             "protocolReq": true,
             "objc_name": "setMaxVideoRecordDuration:completion:",
+            "declAttributes": [
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setAIImageResolutionMode",
+            "printedName": "setAIImageResolutionMode(_:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AIImageResolutionMode",
+                "printedName": "AIBudsFoundation.AIImageResolutionMode",
+                "usr": "c:@M@AIBudsFoundation@E@AIBudsAIImageResolutionMode"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Swift.Bool, (any Swift.Error)?) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Bool, (any Swift.Error)?) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(Swift.Bool, (any Swift.Error)?)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Bool",
+                            "printedName": "Swift.Bool",
+                            "usr": "s:Sb"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "(any Swift.Error)?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Error",
+                                "printedName": "any Swift.Error",
+                                "usr": "s:s5ErrorP"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AIBuds@objc(pl)AIBudsDeviceCameraAPI(im)setAIImageResolutionMode:completion:",
+            "mangledName": "$s6AIBuds15DeviceCameraAPIP24setAIImageResolutionMode_10completiony0A10Foundation0fgH0O_ySb_s5Error_pSgtcSgtF",
+            "moduleName": "AIBuds",
+            "genericSig": "<τ_0_0 where τ_0_0 : AIBuds.DeviceCameraAPI>",
+            "sugared_genericSig": "<Self where Self : AIBuds.DeviceCameraAPI>",
+            "protocolReq": true,
+            "objc_name": "setAIImageResolutionMode:completion:",
+            "declAttributes": [
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setVideoRecordDirection",
+            "printedName": "setVideoRecordDirection(_:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "VideoRecordDirection",
+                "printedName": "AIBudsFoundation.VideoRecordDirection",
+                "usr": "c:@M@AIBudsFoundation@E@AIBudsVideoRecordDirection"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Swift.Bool, (any Swift.Error)?) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Bool, (any Swift.Error)?) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(Swift.Bool, (any Swift.Error)?)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Bool",
+                            "printedName": "Swift.Bool",
+                            "usr": "s:Sb"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "(any Swift.Error)?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Error",
+                                "printedName": "any Swift.Error",
+                                "usr": "s:s5ErrorP"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AIBuds@objc(pl)AIBudsDeviceCameraAPI(im)setVideoRecordDirection:completion:",
+            "mangledName": "$s6AIBuds15DeviceCameraAPIP23setVideoRecordDirection_10completiony0A10Foundation0fgH0O_ySb_s5Error_pSgtcSgtF",
+            "moduleName": "AIBuds",
+            "genericSig": "<τ_0_0 where τ_0_0 : AIBuds.DeviceCameraAPI>",
+            "sugared_genericSig": "<Self where Self : AIBuds.DeviceCameraAPI>",
+            "protocolReq": true,
+            "objc_name": "setVideoRecordDirection:completion:",
             "declAttributes": [
               "ObjC",
               "RawDocComment"
@@ -23466,6 +23631,85 @@
             "sugared_genericSig": "<Self where Self : AIBuds.DeviceInfoAPI>",
             "protocolReq": true,
             "objc_name": "setDeviceTime:completion:",
+            "declAttributes": [
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setTimeFormat",
+            "printedName": "setTimeFormat(_:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TimeFormat",
+                "printedName": "AIBudsFoundation.TimeFormat",
+                "usr": "c:@M@AIBudsFoundation@E@AIBudsTimeFormat"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Swift.Bool, (any Swift.Error)?) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Bool, (any Swift.Error)?) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(Swift.Bool, (any Swift.Error)?)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Bool",
+                            "printedName": "Swift.Bool",
+                            "usr": "s:Sb"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "(any Swift.Error)?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Error",
+                                "printedName": "any Swift.Error",
+                                "usr": "s:s5ErrorP"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AIBuds@objc(pl)AIBudsDeviceInfoAPI(im)setTimeFormat:completion:",
+            "mangledName": "$s6AIBuds13DeviceInfoAPIP13setTimeFormat_10completiony0A10Foundation0fG0O_ySb_s5Error_pSgtcSgtF",
+            "moduleName": "AIBuds",
+            "genericSig": "<τ_0_0 where τ_0_0 : AIBuds.DeviceInfoAPI>",
+            "sugared_genericSig": "<Self where Self : AIBuds.DeviceInfoAPI>",
+            "protocolReq": true,
+            "objc_name": "setTimeFormat:completion:",
             "declAttributes": [
               "ObjC",
               "RawDocComment"
@@ -37981,21 +38225,21 @@
       "kind": "StringLiteral",
       "offset": 257,
       "length": 15,
-      "value": "\"1.0.1-beta.15\""
+      "value": "\"1.0.1-beta.16\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/SDKBuildInfo\/SDK_Build_Info.swift",
       "kind": "StringLiteral",
       "offset": 388,
       "length": 13,
-      "value": "\"20261106001\""
+      "value": "\"20261114001\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/SDKBuildInfo\/SDK_Build_Info.swift",
       "kind": "StringLiteral",
       "offset": 503,
       "length": 12,
-      "value": "\"2026-11-06\""
+      "value": "\"2026-11-14\""
     }
   ]
 }

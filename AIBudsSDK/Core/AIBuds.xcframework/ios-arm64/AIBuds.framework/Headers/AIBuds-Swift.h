@@ -1109,6 +1109,8 @@ SWIFT_PROTOCOL_NAMED("DeviceBeaconConvertible")
 @property (nonatomic, readonly, copy) NSData * _Nullable data;
 @end
 
+SWIFT_ENUM_FWD_DECL(NSInteger, AIBudsAIImageResolutionMode)
+SWIFT_ENUM_FWD_DECL(NSInteger, AIBudsVideoRecordDirection)
 SWIFT_ENUM_FWD_DECL(NSInteger, AIBudsCaptureMode)
 /// The protocol for device API that supports camera.
 SWIFT_PROTOCOL_NAMED("DeviceCameraAPI")
@@ -1131,6 +1133,20 @@ SWIFT_PROTOCOL_NAMED("DeviceCameraAPI")
 /// </ul>
 ///
 - (void)setMaxVideoRecordDuration:(NSInteger)duration completion:(AIBudsCompletionHandler _Nullable)completion;
+/// Sets the AI recognition photo resolution (0–5, from 160×100 to 640×400).
+/// \param mode The requested resolution mode.
+///
+/// \param completion Returns success after a valid device response, or an error on failure.
+///
+- (void)setAIImageResolutionMode:(enum AIBudsAIImageResolutionMode)mode completion:(AIBudsCompletionHandler _Nullable)completion;
+/// Sets the video recording direction.
+/// Devices without portrait support may return landscape even when portrait is requested.
+/// Success means a valid response was received; the cached direction follows the device response.
+/// \param direction The requested recording direction.
+///
+/// \param completion Returns success after a valid device response, or an error on failure.
+///
+- (void)setVideoRecordDirection:(enum AIBudsVideoRecordDirection)direction completion:(AIBudsCompletionHandler _Nullable)completion;
 /// Requests to take a photo with the specified capture mode.
 /// \param mode The capture mode for photo taking.
 ///
@@ -1415,7 +1431,6 @@ SWIFT_ENUM_FWD_DECL(NSInteger, AIBudsVolumeChangedReason)
 SWIFT_ENUM_FWD_DECL(NSInteger, AIBudsFileDeletingProgressEvent)
 SWIFT_ENUM_FWD_DECL(NSInteger, AIBudsMusicPlaySource)
 @class AIBudsColorLensInfoModel;
-SWIFT_ENUM_FWD_DECL(NSInteger, AIBudsAIImageResolutionMode)
 SWIFT_ENUM_FWD_DECL(NSInteger, AIBudsAIChatAudioChannel)
 SWIFT_ENUM_FWD_DECL(NSInteger, AIBudsTimeFormat)
 @class AIBudsVideoRecordDirectionInfoModel;
@@ -2043,6 +2058,12 @@ SWIFT_PROTOCOL_NAMED("DeviceInfoAPI")
 /// </ul>
 ///
 - (void)setDeviceTime:(NSDate * _Nonnull)date completion:(AIBudsStatusCodeCompletionHandler _Nullable)completion;
+/// Sets the device’s time display format, if a time display is available.
+/// \param format 24-hour or 12-hour time format.
+///
+/// \param completion Returns success after a valid device response, or an error on failure.
+///
+- (void)setTimeFormat:(enum AIBudsTimeFormat)format completion:(AIBudsCompletionHandler _Nullable)completion;
 /// Sets the device language.
 /// \param language The target language to set.
 ///

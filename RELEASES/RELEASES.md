@@ -1,8 +1,8 @@
 # RELEASES
 
-## V1.0.1-beta.15 (Build 20261106001)
+## V1.0.1-beta.16 (Build 20261114001)
 
-**Release date:** 2026-11-06
+**Release date:** 2026-11-14
 
 ### Features
 
@@ -37,6 +37,7 @@
 - ABMate devices now support three additional AI solutions: WatchFun (WoQi), XKSmart (YanJie), and TopStep.
 - Fixed the casing of the StarBurst `music.pause` intent alias so pause commands map correctly to stop playback.
 - Added support for additional ABMate devices.
+- Added support for setting AI recognition photo resolution, 12/24-hour time display, and video recording orientation on compatible ABMate devices.
 - Improved SDK stability.
 
 ## V1.0.0 (Build 20260824001)

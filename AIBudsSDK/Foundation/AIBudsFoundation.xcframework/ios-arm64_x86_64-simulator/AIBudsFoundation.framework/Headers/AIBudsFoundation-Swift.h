@@ -426,17 +426,17 @@ typedef SWIFT_ENUM_NAMED(NSInteger, AIBudsAIChatSessionEvent, "AIChatSessionEven
 
 /// AI image resolution mode
 typedef SWIFT_ENUM_NAMED(NSInteger, AIBudsAIImageResolutionMode, "AIImageResolutionMode", open) {
-/// Fastest speed
+/// Fastest speed (160×100)
   AIBudsAIImageResolutionModeUltraFast = 0,
-/// Speed priority
+/// Speed priority (200×125)
   AIBudsAIImageResolutionModeSpeed = 1,
-/// Balanced towards speed
+/// Balanced towards speed (240×150)
   AIBudsAIImageResolutionModeBalancedSpeed = 2,
-/// Balanced towards quality
+/// Balanced towards quality (320×200)
   AIBudsAIImageResolutionModeBalancedQuality = 3,
-/// Quality priority
+/// Quality priority (400×300)
   AIBudsAIImageResolutionModeQuality = 4,
-/// Highest quality
+/// Highest quality (640×400)
   AIBudsAIImageResolutionModeUltraQuality = 5,
 };
 
@@ -2332,17 +2332,17 @@ typedef SWIFT_ENUM_NAMED(NSInteger, AIBudsAIChatSessionEvent, "AIChatSessionEven
 
 /// AI image resolution mode
 typedef SWIFT_ENUM_NAMED(NSInteger, AIBudsAIImageResolutionMode, "AIImageResolutionMode", open) {
-/// Fastest speed
+/// Fastest speed (160×100)
   AIBudsAIImageResolutionModeUltraFast = 0,
-/// Speed priority
+/// Speed priority (200×125)
   AIBudsAIImageResolutionModeSpeed = 1,
-/// Balanced towards speed
+/// Balanced towards speed (240×150)
   AIBudsAIImageResolutionModeBalancedSpeed = 2,
-/// Balanced towards quality
+/// Balanced towards quality (320×200)
   AIBudsAIImageResolutionModeBalancedQuality = 3,
-/// Quality priority
+/// Quality priority (400×300)
   AIBudsAIImageResolutionModeQuality = 4,
-/// Highest quality
+/// Highest quality (640×400)
   AIBudsAIImageResolutionModeUltraQuality = 5,
 };
 

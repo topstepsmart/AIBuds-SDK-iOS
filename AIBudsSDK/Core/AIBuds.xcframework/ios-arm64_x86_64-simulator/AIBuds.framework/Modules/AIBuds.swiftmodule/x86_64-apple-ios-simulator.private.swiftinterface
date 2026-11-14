@@ -495,6 +495,8 @@ extension Foundation::NSNotification.Foundation::Name {
   @objc var cameraFirmwareVersion: Swift::String? { get }
   @objc var maxVideoRecordDuration: Foundation::NSNumber? { get }
   @objc(setMaxVideoRecordDuration:completion:) func setMaxVideoRecordDuration(_ duration: Swift::Int, completion: AIBuds::AIBudsCompletionHandler?)
+  @objc(setAIImageResolutionMode:completion:) func setAIImageResolutionMode(_ mode: AIBudsFoundation::AIImageResolutionMode, completion: AIBuds::AIBudsCompletionHandler?)
+  @objc(setVideoRecordDirection:completion:) func setVideoRecordDirection(_ direction: AIBudsFoundation::VideoRecordDirection, completion: AIBuds::AIBudsCompletionHandler?)
   @objc(requestPhotoTakingWithCaptureMode:completion:) func requestPhotoTaking(withCaptureMode mode: AIBudsFoundation::CaptureMode, completion: AIBuds::AIBudsStatusCodeCompletionHandler?)
   @objc(requestStopPhotoTakingWithCompletion:) func requestStopPhotoTaking(_ completion: AIBuds::AIBudsStatusCodeCompletionHandler?)
   @objc(requestVideoRecordingWithCompletion:) func requestVideoRecording(_ completion: AIBuds::AIBudsStatusCodeCompletionHandler?)
@@ -542,6 +544,7 @@ extension Foundation::NSNotification.Foundation::Name {
   @objc var coprocessorModel: AIBudsFoundation::CoprocessorModel { get }
   @objc(syncDeviceTimeWithCompletion:) func syncDeviceTime(_ completion: AIBuds::AIBudsStatusCodeCompletionHandler?)
   @objc(setDeviceTime:completion:) func setDeviceTime(to date: Foundation::Date, completion: AIBuds::AIBudsStatusCodeCompletionHandler?)
+  @objc(setTimeFormat:completion:) func setTimeFormat(_ format: AIBudsFoundation::TimeFormat, completion: AIBuds::AIBudsCompletionHandler?)
   @objc(setDeviceLanguage:completion:) func setDeviceLanguage(_ language: AIBudsFoundation::DeviceLanguage, completion: AIBuds::AIBudsCompletionHandler?)
   @objc(requestQueryStorageInfoWithCompletion:) func requestQueryStorageInfo(_ completion: AIBuds::AIBudsCompletionHandler?)
   @objc(requestQueryMediaCountInfoWithCompletion:) func requestQueryMediaCountInfo(_ completion: AIBuds::AIBudsCompletionHandler?)
