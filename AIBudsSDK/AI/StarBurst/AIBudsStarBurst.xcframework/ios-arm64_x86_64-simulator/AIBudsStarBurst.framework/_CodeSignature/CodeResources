@@ -10,11 +10,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Yk1GN2hSWrCqFSEvm5aoCc66/3g=
+		g3XF0oUMZGYHC3OR4LrmMH4a950=
 		</data>
 		<key>Modules/AIBudsStarBurst.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		1IaVeEv9f201cWR6yCXpQF6TROQ=
+		9c3adwYUbEo6+3Z/WAbD7EhegYA=
 		</data>
 		<key>Modules/AIBudsStarBurst.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>Modules/AIBudsStarBurst.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		1IaVeEv9f201cWR6yCXpQF6TROQ=
+		9c3adwYUbEo6+3Z/WAbD7EhegYA=
 		</data>
 		<key>Modules/AIBudsStarBurst.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -70,7 +70,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			a852BwzQGxZvS9X9BNXM9GgcSM1y/OYBCFt7FqIu1h0=
+			c4dBMzwr3Gllwp8yBH/KFekAqYoTjm8ymiN+nZsGUeI=
 			</data>
 		</dict>
 		<key>Modules/AIBudsStarBurst.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -98,7 +98,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			a852BwzQGxZvS9X9BNXM9GgcSM1y/OYBCFt7FqIu1h0=
+			c4dBMzwr3Gllwp8yBH/KFekAqYoTjm8ymiN+nZsGUeI=
 			</data>
 		</dict>
 		<key>Modules/AIBudsStarBurst.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>

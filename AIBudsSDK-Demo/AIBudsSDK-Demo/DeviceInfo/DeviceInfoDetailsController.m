@@ -1,3 +1,4 @@
+#import "../DeviceProductPresentation.h"
 //
 //  DeviceInfoDetailsController.m
 //  AIBudsSDK-Demo
@@ -150,10 +151,11 @@
 
         // 设备硬件配置
         AIBudsDeviceHardwareConfiguration *hardwareConfiguration = device.hardwareConfiguration;
-        NSString *hardwareDetails = [NSString stringWithFormat:@"%@: %@\n%@: %@\n%@: %@",
+        NSString *hardwareDetails = [NSString stringWithFormat:@"%@: %@\n%@: %@\n%@: %@\n%@: %@",
             NSLocalizedString(@"LocKey.OnDeviceVoiceAssistantGuidance", comment:@"On-device Voice Assistant Guidance"), [self localizedBoolean:hardwareConfiguration.requiresOnDeviceVoiceAssistantGuidance],
             NSLocalizedString(@"LocKey.TouchInput", comment:@"Touch Input"), [self localizedBoolean:hardwareConfiguration.hasTouchInput],
-            NSLocalizedString(@"LocKey.PhysicalButtonInput", comment:@"Physical Button Input"), [self localizedBoolean:hardwareConfiguration.hasPhysicalButtonInput]
+            NSLocalizedString(@"LocKey.PhysicalButtonInput", comment:@"Physical Button Input"), [self localizedBoolean:hardwareConfiguration.hasPhysicalButtonInput],
+            NSLocalizedString(@"LocKey.MediaOperationsWhileCharging", comment:@"Allow Recording and File Transfers While Charging"), [self localizedBoolean:hardwareConfiguration.allowsMediaOperationsWhileCharging]
         ];
         [self.deviceInfoItems addObject:[DeviceInfoItemModel modelWithName:NSLocalizedString(@"LocKey.HardwareConfiguration", comment:@"Hardware Configuration") detailsInfo:hardwareDetails isComplex:YES]];
 
@@ -317,24 +319,7 @@
 }
 
 - (NSString *)productTypeString {
-    switch (self.device.product) {
-        case AIBudsDeviceProductUnknown:
-            return NSLocalizedString(@"LocKey.Unknown", comment:@"Unknown");
-        case AIBudsDeviceProductWatch:
-            return NSLocalizedString(@"LocKey.SmartWatch", comment:@"Smart Watch");
-        case AIBudsDeviceProductRing:
-            return NSLocalizedString(@"LocKey.SmartRing", comment:@"Smart Ring");
-        case AIBudsDeviceProductGlasses:
-            return NSLocalizedString(@"LocKey.SmartGlasses", comment:@"Smart Glasses");
-        case AIBudsDeviceProductChargingCase:
-            return NSLocalizedString(@"LocKey.ChargingCase", comment:@"Charging Case");
-        case AIBudsDeviceProductEarbuds:
-            return NSLocalizedString(@"LocKey.Earbuds", comment:@"Earbuds");
-        case AIBudsDeviceProductSpeaker:
-            return NSLocalizedString(@"LocKey.SmartSpeaker", comment:@"Smart Speaker");
-        default:
-            return NSLocalizedString(@"LocKey.Unknown", comment:@"Unknown");
-    }
+    return DemoProductName(self.device.product);
 }
 
 - (NSString *)formatDate:(NSDate *)date {

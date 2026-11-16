@@ -5135,6 +5135,53 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "allowsMediaOperationsWhileCharging",
+            "printedName": "allowsMediaOperationsWhileCharging",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AIBudsFoundation@objc(cs)AIBudsDeviceHardwareConfiguration(py)allowsMediaOperationsWhileCharging",
+            "mangledName": "$s16AIBudsFoundation27DeviceHardwareConfigurationC34allowsMediaOperationsWhileChargingSbvp",
+            "moduleName": "AIBudsFoundation",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AIBudsFoundation@objc(cs)AIBudsDeviceHardwareConfiguration(im)allowsMediaOperationsWhileCharging",
+                "mangledName": "$s16AIBudsFoundation27DeviceHardwareConfigurationC34allowsMediaOperationsWhileChargingSbvg",
+                "moduleName": "AIBudsFoundation",
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(normalizedBitField:)",
@@ -74865,21 +74912,21 @@
       "kind": "StringLiteral",
       "offset": 257,
       "length": 15,
-      "value": "\"1.0.1-beta.16\""
+      "value": "\"1.0.1-beta.17\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/SDKBuildInfo\/SDK_Build_Info.swift",
       "kind": "StringLiteral",
       "offset": 388,
       "length": 13,
-      "value": "\"20261114001\""
+      "value": "\"20261116001\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/SDKBuildInfo\/SDK_Build_Info.swift",
       "kind": "StringLiteral",
       "offset": 503,
       "length": 12,
-      "value": "\"2026-11-14\""
+      "value": "\"2026-11-16\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/DataModels(数据模型)\/Battery(电量)\/BatteryInfoModel.swift",
@@ -75479,105 +75526,140 @@
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/DataModels(数据模型)\/DeviceInfo(设备信息)\/DeviceHardwareConfiguration.swift",
       "kind": "IntegerLiteral",
-      "offset": 436,
+      "offset": 469,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/DataModels(数据模型)\/DeviceInfo(设备信息)\/DeviceHardwareConfiguration.swift",
       "kind": "IntegerLiteral",
-      "offset": 470,
+      "offset": 503,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/DataModels(数据模型)\/DeviceInfo(设备信息)\/DeviceHardwareConfiguration.swift",
       "kind": "IntegerLiteral",
-      "offset": 513,
+      "offset": 546,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/DataModels(数据模型)\/DeviceInfo(设备信息)\/DeviceHardwareConfiguration.swift",
+      "kind": "IntegerLiteral",
+      "offset": 598,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/DataModels(数据模型)\/DeviceInfo(设备信息)\/DeviceHardwareConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 1705,
+      "offset": 2079,
       "length": 114,
       "value": "\"[DeviceHardwareConfiguration] onDeviceVoiceAssistantGuidanceRequired=\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/DataModels(数据模型)\/DeviceInfo(设备信息)\/DeviceHardwareConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 1816,
+      "offset": 2190,
       "length": 1,
       "value": "\", \""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/DataModels(数据模型)\/DeviceInfo(设备信息)\/DeviceHardwareConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 1834,
+      "offset": 2208,
       "length": 31,
       "value": "\"touchInput=\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/DataModels(数据模型)\/DeviceInfo(设备信息)\/DeviceHardwareConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 1862,
+      "offset": 2236,
       "length": 1,
       "value": "\", \""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/DataModels(数据模型)\/DeviceInfo(设备信息)\/DeviceHardwareConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 1880,
-      "length": 47,
+      "offset": 2254,
+      "length": 49,
       "value": "\"physicalButtonInput=\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/DataModels(数据模型)\/DeviceInfo(设备信息)\/DeviceHardwareConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 1926,
+      "offset": 2300,
+      "length": 1,
+      "value": "\", \""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/DataModels(数据模型)\/DeviceInfo(设备信息)\/DeviceHardwareConfiguration.swift",
+      "kind": "StringLiteral",
+      "offset": 2318,
+      "length": 75,
+      "value": "\"mediaOperationsWhileChargingAllowed=\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/DataModels(数据模型)\/DeviceInfo(设备信息)\/DeviceHardwareConfiguration.swift",
+      "kind": "StringLiteral",
+      "offset": 2392,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/DataModels(数据模型)\/DeviceInfo(设备信息)\/DeviceHardwareConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 2087,
+      "offset": 2553,
       "length": 115,
       "value": "\"[设备硬件配置] 需要离线语音助手指引=\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/DataModels(数据模型)\/DeviceInfo(设备信息)\/DeviceHardwareConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 2199,
+      "offset": 2665,
       "length": 1,
       "value": "\", \""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/DataModels(数据模型)\/DeviceInfo(设备信息)\/DeviceHardwareConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 2217,
+      "offset": 2683,
       "length": 51,
       "value": "\"触控输入=\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/DataModels(数据模型)\/DeviceInfo(设备信息)\/DeviceHardwareConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 2265,
+      "offset": 2731,
       "length": 1,
       "value": "\", \""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/DataModels(数据模型)\/DeviceInfo(设备信息)\/DeviceHardwareConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 2283,
-      "length": 64,
+      "offset": 2749,
+      "length": 66,
       "value": "\"实体按键输入=\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/DataModels(数据模型)\/DeviceInfo(设备信息)\/DeviceHardwareConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 2346,
+      "offset": 2812,
+      "length": 1,
+      "value": "\", \""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/DataModels(数据模型)\/DeviceInfo(设备信息)\/DeviceHardwareConfiguration.swift",
+      "kind": "StringLiteral",
+      "offset": 2830,
+      "length": 103,
+      "value": "\"允许充电时录音、录像和文件传输=\""
+    },
+    {
+      "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/AIBudsFoundation\/DataModels(数据模型)\/DeviceInfo(设备信息)\/DeviceHardwareConfiguration.swift",
+      "kind": "StringLiteral",
+      "offset": 2932,
       "length": 1,
       "value": "\"\""
     },

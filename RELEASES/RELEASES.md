@@ -1,8 +1,8 @@
 # RELEASES
 
-## V1.0.1-beta.16 (Build 20261114001)
+## V1.0.1-beta.17 (Build 20261116001)
 
-**Release date:** 2026-11-14
+**Release date:** 2026-11-16
 
 ### Features
 
@@ -38,6 +38,7 @@
 - Fixed the casing of the StarBurst `music.pause` intent alias so pause commands map correctly to stop playback.
 - Added support for additional ABMate devices.
 - Added support for setting AI recognition photo resolution, 12/24-hour time display, and video recording orientation on compatible ABMate devices.
+- Apps can now check whether an ABMate device allows audio recording, video recording, and file transfers while charging.
 - Improved SDK stability.
 
 ## V1.0.0 (Build 20260824001)

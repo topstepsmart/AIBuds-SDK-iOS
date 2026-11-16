@@ -7,6 +7,7 @@
 //
 
 #import "DeviceScanViewController.h"
+#import "DeviceProductPresentation.h"
 @import CoreBluetooth;
 @import UIKit;
 
@@ -279,9 +280,13 @@
 
 - (void)centralManager:(CBCentralManager *)central didDiscoverPeripheral:(CBPeripheral *)peripheral advertisementData:(NSDictionary<NSString *,id> *)advertisementData RSSI:(NSNumber *)RSSI {
     ScanDeviceItem *item = [ScanDeviceItem new];
-    if (@available(iOS 13.0, *)) {
-        item.icon = [UIImage systemImageNamed:@"antenna.radiowaves.left.and.right"];
-    }
+    id<AIBudsFoundDeviceConvertible> found = [ABMateSDK.shared createWithCentral:central
+                                                                     peripheral:peripheral
+                                                              advertisementData:advertisementData
+                                                                           rssi:RSSI];
+    item.icon = DemoAdvertisementIcon(advertisementData,
+                                      found ? found.product : AIBudsDeviceProductUnknown,
+                                      found ? found.shape : AIBudsDeviceShapeUnknown);
     item.name = peripheral.name ?: NSLocalizedString(@"UnknownDeviceNameLocKey", nil);
     item.mac = [self extractMACAddressFromAdvertisement:advertisementData] ?: @"-";
     item.rssi = RSSI.integerValue;
@@ -291,12 +296,20 @@
     // Avoid duplicates by UUID
     BOOL exists = NO;
     for (ScanDeviceItem *d in self.devices) {
-        if ([d.peripheral.identifier isEqual:peripheral.identifier]) { exists = YES; break; }
+        if ([d.peripheral.identifier isEqual:peripheral.identifier]) {
+            d.icon = item.icon;
+            d.name = item.name;
+            d.mac = item.mac;
+            d.rssi = item.rssi;
+            d.advertisementData = item.advertisementData;
+            exists = YES;
+            break;
+        }
     }
     if (!exists) {
         [self.devices addObject:item];
-        [self.tableView reloadData];
     }
+    [self.tableView reloadData];
 }
 
 - (NSString *)extractMACAddressFromAdvertisement:(NSDictionary<NSString *, id> *)adv {
@@ -352,8 +365,8 @@
         id<AIBudsDeviceConvertible> device = [AIBudsSDK makeStorableDeviceFromDiscovered:item.peripheral central:item.central advertisement:item.advertisementData rssi:@(item.rssi)];
         if (device) {
             device.screenName = device.name;
-            device.thumbnail = [UIImage imageNamed:@"icon.glasses"];
-            device.customContent = @"Smart Glasses";
+            device.thumbnail = DemoAdvertisementIcon(item.advertisementData, device.product, device.shape);
+            device.customContent = DemoProductName(device.product);
             if([AIBudsStoredDevicesMgr addDevice:device])
             {
                 [weakSelf stopScanning];

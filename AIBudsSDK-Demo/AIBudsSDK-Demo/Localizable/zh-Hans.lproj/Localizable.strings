@@ -52,6 +52,7 @@
 "LocKey.OnDeviceVoiceAssistantGuidance" = "需要离线语音助手指引";
 "LocKey.TouchInput" = "触控输入";
 "LocKey.PhysicalButtonInput" = "实体按键输入";
+"LocKey.MediaOperationsWhileCharging" = "允许充电时录音、录像和文件传输";
 "LocKey.SpatialAudio" = "空间音频";
 "LocKey.Multipoint" = "多点连接";
 "LocKey.OnDeviceVoiceAssistant" = "离线语音助手";
@@ -1091,3 +1092,15 @@
 "LocKey.ConversationTranslationError" = "翻译未能完成";
 "LocKey.ConversationDeviceRecordingUnsupported" = "当前设备不支持 AI 录音，无法使用外部录音模式。";
 "LocKey.ConversationDeviceRecordingStartFailed" = "设备麦克风启动失败。";
+
+"LocKey.Headphones" = "头戴耳机";
+
+"LocKey.ScreenlessBand" = "无屏手环";
+
+"LocKey.ScreenBand" = "有屏手环";
+
+"LocKey.EyeMask" = "眼罩";
+
+"LocKey.Earrings" = "耳坠";
+
+"LocKey.ElectronicBadge" = "电子吧唧";

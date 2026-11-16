@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## V1.0.1-beta.17 build20261116001 (2026-11-16)
+
+- Apps can now check whether an ABMate device allows audio recording, video recording, and file transfers while charging.
+
 ## V1.0.1-beta.16 build20261114001 (2026-11-14)
 
 - Added support for setting AI recognition photo resolution, 12/24-hour time display, and video recording orientation on compatible ABMate devices.

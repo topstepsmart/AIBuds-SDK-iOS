@@ -10,11 +10,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		/C3S39eCwbHMx12E1KtCqP+3cZ0=
+		Qo1fGUskBaTWVyXURkB5bH2Lkdk=
 		</data>
 		<key>Modules/ABMate.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		GAMWT3N66qqHvkxV7SvtxiEjvNo=
+		4R2rFpaBy2nGkG3uvGTyypYrYcY=
 		</data>
 		<key>Modules/ABMate.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>Modules/ABMate.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		GAMWT3N66qqHvkxV7SvtxiEjvNo=
+		4R2rFpaBy2nGkG3uvGTyypYrYcY=
 		</data>
 		<key>Modules/ABMate.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -62,7 +62,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			CxQNZyH9+0xScw/Fh6/70zBSVRF4bSm8vxrfp5nD7JI=
+			BjVGMxAg6evDckqOLuBu+btlzBgo3stMlwkX27yFlqY=
 			</data>
 		</dict>
 		<key>Modules/ABMate.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -90,7 +90,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			CxQNZyH9+0xScw/Fh6/70zBSVRF4bSm8vxrfp5nD7JI=
+			BjVGMxAg6evDckqOLuBu+btlzBgo3stMlwkX27yFlqY=
 			</data>
 		</dict>
 		<key>Modules/ABMate.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>

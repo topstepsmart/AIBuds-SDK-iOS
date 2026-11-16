@@ -50,6 +50,7 @@
 "LocKey.OnDeviceVoiceAssistantGuidance" = "On-device Voice Assistant Guidance Required";
 "LocKey.TouchInput" = "Touch Input";
 "LocKey.PhysicalButtonInput" = "Physical Button Input";
+"LocKey.MediaOperationsWhileCharging" = "Allow Audio/Video Recording and File Transfers While Charging";
 "LocKey.SpatialAudio" = "Spatial Audio";
 "LocKey.Multipoint" = "Multipoint";
 "LocKey.OnDeviceVoiceAssistant" = "On-device Voice Assistant";
@@ -1096,3 +1097,15 @@
 "LocKey.ConversationTranslationError" = "Translation could not be completed";
 "LocKey.ConversationDeviceRecordingUnsupported" = "This device does not support AI recording, so external recording mode is unavailable.";
 "LocKey.ConversationDeviceRecordingStartFailed" = "The device microphone could not be started.";
+
+"LocKey.Headphones" = "Headphones";
+
+"LocKey.ScreenlessBand" = "Screenless Band";
+
+"LocKey.ScreenBand" = "Band with Screen";
+
+"LocKey.EyeMask" = "Eye Mask";
+
+"LocKey.Earrings" = "Earrings";
+
+"LocKey.ElectronicBadge" = "Electronic Badge";

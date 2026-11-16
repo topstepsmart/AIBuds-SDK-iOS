@@ -742,7 +742,7 @@ typedef SWIFT_ENUM_NAMED(NSInteger, AIBudsDeviceFunction, "DeviceFunction", open
   AIBudsDeviceFunctionLocalBluetoothToggle = 14,
 };
 
-/// Describes hardware-related guidance and input configuration for a device.
+/// Describes hardware-related guidance, input configuration, and charging operation permissions for a device.
 SWIFT_CLASS_NAMED("DeviceHardwareConfiguration")
 @interface AIBudsDeviceHardwareConfiguration : NSObject
 /// Whether guidance for the on-device voice assistant is required.
@@ -751,6 +751,9 @@ SWIFT_CLASS_NAMED("DeviceHardwareConfiguration")
 @property (nonatomic, readonly) BOOL hasTouchInput;
 /// Whether physical button input is present.
 @property (nonatomic, readonly) BOOL hasPhysicalButtonInput;
+/// Whether audio recording, video recording, and file transfers are allowed while charging.
+/// Returns <code>false</code> when the device does not report this flag.
+@property (nonatomic, readonly) BOOL allowsMediaOperationsWhileCharging;
 /// A readable English summary of the hardware configuration.
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 /// A readable Chinese summary of the hardware configuration for debugging.

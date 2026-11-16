@@ -170,6 +170,9 @@ import _SwiftConcurrencyShims
   @objc final public var hasPhysicalButtonInput: Swift::Bool {
     @objc get
   }
+  @objc final public var allowsMediaOperationsWhileCharging: Swift::Bool {
+    @objc get
+  }
   @_spi(AIBudsInternal) @nonobjc public init(normalizedBitField: Foundation::Data)
   @objc override final public var description: Swift::String {
     @objc get
