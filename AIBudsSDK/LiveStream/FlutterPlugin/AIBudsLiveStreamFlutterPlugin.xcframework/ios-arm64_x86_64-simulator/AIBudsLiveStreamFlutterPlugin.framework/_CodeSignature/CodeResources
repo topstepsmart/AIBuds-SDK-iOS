@@ -10,11 +10,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		7KIoDdI068y0SNPM0euTe+TB4IE=
+		TsTT53zIyb7H1r+mQc6hGN2lZ+c=
 		</data>
 		<key>Modules/AIBudsLiveStreamFlutterPlugin.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		3sKT6RjydE6PP3J2ip3cwblL+eM=
+		VziXOYq7Av7JqcvmPB+Hi0rqPbI=
 		</data>
 		<key>Modules/AIBudsLiveStreamFlutterPlugin.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>Modules/AIBudsLiveStreamFlutterPlugin.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		3sKT6RjydE6PP3J2ip3cwblL+eM=
+		VziXOYq7Av7JqcvmPB+Hi0rqPbI=
 		</data>
 		<key>Modules/AIBudsLiveStreamFlutterPlugin.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -62,7 +62,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			NPErpENdgs6uuyyw1ZX4Yi5E5N2Xxy/h36IPcHQZe+s=
+			fclx3LW68pbmmK2EBEljSp/TeWGs/tb/YrA16dUSkHU=
 			</data>
 		</dict>
 		<key>Modules/AIBudsLiveStreamFlutterPlugin.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -90,7 +90,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			NPErpENdgs6uuyyw1ZX4Yi5E5N2Xxy/h36IPcHQZe+s=
+			fclx3LW68pbmmK2EBEljSp/TeWGs/tb/YrA16dUSkHU=
 			</data>
 		</dict>
 		<key>Modules/AIBudsLiveStreamFlutterPlugin.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>

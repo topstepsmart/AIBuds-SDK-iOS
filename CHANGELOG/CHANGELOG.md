@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## V1.0.1-beta.18 build20261117001 (2026-11-17)
+
+- Increased the per-file download timeout for ABMate media imports from 5 to 30 minutes, allowing more time to transfer large files.
+
 ## V1.0.1-beta.17 build20261116001 (2026-11-16)
 
 - Apps can now check whether an ABMate device allows audio recording, video recording, and file transfers while charging.
