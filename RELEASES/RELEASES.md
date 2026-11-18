@@ -1,8 +1,8 @@
 # RELEASES
 
-## V1.0.1-beta.18 (Build 20261117001)
+## V1.0.1-beta.19 (Build 20261118001)
 
-**Release date:** 2026-11-17
+**Release date:** 2026-11-18
 
 ### Features
 
@@ -40,6 +40,7 @@
 - Added support for setting AI recognition photo resolution, 12/24-hour time display, and video recording orientation on compatible ABMate devices.
 - Apps can now check whether an ABMate device allows audio recording, video recording, and file transfers while charging.
 - Increased the per-file download timeout for ABMate media imports from 5 to 30 minutes, allowing more time to transfer large files.
+- Fixed an issue where ABMate devices could return outdated device information and status after disconnecting and reconnecting.
 - Improved SDK stability.
 
 ## V1.0.0 (Build 20260824001)

@@ -10,11 +10,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		jvGaXTgvKQf3otWcV8rBozY0+iU=
+		5RCX3Lz70BTfwhP5/6ArMhAf470=
 		</data>
 		<key>Modules/AIBudsJieliOTA.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		rDSDaf8v/c7BqOFI/3/hCGS6MVw=
+		Ycjd7KuuLpBE8fSRs5xuB/9Y1Uw=
 		</data>
 		<key>Modules/AIBudsJieliOTA.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>Modules/AIBudsJieliOTA.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		rDSDaf8v/c7BqOFI/3/hCGS6MVw=
+		Ycjd7KuuLpBE8fSRs5xuB/9Y1Uw=
 		</data>
 		<key>Modules/AIBudsJieliOTA.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -62,7 +62,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			elMYtTd7bZbehqCRdJu4rmGina0krYeXHvKNRZiHWro=
+			K0wVAfnDFBr0/4H+IX4KNRx4ihCYLnI1SG8RsgiSTac=
 			</data>
 		</dict>
 		<key>Modules/AIBudsJieliOTA.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -90,7 +90,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			elMYtTd7bZbehqCRdJu4rmGina0krYeXHvKNRZiHWro=
+			K0wVAfnDFBr0/4H+IX4KNRx4ihCYLnI1SG8RsgiSTac=
 			</data>
 		</dict>
 		<key>Modules/AIBudsJieliOTA.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>

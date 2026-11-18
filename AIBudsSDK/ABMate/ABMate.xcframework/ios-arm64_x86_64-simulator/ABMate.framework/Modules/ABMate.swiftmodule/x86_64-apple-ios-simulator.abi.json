@@ -14246,48 +14246,48 @@
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
       "offset": 21527,
-      "length": 33458,
+      "length": 33539,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "Array",
-      "offset": 218653,
+      "offset": 218734,
       "length": 13,
       "value": "[1, 3, 9, 12]"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "Array",
-      "offset": 218971,
+      "offset": 219052,
       "length": 13,
       "value": "[30, 60, 120]"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "IntegerLiteral",
-      "offset": 219268,
+      "offset": 219349,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "BooleanLiteral",
-      "offset": 238075,
+      "offset": 238156,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 495372,
+      "offset": 495453,
       "length": 77,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/ABMate\/Device(设备)\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 495393,
+      "offset": 495474,
       "length": 3,
       "value": "\" OTA protocol capability is nil, default to use abmate.\""
     },
@@ -15234,21 +15234,21 @@
       "kind": "StringLiteral",
       "offset": 257,
       "length": 15,
-      "value": "\"1.0.1-beta.18\""
+      "value": "\"1.0.1-beta.19\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/SDKBuildInfo\/SDK_Build_Info.swift",
       "kind": "StringLiteral",
       "offset": 388,
       "length": 13,
-      "value": "\"20261117001\""
+      "value": "\"20261118001\""
     },
     {
       "filePath": "\/Users\/Shared\/catalina\/mygithub\/AIBudsSDK\/SDKBuildInfo\/SDK_Build_Info.swift",
       "kind": "StringLiteral",
       "offset": 503,
       "length": 12,
-      "value": "\"2026-11-17\""
+      "value": "\"2026-11-18\""
     }
   ]
 }

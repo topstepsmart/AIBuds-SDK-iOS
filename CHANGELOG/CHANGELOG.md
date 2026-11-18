@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## V1.0.1-beta.19 build20261118001 (2026-11-18)
+
+- Fixed an issue where ABMate devices could return outdated device information and status after disconnecting and reconnecting.
+
 ## V1.0.1-beta.18 build20261117001 (2026-11-17)
 
 - Increased the per-file download timeout for ABMate media imports from 5 to 30 minutes, allowing more time to transfer large files.
